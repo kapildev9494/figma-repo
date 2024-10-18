@@ -1,37 +1,43 @@
-name: Sync Design Tokens
+name: Token Pipeline
+
 on:
+  repository_dispatch:
+    types: [design-tokens-updated]
   push:
-    paths:
-      - 'tokens/themes.json'
     branches:
+      - dev
       - main
+    paths:
+      - 'tokens/**'
 
 jobs:
-  sync-tokens:
+  process-tokens:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: '20.9.0'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Transform tokens
-        run: node scripts/transform-tokens.js
+      - name: Process Figma tokens
+        if: github.event_name == 'repository_dispatch'
+        run: |
+          echo '${{ toJson(github.event.client_payload) }}' > figma-tokens.json
+          node scripts/process-figma-tokens.js
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          commit-message: 'chore: update theme tokens from Token Studio'
-          title: 'Update theme tokens from Token Studio'
-          body: 'This PR updates the theme tokens based on changes from Token Studio in Figma'
-          branch: 'token-studio-sync'
-          base: 'main'
+      - name: Process tokens
+        run: npx ts-node scripts/token-pipeline.ts
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Update processed design tokens" || echo "No changes to commit"
+          git push origin ${{ github.ref }} || echo "No changes to push"
