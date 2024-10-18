@@ -1,0 +1,37 @@
+name: Sync Design Tokens
+on:
+  push:
+    paths:
+      - 'tokens/themes.json'
+    branches:
+      - main
+
+jobs:
+  sync-tokens:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Transform tokens
+        run: node scripts/transform-tokens.js
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: 'chore: update theme tokens from Token Studio'
+          title: 'Update theme tokens from Token Studio'
+          body: 'This PR updates the theme tokens based on changes from Token Studio in Figma'
+          branch: 'token-studio-sync'
+          base: 'main'
