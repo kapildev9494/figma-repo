@@ -38,7 +38,7 @@ jobs:
 
       - name: Transform tokens
         run: |
-          npx ts-node scripts/transform-tokens.ts
+          NODE_OPTIONS="--loader ts-node/esm" npx ts-node scripts/transform-tokens.ts
 
       - name: Check for changes
         id: git-check

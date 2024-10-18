@@ -1,5 +1,5 @@
-import * as fs from 'fs';
-import * as path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 // Define comprehensive interfaces for all token types
 interface TokenValue {
@@ -90,7 +90,6 @@ function flattenTokens(obj: TokenGroup, prefix = ''): Record<string, string> {
     const newKey = prefix ? `${prefix}-${key}` : key;
     
     if (isTokenValue(value)) {
-      // Handle different value types
       if (value.type === 'color') {
         acc[newKey] = value.value.toLowerCase();
       } else if (value.type === 'dimension') {
@@ -129,20 +128,13 @@ ${interfaceContent}
 
 function transformTokens(): void {
   try {
-    // Read the themes.json file
     const themesPath = path.join(process.cwd(), 'tokens', 'themes.json');
     const outputPath = path.join(process.cwd(), 'src', 'theme', 'theme.ts');
     
-    // Parse the JSON file with type assertion
     const themeData = JSON.parse(fs.readFileSync(themesPath, 'utf8')) as ThemeTokens;
-    
-    // Flatten and transform the token structure
     const flatTokens = flattenTokens(themeData as TokenGroup);
-    
-    // Generate the theme interface
     const themeInterface = generateThemeInterface(flatTokens);
     
-    // Generate the final TypeScript file content
     const fileContent = `import { Theme } from '@fluentui/react-components';
 
 ${themeInterface}
@@ -177,13 +169,11 @@ export const brandThemeTokens = Object.entries(brandTheme).reduce((acc, [key, va
 }, {} as Record<string, string>);
 `;
 
-    // Create the directory if it doesn't exist
     const dir = path.dirname(outputPath);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
 
-    // Write the transformed file
     fs.writeFileSync(outputPath, fileContent);
     console.log('Successfully transformed tokens and updated theme.ts');
   } catch (error) {
@@ -192,5 +182,4 @@ export const brandThemeTokens = Object.entries(brandTheme).reduce((acc, [key, va
   }
 }
 
-// Execute the transformation
 transformTokens();
