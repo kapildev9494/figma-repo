@@ -14,44 +14,20 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PROCESS_PAT_TOKEN }}  # Use a Personal Access Token instead
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20.9.0'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: |
-          npm ci
-          npm install -D typescript ts-node @types/node @fluentui/react-components
-
-      - name: Create necessary directories
-        run: |
-          mkdir -p src/theme
-
-      - name: Transform tokens
-        run: |
-          NODE_OPTIONS="--loader ts-node/esm" npx ts-node scripts/transform-tokens.ts
-
-      - name: Check for changes
-        id: git-check
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git add -A
-          git diff --cached --quiet || echo "changes=true" >> $GITHUB_OUTPUT
+      # ... (rest of your steps remain the same)
 
       - name: Create Pull Request
         if: steps.git-check.outputs.changes == 'true'
         uses: peter-evans/create-pull-request@v5
         with:
+          token: ${{ secrets.PROCESS_PAT_TOKEN }}  # Use the same PAT here
           commit-message: 'chore: update design tokens'
           title: '🎨 Update design tokens'
           body: |
