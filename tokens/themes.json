@@ -928,7 +928,7 @@
     },
     "paragraphIndent": {
       "0": {
-        "value": "1px",
+        "value": "0px",
         "type": "dimension"
       }
     }
