@@ -1,39 +1,71 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-// Define strict interfaces for tokens
+// Define comprehensive interfaces for all token types
 interface TokenValue {
   value: string;
   type?: string;
+  description?: string;
 }
 
 interface TokenGroup {
   [key: string]: TokenValue | TokenGroup;
 }
 
-interface TokenData {
-  colors: {
-    grey: { [key: string]: TokenValue };
-    brand: { [key: string]: TokenValue };
-    success: { [key: string]: TokenValue };
-    warning: { [key: string]: TokenValue };
-    danger: { [key: string]: TokenValue };
-    generic: { [key: string]: TokenValue };
-    [key: string]: { [key: string]: TokenValue };
+interface ThemeTokens {
+  font?: {
+    family?: { [key: string]: TokenValue };
+    weight?: { [key: string]: TokenValue };
+    size?: { [key: string]: TokenValue };
   };
-  spacing: {
-    [key: string]: TokenValue;
+  effect?: {
+    shadow?: { [key: string]: TokenValue };
+    opacity?: { [key: string]: TokenValue };
   };
-  fontSizes: {
-    [key: string]: TokenValue;
+  treeIndentation?: {
+    level?: { [key: string]: TokenValue };
   };
-  lineHeights: {
-    [key: string]: TokenValue;
+  popoverSize?: {
+    width?: { [key: string]: TokenValue };
+    height?: { [key: string]: TokenValue };
   };
-  borderRadius: {
-    [key: string]: TokenValue;
+  cardPadding?: {
+    default?: { [key: string]: TokenValue };
+    compact?: { [key: string]: TokenValue };
   };
-  [key: string]: TokenGroup;
+  buttonShape?: {
+    radius?: { [key: string]: TokenValue };
+    padding?: { [key: string]: TokenValue };
+  };
+  badgeShape?: {
+    radius?: { [key: string]: TokenValue };
+    padding?: { [key: string]: TokenValue };
+  };
+  arrowPosition?: {
+    offset?: { [key: string]: TokenValue };
+  };
+  typography?: {
+    heading?: { [key: string]: TokenValue };
+    body?: { [key: string]: TokenValue };
+    caption?: { [key: string]: TokenValue };
+  };
+  theme?: {
+    light?: { [key: string]: TokenValue };
+    dark?: { [key: string]: TokenValue };
+  };
+  global?: {
+    spacing?: { [key: string]: TokenValue };
+    colors?: { [key: string]: TokenValue };
+  };
+  brand?: {
+    colors?: {
+      primary?: { [key: string]: TokenValue };
+      secondary?: { [key: string]: TokenValue };
+      accent?: { [key: string]: TokenValue };
+    };
+    typography?: { [key: string]: TokenValue };
+  };
+  [key: string]: TokenGroup | undefined;
 }
 
 function isTokenValue(value: unknown): value is TokenValue {
@@ -58,7 +90,14 @@ function flattenTokens(obj: TokenGroup, prefix = ''): Record<string, string> {
     const newKey = prefix ? `${prefix}-${key}` : key;
     
     if (isTokenValue(value)) {
-      acc[newKey] = value.value;
+      // Handle different value types
+      if (value.type === 'color') {
+        acc[newKey] = value.value.toLowerCase();
+      } else if (value.type === 'dimension') {
+        acc[newKey] = value.value.replace('px', 'rem');
+      } else {
+        acc[newKey] = value.value;
+      }
     } else if (isTokenGroup(value)) {
       Object.assign(acc, flattenTokens(value, newKey));
     }
@@ -68,12 +107,23 @@ function flattenTokens(obj: TokenGroup, prefix = ''): Record<string, string> {
 }
 
 function generateThemeInterface(tokens: Record<string, string>): string {
-  const properties = Object.keys(tokens)
-    .map(key => `  '${key}': string;`)
-    .join('\n');
-    
+  const categoryGroups = Object.keys(tokens).reduce((acc: { [key: string]: string[] }, key) => {
+    const category = key.split('-')[0];
+    if (!acc[category]) {
+      acc[category] = [];
+    }
+    acc[category].push(`  '${key}': string;`);
+    return acc;
+  }, {});
+
+  const interfaceContent = Object.entries(categoryGroups)
+    .map(([category, properties]) => (
+      `  // ${category} tokens\n${properties.join('\n')}`
+    ))
+    .join('\n\n');
+
   return `interface BrandThemeExtension {
-${properties}
+${interfaceContent}
 }`;
 }
 
@@ -84,16 +134,16 @@ function transformTokens(): void {
     const outputPath = path.join(process.cwd(), 'src', 'theme', 'theme.ts');
     
     // Parse the JSON file with type assertion
-    const themeData = JSON.parse(fs.readFileSync(themesPath, 'utf8')) as TokenData;
+    const themeData = JSON.parse(fs.readFileSync(themesPath, 'utf8')) as ThemeTokens;
     
     // Flatten and transform the token structure
-    const flatTokens = flattenTokens(themeData);
+    const flatTokens = flattenTokens(themeData as TokenGroup);
     
     // Generate the theme interface
     const themeInterface = generateThemeInterface(flatTokens);
     
     // Generate the final TypeScript file content
-    const fileContent = `import { Theme, themeToTokensObject } from '@fluentui/react-components';
+    const fileContent = `import { Theme } from '@fluentui/react-components';
 
 ${themeInterface}
 
@@ -103,19 +153,35 @@ ${Object.entries(flatTokens)
   .join(',\n')}
 };
 
-export const brandThemeTokens = themeToTokensObject(brandTheme);
-
+// Utility functions
 export const convertHexToRgba = (hex: string): string => {
-  if (hex === 'transparent') {
-    return 'rgba(0, 0, 0, 0)';
-  }
+  if (hex === 'transparent') return 'rgba(0, 0, 0, 0)';
+  if (hex.startsWith('rgba')) return hex;
+  
   const hexColor = hex.replace('#', '');
   const r = parseInt(hexColor.substring(0, 2), 16);
   const g = parseInt(hexColor.substring(2, 4), 16);
   const b = parseInt(hexColor.substring(4, 6), 16);
-  return \`rgba(\${r}, \${g}, \${b})\`;
+  const a = hexColor.length === 8 ? parseInt(hexColor.substring(6, 8), 16) / 255 : 1;
+  return \`rgba(\${r}, \${g}, \${b}, \${a})\`;
 };
+
+// Theme tokens object
+export const brandThemeTokens = Object.entries(brandTheme).reduce((acc, [key, value]) => {
+  if (value.startsWith('#')) {
+    acc[key] = convertHexToRgba(value);
+  } else {
+    acc[key] = value;
+  }
+  return acc;
+}, {} as Record<string, string>);
 `;
+
+    // Create the directory if it doesn't exist
+    const dir = path.dirname(outputPath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
 
     // Write the transformed file
     fs.writeFileSync(outputPath, fileContent);
