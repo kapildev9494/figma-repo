@@ -1,7567 +1,753 @@
 import { Theme } from '@fluentui/react-components';
 
-interface BrandThemeExtension {
-  // globalLinear tokens
-  'globalLinear': string;
-
-  // globalFontFamiliesSegoe tokens
-  'globalFontFamiliesSegoe-ui': string;
-
-  // globalLineHeights0 tokens
-  'globalLineHeights0': string;
-
-  // globalLineHeights1 tokens
-  'globalLineHeights1': string;
-
-  // globalLineHeights2 tokens
-  'globalLineHeights2': string;
-
-  // globalLineHeights3 tokens
-  'globalLineHeights3': string;
-
-  // globalLineHeights4 tokens
-  'globalLineHeights4': string;
-
-  // globalLineHeights5 tokens
-  'globalLineHeights5': string;
-
-  // globalLineHeights6 tokens
-  'globalLineHeights6': string;
-
-  // globalLineHeights7 tokens
-  'globalLineHeights7': string;
-
-  // globalLineHeights8 tokens
-  'globalLineHeights8': string;
-
-  // globalLineHeights9 tokens
-  'globalLineHeights9': string;
-
-  // globalLineHeights10 tokens
-  'globalLineHeights10': string;
-
-  // globalFontWeightsSegoe tokens
-  'globalFontWeightsSegoe-ui-0': string;
-  'globalFontWeightsSegoe-ui-1': string;
-  'globalFontWeightsSegoe-ui-2': string;
-  'globalFontWeightsSegoe-ui-3': string;
-  'globalFontWeightsSegoe-ui-4': string;
-
-  // globalFontSize0 tokens
-  'globalFontSize0': string;
-
-  // globalFontSize1 tokens
-  'globalFontSize1': string;
-
-  // globalFontSize2 tokens
-  'globalFontSize2': string;
-
-  // globalFontSize3 tokens
-  'globalFontSize3': string;
-
-  // globalFontSize4 tokens
-  'globalFontSize4': string;
-
-  // globalFontSize5 tokens
-  'globalFontSize5': string;
-
-  // globalFontSize6 tokens
-  'globalFontSize6': string;
-
-  // globalFontSize7 tokens
-  'globalFontSize7': string;
-
-  // globalFontSize8 tokens
-  'globalFontSize8': string;
-
-  // globalFontSize9 tokens
-  'globalFontSize9': string;
-
-  // globalFontSize10 tokens
-  'globalFontSize10': string;
-
-  // globalLetterSpacing0 tokens
-  'globalLetterSpacing0': string;
-
-  // globalLetterSpacing1 tokens
-  'globalLetterSpacing1': string;
-
-  // globalParagraphSpacing0 tokens
-  'globalParagraphSpacing0': string;
-
-  // globalTextCaseNone tokens
-  'globalTextCaseNone': string;
-
-  // globalTextDecorationNone tokens
-  'globalTextDecorationNone': string;
-
-  // globalParagraphIndent0 tokens
-  'globalParagraphIndent0': string;
-
-  // global/globalFontFamiliesSegoe tokens
-  'global/globalFontFamiliesSegoe-ui': string;
-
-  // global/globalFontWeightsSegoe tokens
-  'global/globalFontWeightsSegoe-ui-0': string;
-  'global/globalFontWeightsSegoe-ui-1': string;
-  'global/globalFontWeightsSegoe-ui-2': string;
-  'global/globalFontWeightsSegoe-ui-3': string;
-  'global/globalFontWeightsSegoe-ui-4': string;
-
-  // Theme/LightNeutralBackground1Rest tokens
-  'Theme/LightNeutralBackground1Rest': string;
-
-  // Theme/LightNeutralBackground1Hover tokens
-  'Theme/LightNeutralBackground1Hover': string;
-
-  // Theme/LightNeutralBackground1Pressed tokens
-  'Theme/LightNeutralBackground1Pressed': string;
-
-  // Theme/LightNeutralBackground1Selected tokens
-  'Theme/LightNeutralBackground1Selected': string;
-
-  // Theme/LightNeutralBackground2Rest tokens
-  'Theme/LightNeutralBackground2Rest': string;
-
-  // Theme/LightNeutralBackground3Rest tokens
-  'Theme/LightNeutralBackground3Rest': string;
-
-  // Theme/LightNeutralBackground3Hover tokens
-  'Theme/LightNeutralBackground3Hover': string;
-
-  // Theme/LightNeutralBackground3Pressed tokens
-  'Theme/LightNeutralBackground3Pressed': string;
-
-  // Theme/LightNeutralBackground4Rest tokens
-  'Theme/LightNeutralBackground4Rest': string;
-
-  // Theme/LightNeutralBackground4Hover tokens
-  'Theme/LightNeutralBackground4Hover': string;
-
-  // Theme/LightNeutralBackground4Pressed tokens
-  'Theme/LightNeutralBackground4Pressed': string;
-
-  // Theme/LightNeutralBackground5Rest tokens
-  'Theme/LightNeutralBackground5Rest': string;
-
-  // Theme/LightNeutralBackground6Rest tokens
-  'Theme/LightNeutralBackground6Rest': string;
-
-  // Theme/LightNeutralBackgroundInvertedRest tokens
-  'Theme/LightNeutralBackgroundInvertedRest': string;
-
-  // Theme/LightNeutralBackgroundInvertedDisabledRest tokens
-  'Theme/LightNeutralBackgroundInvertedDisabledRest': string;
-
-  // Theme/LightNeutralBackgroundAlpha1Rest tokens
-  'Theme/LightNeutralBackgroundAlpha1Rest': string;
-
-  // Theme/LightNeutralBackgroundAlpha2Rest tokens
-  'Theme/LightNeutralBackgroundAlpha2Rest': string;
-
-  // Theme/LightNeutralBackgroundStaticRest tokens
-  'Theme/LightNeutralBackgroundStaticRest': string;
-
-  // Theme/LightNeutralBackgroundSubtleRest tokens
-  'Theme/LightNeutralBackgroundSubtleRest': string;
-
-  // Theme/LightNeutralBackgroundSubtleHover tokens
-  'Theme/LightNeutralBackgroundSubtleHover': string;
-
-  // Theme/LightNeutralBackgroundSubtlePressed tokens
-  'Theme/LightNeutralBackgroundSubtlePressed': string;
-
-  // Theme/LightNeutralBackgroundSubtleSelected tokens
-  'Theme/LightNeutralBackgroundSubtleSelected': string;
-
-  // Theme/LightNeutralBackgroundSubtleLight alphaHover tokens
-  'Theme/LightNeutralBackgroundSubtleLight alphaHover': string;
-
-  // Theme/LightNeutralBackgroundSubtleLight alphaPressed tokens
-  'Theme/LightNeutralBackgroundSubtleLight alphaPressed': string;
-
-  // Theme/LightNeutralBackgroundSubtleLight alphaSelected tokens
-  'Theme/LightNeutralBackgroundSubtleLight alphaSelected': string;
-
-  // Theme/LightNeutralBackgroundSubtleInvertedRest tokens
-  'Theme/LightNeutralBackgroundSubtleInvertedRest': string;
-
-  // Theme/LightNeutralBackgroundSubtleInvertedHover tokens
-  'Theme/LightNeutralBackgroundSubtleInvertedHover': string;
-
-  // Theme/LightNeutralBackgroundSubtleInvertedPressed tokens
-  'Theme/LightNeutralBackgroundSubtleInvertedPressed': string;
-
-  // Theme/LightNeutralBackgroundSubtleInvertedSelected tokens
-  'Theme/LightNeutralBackgroundSubtleInvertedSelected': string;
-
-  // Theme/LightNeutralBackgroundTransparentRest tokens
-  'Theme/LightNeutralBackgroundTransparentRest': string;
-
-  // Theme/LightNeutralBackgroundTransparentHover tokens
-  'Theme/LightNeutralBackgroundTransparentHover': string;
-
-  // Theme/LightNeutralBackgroundTransparentPressed tokens
-  'Theme/LightNeutralBackgroundTransparentPressed': string;
-
-  // Theme/LightNeutralBackgroundTransparentSelected tokens
-  'Theme/LightNeutralBackgroundTransparentSelected': string;
-
-  // Theme/LightNeutralBackgroundDisabledRest tokens
-  'Theme/LightNeutralBackgroundDisabledRest': string;
-
-  // Theme/LightNeutralBackgroundStencil1Rest tokens
-  'Theme/LightNeutralBackgroundStencil1Rest': string;
-
-  // Theme/LightNeutralBackgroundStencil2Rest tokens
-  'Theme/LightNeutralBackgroundStencil2Rest': string;
-
-  // Theme/LightNeutralBackgroundOverlayRest tokens
-  'Theme/LightNeutralBackgroundOverlayRest': string;
-
-  // Theme/LightNeutralBackgroundOverlayScrollbarRest tokens
-  'Theme/LightNeutralBackgroundOverlayScrollbarRest': string;
-
-  // Theme/LightNeutralForeground1Rest primary text tokens
-  'Theme/LightNeutralForeground1Rest primary text': string;
-
-  // Theme/LightNeutralForeground1Hover tokens
-  'Theme/LightNeutralForeground1Hover': string;
-
-  // Theme/LightNeutralForeground1Pressed tokens
-  'Theme/LightNeutralForeground1Pressed': string;
-
-  // Theme/LightNeutralForeground1Selected tokens
-  'Theme/LightNeutralForeground1Selected': string;
-
-  // Theme/LightNeutralForeground2Rest secondary text tokens
-  'Theme/LightNeutralForeground2Rest secondary text': string;
-
-  // Theme/LightNeutralForeground2Hover tokens
-  'Theme/LightNeutralForeground2Hover': string;
-
-  // Theme/LightNeutralForeground2Pressed tokens
-  'Theme/LightNeutralForeground2Pressed': string;
-
-  // Theme/LightNeutralForeground2Selected tokens
-  'Theme/LightNeutralForeground2Selected': string;
-
-  // Theme/LightNeutralForeground2BrandHover tokens
-  'Theme/LightNeutralForeground2BrandHover': string;
-
-  // Theme/LightNeutralForeground2BrandPressed tokens
-  'Theme/LightNeutralForeground2BrandPressed': string;
-
-  // Theme/LightNeutralForeground2BrandSelected tokens
-  'Theme/LightNeutralForeground2BrandSelected': string;
-
-  // Theme/LightNeutralForeground2BrandRest tokens
-  'Theme/LightNeutralForeground2BrandRest': string;
-
-  // Theme/LightNeutralForeground2LinkRest tokens
-  'Theme/LightNeutralForeground2LinkRest': string;
-
-  // Theme/LightNeutralForeground2LinkHover tokens
-  'Theme/LightNeutralForeground2LinkHover': string;
-
-  // Theme/LightNeutralForeground2LinkPressed tokens
-  'Theme/LightNeutralForeground2LinkPressed': string;
-
-  // Theme/LightNeutralForeground2LinkSelected tokens
-  'Theme/LightNeutralForeground2LinkSelected': string;
-
-  // Theme/LightNeutralForeground4Rest tokens
-  'Theme/LightNeutralForeground4Rest': string;
-
-  // Theme/LightNeutralForegroundDisabled2Rest tokens
-  'Theme/LightNeutralForegroundDisabled2Rest': string;
-
-  // Theme/LightNeutralForegroundDisabledRest tokens
-  'Theme/LightNeutralForegroundDisabledRest': string;
-
-  // Theme/LightNeutralForegroundStaticInvertedRest tokens
-  'Theme/LightNeutralForegroundStaticInvertedRest': string;
-
-  // Theme/LightNeutralForegroundInverted1Rest tokens
-  'Theme/LightNeutralForegroundInverted1Rest': string;
-
-  // Theme/LightNeutralForegroundInverted1Hover tokens
-  'Theme/LightNeutralForegroundInverted1Hover': string;
-
-  // Theme/LightNeutralForegroundInverted1Pressed tokens
-  'Theme/LightNeutralForegroundInverted1Pressed': string;
-
-  // Theme/LightNeutralForegroundInverted1Selected tokens
-  'Theme/LightNeutralForegroundInverted1Selected': string;
-
-  // Theme/LightNeutralForegroundInverted2Rest tokens
-  'Theme/LightNeutralForegroundInverted2Rest': string;
-
-  // Theme/LightNeutralForegroundInvertedDisabledRest tokens
-  'Theme/LightNeutralForegroundInvertedDisabledRest': string;
-
-  // Theme/LightNeutralForegroundInvertedLinkRest tokens
-  'Theme/LightNeutralForegroundInvertedLinkRest': string;
-
-  // Theme/LightNeutralForegroundInvertedLinkHover tokens
-  'Theme/LightNeutralForegroundInvertedLinkHover': string;
-
-  // Theme/LightNeutralForegroundInvertedLinkPressed tokens
-  'Theme/LightNeutralForegroundInvertedLinkPressed': string;
-
-  // Theme/LightNeutralForegroundInvertedLinkSelected tokens
-  'Theme/LightNeutralForegroundInvertedLinkSelected': string;
-
-  // Theme/LightNeutralForegroundOn BrandRest tokens
-  'Theme/LightNeutralForegroundOn BrandRest': string;
-
-  // Theme/LightNeutralStroke1Rest tokens
-  'Theme/LightNeutralStroke1Rest': string;
-
-  // Theme/LightNeutralStroke1Hover tokens
-  'Theme/LightNeutralStroke1Hover': string;
-
-  // Theme/LightNeutralStroke1Pressed tokens
-  'Theme/LightNeutralStroke1Pressed': string;
-
-  // Theme/LightNeutralStroke1Selected tokens
-  'Theme/LightNeutralStroke1Selected': string;
-
-  // Theme/LightNeutralStroke2Rest tokens
-  'Theme/LightNeutralStroke2Rest': string;
-
-  // Theme/LightNeutralStroke3Rest tokens
-  'Theme/LightNeutralStroke3Rest': string;
-
-  // Theme/LightNeutralStrokeAlpha1Rest tokens
-  'Theme/LightNeutralStrokeAlpha1Rest': string;
-
-  // Theme/LightNeutralStrokeAlpha2Rest tokens
-  'Theme/LightNeutralStrokeAlpha2Rest': string;
-
-  // Theme/LightNeutralStrokeSubtleRest tokens
-  'Theme/LightNeutralStrokeSubtleRest': string;
-
-  // Theme/LightNeutralStrokeOn Brand1Rest tokens
-  'Theme/LightNeutralStrokeOn Brand1Rest': string;
-
-  // Theme/LightNeutralStrokeOn Brand2Rest tokens
-  'Theme/LightNeutralStrokeOn Brand2Rest': string;
-
-  // Theme/LightNeutralStrokeAccessibleRest tokens
-  'Theme/LightNeutralStrokeAccessibleRest': string;
-
-  // Theme/LightNeutralStrokeAccessibleHover tokens
-  'Theme/LightNeutralStrokeAccessibleHover': string;
-
-  // Theme/LightNeutralStrokeAccessiblePressed tokens
-  'Theme/LightNeutralStrokeAccessiblePressed': string;
-
-  // Theme/LightNeutralStrokeAccessibleSelected tokens
-  'Theme/LightNeutralStrokeAccessibleSelected': string;
-
-  // Theme/LightNeutralStrokeFocus1Rest tokens
-  'Theme/LightNeutralStrokeFocus1Rest': string;
-
-  // Theme/LightNeutralStrokeFocus2Rest tokens
-  'Theme/LightNeutralStrokeFocus2Rest': string;
-
-  // Theme/LightNeutralStrokeTransparentInteractiveRest tokens
-  'Theme/LightNeutralStrokeTransparentInteractiveRest': string;
-
-  // Theme/LightNeutralStrokeTransparentDisabledRest tokens
-  'Theme/LightNeutralStrokeTransparentDisabledRest': string;
-
-  // Theme/LightNeutralStrokeTransparentRest tokens
-  'Theme/LightNeutralStrokeTransparentRest': string;
-
-  // Theme/LightNeutralStrokeDisabledRest tokens
-  'Theme/LightNeutralStrokeDisabledRest': string;
-
-  // Theme/LightNeutralStrokeDisabledInvertedRest tokens
-  'Theme/LightNeutralStrokeDisabledInvertedRest': string;
-
-  // Theme/LightBrandBackground1Rest tokens
-  'Theme/LightBrandBackground1Rest': string;
-
-  // Theme/LightBrandBackground1Hover tokens
-  'Theme/LightBrandBackground1Hover': string;
-
-  // Theme/LightBrandBackground1Pressed tokens
-  'Theme/LightBrandBackground1Pressed': string;
-
-  // Theme/LightBrandBackground1Selected tokens
-  'Theme/LightBrandBackground1Selected': string;
-
-  // Theme/LightBrandBackground2Rest tokens
-  'Theme/LightBrandBackground2Rest': string;
-
-  // Theme/LightBrandBackground2Hover tokens
-  'Theme/LightBrandBackground2Hover': string;
-
-  // Theme/LightBrandBackground2Pressed tokens
-  'Theme/LightBrandBackground2Pressed': string;
-
-  // Theme/LightBrandBackground3Rest tokens
-  'Theme/LightBrandBackground3Rest': string;
-
-  // Theme/LightBrandBackgroundInvertedRest tokens
-  'Theme/LightBrandBackgroundInvertedRest': string;
-
-  // Theme/LightBrandBackgroundInvertedHover tokens
-  'Theme/LightBrandBackgroundInvertedHover': string;
-
-  // Theme/LightBrandBackgroundInvertedPressed tokens
-  'Theme/LightBrandBackgroundInvertedPressed': string;
-
-  // Theme/LightBrandBackgroundInvertedSelected tokens
-  'Theme/LightBrandBackgroundInvertedSelected': string;
-
-  // Theme/LightBrandBackgroundStaticRest tokens
-  'Theme/LightBrandBackgroundStaticRest': string;
-
-  // Theme/LightBrandBackgroundCompoundRest tokens
-  'Theme/LightBrandBackgroundCompoundRest': string;
-
-  // Theme/LightBrandBackgroundCompoundHover tokens
-  'Theme/LightBrandBackgroundCompoundHover': string;
-
-  // Theme/LightBrandBackgroundCompoundPressed tokens
-  'Theme/LightBrandBackgroundCompoundPressed': string;
-
-  // Theme/LightBrandForeground1Rest tokens
-  'Theme/LightBrandForeground1Rest': string;
-
-  // Theme/LightBrandForeground1Hover tokens
-  'Theme/LightBrandForeground1Hover': string;
-
-  // Theme/LightBrandForeground1Pressed tokens
-  'Theme/LightBrandForeground1Pressed': string;
-
-  // Theme/LightBrandForeground1Selected tokens
-  'Theme/LightBrandForeground1Selected': string;
-
-  // Theme/LightBrandForeground2Rest tokens
-  'Theme/LightBrandForeground2Rest': string;
-
-  // Theme/LightBrandForeground2Hover tokens
-  'Theme/LightBrandForeground2Hover': string;
-
-  // Theme/LightBrandForeground2Pressed tokens
-  'Theme/LightBrandForeground2Pressed': string;
-
-  // Theme/LightBrandForegroundLinkRest tokens
-  'Theme/LightBrandForegroundLinkRest': string;
-
-  // Theme/LightBrandForegroundLinkHover tokens
-  'Theme/LightBrandForegroundLinkHover': string;
-
-  // Theme/LightBrandForegroundLinkPressed tokens
-  'Theme/LightBrandForegroundLinkPressed': string;
-
-  // Theme/LightBrandForegroundLinkSelected tokens
-  'Theme/LightBrandForegroundLinkSelected': string;
-
-  // Theme/LightBrandForegroundInvertedRest tokens
-  'Theme/LightBrandForegroundInvertedRest': string;
-
-  // Theme/LightBrandForegroundInvertedHover tokens
-  'Theme/LightBrandForegroundInvertedHover': string;
-
-  // Theme/LightBrandForegroundInvertedPressed tokens
-  'Theme/LightBrandForegroundInvertedPressed': string;
-
-  // Theme/LightBrandForegroundOn LightRest tokens
-  'Theme/LightBrandForegroundOn LightRest': string;
-
-  // Theme/LightBrandForegroundOn LightHover tokens
-  'Theme/LightBrandForegroundOn LightHover': string;
-
-  // Theme/LightBrandForegroundOn LightPressed tokens
-  'Theme/LightBrandForegroundOn LightPressed': string;
-
-  // Theme/LightBrandForegroundOn LightSelected tokens
-  'Theme/LightBrandForegroundOn LightSelected': string;
-
-  // Theme/LightBrandForegroundCompoundRest tokens
-  'Theme/LightBrandForegroundCompoundRest': string;
-
-  // Theme/LightBrandForegroundCompoundHover tokens
-  'Theme/LightBrandForegroundCompoundHover': string;
-
-  // Theme/LightBrandForegroundCompoundPressed tokens
-  'Theme/LightBrandForegroundCompoundPressed': string;
-
-  // Theme/LightBrandStroke1Rest tokens
-  'Theme/LightBrandStroke1Rest': string;
-
-  // Theme/LightBrandStroke1Hover tokens
-  'Theme/LightBrandStroke1Hover': string;
-
-  // Theme/LightBrandStroke1Pressed tokens
-  'Theme/LightBrandStroke1Pressed': string;
-
-  // Theme/LightBrandStroke1Selected tokens
-  'Theme/LightBrandStroke1Selected': string;
-
-  // Theme/LightBrandStroke2Rest tokens
-  'Theme/LightBrandStroke2Rest': string;
-
-  // Theme/LightBrandStroke2ContrastRest tokens
-  'Theme/LightBrandStroke2ContrastRest': string;
-
-  // Theme/LightBrandStroke3Rest tokens
-  'Theme/LightBrandStroke3Rest': string;
-
-  // Theme/LightBrandStrokeCompoundRest tokens
-  'Theme/LightBrandStrokeCompoundRest': string;
-
-  // Theme/LightBrandStrokeCompoundHover tokens
-  'Theme/LightBrandStrokeCompoundHover': string;
-
-  // Theme/LightBrandStrokeCompoundPressed tokens
-  'Theme/LightBrandStrokeCompoundPressed': string;
-
-  // Theme/LightStatusDangerBackground1Rest tokens
-  'Theme/LightStatusDangerBackground1Rest': string;
-
-  // Theme/LightStatusDangerBackground3Rest tokens
-  'Theme/LightStatusDangerBackground3Rest': string;
-
-  // Theme/LightStatusDangerForeground1Rest tokens
-  'Theme/LightStatusDangerForeground1Rest': string;
-
-  // Theme/LightStatusDangerForeground3Rest tokens
-  'Theme/LightStatusDangerForeground3Rest': string;
-
-  // Theme/LightStatusDangerStroke1Rest tokens
-  'Theme/LightStatusDangerStroke1Rest': string;
-
-  // Theme/LightStatusDangerStroke2Rest tokens
-  'Theme/LightStatusDangerStroke2Rest': string;
-
-  // Theme/LightStatusSuccessBackground1Rest tokens
-  'Theme/LightStatusSuccessBackground1Rest': string;
-
-  // Theme/LightStatusSuccessBackground3Rest tokens
-  'Theme/LightStatusSuccessBackground3Rest': string;
-
-  // Theme/LightStatusSuccessForeground1Rest tokens
-  'Theme/LightStatusSuccessForeground1Rest': string;
-
-  // Theme/LightStatusSuccessForeground3Rest tokens
-  'Theme/LightStatusSuccessForeground3Rest': string;
-
-  // Theme/LightStatusSuccessStroke1Rest tokens
-  'Theme/LightStatusSuccessStroke1Rest': string;
-
-  // Theme/LightStatusSuccessStroke2Rest tokens
-  'Theme/LightStatusSuccessStroke2Rest': string;
-
-  // Theme/LightStatusWarningBackground1Rest tokens
-  'Theme/LightStatusWarningBackground1Rest': string;
-
-  // Theme/LightStatusWarningBackground3Rest tokens
-  'Theme/LightStatusWarningBackground3Rest': string;
-
-  // Theme/LightStatusWarningForeground1Rest tokens
-  'Theme/LightStatusWarningForeground1Rest': string;
-
-  // Theme/LightStatusWarningForeground3Rest tokens
-  'Theme/LightStatusWarningForeground3Rest': string;
-
-  // Theme/LightStatusWarningStroke1Rest tokens
-  'Theme/LightStatusWarningStroke1Rest': string;
-
-  // Theme/LightStatusWarningStroke2Rest tokens
-  'Theme/LightStatusWarningStroke2Rest': string;
-
-  // Theme/LightStatusOofForeground3Rest tokens
-  'Theme/LightStatusOofForeground3Rest': string;
-
-  // Theme/LightStatusAwayBackground3Rest tokens
-  'Theme/LightStatusAwayBackground3Rest': string;
-
-  // Theme/LightStatusAvailableForeground3Rest tokens
-  'Theme/LightStatusAvailableForeground3Rest': string;
-
-  // Theme/LightStatusGenericAnchorBackground2Rest tokens
-  'Theme/LightStatusGenericAnchorBackground2Rest': string;
-
-  // Theme/LightStatusGenericAnchorForeground2Rest tokens
-  'Theme/LightStatusGenericAnchorForeground2Rest': string;
-
-  // Theme/LightStatusGenericAnchorStrokeActiveRest tokens
-  'Theme/LightStatusGenericAnchorStrokeActiveRest': string;
-
-  // Theme/LightStatusGenericInformationBackground1Rest tokens
-  'Theme/LightStatusGenericInformationBackground1Rest': string;
-
-  // Theme/LightStatusGenericInformationBackground1Hover tokens
-  'Theme/LightStatusGenericInformationBackground1Hover': string;
-
-  // Theme/LightStatusGenericInformationBackground1Pressed tokens
-  'Theme/LightStatusGenericInformationBackground1Pressed': string;
-
-  // Theme/LightStatusGenericInformationStroke1Rest tokens
-  'Theme/LightStatusGenericInformationStroke1Rest': string;
-
-  // Theme/LightStatusGenericInformationStroke2Rest tokens
-  'Theme/LightStatusGenericInformationStroke2Rest': string;
-
-  // Theme/LightStatusGenericInformationStroke2Hover tokens
-  'Theme/LightStatusGenericInformationStroke2Hover': string;
-
-  // Theme/LightStatusGenericInformationStroke2Pressed tokens
-  'Theme/LightStatusGenericInformationStroke2Pressed': string;
-
-  // Theme/LightStatusGenericInformationForegroundRest tokens
-  'Theme/LightStatusGenericInformationForegroundRest': string;
-
-  // Theme/LightStatusGenericInformationForegroundHover tokens
-  'Theme/LightStatusGenericInformationForegroundHover': string;
-
-  // Theme/LightStatusGenericInformationForegroundPressed tokens
-  'Theme/LightStatusGenericInformationForegroundPressed': string;
-
-  // Theme/LightStatusSevereBackground1Rest tokens
-  'Theme/LightStatusSevereBackground1Rest': string;
-
-  // Theme/LightStatusSevereBackground3Rest tokens
-  'Theme/LightStatusSevereBackground3Rest': string;
-
-  // Theme/LightStatusSevereForeground1Rest tokens
-  'Theme/LightStatusSevereForeground1Rest': string;
-
-  // Theme/LightStatusSevereForeground3Rest tokens
-  'Theme/LightStatusSevereForeground3Rest': string;
-
-  // Theme/LightStatusSevereStroke1Rest tokens
-  'Theme/LightStatusSevereStroke1Rest': string;
-
-  // Theme/LightStatusSevereStroke2Rest tokens
-  'Theme/LightStatusSevereStroke2Rest': string;
-
-  // Theme/LightShadowAmbient tokens
-  'Theme/LightShadowAmbient': string;
-  'Theme/LightShadowAmbient-lighter': string;
-  'Theme/LightShadowAmbient-darker': string;
-
-  // Theme/LightShadowBrand tokens
-  'Theme/LightShadowBrand-ambient': string;
-  'Theme/LightShadowBrand-key': string;
-
-  // Theme/LightShadowKey tokens
-  'Theme/LightShadowKey': string;
-  'Theme/LightShadowKey-lighter': string;
-  'Theme/LightShadowKey-darker': string;
-
-  // Theme/LightData vizForegroundLabelsCategorical tokens
-  'Theme/LightData vizForegroundLabelsCategorical': string;
-
-  // Theme/LightData vizForegroundLabelsData tokens
-  'Theme/LightData vizForegroundLabelsData': string;
-
-  // Theme/LightData vizForegroundLabelsColorBlue tokens
-  'Theme/LightData vizForegroundLabelsColorBlue': string;
-
-  // Theme/LightData vizForegroundLabelsColorGray tokens
-  'Theme/LightData vizForegroundLabelsColorGray': string;
-
-  // Theme/LightData vizForegroundLabelsColorRed tokens
-  'Theme/LightData vizForegroundLabelsColorRed': string;
-
-  // Theme/LightData vizForegroundLabelsColorTeal tokens
-  'Theme/LightData vizForegroundLabelsColorTeal': string;
-
-  // Theme/LightData vizForegroundLabelsColorOcean tokens
-  'Theme/LightData vizForegroundLabelsColorOcean': string;
-
-  // Theme/LightData vizForegroundLabelsColorGreen tokens
-  'Theme/LightData vizForegroundLabelsColorGreen': string;
-
-  // Theme/LightData vizForegroundLabelsColorYellow300 tokens
-  'Theme/LightData vizForegroundLabelsColorYellow300': string;
-
-  // Theme/LightData vizForegroundLabelsColorBlue400 tokens
-  'Theme/LightData vizForegroundLabelsColorBlue400': string;
-
-  // Theme/LightData vizForegroundLabelsColorGray400 tokens
-  'Theme/LightData vizForegroundLabelsColorGray400': string;
-
-  // Theme/LightData vizForegroundLabelsColorRed400 tokens
-  'Theme/LightData vizForegroundLabelsColorRed400': string;
-
-  // Theme/LightData vizForegroundLabelsColorTeal300 tokens
-  'Theme/LightData vizForegroundLabelsColorTeal300': string;
-
-  // Theme/LightData vizForegroundLabelsColorRed300 tokens
-  'Theme/LightData vizForegroundLabelsColorRed300': string;
-
-  // Theme/LightData vizForegroundLabelsColorTeal400 tokens
-  'Theme/LightData vizForegroundLabelsColorTeal400': string;
-
-  // Theme/LightData vizForegroundLabelsColorOcean400 tokens
-  'Theme/LightData vizForegroundLabelsColorOcean400': string;
-
-  // Theme/LightData vizForegroundLabelsColorGreen400 tokens
-  'Theme/LightData vizForegroundLabelsColorGreen400': string;
-
-  // Theme/LightData vizForegroundLabelsColorYellow400 tokens
-  'Theme/LightData vizForegroundLabelsColorYellow400': string;
-
-  // Theme/LightData vizForegroundLabelsColorGreen300 tokens
-  'Theme/LightData vizForegroundLabelsColorGreen300': string;
-
-  // Theme/LightData vizForegroundLabelsColorGray300 tokens
-  'Theme/LightData vizForegroundLabelsColorGray300': string;
-
-  // Theme/LightData vizForegroundLabelsColorBlue200 tokens
-  'Theme/LightData vizForegroundLabelsColorBlue200': string;
-
-  // Theme/LightData vizForegroundLabelsColorOcean200 tokens
-  'Theme/LightData vizForegroundLabelsColorOcean200': string;
-
-  // Theme/LightData vizForegroundAccessibilityText dark bkgd tokens
-  'Theme/LightData vizForegroundAccessibilityText dark bkgd': string;
-
-  // Theme/LightData vizForegroundAccessibilityText light bkgd tokens
-  'Theme/LightData vizForegroundAccessibilityText light bkgd': string;
-
-  // Theme/LightData vizForegroundKPI CardText dark bkgd tokens
-  'Theme/LightData vizForegroundKPI CardText dark bkgd': string;
-
-  // Theme/LightData vizForegroundKPI CardText light bkgd tokens
-  'Theme/LightData vizForegroundKPI CardText light bkgd': string;
-
-  // Theme/LightData vizStrokeGridline tokens
-  'Theme/LightData vizStrokeGridline': string;
-
-  // Theme/LightData vizStrokeAxis tokens
-  'Theme/LightData vizStrokeAxis-Target-Benchmark': string;
-
-  // Theme/LightData vizStrokeColorBlue tokens
-  'Theme/LightData vizStrokeColorBlue': string;
-
-  // Theme/LightData vizStrokeColorBlue400 tokens
-  'Theme/LightData vizStrokeColorBlue400': string;
-
-  // Theme/LightData vizStrokeColorGray tokens
-  'Theme/LightData vizStrokeColorGray': string;
-
-  // Theme/LightData vizStrokeColorGray400 tokens
-  'Theme/LightData vizStrokeColorGray400': string;
-
-  // Theme/LightData vizStrokeColorRed tokens
-  'Theme/LightData vizStrokeColorRed': string;
-
-  // Theme/LightData vizStrokeColorRed300 tokens
-  'Theme/LightData vizStrokeColorRed300': string;
-
-  // Theme/LightData vizStrokeColorRed400 tokens
-  'Theme/LightData vizStrokeColorRed400': string;
-
-  // Theme/LightData vizStrokeColorTeal tokens
-  'Theme/LightData vizStrokeColorTeal': string;
-
-  // Theme/LightData vizStrokeColorTeal300 tokens
-  'Theme/LightData vizStrokeColorTeal300': string;
-
-  // Theme/LightData vizStrokeColorTeal400 tokens
-  'Theme/LightData vizStrokeColorTeal400': string;
-
-  // Theme/LightData vizStrokeColorOcean tokens
-  'Theme/LightData vizStrokeColorOcean': string;
-
-  // Theme/LightData vizStrokeColorOcean400 tokens
-  'Theme/LightData vizStrokeColorOcean400': string;
-
-  // Theme/LightData vizStrokeColorGreen tokens
-  'Theme/LightData vizStrokeColorGreen': string;
-
-  // Theme/LightData vizStrokeColorGreen300 tokens
-  'Theme/LightData vizStrokeColorGreen300': string;
-
-  // Theme/LightData vizStrokeColorGreen400 tokens
-  'Theme/LightData vizStrokeColorGreen400': string;
-
-  // Theme/LightData vizStrokeColorYellow300 tokens
-  'Theme/LightData vizStrokeColorYellow300': string;
-
-  // Theme/LightData vizStrokeColorYellow400 tokens
-  'Theme/LightData vizStrokeColorYellow400': string;
-
-  // Theme/LightData vizStrokeColorGray300 tokens
-  'Theme/LightData vizStrokeColorGray300': string;
-
-  // Theme/LightData vizStrokeColorBlue200 tokens
-  'Theme/LightData vizStrokeColorBlue200': string;
-
-  // Theme/LightData vizStrokeColorOcean200 tokens
-  'Theme/LightData vizStrokeColorOcean200': string;
-
-  // Theme/LightData vizStrokeColorYellow tokens
-  'Theme/LightData vizStrokeColorYellow': string;
-
-  // Theme/LightData vizStrokeTrend tokens
-  'Theme/LightData vizStrokeTrend-Average': string;
-
-  // Theme/LightData vizStrokeAccessible outline tokens
-  'Theme/LightData vizStrokeAccessible outline': string;
-
-  // Theme/LightData vizSemanticForegroundLight bkgdPositive tokens
-  'Theme/LightData vizSemanticForegroundLight bkgdPositive': string;
-
-  // Theme/LightData vizSemanticForegroundLight bkgdNegative tokens
-  'Theme/LightData vizSemanticForegroundLight bkgdNegative': string;
-
-  // Theme/LightData vizSemanticForegroundLight bkgdNotice tokens
-  'Theme/LightData vizSemanticForegroundLight bkgdNotice': string;
-
-  // Theme/LightData vizSemanticForegroundDark bkgdPositive tokens
-  'Theme/LightData vizSemanticForegroundDark bkgdPositive': string;
-
-  // Theme/LightData vizSemanticForegroundDark bkgdNegative tokens
-  'Theme/LightData vizSemanticForegroundDark bkgdNegative': string;
-
-  // Theme/LightData vizSemanticForegroundDark bkgdNotice tokens
-  'Theme/LightData vizSemanticForegroundDark bkgdNotice': string;
-
-  // Theme/LightData vizSemanticStrokeLight bkgdPositive tokens
-  'Theme/LightData vizSemanticStrokeLight bkgdPositive': string;
-
-  // Theme/LightData vizSemanticStrokeLight bkgdNegative tokens
-  'Theme/LightData vizSemanticStrokeLight bkgdNegative': string;
-
-  // Theme/LightData vizSemanticStrokeLight bkgdNotice tokens
-  'Theme/LightData vizSemanticStrokeLight bkgdNotice': string;
-
-  // Theme/LightData vizSemanticStrokeDark bkgdPositive tokens
-  'Theme/LightData vizSemanticStrokeDark bkgdPositive': string;
-
-  // Theme/LightData vizSemanticStrokeDark bkgdNegative tokens
-  'Theme/LightData vizSemanticStrokeDark bkgdNegative': string;
-
-  // Theme/LightData vizSemanticStrokeDark bkgdNotice tokens
-  'Theme/LightData vizSemanticStrokeDark bkgdNotice': string;
-
-  // Theme/LightData vizSemanticBackgroundPositive tokens
-  'Theme/LightData vizSemanticBackgroundPositive': string;
-
-  // Theme/LightData vizSemanticBackgroundNegative tokens
-  'Theme/LightData vizSemanticBackgroundNegative': string;
-
-  // Theme/LightData vizSemanticBackgroundNotice tokens
-  'Theme/LightData vizSemanticBackgroundNotice': string;
-
-  // Theme/LightData vizBackgroundCoreBlue tokens
-  'Theme/LightData vizBackgroundCoreBlue': string;
-
-  // Theme/LightData vizBackgroundCoreGray tokens
-  'Theme/LightData vizBackgroundCoreGray': string;
-
-  // Theme/LightData vizBackgroundCoreRed tokens
-  'Theme/LightData vizBackgroundCoreRed': string;
-
-  // Theme/LightData vizBackgroundCoreTeal tokens
-  'Theme/LightData vizBackgroundCoreTeal': string;
-
-  // Theme/LightData vizBackgroundCoreOcean tokens
-  'Theme/LightData vizBackgroundCoreOcean': string;
-
-  // Theme/LightData vizBackgroundCoreGreen tokens
-  'Theme/LightData vizBackgroundCoreGreen': string;
-
-  // Theme/LightData vizBackgroundCoreYellow tokens
-  'Theme/LightData vizBackgroundCoreYellow': string;
-
-  // Theme/LightData vizBackgroundSequentialBlue400 tokens
-  'Theme/LightData vizBackgroundSequentialBlue400': string;
-
-  // Theme/LightData vizBackgroundSequentialGray400 tokens
-  'Theme/LightData vizBackgroundSequentialGray400': string;
-
-  // Theme/LightData vizBackgroundSequentialRed300 tokens
-  'Theme/LightData vizBackgroundSequentialRed300': string;
-
-  // Theme/LightData vizBackgroundSequentialRed400 tokens
-  'Theme/LightData vizBackgroundSequentialRed400': string;
-
-  // Theme/LightData vizBackgroundSequentialTeal300 tokens
-  'Theme/LightData vizBackgroundSequentialTeal300': string;
-
-  // Theme/LightData vizBackgroundSequentialTeal400 tokens
-  'Theme/LightData vizBackgroundSequentialTeal400': string;
-
-  // Theme/LightData vizBackgroundSequentialOcean400 tokens
-  'Theme/LightData vizBackgroundSequentialOcean400': string;
-
-  // Theme/LightData vizBackgroundSequentialGreen300 tokens
-  'Theme/LightData vizBackgroundSequentialGreen300': string;
-
-  // Theme/LightData vizBackgroundSequentialGreen400 tokens
-  'Theme/LightData vizBackgroundSequentialGreen400': string;
-
-  // Theme/LightData vizBackgroundSequentialYellow300 tokens
-  'Theme/LightData vizBackgroundSequentialYellow300': string;
-
-  // Theme/LightData vizBackgroundSequentialYellow400 tokens
-  'Theme/LightData vizBackgroundSequentialYellow400': string;
-
-  // Theme/LightData vizBackgroundSequentialBlue300 tokens
-  'Theme/LightData vizBackgroundSequentialBlue300': string;
-
-  // Theme/LightData vizBackgroundSequentialBlue200 tokens
-  'Theme/LightData vizBackgroundSequentialBlue200': string;
-
-  // Theme/LightData vizBackgroundSequentialBlue100 tokens
-  'Theme/LightData vizBackgroundSequentialBlue100': string;
-
-  // Theme/LightData vizBackgroundSequentialGray300 tokens
-  'Theme/LightData vizBackgroundSequentialGray300': string;
-
-  // Theme/LightData vizBackgroundSequentialGray200 tokens
-  'Theme/LightData vizBackgroundSequentialGray200': string;
-
-  // Theme/LightData vizBackgroundSequentialGray100 tokens
-  'Theme/LightData vizBackgroundSequentialGray100': string;
-
-  // Theme/LightData vizBackgroundSequentialRed200 tokens
-  'Theme/LightData vizBackgroundSequentialRed200': string;
-
-  // Theme/LightData vizBackgroundSequentialRed100 tokens
-  'Theme/LightData vizBackgroundSequentialRed100': string;
-
-  // Theme/LightData vizBackgroundSequentialTeal200 tokens
-  'Theme/LightData vizBackgroundSequentialTeal200': string;
-
-  // Theme/LightData vizBackgroundSequentialTeal100 tokens
-  'Theme/LightData vizBackgroundSequentialTeal100': string;
-
-  // Theme/LightData vizBackgroundSequentialOcean300 tokens
-  'Theme/LightData vizBackgroundSequentialOcean300': string;
-
-  // Theme/LightData vizBackgroundSequentialOcean200 tokens
-  'Theme/LightData vizBackgroundSequentialOcean200': string;
-
-  // Theme/LightData vizBackgroundSequentialOcean100 tokens
-  'Theme/LightData vizBackgroundSequentialOcean100': string;
-
-  // Theme/LightData vizBackgroundSequentialGreen200 tokens
-  'Theme/LightData vizBackgroundSequentialGreen200': string;
-
-  // Theme/LightData vizBackgroundSequentialGreen100 tokens
-  'Theme/LightData vizBackgroundSequentialGreen100': string;
-
-  // Theme/LightData vizBackgroundSequentialYellow200 tokens
-  'Theme/LightData vizBackgroundSequentialYellow200': string;
-
-  // Theme/LightData vizBackgroundSequentialYellow100 tokens
-  'Theme/LightData vizBackgroundSequentialYellow100': string;
-
-  // Theme/LightData vizBackgroundNeutralBlack tokens
-  'Theme/LightData vizBackgroundNeutralBlack': string;
-
-  // Theme/LightControl logicTheme switch tokens
-  'Theme/LightControl logicTheme switch': string;
-
-  // Theme/DarkNeutralBackground1Rest tokens
-  'Theme/DarkNeutralBackground1Rest': string;
-
-  // Theme/DarkNeutralBackground1Hover tokens
-  'Theme/DarkNeutralBackground1Hover': string;
-
-  // Theme/DarkNeutralBackground1Pressed tokens
-  'Theme/DarkNeutralBackground1Pressed': string;
-
-  // Theme/DarkNeutralBackground1Selected tokens
-  'Theme/DarkNeutralBackground1Selected': string;
-
-  // Theme/DarkNeutralBackground2Rest tokens
-  'Theme/DarkNeutralBackground2Rest': string;
-
-  // Theme/DarkNeutralBackground3Rest tokens
-  'Theme/DarkNeutralBackground3Rest': string;
-
-  // Theme/DarkNeutralBackground3Hover tokens
-  'Theme/DarkNeutralBackground3Hover': string;
-
-  // Theme/DarkNeutralBackground3Pressed tokens
-  'Theme/DarkNeutralBackground3Pressed': string;
-
-  // Theme/DarkNeutralBackground4Rest tokens
-  'Theme/DarkNeutralBackground4Rest': string;
-
-  // Theme/DarkNeutralBackground4Hover tokens
-  'Theme/DarkNeutralBackground4Hover': string;
-
-  // Theme/DarkNeutralBackground4Pressed tokens
-  'Theme/DarkNeutralBackground4Pressed': string;
-
-  // Theme/DarkNeutralBackground5Rest tokens
-  'Theme/DarkNeutralBackground5Rest': string;
-
-  // Theme/DarkNeutralBackground6Rest tokens
-  'Theme/DarkNeutralBackground6Rest': string;
-
-  // Theme/DarkNeutralBackgroundInvertedRest tokens
-  'Theme/DarkNeutralBackgroundInvertedRest': string;
-
-  // Theme/DarkNeutralBackgroundInvertedDisabledRest tokens
-  'Theme/DarkNeutralBackgroundInvertedDisabledRest': string;
-
-  // Theme/DarkNeutralBackgroundAlpha1Rest tokens
-  'Theme/DarkNeutralBackgroundAlpha1Rest': string;
-
-  // Theme/DarkNeutralBackgroundAlpha2Rest tokens
-  'Theme/DarkNeutralBackgroundAlpha2Rest': string;
-
-  // Theme/DarkNeutralBackgroundStaticRest tokens
-  'Theme/DarkNeutralBackgroundStaticRest': string;
-
-  // Theme/DarkNeutralBackgroundSubtleRest tokens
-  'Theme/DarkNeutralBackgroundSubtleRest': string;
-
-  // Theme/DarkNeutralBackgroundSubtleHover tokens
-  'Theme/DarkNeutralBackgroundSubtleHover': string;
-
-  // Theme/DarkNeutralBackgroundSubtlePressed tokens
-  'Theme/DarkNeutralBackgroundSubtlePressed': string;
-
-  // Theme/DarkNeutralBackgroundSubtleSelected tokens
-  'Theme/DarkNeutralBackgroundSubtleSelected': string;
-
-  // Theme/DarkNeutralBackgroundSubtleLight alphaHover tokens
-  'Theme/DarkNeutralBackgroundSubtleLight alphaHover': string;
-
-  // Theme/DarkNeutralBackgroundSubtleLight alphaPressed tokens
-  'Theme/DarkNeutralBackgroundSubtleLight alphaPressed': string;
-
-  // Theme/DarkNeutralBackgroundSubtleLight alphaSelected tokens
-  'Theme/DarkNeutralBackgroundSubtleLight alphaSelected': string;
-
-  // Theme/DarkNeutralBackgroundSubtleInvertedRest tokens
-  'Theme/DarkNeutralBackgroundSubtleInvertedRest': string;
-
-  // Theme/DarkNeutralBackgroundSubtleInvertedHover tokens
-  'Theme/DarkNeutralBackgroundSubtleInvertedHover': string;
-
-  // Theme/DarkNeutralBackgroundSubtleInvertedPressed tokens
-  'Theme/DarkNeutralBackgroundSubtleInvertedPressed': string;
-
-  // Theme/DarkNeutralBackgroundSubtleInvertedSelected tokens
-  'Theme/DarkNeutralBackgroundSubtleInvertedSelected': string;
-
-  // Theme/DarkNeutralBackgroundTransparentRest tokens
-  'Theme/DarkNeutralBackgroundTransparentRest': string;
-
-  // Theme/DarkNeutralBackgroundTransparentHover tokens
-  'Theme/DarkNeutralBackgroundTransparentHover': string;
-
-  // Theme/DarkNeutralBackgroundTransparentPressed tokens
-  'Theme/DarkNeutralBackgroundTransparentPressed': string;
-
-  // Theme/DarkNeutralBackgroundTransparentSelected tokens
-  'Theme/DarkNeutralBackgroundTransparentSelected': string;
-
-  // Theme/DarkNeutralBackgroundDisabledRest tokens
-  'Theme/DarkNeutralBackgroundDisabledRest': string;
-
-  // Theme/DarkNeutralBackgroundStencil1Rest tokens
-  'Theme/DarkNeutralBackgroundStencil1Rest': string;
-
-  // Theme/DarkNeutralBackgroundStencil2Rest tokens
-  'Theme/DarkNeutralBackgroundStencil2Rest': string;
-
-  // Theme/DarkNeutralBackgroundOverlayRest tokens
-  'Theme/DarkNeutralBackgroundOverlayRest': string;
-
-  // Theme/DarkNeutralBackgroundOverlayScrollbarRest tokens
-  'Theme/DarkNeutralBackgroundOverlayScrollbarRest': string;
-
-  // Theme/DarkNeutralForeground1Rest primary text tokens
-  'Theme/DarkNeutralForeground1Rest primary text': string;
-
-  // Theme/DarkNeutralForeground1Hover tokens
-  'Theme/DarkNeutralForeground1Hover': string;
-
-  // Theme/DarkNeutralForeground1Pressed tokens
-  'Theme/DarkNeutralForeground1Pressed': string;
-
-  // Theme/DarkNeutralForeground1Selected tokens
-  'Theme/DarkNeutralForeground1Selected': string;
-
-  // Theme/DarkNeutralForeground2Rest secondary text tokens
-  'Theme/DarkNeutralForeground2Rest secondary text': string;
-
-  // Theme/DarkNeutralForeground2Hover tokens
-  'Theme/DarkNeutralForeground2Hover': string;
-
-  // Theme/DarkNeutralForeground2Pressed tokens
-  'Theme/DarkNeutralForeground2Pressed': string;
-
-  // Theme/DarkNeutralForeground2Selected tokens
-  'Theme/DarkNeutralForeground2Selected': string;
-
-  // Theme/DarkNeutralForeground2BrandHover tokens
-  'Theme/DarkNeutralForeground2BrandHover': string;
-
-  // Theme/DarkNeutralForeground2BrandPressed tokens
-  'Theme/DarkNeutralForeground2BrandPressed': string;
-
-  // Theme/DarkNeutralForeground2BrandSelected tokens
-  'Theme/DarkNeutralForeground2BrandSelected': string;
-
-  // Theme/DarkNeutralForeground2BrandRest tokens
-  'Theme/DarkNeutralForeground2BrandRest': string;
-
-  // Theme/DarkNeutralForeground2LinkRest tokens
-  'Theme/DarkNeutralForeground2LinkRest': string;
-
-  // Theme/DarkNeutralForeground2LinkHover tokens
-  'Theme/DarkNeutralForeground2LinkHover': string;
-
-  // Theme/DarkNeutralForeground2LinkPressed tokens
-  'Theme/DarkNeutralForeground2LinkPressed': string;
-
-  // Theme/DarkNeutralForeground2LinkSelected tokens
-  'Theme/DarkNeutralForeground2LinkSelected': string;
-
-  // Theme/DarkNeutralForeground4Rest tokens
-  'Theme/DarkNeutralForeground4Rest': string;
-
-  // Theme/DarkNeutralForegroundDisabled2Rest tokens
-  'Theme/DarkNeutralForegroundDisabled2Rest': string;
-
-  // Theme/DarkNeutralForegroundDisabledRest tokens
-  'Theme/DarkNeutralForegroundDisabledRest': string;
-
-  // Theme/DarkNeutralForegroundStaticInvertedRest tokens
-  'Theme/DarkNeutralForegroundStaticInvertedRest': string;
-
-  // Theme/DarkNeutralForegroundInverted1Rest tokens
-  'Theme/DarkNeutralForegroundInverted1Rest': string;
-
-  // Theme/DarkNeutralForegroundInverted1Hover tokens
-  'Theme/DarkNeutralForegroundInverted1Hover': string;
-
-  // Theme/DarkNeutralForegroundInverted1Pressed tokens
-  'Theme/DarkNeutralForegroundInverted1Pressed': string;
-
-  // Theme/DarkNeutralForegroundInverted1Selected tokens
-  'Theme/DarkNeutralForegroundInverted1Selected': string;
-
-  // Theme/DarkNeutralForegroundInverted2Rest tokens
-  'Theme/DarkNeutralForegroundInverted2Rest': string;
-
-  // Theme/DarkNeutralForegroundInvertedDisabledRest tokens
-  'Theme/DarkNeutralForegroundInvertedDisabledRest': string;
-
-  // Theme/DarkNeutralForegroundInvertedLinkRest tokens
-  'Theme/DarkNeutralForegroundInvertedLinkRest': string;
-
-  // Theme/DarkNeutralForegroundInvertedLinkHover tokens
-  'Theme/DarkNeutralForegroundInvertedLinkHover': string;
-
-  // Theme/DarkNeutralForegroundInvertedLinkPressed tokens
-  'Theme/DarkNeutralForegroundInvertedLinkPressed': string;
-
-  // Theme/DarkNeutralForegroundInvertedLinkSelected tokens
-  'Theme/DarkNeutralForegroundInvertedLinkSelected': string;
-
-  // Theme/DarkNeutralForegroundOn BrandRest tokens
-  'Theme/DarkNeutralForegroundOn BrandRest': string;
-
-  // Theme/DarkNeutralStroke1Rest tokens
-  'Theme/DarkNeutralStroke1Rest': string;
-
-  // Theme/DarkNeutralStroke1Hover tokens
-  'Theme/DarkNeutralStroke1Hover': string;
-
-  // Theme/DarkNeutralStroke1Pressed tokens
-  'Theme/DarkNeutralStroke1Pressed': string;
-
-  // Theme/DarkNeutralStroke1Selected tokens
-  'Theme/DarkNeutralStroke1Selected': string;
-
-  // Theme/DarkNeutralStroke2Rest tokens
-  'Theme/DarkNeutralStroke2Rest': string;
-
-  // Theme/DarkNeutralStroke3Rest tokens
-  'Theme/DarkNeutralStroke3Rest': string;
-
-  // Theme/DarkNeutralStrokeAlpha1Rest tokens
-  'Theme/DarkNeutralStrokeAlpha1Rest': string;
-
-  // Theme/DarkNeutralStrokeAlpha2Rest tokens
-  'Theme/DarkNeutralStrokeAlpha2Rest': string;
-
-  // Theme/DarkNeutralStrokeSubtleRest tokens
-  'Theme/DarkNeutralStrokeSubtleRest': string;
-
-  // Theme/DarkNeutralStrokeOn Brand1Rest tokens
-  'Theme/DarkNeutralStrokeOn Brand1Rest': string;
-
-  // Theme/DarkNeutralStrokeOn Brand2Rest tokens
-  'Theme/DarkNeutralStrokeOn Brand2Rest': string;
-
-  // Theme/DarkNeutralStrokeAccessibleRest tokens
-  'Theme/DarkNeutralStrokeAccessibleRest': string;
-
-  // Theme/DarkNeutralStrokeAccessibleHover tokens
-  'Theme/DarkNeutralStrokeAccessibleHover': string;
-
-  // Theme/DarkNeutralStrokeAccessiblePressed tokens
-  'Theme/DarkNeutralStrokeAccessiblePressed': string;
-
-  // Theme/DarkNeutralStrokeAccessibleSelected tokens
-  'Theme/DarkNeutralStrokeAccessibleSelected': string;
-
-  // Theme/DarkNeutralStrokeFocus1Rest tokens
-  'Theme/DarkNeutralStrokeFocus1Rest': string;
-
-  // Theme/DarkNeutralStrokeFocus2Rest tokens
-  'Theme/DarkNeutralStrokeFocus2Rest': string;
-
-  // Theme/DarkNeutralStrokeTransparentInteractiveRest tokens
-  'Theme/DarkNeutralStrokeTransparentInteractiveRest': string;
-
-  // Theme/DarkNeutralStrokeTransparentDisabledRest tokens
-  'Theme/DarkNeutralStrokeTransparentDisabledRest': string;
-
-  // Theme/DarkNeutralStrokeTransparentRest tokens
-  'Theme/DarkNeutralStrokeTransparentRest': string;
-
-  // Theme/DarkNeutralStrokeDisabledRest tokens
-  'Theme/DarkNeutralStrokeDisabledRest': string;
-
-  // Theme/DarkNeutralStrokeDisabledInvertedRest tokens
-  'Theme/DarkNeutralStrokeDisabledInvertedRest': string;
-
-  // Theme/DarkBrandBackground1Rest tokens
-  'Theme/DarkBrandBackground1Rest': string;
-
-  // Theme/DarkBrandBackground1Hover tokens
-  'Theme/DarkBrandBackground1Hover': string;
-
-  // Theme/DarkBrandBackground1Pressed tokens
-  'Theme/DarkBrandBackground1Pressed': string;
-
-  // Theme/DarkBrandBackground1Selected tokens
-  'Theme/DarkBrandBackground1Selected': string;
-
-  // Theme/DarkBrandBackground2Rest tokens
-  'Theme/DarkBrandBackground2Rest': string;
-
-  // Theme/DarkBrandBackground2Hover tokens
-  'Theme/DarkBrandBackground2Hover': string;
-
-  // Theme/DarkBrandBackground2Pressed tokens
-  'Theme/DarkBrandBackground2Pressed': string;
-
-  // Theme/DarkBrandBackground3Rest tokens
-  'Theme/DarkBrandBackground3Rest': string;
-
-  // Theme/DarkBrandBackgroundInvertedRest tokens
-  'Theme/DarkBrandBackgroundInvertedRest': string;
-
-  // Theme/DarkBrandBackgroundInvertedHover tokens
-  'Theme/DarkBrandBackgroundInvertedHover': string;
-
-  // Theme/DarkBrandBackgroundInvertedPressed tokens
-  'Theme/DarkBrandBackgroundInvertedPressed': string;
-
-  // Theme/DarkBrandBackgroundInvertedSelected tokens
-  'Theme/DarkBrandBackgroundInvertedSelected': string;
-
-  // Theme/DarkBrandBackgroundStaticRest tokens
-  'Theme/DarkBrandBackgroundStaticRest': string;
-
-  // Theme/DarkBrandBackgroundCompoundRest tokens
-  'Theme/DarkBrandBackgroundCompoundRest': string;
-
-  // Theme/DarkBrandBackgroundCompoundHover tokens
-  'Theme/DarkBrandBackgroundCompoundHover': string;
-
-  // Theme/DarkBrandBackgroundCompoundPressed tokens
-  'Theme/DarkBrandBackgroundCompoundPressed': string;
-
-  // Theme/DarkBrandForeground1Rest tokens
-  'Theme/DarkBrandForeground1Rest': string;
-
-  // Theme/DarkBrandForeground1Hover tokens
-  'Theme/DarkBrandForeground1Hover': string;
-
-  // Theme/DarkBrandForeground1Pressed tokens
-  'Theme/DarkBrandForeground1Pressed': string;
-
-  // Theme/DarkBrandForeground1Selected tokens
-  'Theme/DarkBrandForeground1Selected': string;
-
-  // Theme/DarkBrandForeground2Rest tokens
-  'Theme/DarkBrandForeground2Rest': string;
-
-  // Theme/DarkBrandForeground2Hover tokens
-  'Theme/DarkBrandForeground2Hover': string;
-
-  // Theme/DarkBrandForeground2Pressed tokens
-  'Theme/DarkBrandForeground2Pressed': string;
-
-  // Theme/DarkBrandForegroundLinkRest tokens
-  'Theme/DarkBrandForegroundLinkRest': string;
-
-  // Theme/DarkBrandForegroundLinkHover tokens
-  'Theme/DarkBrandForegroundLinkHover': string;
-
-  // Theme/DarkBrandForegroundLinkPressed tokens
-  'Theme/DarkBrandForegroundLinkPressed': string;
-
-  // Theme/DarkBrandForegroundLinkSelected tokens
-  'Theme/DarkBrandForegroundLinkSelected': string;
-
-  // Theme/DarkBrandForegroundInvertedRest tokens
-  'Theme/DarkBrandForegroundInvertedRest': string;
-
-  // Theme/DarkBrandForegroundInvertedHover tokens
-  'Theme/DarkBrandForegroundInvertedHover': string;
-
-  // Theme/DarkBrandForegroundInvertedPressed tokens
-  'Theme/DarkBrandForegroundInvertedPressed': string;
-
-  // Theme/DarkBrandForegroundOn LightRest tokens
-  'Theme/DarkBrandForegroundOn LightRest': string;
-
-  // Theme/DarkBrandForegroundOn LightHover tokens
-  'Theme/DarkBrandForegroundOn LightHover': string;
-
-  // Theme/DarkBrandForegroundOn LightPressed tokens
-  'Theme/DarkBrandForegroundOn LightPressed': string;
-
-  // Theme/DarkBrandForegroundOn LightSelected tokens
-  'Theme/DarkBrandForegroundOn LightSelected': string;
-
-  // Theme/DarkBrandForegroundCompoundRest tokens
-  'Theme/DarkBrandForegroundCompoundRest': string;
-
-  // Theme/DarkBrandForegroundCompoundHover tokens
-  'Theme/DarkBrandForegroundCompoundHover': string;
-
-  // Theme/DarkBrandForegroundCompoundPressed tokens
-  'Theme/DarkBrandForegroundCompoundPressed': string;
-
-  // Theme/DarkBrandStroke1Rest tokens
-  'Theme/DarkBrandStroke1Rest': string;
-
-  // Theme/DarkBrandStroke1Hover tokens
-  'Theme/DarkBrandStroke1Hover': string;
-
-  // Theme/DarkBrandStroke1Pressed tokens
-  'Theme/DarkBrandStroke1Pressed': string;
-
-  // Theme/DarkBrandStroke1Selected tokens
-  'Theme/DarkBrandStroke1Selected': string;
-
-  // Theme/DarkBrandStroke2Rest tokens
-  'Theme/DarkBrandStroke2Rest': string;
-
-  // Theme/DarkBrandStroke2ContrastRest tokens
-  'Theme/DarkBrandStroke2ContrastRest': string;
-
-  // Theme/DarkBrandStroke3Rest tokens
-  'Theme/DarkBrandStroke3Rest': string;
-
-  // Theme/DarkBrandStrokeCompoundRest tokens
-  'Theme/DarkBrandStrokeCompoundRest': string;
-
-  // Theme/DarkBrandStrokeCompoundHover tokens
-  'Theme/DarkBrandStrokeCompoundHover': string;
-
-  // Theme/DarkBrandStrokeCompoundPressed tokens
-  'Theme/DarkBrandStrokeCompoundPressed': string;
-
-  // Theme/DarkStatusDangerBackground1Rest tokens
-  'Theme/DarkStatusDangerBackground1Rest': string;
-
-  // Theme/DarkStatusDangerBackground3Rest tokens
-  'Theme/DarkStatusDangerBackground3Rest': string;
-
-  // Theme/DarkStatusDangerForeground1Rest tokens
-  'Theme/DarkStatusDangerForeground1Rest': string;
-
-  // Theme/DarkStatusDangerForeground3Rest tokens
-  'Theme/DarkStatusDangerForeground3Rest': string;
-
-  // Theme/DarkStatusDangerStroke1Rest tokens
-  'Theme/DarkStatusDangerStroke1Rest': string;
-
-  // Theme/DarkStatusDangerStroke2Rest tokens
-  'Theme/DarkStatusDangerStroke2Rest': string;
-
-  // Theme/DarkStatusSuccessBackground1Rest tokens
-  'Theme/DarkStatusSuccessBackground1Rest': string;
-
-  // Theme/DarkStatusSuccessBackground3Rest tokens
-  'Theme/DarkStatusSuccessBackground3Rest': string;
-
-  // Theme/DarkStatusSuccessForeground1Rest tokens
-  'Theme/DarkStatusSuccessForeground1Rest': string;
-
-  // Theme/DarkStatusSuccessForeground3Rest tokens
-  'Theme/DarkStatusSuccessForeground3Rest': string;
-
-  // Theme/DarkStatusSuccessStroke1Rest tokens
-  'Theme/DarkStatusSuccessStroke1Rest': string;
-
-  // Theme/DarkStatusSuccessStroke2Rest tokens
-  'Theme/DarkStatusSuccessStroke2Rest': string;
-
-  // Theme/DarkStatusWarningBackground1Rest tokens
-  'Theme/DarkStatusWarningBackground1Rest': string;
-
-  // Theme/DarkStatusWarningBackground3Rest tokens
-  'Theme/DarkStatusWarningBackground3Rest': string;
-
-  // Theme/DarkStatusWarningForeground1Rest tokens
-  'Theme/DarkStatusWarningForeground1Rest': string;
-
-  // Theme/DarkStatusWarningForeground3Rest tokens
-  'Theme/DarkStatusWarningForeground3Rest': string;
-
-  // Theme/DarkStatusWarningStroke1Rest tokens
-  'Theme/DarkStatusWarningStroke1Rest': string;
-
-  // Theme/DarkStatusWarningStroke2Rest tokens
-  'Theme/DarkStatusWarningStroke2Rest': string;
-
-  // Theme/DarkStatusOofForeground3Rest tokens
-  'Theme/DarkStatusOofForeground3Rest': string;
-
-  // Theme/DarkStatusAwayBackground3Rest tokens
-  'Theme/DarkStatusAwayBackground3Rest': string;
-
-  // Theme/DarkStatusAvailableForeground3Rest tokens
-  'Theme/DarkStatusAvailableForeground3Rest': string;
-
-  // Theme/DarkStatusGenericAnchorBackground2Rest tokens
-  'Theme/DarkStatusGenericAnchorBackground2Rest': string;
-
-  // Theme/DarkStatusGenericAnchorForeground2Rest tokens
-  'Theme/DarkStatusGenericAnchorForeground2Rest': string;
-
-  // Theme/DarkStatusGenericAnchorStrokeActiveRest tokens
-  'Theme/DarkStatusGenericAnchorStrokeActiveRest': string;
-
-  // Theme/DarkStatusGenericInformationBackground1Rest tokens
-  'Theme/DarkStatusGenericInformationBackground1Rest': string;
-
-  // Theme/DarkStatusGenericInformationBackground1Hover tokens
-  'Theme/DarkStatusGenericInformationBackground1Hover': string;
-
-  // Theme/DarkStatusGenericInformationBackground1Pressed tokens
-  'Theme/DarkStatusGenericInformationBackground1Pressed': string;
-
-  // Theme/DarkStatusGenericInformationStroke1Rest tokens
-  'Theme/DarkStatusGenericInformationStroke1Rest': string;
-
-  // Theme/DarkStatusGenericInformationStroke2Rest tokens
-  'Theme/DarkStatusGenericInformationStroke2Rest': string;
-
-  // Theme/DarkStatusGenericInformationStroke2Hover tokens
-  'Theme/DarkStatusGenericInformationStroke2Hover': string;
-
-  // Theme/DarkStatusGenericInformationStroke2Pressed tokens
-  'Theme/DarkStatusGenericInformationStroke2Pressed': string;
-
-  // Theme/DarkStatusGenericInformationForegroundRest tokens
-  'Theme/DarkStatusGenericInformationForegroundRest': string;
-
-  // Theme/DarkStatusGenericInformationForegroundHover tokens
-  'Theme/DarkStatusGenericInformationForegroundHover': string;
-
-  // Theme/DarkStatusGenericInformationForegroundPressed tokens
-  'Theme/DarkStatusGenericInformationForegroundPressed': string;
-
-  // Theme/DarkStatusSevereBackground1Rest tokens
-  'Theme/DarkStatusSevereBackground1Rest': string;
-
-  // Theme/DarkStatusSevereBackground3Rest tokens
-  'Theme/DarkStatusSevereBackground3Rest': string;
-
-  // Theme/DarkStatusSevereForeground1Rest tokens
-  'Theme/DarkStatusSevereForeground1Rest': string;
-
-  // Theme/DarkStatusSevereForeground3Rest tokens
-  'Theme/DarkStatusSevereForeground3Rest': string;
-
-  // Theme/DarkStatusSevereStroke1Rest tokens
-  'Theme/DarkStatusSevereStroke1Rest': string;
-
-  // Theme/DarkStatusSevereStroke2Rest tokens
-  'Theme/DarkStatusSevereStroke2Rest': string;
-
-  // Theme/DarkShadowAmbient tokens
-  'Theme/DarkShadowAmbient': string;
-  'Theme/DarkShadowAmbient-lighter': string;
-  'Theme/DarkShadowAmbient-darker': string;
-
-  // Theme/DarkShadowBrand tokens
-  'Theme/DarkShadowBrand-ambient': string;
-  'Theme/DarkShadowBrand-key': string;
-
-  // Theme/DarkShadowKey tokens
-  'Theme/DarkShadowKey': string;
-  'Theme/DarkShadowKey-lighter': string;
-  'Theme/DarkShadowKey-darker': string;
-
-  // Theme/DarkData vizForegroundLabelsCategorical tokens
-  'Theme/DarkData vizForegroundLabelsCategorical': string;
-
-  // Theme/DarkData vizForegroundLabelsData tokens
-  'Theme/DarkData vizForegroundLabelsData': string;
-
-  // Theme/DarkData vizForegroundLabelsColorBlue tokens
-  'Theme/DarkData vizForegroundLabelsColorBlue': string;
-
-  // Theme/DarkData vizForegroundLabelsColorGray tokens
-  'Theme/DarkData vizForegroundLabelsColorGray': string;
-
-  // Theme/DarkData vizForegroundLabelsColorRed tokens
-  'Theme/DarkData vizForegroundLabelsColorRed': string;
-
-  // Theme/DarkData vizForegroundLabelsColorTeal tokens
-  'Theme/DarkData vizForegroundLabelsColorTeal': string;
-
-  // Theme/DarkData vizForegroundLabelsColorOcean tokens
-  'Theme/DarkData vizForegroundLabelsColorOcean': string;
-
-  // Theme/DarkData vizForegroundLabelsColorGreen tokens
-  'Theme/DarkData vizForegroundLabelsColorGreen': string;
-
-  // Theme/DarkData vizForegroundLabelsColorYellow300 tokens
-  'Theme/DarkData vizForegroundLabelsColorYellow300': string;
-
-  // Theme/DarkData vizForegroundLabelsColorBlue400 tokens
-  'Theme/DarkData vizForegroundLabelsColorBlue400': string;
-
-  // Theme/DarkData vizForegroundLabelsColorGray400 tokens
-  'Theme/DarkData vizForegroundLabelsColorGray400': string;
-
-  // Theme/DarkData vizForegroundLabelsColorRed400 tokens
-  'Theme/DarkData vizForegroundLabelsColorRed400': string;
-
-  // Theme/DarkData vizForegroundLabelsColorTeal300 tokens
-  'Theme/DarkData vizForegroundLabelsColorTeal300': string;
-
-  // Theme/DarkData vizForegroundLabelsColorRed300 tokens
-  'Theme/DarkData vizForegroundLabelsColorRed300': string;
-
-  // Theme/DarkData vizForegroundLabelsColorTeal400 tokens
-  'Theme/DarkData vizForegroundLabelsColorTeal400': string;
-
-  // Theme/DarkData vizForegroundLabelsColorOcean400 tokens
-  'Theme/DarkData vizForegroundLabelsColorOcean400': string;
-
-  // Theme/DarkData vizForegroundLabelsColorGreen400 tokens
-  'Theme/DarkData vizForegroundLabelsColorGreen400': string;
-
-  // Theme/DarkData vizForegroundLabelsColorYellow400 tokens
-  'Theme/DarkData vizForegroundLabelsColorYellow400': string;
-
-  // Theme/DarkData vizForegroundLabelsColorGreen300 tokens
-  'Theme/DarkData vizForegroundLabelsColorGreen300': string;
-
-  // Theme/DarkData vizForegroundLabelsColorGray300 tokens
-  'Theme/DarkData vizForegroundLabelsColorGray300': string;
-
-  // Theme/DarkData vizForegroundLabelsColorBlue200 tokens
-  'Theme/DarkData vizForegroundLabelsColorBlue200': string;
-
-  // Theme/DarkData vizForegroundLabelsColorOcean200 tokens
-  'Theme/DarkData vizForegroundLabelsColorOcean200': string;
-
-  // Theme/DarkData vizForegroundAccessibilityText dark bkgd tokens
-  'Theme/DarkData vizForegroundAccessibilityText dark bkgd': string;
-
-  // Theme/DarkData vizForegroundAccessibilityText light bkgd tokens
-  'Theme/DarkData vizForegroundAccessibilityText light bkgd': string;
-
-  // Theme/DarkData vizForegroundKPI CardText dark bkgd tokens
-  'Theme/DarkData vizForegroundKPI CardText dark bkgd': string;
-
-  // Theme/DarkData vizForegroundKPI CardText light bkgd tokens
-  'Theme/DarkData vizForegroundKPI CardText light bkgd': string;
-
-  // Theme/DarkData vizStrokeGridline tokens
-  'Theme/DarkData vizStrokeGridline': string;
-
-  // Theme/DarkData vizStrokeAxis tokens
-  'Theme/DarkData vizStrokeAxis-Target-Benchmark': string;
-
-  // Theme/DarkData vizStrokeColorBlue tokens
-  'Theme/DarkData vizStrokeColorBlue': string;
-
-  // Theme/DarkData vizStrokeColorBlue400 tokens
-  'Theme/DarkData vizStrokeColorBlue400': string;
-
-  // Theme/DarkData vizStrokeColorGray tokens
-  'Theme/DarkData vizStrokeColorGray': string;
-
-  // Theme/DarkData vizStrokeColorGray400 tokens
-  'Theme/DarkData vizStrokeColorGray400': string;
-
-  // Theme/DarkData vizStrokeColorRed tokens
-  'Theme/DarkData vizStrokeColorRed': string;
-
-  // Theme/DarkData vizStrokeColorRed300 tokens
-  'Theme/DarkData vizStrokeColorRed300': string;
-
-  // Theme/DarkData vizStrokeColorRed400 tokens
-  'Theme/DarkData vizStrokeColorRed400': string;
-
-  // Theme/DarkData vizStrokeColorTeal tokens
-  'Theme/DarkData vizStrokeColorTeal': string;
-
-  // Theme/DarkData vizStrokeColorTeal300 tokens
-  'Theme/DarkData vizStrokeColorTeal300': string;
-
-  // Theme/DarkData vizStrokeColorTeal400 tokens
-  'Theme/DarkData vizStrokeColorTeal400': string;
-
-  // Theme/DarkData vizStrokeColorOcean tokens
-  'Theme/DarkData vizStrokeColorOcean': string;
-
-  // Theme/DarkData vizStrokeColorOcean400 tokens
-  'Theme/DarkData vizStrokeColorOcean400': string;
-
-  // Theme/DarkData vizStrokeColorGreen tokens
-  'Theme/DarkData vizStrokeColorGreen': string;
-
-  // Theme/DarkData vizStrokeColorGreen300 tokens
-  'Theme/DarkData vizStrokeColorGreen300': string;
-
-  // Theme/DarkData vizStrokeColorGreen400 tokens
-  'Theme/DarkData vizStrokeColorGreen400': string;
-
-  // Theme/DarkData vizStrokeColorYellow300 tokens
-  'Theme/DarkData vizStrokeColorYellow300': string;
-
-  // Theme/DarkData vizStrokeColorYellow400 tokens
-  'Theme/DarkData vizStrokeColorYellow400': string;
-
-  // Theme/DarkData vizStrokeColorGray300 tokens
-  'Theme/DarkData vizStrokeColorGray300': string;
-
-  // Theme/DarkData vizStrokeColorBlue200 tokens
-  'Theme/DarkData vizStrokeColorBlue200': string;
-
-  // Theme/DarkData vizStrokeColorOcean200 tokens
-  'Theme/DarkData vizStrokeColorOcean200': string;
-
-  // Theme/DarkData vizStrokeColorYellow tokens
-  'Theme/DarkData vizStrokeColorYellow': string;
-
-  // Theme/DarkData vizStrokeTrend tokens
-  'Theme/DarkData vizStrokeTrend-Average': string;
-
-  // Theme/DarkData vizStrokeAccessible outline tokens
-  'Theme/DarkData vizStrokeAccessible outline': string;
-
-  // Theme/DarkData vizSemanticForegroundLight bkgdPositive tokens
-  'Theme/DarkData vizSemanticForegroundLight bkgdPositive': string;
-
-  // Theme/DarkData vizSemanticForegroundLight bkgdNegative tokens
-  'Theme/DarkData vizSemanticForegroundLight bkgdNegative': string;
-
-  // Theme/DarkData vizSemanticForegroundLight bkgdNotice tokens
-  'Theme/DarkData vizSemanticForegroundLight bkgdNotice': string;
-
-  // Theme/DarkData vizSemanticForegroundDark bkgdPositive tokens
-  'Theme/DarkData vizSemanticForegroundDark bkgdPositive': string;
-
-  // Theme/DarkData vizSemanticForegroundDark bkgdNegative tokens
-  'Theme/DarkData vizSemanticForegroundDark bkgdNegative': string;
-
-  // Theme/DarkData vizSemanticForegroundDark bkgdNotice tokens
-  'Theme/DarkData vizSemanticForegroundDark bkgdNotice': string;
-
-  // Theme/DarkData vizSemanticStrokeLight bkgdPositive tokens
-  'Theme/DarkData vizSemanticStrokeLight bkgdPositive': string;
-
-  // Theme/DarkData vizSemanticStrokeLight bkgdNegative tokens
-  'Theme/DarkData vizSemanticStrokeLight bkgdNegative': string;
-
-  // Theme/DarkData vizSemanticStrokeLight bkgdNotice tokens
-  'Theme/DarkData vizSemanticStrokeLight bkgdNotice': string;
-
-  // Theme/DarkData vizSemanticStrokeDark bkgdPositive tokens
-  'Theme/DarkData vizSemanticStrokeDark bkgdPositive': string;
-
-  // Theme/DarkData vizSemanticStrokeDark bkgdNegative tokens
-  'Theme/DarkData vizSemanticStrokeDark bkgdNegative': string;
-
-  // Theme/DarkData vizSemanticStrokeDark bkgdNotice tokens
-  'Theme/DarkData vizSemanticStrokeDark bkgdNotice': string;
-
-  // Theme/DarkData vizSemanticBackgroundPositive tokens
-  'Theme/DarkData vizSemanticBackgroundPositive': string;
-
-  // Theme/DarkData vizSemanticBackgroundNegative tokens
-  'Theme/DarkData vizSemanticBackgroundNegative': string;
-
-  // Theme/DarkData vizSemanticBackgroundNotice tokens
-  'Theme/DarkData vizSemanticBackgroundNotice': string;
-
-  // Theme/DarkData vizBackgroundCoreBlue tokens
-  'Theme/DarkData vizBackgroundCoreBlue': string;
-
-  // Theme/DarkData vizBackgroundCoreGray tokens
-  'Theme/DarkData vizBackgroundCoreGray': string;
-
-  // Theme/DarkData vizBackgroundCoreRed tokens
-  'Theme/DarkData vizBackgroundCoreRed': string;
-
-  // Theme/DarkData vizBackgroundCoreTeal tokens
-  'Theme/DarkData vizBackgroundCoreTeal': string;
-
-  // Theme/DarkData vizBackgroundCoreOcean tokens
-  'Theme/DarkData vizBackgroundCoreOcean': string;
-
-  // Theme/DarkData vizBackgroundCoreGreen tokens
-  'Theme/DarkData vizBackgroundCoreGreen': string;
-
-  // Theme/DarkData vizBackgroundCoreYellow tokens
-  'Theme/DarkData vizBackgroundCoreYellow': string;
-
-  // Theme/DarkData vizBackgroundSequentialBlue400 tokens
-  'Theme/DarkData vizBackgroundSequentialBlue400': string;
-
-  // Theme/DarkData vizBackgroundSequentialGray400 tokens
-  'Theme/DarkData vizBackgroundSequentialGray400': string;
-
-  // Theme/DarkData vizBackgroundSequentialRed300 tokens
-  'Theme/DarkData vizBackgroundSequentialRed300': string;
-
-  // Theme/DarkData vizBackgroundSequentialRed400 tokens
-  'Theme/DarkData vizBackgroundSequentialRed400': string;
-
-  // Theme/DarkData vizBackgroundSequentialTeal300 tokens
-  'Theme/DarkData vizBackgroundSequentialTeal300': string;
-
-  // Theme/DarkData vizBackgroundSequentialTeal400 tokens
-  'Theme/DarkData vizBackgroundSequentialTeal400': string;
-
-  // Theme/DarkData vizBackgroundSequentialOcean400 tokens
-  'Theme/DarkData vizBackgroundSequentialOcean400': string;
-
-  // Theme/DarkData vizBackgroundSequentialGreen300 tokens
-  'Theme/DarkData vizBackgroundSequentialGreen300': string;
-
-  // Theme/DarkData vizBackgroundSequentialGreen400 tokens
-  'Theme/DarkData vizBackgroundSequentialGreen400': string;
-
-  // Theme/DarkData vizBackgroundSequentialYellow300 tokens
-  'Theme/DarkData vizBackgroundSequentialYellow300': string;
-
-  // Theme/DarkData vizBackgroundSequentialYellow400 tokens
-  'Theme/DarkData vizBackgroundSequentialYellow400': string;
-
-  // Theme/DarkData vizBackgroundSequentialBlue300 tokens
-  'Theme/DarkData vizBackgroundSequentialBlue300': string;
-
-  // Theme/DarkData vizBackgroundSequentialBlue200 tokens
-  'Theme/DarkData vizBackgroundSequentialBlue200': string;
-
-  // Theme/DarkData vizBackgroundSequentialBlue100 tokens
-  'Theme/DarkData vizBackgroundSequentialBlue100': string;
-
-  // Theme/DarkData vizBackgroundSequentialGray300 tokens
-  'Theme/DarkData vizBackgroundSequentialGray300': string;
-
-  // Theme/DarkData vizBackgroundSequentialGray200 tokens
-  'Theme/DarkData vizBackgroundSequentialGray200': string;
-
-  // Theme/DarkData vizBackgroundSequentialGray100 tokens
-  'Theme/DarkData vizBackgroundSequentialGray100': string;
-
-  // Theme/DarkData vizBackgroundSequentialRed200 tokens
-  'Theme/DarkData vizBackgroundSequentialRed200': string;
-
-  // Theme/DarkData vizBackgroundSequentialRed100 tokens
-  'Theme/DarkData vizBackgroundSequentialRed100': string;
-
-  // Theme/DarkData vizBackgroundSequentialTeal200 tokens
-  'Theme/DarkData vizBackgroundSequentialTeal200': string;
-
-  // Theme/DarkData vizBackgroundSequentialTeal100 tokens
-  'Theme/DarkData vizBackgroundSequentialTeal100': string;
-
-  // Theme/DarkData vizBackgroundSequentialOcean300 tokens
-  'Theme/DarkData vizBackgroundSequentialOcean300': string;
-
-  // Theme/DarkData vizBackgroundSequentialOcean200 tokens
-  'Theme/DarkData vizBackgroundSequentialOcean200': string;
-
-  // Theme/DarkData vizBackgroundSequentialOcean100 tokens
-  'Theme/DarkData vizBackgroundSequentialOcean100': string;
-
-  // Theme/DarkData vizBackgroundSequentialGreen200 tokens
-  'Theme/DarkData vizBackgroundSequentialGreen200': string;
-
-  // Theme/DarkData vizBackgroundSequentialGreen100 tokens
-  'Theme/DarkData vizBackgroundSequentialGreen100': string;
-
-  // Theme/DarkData vizBackgroundSequentialYellow200 tokens
-  'Theme/DarkData vizBackgroundSequentialYellow200': string;
-
-  // Theme/DarkData vizBackgroundSequentialYellow100 tokens
-  'Theme/DarkData vizBackgroundSequentialYellow100': string;
-
-  // Theme/DarkData vizBackgroundNeutralBlack tokens
-  'Theme/DarkData vizBackgroundNeutralBlack': string;
-
-  // Theme/DarkControl logicTheme switch tokens
-  'Theme/DarkControl logicTheme switch': string;
-
-  // Global/ValueColorsNeutralBlack tokens
-  'Global/ValueColorsNeutralBlack': string;
-
-  // Global/ValueColorsNeutralGrey tokens
-  'Global/ValueColorsNeutralGrey-6': string;
-  'Global/ValueColorsNeutralGrey-8': string;
-  'Global/ValueColorsNeutralGrey-10': string;
-  'Global/ValueColorsNeutralGrey-12': string;
-  'Global/ValueColorsNeutralGrey-20': string;
-  'Global/ValueColorsNeutralGrey-30': string;
-  'Global/ValueColorsNeutralGrey-40': string;
-  'Global/ValueColorsNeutralGrey-50': string;
-  'Global/ValueColorsNeutralGrey-60': string;
-  'Global/ValueColorsNeutralGrey-70': string;
-  'Global/ValueColorsNeutralGrey-80': string;
-  'Global/ValueColorsNeutralGrey-90': string;
-
-  // Global/ValueColorsNeutralWhite tokens
-  'Global/ValueColorsNeutralWhite': string;
-
-  // Global/ValueColorsSharedBurgundyShade 50 tokens
-  'Global/ValueColorsSharedBurgundyShade 50': string;
-
-  // Global/ValueColorsSharedBurgundyShade 40 tokens
-  'Global/ValueColorsSharedBurgundyShade 40': string;
-
-  // Global/ValueColorsSharedBurgundyShade 30 tokens
-  'Global/ValueColorsSharedBurgundyShade 30': string;
-
-  // Global/ValueColorsSharedBurgundyShade 20 tokens
-  'Global/ValueColorsSharedBurgundyShade 20': string;
-
-  // Global/ValueColorsSharedBurgundyShade 10 tokens
-  'Global/ValueColorsSharedBurgundyShade 10': string;
-
-  // Global/ValueColorsSharedBurgundyPrimary tokens
-  'Global/ValueColorsSharedBurgundyPrimary': string;
-
-  // Global/ValueColorsSharedBurgundyTint 10 tokens
-  'Global/ValueColorsSharedBurgundyTint 10': string;
-
-  // Global/ValueColorsSharedBurgundyTint 20 tokens
-  'Global/ValueColorsSharedBurgundyTint 20': string;
-
-  // Global/ValueColorsSharedBurgundyTint 30 tokens
-  'Global/ValueColorsSharedBurgundyTint 30': string;
-
-  // Global/ValueColorsSharedBurgundyTint 40 tokens
-  'Global/ValueColorsSharedBurgundyTint 40': string;
-
-  // Global/ValueColorsSharedBurgundyTint 50 tokens
-  'Global/ValueColorsSharedBurgundyTint 50': string;
-
-  // Global/ValueColorsSharedBurgundyTint 60 tokens
-  'Global/ValueColorsSharedBurgundyTint 60': string;
-
-  // Global/ValueColorsSharedCranberryPrimary tokens
-  'Global/ValueColorsSharedCranberryPrimary': string;
-
-  // Global/ValueColorsSharedCranberryTint 30 tokens
-  'Global/ValueColorsSharedCranberryTint 30': string;
-
-  // Global/ValueColorsSharedCranberryTint 60 tokens
-  'Global/ValueColorsSharedCranberryTint 60': string;
-
-  // Global/ValueColorsSharedRedShade 50 tokens
-  'Global/ValueColorsSharedRedShade 50': string;
-
-  // Global/ValueColorsSharedRedShade 40 tokens
-  'Global/ValueColorsSharedRedShade 40': string;
-
-  // Global/ValueColorsSharedRedShade 30 tokens
-  'Global/ValueColorsSharedRedShade 30': string;
-
-  // Global/ValueColorsSharedRedShade 20 tokens
-  'Global/ValueColorsSharedRedShade 20': string;
-
-  // Global/ValueColorsSharedRedShade 10 tokens
-  'Global/ValueColorsSharedRedShade 10': string;
-
-  // Global/ValueColorsSharedRedPrimary tokens
-  'Global/ValueColorsSharedRedPrimary': string;
-
-  // Global/ValueColorsSharedRedTint 10 tokens
-  'Global/ValueColorsSharedRedTint 10': string;
-
-  // Global/ValueColorsSharedRedTint 20 tokens
-  'Global/ValueColorsSharedRedTint 20': string;
-
-  // Global/ValueColorsSharedRedTint 30 tokens
-  'Global/ValueColorsSharedRedTint 30': string;
-
-  // Global/ValueColorsSharedRedTint 40 tokens
-  'Global/ValueColorsSharedRedTint 40': string;
-
-  // Global/ValueColorsSharedRedTint 50 tokens
-  'Global/ValueColorsSharedRedTint 50': string;
-
-  // Global/ValueColorsSharedRedTint 60 tokens
-  'Global/ValueColorsSharedRedTint 60': string;
-
-  // Global/ValueColorsSharedDark OrangePrimary tokens
-  'Global/ValueColorsSharedDark OrangePrimary': string;
-
-  // Global/ValueColorsSharedDark OrangeTint 30 tokens
-  'Global/ValueColorsSharedDark OrangeTint 30': string;
-
-  // Global/ValueColorsSharedDark OrangeTint 60 tokens
-  'Global/ValueColorsSharedDark OrangeTint 60': string;
-
-  // Global/ValueColorsSharedBronzeShade 50 tokens
-  'Global/ValueColorsSharedBronzeShade 50': string;
-
-  // Global/ValueColorsSharedBronzeShade 40 tokens
-  'Global/ValueColorsSharedBronzeShade 40': string;
-
-  // Global/ValueColorsSharedBronzeShade 30 tokens
-  'Global/ValueColorsSharedBronzeShade 30': string;
-
-  // Global/ValueColorsSharedBronzeShade 20 tokens
-  'Global/ValueColorsSharedBronzeShade 20': string;
-
-  // Global/ValueColorsSharedBronzeShade 10 tokens
-  'Global/ValueColorsSharedBronzeShade 10': string;
-
-  // Global/ValueColorsSharedBronzePrimary tokens
-  'Global/ValueColorsSharedBronzePrimary': string;
-
-  // Global/ValueColorsSharedBronzeTint 10 tokens
-  'Global/ValueColorsSharedBronzeTint 10': string;
-
-  // Global/ValueColorsSharedBronzeTint 20 tokens
-  'Global/ValueColorsSharedBronzeTint 20': string;
-
-  // Global/ValueColorsSharedBronzeTint 30 tokens
-  'Global/ValueColorsSharedBronzeTint 30': string;
-
-  // Global/ValueColorsSharedBronzeTint 40 tokens
-  'Global/ValueColorsSharedBronzeTint 40': string;
-
-  // Global/ValueColorsSharedBronzeTint 50 tokens
-  'Global/ValueColorsSharedBronzeTint 50': string;
-
-  // Global/ValueColorsSharedBronzeTint 60 tokens
-  'Global/ValueColorsSharedBronzeTint 60': string;
-
-  // Global/ValueColorsSharedOrangePrimary tokens
-  'Global/ValueColorsSharedOrangePrimary': string;
-
-  // Global/ValueColorsSharedOrangeTint 30 tokens
-  'Global/ValueColorsSharedOrangeTint 30': string;
-
-  // Global/ValueColorsSharedOrangeTint 60 tokens
-  'Global/ValueColorsSharedOrangeTint 60': string;
-
-  // Global/ValueColorsSharedPeachShade 50 tokens
-  'Global/ValueColorsSharedPeachShade 50': string;
-
-  // Global/ValueColorsSharedPeachShade 40 tokens
-  'Global/ValueColorsSharedPeachShade 40': string;
-
-  // Global/ValueColorsSharedPeachShade 30 tokens
-  'Global/ValueColorsSharedPeachShade 30': string;
-
-  // Global/ValueColorsSharedPeachShade 20 tokens
-  'Global/ValueColorsSharedPeachShade 20': string;
-
-  // Global/ValueColorsSharedPeachShade 10 tokens
-  'Global/ValueColorsSharedPeachShade 10': string;
-
-  // Global/ValueColorsSharedPeachPrimary tokens
-  'Global/ValueColorsSharedPeachPrimary': string;
-
-  // Global/ValueColorsSharedPeachTint 10 tokens
-  'Global/ValueColorsSharedPeachTint 10': string;
-
-  // Global/ValueColorsSharedPeachTint 20 tokens
-  'Global/ValueColorsSharedPeachTint 20': string;
-
-  // Global/ValueColorsSharedPeachTint 30 tokens
-  'Global/ValueColorsSharedPeachTint 30': string;
-
-  // Global/ValueColorsSharedPeachTint 40 tokens
-  'Global/ValueColorsSharedPeachTint 40': string;
-
-  // Global/ValueColorsSharedPeachTint 50 tokens
-  'Global/ValueColorsSharedPeachTint 50': string;
-
-  // Global/ValueColorsSharedPeachTint 60 tokens
-  'Global/ValueColorsSharedPeachTint 60': string;
-
-  // Global/ValueColorsSharedMarigoldShade 50 tokens
-  'Global/ValueColorsSharedMarigoldShade 50': string;
-
-  // Global/ValueColorsSharedMarigoldShade 40 tokens
-  'Global/ValueColorsSharedMarigoldShade 40': string;
-
-  // Global/ValueColorsSharedMarigoldShade 30 tokens
-  'Global/ValueColorsSharedMarigoldShade 30': string;
-
-  // Global/ValueColorsSharedMarigoldShade 20 tokens
-  'Global/ValueColorsSharedMarigoldShade 20': string;
-
-  // Global/ValueColorsSharedMarigoldShade 10 tokens
-  'Global/ValueColorsSharedMarigoldShade 10': string;
-
-  // Global/ValueColorsSharedMarigoldPrimary tokens
-  'Global/ValueColorsSharedMarigoldPrimary': string;
-
-  // Global/ValueColorsSharedMarigoldTint 10 tokens
-  'Global/ValueColorsSharedMarigoldTint 10': string;
-
-  // Global/ValueColorsSharedMarigoldTint 20 tokens
-  'Global/ValueColorsSharedMarigoldTint 20': string;
-
-  // Global/ValueColorsSharedMarigoldTint 30 tokens
-  'Global/ValueColorsSharedMarigoldTint 30': string;
-
-  // Global/ValueColorsSharedMarigoldTint 40 tokens
-  'Global/ValueColorsSharedMarigoldTint 40': string;
-
-  // Global/ValueColorsSharedMarigoldTint 50 tokens
-  'Global/ValueColorsSharedMarigoldTint 50': string;
-
-  // Global/ValueColorsSharedMarigoldTint 60 tokens
-  'Global/ValueColorsSharedMarigoldTint 60': string;
-
-  // Global/ValueColorsSharedYellowShade 50 tokens
-  'Global/ValueColorsSharedYellowShade 50': string;
-
-  // Global/ValueColorsSharedYellowShade 40 tokens
-  'Global/ValueColorsSharedYellowShade 40': string;
-
-  // Global/ValueColorsSharedYellowShade 30 tokens
-  'Global/ValueColorsSharedYellowShade 30': string;
-
-  // Global/ValueColorsSharedYellowShade 20 tokens
-  'Global/ValueColorsSharedYellowShade 20': string;
-
-  // Global/ValueColorsSharedYellowShade 10 tokens
-  'Global/ValueColorsSharedYellowShade 10': string;
-
-  // Global/ValueColorsSharedYellowPrimary tokens
-  'Global/ValueColorsSharedYellowPrimary': string;
-
-  // Global/ValueColorsSharedYellowTint 10 tokens
-  'Global/ValueColorsSharedYellowTint 10': string;
-
-  // Global/ValueColorsSharedYellowTint 20 tokens
-  'Global/ValueColorsSharedYellowTint 20': string;
-
-  // Global/ValueColorsSharedYellowTint 30 tokens
-  'Global/ValueColorsSharedYellowTint 30': string;
-
-  // Global/ValueColorsSharedYellowTint 40 tokens
-  'Global/ValueColorsSharedYellowTint 40': string;
-
-  // Global/ValueColorsSharedYellowTint 50 tokens
-  'Global/ValueColorsSharedYellowTint 50': string;
-
-  // Global/ValueColorsSharedYellowTint 60 tokens
-  'Global/ValueColorsSharedYellowTint 60': string;
-
-  // Global/ValueColorsSharedGoldShade 50 tokens
-  'Global/ValueColorsSharedGoldShade 50': string;
-
-  // Global/ValueColorsSharedGoldShade 40 tokens
-  'Global/ValueColorsSharedGoldShade 40': string;
-
-  // Global/ValueColorsSharedGoldShade 30 tokens
-  'Global/ValueColorsSharedGoldShade 30': string;
-
-  // Global/ValueColorsSharedGoldShade 20 tokens
-  'Global/ValueColorsSharedGoldShade 20': string;
-
-  // Global/ValueColorsSharedGoldShade 10 tokens
-  'Global/ValueColorsSharedGoldShade 10': string;
-
-  // Global/ValueColorsSharedGoldPrimary tokens
-  'Global/ValueColorsSharedGoldPrimary': string;
-
-  // Global/ValueColorsSharedGoldTint 10 tokens
-  'Global/ValueColorsSharedGoldTint 10': string;
-
-  // Global/ValueColorsSharedGoldTint 20 tokens
-  'Global/ValueColorsSharedGoldTint 20': string;
-
-  // Global/ValueColorsSharedGoldTint 30 tokens
-  'Global/ValueColorsSharedGoldTint 30': string;
-
-  // Global/ValueColorsSharedGoldTint 40 tokens
-  'Global/ValueColorsSharedGoldTint 40': string;
-
-  // Global/ValueColorsSharedGoldTint 50 tokens
-  'Global/ValueColorsSharedGoldTint 50': string;
-
-  // Global/ValueColorsSharedGoldTint 60 tokens
-  'Global/ValueColorsSharedGoldTint 60': string;
-
-  // Global/ValueColorsSharedBrassShade 50 tokens
-  'Global/ValueColorsSharedBrassShade 50': string;
-
-  // Global/ValueColorsSharedBrassShade 40 tokens
-  'Global/ValueColorsSharedBrassShade 40': string;
-
-  // Global/ValueColorsSharedBrassShade 30 tokens
-  'Global/ValueColorsSharedBrassShade 30': string;
-
-  // Global/ValueColorsSharedBrassShade 20 tokens
-  'Global/ValueColorsSharedBrassShade 20': string;
-
-  // Global/ValueColorsSharedBrassShade 10 tokens
-  'Global/ValueColorsSharedBrassShade 10': string;
-
-  // Global/ValueColorsSharedBrassPrimary tokens
-  'Global/ValueColorsSharedBrassPrimary': string;
-
-  // Global/ValueColorsSharedBrassTint 10 tokens
-  'Global/ValueColorsSharedBrassTint 10': string;
-
-  // Global/ValueColorsSharedBrassTint 20 tokens
-  'Global/ValueColorsSharedBrassTint 20': string;
-
-  // Global/ValueColorsSharedBrassTint 30 tokens
-  'Global/ValueColorsSharedBrassTint 30': string;
-
-  // Global/ValueColorsSharedBrassTint 40 tokens
-  'Global/ValueColorsSharedBrassTint 40': string;
-
-  // Global/ValueColorsSharedBrassTint 50 tokens
-  'Global/ValueColorsSharedBrassTint 50': string;
-
-  // Global/ValueColorsSharedBrassTint 60 tokens
-  'Global/ValueColorsSharedBrassTint 60': string;
-
-  // Global/ValueColorsSharedBrownShade 50 tokens
-  'Global/ValueColorsSharedBrownShade 50': string;
-
-  // Global/ValueColorsSharedBrownShade 40 tokens
-  'Global/ValueColorsSharedBrownShade 40': string;
-
-  // Global/ValueColorsSharedBrownShade 30 tokens
-  'Global/ValueColorsSharedBrownShade 30': string;
-
-  // Global/ValueColorsSharedBrownShade 20 tokens
-  'Global/ValueColorsSharedBrownShade 20': string;
-
-  // Global/ValueColorsSharedBrownShade 10 tokens
-  'Global/ValueColorsSharedBrownShade 10': string;
-
-  // Global/ValueColorsSharedBrownPrimary tokens
-  'Global/ValueColorsSharedBrownPrimary': string;
-
-  // Global/ValueColorsSharedBrownTint 10 tokens
-  'Global/ValueColorsSharedBrownTint 10': string;
-
-  // Global/ValueColorsSharedBrownTint 20 tokens
-  'Global/ValueColorsSharedBrownTint 20': string;
-
-  // Global/ValueColorsSharedBrownTint 30 tokens
-  'Global/ValueColorsSharedBrownTint 30': string;
-
-  // Global/ValueColorsSharedBrownTint 40 tokens
-  'Global/ValueColorsSharedBrownTint 40': string;
-
-  // Global/ValueColorsSharedBrownTint 50 tokens
-  'Global/ValueColorsSharedBrownTint 50': string;
-
-  // Global/ValueColorsSharedBrownTint 60 tokens
-  'Global/ValueColorsSharedBrownTint 60': string;
-
-  // Global/ValueColorsSharedDark brownShade 50 tokens
-  'Global/ValueColorsSharedDark brownShade 50': string;
-
-  // Global/ValueColorsSharedDark brownShade 40 tokens
-  'Global/ValueColorsSharedDark brownShade 40': string;
-
-  // Global/ValueColorsSharedDark brownShade 30 tokens
-  'Global/ValueColorsSharedDark brownShade 30': string;
-
-  // Global/ValueColorsSharedDark brownShade 20 tokens
-  'Global/ValueColorsSharedDark brownShade 20': string;
-
-  // Global/ValueColorsSharedDark brownShade 10 tokens
-  'Global/ValueColorsSharedDark brownShade 10': string;
-
-  // Global/ValueColorsSharedDark brownPrimary tokens
-  'Global/ValueColorsSharedDark brownPrimary': string;
-
-  // Global/ValueColorsSharedDark brownTint 10 tokens
-  'Global/ValueColorsSharedDark brownTint 10': string;
-
-  // Global/ValueColorsSharedDark brownTint 20 tokens
-  'Global/ValueColorsSharedDark brownTint 20': string;
-
-  // Global/ValueColorsSharedDark brownTint 30 tokens
-  'Global/ValueColorsSharedDark brownTint 30': string;
-
-  // Global/ValueColorsSharedDark brownTint 40 tokens
-  'Global/ValueColorsSharedDark brownTint 40': string;
-
-  // Global/ValueColorsSharedDark brownTint 50 tokens
-  'Global/ValueColorsSharedDark brownTint 50': string;
-
-  // Global/ValueColorsSharedDark brownTint 60 tokens
-  'Global/ValueColorsSharedDark brownTint 60': string;
-
-  // Global/ValueColorsSharedLimeShade 50 tokens
-  'Global/ValueColorsSharedLimeShade 50': string;
-
-  // Global/ValueColorsSharedLimeShade 40 tokens
-  'Global/ValueColorsSharedLimeShade 40': string;
-
-  // Global/ValueColorsSharedLimeShade 30 tokens
-  'Global/ValueColorsSharedLimeShade 30': string;
-
-  // Global/ValueColorsSharedLimeShade 20 tokens
-  'Global/ValueColorsSharedLimeShade 20': string;
-
-  // Global/ValueColorsSharedLimeShade 10 tokens
-  'Global/ValueColorsSharedLimeShade 10': string;
-
-  // Global/ValueColorsSharedLimePrimary tokens
-  'Global/ValueColorsSharedLimePrimary': string;
-
-  // Global/ValueColorsSharedLimeTint 10 tokens
-  'Global/ValueColorsSharedLimeTint 10': string;
-
-  // Global/ValueColorsSharedLimeTint 20 tokens
-  'Global/ValueColorsSharedLimeTint 20': string;
-
-  // Global/ValueColorsSharedLimeTint 30 tokens
-  'Global/ValueColorsSharedLimeTint 30': string;
-
-  // Global/ValueColorsSharedLimeTint 40 tokens
-  'Global/ValueColorsSharedLimeTint 40': string;
-
-  // Global/ValueColorsSharedLimeTint 50 tokens
-  'Global/ValueColorsSharedLimeTint 50': string;
-
-  // Global/ValueColorsSharedLimeTint 60 tokens
-  'Global/ValueColorsSharedLimeTint 60': string;
-
-  // Global/ValueColorsSharedForestShade 50 tokens
-  'Global/ValueColorsSharedForestShade 50': string;
-
-  // Global/ValueColorsSharedForestShade 40 tokens
-  'Global/ValueColorsSharedForestShade 40': string;
-
-  // Global/ValueColorsSharedForestShade 30 tokens
-  'Global/ValueColorsSharedForestShade 30': string;
-
-  // Global/ValueColorsSharedForestShade 20 tokens
-  'Global/ValueColorsSharedForestShade 20': string;
-
-  // Global/ValueColorsSharedForestShade 10 tokens
-  'Global/ValueColorsSharedForestShade 10': string;
-
-  // Global/ValueColorsSharedForestPrimary tokens
-  'Global/ValueColorsSharedForestPrimary': string;
-
-  // Global/ValueColorsSharedForestTint 10 tokens
-  'Global/ValueColorsSharedForestTint 10': string;
-
-  // Global/ValueColorsSharedForestTint 20 tokens
-  'Global/ValueColorsSharedForestTint 20': string;
-
-  // Global/ValueColorsSharedForestTint 30 tokens
-  'Global/ValueColorsSharedForestTint 30': string;
-
-  // Global/ValueColorsSharedForestTint 40 tokens
-  'Global/ValueColorsSharedForestTint 40': string;
-
-  // Global/ValueColorsSharedForestTint 50 tokens
-  'Global/ValueColorsSharedForestTint 50': string;
-
-  // Global/ValueColorsSharedForestTint 60 tokens
-  'Global/ValueColorsSharedForestTint 60': string;
-
-  // Global/ValueColorsSharedSeafoamShade 50 tokens
-  'Global/ValueColorsSharedSeafoamShade 50': string;
-
-  // Global/ValueColorsSharedSeafoamShade 40 tokens
-  'Global/ValueColorsSharedSeafoamShade 40': string;
-
-  // Global/ValueColorsSharedSeafoamShade 30 tokens
-  'Global/ValueColorsSharedSeafoamShade 30': string;
-
-  // Global/ValueColorsSharedSeafoamShade 20 tokens
-  'Global/ValueColorsSharedSeafoamShade 20': string;
-
-  // Global/ValueColorsSharedSeafoamShade 10 tokens
-  'Global/ValueColorsSharedSeafoamShade 10': string;
-
-  // Global/ValueColorsSharedSeafoamPrimary tokens
-  'Global/ValueColorsSharedSeafoamPrimary': string;
-
-  // Global/ValueColorsSharedSeafoamTint 10 tokens
-  'Global/ValueColorsSharedSeafoamTint 10': string;
-
-  // Global/ValueColorsSharedSeafoamTint 20 tokens
-  'Global/ValueColorsSharedSeafoamTint 20': string;
-
-  // Global/ValueColorsSharedSeafoamTint 30 tokens
-  'Global/ValueColorsSharedSeafoamTint 30': string;
-
-  // Global/ValueColorsSharedSeafoamTint 40 tokens
-  'Global/ValueColorsSharedSeafoamTint 40': string;
-
-  // Global/ValueColorsSharedSeafoamTint 50 tokens
-  'Global/ValueColorsSharedSeafoamTint 50': string;
-
-  // Global/ValueColorsSharedSeafoamTint 60 tokens
-  'Global/ValueColorsSharedSeafoamTint 60': string;
-
-  // Global/ValueColorsSharedLight greenShade 50 tokens
-  'Global/ValueColorsSharedLight greenShade 50': string;
-
-  // Global/ValueColorsSharedLight greenShade 40 tokens
-  'Global/ValueColorsSharedLight greenShade 40': string;
-
-  // Global/ValueColorsSharedLight greenShade 30 tokens
-  'Global/ValueColorsSharedLight greenShade 30': string;
-
-  // Global/ValueColorsSharedLight greenShade 20 tokens
-  'Global/ValueColorsSharedLight greenShade 20': string;
-
-  // Global/ValueColorsSharedLight greenShade 10 tokens
-  'Global/ValueColorsSharedLight greenShade 10': string;
-
-  // Global/ValueColorsSharedLight greenPrimary tokens
-  'Global/ValueColorsSharedLight greenPrimary': string;
-
-  // Global/ValueColorsSharedLight greenTint 10 tokens
-  'Global/ValueColorsSharedLight greenTint 10': string;
-
-  // Global/ValueColorsSharedLight greenTint 20 tokens
-  'Global/ValueColorsSharedLight greenTint 20': string;
-
-  // Global/ValueColorsSharedLight greenTint 30 tokens
-  'Global/ValueColorsSharedLight greenTint 30': string;
-
-  // Global/ValueColorsSharedLight greenTint 40 tokens
-  'Global/ValueColorsSharedLight greenTint 40': string;
-
-  // Global/ValueColorsSharedLight greenTint 50 tokens
-  'Global/ValueColorsSharedLight greenTint 50': string;
-
-  // Global/ValueColorsSharedLight greenTint 60 tokens
-  'Global/ValueColorsSharedLight greenTint 60': string;
-
-  // Global/ValueColorsSharedGreenPrimary tokens
-  'Global/ValueColorsSharedGreenPrimary': string;
-
-  // Global/ValueColorsSharedGreenTint 30 tokens
-  'Global/ValueColorsSharedGreenTint 30': string;
-
-  // Global/ValueColorsSharedGreenTint 60 tokens
-  'Global/ValueColorsSharedGreenTint 60': string;
-
-  // Global/ValueColorsSharedDark greenShade 50 tokens
-  'Global/ValueColorsSharedDark greenShade 50': string;
-
-  // Global/ValueColorsSharedDark greenShade 40 tokens
-  'Global/ValueColorsSharedDark greenShade 40': string;
-
-  // Global/ValueColorsSharedDark greenShade 30 tokens
-  'Global/ValueColorsSharedDark greenShade 30': string;
-
-  // Global/ValueColorsSharedDark greenShade 20 tokens
-  'Global/ValueColorsSharedDark greenShade 20': string;
-
-  // Global/ValueColorsSharedDark greenShade 10 tokens
-  'Global/ValueColorsSharedDark greenShade 10': string;
-
-  // Global/ValueColorsSharedDark greenPrimary tokens
-  'Global/ValueColorsSharedDark greenPrimary': string;
-
-  // Global/ValueColorsSharedDark greenTint 10 tokens
-  'Global/ValueColorsSharedDark greenTint 10': string;
-
-  // Global/ValueColorsSharedDark greenTint 20 tokens
-  'Global/ValueColorsSharedDark greenTint 20': string;
-
-  // Global/ValueColorsSharedDark greenTint 30 tokens
-  'Global/ValueColorsSharedDark greenTint 30': string;
-
-  // Global/ValueColorsSharedDark greenTint 40 tokens
-  'Global/ValueColorsSharedDark greenTint 40': string;
-
-  // Global/ValueColorsSharedDark greenTint 50 tokens
-  'Global/ValueColorsSharedDark greenTint 50': string;
-
-  // Global/ValueColorsSharedDark greenTint 60 tokens
-  'Global/ValueColorsSharedDark greenTint 60': string;
-
-  // Global/ValueColorsSharedLight tealShade 50 tokens
-  'Global/ValueColorsSharedLight tealShade 50': string;
-
-  // Global/ValueColorsSharedLight tealShade 40 tokens
-  'Global/ValueColorsSharedLight tealShade 40': string;
-
-  // Global/ValueColorsSharedLight tealShade 30 tokens
-  'Global/ValueColorsSharedLight tealShade 30': string;
-
-  // Global/ValueColorsSharedLight tealShade 20 tokens
-  'Global/ValueColorsSharedLight tealShade 20': string;
-
-  // Global/ValueColorsSharedLight tealShade 10 tokens
-  'Global/ValueColorsSharedLight tealShade 10': string;
-
-  // Global/ValueColorsSharedLight tealPrimary tokens
-  'Global/ValueColorsSharedLight tealPrimary': string;
-
-  // Global/ValueColorsSharedLight tealTint 10 tokens
-  'Global/ValueColorsSharedLight tealTint 10': string;
-
-  // Global/ValueColorsSharedLight tealTint 20 tokens
-  'Global/ValueColorsSharedLight tealTint 20': string;
-
-  // Global/ValueColorsSharedLight tealTint 30 tokens
-  'Global/ValueColorsSharedLight tealTint 30': string;
-
-  // Global/ValueColorsSharedLight tealTint 40 tokens
-  'Global/ValueColorsSharedLight tealTint 40': string;
-
-  // Global/ValueColorsSharedLight tealTint 50 tokens
-  'Global/ValueColorsSharedLight tealTint 50': string;
-
-  // Global/ValueColorsSharedLight tealTint 60 tokens
-  'Global/ValueColorsSharedLight tealTint 60': string;
-
-  // Global/ValueColorsSharedTealShade 50 tokens
-  'Global/ValueColorsSharedTealShade 50': string;
-
-  // Global/ValueColorsSharedTealShade 40 tokens
-  'Global/ValueColorsSharedTealShade 40': string;
-
-  // Global/ValueColorsSharedTealShade 30 tokens
-  'Global/ValueColorsSharedTealShade 30': string;
-
-  // Global/ValueColorsSharedTealShade 20 tokens
-  'Global/ValueColorsSharedTealShade 20': string;
-
-  // Global/ValueColorsSharedTealShade 10 tokens
-  'Global/ValueColorsSharedTealShade 10': string;
-
-  // Global/ValueColorsSharedTealPrimary tokens
-  'Global/ValueColorsSharedTealPrimary': string;
-
-  // Global/ValueColorsSharedTealTint 10 tokens
-  'Global/ValueColorsSharedTealTint 10': string;
-
-  // Global/ValueColorsSharedTealTint 20 tokens
-  'Global/ValueColorsSharedTealTint 20': string;
-
-  // Global/ValueColorsSharedTealTint 30 tokens
-  'Global/ValueColorsSharedTealTint 30': string;
-
-  // Global/ValueColorsSharedTealTint 40 tokens
-  'Global/ValueColorsSharedTealTint 40': string;
-
-  // Global/ValueColorsSharedTealTint 50 tokens
-  'Global/ValueColorsSharedTealTint 50': string;
-
-  // Global/ValueColorsSharedTealTint 60 tokens
-  'Global/ValueColorsSharedTealTint 60': string;
-
-  // Global/ValueColorsSharedDark tealShade 50 tokens
-  'Global/ValueColorsSharedDark tealShade 50': string;
-
-  // Global/ValueColorsSharedDark tealShade 40 tokens
-  'Global/ValueColorsSharedDark tealShade 40': string;
-
-  // Global/ValueColorsSharedDark tealShade 30 tokens
-  'Global/ValueColorsSharedDark tealShade 30': string;
-
-  // Global/ValueColorsSharedDark tealShade 20 tokens
-  'Global/ValueColorsSharedDark tealShade 20': string;
-
-  // Global/ValueColorsSharedDark tealShade 10 tokens
-  'Global/ValueColorsSharedDark tealShade 10': string;
-
-  // Global/ValueColorsSharedDark tealPrimary tokens
-  'Global/ValueColorsSharedDark tealPrimary': string;
-
-  // Global/ValueColorsSharedDark tealTint 10 tokens
-  'Global/ValueColorsSharedDark tealTint 10': string;
-
-  // Global/ValueColorsSharedDark tealTint 20 tokens
-  'Global/ValueColorsSharedDark tealTint 20': string;
-
-  // Global/ValueColorsSharedDark tealTint 30 tokens
-  'Global/ValueColorsSharedDark tealTint 30': string;
-
-  // Global/ValueColorsSharedDark tealTint 40 tokens
-  'Global/ValueColorsSharedDark tealTint 40': string;
-
-  // Global/ValueColorsSharedDark tealTint 50 tokens
-  'Global/ValueColorsSharedDark tealTint 50': string;
-
-  // Global/ValueColorsSharedDark tealTint 60 tokens
-  'Global/ValueColorsSharedDark tealTint 60': string;
-
-  // Global/ValueColorsSharedCyanShade 50 tokens
-  'Global/ValueColorsSharedCyanShade 50': string;
-
-  // Global/ValueColorsSharedCyanShade 40 tokens
-  'Global/ValueColorsSharedCyanShade 40': string;
-
-  // Global/ValueColorsSharedCyanShade 30 tokens
-  'Global/ValueColorsSharedCyanShade 30': string;
-
-  // Global/ValueColorsSharedCyanShade 20 tokens
-  'Global/ValueColorsSharedCyanShade 20': string;
-
-  // Global/ValueColorsSharedCyanShade 10 tokens
-  'Global/ValueColorsSharedCyanShade 10': string;
-
-  // Global/ValueColorsSharedCyanPrimary tokens
-  'Global/ValueColorsSharedCyanPrimary': string;
-
-  // Global/ValueColorsSharedCyanTint 10 tokens
-  'Global/ValueColorsSharedCyanTint 10': string;
-
-  // Global/ValueColorsSharedCyanTint 20 tokens
-  'Global/ValueColorsSharedCyanTint 20': string;
-
-  // Global/ValueColorsSharedCyanTint 30 tokens
-  'Global/ValueColorsSharedCyanTint 30': string;
-
-  // Global/ValueColorsSharedCyanTint 40 tokens
-  'Global/ValueColorsSharedCyanTint 40': string;
-
-  // Global/ValueColorsSharedCyanTint 50 tokens
-  'Global/ValueColorsSharedCyanTint 50': string;
-
-  // Global/ValueColorsSharedCyanTint 60 tokens
-  'Global/ValueColorsSharedCyanTint 60': string;
-
-  // Global/ValueColorsSharedSteelShade 50 tokens
-  'Global/ValueColorsSharedSteelShade 50': string;
-
-  // Global/ValueColorsSharedSteelShade 40 tokens
-  'Global/ValueColorsSharedSteelShade 40': string;
-
-  // Global/ValueColorsSharedSteelShade 30 tokens
-  'Global/ValueColorsSharedSteelShade 30': string;
-
-  // Global/ValueColorsSharedSteelShade 20 tokens
-  'Global/ValueColorsSharedSteelShade 20': string;
-
-  // Global/ValueColorsSharedSteelShade 10 tokens
-  'Global/ValueColorsSharedSteelShade 10': string;
-
-  // Global/ValueColorsSharedSteelPrimary tokens
-  'Global/ValueColorsSharedSteelPrimary': string;
-
-  // Global/ValueColorsSharedSteelTint 10 tokens
-  'Global/ValueColorsSharedSteelTint 10': string;
-
-  // Global/ValueColorsSharedSteelTint 20 tokens
-  'Global/ValueColorsSharedSteelTint 20': string;
-
-  // Global/ValueColorsSharedSteelTint 30 tokens
-  'Global/ValueColorsSharedSteelTint 30': string;
-
-  // Global/ValueColorsSharedSteelTint 40 tokens
-  'Global/ValueColorsSharedSteelTint 40': string;
-
-  // Global/ValueColorsSharedSteelTint 50 tokens
-  'Global/ValueColorsSharedSteelTint 50': string;
-
-  // Global/ValueColorsSharedSteelTint 60 tokens
-  'Global/ValueColorsSharedSteelTint 60': string;
-
-  // Global/ValueColorsSharedLight blueShade 50 tokens
-  'Global/ValueColorsSharedLight blueShade 50': string;
-
-  // Global/ValueColorsSharedLight blueShade 40 tokens
-  'Global/ValueColorsSharedLight blueShade 40': string;
-
-  // Global/ValueColorsSharedLight blueShade 30 tokens
-  'Global/ValueColorsSharedLight blueShade 30': string;
-
-  // Global/ValueColorsSharedLight blueShade 20 tokens
-  'Global/ValueColorsSharedLight blueShade 20': string;
-
-  // Global/ValueColorsSharedLight blueShade 10 tokens
-  'Global/ValueColorsSharedLight blueShade 10': string;
-
-  // Global/ValueColorsSharedLight bluePrimary tokens
-  'Global/ValueColorsSharedLight bluePrimary': string;
-
-  // Global/ValueColorsSharedLight blueTint 10 tokens
-  'Global/ValueColorsSharedLight blueTint 10': string;
-
-  // Global/ValueColorsSharedLight blueTint 20 tokens
-  'Global/ValueColorsSharedLight blueTint 20': string;
-
-  // Global/ValueColorsSharedLight blueTint 30 tokens
-  'Global/ValueColorsSharedLight blueTint 30': string;
-
-  // Global/ValueColorsSharedLight blueTint 40 tokens
-  'Global/ValueColorsSharedLight blueTint 40': string;
-
-  // Global/ValueColorsSharedLight blueTint 50 tokens
-  'Global/ValueColorsSharedLight blueTint 50': string;
-
-  // Global/ValueColorsSharedLight blueTint 60 tokens
-  'Global/ValueColorsSharedLight blueTint 60': string;
-
-  // Global/ValueColorsSharedBlueShade 50 tokens
-  'Global/ValueColorsSharedBlueShade 50': string;
-
-  // Global/ValueColorsSharedBlueShade 40 tokens
-  'Global/ValueColorsSharedBlueShade 40': string;
-
-  // Global/ValueColorsSharedBlueShade 30 tokens
-  'Global/ValueColorsSharedBlueShade 30': string;
-
-  // Global/ValueColorsSharedBlueShade 20 tokens
-  'Global/ValueColorsSharedBlueShade 20': string;
-
-  // Global/ValueColorsSharedBlueShade 10 tokens
-  'Global/ValueColorsSharedBlueShade 10': string;
-
-  // Global/ValueColorsSharedBluePrimary tokens
-  'Global/ValueColorsSharedBluePrimary': string;
-
-  // Global/ValueColorsSharedBlueTint 10 tokens
-  'Global/ValueColorsSharedBlueTint 10': string;
-
-  // Global/ValueColorsSharedBlueTint 20 tokens
-  'Global/ValueColorsSharedBlueTint 20': string;
-
-  // Global/ValueColorsSharedBlueTint 30 tokens
-  'Global/ValueColorsSharedBlueTint 30': string;
-
-  // Global/ValueColorsSharedBlueTint 40 tokens
-  'Global/ValueColorsSharedBlueTint 40': string;
-
-  // Global/ValueColorsSharedBlueTint 50 tokens
-  'Global/ValueColorsSharedBlueTint 50': string;
-
-  // Global/ValueColorsSharedBlueTint 60 tokens
-  'Global/ValueColorsSharedBlueTint 60': string;
-
-  // Global/ValueColorsSharedRoyal blueShade 50 tokens
-  'Global/ValueColorsSharedRoyal blueShade 50': string;
-
-  // Global/ValueColorsSharedRoyal blueShade 40 tokens
-  'Global/ValueColorsSharedRoyal blueShade 40': string;
-
-  // Global/ValueColorsSharedRoyal blueShade 30 tokens
-  'Global/ValueColorsSharedRoyal blueShade 30': string;
-
-  // Global/ValueColorsSharedRoyal blueShade 20 tokens
-  'Global/ValueColorsSharedRoyal blueShade 20': string;
-
-  // Global/ValueColorsSharedRoyal blueShade 10 tokens
-  'Global/ValueColorsSharedRoyal blueShade 10': string;
-
-  // Global/ValueColorsSharedRoyal bluePrimary tokens
-  'Global/ValueColorsSharedRoyal bluePrimary': string;
-
-  // Global/ValueColorsSharedRoyal blueTint 10 tokens
-  'Global/ValueColorsSharedRoyal blueTint 10': string;
-
-  // Global/ValueColorsSharedRoyal blueTint 20 tokens
-  'Global/ValueColorsSharedRoyal blueTint 20': string;
-
-  // Global/ValueColorsSharedRoyal blueTint 30 tokens
-  'Global/ValueColorsSharedRoyal blueTint 30': string;
-
-  // Global/ValueColorsSharedRoyal blueTint 40 tokens
-  'Global/ValueColorsSharedRoyal blueTint 40': string;
-
-  // Global/ValueColorsSharedRoyal blueTint 50 tokens
-  'Global/ValueColorsSharedRoyal blueTint 50': string;
-
-  // Global/ValueColorsSharedRoyal blueTint 60 tokens
-  'Global/ValueColorsSharedRoyal blueTint 60': string;
-
-  // Global/ValueColorsSharedDark blueShade 50 tokens
-  'Global/ValueColorsSharedDark blueShade 50': string;
-
-  // Global/ValueColorsSharedDark blueShade 40 tokens
-  'Global/ValueColorsSharedDark blueShade 40': string;
-
-  // Global/ValueColorsSharedDark blueShade 30 tokens
-  'Global/ValueColorsSharedDark blueShade 30': string;
-
-  // Global/ValueColorsSharedDark blueShade 20 tokens
-  'Global/ValueColorsSharedDark blueShade 20': string;
-
-  // Global/ValueColorsSharedDark blueShade 10 tokens
-  'Global/ValueColorsSharedDark blueShade 10': string;
-
-  // Global/ValueColorsSharedDark bluePrimary tokens
-  'Global/ValueColorsSharedDark bluePrimary': string;
-
-  // Global/ValueColorsSharedDark blueTint 10 tokens
-  'Global/ValueColorsSharedDark blueTint 10': string;
-
-  // Global/ValueColorsSharedDark blueTint 20 tokens
-  'Global/ValueColorsSharedDark blueTint 20': string;
-
-  // Global/ValueColorsSharedDark blueTint 30 tokens
-  'Global/ValueColorsSharedDark blueTint 30': string;
-
-  // Global/ValueColorsSharedDark blueTint 40 tokens
-  'Global/ValueColorsSharedDark blueTint 40': string;
-
-  // Global/ValueColorsSharedDark blueTint 50 tokens
-  'Global/ValueColorsSharedDark blueTint 50': string;
-
-  // Global/ValueColorsSharedDark blueTint 60 tokens
-  'Global/ValueColorsSharedDark blueTint 60': string;
-
-  // Global/ValueColorsSharedCornflowerShade 50 tokens
-  'Global/ValueColorsSharedCornflowerShade 50': string;
-
-  // Global/ValueColorsSharedCornflowerShade 40 tokens
-  'Global/ValueColorsSharedCornflowerShade 40': string;
-
-  // Global/ValueColorsSharedCornflowerShade 30 tokens
-  'Global/ValueColorsSharedCornflowerShade 30': string;
-
-  // Global/ValueColorsSharedCornflowerShade 20 tokens
-  'Global/ValueColorsSharedCornflowerShade 20': string;
-
-  // Global/ValueColorsSharedCornflowerShade 10 tokens
-  'Global/ValueColorsSharedCornflowerShade 10': string;
-
-  // Global/ValueColorsSharedCornflowerPrimary tokens
-  'Global/ValueColorsSharedCornflowerPrimary': string;
-
-  // Global/ValueColorsSharedCornflowerTint 10 tokens
-  'Global/ValueColorsSharedCornflowerTint 10': string;
-
-  // Global/ValueColorsSharedCornflowerTint 20 tokens
-  'Global/ValueColorsSharedCornflowerTint 20': string;
-
-  // Global/ValueColorsSharedCornflowerTint 30 tokens
-  'Global/ValueColorsSharedCornflowerTint 30': string;
-
-  // Global/ValueColorsSharedCornflowerTint 40 tokens
-  'Global/ValueColorsSharedCornflowerTint 40': string;
-
-  // Global/ValueColorsSharedCornflowerTint 50 tokens
-  'Global/ValueColorsSharedCornflowerTint 50': string;
-
-  // Global/ValueColorsSharedCornflowerTint 60 tokens
-  'Global/ValueColorsSharedCornflowerTint 60': string;
-
-  // Global/ValueColorsSharedNavyShade 50 tokens
-  'Global/ValueColorsSharedNavyShade 50': string;
-
-  // Global/ValueColorsSharedNavyShade 40 tokens
-  'Global/ValueColorsSharedNavyShade 40': string;
-
-  // Global/ValueColorsSharedNavyShade 30 tokens
-  'Global/ValueColorsSharedNavyShade 30': string;
-
-  // Global/ValueColorsSharedNavyShade 20 tokens
-  'Global/ValueColorsSharedNavyShade 20': string;
-
-  // Global/ValueColorsSharedNavyShade 10 tokens
-  'Global/ValueColorsSharedNavyShade 10': string;
-
-  // Global/ValueColorsSharedNavyPrimary tokens
-  'Global/ValueColorsSharedNavyPrimary': string;
-
-  // Global/ValueColorsSharedNavyTint 10 tokens
-  'Global/ValueColorsSharedNavyTint 10': string;
-
-  // Global/ValueColorsSharedNavyTint 20 tokens
-  'Global/ValueColorsSharedNavyTint 20': string;
-
-  // Global/ValueColorsSharedNavyTint 30 tokens
-  'Global/ValueColorsSharedNavyTint 30': string;
-
-  // Global/ValueColorsSharedNavyTint 40 tokens
-  'Global/ValueColorsSharedNavyTint 40': string;
-
-  // Global/ValueColorsSharedNavyTint 50 tokens
-  'Global/ValueColorsSharedNavyTint 50': string;
-
-  // Global/ValueColorsSharedNavyTint 60 tokens
-  'Global/ValueColorsSharedNavyTint 60': string;
-
-  // Global/ValueColorsSharedLavenderShade 50 tokens
-  'Global/ValueColorsSharedLavenderShade 50': string;
-
-  // Global/ValueColorsSharedLavenderShade 40 tokens
-  'Global/ValueColorsSharedLavenderShade 40': string;
-
-  // Global/ValueColorsSharedLavenderShade 30 tokens
-  'Global/ValueColorsSharedLavenderShade 30': string;
-
-  // Global/ValueColorsSharedLavenderShade 20 tokens
-  'Global/ValueColorsSharedLavenderShade 20': string;
-
-  // Global/ValueColorsSharedLavenderShade 10 tokens
-  'Global/ValueColorsSharedLavenderShade 10': string;
-
-  // Global/ValueColorsSharedLavenderPrimary tokens
-  'Global/ValueColorsSharedLavenderPrimary': string;
-
-  // Global/ValueColorsSharedLavenderTint 10 tokens
-  'Global/ValueColorsSharedLavenderTint 10': string;
-
-  // Global/ValueColorsSharedLavenderTint 20 tokens
-  'Global/ValueColorsSharedLavenderTint 20': string;
-
-  // Global/ValueColorsSharedLavenderTint 30 tokens
-  'Global/ValueColorsSharedLavenderTint 30': string;
-
-  // Global/ValueColorsSharedLavenderTint 40 tokens
-  'Global/ValueColorsSharedLavenderTint 40': string;
-
-  // Global/ValueColorsSharedLavenderTint 50 tokens
-  'Global/ValueColorsSharedLavenderTint 50': string;
-
-  // Global/ValueColorsSharedLavenderTint 60 tokens
-  'Global/ValueColorsSharedLavenderTint 60': string;
-
-  // Global/ValueColorsSharedPurpleShade 50 tokens
-  'Global/ValueColorsSharedPurpleShade 50': string;
-
-  // Global/ValueColorsSharedPurpleShade 40 tokens
-  'Global/ValueColorsSharedPurpleShade 40': string;
-
-  // Global/ValueColorsSharedPurpleShade 30 tokens
-  'Global/ValueColorsSharedPurpleShade 30': string;
-
-  // Global/ValueColorsSharedPurpleShade 20 tokens
-  'Global/ValueColorsSharedPurpleShade 20': string;
-
-  // Global/ValueColorsSharedPurpleShade 10 tokens
-  'Global/ValueColorsSharedPurpleShade 10': string;
-
-  // Global/ValueColorsSharedPurplePrimary tokens
-  'Global/ValueColorsSharedPurplePrimary': string;
-
-  // Global/ValueColorsSharedPurpleTint 10 tokens
-  'Global/ValueColorsSharedPurpleTint 10': string;
-
-  // Global/ValueColorsSharedPurpleTint 20 tokens
-  'Global/ValueColorsSharedPurpleTint 20': string;
-
-  // Global/ValueColorsSharedPurpleTint 30 tokens
-  'Global/ValueColorsSharedPurpleTint 30': string;
-
-  // Global/ValueColorsSharedPurpleTint 40 tokens
-  'Global/ValueColorsSharedPurpleTint 40': string;
-
-  // Global/ValueColorsSharedPurpleTint 50 tokens
-  'Global/ValueColorsSharedPurpleTint 50': string;
-
-  // Global/ValueColorsSharedPurpleTint 60 tokens
-  'Global/ValueColorsSharedPurpleTint 60': string;
-
-  // Global/ValueColorsSharedDark purpleShade 50 tokens
-  'Global/ValueColorsSharedDark purpleShade 50': string;
-
-  // Global/ValueColorsSharedDark purpleShade 40 tokens
-  'Global/ValueColorsSharedDark purpleShade 40': string;
-
-  // Global/ValueColorsSharedDark purpleShade 30 tokens
-  'Global/ValueColorsSharedDark purpleShade 30': string;
-
-  // Global/ValueColorsSharedDark purpleShade 20 tokens
-  'Global/ValueColorsSharedDark purpleShade 20': string;
-
-  // Global/ValueColorsSharedDark purpleShade 10 tokens
-  'Global/ValueColorsSharedDark purpleShade 10': string;
-
-  // Global/ValueColorsSharedDark purplePrimary tokens
-  'Global/ValueColorsSharedDark purplePrimary': string;
-
-  // Global/ValueColorsSharedDark purpleTint 10 tokens
-  'Global/ValueColorsSharedDark purpleTint 10': string;
-
-  // Global/ValueColorsSharedDark purpleTint 20 tokens
-  'Global/ValueColorsSharedDark purpleTint 20': string;
-
-  // Global/ValueColorsSharedDark purpleTint 30 tokens
-  'Global/ValueColorsSharedDark purpleTint 30': string;
-
-  // Global/ValueColorsSharedDark purpleTint 40 tokens
-  'Global/ValueColorsSharedDark purpleTint 40': string;
-
-  // Global/ValueColorsSharedDark purpleTint 50 tokens
-  'Global/ValueColorsSharedDark purpleTint 50': string;
-
-  // Global/ValueColorsSharedDark purpleTint 60 tokens
-  'Global/ValueColorsSharedDark purpleTint 60': string;
-
-  // Global/ValueColorsSharedOrchidShade 50 tokens
-  'Global/ValueColorsSharedOrchidShade 50': string;
-
-  // Global/ValueColorsSharedOrchidShade 40 tokens
-  'Global/ValueColorsSharedOrchidShade 40': string;
-
-  // Global/ValueColorsSharedOrchidShade 30 tokens
-  'Global/ValueColorsSharedOrchidShade 30': string;
-
-  // Global/ValueColorsSharedOrchidShade 20 tokens
-  'Global/ValueColorsSharedOrchidShade 20': string;
-
-  // Global/ValueColorsSharedOrchidShade 10 tokens
-  'Global/ValueColorsSharedOrchidShade 10': string;
-
-  // Global/ValueColorsSharedOrchidPrimary tokens
-  'Global/ValueColorsSharedOrchidPrimary': string;
-
-  // Global/ValueColorsSharedOrchidTint 10 tokens
-  'Global/ValueColorsSharedOrchidTint 10': string;
-
-  // Global/ValueColorsSharedOrchidTint 20 tokens
-  'Global/ValueColorsSharedOrchidTint 20': string;
-
-  // Global/ValueColorsSharedOrchidTint 30 tokens
-  'Global/ValueColorsSharedOrchidTint 30': string;
-
-  // Global/ValueColorsSharedOrchidTint 40 tokens
-  'Global/ValueColorsSharedOrchidTint 40': string;
-
-  // Global/ValueColorsSharedOrchidTint 50 tokens
-  'Global/ValueColorsSharedOrchidTint 50': string;
-
-  // Global/ValueColorsSharedOrchidTint 60 tokens
-  'Global/ValueColorsSharedOrchidTint 60': string;
-
-  // Global/ValueColorsSharedGrapeShade 50 tokens
-  'Global/ValueColorsSharedGrapeShade 50': string;
-
-  // Global/ValueColorsSharedGrapeShade 40 tokens
-  'Global/ValueColorsSharedGrapeShade 40': string;
-
-  // Global/ValueColorsSharedGrapeShade 30 tokens
-  'Global/ValueColorsSharedGrapeShade 30': string;
-
-  // Global/ValueColorsSharedGrapeShade 20 tokens
-  'Global/ValueColorsSharedGrapeShade 20': string;
-
-  // Global/ValueColorsSharedGrapeShade 10 tokens
-  'Global/ValueColorsSharedGrapeShade 10': string;
-
-  // Global/ValueColorsSharedGrapePrimary tokens
-  'Global/ValueColorsSharedGrapePrimary': string;
-
-  // Global/ValueColorsSharedGrapeTint 10 tokens
-  'Global/ValueColorsSharedGrapeTint 10': string;
-
-  // Global/ValueColorsSharedGrapeTint 20 tokens
-  'Global/ValueColorsSharedGrapeTint 20': string;
-
-  // Global/ValueColorsSharedGrapeTint 30 tokens
-  'Global/ValueColorsSharedGrapeTint 30': string;
-
-  // Global/ValueColorsSharedGrapeTint 40 tokens
-  'Global/ValueColorsSharedGrapeTint 40': string;
-
-  // Global/ValueColorsSharedGrapeTint 50 tokens
-  'Global/ValueColorsSharedGrapeTint 50': string;
-
-  // Global/ValueColorsSharedGrapeTint 60 tokens
-  'Global/ValueColorsSharedGrapeTint 60': string;
-
-  // Global/ValueColorsSharedBerryShade 50 tokens
-  'Global/ValueColorsSharedBerryShade 50': string;
-
-  // Global/ValueColorsSharedBerryShade 40 tokens
-  'Global/ValueColorsSharedBerryShade 40': string;
-
-  // Global/ValueColorsSharedBerryShade 30 tokens
-  'Global/ValueColorsSharedBerryShade 30': string;
-
-  // Global/ValueColorsSharedBerryShade 20 tokens
-  'Global/ValueColorsSharedBerryShade 20': string;
-
-  // Global/ValueColorsSharedBerryShade 10 tokens
-  'Global/ValueColorsSharedBerryShade 10': string;
-
-  // Global/ValueColorsSharedBerryPrimary tokens
-  'Global/ValueColorsSharedBerryPrimary': string;
-
-  // Global/ValueColorsSharedBerryTint 10 tokens
-  'Global/ValueColorsSharedBerryTint 10': string;
-
-  // Global/ValueColorsSharedBerryTint 20 tokens
-  'Global/ValueColorsSharedBerryTint 20': string;
-
-  // Global/ValueColorsSharedBerryTint 30 tokens
-  'Global/ValueColorsSharedBerryTint 30': string;
-
-  // Global/ValueColorsSharedBerryTint 40 tokens
-  'Global/ValueColorsSharedBerryTint 40': string;
-
-  // Global/ValueColorsSharedBerryTint 50 tokens
-  'Global/ValueColorsSharedBerryTint 50': string;
-
-  // Global/ValueColorsSharedBerryTint 60 tokens
-  'Global/ValueColorsSharedBerryTint 60': string;
-
-  // Global/ValueColorsSharedLilacShade 50 tokens
-  'Global/ValueColorsSharedLilacShade 50': string;
-
-  // Global/ValueColorsSharedLilacShade 40 tokens
-  'Global/ValueColorsSharedLilacShade 40': string;
-
-  // Global/ValueColorsSharedLilacShade 30 tokens
-  'Global/ValueColorsSharedLilacShade 30': string;
-
-  // Global/ValueColorsSharedLilacShade 20 tokens
-  'Global/ValueColorsSharedLilacShade 20': string;
-
-  // Global/ValueColorsSharedLilacShade 10 tokens
-  'Global/ValueColorsSharedLilacShade 10': string;
-
-  // Global/ValueColorsSharedLilacPrimary tokens
-  'Global/ValueColorsSharedLilacPrimary': string;
-
-  // Global/ValueColorsSharedLilacTint 10 tokens
-  'Global/ValueColorsSharedLilacTint 10': string;
-
-  // Global/ValueColorsSharedLilacTint 20 tokens
-  'Global/ValueColorsSharedLilacTint 20': string;
-
-  // Global/ValueColorsSharedLilacTint 30 tokens
-  'Global/ValueColorsSharedLilacTint 30': string;
-
-  // Global/ValueColorsSharedLilacTint 40 tokens
-  'Global/ValueColorsSharedLilacTint 40': string;
-
-  // Global/ValueColorsSharedLilacTint 50 tokens
-  'Global/ValueColorsSharedLilacTint 50': string;
-
-  // Global/ValueColorsSharedLilacTint 60 tokens
-  'Global/ValueColorsSharedLilacTint 60': string;
-
-  // Global/ValueColorsSharedPinkShade 50 tokens
-  'Global/ValueColorsSharedPinkShade 50': string;
-
-  // Global/ValueColorsSharedPinkShade 40 tokens
-  'Global/ValueColorsSharedPinkShade 40': string;
-
-  // Global/ValueColorsSharedPinkShade 30 tokens
-  'Global/ValueColorsSharedPinkShade 30': string;
-
-  // Global/ValueColorsSharedPinkShade 20 tokens
-  'Global/ValueColorsSharedPinkShade 20': string;
-
-  // Global/ValueColorsSharedPinkShade 10 tokens
-  'Global/ValueColorsSharedPinkShade 10': string;
-
-  // Global/ValueColorsSharedPinkPrimary tokens
-  'Global/ValueColorsSharedPinkPrimary': string;
-
-  // Global/ValueColorsSharedPinkTint 10 tokens
-  'Global/ValueColorsSharedPinkTint 10': string;
-
-  // Global/ValueColorsSharedPinkTint 20 tokens
-  'Global/ValueColorsSharedPinkTint 20': string;
-
-  // Global/ValueColorsSharedPinkTint 30 tokens
-  'Global/ValueColorsSharedPinkTint 30': string;
-
-  // Global/ValueColorsSharedPinkTint 40 tokens
-  'Global/ValueColorsSharedPinkTint 40': string;
-
-  // Global/ValueColorsSharedPinkTint 50 tokens
-  'Global/ValueColorsSharedPinkTint 50': string;
-
-  // Global/ValueColorsSharedPinkTint 60 tokens
-  'Global/ValueColorsSharedPinkTint 60': string;
-
-  // Global/ValueColorsSharedHot pinkShade 50 tokens
-  'Global/ValueColorsSharedHot pinkShade 50': string;
-
-  // Global/ValueColorsSharedHot pinkShade 40 tokens
-  'Global/ValueColorsSharedHot pinkShade 40': string;
-
-  // Global/ValueColorsSharedHot pinkShade 30 tokens
-  'Global/ValueColorsSharedHot pinkShade 30': string;
-
-  // Global/ValueColorsSharedHot pinkShade 20 tokens
-  'Global/ValueColorsSharedHot pinkShade 20': string;
-
-  // Global/ValueColorsSharedHot pinkShade 10 tokens
-  'Global/ValueColorsSharedHot pinkShade 10': string;
-
-  // Global/ValueColorsSharedHot pinkPrimary tokens
-  'Global/ValueColorsSharedHot pinkPrimary': string;
-
-  // Global/ValueColorsSharedHot pinkTint 10 tokens
-  'Global/ValueColorsSharedHot pinkTint 10': string;
-
-  // Global/ValueColorsSharedHot pinkTint 20 tokens
-  'Global/ValueColorsSharedHot pinkTint 20': string;
-
-  // Global/ValueColorsSharedHot pinkTint 30 tokens
-  'Global/ValueColorsSharedHot pinkTint 30': string;
-
-  // Global/ValueColorsSharedHot pinkTint 40 tokens
-  'Global/ValueColorsSharedHot pinkTint 40': string;
-
-  // Global/ValueColorsSharedHot pinkTint 50 tokens
-  'Global/ValueColorsSharedHot pinkTint 50': string;
-
-  // Global/ValueColorsSharedHot pinkTint 60 tokens
-  'Global/ValueColorsSharedHot pinkTint 60': string;
-
-  // Global/ValueColorsSharedMagentaShade 50 tokens
-  'Global/ValueColorsSharedMagentaShade 50': string;
-
-  // Global/ValueColorsSharedMagentaShade 40 tokens
-  'Global/ValueColorsSharedMagentaShade 40': string;
-
-  // Global/ValueColorsSharedMagentaShade 30 tokens
-  'Global/ValueColorsSharedMagentaShade 30': string;
-
-  // Global/ValueColorsSharedMagentaShade 20 tokens
-  'Global/ValueColorsSharedMagentaShade 20': string;
-
-  // Global/ValueColorsSharedMagentaShade 10 tokens
-  'Global/ValueColorsSharedMagentaShade 10': string;
-
-  // Global/ValueColorsSharedMagentaPrimary tokens
-  'Global/ValueColorsSharedMagentaPrimary': string;
-
-  // Global/ValueColorsSharedMagentaTint 10 tokens
-  'Global/ValueColorsSharedMagentaTint 10': string;
-
-  // Global/ValueColorsSharedMagentaTint 20 tokens
-  'Global/ValueColorsSharedMagentaTint 20': string;
-
-  // Global/ValueColorsSharedMagentaTint 30 tokens
-  'Global/ValueColorsSharedMagentaTint 30': string;
-
-  // Global/ValueColorsSharedMagentaTint 40 tokens
-  'Global/ValueColorsSharedMagentaTint 40': string;
-
-  // Global/ValueColorsSharedMagentaTint 50 tokens
-  'Global/ValueColorsSharedMagentaTint 50': string;
-
-  // Global/ValueColorsSharedMagentaTint 60 tokens
-  'Global/ValueColorsSharedMagentaTint 60': string;
-
-  // Global/ValueColorsSharedPlumShade 50 tokens
-  'Global/ValueColorsSharedPlumShade 50': string;
-
-  // Global/ValueColorsSharedPlumShade 40 tokens
-  'Global/ValueColorsSharedPlumShade 40': string;
-
-  // Global/ValueColorsSharedPlumShade 30 tokens
-  'Global/ValueColorsSharedPlumShade 30': string;
-
-  // Global/ValueColorsSharedPlumShade 20 tokens
-  'Global/ValueColorsSharedPlumShade 20': string;
-
-  // Global/ValueColorsSharedPlumShade 10 tokens
-  'Global/ValueColorsSharedPlumShade 10': string;
-
-  // Global/ValueColorsSharedPlumPrimary tokens
-  'Global/ValueColorsSharedPlumPrimary': string;
-
-  // Global/ValueColorsSharedPlumTint 10 tokens
-  'Global/ValueColorsSharedPlumTint 10': string;
-
-  // Global/ValueColorsSharedPlumTint 20 tokens
-  'Global/ValueColorsSharedPlumTint 20': string;
-
-  // Global/ValueColorsSharedPlumTint 30 tokens
-  'Global/ValueColorsSharedPlumTint 30': string;
-
-  // Global/ValueColorsSharedPlumTint 40 tokens
-  'Global/ValueColorsSharedPlumTint 40': string;
-
-  // Global/ValueColorsSharedPlumTint 50 tokens
-  'Global/ValueColorsSharedPlumTint 50': string;
-
-  // Global/ValueColorsSharedPlumTint 60 tokens
-  'Global/ValueColorsSharedPlumTint 60': string;
-
-  // Global/ValueColorsSharedBeigeShade 50 tokens
-  'Global/ValueColorsSharedBeigeShade 50': string;
-
-  // Global/ValueColorsSharedBeigeShade 40 tokens
-  'Global/ValueColorsSharedBeigeShade 40': string;
-
-  // Global/ValueColorsSharedBeigeShade 30 tokens
-  'Global/ValueColorsSharedBeigeShade 30': string;
-
-  // Global/ValueColorsSharedBeigeShade 20 tokens
-  'Global/ValueColorsSharedBeigeShade 20': string;
-
-  // Global/ValueColorsSharedBeigeShade 10 tokens
-  'Global/ValueColorsSharedBeigeShade 10': string;
-
-  // Global/ValueColorsSharedBeigePrimary tokens
-  'Global/ValueColorsSharedBeigePrimary': string;
-
-  // Global/ValueColorsSharedBeigeTint 10 tokens
-  'Global/ValueColorsSharedBeigeTint 10': string;
-
-  // Global/ValueColorsSharedBeigeTint 20 tokens
-  'Global/ValueColorsSharedBeigeTint 20': string;
-
-  // Global/ValueColorsSharedBeigeTint 30 tokens
-  'Global/ValueColorsSharedBeigeTint 30': string;
-
-  // Global/ValueColorsSharedBeigeTint 40 tokens
-  'Global/ValueColorsSharedBeigeTint 40': string;
-
-  // Global/ValueColorsSharedBeigeTint 50 tokens
-  'Global/ValueColorsSharedBeigeTint 50': string;
-
-  // Global/ValueColorsSharedBeigeTint 60 tokens
-  'Global/ValueColorsSharedBeigeTint 60': string;
-
-  // Global/ValueColorsSharedMinkShade 50 tokens
-  'Global/ValueColorsSharedMinkShade 50': string;
-
-  // Global/ValueColorsSharedMinkShade 40 tokens
-  'Global/ValueColorsSharedMinkShade 40': string;
-
-  // Global/ValueColorsSharedMinkShade 30 tokens
-  'Global/ValueColorsSharedMinkShade 30': string;
-
-  // Global/ValueColorsSharedMinkShade 20 tokens
-  'Global/ValueColorsSharedMinkShade 20': string;
-
-  // Global/ValueColorsSharedMinkShade 10 tokens
-  'Global/ValueColorsSharedMinkShade 10': string;
-
-  // Global/ValueColorsSharedMinkPrimary tokens
-  'Global/ValueColorsSharedMinkPrimary': string;
-
-  // Global/ValueColorsSharedMinkTint 10 tokens
-  'Global/ValueColorsSharedMinkTint 10': string;
-
-  // Global/ValueColorsSharedMinkTint 20 tokens
-  'Global/ValueColorsSharedMinkTint 20': string;
-
-  // Global/ValueColorsSharedMinkTint 30 tokens
-  'Global/ValueColorsSharedMinkTint 30': string;
-
-  // Global/ValueColorsSharedMinkTint 40 tokens
-  'Global/ValueColorsSharedMinkTint 40': string;
-
-  // Global/ValueColorsSharedMinkTint 50 tokens
-  'Global/ValueColorsSharedMinkTint 50': string;
-
-  // Global/ValueColorsSharedMinkTint 60 tokens
-  'Global/ValueColorsSharedMinkTint 60': string;
-
-  // Global/ValueColorsSharedSilverShade 50 tokens
-  'Global/ValueColorsSharedSilverShade 50': string;
-
-  // Global/ValueColorsSharedSilverShade 40 tokens
-  'Global/ValueColorsSharedSilverShade 40': string;
-
-  // Global/ValueColorsSharedSilverShade 30 tokens
-  'Global/ValueColorsSharedSilverShade 30': string;
-
-  // Global/ValueColorsSharedSilverShade 20 tokens
-  'Global/ValueColorsSharedSilverShade 20': string;
-
-  // Global/ValueColorsSharedSilverShade 10 tokens
-  'Global/ValueColorsSharedSilverShade 10': string;
-
-  // Global/ValueColorsSharedSilverPrimary tokens
-  'Global/ValueColorsSharedSilverPrimary': string;
-
-  // Global/ValueColorsSharedSilverTint 10 tokens
-  'Global/ValueColorsSharedSilverTint 10': string;
-
-  // Global/ValueColorsSharedSilverTint 20 tokens
-  'Global/ValueColorsSharedSilverTint 20': string;
-
-  // Global/ValueColorsSharedSilverTint 30 tokens
-  'Global/ValueColorsSharedSilverTint 30': string;
-
-  // Global/ValueColorsSharedSilverTint 40 tokens
-  'Global/ValueColorsSharedSilverTint 40': string;
-
-  // Global/ValueColorsSharedSilverTint 50 tokens
-  'Global/ValueColorsSharedSilverTint 50': string;
-
-  // Global/ValueColorsSharedSilverTint 60 tokens
-  'Global/ValueColorsSharedSilverTint 60': string;
-
-  // Global/ValueColorsSharedPlatinumShade 50 tokens
-  'Global/ValueColorsSharedPlatinumShade 50': string;
-
-  // Global/ValueColorsSharedPlatinumShade 40 tokens
-  'Global/ValueColorsSharedPlatinumShade 40': string;
-
-  // Global/ValueColorsSharedPlatinumShade 30 tokens
-  'Global/ValueColorsSharedPlatinumShade 30': string;
-
-  // Global/ValueColorsSharedPlatinumShade 20 tokens
-  'Global/ValueColorsSharedPlatinumShade 20': string;
-
-  // Global/ValueColorsSharedPlatinumShade 10 tokens
-  'Global/ValueColorsSharedPlatinumShade 10': string;
-
-  // Global/ValueColorsSharedPlatinumPrimary tokens
-  'Global/ValueColorsSharedPlatinumPrimary': string;
-
-  // Global/ValueColorsSharedPlatinumTint 10 tokens
-  'Global/ValueColorsSharedPlatinumTint 10': string;
-
-  // Global/ValueColorsSharedPlatinumTint 20 tokens
-  'Global/ValueColorsSharedPlatinumTint 20': string;
-
-  // Global/ValueColorsSharedPlatinumTint 30 tokens
-  'Global/ValueColorsSharedPlatinumTint 30': string;
-
-  // Global/ValueColorsSharedPlatinumTint 40 tokens
-  'Global/ValueColorsSharedPlatinumTint 40': string;
-
-  // Global/ValueColorsSharedPlatinumTint 50 tokens
-  'Global/ValueColorsSharedPlatinumTint 50': string;
-
-  // Global/ValueColorsSharedPlatinumTint 60 tokens
-  'Global/ValueColorsSharedPlatinumTint 60': string;
-
-  // Global/ValueColorsSharedAnchorShade 50 tokens
-  'Global/ValueColorsSharedAnchorShade 50': string;
-
-  // Global/ValueColorsSharedAnchorShade 40 tokens
-  'Global/ValueColorsSharedAnchorShade 40': string;
-
-  // Global/ValueColorsSharedAnchorShade 30 tokens
-  'Global/ValueColorsSharedAnchorShade 30': string;
-
-  // Global/ValueColorsSharedAnchorShade 20 tokens
-  'Global/ValueColorsSharedAnchorShade 20': string;
-
-  // Global/ValueColorsSharedAnchorShade 10 tokens
-  'Global/ValueColorsSharedAnchorShade 10': string;
-
-  // Global/ValueColorsSharedAnchorPrimary tokens
-  'Global/ValueColorsSharedAnchorPrimary': string;
-
-  // Global/ValueColorsSharedAnchorTint 10 tokens
-  'Global/ValueColorsSharedAnchorTint 10': string;
-
-  // Global/ValueColorsSharedAnchorTint 20 tokens
-  'Global/ValueColorsSharedAnchorTint 20': string;
-
-  // Global/ValueColorsSharedAnchorTint 30 tokens
-  'Global/ValueColorsSharedAnchorTint 30': string;
-
-  // Global/ValueColorsSharedAnchorTint 40 tokens
-  'Global/ValueColorsSharedAnchorTint 40': string;
-
-  // Global/ValueColorsSharedAnchorTint 50 tokens
-  'Global/ValueColorsSharedAnchorTint 50': string;
-
-  // Global/ValueColorsSharedAnchorTint 60 tokens
-  'Global/ValueColorsSharedAnchorTint 60': string;
-
-  // Global/ValueColorsSharedCharcoalShade 50 tokens
-  'Global/ValueColorsSharedCharcoalShade 50': string;
-
-  // Global/ValueColorsSharedCharcoalShade 40 tokens
-  'Global/ValueColorsSharedCharcoalShade 40': string;
-
-  // Global/ValueColorsSharedCharcoalShade 30 tokens
-  'Global/ValueColorsSharedCharcoalShade 30': string;
-
-  // Global/ValueColorsSharedCharcoalShade 20 tokens
-  'Global/ValueColorsSharedCharcoalShade 20': string;
-
-  // Global/ValueColorsSharedCharcoalShade 10 tokens
-  'Global/ValueColorsSharedCharcoalShade 10': string;
-
-  // Global/ValueColorsSharedCharcoalPrimary tokens
-  'Global/ValueColorsSharedCharcoalPrimary': string;
-
-  // Global/ValueColorsSharedCharcoalTint 10 tokens
-  'Global/ValueColorsSharedCharcoalTint 10': string;
-
-  // Global/ValueColorsSharedCharcoalTint 20 tokens
-  'Global/ValueColorsSharedCharcoalTint 20': string;
-
-  // Global/ValueColorsSharedCharcoalTint 30 tokens
-  'Global/ValueColorsSharedCharcoalTint 30': string;
-
-  // Global/ValueColorsSharedCharcoalTint 40 tokens
-  'Global/ValueColorsSharedCharcoalTint 40': string;
-
-  // Global/ValueColorsSharedCharcoalTint 50 tokens
-  'Global/ValueColorsSharedCharcoalTint 50': string;
-
-  // Global/ValueColorsSharedCharcoalTint 60 tokens
-  'Global/ValueColorsSharedCharcoalTint 60': string;
-
-  // Global/ValueColorsSharedInformationPrimary tokens
-  'Global/ValueColorsSharedInformationPrimary': string;
-
-  // Global/ValueColorsSharedInformationTint 30 tokens
-  'Global/ValueColorsSharedInformationTint 30': string;
-
-  // Global/ValueColorsSharedInformationTint 60 tokens
-  'Global/ValueColorsSharedInformationTint 60': string;
-
-  // Global/ValueColorsSharedInformationTint 40 tokens
-  'Global/ValueColorsSharedInformationTint 40': string;
-
-  // Global/ValueColorsSharedInformationTint 50 tokens
-  'Global/ValueColorsSharedInformationTint 50': string;
-
-  // Global/ValueColorsSharedInformationTint 20 tokens
-  'Global/ValueColorsSharedInformationTint 20': string;
-
-  // Global/ValueColorsSharedInformationTint 10 tokens
-  'Global/ValueColorsSharedInformationTint 10': string;
-
-  // Global/ValueColorsSharedInformationShade 10 tokens
-  'Global/ValueColorsSharedInformationShade 10': string;
-
-  // Global/ValueColorsSharedInformationShade 20 tokens
-  'Global/ValueColorsSharedInformationShade 20': string;
-
-  // Global/ValueColorsAlphaWhite0 tokens
-  'Global/ValueColorsAlphaWhite0': string;
-
-  // Global/ValueColorsAlphaWhite5 tokens
-  'Global/ValueColorsAlphaWhite5': string;
-
-  // Global/ValueColorsAlphaWhite10 tokens
-  'Global/ValueColorsAlphaWhite10': string;
-
-  // Global/ValueColorsAlphaWhite20 tokens
-  'Global/ValueColorsAlphaWhite20': string;
-
-  // Global/ValueColorsAlphaWhite30 tokens
-  'Global/ValueColorsAlphaWhite30': string;
-
-  // Global/ValueColorsAlphaWhite40 tokens
-  'Global/ValueColorsAlphaWhite40': string;
-
-  // Global/ValueColorsAlphaWhite50 tokens
-  'Global/ValueColorsAlphaWhite50': string;
-
-  // Global/ValueColorsAlphaWhite60 tokens
-  'Global/ValueColorsAlphaWhite60': string;
-
-  // Global/ValueColorsAlphaWhite70 tokens
-  'Global/ValueColorsAlphaWhite70': string;
-
-  // Global/ValueColorsAlphaWhite80 tokens
-  'Global/ValueColorsAlphaWhite80': string;
-
-  // Global/ValueColorsAlphaWhite90 tokens
-  'Global/ValueColorsAlphaWhite90': string;
-
-  // Global/ValueColorsAlphaBlack0 tokens
-  'Global/ValueColorsAlphaBlack0': string;
-
-  // Global/ValueColorsAlphaBlack5 tokens
-  'Global/ValueColorsAlphaBlack5': string;
-
-  // Global/ValueColorsAlphaBlack10 tokens
-  'Global/ValueColorsAlphaBlack10': string;
-
-  // Global/ValueColorsAlphaBlack20 tokens
-  'Global/ValueColorsAlphaBlack20': string;
-
-  // Global/ValueColorsAlphaBlack30 tokens
-  'Global/ValueColorsAlphaBlack30': string;
-
-  // Global/ValueColorsAlphaBlack40 tokens
-  'Global/ValueColorsAlphaBlack40': string;
-
-  // Global/ValueColorsAlphaBlack50 tokens
-  'Global/ValueColorsAlphaBlack50': string;
-
-  // Global/ValueColorsAlphaBlack60 tokens
-  'Global/ValueColorsAlphaBlack60': string;
-
-  // Global/ValueColorsAlphaBlack70 tokens
-  'Global/ValueColorsAlphaBlack70': string;
-
-  // Global/ValueColorsAlphaBlack80 tokens
-  'Global/ValueColorsAlphaBlack80': string;
-
-  // Global/ValueColorsAlphaBlack90 tokens
-  'Global/ValueColorsAlphaBlack90': string;
-
-  // Global/ValueColorsAlphaBrand tokens
-  'Global/ValueColorsAlphaBrand-105': string;
-  'Global/ValueColorsAlphaBrand-1010': string;
-  'Global/ValueColorsAlphaBrand-1020': string;
-  'Global/ValueColorsAlphaBrand-1030': string;
-  'Global/ValueColorsAlphaBrand-1040': string;
-  'Global/ValueColorsAlphaBrand-1050': string;
-  'Global/ValueColorsAlphaBrand-1060': string;
-  'Global/ValueColorsAlphaBrand-1070': string;
-  'Global/ValueColorsAlphaBrand-1080': string;
-  'Global/ValueColorsAlphaBrand-1090': string;
-
-  // Global/ValueColorsData vizCoreBlue tokens
-  'Global/ValueColorsData vizCoreBlue': string;
-
-  // Global/ValueColorsData vizCoreGray tokens
-  'Global/ValueColorsData vizCoreGray': string;
-
-  // Global/ValueColorsData vizCoreRed tokens
-  'Global/ValueColorsData vizCoreRed': string;
-
-  // Global/ValueColorsData vizCoreTeal tokens
-  'Global/ValueColorsData vizCoreTeal': string;
-
-  // Global/ValueColorsData vizCoreOcean tokens
-  'Global/ValueColorsData vizCoreOcean': string;
-
-  // Global/ValueColorsData vizCoreGreen tokens
-  'Global/ValueColorsData vizCoreGreen': string;
-
-  // Global/ValueColorsData vizCoreYellow tokens
-  'Global/ValueColorsData vizCoreYellow': string;
-
-  // Global/ValueColorsData vizSemanticLight bkgdPositive tokens
-  'Global/ValueColorsData vizSemanticLight bkgdPositive': string;
-
-  // Global/ValueColorsData vizSemanticLight bkgdNotice tokens
-  'Global/ValueColorsData vizSemanticLight bkgdNotice': string;
-
-  // Global/ValueColorsData vizSemanticLight bkgdNegative tokens
-  'Global/ValueColorsData vizSemanticLight bkgdNegative': string;
-
-  // Global/ValueColorsData vizSemanticDark bkgdPositive tokens
-  'Global/ValueColorsData vizSemanticDark bkgdPositive': string;
-
-  // Global/ValueColorsData vizSemanticDark bkgdNegative tokens
-  'Global/ValueColorsData vizSemanticDark bkgdNegative': string;
-
-  // Global/ValueColorsData vizSemanticDark bkgdNotice tokens
-  'Global/ValueColorsData vizSemanticDark bkgdNotice': string;
-
-  // Global/ValueColorsData vizSequentialBlue400 tokens
-  'Global/ValueColorsData vizSequentialBlue400': string;
-
-  // Global/ValueColorsData vizSequentialBlue300 tokens
-  'Global/ValueColorsData vizSequentialBlue300': string;
-
-  // Global/ValueColorsData vizSequentialBlue200 tokens
-  'Global/ValueColorsData vizSequentialBlue200': string;
-
-  // Global/ValueColorsData vizSequentialBlue100 tokens
-  'Global/ValueColorsData vizSequentialBlue100': string;
-
-  // Global/ValueColorsData vizSequentialGray400 tokens
-  'Global/ValueColorsData vizSequentialGray400': string;
-
-  // Global/ValueColorsData vizSequentialGray300 tokens
-  'Global/ValueColorsData vizSequentialGray300': string;
-
-  // Global/ValueColorsData vizSequentialGray200 tokens
-  'Global/ValueColorsData vizSequentialGray200': string;
-
-  // Global/ValueColorsData vizSequentialGray100 tokens
-  'Global/ValueColorsData vizSequentialGray100': string;
-
-  // Global/ValueColorsData vizSequentialRed400 tokens
-  'Global/ValueColorsData vizSequentialRed400': string;
-
-  // Global/ValueColorsData vizSequentialRed300 tokens
-  'Global/ValueColorsData vizSequentialRed300': string;
-
-  // Global/ValueColorsData vizSequentialRed200 tokens
-  'Global/ValueColorsData vizSequentialRed200': string;
-
-  // Global/ValueColorsData vizSequentialRed100 tokens
-  'Global/ValueColorsData vizSequentialRed100': string;
-
-  // Global/ValueColorsData vizSequentialTeal400 tokens
-  'Global/ValueColorsData vizSequentialTeal400': string;
-
-  // Global/ValueColorsData vizSequentialTeal300 tokens
-  'Global/ValueColorsData vizSequentialTeal300': string;
-
-  // Global/ValueColorsData vizSequentialTeal200 tokens
-  'Global/ValueColorsData vizSequentialTeal200': string;
-
-  // Global/ValueColorsData vizSequentialTeal100 tokens
-  'Global/ValueColorsData vizSequentialTeal100': string;
-
-  // Global/ValueColorsData vizSequentialOcean400 tokens
-  'Global/ValueColorsData vizSequentialOcean400': string;
-
-  // Global/ValueColorsData vizSequentialOcean300 tokens
-  'Global/ValueColorsData vizSequentialOcean300': string;
-
-  // Global/ValueColorsData vizSequentialOcean200 tokens
-  'Global/ValueColorsData vizSequentialOcean200': string;
-
-  // Global/ValueColorsData vizSequentialOcean100 tokens
-  'Global/ValueColorsData vizSequentialOcean100': string;
-
-  // Global/ValueColorsData vizSequentialGreen400 tokens
-  'Global/ValueColorsData vizSequentialGreen400': string;
-
-  // Global/ValueColorsData vizSequentialGreen300 tokens
-  'Global/ValueColorsData vizSequentialGreen300': string;
-
-  // Global/ValueColorsData vizSequentialGreen200 tokens
-  'Global/ValueColorsData vizSequentialGreen200': string;
-
-  // Global/ValueColorsData vizSequentialGreen100 tokens
-  'Global/ValueColorsData vizSequentialGreen100': string;
-
-  // Global/ValueColorsData vizSequentialYellow400 tokens
-  'Global/ValueColorsData vizSequentialYellow400': string;
-
-  // Global/ValueColorsData vizSequentialYellow300 tokens
-  'Global/ValueColorsData vizSequentialYellow300': string;
-
-  // Global/ValueColorsData vizSequentialYellow200 tokens
-  'Global/ValueColorsData vizSequentialYellow200': string;
-
-  // Global/ValueColorsData vizSequentialYellow100 tokens
-  'Global/ValueColorsData vizSequentialYellow100': string;
-
-  // Global/ValueColorsBrandBrand tokens
-  'Global/ValueColorsBrandBrand-10': string;
-  'Global/ValueColorsBrandBrand-20': string;
-  'Global/ValueColorsBrandBrand-30': string;
-  'Global/ValueColorsBrandBrand-40': string;
-  'Global/ValueColorsBrandBrand-50': string;
-  'Global/ValueColorsBrandBrand-60': string;
-  'Global/ValueColorsBrandBrand-70': string;
-  'Global/ValueColorsBrandBrand-80': string;
-  'Global/ValueColorsBrandBrand-90': string;
-  'Global/ValueColorsBrandBrand-100': string;
-  'Global/ValueColorsBrandBrand-110': string;
-  'Global/ValueColorsBrandBrand-120': string;
-  'Global/ValueColorsBrandBrand-130': string;
-
-  // Brand/Brand 1Brand tokens
-  'Brand/Brand 1Brand-10': string;
-  'Brand/Brand 1Brand-20': string;
-  'Brand/Brand 1Brand-30': string;
-  'Brand/Brand 1Brand-40': string;
-  'Brand/Brand 1Brand-50': string;
-  'Brand/Brand 1Brand-60': string;
-  'Brand/Brand 1Brand-70': string;
-  'Brand/Brand 1Brand-80': string;
-  'Brand/Brand 1Brand-90': string;
-  'Brand/Brand 1Brand-100': string;
-  'Brand/Brand 1Brand-110': string;
-  'Brand/Brand 1Brand-120': string;
-  'Brand/Brand 1Brand-130': string;
-
-  // Arrow position/Above startAbove tokens
-  'Arrow position/Above startAbove-start': string;
-  'Arrow position/Above startAbove-middle': string;
-  'Arrow position/Above startAbove-end': string;
-
-  // Arrow position/Above startBefore tokens
-  'Arrow position/Above startBefore-top': string;
-  'Arrow position/Above startBefore-center': string;
-  'Arrow position/Above startBefore-bottom': string;
-
-  // Arrow position/Above startAfter tokens
-  'Arrow position/Above startAfter-top': string;
-  'Arrow position/Above startAfter-center': string;
-  'Arrow position/Above startAfter-bottom': string;
-
-  // Arrow position/Above startBottom tokens
-  'Arrow position/Above startBottom-start': string;
-  'Arrow position/Above startBottom-center': string;
-  'Arrow position/Above startBottom-end': string;
-
-  // Arrow position/Above middleAbove tokens
-  'Arrow position/Above middleAbove-start': string;
-  'Arrow position/Above middleAbove-middle': string;
-  'Arrow position/Above middleAbove-end': string;
-
-  // Arrow position/Above middleBefore tokens
-  'Arrow position/Above middleBefore-top': string;
-  'Arrow position/Above middleBefore-center': string;
-  'Arrow position/Above middleBefore-bottom': string;
-
-  // Arrow position/Above middleAfter tokens
-  'Arrow position/Above middleAfter-top': string;
-  'Arrow position/Above middleAfter-center': string;
-  'Arrow position/Above middleAfter-bottom': string;
-
-  // Arrow position/Above middleBottom tokens
-  'Arrow position/Above middleBottom-start': string;
-  'Arrow position/Above middleBottom-center': string;
-  'Arrow position/Above middleBottom-end': string;
-
-  // Arrow position/Above endAbove tokens
-  'Arrow position/Above endAbove-start': string;
-  'Arrow position/Above endAbove-middle': string;
+interface FluentThemeTokens {
+  'Arrow position/Above end/Arrow position/Above endAbove-end': string;
+  'Arrow position/Above end/Arrow position/Above endAbove-middle': string;
+  'Arrow position/Above end/Arrow position/Above endAbove-start': string;
+  'Arrow position/Above end/Arrow position/Above endAfter-bottom': string;
+  'Arrow position/Above end/Arrow position/Above endAfter-center': string;
+  'Arrow position/Above end/Arrow position/Above endAfter-top': string;
+  'Arrow position/Above end/Arrow position/Above endBefore-bottom': string;
+  'Arrow position/Above end/Arrow position/Above endBefore-center': string;
+  'Arrow position/Above end/Arrow position/Above endBefore-top': string;
+  'Arrow position/Above end/Arrow position/Above endBottom-center': string;
+  'Arrow position/Above end/Arrow position/Above endBottom-end': string;
+  'Arrow position/Above end/Arrow position/Above endBottom-start': string;
   'Arrow position/Above endAbove-end': string;
-
-  // Arrow position/Above endBefore tokens
-  'Arrow position/Above endBefore-top': string;
-  'Arrow position/Above endBefore-center': string;
-  'Arrow position/Above endBefore-bottom': string;
-
-  // Arrow position/Above endAfter tokens
-  'Arrow position/Above endAfter-top': string;
-  'Arrow position/Above endAfter-center': string;
+  'Arrow position/Above endAbove-middle': string;
+  'Arrow position/Above endAbove-start': string;
   'Arrow position/Above endAfter-bottom': string;
-
-  // Arrow position/Above endBottom tokens
-  'Arrow position/Above endBottom-start': string;
+  'Arrow position/Above endAfter-center': string;
+  'Arrow position/Above endAfter-top': string;
+  'Arrow position/Above endBefore-bottom': string;
+  'Arrow position/Above endBefore-center': string;
+  'Arrow position/Above endBefore-top': string;
   'Arrow position/Above endBottom-center': string;
   'Arrow position/Above endBottom-end': string;
-
-  // Arrow position/Before topAbove tokens
-  'Arrow position/Before topAbove-start': string;
-  'Arrow position/Before topAbove-middle': string;
-  'Arrow position/Before topAbove-end': string;
-
-  // Arrow position/Before topBefore tokens
-  'Arrow position/Before topBefore-top': string;
-  'Arrow position/Before topBefore-center': string;
-  'Arrow position/Before topBefore-bottom': string;
-
-  // Arrow position/Before topAfter tokens
-  'Arrow position/Before topAfter-top': string;
-  'Arrow position/Before topAfter-center': string;
-  'Arrow position/Before topAfter-bottom': string;
-
-  // Arrow position/Before topBottom tokens
-  'Arrow position/Before topBottom-start': string;
-  'Arrow position/Before topBottom-center': string;
-  'Arrow position/Before topBottom-end': string;
-
-  // Arrow position/Before middleAbove tokens
-  'Arrow position/Before middleAbove-start': string;
-  'Arrow position/Before middleAbove-middle': string;
-  'Arrow position/Before middleAbove-end': string;
-
-  // Arrow position/Before middleBefore tokens
-  'Arrow position/Before middleBefore-top': string;
-  'Arrow position/Before middleBefore-center': string;
-  'Arrow position/Before middleBefore-bottom': string;
-
-  // Arrow position/Before middleAfter tokens
-  'Arrow position/Before middleAfter-top': string;
-  'Arrow position/Before middleAfter-center': string;
-  'Arrow position/Before middleAfter-bottom': string;
-
-  // Arrow position/Before middleBottom tokens
-  'Arrow position/Before middleBottom-start': string;
-  'Arrow position/Before middleBottom-center': string;
-  'Arrow position/Before middleBottom-end': string;
-
-  // Arrow position/Before bottomAbove tokens
-  'Arrow position/Before bottomAbove-start': string;
-  'Arrow position/Before bottomAbove-middle': string;
-  'Arrow position/Before bottomAbove-end': string;
-
-  // Arrow position/Before bottomBefore tokens
-  'Arrow position/Before bottomBefore-top': string;
-  'Arrow position/Before bottomBefore-center': string;
-  'Arrow position/Before bottomBefore-bottom': string;
-
-  // Arrow position/Before bottomAfter tokens
-  'Arrow position/Before bottomAfter-top': string;
-  'Arrow position/Before bottomAfter-center': string;
-  'Arrow position/Before bottomAfter-bottom': string;
-
-  // Arrow position/Before bottomBottom tokens
-  'Arrow position/Before bottomBottom-start': string;
-  'Arrow position/Before bottomBottom-center': string;
-  'Arrow position/Before bottomBottom-end': string;
-
-  // Arrow position/After topAbove tokens
-  'Arrow position/After topAbove-start': string;
-  'Arrow position/After topAbove-middle': string;
-  'Arrow position/After topAbove-end': string;
-
-  // Arrow position/After topBefore tokens
-  'Arrow position/After topBefore-top': string;
-  'Arrow position/After topBefore-center': string;
-  'Arrow position/After topBefore-bottom': string;
-
-  // Arrow position/After topAfter tokens
-  'Arrow position/After topAfter-top': string;
-  'Arrow position/After topAfter-center': string;
-  'Arrow position/After topAfter-bottom': string;
-
-  // Arrow position/After topBottom tokens
-  'Arrow position/After topBottom-start': string;
-  'Arrow position/After topBottom-center': string;
-  'Arrow position/After topBottom-end': string;
-
-  // Arrow position/After middleAbove tokens
-  'Arrow position/After middleAbove-start': string;
-  'Arrow position/After middleAbove-middle': string;
-  'Arrow position/After middleAbove-end': string;
-
-  // Arrow position/After middleBefore tokens
-  'Arrow position/After middleBefore-top': string;
-  'Arrow position/After middleBefore-center': string;
-  'Arrow position/After middleBefore-bottom': string;
-
-  // Arrow position/After middleAfter tokens
-  'Arrow position/After middleAfter-top': string;
-  'Arrow position/After middleAfter-center': string;
-  'Arrow position/After middleAfter-bottom': string;
-
-  // Arrow position/After middleBottom tokens
-  'Arrow position/After middleBottom-start': string;
-  'Arrow position/After middleBottom-center': string;
-  'Arrow position/After middleBottom-end': string;
-
-  // Arrow position/After bottomAbove tokens
-  'Arrow position/After bottomAbove-start': string;
-  'Arrow position/After bottomAbove-middle': string;
+  'Arrow position/Above endBottom-start': string;
+  'Arrow position/Above middle/Arrow position/Above middleAbove-end': string;
+  'Arrow position/Above middle/Arrow position/Above middleAbove-middle': string;
+  'Arrow position/Above middle/Arrow position/Above middleAbove-start': string;
+  'Arrow position/Above middle/Arrow position/Above middleAfter-bottom': string;
+  'Arrow position/Above middle/Arrow position/Above middleAfter-center': string;
+  'Arrow position/Above middle/Arrow position/Above middleAfter-top': string;
+  'Arrow position/Above middle/Arrow position/Above middleBefore-bottom': string;
+  'Arrow position/Above middle/Arrow position/Above middleBefore-center': string;
+  'Arrow position/Above middle/Arrow position/Above middleBefore-top': string;
+  'Arrow position/Above middle/Arrow position/Above middleBottom-center': string;
+  'Arrow position/Above middle/Arrow position/Above middleBottom-end': string;
+  'Arrow position/Above middle/Arrow position/Above middleBottom-start': string;
+  'Arrow position/Above middleAbove-end': string;
+  'Arrow position/Above middleAbove-middle': string;
+  'Arrow position/Above middleAbove-start': string;
+  'Arrow position/Above middleAfter-bottom': string;
+  'Arrow position/Above middleAfter-center': string;
+  'Arrow position/Above middleAfter-top': string;
+  'Arrow position/Above middleBefore-bottom': string;
+  'Arrow position/Above middleBefore-center': string;
+  'Arrow position/Above middleBefore-top': string;
+  'Arrow position/Above middleBottom-center': string;
+  'Arrow position/Above middleBottom-end': string;
+  'Arrow position/Above middleBottom-start': string;
+  'Arrow position/Above start/Arrow position/Above startAbove-end': string;
+  'Arrow position/Above start/Arrow position/Above startAbove-middle': string;
+  'Arrow position/Above start/Arrow position/Above startAbove-start': string;
+  'Arrow position/Above start/Arrow position/Above startAfter-bottom': string;
+  'Arrow position/Above start/Arrow position/Above startAfter-center': string;
+  'Arrow position/Above start/Arrow position/Above startAfter-top': string;
+  'Arrow position/Above start/Arrow position/Above startBefore-bottom': string;
+  'Arrow position/Above start/Arrow position/Above startBefore-center': string;
+  'Arrow position/Above start/Arrow position/Above startBefore-top': string;
+  'Arrow position/Above start/Arrow position/Above startBottom-center': string;
+  'Arrow position/Above start/Arrow position/Above startBottom-end': string;
+  'Arrow position/Above start/Arrow position/Above startBottom-start': string;
+  'Arrow position/Above startAbove-end': string;
+  'Arrow position/Above startAbove-middle': string;
+  'Arrow position/Above startAbove-start': string;
+  'Arrow position/Above startAfter-bottom': string;
+  'Arrow position/Above startAfter-center': string;
+  'Arrow position/Above startAfter-top': string;
+  'Arrow position/Above startBefore-bottom': string;
+  'Arrow position/Above startBefore-center': string;
+  'Arrow position/Above startBefore-top': string;
+  'Arrow position/Above startBottom-center': string;
+  'Arrow position/Above startBottom-end': string;
+  'Arrow position/Above startBottom-start': string;
+  'Arrow position/After bottom/Arrow position/After bottomAbove-end': string;
+  'Arrow position/After bottom/Arrow position/After bottomAbove-middle': string;
+  'Arrow position/After bottom/Arrow position/After bottomAbove-start': string;
+  'Arrow position/After bottom/Arrow position/After bottomAfter-bottom': string;
+  'Arrow position/After bottom/Arrow position/After bottomAfter-center': string;
+  'Arrow position/After bottom/Arrow position/After bottomAfter-top': string;
+  'Arrow position/After bottom/Arrow position/After bottomBefore-bottom': string;
+  'Arrow position/After bottom/Arrow position/After bottomBefore-center': string;
+  'Arrow position/After bottom/Arrow position/After bottomBefore-top': string;
+  'Arrow position/After bottom/Arrow position/After bottomBottom-center': string;
+  'Arrow position/After bottom/Arrow position/After bottomBottom-end': string;
+  'Arrow position/After bottom/Arrow position/After bottomBottom-start': string;
   'Arrow position/After bottomAbove-end': string;
-
-  // Arrow position/After bottomBefore tokens
-  'Arrow position/After bottomBefore-top': string;
-  'Arrow position/After bottomBefore-center': string;
-  'Arrow position/After bottomBefore-bottom': string;
-
-  // Arrow position/After bottomAfter tokens
-  'Arrow position/After bottomAfter-top': string;
-  'Arrow position/After bottomAfter-center': string;
+  'Arrow position/After bottomAbove-middle': string;
+  'Arrow position/After bottomAbove-start': string;
   'Arrow position/After bottomAfter-bottom': string;
-
-  // Arrow position/After bottomBottom tokens
-  'Arrow position/After bottomBottom-start': string;
+  'Arrow position/After bottomAfter-center': string;
+  'Arrow position/After bottomAfter-top': string;
+  'Arrow position/After bottomBefore-bottom': string;
+  'Arrow position/After bottomBefore-center': string;
+  'Arrow position/After bottomBefore-top': string;
   'Arrow position/After bottomBottom-center': string;
   'Arrow position/After bottomBottom-end': string;
-
-  // Arrow position/Bottom startAbove tokens
-  'Arrow position/Bottom startAbove-start': string;
-  'Arrow position/Bottom startAbove-middle': string;
-  'Arrow position/Bottom startAbove-end': string;
-
-  // Arrow position/Bottom startBefore tokens
-  'Arrow position/Bottom startBefore-top': string;
-  'Arrow position/Bottom startBefore-center': string;
-  'Arrow position/Bottom startBefore-bottom': string;
-
-  // Arrow position/Bottom startAfter tokens
-  'Arrow position/Bottom startAfter-top': string;
-  'Arrow position/Bottom startAfter-center': string;
-  'Arrow position/Bottom startAfter-bottom': string;
-
-  // Arrow position/Bottom startBottom tokens
-  'Arrow position/Bottom startBottom-start': string;
-  'Arrow position/Bottom startBottom-center': string;
-  'Arrow position/Bottom startBottom-end': string;
-
-  // Arrow position/Bottom middleAbove tokens
-  'Arrow position/Bottom middleAbove-start': string;
-  'Arrow position/Bottom middleAbove-middle': string;
-  'Arrow position/Bottom middleAbove-end': string;
-
-  // Arrow position/Bottom middleBefore tokens
-  'Arrow position/Bottom middleBefore-top': string;
-  'Arrow position/Bottom middleBefore-center': string;
-  'Arrow position/Bottom middleBefore-bottom': string;
-
-  // Arrow position/Bottom middleAfter tokens
-  'Arrow position/Bottom middleAfter-top': string;
-  'Arrow position/Bottom middleAfter-center': string;
-  'Arrow position/Bottom middleAfter-bottom': string;
-
-  // Arrow position/Bottom middleBottom tokens
-  'Arrow position/Bottom middleBottom-start': string;
-  'Arrow position/Bottom middleBottom-center': string;
-  'Arrow position/Bottom middleBottom-end': string;
-
-  // Arrow position/Bottom endAbove tokens
-  'Arrow position/Bottom endAbove-start': string;
-  'Arrow position/Bottom endAbove-middle': string;
+  'Arrow position/After bottomBottom-start': string;
+  'Arrow position/After middle/Arrow position/After middleAbove-end': string;
+  'Arrow position/After middle/Arrow position/After middleAbove-middle': string;
+  'Arrow position/After middle/Arrow position/After middleAbove-start': string;
+  'Arrow position/After middle/Arrow position/After middleAfter-bottom': string;
+  'Arrow position/After middle/Arrow position/After middleAfter-center': string;
+  'Arrow position/After middle/Arrow position/After middleAfter-top': string;
+  'Arrow position/After middle/Arrow position/After middleBefore-bottom': string;
+  'Arrow position/After middle/Arrow position/After middleBefore-center': string;
+  'Arrow position/After middle/Arrow position/After middleBefore-top': string;
+  'Arrow position/After middle/Arrow position/After middleBottom-center': string;
+  'Arrow position/After middle/Arrow position/After middleBottom-end': string;
+  'Arrow position/After middle/Arrow position/After middleBottom-start': string;
+  'Arrow position/After middleAbove-end': string;
+  'Arrow position/After middleAbove-middle': string;
+  'Arrow position/After middleAbove-start': string;
+  'Arrow position/After middleAfter-bottom': string;
+  'Arrow position/After middleAfter-center': string;
+  'Arrow position/After middleAfter-top': string;
+  'Arrow position/After middleBefore-bottom': string;
+  'Arrow position/After middleBefore-center': string;
+  'Arrow position/After middleBefore-top': string;
+  'Arrow position/After middleBottom-center': string;
+  'Arrow position/After middleBottom-end': string;
+  'Arrow position/After middleBottom-start': string;
+  'Arrow position/After top/Arrow position/After topAbove-end': string;
+  'Arrow position/After top/Arrow position/After topAbove-middle': string;
+  'Arrow position/After top/Arrow position/After topAbove-start': string;
+  'Arrow position/After top/Arrow position/After topAfter-bottom': string;
+  'Arrow position/After top/Arrow position/After topAfter-center': string;
+  'Arrow position/After top/Arrow position/After topAfter-top': string;
+  'Arrow position/After top/Arrow position/After topBefore-bottom': string;
+  'Arrow position/After top/Arrow position/After topBefore-center': string;
+  'Arrow position/After top/Arrow position/After topBefore-top': string;
+  'Arrow position/After top/Arrow position/After topBottom-center': string;
+  'Arrow position/After top/Arrow position/After topBottom-end': string;
+  'Arrow position/After top/Arrow position/After topBottom-start': string;
+  'Arrow position/After topAbove-end': string;
+  'Arrow position/After topAbove-middle': string;
+  'Arrow position/After topAbove-start': string;
+  'Arrow position/After topAfter-bottom': string;
+  'Arrow position/After topAfter-center': string;
+  'Arrow position/After topAfter-top': string;
+  'Arrow position/After topBefore-bottom': string;
+  'Arrow position/After topBefore-center': string;
+  'Arrow position/After topBefore-top': string;
+  'Arrow position/After topBottom-center': string;
+  'Arrow position/After topBottom-end': string;
+  'Arrow position/After topBottom-start': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomAbove-end': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomAbove-middle': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomAbove-start': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomAfter-bottom': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomAfter-center': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomAfter-top': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomBefore-bottom': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomBefore-center': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomBefore-top': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomBottom-center': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomBottom-end': string;
+  'Arrow position/Before bottom/Arrow position/Before bottomBottom-start': string;
+  'Arrow position/Before bottomAbove-end': string;
+  'Arrow position/Before bottomAbove-middle': string;
+  'Arrow position/Before bottomAbove-start': string;
+  'Arrow position/Before bottomAfter-bottom': string;
+  'Arrow position/Before bottomAfter-center': string;
+  'Arrow position/Before bottomAfter-top': string;
+  'Arrow position/Before bottomBefore-bottom': string;
+  'Arrow position/Before bottomBefore-center': string;
+  'Arrow position/Before bottomBefore-top': string;
+  'Arrow position/Before bottomBottom-center': string;
+  'Arrow position/Before bottomBottom-end': string;
+  'Arrow position/Before bottomBottom-start': string;
+  'Arrow position/Before middle/Arrow position/Before middleAbove-end': string;
+  'Arrow position/Before middle/Arrow position/Before middleAbove-middle': string;
+  'Arrow position/Before middle/Arrow position/Before middleAbove-start': string;
+  'Arrow position/Before middle/Arrow position/Before middleAfter-bottom': string;
+  'Arrow position/Before middle/Arrow position/Before middleAfter-center': string;
+  'Arrow position/Before middle/Arrow position/Before middleAfter-top': string;
+  'Arrow position/Before middle/Arrow position/Before middleBefore-bottom': string;
+  'Arrow position/Before middle/Arrow position/Before middleBefore-center': string;
+  'Arrow position/Before middle/Arrow position/Before middleBefore-top': string;
+  'Arrow position/Before middle/Arrow position/Before middleBottom-center': string;
+  'Arrow position/Before middle/Arrow position/Before middleBottom-end': string;
+  'Arrow position/Before middle/Arrow position/Before middleBottom-start': string;
+  'Arrow position/Before middleAbove-end': string;
+  'Arrow position/Before middleAbove-middle': string;
+  'Arrow position/Before middleAbove-start': string;
+  'Arrow position/Before middleAfter-bottom': string;
+  'Arrow position/Before middleAfter-center': string;
+  'Arrow position/Before middleAfter-top': string;
+  'Arrow position/Before middleBefore-bottom': string;
+  'Arrow position/Before middleBefore-center': string;
+  'Arrow position/Before middleBefore-top': string;
+  'Arrow position/Before middleBottom-center': string;
+  'Arrow position/Before middleBottom-end': string;
+  'Arrow position/Before middleBottom-start': string;
+  'Arrow position/Before top/Arrow position/Before topAbove-end': string;
+  'Arrow position/Before top/Arrow position/Before topAbove-middle': string;
+  'Arrow position/Before top/Arrow position/Before topAbove-start': string;
+  'Arrow position/Before top/Arrow position/Before topAfter-bottom': string;
+  'Arrow position/Before top/Arrow position/Before topAfter-center': string;
+  'Arrow position/Before top/Arrow position/Before topAfter-top': string;
+  'Arrow position/Before top/Arrow position/Before topBefore-bottom': string;
+  'Arrow position/Before top/Arrow position/Before topBefore-center': string;
+  'Arrow position/Before top/Arrow position/Before topBefore-top': string;
+  'Arrow position/Before top/Arrow position/Before topBottom-center': string;
+  'Arrow position/Before top/Arrow position/Before topBottom-end': string;
+  'Arrow position/Before top/Arrow position/Before topBottom-start': string;
+  'Arrow position/Before topAbove-end': string;
+  'Arrow position/Before topAbove-middle': string;
+  'Arrow position/Before topAbove-start': string;
+  'Arrow position/Before topAfter-bottom': string;
+  'Arrow position/Before topAfter-center': string;
+  'Arrow position/Before topAfter-top': string;
+  'Arrow position/Before topBefore-bottom': string;
+  'Arrow position/Before topBefore-center': string;
+  'Arrow position/Before topBefore-top': string;
+  'Arrow position/Before topBottom-center': string;
+  'Arrow position/Before topBottom-end': string;
+  'Arrow position/Before topBottom-start': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endAbove-end': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endAbove-middle': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endAbove-start': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endAfter-bottom': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endAfter-center': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endAfter-top': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endBefore-bottom': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endBefore-center': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endBefore-top': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endBottom-center': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endBottom-end': string;
+  'Arrow position/Bottom end/Arrow position/Bottom endBottom-start': string;
   'Arrow position/Bottom endAbove-end': string;
-
-  // Arrow position/Bottom endBefore tokens
-  'Arrow position/Bottom endBefore-top': string;
-  'Arrow position/Bottom endBefore-center': string;
-  'Arrow position/Bottom endBefore-bottom': string;
-
-  // Arrow position/Bottom endAfter tokens
-  'Arrow position/Bottom endAfter-top': string;
-  'Arrow position/Bottom endAfter-center': string;
+  'Arrow position/Bottom endAbove-middle': string;
+  'Arrow position/Bottom endAbove-start': string;
   'Arrow position/Bottom endAfter-bottom': string;
-
-  // Arrow position/Bottom endBottom tokens
-  'Arrow position/Bottom endBottom-start': string;
+  'Arrow position/Bottom endAfter-center': string;
+  'Arrow position/Bottom endAfter-top': string;
+  'Arrow position/Bottom endBefore-bottom': string;
+  'Arrow position/Bottom endBefore-center': string;
+  'Arrow position/Bottom endBefore-top': string;
   'Arrow position/Bottom endBottom-center': string;
   'Arrow position/Bottom endBottom-end': string;
-
-  // Arrow position/NoneAbove tokens
-  'Arrow position/NoneAbove-start': string;
-  'Arrow position/NoneAbove-middle': string;
+  'Arrow position/Bottom endBottom-start': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleAbove-end': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleAbove-middle': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleAbove-start': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleAfter-bottom': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleAfter-center': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleAfter-top': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleBefore-bottom': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleBefore-center': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleBefore-top': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleBottom-center': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleBottom-end': string;
+  'Arrow position/Bottom middle/Arrow position/Bottom middleBottom-start': string;
+  'Arrow position/Bottom middleAbove-end': string;
+  'Arrow position/Bottom middleAbove-middle': string;
+  'Arrow position/Bottom middleAbove-start': string;
+  'Arrow position/Bottom middleAfter-bottom': string;
+  'Arrow position/Bottom middleAfter-center': string;
+  'Arrow position/Bottom middleAfter-top': string;
+  'Arrow position/Bottom middleBefore-bottom': string;
+  'Arrow position/Bottom middleBefore-center': string;
+  'Arrow position/Bottom middleBefore-top': string;
+  'Arrow position/Bottom middleBottom-center': string;
+  'Arrow position/Bottom middleBottom-end': string;
+  'Arrow position/Bottom middleBottom-start': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startAbove-end': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startAbove-middle': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startAbove-start': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startAfter-bottom': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startAfter-center': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startAfter-top': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startBefore-bottom': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startBefore-center': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startBefore-top': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startBottom-center': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startBottom-end': string;
+  'Arrow position/Bottom start/Arrow position/Bottom startBottom-start': string;
+  'Arrow position/Bottom startAbove-end': string;
+  'Arrow position/Bottom startAbove-middle': string;
+  'Arrow position/Bottom startAbove-start': string;
+  'Arrow position/Bottom startAfter-bottom': string;
+  'Arrow position/Bottom startAfter-center': string;
+  'Arrow position/Bottom startAfter-top': string;
+  'Arrow position/Bottom startBefore-bottom': string;
+  'Arrow position/Bottom startBefore-center': string;
+  'Arrow position/Bottom startBefore-top': string;
+  'Arrow position/Bottom startBottom-center': string;
+  'Arrow position/Bottom startBottom-end': string;
+  'Arrow position/Bottom startBottom-start': string;
+  'Arrow position/None/Arrow position/NoneAbove-end': string;
+  'Arrow position/None/Arrow position/NoneAbove-middle': string;
+  'Arrow position/None/Arrow position/NoneAbove-start': string;
+  'Arrow position/None/Arrow position/NoneAfter-bottom': string;
+  'Arrow position/None/Arrow position/NoneAfter-center': string;
+  'Arrow position/None/Arrow position/NoneAfter-top': string;
+  'Arrow position/None/Arrow position/NoneBefore-bottom': string;
+  'Arrow position/None/Arrow position/NoneBefore-center': string;
+  'Arrow position/None/Arrow position/NoneBefore-top': string;
+  'Arrow position/None/Arrow position/NoneBottom-center': string;
+  'Arrow position/None/Arrow position/NoneBottom-end': string;
+  'Arrow position/None/Arrow position/NoneBottom-start': string;
   'Arrow position/NoneAbove-end': string;
-
-  // Arrow position/NoneBefore tokens
-  'Arrow position/NoneBefore-top': string;
-  'Arrow position/NoneBefore-center': string;
-  'Arrow position/NoneBefore-bottom': string;
-
-  // Arrow position/NoneAfter tokens
-  'Arrow position/NoneAfter-top': string;
-  'Arrow position/NoneAfter-center': string;
+  'Arrow position/NoneAbove-middle': string;
+  'Arrow position/NoneAbove-start': string;
   'Arrow position/NoneAfter-bottom': string;
-
-  // Arrow position/NoneBottom tokens
-  'Arrow position/NoneBottom-start': string;
+  'Arrow position/NoneAfter-center': string;
+  'Arrow position/NoneAfter-top': string;
+  'Arrow position/NoneBefore-bottom': string;
+  'Arrow position/NoneBefore-center': string;
+  'Arrow position/NoneBefore-top': string;
   'Arrow position/NoneBottom-center': string;
   'Arrow position/NoneBottom-end': string;
-
-  // Typography/BaseFontFamilyBase tokens
-  'Typography/BaseFontFamilyBase': string;
-
-  // Typography/BaseFontWeightRegular tokens
-  'Typography/BaseFontWeightRegular': string;
-
-  // Typography/BaseFontWeightSemibold tokens
-  'Typography/BaseFontWeightSemibold': string;
-
-  // Typography/BaseFontWeightBold tokens
-  'Typography/BaseFontWeightBold': string;
-
-  // Typography/BaseFontWeightSemilight tokens
-  'Typography/BaseFontWeightSemilight': string;
-
-  // Typography/BaseFontWeightLight tokens
-  'Typography/BaseFontWeightLight': string;
-
-  // Popover size/MediumPopover tokens
-  'Popover size/MediumPopover-padding-vertical': string;
-  'Popover size/MediumPopover-padding-horizontal': string;
-
-  // Popover size/SmallPopover tokens
-  'Popover size/SmallPopover-padding-vertical': string;
-  'Popover size/SmallPopover-padding-horizontal': string;
-
-  // Popover size/LargePopover tokens
-  'Popover size/LargePopover-padding-vertical': string;
-  'Popover size/LargePopover-padding-horizontal': string;
-
-  // Card padding/MediumCard tokens
-  'Card padding/MediumCard-horizontal': string;
-  'Card padding/MediumCard-vertical': string;
-  'Card padding/MediumCard-gap': string;
-  'Card padding/MediumCard-corner-radius': string;
-
-  // Card padding/SmallCard tokens
-  'Card padding/SmallCard-horizontal': string;
-  'Card padding/SmallCard-vertical': string;
-  'Card padding/SmallCard-gap': string;
-  'Card padding/SmallCard-corner-radius': string;
-
-  // Card padding/LargeCard tokens
-  'Card padding/LargeCard-horizontal': string;
-  'Card padding/LargeCard-vertical': string;
-  'Card padding/LargeCard-gap': string;
-  'Card padding/LargeCard-corner-radius': string;
-
-  // Button shape/Rounded (Default)Button tokens
-  'Button shape/Rounded (Default)Button-corner-radius': string;
-  'Button shape/Rounded (Default)Button-image-corner-radius': string;
-
-  // Badge shape/CircularBadge tokens
+  'Arrow position/NoneBottom-start': string;
+  'Badge shape/Circular/Badge shape/CircularBadge-corner-radius': string;
+  'Badge shape/Circular/Badge shape/CircularBody1FontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularBody1FontSize': string;
+  'Badge shape/Circular/Badge shape/CircularBody1FontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody1LetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody1LineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody1ParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularBody1ParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularBody1TextCase': string;
+  'Badge shape/Circular/Badge shape/CircularBody1TextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularBody2FontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularBody2FontSize': string;
+  'Badge shape/Circular/Badge shape/CircularBody2FontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody2LetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody2LineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody2ParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularBody2ParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularBody2TextCase': string;
+  'Badge shape/Circular/Badge shape/CircularBody2TextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1FontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1FontSize': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1FontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1LetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1LineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1ParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1ParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1TextCase': string;
+  'Badge shape/Circular/Badge shape/CircularCaption1TextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2FontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2FontSize': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2FontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2LetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2LineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2ParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2ParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2TextCase': string;
+  'Badge shape/Circular/Badge shape/CircularCaption2TextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1FontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1FontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1FontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1LineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1ParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1ParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1TextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay1TextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2FontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2FontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2FontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2LineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2ParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2ParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2TextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay2TextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularElevationShadow16': string;
+  'Badge shape/Circular/Badge shape/CircularElevationShadow2': string;
+  'Badge shape/Circular/Badge shape/CircularElevationShadow28': string;
+  'Badge shape/Circular/Badge shape/CircularElevationShadow4': string;
+  'Badge shape/Circular/Badge shape/CircularElevationShadow64': string;
+  'Badge shape/Circular/Badge shape/CircularElevationShadow8': string;
+  'Badge shape/Circular/Badge shape/CircularFontFamiliesSegoe-ui': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize0': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize1': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize10': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize2': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize3': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize4': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize5': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize6': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize7': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize8': string;
+  'Badge shape/Circular/Badge shape/CircularFontSize9': string;
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-0': string;
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-1': string;
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-2': string;
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-3': string;
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-4': string;
+  'Badge shape/Circular/Badge shape/CircularLetterSpacing0': string;
+  'Badge shape/Circular/Badge shape/CircularLetterSpacing1': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights0': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights1': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights10': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights2': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights3': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights4': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights5': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights6': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights7': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights8': string;
+  'Badge shape/Circular/Badge shape/CircularLineHeights9': string;
+  'Badge shape/Circular/Badge shape/CircularLinear': string;
+  'Badge shape/Circular/Badge shape/CircularParagraphIndent0': string;
+  'Badge shape/Circular/Badge shape/CircularParagraphSpacing0': string;
+  'Badge shape/Circular/Badge shape/CircularTextCaseNone': string;
+  'Badge shape/Circular/Badge shape/CircularTextDecorationNone': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 1FontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 1FontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 1FontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 1LetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 1LineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 1ParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 1ParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 1TextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 1TextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1LightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1LightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1LightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1LightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1LightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1LightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1LightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1LightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1LightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2FontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2FontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2FontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2LineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2ParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2ParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2TextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle2TextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3FontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3FontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3FontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3LineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3ParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3ParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3TextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle3TextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4FontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4FontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4FontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4LineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4ParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4ParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerFontFamily': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerFontSize': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerFontWeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerLetterSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerLineHeight': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerParagraphIndent': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerParagraphSpacing': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerTextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerTextDecoration': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4TextCase': string;
+  'Badge shape/Circular/Badge shape/CircularTitle4TextDecoration': string;
   'Badge shape/CircularBadge-corner-radius': string;
-
-  // Theme/Light/Theme/LightNeutralBackground1Rest tokens
-  'Theme/Light/Theme/LightNeutralBackground1Rest': string;
-
-  // Theme/Light/Theme/LightNeutralBackground1Hover tokens
-  'Theme/Light/Theme/LightNeutralBackground1Hover': string;
-
-  // Theme/Light/Theme/LightNeutralBackground1Pressed tokens
-  'Theme/Light/Theme/LightNeutralBackground1Pressed': string;
-
-  // Theme/Light/Theme/LightNeutralBackground1Selected tokens
-  'Theme/Light/Theme/LightNeutralBackground1Selected': string;
-
-  // Theme/Light/Theme/LightNeutralBackground2Rest tokens
-  'Theme/Light/Theme/LightNeutralBackground2Rest': string;
-
-  // Theme/Light/Theme/LightNeutralBackground3Rest tokens
-  'Theme/Light/Theme/LightNeutralBackground3Rest': string;
-
-  // Theme/Light/Theme/LightNeutralBackground3Hover tokens
-  'Theme/Light/Theme/LightNeutralBackground3Hover': string;
-
-  // Theme/Light/Theme/LightNeutralBackground3Pressed tokens
-  'Theme/Light/Theme/LightNeutralBackground3Pressed': string;
-
-  // Theme/Light/Theme/LightNeutralBackground4Rest tokens
-  'Theme/Light/Theme/LightNeutralBackground4Rest': string;
-
-  // Theme/Light/Theme/LightNeutralBackground4Hover tokens
-  'Theme/Light/Theme/LightNeutralBackground4Hover': string;
-
-  // Theme/Light/Theme/LightNeutralBackground4Pressed tokens
-  'Theme/Light/Theme/LightNeutralBackground4Pressed': string;
-
-  // Theme/Light/Theme/LightNeutralBackground5Rest tokens
-  'Theme/Light/Theme/LightNeutralBackground5Rest': string;
-
-  // Theme/Light/Theme/LightNeutralBackground6Rest tokens
-  'Theme/Light/Theme/LightNeutralBackground6Rest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundInvertedRest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundInvertedRest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundInvertedDisabledRest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundInvertedDisabledRest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundAlpha1Rest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundAlpha1Rest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundAlpha2Rest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundAlpha2Rest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundStaticRest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundStaticRest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtleRest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleRest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtleHover tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleHover': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtlePressed tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtlePressed': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtleSelected tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleSelected': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaHover tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaHover': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaPressed tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaPressed': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaSelected tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaSelected': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedRest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedRest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedHover tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedHover': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedPressed tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedPressed': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedSelected tokens
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedSelected': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundTransparentRest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundTransparentRest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundTransparentHover tokens
-  'Theme/Light/Theme/LightNeutralBackgroundTransparentHover': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundTransparentPressed tokens
-  'Theme/Light/Theme/LightNeutralBackgroundTransparentPressed': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundTransparentSelected tokens
-  'Theme/Light/Theme/LightNeutralBackgroundTransparentSelected': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundDisabledRest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundDisabledRest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundStencil1Rest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundStencil1Rest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundStencil2Rest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundStencil2Rest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundOverlayRest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundOverlayRest': string;
-
-  // Theme/Light/Theme/LightNeutralBackgroundOverlayScrollbarRest tokens
-  'Theme/Light/Theme/LightNeutralBackgroundOverlayScrollbarRest': string;
-
-  // Theme/Light/Theme/LightNeutralForeground1Rest primary text tokens
-  'Theme/Light/Theme/LightNeutralForeground1Rest primary text': string;
-
-  // Theme/Light/Theme/LightNeutralForeground1Hover tokens
-  'Theme/Light/Theme/LightNeutralForeground1Hover': string;
-
-  // Theme/Light/Theme/LightNeutralForeground1Pressed tokens
-  'Theme/Light/Theme/LightNeutralForeground1Pressed': string;
-
-  // Theme/Light/Theme/LightNeutralForeground1Selected tokens
-  'Theme/Light/Theme/LightNeutralForeground1Selected': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2Rest secondary text tokens
-  'Theme/Light/Theme/LightNeutralForeground2Rest secondary text': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2Hover tokens
-  'Theme/Light/Theme/LightNeutralForeground2Hover': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2Pressed tokens
-  'Theme/Light/Theme/LightNeutralForeground2Pressed': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2Selected tokens
-  'Theme/Light/Theme/LightNeutralForeground2Selected': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2BrandHover tokens
-  'Theme/Light/Theme/LightNeutralForeground2BrandHover': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2BrandPressed tokens
-  'Theme/Light/Theme/LightNeutralForeground2BrandPressed': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2BrandSelected tokens
-  'Theme/Light/Theme/LightNeutralForeground2BrandSelected': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2BrandRest tokens
-  'Theme/Light/Theme/LightNeutralForeground2BrandRest': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2LinkRest tokens
-  'Theme/Light/Theme/LightNeutralForeground2LinkRest': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2LinkHover tokens
-  'Theme/Light/Theme/LightNeutralForeground2LinkHover': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2LinkPressed tokens
-  'Theme/Light/Theme/LightNeutralForeground2LinkPressed': string;
-
-  // Theme/Light/Theme/LightNeutralForeground2LinkSelected tokens
-  'Theme/Light/Theme/LightNeutralForeground2LinkSelected': string;
-
-  // Theme/Light/Theme/LightNeutralForeground4Rest tokens
-  'Theme/Light/Theme/LightNeutralForeground4Rest': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundDisabled2Rest tokens
-  'Theme/Light/Theme/LightNeutralForegroundDisabled2Rest': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundDisabledRest tokens
-  'Theme/Light/Theme/LightNeutralForegroundDisabledRest': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundStaticInvertedRest tokens
-  'Theme/Light/Theme/LightNeutralForegroundStaticInvertedRest': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundInverted1Rest tokens
-  'Theme/Light/Theme/LightNeutralForegroundInverted1Rest': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundInverted1Hover tokens
-  'Theme/Light/Theme/LightNeutralForegroundInverted1Hover': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundInverted1Pressed tokens
-  'Theme/Light/Theme/LightNeutralForegroundInverted1Pressed': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundInverted1Selected tokens
-  'Theme/Light/Theme/LightNeutralForegroundInverted1Selected': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundInverted2Rest tokens
-  'Theme/Light/Theme/LightNeutralForegroundInverted2Rest': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundInvertedDisabledRest tokens
-  'Theme/Light/Theme/LightNeutralForegroundInvertedDisabledRest': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundInvertedLinkRest tokens
-  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkRest': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundInvertedLinkHover tokens
-  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkHover': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundInvertedLinkPressed tokens
-  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkPressed': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundInvertedLinkSelected tokens
-  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkSelected': string;
-
-  // Theme/Light/Theme/LightNeutralForegroundOn BrandRest tokens
-  'Theme/Light/Theme/LightNeutralForegroundOn BrandRest': string;
-
-  // Theme/Light/Theme/LightNeutralStroke1Rest tokens
-  'Theme/Light/Theme/LightNeutralStroke1Rest': string;
-
-  // Theme/Light/Theme/LightNeutralStroke1Hover tokens
-  'Theme/Light/Theme/LightNeutralStroke1Hover': string;
-
-  // Theme/Light/Theme/LightNeutralStroke1Pressed tokens
-  'Theme/Light/Theme/LightNeutralStroke1Pressed': string;
-
-  // Theme/Light/Theme/LightNeutralStroke1Selected tokens
-  'Theme/Light/Theme/LightNeutralStroke1Selected': string;
-
-  // Theme/Light/Theme/LightNeutralStroke2Rest tokens
-  'Theme/Light/Theme/LightNeutralStroke2Rest': string;
-
-  // Theme/Light/Theme/LightNeutralStroke3Rest tokens
-  'Theme/Light/Theme/LightNeutralStroke3Rest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeAlpha1Rest tokens
-  'Theme/Light/Theme/LightNeutralStrokeAlpha1Rest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeAlpha2Rest tokens
-  'Theme/Light/Theme/LightNeutralStrokeAlpha2Rest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeSubtleRest tokens
-  'Theme/Light/Theme/LightNeutralStrokeSubtleRest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeOn Brand1Rest tokens
-  'Theme/Light/Theme/LightNeutralStrokeOn Brand1Rest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeOn Brand2Rest tokens
-  'Theme/Light/Theme/LightNeutralStrokeOn Brand2Rest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeAccessibleRest tokens
-  'Theme/Light/Theme/LightNeutralStrokeAccessibleRest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeAccessibleHover tokens
-  'Theme/Light/Theme/LightNeutralStrokeAccessibleHover': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeAccessiblePressed tokens
-  'Theme/Light/Theme/LightNeutralStrokeAccessiblePressed': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeAccessibleSelected tokens
-  'Theme/Light/Theme/LightNeutralStrokeAccessibleSelected': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeFocus1Rest tokens
-  'Theme/Light/Theme/LightNeutralStrokeFocus1Rest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeFocus2Rest tokens
-  'Theme/Light/Theme/LightNeutralStrokeFocus2Rest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeTransparentInteractiveRest tokens
-  'Theme/Light/Theme/LightNeutralStrokeTransparentInteractiveRest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeTransparentDisabledRest tokens
-  'Theme/Light/Theme/LightNeutralStrokeTransparentDisabledRest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeTransparentRest tokens
-  'Theme/Light/Theme/LightNeutralStrokeTransparentRest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeDisabledRest tokens
-  'Theme/Light/Theme/LightNeutralStrokeDisabledRest': string;
-
-  // Theme/Light/Theme/LightNeutralStrokeDisabledInvertedRest tokens
-  'Theme/Light/Theme/LightNeutralStrokeDisabledInvertedRest': string;
-
-  // Theme/Light/Theme/LightBrandBackground1Rest tokens
-  'Theme/Light/Theme/LightBrandBackground1Rest': string;
-
-  // Theme/Light/Theme/LightBrandBackground1Hover tokens
-  'Theme/Light/Theme/LightBrandBackground1Hover': string;
-
-  // Theme/Light/Theme/LightBrandBackground1Pressed tokens
-  'Theme/Light/Theme/LightBrandBackground1Pressed': string;
-
-  // Theme/Light/Theme/LightBrandBackground1Selected tokens
-  'Theme/Light/Theme/LightBrandBackground1Selected': string;
-
-  // Theme/Light/Theme/LightBrandBackground2Rest tokens
-  'Theme/Light/Theme/LightBrandBackground2Rest': string;
-
-  // Theme/Light/Theme/LightBrandBackground2Hover tokens
-  'Theme/Light/Theme/LightBrandBackground2Hover': string;
-
-  // Theme/Light/Theme/LightBrandBackground2Pressed tokens
-  'Theme/Light/Theme/LightBrandBackground2Pressed': string;
-
-  // Theme/Light/Theme/LightBrandBackground3Rest tokens
-  'Theme/Light/Theme/LightBrandBackground3Rest': string;
-
-  // Theme/Light/Theme/LightBrandBackgroundInvertedRest tokens
-  'Theme/Light/Theme/LightBrandBackgroundInvertedRest': string;
-
-  // Theme/Light/Theme/LightBrandBackgroundInvertedHover tokens
-  'Theme/Light/Theme/LightBrandBackgroundInvertedHover': string;
-
-  // Theme/Light/Theme/LightBrandBackgroundInvertedPressed tokens
-  'Theme/Light/Theme/LightBrandBackgroundInvertedPressed': string;
-
-  // Theme/Light/Theme/LightBrandBackgroundInvertedSelected tokens
-  'Theme/Light/Theme/LightBrandBackgroundInvertedSelected': string;
-
-  // Theme/Light/Theme/LightBrandBackgroundStaticRest tokens
-  'Theme/Light/Theme/LightBrandBackgroundStaticRest': string;
-
-  // Theme/Light/Theme/LightBrandBackgroundCompoundRest tokens
-  'Theme/Light/Theme/LightBrandBackgroundCompoundRest': string;
-
-  // Theme/Light/Theme/LightBrandBackgroundCompoundHover tokens
-  'Theme/Light/Theme/LightBrandBackgroundCompoundHover': string;
-
-  // Theme/Light/Theme/LightBrandBackgroundCompoundPressed tokens
-  'Theme/Light/Theme/LightBrandBackgroundCompoundPressed': string;
-
-  // Theme/Light/Theme/LightBrandForeground1Rest tokens
-  'Theme/Light/Theme/LightBrandForeground1Rest': string;
-
-  // Theme/Light/Theme/LightBrandForeground1Hover tokens
-  'Theme/Light/Theme/LightBrandForeground1Hover': string;
-
-  // Theme/Light/Theme/LightBrandForeground1Pressed tokens
-  'Theme/Light/Theme/LightBrandForeground1Pressed': string;
-
-  // Theme/Light/Theme/LightBrandForeground1Selected tokens
-  'Theme/Light/Theme/LightBrandForeground1Selected': string;
-
-  // Theme/Light/Theme/LightBrandForeground2Rest tokens
-  'Theme/Light/Theme/LightBrandForeground2Rest': string;
-
-  // Theme/Light/Theme/LightBrandForeground2Hover tokens
-  'Theme/Light/Theme/LightBrandForeground2Hover': string;
-
-  // Theme/Light/Theme/LightBrandForeground2Pressed tokens
-  'Theme/Light/Theme/LightBrandForeground2Pressed': string;
-
-  // Theme/Light/Theme/LightBrandForegroundLinkRest tokens
-  'Theme/Light/Theme/LightBrandForegroundLinkRest': string;
-
-  // Theme/Light/Theme/LightBrandForegroundLinkHover tokens
-  'Theme/Light/Theme/LightBrandForegroundLinkHover': string;
-
-  // Theme/Light/Theme/LightBrandForegroundLinkPressed tokens
-  'Theme/Light/Theme/LightBrandForegroundLinkPressed': string;
-
-  // Theme/Light/Theme/LightBrandForegroundLinkSelected tokens
-  'Theme/Light/Theme/LightBrandForegroundLinkSelected': string;
-
-  // Theme/Light/Theme/LightBrandForegroundInvertedRest tokens
-  'Theme/Light/Theme/LightBrandForegroundInvertedRest': string;
-
-  // Theme/Light/Theme/LightBrandForegroundInvertedHover tokens
-  'Theme/Light/Theme/LightBrandForegroundInvertedHover': string;
-
-  // Theme/Light/Theme/LightBrandForegroundInvertedPressed tokens
-  'Theme/Light/Theme/LightBrandForegroundInvertedPressed': string;
-
-  // Theme/Light/Theme/LightBrandForegroundOn LightRest tokens
-  'Theme/Light/Theme/LightBrandForegroundOn LightRest': string;
-
-  // Theme/Light/Theme/LightBrandForegroundOn LightHover tokens
-  'Theme/Light/Theme/LightBrandForegroundOn LightHover': string;
-
-  // Theme/Light/Theme/LightBrandForegroundOn LightPressed tokens
-  'Theme/Light/Theme/LightBrandForegroundOn LightPressed': string;
-
-  // Theme/Light/Theme/LightBrandForegroundOn LightSelected tokens
-  'Theme/Light/Theme/LightBrandForegroundOn LightSelected': string;
-
-  // Theme/Light/Theme/LightBrandForegroundCompoundRest tokens
-  'Theme/Light/Theme/LightBrandForegroundCompoundRest': string;
-
-  // Theme/Light/Theme/LightBrandForegroundCompoundHover tokens
-  'Theme/Light/Theme/LightBrandForegroundCompoundHover': string;
-
-  // Theme/Light/Theme/LightBrandForegroundCompoundPressed tokens
-  'Theme/Light/Theme/LightBrandForegroundCompoundPressed': string;
-
-  // Theme/Light/Theme/LightBrandStroke1Rest tokens
-  'Theme/Light/Theme/LightBrandStroke1Rest': string;
-
-  // Theme/Light/Theme/LightBrandStroke1Hover tokens
-  'Theme/Light/Theme/LightBrandStroke1Hover': string;
-
-  // Theme/Light/Theme/LightBrandStroke1Pressed tokens
-  'Theme/Light/Theme/LightBrandStroke1Pressed': string;
-
-  // Theme/Light/Theme/LightBrandStroke1Selected tokens
-  'Theme/Light/Theme/LightBrandStroke1Selected': string;
-
-  // Theme/Light/Theme/LightBrandStroke2Rest tokens
-  'Theme/Light/Theme/LightBrandStroke2Rest': string;
-
-  // Theme/Light/Theme/LightBrandStroke2ContrastRest tokens
-  'Theme/Light/Theme/LightBrandStroke2ContrastRest': string;
-
-  // Theme/Light/Theme/LightBrandStroke3Rest tokens
-  'Theme/Light/Theme/LightBrandStroke3Rest': string;
-
-  // Theme/Light/Theme/LightBrandStrokeCompoundRest tokens
-  'Theme/Light/Theme/LightBrandStrokeCompoundRest': string;
-
-  // Theme/Light/Theme/LightBrandStrokeCompoundHover tokens
-  'Theme/Light/Theme/LightBrandStrokeCompoundHover': string;
-
-  // Theme/Light/Theme/LightBrandStrokeCompoundPressed tokens
-  'Theme/Light/Theme/LightBrandStrokeCompoundPressed': string;
-
-  // Theme/Light/Theme/LightStatusDangerBackground1Rest tokens
-  'Theme/Light/Theme/LightStatusDangerBackground1Rest': string;
-
-  // Theme/Light/Theme/LightStatusDangerBackground3Rest tokens
-  'Theme/Light/Theme/LightStatusDangerBackground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusDangerForeground1Rest tokens
-  'Theme/Light/Theme/LightStatusDangerForeground1Rest': string;
-
-  // Theme/Light/Theme/LightStatusDangerForeground3Rest tokens
-  'Theme/Light/Theme/LightStatusDangerForeground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusDangerStroke1Rest tokens
-  'Theme/Light/Theme/LightStatusDangerStroke1Rest': string;
-
-  // Theme/Light/Theme/LightStatusDangerStroke2Rest tokens
-  'Theme/Light/Theme/LightStatusDangerStroke2Rest': string;
-
-  // Theme/Light/Theme/LightStatusSuccessBackground1Rest tokens
-  'Theme/Light/Theme/LightStatusSuccessBackground1Rest': string;
-
-  // Theme/Light/Theme/LightStatusSuccessBackground3Rest tokens
-  'Theme/Light/Theme/LightStatusSuccessBackground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusSuccessForeground1Rest tokens
-  'Theme/Light/Theme/LightStatusSuccessForeground1Rest': string;
-
-  // Theme/Light/Theme/LightStatusSuccessForeground3Rest tokens
-  'Theme/Light/Theme/LightStatusSuccessForeground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusSuccessStroke1Rest tokens
-  'Theme/Light/Theme/LightStatusSuccessStroke1Rest': string;
-
-  // Theme/Light/Theme/LightStatusSuccessStroke2Rest tokens
-  'Theme/Light/Theme/LightStatusSuccessStroke2Rest': string;
-
-  // Theme/Light/Theme/LightStatusWarningBackground1Rest tokens
-  'Theme/Light/Theme/LightStatusWarningBackground1Rest': string;
-
-  // Theme/Light/Theme/LightStatusWarningBackground3Rest tokens
-  'Theme/Light/Theme/LightStatusWarningBackground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusWarningForeground1Rest tokens
-  'Theme/Light/Theme/LightStatusWarningForeground1Rest': string;
-
-  // Theme/Light/Theme/LightStatusWarningForeground3Rest tokens
-  'Theme/Light/Theme/LightStatusWarningForeground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusWarningStroke1Rest tokens
-  'Theme/Light/Theme/LightStatusWarningStroke1Rest': string;
-
-  // Theme/Light/Theme/LightStatusWarningStroke2Rest tokens
-  'Theme/Light/Theme/LightStatusWarningStroke2Rest': string;
-
-  // Theme/Light/Theme/LightStatusOofForeground3Rest tokens
-  'Theme/Light/Theme/LightStatusOofForeground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusAwayBackground3Rest tokens
-  'Theme/Light/Theme/LightStatusAwayBackground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusAvailableForeground3Rest tokens
-  'Theme/Light/Theme/LightStatusAvailableForeground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusGenericAnchorBackground2Rest tokens
-  'Theme/Light/Theme/LightStatusGenericAnchorBackground2Rest': string;
-
-  // Theme/Light/Theme/LightStatusGenericAnchorForeground2Rest tokens
-  'Theme/Light/Theme/LightStatusGenericAnchorForeground2Rest': string;
-
-  // Theme/Light/Theme/LightStatusGenericAnchorStrokeActiveRest tokens
-  'Theme/Light/Theme/LightStatusGenericAnchorStrokeActiveRest': string;
-
-  // Theme/Light/Theme/LightStatusGenericInformationBackground1Rest tokens
-  'Theme/Light/Theme/LightStatusGenericInformationBackground1Rest': string;
-
-  // Theme/Light/Theme/LightStatusGenericInformationBackground1Hover tokens
-  'Theme/Light/Theme/LightStatusGenericInformationBackground1Hover': string;
-
-  // Theme/Light/Theme/LightStatusGenericInformationBackground1Pressed tokens
-  'Theme/Light/Theme/LightStatusGenericInformationBackground1Pressed': string;
-
-  // Theme/Light/Theme/LightStatusGenericInformationStroke1Rest tokens
-  'Theme/Light/Theme/LightStatusGenericInformationStroke1Rest': string;
-
-  // Theme/Light/Theme/LightStatusGenericInformationStroke2Rest tokens
-  'Theme/Light/Theme/LightStatusGenericInformationStroke2Rest': string;
-
-  // Theme/Light/Theme/LightStatusGenericInformationStroke2Hover tokens
-  'Theme/Light/Theme/LightStatusGenericInformationStroke2Hover': string;
-
-  // Theme/Light/Theme/LightStatusGenericInformationStroke2Pressed tokens
-  'Theme/Light/Theme/LightStatusGenericInformationStroke2Pressed': string;
-
-  // Theme/Light/Theme/LightStatusGenericInformationForegroundRest tokens
-  'Theme/Light/Theme/LightStatusGenericInformationForegroundRest': string;
-
-  // Theme/Light/Theme/LightStatusGenericInformationForegroundHover tokens
-  'Theme/Light/Theme/LightStatusGenericInformationForegroundHover': string;
-
-  // Theme/Light/Theme/LightStatusGenericInformationForegroundPressed tokens
-  'Theme/Light/Theme/LightStatusGenericInformationForegroundPressed': string;
-
-  // Theme/Light/Theme/LightStatusSevereBackground1Rest tokens
-  'Theme/Light/Theme/LightStatusSevereBackground1Rest': string;
-
-  // Theme/Light/Theme/LightStatusSevereBackground3Rest tokens
-  'Theme/Light/Theme/LightStatusSevereBackground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusSevereForeground1Rest tokens
-  'Theme/Light/Theme/LightStatusSevereForeground1Rest': string;
-
-  // Theme/Light/Theme/LightStatusSevereForeground3Rest tokens
-  'Theme/Light/Theme/LightStatusSevereForeground3Rest': string;
-
-  // Theme/Light/Theme/LightStatusSevereStroke1Rest tokens
-  'Theme/Light/Theme/LightStatusSevereStroke1Rest': string;
-
-  // Theme/Light/Theme/LightStatusSevereStroke2Rest tokens
-  'Theme/Light/Theme/LightStatusSevereStroke2Rest': string;
-
-  // Theme/Light/Theme/LightShadowAmbient tokens
-  'Theme/Light/Theme/LightShadowAmbient': string;
-  'Theme/Light/Theme/LightShadowAmbient-lighter': string;
-  'Theme/Light/Theme/LightShadowAmbient-darker': string;
-
-  // Theme/Light/Theme/LightShadowBrand tokens
-  'Theme/Light/Theme/LightShadowBrand-ambient': string;
-  'Theme/Light/Theme/LightShadowBrand-key': string;
-
-  // Theme/Light/Theme/LightShadowKey tokens
-  'Theme/Light/Theme/LightShadowKey': string;
-  'Theme/Light/Theme/LightShadowKey-lighter': string;
-  'Theme/Light/Theme/LightShadowKey-darker': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsCategorical tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsCategorical': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsData tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsData': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorBlue tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorGray tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorRed tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorTeal tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorOcean tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorGreen tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorYellow300 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorYellow300': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorBlue400 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue400': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorGray400 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray400': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorRed400 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed400': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorTeal300 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal300': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorRed300 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed300': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorTeal400 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal400': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorOcean400 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean400': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorGreen400 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen400': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorYellow400 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorYellow400': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorGreen300 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen300': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorGray300 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray300': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorBlue200 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue200': string;
-
-  // Theme/Light/Theme/LightData vizForegroundLabelsColorOcean200 tokens
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean200': string;
-
-  // Theme/Light/Theme/LightData vizForegroundAccessibilityText dark bkgd tokens
-  'Theme/Light/Theme/LightData vizForegroundAccessibilityText dark bkgd': string;
-
-  // Theme/Light/Theme/LightData vizForegroundAccessibilityText light bkgd tokens
-  'Theme/Light/Theme/LightData vizForegroundAccessibilityText light bkgd': string;
-
-  // Theme/Light/Theme/LightData vizForegroundKPI CardText dark bkgd tokens
-  'Theme/Light/Theme/LightData vizForegroundKPI CardText dark bkgd': string;
-
-  // Theme/Light/Theme/LightData vizForegroundKPI CardText light bkgd tokens
-  'Theme/Light/Theme/LightData vizForegroundKPI CardText light bkgd': string;
-
-  // Theme/Light/Theme/LightData vizStrokeGridline tokens
-  'Theme/Light/Theme/LightData vizStrokeGridline': string;
-
-  // Theme/Light/Theme/LightData vizStrokeAxis tokens
-  'Theme/Light/Theme/LightData vizStrokeAxis-Target-Benchmark': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorBlue tokens
-  'Theme/Light/Theme/LightData vizStrokeColorBlue': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorBlue400 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorBlue400': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorGray tokens
-  'Theme/Light/Theme/LightData vizStrokeColorGray': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorGray400 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorGray400': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorRed tokens
-  'Theme/Light/Theme/LightData vizStrokeColorRed': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorRed300 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorRed300': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorRed400 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorRed400': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorTeal tokens
-  'Theme/Light/Theme/LightData vizStrokeColorTeal': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorTeal300 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorTeal300': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorTeal400 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorTeal400': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorOcean tokens
-  'Theme/Light/Theme/LightData vizStrokeColorOcean': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorOcean400 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorOcean400': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorGreen tokens
-  'Theme/Light/Theme/LightData vizStrokeColorGreen': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorGreen300 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorGreen300': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorGreen400 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorGreen400': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorYellow300 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorYellow300': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorYellow400 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorYellow400': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorGray300 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorGray300': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorBlue200 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorBlue200': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorOcean200 tokens
-  'Theme/Light/Theme/LightData vizStrokeColorOcean200': string;
-
-  // Theme/Light/Theme/LightData vizStrokeColorYellow tokens
-  'Theme/Light/Theme/LightData vizStrokeColorYellow': string;
-
-  // Theme/Light/Theme/LightData vizStrokeTrend tokens
-  'Theme/Light/Theme/LightData vizStrokeTrend-Average': string;
-
-  // Theme/Light/Theme/LightData vizStrokeAccessible outline tokens
-  'Theme/Light/Theme/LightData vizStrokeAccessible outline': string;
-
-  // Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdPositive tokens
-  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdPositive': string;
-
-  // Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdNegative tokens
-  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdNegative': string;
-
-  // Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdNotice tokens
-  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdNotice': string;
-
-  // Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdPositive tokens
-  'Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdPositive': string;
-
-  // Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdNegative tokens
-  'Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdNegative': string;
-
-  // Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdNotice tokens
-  'Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdNotice': string;
-
-  // Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdPositive tokens
-  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdPositive': string;
-
-  // Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdNegative tokens
-  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdNegative': string;
-
-  // Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdNotice tokens
-  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdNotice': string;
-
-  // Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdPositive tokens
-  'Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdPositive': string;
-
-  // Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdNegative tokens
-  'Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdNegative': string;
-
-  // Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdNotice tokens
-  'Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdNotice': string;
-
-  // Theme/Light/Theme/LightData vizSemanticBackgroundPositive tokens
-  'Theme/Light/Theme/LightData vizSemanticBackgroundPositive': string;
-
-  // Theme/Light/Theme/LightData vizSemanticBackgroundNegative tokens
-  'Theme/Light/Theme/LightData vizSemanticBackgroundNegative': string;
-
-  // Theme/Light/Theme/LightData vizSemanticBackgroundNotice tokens
-  'Theme/Light/Theme/LightData vizSemanticBackgroundNotice': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundCoreBlue tokens
-  'Theme/Light/Theme/LightData vizBackgroundCoreBlue': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundCoreGray tokens
-  'Theme/Light/Theme/LightData vizBackgroundCoreGray': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundCoreRed tokens
-  'Theme/Light/Theme/LightData vizBackgroundCoreRed': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundCoreTeal tokens
-  'Theme/Light/Theme/LightData vizBackgroundCoreTeal': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundCoreOcean tokens
-  'Theme/Light/Theme/LightData vizBackgroundCoreOcean': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundCoreGreen tokens
-  'Theme/Light/Theme/LightData vizBackgroundCoreGreen': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundCoreYellow tokens
-  'Theme/Light/Theme/LightData vizBackgroundCoreYellow': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialBlue400 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue400': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialGray400 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGray400': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialRed300 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialRed300': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialRed400 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialRed400': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialTeal300 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal300': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialTeal400 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal400': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialOcean400 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean400': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialGreen300 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen300': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialGreen400 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen400': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialYellow300 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow300': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialYellow400 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow400': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialBlue300 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue300': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialBlue200 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue200': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialBlue100 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue100': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialGray300 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGray300': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialGray200 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGray200': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialGray100 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGray100': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialRed200 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialRed200': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialRed100 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialRed100': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialTeal200 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal200': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialTeal100 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal100': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialOcean300 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean300': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialOcean200 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean200': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialOcean100 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean100': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialGreen200 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen200': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialGreen100 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen100': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialYellow200 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow200': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundSequentialYellow100 tokens
-  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow100': string;
-
-  // Theme/Light/Theme/LightData vizBackgroundNeutralBlack tokens
-  'Theme/Light/Theme/LightData vizBackgroundNeutralBlack': string;
-
-  // Theme/Light/Theme/LightControl logicTheme switch tokens
-  'Theme/Light/Theme/LightControl logicTheme switch': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground1Rest tokens
-  'Theme/Dark/Theme/DarkNeutralBackground1Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground1Hover tokens
-  'Theme/Dark/Theme/DarkNeutralBackground1Hover': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground1Pressed tokens
-  'Theme/Dark/Theme/DarkNeutralBackground1Pressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground1Selected tokens
-  'Theme/Dark/Theme/DarkNeutralBackground1Selected': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground2Rest tokens
-  'Theme/Dark/Theme/DarkNeutralBackground2Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground3Rest tokens
-  'Theme/Dark/Theme/DarkNeutralBackground3Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground3Hover tokens
-  'Theme/Dark/Theme/DarkNeutralBackground3Hover': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground3Pressed tokens
-  'Theme/Dark/Theme/DarkNeutralBackground3Pressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground4Rest tokens
-  'Theme/Dark/Theme/DarkNeutralBackground4Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground4Hover tokens
-  'Theme/Dark/Theme/DarkNeutralBackground4Hover': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground4Pressed tokens
-  'Theme/Dark/Theme/DarkNeutralBackground4Pressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground5Rest tokens
-  'Theme/Dark/Theme/DarkNeutralBackground5Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackground6Rest tokens
-  'Theme/Dark/Theme/DarkNeutralBackground6Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundInvertedRest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundInvertedRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundInvertedDisabledRest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundInvertedDisabledRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundAlpha1Rest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundAlpha1Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundAlpha2Rest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundAlpha2Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundStaticRest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundStaticRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtleRest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtleHover tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleHover': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtlePressed tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtlePressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtleSelected tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleSelected': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaHover tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaHover': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaPressed tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaPressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaSelected tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaSelected': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedRest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedHover tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedHover': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedPressed tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedPressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedSelected tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedSelected': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundTransparentRest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundTransparentHover tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentHover': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundTransparentPressed tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentPressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundTransparentSelected tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentSelected': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundDisabledRest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundDisabledRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundStencil1Rest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundStencil1Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundStencil2Rest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundStencil2Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundOverlayRest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundOverlayRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralBackgroundOverlayScrollbarRest tokens
-  'Theme/Dark/Theme/DarkNeutralBackgroundOverlayScrollbarRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground1Rest primary text tokens
-  'Theme/Dark/Theme/DarkNeutralForeground1Rest primary text': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground1Hover tokens
-  'Theme/Dark/Theme/DarkNeutralForeground1Hover': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground1Pressed tokens
-  'Theme/Dark/Theme/DarkNeutralForeground1Pressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground1Selected tokens
-  'Theme/Dark/Theme/DarkNeutralForeground1Selected': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2Rest secondary text tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2Rest secondary text': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2Hover tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2Hover': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2Pressed tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2Pressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2Selected tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2Selected': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2BrandHover tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2BrandHover': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2BrandPressed tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2BrandPressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2BrandSelected tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2BrandSelected': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2BrandRest tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2BrandRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2LinkRest tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2LinkRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2LinkHover tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2LinkHover': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2LinkPressed tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2LinkPressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground2LinkSelected tokens
-  'Theme/Dark/Theme/DarkNeutralForeground2LinkSelected': string;
-
-  // Theme/Dark/Theme/DarkNeutralForeground4Rest tokens
-  'Theme/Dark/Theme/DarkNeutralForeground4Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundDisabled2Rest tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundDisabled2Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundDisabledRest tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundDisabledRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundStaticInvertedRest tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundStaticInvertedRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundInverted1Rest tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundInverted1Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundInverted1Hover tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundInverted1Hover': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundInverted1Pressed tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundInverted1Pressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundInverted1Selected tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundInverted1Selected': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundInverted2Rest tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundInverted2Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundInvertedDisabledRest tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundInvertedDisabledRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkRest tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkHover tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkHover': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkPressed tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkPressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkSelected tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkSelected': string;
-
-  // Theme/Dark/Theme/DarkNeutralForegroundOn BrandRest tokens
-  'Theme/Dark/Theme/DarkNeutralForegroundOn BrandRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStroke1Rest tokens
-  'Theme/Dark/Theme/DarkNeutralStroke1Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStroke1Hover tokens
-  'Theme/Dark/Theme/DarkNeutralStroke1Hover': string;
-
-  // Theme/Dark/Theme/DarkNeutralStroke1Pressed tokens
-  'Theme/Dark/Theme/DarkNeutralStroke1Pressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralStroke1Selected tokens
-  'Theme/Dark/Theme/DarkNeutralStroke1Selected': string;
-
-  // Theme/Dark/Theme/DarkNeutralStroke2Rest tokens
-  'Theme/Dark/Theme/DarkNeutralStroke2Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStroke3Rest tokens
-  'Theme/Dark/Theme/DarkNeutralStroke3Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeAlpha1Rest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeAlpha1Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeAlpha2Rest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeAlpha2Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeSubtleRest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeSubtleRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeOn Brand1Rest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeOn Brand1Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeOn Brand2Rest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeOn Brand2Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeAccessibleRest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeAccessibleHover tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleHover': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeAccessiblePressed tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeAccessiblePressed': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeAccessibleSelected tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleSelected': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeFocus1Rest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeFocus1Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeFocus2Rest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeFocus2Rest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeTransparentInteractiveRest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeTransparentInteractiveRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeTransparentDisabledRest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeTransparentDisabledRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeTransparentRest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeTransparentRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeDisabledRest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeDisabledRest': string;
-
-  // Theme/Dark/Theme/DarkNeutralStrokeDisabledInvertedRest tokens
-  'Theme/Dark/Theme/DarkNeutralStrokeDisabledInvertedRest': string;
-
-  // Theme/Dark/Theme/DarkBrandBackground1Rest tokens
-  'Theme/Dark/Theme/DarkBrandBackground1Rest': string;
-
-  // Theme/Dark/Theme/DarkBrandBackground1Hover tokens
-  'Theme/Dark/Theme/DarkBrandBackground1Hover': string;
-
-  // Theme/Dark/Theme/DarkBrandBackground1Pressed tokens
-  'Theme/Dark/Theme/DarkBrandBackground1Pressed': string;
-
-  // Theme/Dark/Theme/DarkBrandBackground1Selected tokens
-  'Theme/Dark/Theme/DarkBrandBackground1Selected': string;
-
-  // Theme/Dark/Theme/DarkBrandBackground2Rest tokens
-  'Theme/Dark/Theme/DarkBrandBackground2Rest': string;
-
-  // Theme/Dark/Theme/DarkBrandBackground2Hover tokens
-  'Theme/Dark/Theme/DarkBrandBackground2Hover': string;
-
-  // Theme/Dark/Theme/DarkBrandBackground2Pressed tokens
-  'Theme/Dark/Theme/DarkBrandBackground2Pressed': string;
-
-  // Theme/Dark/Theme/DarkBrandBackground3Rest tokens
-  'Theme/Dark/Theme/DarkBrandBackground3Rest': string;
-
-  // Theme/Dark/Theme/DarkBrandBackgroundInvertedRest tokens
-  'Theme/Dark/Theme/DarkBrandBackgroundInvertedRest': string;
-
-  // Theme/Dark/Theme/DarkBrandBackgroundInvertedHover tokens
-  'Theme/Dark/Theme/DarkBrandBackgroundInvertedHover': string;
-
-  // Theme/Dark/Theme/DarkBrandBackgroundInvertedPressed tokens
-  'Theme/Dark/Theme/DarkBrandBackgroundInvertedPressed': string;
-
-  // Theme/Dark/Theme/DarkBrandBackgroundInvertedSelected tokens
-  'Theme/Dark/Theme/DarkBrandBackgroundInvertedSelected': string;
-
-  // Theme/Dark/Theme/DarkBrandBackgroundStaticRest tokens
-  'Theme/Dark/Theme/DarkBrandBackgroundStaticRest': string;
-
-  // Theme/Dark/Theme/DarkBrandBackgroundCompoundRest tokens
-  'Theme/Dark/Theme/DarkBrandBackgroundCompoundRest': string;
-
-  // Theme/Dark/Theme/DarkBrandBackgroundCompoundHover tokens
-  'Theme/Dark/Theme/DarkBrandBackgroundCompoundHover': string;
-
-  // Theme/Dark/Theme/DarkBrandBackgroundCompoundPressed tokens
-  'Theme/Dark/Theme/DarkBrandBackgroundCompoundPressed': string;
-
-  // Theme/Dark/Theme/DarkBrandForeground1Rest tokens
-  'Theme/Dark/Theme/DarkBrandForeground1Rest': string;
-
-  // Theme/Dark/Theme/DarkBrandForeground1Hover tokens
-  'Theme/Dark/Theme/DarkBrandForeground1Hover': string;
-
-  // Theme/Dark/Theme/DarkBrandForeground1Pressed tokens
-  'Theme/Dark/Theme/DarkBrandForeground1Pressed': string;
-
-  // Theme/Dark/Theme/DarkBrandForeground1Selected tokens
-  'Theme/Dark/Theme/DarkBrandForeground1Selected': string;
-
-  // Theme/Dark/Theme/DarkBrandForeground2Rest tokens
-  'Theme/Dark/Theme/DarkBrandForeground2Rest': string;
-
-  // Theme/Dark/Theme/DarkBrandForeground2Hover tokens
-  'Theme/Dark/Theme/DarkBrandForeground2Hover': string;
-
-  // Theme/Dark/Theme/DarkBrandForeground2Pressed tokens
-  'Theme/Dark/Theme/DarkBrandForeground2Pressed': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundLinkRest tokens
-  'Theme/Dark/Theme/DarkBrandForegroundLinkRest': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundLinkHover tokens
-  'Theme/Dark/Theme/DarkBrandForegroundLinkHover': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundLinkPressed tokens
-  'Theme/Dark/Theme/DarkBrandForegroundLinkPressed': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundLinkSelected tokens
-  'Theme/Dark/Theme/DarkBrandForegroundLinkSelected': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundInvertedRest tokens
-  'Theme/Dark/Theme/DarkBrandForegroundInvertedRest': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundInvertedHover tokens
-  'Theme/Dark/Theme/DarkBrandForegroundInvertedHover': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundInvertedPressed tokens
-  'Theme/Dark/Theme/DarkBrandForegroundInvertedPressed': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundOn LightRest tokens
-  'Theme/Dark/Theme/DarkBrandForegroundOn LightRest': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundOn LightHover tokens
-  'Theme/Dark/Theme/DarkBrandForegroundOn LightHover': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundOn LightPressed tokens
-  'Theme/Dark/Theme/DarkBrandForegroundOn LightPressed': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundOn LightSelected tokens
-  'Theme/Dark/Theme/DarkBrandForegroundOn LightSelected': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundCompoundRest tokens
-  'Theme/Dark/Theme/DarkBrandForegroundCompoundRest': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundCompoundHover tokens
-  'Theme/Dark/Theme/DarkBrandForegroundCompoundHover': string;
-
-  // Theme/Dark/Theme/DarkBrandForegroundCompoundPressed tokens
-  'Theme/Dark/Theme/DarkBrandForegroundCompoundPressed': string;
-
-  // Theme/Dark/Theme/DarkBrandStroke1Rest tokens
-  'Theme/Dark/Theme/DarkBrandStroke1Rest': string;
-
-  // Theme/Dark/Theme/DarkBrandStroke1Hover tokens
-  'Theme/Dark/Theme/DarkBrandStroke1Hover': string;
-
-  // Theme/Dark/Theme/DarkBrandStroke1Pressed tokens
-  'Theme/Dark/Theme/DarkBrandStroke1Pressed': string;
-
-  // Theme/Dark/Theme/DarkBrandStroke1Selected tokens
-  'Theme/Dark/Theme/DarkBrandStroke1Selected': string;
-
-  // Theme/Dark/Theme/DarkBrandStroke2Rest tokens
-  'Theme/Dark/Theme/DarkBrandStroke2Rest': string;
-
-  // Theme/Dark/Theme/DarkBrandStroke2ContrastRest tokens
-  'Theme/Dark/Theme/DarkBrandStroke2ContrastRest': string;
-
-  // Theme/Dark/Theme/DarkBrandStroke3Rest tokens
-  'Theme/Dark/Theme/DarkBrandStroke3Rest': string;
-
-  // Theme/Dark/Theme/DarkBrandStrokeCompoundRest tokens
-  'Theme/Dark/Theme/DarkBrandStrokeCompoundRest': string;
-
-  // Theme/Dark/Theme/DarkBrandStrokeCompoundHover tokens
-  'Theme/Dark/Theme/DarkBrandStrokeCompoundHover': string;
-
-  // Theme/Dark/Theme/DarkBrandStrokeCompoundPressed tokens
-  'Theme/Dark/Theme/DarkBrandStrokeCompoundPressed': string;
-
-  // Theme/Dark/Theme/DarkStatusDangerBackground1Rest tokens
-  'Theme/Dark/Theme/DarkStatusDangerBackground1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusDangerBackground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusDangerBackground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusDangerForeground1Rest tokens
-  'Theme/Dark/Theme/DarkStatusDangerForeground1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusDangerForeground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusDangerForeground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusDangerStroke1Rest tokens
-  'Theme/Dark/Theme/DarkStatusDangerStroke1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusDangerStroke2Rest tokens
-  'Theme/Dark/Theme/DarkStatusDangerStroke2Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSuccessBackground1Rest tokens
-  'Theme/Dark/Theme/DarkStatusSuccessBackground1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSuccessBackground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusSuccessBackground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSuccessForeground1Rest tokens
-  'Theme/Dark/Theme/DarkStatusSuccessForeground1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSuccessForeground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusSuccessForeground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSuccessStroke1Rest tokens
-  'Theme/Dark/Theme/DarkStatusSuccessStroke1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSuccessStroke2Rest tokens
-  'Theme/Dark/Theme/DarkStatusSuccessStroke2Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusWarningBackground1Rest tokens
-  'Theme/Dark/Theme/DarkStatusWarningBackground1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusWarningBackground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusWarningBackground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusWarningForeground1Rest tokens
-  'Theme/Dark/Theme/DarkStatusWarningForeground1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusWarningForeground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusWarningForeground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusWarningStroke1Rest tokens
-  'Theme/Dark/Theme/DarkStatusWarningStroke1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusWarningStroke2Rest tokens
-  'Theme/Dark/Theme/DarkStatusWarningStroke2Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusOofForeground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusOofForeground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusAwayBackground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusAwayBackground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusAvailableForeground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusAvailableForeground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericAnchorBackground2Rest tokens
-  'Theme/Dark/Theme/DarkStatusGenericAnchorBackground2Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericAnchorForeground2Rest tokens
-  'Theme/Dark/Theme/DarkStatusGenericAnchorForeground2Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericAnchorStrokeActiveRest tokens
-  'Theme/Dark/Theme/DarkStatusGenericAnchorStrokeActiveRest': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericInformationBackground1Rest tokens
-  'Theme/Dark/Theme/DarkStatusGenericInformationBackground1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericInformationBackground1Hover tokens
-  'Theme/Dark/Theme/DarkStatusGenericInformationBackground1Hover': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericInformationBackground1Pressed tokens
-  'Theme/Dark/Theme/DarkStatusGenericInformationBackground1Pressed': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericInformationStroke1Rest tokens
-  'Theme/Dark/Theme/DarkStatusGenericInformationStroke1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericInformationStroke2Rest tokens
-  'Theme/Dark/Theme/DarkStatusGenericInformationStroke2Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericInformationStroke2Hover tokens
-  'Theme/Dark/Theme/DarkStatusGenericInformationStroke2Hover': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericInformationStroke2Pressed tokens
-  'Theme/Dark/Theme/DarkStatusGenericInformationStroke2Pressed': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericInformationForegroundRest tokens
-  'Theme/Dark/Theme/DarkStatusGenericInformationForegroundRest': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericInformationForegroundHover tokens
-  'Theme/Dark/Theme/DarkStatusGenericInformationForegroundHover': string;
-
-  // Theme/Dark/Theme/DarkStatusGenericInformationForegroundPressed tokens
-  'Theme/Dark/Theme/DarkStatusGenericInformationForegroundPressed': string;
-
-  // Theme/Dark/Theme/DarkStatusSevereBackground1Rest tokens
-  'Theme/Dark/Theme/DarkStatusSevereBackground1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSevereBackground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusSevereBackground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSevereForeground1Rest tokens
-  'Theme/Dark/Theme/DarkStatusSevereForeground1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSevereForeground3Rest tokens
-  'Theme/Dark/Theme/DarkStatusSevereForeground3Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSevereStroke1Rest tokens
-  'Theme/Dark/Theme/DarkStatusSevereStroke1Rest': string;
-
-  // Theme/Dark/Theme/DarkStatusSevereStroke2Rest tokens
-  'Theme/Dark/Theme/DarkStatusSevereStroke2Rest': string;
-
-  // Theme/Dark/Theme/DarkShadowAmbient tokens
-  'Theme/Dark/Theme/DarkShadowAmbient': string;
-  'Theme/Dark/Theme/DarkShadowAmbient-lighter': string;
-  'Theme/Dark/Theme/DarkShadowAmbient-darker': string;
-
-  // Theme/Dark/Theme/DarkShadowBrand tokens
-  'Theme/Dark/Theme/DarkShadowBrand-ambient': string;
-  'Theme/Dark/Theme/DarkShadowBrand-key': string;
-
-  // Theme/Dark/Theme/DarkShadowKey tokens
-  'Theme/Dark/Theme/DarkShadowKey': string;
-  'Theme/Dark/Theme/DarkShadowKey-lighter': string;
-  'Theme/Dark/Theme/DarkShadowKey-darker': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsCategorical tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsCategorical': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsData tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsData': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorBlue tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorBlue': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorGray tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGray': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorRed tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorRed': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorTeal tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorTeal': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorOcean tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorOcean': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorGreen tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGreen': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorYellow300 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorYellow300': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorBlue400 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorBlue400': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorGray400 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGray400': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorRed400 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorRed400': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorTeal300 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorTeal300': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorRed300 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorRed300': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorTeal400 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorTeal400': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorOcean400 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorOcean400': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorGreen400 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGreen400': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorYellow400 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorYellow400': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorGreen300 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGreen300': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorGray300 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGray300': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorBlue200 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorBlue200': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundLabelsColorOcean200 tokens
-  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorOcean200': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundAccessibilityText dark bkgd tokens
-  'Theme/Dark/Theme/DarkData vizForegroundAccessibilityText dark bkgd': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundAccessibilityText light bkgd tokens
-  'Theme/Dark/Theme/DarkData vizForegroundAccessibilityText light bkgd': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundKPI CardText dark bkgd tokens
-  'Theme/Dark/Theme/DarkData vizForegroundKPI CardText dark bkgd': string;
-
-  // Theme/Dark/Theme/DarkData vizForegroundKPI CardText light bkgd tokens
-  'Theme/Dark/Theme/DarkData vizForegroundKPI CardText light bkgd': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeGridline tokens
-  'Theme/Dark/Theme/DarkData vizStrokeGridline': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeAxis tokens
-  'Theme/Dark/Theme/DarkData vizStrokeAxis-Target-Benchmark': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorBlue tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorBlue': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorBlue400 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorBlue400': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorGray tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorGray': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorGray400 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorGray400': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorRed tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorRed': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorRed300 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorRed300': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorRed400 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorRed400': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorTeal tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorTeal': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorTeal300 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorTeal300': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorTeal400 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorTeal400': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorOcean tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorOcean': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorOcean400 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorOcean400': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorGreen tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorGreen': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorGreen300 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorGreen300': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorGreen400 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorGreen400': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorYellow300 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorYellow300': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorYellow400 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorYellow400': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorGray300 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorGray300': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorBlue200 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorBlue200': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorOcean200 tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorOcean200': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeColorYellow tokens
-  'Theme/Dark/Theme/DarkData vizStrokeColorYellow': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeTrend tokens
-  'Theme/Dark/Theme/DarkData vizStrokeTrend-Average': string;
-
-  // Theme/Dark/Theme/DarkData vizStrokeAccessible outline tokens
-  'Theme/Dark/Theme/DarkData vizStrokeAccessible outline': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticForegroundLight bkgdPositive tokens
-  'Theme/Dark/Theme/DarkData vizSemanticForegroundLight bkgdPositive': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticForegroundLight bkgdNegative tokens
-  'Theme/Dark/Theme/DarkData vizSemanticForegroundLight bkgdNegative': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticForegroundLight bkgdNotice tokens
-  'Theme/Dark/Theme/DarkData vizSemanticForegroundLight bkgdNotice': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticForegroundDark bkgdPositive tokens
-  'Theme/Dark/Theme/DarkData vizSemanticForegroundDark bkgdPositive': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticForegroundDark bkgdNegative tokens
-  'Theme/Dark/Theme/DarkData vizSemanticForegroundDark bkgdNegative': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticForegroundDark bkgdNotice tokens
-  'Theme/Dark/Theme/DarkData vizSemanticForegroundDark bkgdNotice': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticStrokeLight bkgdPositive tokens
-  'Theme/Dark/Theme/DarkData vizSemanticStrokeLight bkgdPositive': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticStrokeLight bkgdNegative tokens
-  'Theme/Dark/Theme/DarkData vizSemanticStrokeLight bkgdNegative': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticStrokeLight bkgdNotice tokens
-  'Theme/Dark/Theme/DarkData vizSemanticStrokeLight bkgdNotice': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticStrokeDark bkgdPositive tokens
-  'Theme/Dark/Theme/DarkData vizSemanticStrokeDark bkgdPositive': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticStrokeDark bkgdNegative tokens
-  'Theme/Dark/Theme/DarkData vizSemanticStrokeDark bkgdNegative': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticStrokeDark bkgdNotice tokens
-  'Theme/Dark/Theme/DarkData vizSemanticStrokeDark bkgdNotice': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticBackgroundPositive tokens
-  'Theme/Dark/Theme/DarkData vizSemanticBackgroundPositive': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticBackgroundNegative tokens
-  'Theme/Dark/Theme/DarkData vizSemanticBackgroundNegative': string;
-
-  // Theme/Dark/Theme/DarkData vizSemanticBackgroundNotice tokens
-  'Theme/Dark/Theme/DarkData vizSemanticBackgroundNotice': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundCoreBlue tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundCoreBlue': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundCoreGray tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundCoreGray': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundCoreRed tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundCoreRed': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundCoreTeal tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundCoreTeal': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundCoreOcean tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundCoreOcean': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundCoreGreen tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundCoreGreen': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundCoreYellow tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundCoreYellow': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue400 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue400': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialGray400 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGray400': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialRed300 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialRed300': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialRed400 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialRed400': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal300 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal300': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal400 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal400': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean400 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean400': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen300 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen300': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen400 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen400': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow300 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow300': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow400 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow400': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue300 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue300': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue200 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue200': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue100 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue100': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialGray300 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGray300': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialGray200 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGray200': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialGray100 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGray100': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialRed200 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialRed200': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialRed100 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialRed100': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal200 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal200': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal100 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal100': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean300 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean300': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean200 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean200': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean100 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean100': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen200 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen200': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen100 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen100': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow200 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow200': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow100 tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow100': string;
-
-  // Theme/Dark/Theme/DarkData vizBackgroundNeutralBlack tokens
-  'Theme/Dark/Theme/DarkData vizBackgroundNeutralBlack': string;
-
-  // Theme/Dark/Theme/DarkControl logicTheme switch tokens
-  'Theme/Dark/Theme/DarkControl logicTheme switch': string;
-
-  // Global/Value/Global/ValueColorsNeutralBlack tokens
-  'Global/Value/Global/ValueColorsNeutralBlack': string;
-
-  // Global/Value/Global/ValueColorsNeutralGrey tokens
-  'Global/Value/Global/ValueColorsNeutralGrey-6': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-8': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-10': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-12': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-20': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-30': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-40': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-50': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-60': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-70': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-80': string;
-  'Global/Value/Global/ValueColorsNeutralGrey-90': string;
-
-  // Global/Value/Global/ValueColorsNeutralWhite tokens
-  'Global/Value/Global/ValueColorsNeutralWhite': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyPrimary tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBurgundyTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedBurgundyTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedCranberryPrimary tokens
-  'Global/Value/Global/ValueColorsSharedCranberryPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedCranberryTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedCranberryTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedCranberryTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedCranberryTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedRedShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedRedShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedRedShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedRedShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedRedShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedRedShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedRedShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedRedShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedRedShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedRedShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedRedPrimary tokens
-  'Global/Value/Global/ValueColorsSharedRedPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedRedTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedRedTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedRedTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedRedTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedRedTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedRedTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedRedTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedRedTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedRedTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedRedTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedRedTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedRedTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedDark OrangePrimary tokens
-  'Global/Value/Global/ValueColorsSharedDark OrangePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedDark OrangeTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark OrangeTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark OrangeTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedDark OrangeTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzePrimary tokens
-  'Global/Value/Global/ValueColorsSharedBronzePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBronzeTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedBronzeTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedOrangePrimary tokens
-  'Global/Value/Global/ValueColorsSharedOrangePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedOrangeTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedOrangeTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedOrangeTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedOrangeTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedPeachShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedPeachShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedPeachShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedPeachShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedPeachShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachPrimary tokens
-  'Global/Value/Global/ValueColorsSharedPeachPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedPeachTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedPeachTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedPeachTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedPeachTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedPeachTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedPeachTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedPeachTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldPrimary tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedMarigoldTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedMarigoldTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedYellowShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedYellowShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedYellowShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedYellowShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedYellowShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowPrimary tokens
-  'Global/Value/Global/ValueColorsSharedYellowPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedYellowTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedYellowTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedYellowTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedYellowTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedYellowTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedYellowTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedYellowTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedGoldShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedGoldShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedGoldShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedGoldShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedGoldShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldPrimary tokens
-  'Global/Value/Global/ValueColorsSharedGoldPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedGoldTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedGoldTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedGoldTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedGoldTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedGoldTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedGoldTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedGoldTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedBrassShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedBrassShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedBrassShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedBrassShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedBrassShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassPrimary tokens
-  'Global/Value/Global/ValueColorsSharedBrassPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedBrassTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedBrassTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedBrassTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedBrassTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedBrassTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBrassTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedBrassTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedBrownShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedBrownShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedBrownShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedBrownShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedBrownShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownPrimary tokens
-  'Global/Value/Global/ValueColorsSharedBrownPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedBrownTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedBrownTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedBrownTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedBrownTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedBrownTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBrownTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedBrownTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownPrimary tokens
-  'Global/Value/Global/ValueColorsSharedDark brownPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedDark brownTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedDark brownTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedLimeShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedLimeShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedLimeShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedLimeShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedLimeShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLimePrimary tokens
-  'Global/Value/Global/ValueColorsSharedLimePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedLimeTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedLimeTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedLimeTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedLimeTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedLimeTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLimeTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedLimeTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedForestShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedForestShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedForestShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedForestShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedForestShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedForestShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedForestShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedForestShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedForestShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedForestShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedForestPrimary tokens
-  'Global/Value/Global/ValueColorsSharedForestPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedForestTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedForestTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedForestTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedForestTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedForestTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedForestTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedForestTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedForestTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedForestTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedForestTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedForestTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedForestTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamPrimary tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedSeafoamTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedSeafoamTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenPrimary tokens
-  'Global/Value/Global/ValueColorsSharedLight greenPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLight greenTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedLight greenTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedGreenPrimary tokens
-  'Global/Value/Global/ValueColorsSharedGreenPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedGreenTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedGreenTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedGreenTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedGreenTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenPrimary tokens
-  'Global/Value/Global/ValueColorsSharedDark greenPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedDark greenTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedDark greenTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealPrimary tokens
-  'Global/Value/Global/ValueColorsSharedLight tealPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLight tealTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedLight tealTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedTealShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedTealShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedTealShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedTealShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedTealShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedTealShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedTealShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedTealShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedTealShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedTealShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedTealPrimary tokens
-  'Global/Value/Global/ValueColorsSharedTealPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedTealTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedTealTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedTealTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedTealTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedTealTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedTealTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedTealTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedTealTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedTealTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedTealTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedTealTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedTealTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealPrimary tokens
-  'Global/Value/Global/ValueColorsSharedDark tealPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedDark tealTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedDark tealTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedCyanShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedCyanShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedCyanShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedCyanShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedCyanShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanPrimary tokens
-  'Global/Value/Global/ValueColorsSharedCyanPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedCyanTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedCyanTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedCyanTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedCyanTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedCyanTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedCyanTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedCyanTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedSteelShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedSteelShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedSteelShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedSteelShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedSteelShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelPrimary tokens
-  'Global/Value/Global/ValueColorsSharedSteelPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedSteelTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedSteelTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedSteelTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedSteelTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedSteelTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedSteelTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedSteelTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLight bluePrimary tokens
-  'Global/Value/Global/ValueColorsSharedLight bluePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLight blueTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedLight blueTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedBlueShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedBlueShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedBlueShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedBlueShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedBlueShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBluePrimary tokens
-  'Global/Value/Global/ValueColorsSharedBluePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedBlueTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedBlueTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedBlueTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedBlueTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedBlueTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBlueTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedBlueTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal bluePrimary tokens
-  'Global/Value/Global/ValueColorsSharedRoyal bluePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedRoyal blueTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedRoyal blueTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedDark bluePrimary tokens
-  'Global/Value/Global/ValueColorsSharedDark bluePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedDark blueTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedDark blueTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerPrimary tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedCornflowerTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedCornflowerTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedNavyShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedNavyShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedNavyShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedNavyShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedNavyShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyPrimary tokens
-  'Global/Value/Global/ValueColorsSharedNavyPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedNavyTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedNavyTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedNavyTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedNavyTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedNavyTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedNavyTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedNavyTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderPrimary tokens
-  'Global/Value/Global/ValueColorsSharedLavenderPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLavenderTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedLavenderTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedPurplePrimary tokens
-  'Global/Value/Global/ValueColorsSharedPurplePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedPurpleTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedPurpleTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purplePrimary tokens
-  'Global/Value/Global/ValueColorsSharedDark purplePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedDark purpleTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedDark purpleTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidPrimary tokens
-  'Global/Value/Global/ValueColorsSharedOrchidPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedOrchidTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedOrchidTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapePrimary tokens
-  'Global/Value/Global/ValueColorsSharedGrapePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedGrapeTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedGrapeTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedBerryShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedBerryShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedBerryShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedBerryShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedBerryShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryPrimary tokens
-  'Global/Value/Global/ValueColorsSharedBerryPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedBerryTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedBerryTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedBerryTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedBerryTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedBerryTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBerryTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedBerryTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedLilacShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedLilacShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedLilacShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedLilacShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedLilacShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacPrimary tokens
-  'Global/Value/Global/ValueColorsSharedLilacPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedLilacTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedLilacTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedLilacTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedLilacTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedLilacTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedLilacTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedLilacTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedPinkShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedPinkShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedPinkShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedPinkShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedPinkShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkPrimary tokens
-  'Global/Value/Global/ValueColorsSharedPinkPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedPinkTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedPinkTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedPinkTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedPinkTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedPinkTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedPinkTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedPinkTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkPrimary tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedHot pinkTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedHot pinkTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaPrimary tokens
-  'Global/Value/Global/ValueColorsSharedMagentaPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedMagentaTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedMagentaTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedPlumShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedPlumShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedPlumShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedPlumShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedPlumShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumPrimary tokens
-  'Global/Value/Global/ValueColorsSharedPlumPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedPlumTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedPlumTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedPlumTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedPlumTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedPlumTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedPlumTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedPlumTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigePrimary tokens
-  'Global/Value/Global/ValueColorsSharedBeigePrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedBeigeTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedBeigeTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedMinkShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedMinkShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedMinkShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedMinkShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedMinkShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkPrimary tokens
-  'Global/Value/Global/ValueColorsSharedMinkPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedMinkTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedMinkTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedMinkTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedMinkTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedMinkTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedMinkTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedMinkTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedSilverShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedSilverShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedSilverShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedSilverShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedSilverShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverPrimary tokens
-  'Global/Value/Global/ValueColorsSharedSilverPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedSilverTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedSilverTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedSilverTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedSilverTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedSilverTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedSilverTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedSilverTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumPrimary tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedPlatinumTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedPlatinumTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorPrimary tokens
-  'Global/Value/Global/ValueColorsSharedAnchorPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedAnchorTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedAnchorTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalShade 50 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalShade 50': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalShade 40 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalShade 40': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalShade 30 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalShade 30': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalShade 20': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalPrimary tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedCharcoalTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedCharcoalTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedInformationPrimary tokens
-  'Global/Value/Global/ValueColorsSharedInformationPrimary': string;
-
-  // Global/Value/Global/ValueColorsSharedInformationTint 30 tokens
-  'Global/Value/Global/ValueColorsSharedInformationTint 30': string;
-
-  // Global/Value/Global/ValueColorsSharedInformationTint 60 tokens
-  'Global/Value/Global/ValueColorsSharedInformationTint 60': string;
-
-  // Global/Value/Global/ValueColorsSharedInformationTint 40 tokens
-  'Global/Value/Global/ValueColorsSharedInformationTint 40': string;
-
-  // Global/Value/Global/ValueColorsSharedInformationTint 50 tokens
-  'Global/Value/Global/ValueColorsSharedInformationTint 50': string;
-
-  // Global/Value/Global/ValueColorsSharedInformationTint 20 tokens
-  'Global/Value/Global/ValueColorsSharedInformationTint 20': string;
-
-  // Global/Value/Global/ValueColorsSharedInformationTint 10 tokens
-  'Global/Value/Global/ValueColorsSharedInformationTint 10': string;
-
-  // Global/Value/Global/ValueColorsSharedInformationShade 10 tokens
-  'Global/Value/Global/ValueColorsSharedInformationShade 10': string;
-
-  // Global/Value/Global/ValueColorsSharedInformationShade 20 tokens
-  'Global/Value/Global/ValueColorsSharedInformationShade 20': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite0 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite0': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite5 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite5': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite10 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite10': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite20 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite20': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite30 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite30': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite40 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite40': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite50 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite50': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite60 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite60': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite70 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite70': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite80 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite80': string;
-
-  // Global/Value/Global/ValueColorsAlphaWhite90 tokens
-  'Global/Value/Global/ValueColorsAlphaWhite90': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack0 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack0': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack5 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack5': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack10 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack10': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack20 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack20': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack30 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack30': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack40 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack40': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack50 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack50': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack60 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack60': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack70 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack70': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack80 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack80': string;
-
-  // Global/Value/Global/ValueColorsAlphaBlack90 tokens
-  'Global/Value/Global/ValueColorsAlphaBlack90': string;
-
-  // Global/Value/Global/ValueColorsAlphaBrand tokens
-  'Global/Value/Global/ValueColorsAlphaBrand-105': string;
-  'Global/Value/Global/ValueColorsAlphaBrand-1010': string;
-  'Global/Value/Global/ValueColorsAlphaBrand-1020': string;
-  'Global/Value/Global/ValueColorsAlphaBrand-1030': string;
-  'Global/Value/Global/ValueColorsAlphaBrand-1040': string;
-  'Global/Value/Global/ValueColorsAlphaBrand-1050': string;
-  'Global/Value/Global/ValueColorsAlphaBrand-1060': string;
-  'Global/Value/Global/ValueColorsAlphaBrand-1070': string;
-  'Global/Value/Global/ValueColorsAlphaBrand-1080': string;
-  'Global/Value/Global/ValueColorsAlphaBrand-1090': string;
-
-  // Global/Value/Global/ValueColorsData vizCoreBlue tokens
-  'Global/Value/Global/ValueColorsData vizCoreBlue': string;
-
-  // Global/Value/Global/ValueColorsData vizCoreGray tokens
-  'Global/Value/Global/ValueColorsData vizCoreGray': string;
-
-  // Global/Value/Global/ValueColorsData vizCoreRed tokens
-  'Global/Value/Global/ValueColorsData vizCoreRed': string;
-
-  // Global/Value/Global/ValueColorsData vizCoreTeal tokens
-  'Global/Value/Global/ValueColorsData vizCoreTeal': string;
-
-  // Global/Value/Global/ValueColorsData vizCoreOcean tokens
-  'Global/Value/Global/ValueColorsData vizCoreOcean': string;
-
-  // Global/Value/Global/ValueColorsData vizCoreGreen tokens
-  'Global/Value/Global/ValueColorsData vizCoreGreen': string;
-
-  // Global/Value/Global/ValueColorsData vizCoreYellow tokens
-  'Global/Value/Global/ValueColorsData vizCoreYellow': string;
-
-  // Global/Value/Global/ValueColorsData vizSemanticLight bkgdPositive tokens
-  'Global/Value/Global/ValueColorsData vizSemanticLight bkgdPositive': string;
-
-  // Global/Value/Global/ValueColorsData vizSemanticLight bkgdNotice tokens
-  'Global/Value/Global/ValueColorsData vizSemanticLight bkgdNotice': string;
-
-  // Global/Value/Global/ValueColorsData vizSemanticLight bkgdNegative tokens
-  'Global/Value/Global/ValueColorsData vizSemanticLight bkgdNegative': string;
-
-  // Global/Value/Global/ValueColorsData vizSemanticDark bkgdPositive tokens
-  'Global/Value/Global/ValueColorsData vizSemanticDark bkgdPositive': string;
-
-  // Global/Value/Global/ValueColorsData vizSemanticDark bkgdNegative tokens
-  'Global/Value/Global/ValueColorsData vizSemanticDark bkgdNegative': string;
-
-  // Global/Value/Global/ValueColorsData vizSemanticDark bkgdNotice tokens
-  'Global/Value/Global/ValueColorsData vizSemanticDark bkgdNotice': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialBlue400 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialBlue400': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialBlue300 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialBlue300': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialBlue200 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialBlue200': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialBlue100 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialBlue100': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialGray400 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialGray400': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialGray300 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialGray300': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialGray200 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialGray200': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialGray100 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialGray100': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialRed400 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialRed400': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialRed300 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialRed300': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialRed200 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialRed200': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialRed100 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialRed100': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialTeal400 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialTeal400': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialTeal300 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialTeal300': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialTeal200 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialTeal200': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialTeal100 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialTeal100': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialOcean400 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialOcean400': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialOcean300 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialOcean300': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialOcean200 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialOcean200': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialOcean100 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialOcean100': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialGreen400 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialGreen400': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialGreen300 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialGreen300': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialGreen200 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialGreen200': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialGreen100 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialGreen100': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialYellow400 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialYellow400': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialYellow300 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialYellow300': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialYellow200 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialYellow200': string;
-
-  // Global/Value/Global/ValueColorsData vizSequentialYellow100 tokens
-  'Global/Value/Global/ValueColorsData vizSequentialYellow100': string;
-
-  // Global/Value/Global/ValueColorsBrandBrand tokens
-  'Global/Value/Global/ValueColorsBrandBrand-10': string;
-  'Global/Value/Global/ValueColorsBrandBrand-20': string;
-  'Global/Value/Global/ValueColorsBrandBrand-30': string;
-  'Global/Value/Global/ValueColorsBrandBrand-40': string;
-  'Global/Value/Global/ValueColorsBrandBrand-50': string;
-  'Global/Value/Global/ValueColorsBrandBrand-60': string;
-  'Global/Value/Global/ValueColorsBrandBrand-70': string;
-  'Global/Value/Global/ValueColorsBrandBrand-80': string;
-  'Global/Value/Global/ValueColorsBrandBrand-90': string;
-  'Global/Value/Global/ValueColorsBrandBrand-100': string;
-  'Global/Value/Global/ValueColorsBrandBrand-110': string;
-  'Global/Value/Global/ValueColorsBrandBrand-120': string;
-  'Global/Value/Global/ValueColorsBrandBrand-130': string;
-
-  // Brand/Brand 1/Brand/Brand 1Brand tokens
   'Brand/Brand 1/Brand/Brand 1Brand-10': string;
+  'Brand/Brand 1/Brand/Brand 1Brand-100': string;
+  'Brand/Brand 1/Brand/Brand 1Brand-110': string;
+  'Brand/Brand 1/Brand/Brand 1Brand-120': string;
+  'Brand/Brand 1/Brand/Brand 1Brand-130': string;
   'Brand/Brand 1/Brand/Brand 1Brand-20': string;
   'Brand/Brand 1/Brand/Brand 1Brand-30': string;
   'Brand/Brand 1/Brand/Brand 1Brand-40': string;
@@ -7570,329 +756,3136 @@ interface BrandThemeExtension {
   'Brand/Brand 1/Brand/Brand 1Brand-70': string;
   'Brand/Brand 1/Brand/Brand 1Brand-80': string;
   'Brand/Brand 1/Brand/Brand 1Brand-90': string;
-  'Brand/Brand 1/Brand/Brand 1Brand-100': string;
-  'Brand/Brand 1/Brand/Brand 1Brand-110': string;
-  'Brand/Brand 1/Brand/Brand 1Brand-120': string;
-  'Brand/Brand 1/Brand/Brand 1Brand-130': string;
-
-  // Arrow position/Above start/Arrow position/Above startAbove tokens
-  'Arrow position/Above start/Arrow position/Above startAbove-start': string;
-  'Arrow position/Above start/Arrow position/Above startAbove-middle': string;
-  'Arrow position/Above start/Arrow position/Above startAbove-end': string;
-
-  // Arrow position/Above start/Arrow position/Above startBefore tokens
-  'Arrow position/Above start/Arrow position/Above startBefore-top': string;
-  'Arrow position/Above start/Arrow position/Above startBefore-center': string;
-  'Arrow position/Above start/Arrow position/Above startBefore-bottom': string;
-
-  // Arrow position/Above start/Arrow position/Above startAfter tokens
-  'Arrow position/Above start/Arrow position/Above startAfter-top': string;
-  'Arrow position/Above start/Arrow position/Above startAfter-center': string;
-  'Arrow position/Above start/Arrow position/Above startAfter-bottom': string;
-
-  // Arrow position/Above start/Arrow position/Above startBottom tokens
-  'Arrow position/Above start/Arrow position/Above startBottom-start': string;
-  'Arrow position/Above start/Arrow position/Above startBottom-center': string;
-  'Arrow position/Above start/Arrow position/Above startBottom-end': string;
-
-  // Arrow position/Above middle/Arrow position/Above middleAbove tokens
-  'Arrow position/Above middle/Arrow position/Above middleAbove-start': string;
-  'Arrow position/Above middle/Arrow position/Above middleAbove-middle': string;
-  'Arrow position/Above middle/Arrow position/Above middleAbove-end': string;
-
-  // Arrow position/Above middle/Arrow position/Above middleBefore tokens
-  'Arrow position/Above middle/Arrow position/Above middleBefore-top': string;
-  'Arrow position/Above middle/Arrow position/Above middleBefore-center': string;
-  'Arrow position/Above middle/Arrow position/Above middleBefore-bottom': string;
-
-  // Arrow position/Above middle/Arrow position/Above middleAfter tokens
-  'Arrow position/Above middle/Arrow position/Above middleAfter-top': string;
-  'Arrow position/Above middle/Arrow position/Above middleAfter-center': string;
-  'Arrow position/Above middle/Arrow position/Above middleAfter-bottom': string;
-
-  // Arrow position/Above middle/Arrow position/Above middleBottom tokens
-  'Arrow position/Above middle/Arrow position/Above middleBottom-start': string;
-  'Arrow position/Above middle/Arrow position/Above middleBottom-center': string;
-  'Arrow position/Above middle/Arrow position/Above middleBottom-end': string;
-
-  // Arrow position/Above end/Arrow position/Above endAbove tokens
-  'Arrow position/Above end/Arrow position/Above endAbove-start': string;
-  'Arrow position/Above end/Arrow position/Above endAbove-middle': string;
-  'Arrow position/Above end/Arrow position/Above endAbove-end': string;
-
-  // Arrow position/Above end/Arrow position/Above endBefore tokens
-  'Arrow position/Above end/Arrow position/Above endBefore-top': string;
-  'Arrow position/Above end/Arrow position/Above endBefore-center': string;
-  'Arrow position/Above end/Arrow position/Above endBefore-bottom': string;
-
-  // Arrow position/Above end/Arrow position/Above endAfter tokens
-  'Arrow position/Above end/Arrow position/Above endAfter-top': string;
-  'Arrow position/Above end/Arrow position/Above endAfter-center': string;
-  'Arrow position/Above end/Arrow position/Above endAfter-bottom': string;
-
-  // Arrow position/Above end/Arrow position/Above endBottom tokens
-  'Arrow position/Above end/Arrow position/Above endBottom-start': string;
-  'Arrow position/Above end/Arrow position/Above endBottom-center': string;
-  'Arrow position/Above end/Arrow position/Above endBottom-end': string;
-
-  // Arrow position/Before top/Arrow position/Before topAbove tokens
-  'Arrow position/Before top/Arrow position/Before topAbove-start': string;
-  'Arrow position/Before top/Arrow position/Before topAbove-middle': string;
-  'Arrow position/Before top/Arrow position/Before topAbove-end': string;
-
-  // Arrow position/Before top/Arrow position/Before topBefore tokens
-  'Arrow position/Before top/Arrow position/Before topBefore-top': string;
-  'Arrow position/Before top/Arrow position/Before topBefore-center': string;
-  'Arrow position/Before top/Arrow position/Before topBefore-bottom': string;
-
-  // Arrow position/Before top/Arrow position/Before topAfter tokens
-  'Arrow position/Before top/Arrow position/Before topAfter-top': string;
-  'Arrow position/Before top/Arrow position/Before topAfter-center': string;
-  'Arrow position/Before top/Arrow position/Before topAfter-bottom': string;
-
-  // Arrow position/Before top/Arrow position/Before topBottom tokens
-  'Arrow position/Before top/Arrow position/Before topBottom-start': string;
-  'Arrow position/Before top/Arrow position/Before topBottom-center': string;
-  'Arrow position/Before top/Arrow position/Before topBottom-end': string;
-
-  // Arrow position/Before middle/Arrow position/Before middleAbove tokens
-  'Arrow position/Before middle/Arrow position/Before middleAbove-start': string;
-  'Arrow position/Before middle/Arrow position/Before middleAbove-middle': string;
-  'Arrow position/Before middle/Arrow position/Before middleAbove-end': string;
-
-  // Arrow position/Before middle/Arrow position/Before middleBefore tokens
-  'Arrow position/Before middle/Arrow position/Before middleBefore-top': string;
-  'Arrow position/Before middle/Arrow position/Before middleBefore-center': string;
-  'Arrow position/Before middle/Arrow position/Before middleBefore-bottom': string;
-
-  // Arrow position/Before middle/Arrow position/Before middleAfter tokens
-  'Arrow position/Before middle/Arrow position/Before middleAfter-top': string;
-  'Arrow position/Before middle/Arrow position/Before middleAfter-center': string;
-  'Arrow position/Before middle/Arrow position/Before middleAfter-bottom': string;
-
-  // Arrow position/Before middle/Arrow position/Before middleBottom tokens
-  'Arrow position/Before middle/Arrow position/Before middleBottom-start': string;
-  'Arrow position/Before middle/Arrow position/Before middleBottom-center': string;
-  'Arrow position/Before middle/Arrow position/Before middleBottom-end': string;
-
-  // Arrow position/Before bottom/Arrow position/Before bottomAbove tokens
-  'Arrow position/Before bottom/Arrow position/Before bottomAbove-start': string;
-  'Arrow position/Before bottom/Arrow position/Before bottomAbove-middle': string;
-  'Arrow position/Before bottom/Arrow position/Before bottomAbove-end': string;
-
-  // Arrow position/Before bottom/Arrow position/Before bottomBefore tokens
-  'Arrow position/Before bottom/Arrow position/Before bottomBefore-top': string;
-  'Arrow position/Before bottom/Arrow position/Before bottomBefore-center': string;
-  'Arrow position/Before bottom/Arrow position/Before bottomBefore-bottom': string;
-
-  // Arrow position/Before bottom/Arrow position/Before bottomAfter tokens
-  'Arrow position/Before bottom/Arrow position/Before bottomAfter-top': string;
-  'Arrow position/Before bottom/Arrow position/Before bottomAfter-center': string;
-  'Arrow position/Before bottom/Arrow position/Before bottomAfter-bottom': string;
-
-  // Arrow position/Before bottom/Arrow position/Before bottomBottom tokens
-  'Arrow position/Before bottom/Arrow position/Before bottomBottom-start': string;
-  'Arrow position/Before bottom/Arrow position/Before bottomBottom-center': string;
-  'Arrow position/Before bottom/Arrow position/Before bottomBottom-end': string;
-
-  // Arrow position/After top/Arrow position/After topAbove tokens
-  'Arrow position/After top/Arrow position/After topAbove-start': string;
-  'Arrow position/After top/Arrow position/After topAbove-middle': string;
-  'Arrow position/After top/Arrow position/After topAbove-end': string;
-
-  // Arrow position/After top/Arrow position/After topBefore tokens
-  'Arrow position/After top/Arrow position/After topBefore-top': string;
-  'Arrow position/After top/Arrow position/After topBefore-center': string;
-  'Arrow position/After top/Arrow position/After topBefore-bottom': string;
-
-  // Arrow position/After top/Arrow position/After topAfter tokens
-  'Arrow position/After top/Arrow position/After topAfter-top': string;
-  'Arrow position/After top/Arrow position/After topAfter-center': string;
-  'Arrow position/After top/Arrow position/After topAfter-bottom': string;
-
-  // Arrow position/After top/Arrow position/After topBottom tokens
-  'Arrow position/After top/Arrow position/After topBottom-start': string;
-  'Arrow position/After top/Arrow position/After topBottom-center': string;
-  'Arrow position/After top/Arrow position/After topBottom-end': string;
-
-  // Arrow position/After middle/Arrow position/After middleAbove tokens
-  'Arrow position/After middle/Arrow position/After middleAbove-start': string;
-  'Arrow position/After middle/Arrow position/After middleAbove-middle': string;
-  'Arrow position/After middle/Arrow position/After middleAbove-end': string;
-
-  // Arrow position/After middle/Arrow position/After middleBefore tokens
-  'Arrow position/After middle/Arrow position/After middleBefore-top': string;
-  'Arrow position/After middle/Arrow position/After middleBefore-center': string;
-  'Arrow position/After middle/Arrow position/After middleBefore-bottom': string;
-
-  // Arrow position/After middle/Arrow position/After middleAfter tokens
-  'Arrow position/After middle/Arrow position/After middleAfter-top': string;
-  'Arrow position/After middle/Arrow position/After middleAfter-center': string;
-  'Arrow position/After middle/Arrow position/After middleAfter-bottom': string;
-
-  // Arrow position/After middle/Arrow position/After middleBottom tokens
-  'Arrow position/After middle/Arrow position/After middleBottom-start': string;
-  'Arrow position/After middle/Arrow position/After middleBottom-center': string;
-  'Arrow position/After middle/Arrow position/After middleBottom-end': string;
-
-  // Arrow position/After bottom/Arrow position/After bottomAbove tokens
-  'Arrow position/After bottom/Arrow position/After bottomAbove-start': string;
-  'Arrow position/After bottom/Arrow position/After bottomAbove-middle': string;
-  'Arrow position/After bottom/Arrow position/After bottomAbove-end': string;
-
-  // Arrow position/After bottom/Arrow position/After bottomBefore tokens
-  'Arrow position/After bottom/Arrow position/After bottomBefore-top': string;
-  'Arrow position/After bottom/Arrow position/After bottomBefore-center': string;
-  'Arrow position/After bottom/Arrow position/After bottomBefore-bottom': string;
-
-  // Arrow position/After bottom/Arrow position/After bottomAfter tokens
-  'Arrow position/After bottom/Arrow position/After bottomAfter-top': string;
-  'Arrow position/After bottom/Arrow position/After bottomAfter-center': string;
-  'Arrow position/After bottom/Arrow position/After bottomAfter-bottom': string;
-
-  // Arrow position/After bottom/Arrow position/After bottomBottom tokens
-  'Arrow position/After bottom/Arrow position/After bottomBottom-start': string;
-  'Arrow position/After bottom/Arrow position/After bottomBottom-center': string;
-  'Arrow position/After bottom/Arrow position/After bottomBottom-end': string;
-
-  // Arrow position/Bottom start/Arrow position/Bottom startAbove tokens
-  'Arrow position/Bottom start/Arrow position/Bottom startAbove-start': string;
-  'Arrow position/Bottom start/Arrow position/Bottom startAbove-middle': string;
-  'Arrow position/Bottom start/Arrow position/Bottom startAbove-end': string;
-
-  // Arrow position/Bottom start/Arrow position/Bottom startBefore tokens
-  'Arrow position/Bottom start/Arrow position/Bottom startBefore-top': string;
-  'Arrow position/Bottom start/Arrow position/Bottom startBefore-center': string;
-  'Arrow position/Bottom start/Arrow position/Bottom startBefore-bottom': string;
-
-  // Arrow position/Bottom start/Arrow position/Bottom startAfter tokens
-  'Arrow position/Bottom start/Arrow position/Bottom startAfter-top': string;
-  'Arrow position/Bottom start/Arrow position/Bottom startAfter-center': string;
-  'Arrow position/Bottom start/Arrow position/Bottom startAfter-bottom': string;
-
-  // Arrow position/Bottom start/Arrow position/Bottom startBottom tokens
-  'Arrow position/Bottom start/Arrow position/Bottom startBottom-start': string;
-  'Arrow position/Bottom start/Arrow position/Bottom startBottom-center': string;
-  'Arrow position/Bottom start/Arrow position/Bottom startBottom-end': string;
-
-  // Arrow position/Bottom middle/Arrow position/Bottom middleAbove tokens
-  'Arrow position/Bottom middle/Arrow position/Bottom middleAbove-start': string;
-  'Arrow position/Bottom middle/Arrow position/Bottom middleAbove-middle': string;
-  'Arrow position/Bottom middle/Arrow position/Bottom middleAbove-end': string;
-
-  // Arrow position/Bottom middle/Arrow position/Bottom middleBefore tokens
-  'Arrow position/Bottom middle/Arrow position/Bottom middleBefore-top': string;
-  'Arrow position/Bottom middle/Arrow position/Bottom middleBefore-center': string;
-  'Arrow position/Bottom middle/Arrow position/Bottom middleBefore-bottom': string;
-
-  // Arrow position/Bottom middle/Arrow position/Bottom middleAfter tokens
-  'Arrow position/Bottom middle/Arrow position/Bottom middleAfter-top': string;
-  'Arrow position/Bottom middle/Arrow position/Bottom middleAfter-center': string;
-  'Arrow position/Bottom middle/Arrow position/Bottom middleAfter-bottom': string;
-
-  // Arrow position/Bottom middle/Arrow position/Bottom middleBottom tokens
-  'Arrow position/Bottom middle/Arrow position/Bottom middleBottom-start': string;
-  'Arrow position/Bottom middle/Arrow position/Bottom middleBottom-center': string;
-  'Arrow position/Bottom middle/Arrow position/Bottom middleBottom-end': string;
-
-  // Arrow position/Bottom end/Arrow position/Bottom endAbove tokens
-  'Arrow position/Bottom end/Arrow position/Bottom endAbove-start': string;
-  'Arrow position/Bottom end/Arrow position/Bottom endAbove-middle': string;
-  'Arrow position/Bottom end/Arrow position/Bottom endAbove-end': string;
-
-  // Arrow position/Bottom end/Arrow position/Bottom endBefore tokens
-  'Arrow position/Bottom end/Arrow position/Bottom endBefore-top': string;
-  'Arrow position/Bottom end/Arrow position/Bottom endBefore-center': string;
-  'Arrow position/Bottom end/Arrow position/Bottom endBefore-bottom': string;
-
-  // Arrow position/Bottom end/Arrow position/Bottom endAfter tokens
-  'Arrow position/Bottom end/Arrow position/Bottom endAfter-top': string;
-  'Arrow position/Bottom end/Arrow position/Bottom endAfter-center': string;
-  'Arrow position/Bottom end/Arrow position/Bottom endAfter-bottom': string;
-
-  // Arrow position/Bottom end/Arrow position/Bottom endBottom tokens
-  'Arrow position/Bottom end/Arrow position/Bottom endBottom-start': string;
-  'Arrow position/Bottom end/Arrow position/Bottom endBottom-center': string;
-  'Arrow position/Bottom end/Arrow position/Bottom endBottom-end': string;
-
-  // Arrow position/None/Arrow position/NoneAbove tokens
-  'Arrow position/None/Arrow position/NoneAbove-start': string;
-  'Arrow position/None/Arrow position/NoneAbove-middle': string;
-  'Arrow position/None/Arrow position/NoneAbove-end': string;
-
-  // Arrow position/None/Arrow position/NoneBefore tokens
-  'Arrow position/None/Arrow position/NoneBefore-top': string;
-  'Arrow position/None/Arrow position/NoneBefore-center': string;
-  'Arrow position/None/Arrow position/NoneBefore-bottom': string;
-
-  // Arrow position/None/Arrow position/NoneAfter tokens
-  'Arrow position/None/Arrow position/NoneAfter-top': string;
-  'Arrow position/None/Arrow position/NoneAfter-center': string;
-  'Arrow position/None/Arrow position/NoneAfter-bottom': string;
-
-  // Arrow position/None/Arrow position/NoneBottom tokens
-  'Arrow position/None/Arrow position/NoneBottom-start': string;
-  'Arrow position/None/Arrow position/NoneBottom-center': string;
-  'Arrow position/None/Arrow position/NoneBottom-end': string;
-
-  // Typography/Base/Typography/BaseFontFamilyBase tokens
-  'Typography/Base/Typography/BaseFontFamilyBase': string;
-
-  // Typography/Base/Typography/BaseFontWeightRegular tokens
-  'Typography/Base/Typography/BaseFontWeightRegular': string;
-
-  // Typography/Base/Typography/BaseFontWeightSemibold tokens
-  'Typography/Base/Typography/BaseFontWeightSemibold': string;
-
-  // Typography/Base/Typography/BaseFontWeightBold tokens
-  'Typography/Base/Typography/BaseFontWeightBold': string;
-
-  // Typography/Base/Typography/BaseFontWeightSemilight tokens
-  'Typography/Base/Typography/BaseFontWeightSemilight': string;
-
-  // Typography/Base/Typography/BaseFontWeightLight tokens
-  'Typography/Base/Typography/BaseFontWeightLight': string;
-
-  // Popover size/Medium/Popover size/MediumPopover tokens
-  'Popover size/Medium/Popover size/MediumPopover-padding-vertical': string;
-  'Popover size/Medium/Popover size/MediumPopover-padding-horizontal': string;
-
-  // Popover size/Small/Popover size/SmallPopover tokens
-  'Popover size/Small/Popover size/SmallPopover-padding-vertical': string;
-  'Popover size/Small/Popover size/SmallPopover-padding-horizontal': string;
-
-  // Popover size/Large/Popover size/LargePopover tokens
-  'Popover size/Large/Popover size/LargePopover-padding-vertical': string;
-  'Popover size/Large/Popover size/LargePopover-padding-horizontal': string;
-
-  // Card padding/Medium/Card padding/MediumCard tokens
-  'Card padding/Medium/Card padding/MediumCard-horizontal': string;
-  'Card padding/Medium/Card padding/MediumCard-vertical': string;
-  'Card padding/Medium/Card padding/MediumCard-gap': string;
-  'Card padding/Medium/Card padding/MediumCard-corner-radius': string;
-
-  // Card padding/Small/Card padding/SmallCard tokens
-  'Card padding/Small/Card padding/SmallCard-horizontal': string;
-  'Card padding/Small/Card padding/SmallCard-vertical': string;
-  'Card padding/Small/Card padding/SmallCard-gap': string;
-  'Card padding/Small/Card padding/SmallCard-corner-radius': string;
-
-  // Card padding/Large/Card padding/LargeCard tokens
-  'Card padding/Large/Card padding/LargeCard-horizontal': string;
-  'Card padding/Large/Card padding/LargeCard-vertical': string;
-  'Card padding/Large/Card padding/LargeCard-gap': string;
-  'Card padding/Large/Card padding/LargeCard-corner-radius': string;
-
-  // Button shape/Rounded (Default)/Button shape/Rounded (Default)Button tokens
+  'Brand/Brand 1Brand-10': string;
+  'Brand/Brand 1Brand-100': string;
+  'Brand/Brand 1Brand-110': string;
+  'Brand/Brand 1Brand-120': string;
+  'Brand/Brand 1Brand-130': string;
+  'Brand/Brand 1Brand-20': string;
+  'Brand/Brand 1Brand-30': string;
+  'Brand/Brand 1Brand-40': string;
+  'Brand/Brand 1Brand-50': string;
+  'Brand/Brand 1Brand-60': string;
+  'Brand/Brand 1Brand-70': string;
+  'Brand/Brand 1Brand-80': string;
+  'Brand/Brand 1Brand-90': string;
   'Button shape/Rounded (Default)/Button shape/Rounded (Default)Button-corner-radius': string;
   'Button shape/Rounded (Default)/Button shape/Rounded (Default)Button-image-corner-radius': string;
-
-  // Badge shape/Circular/Badge shape/CircularBadge tokens
-  'Badge shape/Circular/Badge shape/CircularBadge-corner-radius': string;
+  'Button shape/Rounded (Default)Button-corner-radius': string;
+  'Button shape/Rounded (Default)Button-image-corner-radius': string;
+  'Card padding/Large/Card padding/LargeCard-corner-radius': string;
+  'Card padding/Large/Card padding/LargeCard-gap': string;
+  'Card padding/Large/Card padding/LargeCard-horizontal': string;
+  'Card padding/Large/Card padding/LargeCard-vertical': string;
+  'Card padding/LargeCard-corner-radius': string;
+  'Card padding/LargeCard-gap': string;
+  'Card padding/LargeCard-horizontal': string;
+  'Card padding/LargeCard-vertical': string;
+  'Card padding/Medium/Card padding/MediumCard-corner-radius': string;
+  'Card padding/Medium/Card padding/MediumCard-gap': string;
+  'Card padding/Medium/Card padding/MediumCard-horizontal': string;
+  'Card padding/Medium/Card padding/MediumCard-vertical': string;
+  'Card padding/MediumCard-corner-radius': string;
+  'Card padding/MediumCard-gap': string;
+  'Card padding/MediumCard-horizontal': string;
+  'Card padding/MediumCard-vertical': string;
+  'Card padding/Small/Card padding/SmallCard-corner-radius': string;
+  'Card padding/Small/Card padding/SmallCard-gap': string;
+  'Card padding/Small/Card padding/SmallCard-horizontal': string;
+  'Card padding/Small/Card padding/SmallCard-vertical': string;
+  'Card padding/SmallCard-corner-radius': string;
+  'Card padding/SmallCard-gap': string;
+  'Card padding/SmallCard-horizontal': string;
+  'Card padding/SmallCard-vertical': string;
+  'Global/Value/Global/ValueBorderRadiusCircular': string;
+  'Global/Value/Global/ValueBorderRadiusLarge': string;
+  'Global/Value/Global/ValueBorderRadiusMedium': string;
+  'Global/Value/Global/ValueBorderRadiusNone': string;
+  'Global/Value/Global/ValueBorderRadiusSmall': string;
+  'Global/Value/Global/ValueBorderRadiusX-Large': string;
+  'Global/Value/Global/ValueColorsAlphaBlack0': string;
+  'Global/Value/Global/ValueColorsAlphaBlack10': string;
+  'Global/Value/Global/ValueColorsAlphaBlack20': string;
+  'Global/Value/Global/ValueColorsAlphaBlack30': string;
+  'Global/Value/Global/ValueColorsAlphaBlack40': string;
+  'Global/Value/Global/ValueColorsAlphaBlack5': string;
+  'Global/Value/Global/ValueColorsAlphaBlack50': string;
+  'Global/Value/Global/ValueColorsAlphaBlack60': string;
+  'Global/Value/Global/ValueColorsAlphaBlack70': string;
+  'Global/Value/Global/ValueColorsAlphaBlack80': string;
+  'Global/Value/Global/ValueColorsAlphaBlack90': string;
+  'Global/Value/Global/ValueColorsAlphaBrand-1010': string;
+  'Global/Value/Global/ValueColorsAlphaBrand-1020': string;
+  'Global/Value/Global/ValueColorsAlphaBrand-1030': string;
+  'Global/Value/Global/ValueColorsAlphaBrand-1040': string;
+  'Global/Value/Global/ValueColorsAlphaBrand-105': string;
+  'Global/Value/Global/ValueColorsAlphaBrand-1050': string;
+  'Global/Value/Global/ValueColorsAlphaBrand-1060': string;
+  'Global/Value/Global/ValueColorsAlphaBrand-1070': string;
+  'Global/Value/Global/ValueColorsAlphaBrand-1080': string;
+  'Global/Value/Global/ValueColorsAlphaBrand-1090': string;
+  'Global/Value/Global/ValueColorsAlphaWhite0': string;
+  'Global/Value/Global/ValueColorsAlphaWhite10': string;
+  'Global/Value/Global/ValueColorsAlphaWhite20': string;
+  'Global/Value/Global/ValueColorsAlphaWhite30': string;
+  'Global/Value/Global/ValueColorsAlphaWhite40': string;
+  'Global/Value/Global/ValueColorsAlphaWhite5': string;
+  'Global/Value/Global/ValueColorsAlphaWhite50': string;
+  'Global/Value/Global/ValueColorsAlphaWhite60': string;
+  'Global/Value/Global/ValueColorsAlphaWhite70': string;
+  'Global/Value/Global/ValueColorsAlphaWhite80': string;
+  'Global/Value/Global/ValueColorsAlphaWhite90': string;
+  'Global/Value/Global/ValueColorsBrandBrand-10': string;
+  'Global/Value/Global/ValueColorsBrandBrand-100': string;
+  'Global/Value/Global/ValueColorsBrandBrand-110': string;
+  'Global/Value/Global/ValueColorsBrandBrand-120': string;
+  'Global/Value/Global/ValueColorsBrandBrand-130': string;
+  'Global/Value/Global/ValueColorsBrandBrand-20': string;
+  'Global/Value/Global/ValueColorsBrandBrand-30': string;
+  'Global/Value/Global/ValueColorsBrandBrand-40': string;
+  'Global/Value/Global/ValueColorsBrandBrand-50': string;
+  'Global/Value/Global/ValueColorsBrandBrand-60': string;
+  'Global/Value/Global/ValueColorsBrandBrand-70': string;
+  'Global/Value/Global/ValueColorsBrandBrand-80': string;
+  'Global/Value/Global/ValueColorsBrandBrand-90': string;
+  'Global/Value/Global/ValueColorsData vizCoreBlue': string;
+  'Global/Value/Global/ValueColorsData vizCoreGray': string;
+  'Global/Value/Global/ValueColorsData vizCoreGreen': string;
+  'Global/Value/Global/ValueColorsData vizCoreOcean': string;
+  'Global/Value/Global/ValueColorsData vizCoreRed': string;
+  'Global/Value/Global/ValueColorsData vizCoreTeal': string;
+  'Global/Value/Global/ValueColorsData vizCoreYellow': string;
+  'Global/Value/Global/ValueColorsData vizSemanticDark bkgdNegative': string;
+  'Global/Value/Global/ValueColorsData vizSemanticDark bkgdNotice': string;
+  'Global/Value/Global/ValueColorsData vizSemanticDark bkgdPositive': string;
+  'Global/Value/Global/ValueColorsData vizSemanticLight bkgdNegative': string;
+  'Global/Value/Global/ValueColorsData vizSemanticLight bkgdNotice': string;
+  'Global/Value/Global/ValueColorsData vizSemanticLight bkgdPositive': string;
+  'Global/Value/Global/ValueColorsData vizSequentialBlue100': string;
+  'Global/Value/Global/ValueColorsData vizSequentialBlue200': string;
+  'Global/Value/Global/ValueColorsData vizSequentialBlue300': string;
+  'Global/Value/Global/ValueColorsData vizSequentialBlue400': string;
+  'Global/Value/Global/ValueColorsData vizSequentialGray100': string;
+  'Global/Value/Global/ValueColorsData vizSequentialGray200': string;
+  'Global/Value/Global/ValueColorsData vizSequentialGray300': string;
+  'Global/Value/Global/ValueColorsData vizSequentialGray400': string;
+  'Global/Value/Global/ValueColorsData vizSequentialGreen100': string;
+  'Global/Value/Global/ValueColorsData vizSequentialGreen200': string;
+  'Global/Value/Global/ValueColorsData vizSequentialGreen300': string;
+  'Global/Value/Global/ValueColorsData vizSequentialGreen400': string;
+  'Global/Value/Global/ValueColorsData vizSequentialOcean100': string;
+  'Global/Value/Global/ValueColorsData vizSequentialOcean200': string;
+  'Global/Value/Global/ValueColorsData vizSequentialOcean300': string;
+  'Global/Value/Global/ValueColorsData vizSequentialOcean400': string;
+  'Global/Value/Global/ValueColorsData vizSequentialRed100': string;
+  'Global/Value/Global/ValueColorsData vizSequentialRed200': string;
+  'Global/Value/Global/ValueColorsData vizSequentialRed300': string;
+  'Global/Value/Global/ValueColorsData vizSequentialRed400': string;
+  'Global/Value/Global/ValueColorsData vizSequentialTeal100': string;
+  'Global/Value/Global/ValueColorsData vizSequentialTeal200': string;
+  'Global/Value/Global/ValueColorsData vizSequentialTeal300': string;
+  'Global/Value/Global/ValueColorsData vizSequentialTeal400': string;
+  'Global/Value/Global/ValueColorsData vizSequentialYellow100': string;
+  'Global/Value/Global/ValueColorsData vizSequentialYellow200': string;
+  'Global/Value/Global/ValueColorsData vizSequentialYellow300': string;
+  'Global/Value/Global/ValueColorsData vizSequentialYellow400': string;
+  'Global/Value/Global/ValueColorsNeutralBlack': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-10': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-12': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-20': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-30': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-40': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-50': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-6': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-60': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-70': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-8': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-80': string;
+  'Global/Value/Global/ValueColorsNeutralGrey-90': string;
+  'Global/Value/Global/ValueColorsNeutralWhite': string;
+  'Global/Value/Global/ValueColorsSharedAnchorPrimary': string;
+  'Global/Value/Global/ValueColorsSharedAnchorShade 10': string;
+  'Global/Value/Global/ValueColorsSharedAnchorShade 20': string;
+  'Global/Value/Global/ValueColorsSharedAnchorShade 30': string;
+  'Global/Value/Global/ValueColorsSharedAnchorShade 40': string;
+  'Global/Value/Global/ValueColorsSharedAnchorShade 50': string;
+  'Global/Value/Global/ValueColorsSharedAnchorTint 10': string;
+  'Global/Value/Global/ValueColorsSharedAnchorTint 20': string;
+  'Global/Value/Global/ValueColorsSharedAnchorTint 30': string;
+  'Global/Value/Global/ValueColorsSharedAnchorTint 40': string;
+  'Global/Value/Global/ValueColorsSharedAnchorTint 50': string;
+  'Global/Value/Global/ValueColorsSharedAnchorTint 60': string;
+  'Global/Value/Global/ValueColorsSharedBeigePrimary': string;
+  'Global/Value/Global/ValueColorsSharedBeigeShade 10': string;
+  'Global/Value/Global/ValueColorsSharedBeigeShade 20': string;
+  'Global/Value/Global/ValueColorsSharedBeigeShade 30': string;
+  'Global/Value/Global/ValueColorsSharedBeigeShade 40': string;
+  'Global/Value/Global/ValueColorsSharedBeigeShade 50': string;
+  'Global/Value/Global/ValueColorsSharedBeigeTint 10': string;
+  'Global/Value/Global/ValueColorsSharedBeigeTint 20': string;
+  'Global/Value/Global/ValueColorsSharedBeigeTint 30': string;
+  'Global/Value/Global/ValueColorsSharedBeigeTint 40': string;
+  'Global/Value/Global/ValueColorsSharedBeigeTint 50': string;
+  'Global/Value/Global/ValueColorsSharedBeigeTint 60': string;
+  'Global/Value/Global/ValueColorsSharedBerryPrimary': string;
+  'Global/Value/Global/ValueColorsSharedBerryShade 10': string;
+  'Global/Value/Global/ValueColorsSharedBerryShade 20': string;
+  'Global/Value/Global/ValueColorsSharedBerryShade 30': string;
+  'Global/Value/Global/ValueColorsSharedBerryShade 40': string;
+  'Global/Value/Global/ValueColorsSharedBerryShade 50': string;
+  'Global/Value/Global/ValueColorsSharedBerryTint 10': string;
+  'Global/Value/Global/ValueColorsSharedBerryTint 20': string;
+  'Global/Value/Global/ValueColorsSharedBerryTint 30': string;
+  'Global/Value/Global/ValueColorsSharedBerryTint 40': string;
+  'Global/Value/Global/ValueColorsSharedBerryTint 50': string;
+  'Global/Value/Global/ValueColorsSharedBerryTint 60': string;
+  'Global/Value/Global/ValueColorsSharedBluePrimary': string;
+  'Global/Value/Global/ValueColorsSharedBlueShade 10': string;
+  'Global/Value/Global/ValueColorsSharedBlueShade 20': string;
+  'Global/Value/Global/ValueColorsSharedBlueShade 30': string;
+  'Global/Value/Global/ValueColorsSharedBlueShade 40': string;
+  'Global/Value/Global/ValueColorsSharedBlueShade 50': string;
+  'Global/Value/Global/ValueColorsSharedBlueTint 10': string;
+  'Global/Value/Global/ValueColorsSharedBlueTint 20': string;
+  'Global/Value/Global/ValueColorsSharedBlueTint 30': string;
+  'Global/Value/Global/ValueColorsSharedBlueTint 40': string;
+  'Global/Value/Global/ValueColorsSharedBlueTint 50': string;
+  'Global/Value/Global/ValueColorsSharedBlueTint 60': string;
+  'Global/Value/Global/ValueColorsSharedBrassPrimary': string;
+  'Global/Value/Global/ValueColorsSharedBrassShade 10': string;
+  'Global/Value/Global/ValueColorsSharedBrassShade 20': string;
+  'Global/Value/Global/ValueColorsSharedBrassShade 30': string;
+  'Global/Value/Global/ValueColorsSharedBrassShade 40': string;
+  'Global/Value/Global/ValueColorsSharedBrassShade 50': string;
+  'Global/Value/Global/ValueColorsSharedBrassTint 10': string;
+  'Global/Value/Global/ValueColorsSharedBrassTint 20': string;
+  'Global/Value/Global/ValueColorsSharedBrassTint 30': string;
+  'Global/Value/Global/ValueColorsSharedBrassTint 40': string;
+  'Global/Value/Global/ValueColorsSharedBrassTint 50': string;
+  'Global/Value/Global/ValueColorsSharedBrassTint 60': string;
+  'Global/Value/Global/ValueColorsSharedBronzePrimary': string;
+  'Global/Value/Global/ValueColorsSharedBronzeShade 10': string;
+  'Global/Value/Global/ValueColorsSharedBronzeShade 20': string;
+  'Global/Value/Global/ValueColorsSharedBronzeShade 30': string;
+  'Global/Value/Global/ValueColorsSharedBronzeShade 40': string;
+  'Global/Value/Global/ValueColorsSharedBronzeShade 50': string;
+  'Global/Value/Global/ValueColorsSharedBronzeTint 10': string;
+  'Global/Value/Global/ValueColorsSharedBronzeTint 20': string;
+  'Global/Value/Global/ValueColorsSharedBronzeTint 30': string;
+  'Global/Value/Global/ValueColorsSharedBronzeTint 40': string;
+  'Global/Value/Global/ValueColorsSharedBronzeTint 50': string;
+  'Global/Value/Global/ValueColorsSharedBronzeTint 60': string;
+  'Global/Value/Global/ValueColorsSharedBrownPrimary': string;
+  'Global/Value/Global/ValueColorsSharedBrownShade 10': string;
+  'Global/Value/Global/ValueColorsSharedBrownShade 20': string;
+  'Global/Value/Global/ValueColorsSharedBrownShade 30': string;
+  'Global/Value/Global/ValueColorsSharedBrownShade 40': string;
+  'Global/Value/Global/ValueColorsSharedBrownShade 50': string;
+  'Global/Value/Global/ValueColorsSharedBrownTint 10': string;
+  'Global/Value/Global/ValueColorsSharedBrownTint 20': string;
+  'Global/Value/Global/ValueColorsSharedBrownTint 30': string;
+  'Global/Value/Global/ValueColorsSharedBrownTint 40': string;
+  'Global/Value/Global/ValueColorsSharedBrownTint 50': string;
+  'Global/Value/Global/ValueColorsSharedBrownTint 60': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyPrimary': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyShade 10': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyShade 20': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyShade 30': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyShade 40': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyShade 50': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyTint 10': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyTint 20': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyTint 30': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyTint 40': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyTint 50': string;
+  'Global/Value/Global/ValueColorsSharedBurgundyTint 60': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalPrimary': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalShade 10': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalShade 20': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalShade 30': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalShade 40': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalShade 50': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalTint 10': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalTint 20': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalTint 30': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalTint 40': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalTint 50': string;
+  'Global/Value/Global/ValueColorsSharedCharcoalTint 60': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerPrimary': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerShade 10': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerShade 20': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerShade 30': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerShade 40': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerShade 50': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerTint 10': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerTint 20': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerTint 30': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerTint 40': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerTint 50': string;
+  'Global/Value/Global/ValueColorsSharedCornflowerTint 60': string;
+  'Global/Value/Global/ValueColorsSharedCranberryPrimary': string;
+  'Global/Value/Global/ValueColorsSharedCranberryTint 30': string;
+  'Global/Value/Global/ValueColorsSharedCranberryTint 60': string;
+  'Global/Value/Global/ValueColorsSharedCyanPrimary': string;
+  'Global/Value/Global/ValueColorsSharedCyanShade 10': string;
+  'Global/Value/Global/ValueColorsSharedCyanShade 20': string;
+  'Global/Value/Global/ValueColorsSharedCyanShade 30': string;
+  'Global/Value/Global/ValueColorsSharedCyanShade 40': string;
+  'Global/Value/Global/ValueColorsSharedCyanShade 50': string;
+  'Global/Value/Global/ValueColorsSharedCyanTint 10': string;
+  'Global/Value/Global/ValueColorsSharedCyanTint 20': string;
+  'Global/Value/Global/ValueColorsSharedCyanTint 30': string;
+  'Global/Value/Global/ValueColorsSharedCyanTint 40': string;
+  'Global/Value/Global/ValueColorsSharedCyanTint 50': string;
+  'Global/Value/Global/ValueColorsSharedCyanTint 60': string;
+  'Global/Value/Global/ValueColorsSharedDark OrangePrimary': string;
+  'Global/Value/Global/ValueColorsSharedDark OrangeTint 30': string;
+  'Global/Value/Global/ValueColorsSharedDark OrangeTint 60': string;
+  'Global/Value/Global/ValueColorsSharedDark bluePrimary': string;
+  'Global/Value/Global/ValueColorsSharedDark blueShade 10': string;
+  'Global/Value/Global/ValueColorsSharedDark blueShade 20': string;
+  'Global/Value/Global/ValueColorsSharedDark blueShade 30': string;
+  'Global/Value/Global/ValueColorsSharedDark blueShade 40': string;
+  'Global/Value/Global/ValueColorsSharedDark blueShade 50': string;
+  'Global/Value/Global/ValueColorsSharedDark blueTint 10': string;
+  'Global/Value/Global/ValueColorsSharedDark blueTint 20': string;
+  'Global/Value/Global/ValueColorsSharedDark blueTint 30': string;
+  'Global/Value/Global/ValueColorsSharedDark blueTint 40': string;
+  'Global/Value/Global/ValueColorsSharedDark blueTint 50': string;
+  'Global/Value/Global/ValueColorsSharedDark blueTint 60': string;
+  'Global/Value/Global/ValueColorsSharedDark brownPrimary': string;
+  'Global/Value/Global/ValueColorsSharedDark brownShade 10': string;
+  'Global/Value/Global/ValueColorsSharedDark brownShade 20': string;
+  'Global/Value/Global/ValueColorsSharedDark brownShade 30': string;
+  'Global/Value/Global/ValueColorsSharedDark brownShade 40': string;
+  'Global/Value/Global/ValueColorsSharedDark brownShade 50': string;
+  'Global/Value/Global/ValueColorsSharedDark brownTint 10': string;
+  'Global/Value/Global/ValueColorsSharedDark brownTint 20': string;
+  'Global/Value/Global/ValueColorsSharedDark brownTint 30': string;
+  'Global/Value/Global/ValueColorsSharedDark brownTint 40': string;
+  'Global/Value/Global/ValueColorsSharedDark brownTint 50': string;
+  'Global/Value/Global/ValueColorsSharedDark brownTint 60': string;
+  'Global/Value/Global/ValueColorsSharedDark greenPrimary': string;
+  'Global/Value/Global/ValueColorsSharedDark greenShade 10': string;
+  'Global/Value/Global/ValueColorsSharedDark greenShade 20': string;
+  'Global/Value/Global/ValueColorsSharedDark greenShade 30': string;
+  'Global/Value/Global/ValueColorsSharedDark greenShade 40': string;
+  'Global/Value/Global/ValueColorsSharedDark greenShade 50': string;
+  'Global/Value/Global/ValueColorsSharedDark greenTint 10': string;
+  'Global/Value/Global/ValueColorsSharedDark greenTint 20': string;
+  'Global/Value/Global/ValueColorsSharedDark greenTint 30': string;
+  'Global/Value/Global/ValueColorsSharedDark greenTint 40': string;
+  'Global/Value/Global/ValueColorsSharedDark greenTint 50': string;
+  'Global/Value/Global/ValueColorsSharedDark greenTint 60': string;
+  'Global/Value/Global/ValueColorsSharedDark purplePrimary': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleShade 10': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleShade 20': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleShade 30': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleShade 40': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleShade 50': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleTint 10': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleTint 20': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleTint 30': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleTint 40': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleTint 50': string;
+  'Global/Value/Global/ValueColorsSharedDark purpleTint 60': string;
+  'Global/Value/Global/ValueColorsSharedDark tealPrimary': string;
+  'Global/Value/Global/ValueColorsSharedDark tealShade 10': string;
+  'Global/Value/Global/ValueColorsSharedDark tealShade 20': string;
+  'Global/Value/Global/ValueColorsSharedDark tealShade 30': string;
+  'Global/Value/Global/ValueColorsSharedDark tealShade 40': string;
+  'Global/Value/Global/ValueColorsSharedDark tealShade 50': string;
+  'Global/Value/Global/ValueColorsSharedDark tealTint 10': string;
+  'Global/Value/Global/ValueColorsSharedDark tealTint 20': string;
+  'Global/Value/Global/ValueColorsSharedDark tealTint 30': string;
+  'Global/Value/Global/ValueColorsSharedDark tealTint 40': string;
+  'Global/Value/Global/ValueColorsSharedDark tealTint 50': string;
+  'Global/Value/Global/ValueColorsSharedDark tealTint 60': string;
+  'Global/Value/Global/ValueColorsSharedForestPrimary': string;
+  'Global/Value/Global/ValueColorsSharedForestShade 10': string;
+  'Global/Value/Global/ValueColorsSharedForestShade 20': string;
+  'Global/Value/Global/ValueColorsSharedForestShade 30': string;
+  'Global/Value/Global/ValueColorsSharedForestShade 40': string;
+  'Global/Value/Global/ValueColorsSharedForestShade 50': string;
+  'Global/Value/Global/ValueColorsSharedForestTint 10': string;
+  'Global/Value/Global/ValueColorsSharedForestTint 20': string;
+  'Global/Value/Global/ValueColorsSharedForestTint 30': string;
+  'Global/Value/Global/ValueColorsSharedForestTint 40': string;
+  'Global/Value/Global/ValueColorsSharedForestTint 50': string;
+  'Global/Value/Global/ValueColorsSharedForestTint 60': string;
+  'Global/Value/Global/ValueColorsSharedGoldPrimary': string;
+  'Global/Value/Global/ValueColorsSharedGoldShade 10': string;
+  'Global/Value/Global/ValueColorsSharedGoldShade 20': string;
+  'Global/Value/Global/ValueColorsSharedGoldShade 30': string;
+  'Global/Value/Global/ValueColorsSharedGoldShade 40': string;
+  'Global/Value/Global/ValueColorsSharedGoldShade 50': string;
+  'Global/Value/Global/ValueColorsSharedGoldTint 10': string;
+  'Global/Value/Global/ValueColorsSharedGoldTint 20': string;
+  'Global/Value/Global/ValueColorsSharedGoldTint 30': string;
+  'Global/Value/Global/ValueColorsSharedGoldTint 40': string;
+  'Global/Value/Global/ValueColorsSharedGoldTint 50': string;
+  'Global/Value/Global/ValueColorsSharedGoldTint 60': string;
+  'Global/Value/Global/ValueColorsSharedGrapePrimary': string;
+  'Global/Value/Global/ValueColorsSharedGrapeShade 10': string;
+  'Global/Value/Global/ValueColorsSharedGrapeShade 20': string;
+  'Global/Value/Global/ValueColorsSharedGrapeShade 30': string;
+  'Global/Value/Global/ValueColorsSharedGrapeShade 40': string;
+  'Global/Value/Global/ValueColorsSharedGrapeShade 50': string;
+  'Global/Value/Global/ValueColorsSharedGrapeTint 10': string;
+  'Global/Value/Global/ValueColorsSharedGrapeTint 20': string;
+  'Global/Value/Global/ValueColorsSharedGrapeTint 30': string;
+  'Global/Value/Global/ValueColorsSharedGrapeTint 40': string;
+  'Global/Value/Global/ValueColorsSharedGrapeTint 50': string;
+  'Global/Value/Global/ValueColorsSharedGrapeTint 60': string;
+  'Global/Value/Global/ValueColorsSharedGreenPrimary': string;
+  'Global/Value/Global/ValueColorsSharedGreenTint 30': string;
+  'Global/Value/Global/ValueColorsSharedGreenTint 60': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkPrimary': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkShade 10': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkShade 20': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkShade 30': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkShade 40': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkShade 50': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkTint 10': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkTint 20': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkTint 30': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkTint 40': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkTint 50': string;
+  'Global/Value/Global/ValueColorsSharedHot pinkTint 60': string;
+  'Global/Value/Global/ValueColorsSharedInformationPrimary': string;
+  'Global/Value/Global/ValueColorsSharedInformationShade 10': string;
+  'Global/Value/Global/ValueColorsSharedInformationShade 20': string;
+  'Global/Value/Global/ValueColorsSharedInformationTint 10': string;
+  'Global/Value/Global/ValueColorsSharedInformationTint 20': string;
+  'Global/Value/Global/ValueColorsSharedInformationTint 30': string;
+  'Global/Value/Global/ValueColorsSharedInformationTint 40': string;
+  'Global/Value/Global/ValueColorsSharedInformationTint 50': string;
+  'Global/Value/Global/ValueColorsSharedInformationTint 60': string;
+  'Global/Value/Global/ValueColorsSharedLavenderPrimary': string;
+  'Global/Value/Global/ValueColorsSharedLavenderShade 10': string;
+  'Global/Value/Global/ValueColorsSharedLavenderShade 20': string;
+  'Global/Value/Global/ValueColorsSharedLavenderShade 30': string;
+  'Global/Value/Global/ValueColorsSharedLavenderShade 40': string;
+  'Global/Value/Global/ValueColorsSharedLavenderShade 50': string;
+  'Global/Value/Global/ValueColorsSharedLavenderTint 10': string;
+  'Global/Value/Global/ValueColorsSharedLavenderTint 20': string;
+  'Global/Value/Global/ValueColorsSharedLavenderTint 30': string;
+  'Global/Value/Global/ValueColorsSharedLavenderTint 40': string;
+  'Global/Value/Global/ValueColorsSharedLavenderTint 50': string;
+  'Global/Value/Global/ValueColorsSharedLavenderTint 60': string;
+  'Global/Value/Global/ValueColorsSharedLight bluePrimary': string;
+  'Global/Value/Global/ValueColorsSharedLight blueShade 10': string;
+  'Global/Value/Global/ValueColorsSharedLight blueShade 20': string;
+  'Global/Value/Global/ValueColorsSharedLight blueShade 30': string;
+  'Global/Value/Global/ValueColorsSharedLight blueShade 40': string;
+  'Global/Value/Global/ValueColorsSharedLight blueShade 50': string;
+  'Global/Value/Global/ValueColorsSharedLight blueTint 10': string;
+  'Global/Value/Global/ValueColorsSharedLight blueTint 20': string;
+  'Global/Value/Global/ValueColorsSharedLight blueTint 30': string;
+  'Global/Value/Global/ValueColorsSharedLight blueTint 40': string;
+  'Global/Value/Global/ValueColorsSharedLight blueTint 50': string;
+  'Global/Value/Global/ValueColorsSharedLight blueTint 60': string;
+  'Global/Value/Global/ValueColorsSharedLight greenPrimary': string;
+  'Global/Value/Global/ValueColorsSharedLight greenShade 10': string;
+  'Global/Value/Global/ValueColorsSharedLight greenShade 20': string;
+  'Global/Value/Global/ValueColorsSharedLight greenShade 30': string;
+  'Global/Value/Global/ValueColorsSharedLight greenShade 40': string;
+  'Global/Value/Global/ValueColorsSharedLight greenShade 50': string;
+  'Global/Value/Global/ValueColorsSharedLight greenTint 10': string;
+  'Global/Value/Global/ValueColorsSharedLight greenTint 20': string;
+  'Global/Value/Global/ValueColorsSharedLight greenTint 30': string;
+  'Global/Value/Global/ValueColorsSharedLight greenTint 40': string;
+  'Global/Value/Global/ValueColorsSharedLight greenTint 50': string;
+  'Global/Value/Global/ValueColorsSharedLight greenTint 60': string;
+  'Global/Value/Global/ValueColorsSharedLight tealPrimary': string;
+  'Global/Value/Global/ValueColorsSharedLight tealShade 10': string;
+  'Global/Value/Global/ValueColorsSharedLight tealShade 20': string;
+  'Global/Value/Global/ValueColorsSharedLight tealShade 30': string;
+  'Global/Value/Global/ValueColorsSharedLight tealShade 40': string;
+  'Global/Value/Global/ValueColorsSharedLight tealShade 50': string;
+  'Global/Value/Global/ValueColorsSharedLight tealTint 10': string;
+  'Global/Value/Global/ValueColorsSharedLight tealTint 20': string;
+  'Global/Value/Global/ValueColorsSharedLight tealTint 30': string;
+  'Global/Value/Global/ValueColorsSharedLight tealTint 40': string;
+  'Global/Value/Global/ValueColorsSharedLight tealTint 50': string;
+  'Global/Value/Global/ValueColorsSharedLight tealTint 60': string;
+  'Global/Value/Global/ValueColorsSharedLilacPrimary': string;
+  'Global/Value/Global/ValueColorsSharedLilacShade 10': string;
+  'Global/Value/Global/ValueColorsSharedLilacShade 20': string;
+  'Global/Value/Global/ValueColorsSharedLilacShade 30': string;
+  'Global/Value/Global/ValueColorsSharedLilacShade 40': string;
+  'Global/Value/Global/ValueColorsSharedLilacShade 50': string;
+  'Global/Value/Global/ValueColorsSharedLilacTint 10': string;
+  'Global/Value/Global/ValueColorsSharedLilacTint 20': string;
+  'Global/Value/Global/ValueColorsSharedLilacTint 30': string;
+  'Global/Value/Global/ValueColorsSharedLilacTint 40': string;
+  'Global/Value/Global/ValueColorsSharedLilacTint 50': string;
+  'Global/Value/Global/ValueColorsSharedLilacTint 60': string;
+  'Global/Value/Global/ValueColorsSharedLimePrimary': string;
+  'Global/Value/Global/ValueColorsSharedLimeShade 10': string;
+  'Global/Value/Global/ValueColorsSharedLimeShade 20': string;
+  'Global/Value/Global/ValueColorsSharedLimeShade 30': string;
+  'Global/Value/Global/ValueColorsSharedLimeShade 40': string;
+  'Global/Value/Global/ValueColorsSharedLimeShade 50': string;
+  'Global/Value/Global/ValueColorsSharedLimeTint 10': string;
+  'Global/Value/Global/ValueColorsSharedLimeTint 20': string;
+  'Global/Value/Global/ValueColorsSharedLimeTint 30': string;
+  'Global/Value/Global/ValueColorsSharedLimeTint 40': string;
+  'Global/Value/Global/ValueColorsSharedLimeTint 50': string;
+  'Global/Value/Global/ValueColorsSharedLimeTint 60': string;
+  'Global/Value/Global/ValueColorsSharedMagentaPrimary': string;
+  'Global/Value/Global/ValueColorsSharedMagentaShade 10': string;
+  'Global/Value/Global/ValueColorsSharedMagentaShade 20': string;
+  'Global/Value/Global/ValueColorsSharedMagentaShade 30': string;
+  'Global/Value/Global/ValueColorsSharedMagentaShade 40': string;
+  'Global/Value/Global/ValueColorsSharedMagentaShade 50': string;
+  'Global/Value/Global/ValueColorsSharedMagentaTint 10': string;
+  'Global/Value/Global/ValueColorsSharedMagentaTint 20': string;
+  'Global/Value/Global/ValueColorsSharedMagentaTint 30': string;
+  'Global/Value/Global/ValueColorsSharedMagentaTint 40': string;
+  'Global/Value/Global/ValueColorsSharedMagentaTint 50': string;
+  'Global/Value/Global/ValueColorsSharedMagentaTint 60': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldPrimary': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldShade 10': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldShade 20': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldShade 30': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldShade 40': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldShade 50': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldTint 10': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldTint 20': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldTint 30': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldTint 40': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldTint 50': string;
+  'Global/Value/Global/ValueColorsSharedMarigoldTint 60': string;
+  'Global/Value/Global/ValueColorsSharedMinkPrimary': string;
+  'Global/Value/Global/ValueColorsSharedMinkShade 10': string;
+  'Global/Value/Global/ValueColorsSharedMinkShade 20': string;
+  'Global/Value/Global/ValueColorsSharedMinkShade 30': string;
+  'Global/Value/Global/ValueColorsSharedMinkShade 40': string;
+  'Global/Value/Global/ValueColorsSharedMinkShade 50': string;
+  'Global/Value/Global/ValueColorsSharedMinkTint 10': string;
+  'Global/Value/Global/ValueColorsSharedMinkTint 20': string;
+  'Global/Value/Global/ValueColorsSharedMinkTint 30': string;
+  'Global/Value/Global/ValueColorsSharedMinkTint 40': string;
+  'Global/Value/Global/ValueColorsSharedMinkTint 50': string;
+  'Global/Value/Global/ValueColorsSharedMinkTint 60': string;
+  'Global/Value/Global/ValueColorsSharedNavyPrimary': string;
+  'Global/Value/Global/ValueColorsSharedNavyShade 10': string;
+  'Global/Value/Global/ValueColorsSharedNavyShade 20': string;
+  'Global/Value/Global/ValueColorsSharedNavyShade 30': string;
+  'Global/Value/Global/ValueColorsSharedNavyShade 40': string;
+  'Global/Value/Global/ValueColorsSharedNavyShade 50': string;
+  'Global/Value/Global/ValueColorsSharedNavyTint 10': string;
+  'Global/Value/Global/ValueColorsSharedNavyTint 20': string;
+  'Global/Value/Global/ValueColorsSharedNavyTint 30': string;
+  'Global/Value/Global/ValueColorsSharedNavyTint 40': string;
+  'Global/Value/Global/ValueColorsSharedNavyTint 50': string;
+  'Global/Value/Global/ValueColorsSharedNavyTint 60': string;
+  'Global/Value/Global/ValueColorsSharedOrangePrimary': string;
+  'Global/Value/Global/ValueColorsSharedOrangeTint 30': string;
+  'Global/Value/Global/ValueColorsSharedOrangeTint 60': string;
+  'Global/Value/Global/ValueColorsSharedOrchidPrimary': string;
+  'Global/Value/Global/ValueColorsSharedOrchidShade 10': string;
+  'Global/Value/Global/ValueColorsSharedOrchidShade 20': string;
+  'Global/Value/Global/ValueColorsSharedOrchidShade 30': string;
+  'Global/Value/Global/ValueColorsSharedOrchidShade 40': string;
+  'Global/Value/Global/ValueColorsSharedOrchidShade 50': string;
+  'Global/Value/Global/ValueColorsSharedOrchidTint 10': string;
+  'Global/Value/Global/ValueColorsSharedOrchidTint 20': string;
+  'Global/Value/Global/ValueColorsSharedOrchidTint 30': string;
+  'Global/Value/Global/ValueColorsSharedOrchidTint 40': string;
+  'Global/Value/Global/ValueColorsSharedOrchidTint 50': string;
+  'Global/Value/Global/ValueColorsSharedOrchidTint 60': string;
+  'Global/Value/Global/ValueColorsSharedPeachPrimary': string;
+  'Global/Value/Global/ValueColorsSharedPeachShade 10': string;
+  'Global/Value/Global/ValueColorsSharedPeachShade 20': string;
+  'Global/Value/Global/ValueColorsSharedPeachShade 30': string;
+  'Global/Value/Global/ValueColorsSharedPeachShade 40': string;
+  'Global/Value/Global/ValueColorsSharedPeachShade 50': string;
+  'Global/Value/Global/ValueColorsSharedPeachTint 10': string;
+  'Global/Value/Global/ValueColorsSharedPeachTint 20': string;
+  'Global/Value/Global/ValueColorsSharedPeachTint 30': string;
+  'Global/Value/Global/ValueColorsSharedPeachTint 40': string;
+  'Global/Value/Global/ValueColorsSharedPeachTint 50': string;
+  'Global/Value/Global/ValueColorsSharedPeachTint 60': string;
+  'Global/Value/Global/ValueColorsSharedPinkPrimary': string;
+  'Global/Value/Global/ValueColorsSharedPinkShade 10': string;
+  'Global/Value/Global/ValueColorsSharedPinkShade 20': string;
+  'Global/Value/Global/ValueColorsSharedPinkShade 30': string;
+  'Global/Value/Global/ValueColorsSharedPinkShade 40': string;
+  'Global/Value/Global/ValueColorsSharedPinkShade 50': string;
+  'Global/Value/Global/ValueColorsSharedPinkTint 10': string;
+  'Global/Value/Global/ValueColorsSharedPinkTint 20': string;
+  'Global/Value/Global/ValueColorsSharedPinkTint 30': string;
+  'Global/Value/Global/ValueColorsSharedPinkTint 40': string;
+  'Global/Value/Global/ValueColorsSharedPinkTint 50': string;
+  'Global/Value/Global/ValueColorsSharedPinkTint 60': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumPrimary': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumShade 10': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumShade 20': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumShade 30': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumShade 40': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumShade 50': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumTint 10': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumTint 20': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumTint 30': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumTint 40': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumTint 50': string;
+  'Global/Value/Global/ValueColorsSharedPlatinumTint 60': string;
+  'Global/Value/Global/ValueColorsSharedPlumPrimary': string;
+  'Global/Value/Global/ValueColorsSharedPlumShade 10': string;
+  'Global/Value/Global/ValueColorsSharedPlumShade 20': string;
+  'Global/Value/Global/ValueColorsSharedPlumShade 30': string;
+  'Global/Value/Global/ValueColorsSharedPlumShade 40': string;
+  'Global/Value/Global/ValueColorsSharedPlumShade 50': string;
+  'Global/Value/Global/ValueColorsSharedPlumTint 10': string;
+  'Global/Value/Global/ValueColorsSharedPlumTint 20': string;
+  'Global/Value/Global/ValueColorsSharedPlumTint 30': string;
+  'Global/Value/Global/ValueColorsSharedPlumTint 40': string;
+  'Global/Value/Global/ValueColorsSharedPlumTint 50': string;
+  'Global/Value/Global/ValueColorsSharedPlumTint 60': string;
+  'Global/Value/Global/ValueColorsSharedPurplePrimary': string;
+  'Global/Value/Global/ValueColorsSharedPurpleShade 10': string;
+  'Global/Value/Global/ValueColorsSharedPurpleShade 20': string;
+  'Global/Value/Global/ValueColorsSharedPurpleShade 30': string;
+  'Global/Value/Global/ValueColorsSharedPurpleShade 40': string;
+  'Global/Value/Global/ValueColorsSharedPurpleShade 50': string;
+  'Global/Value/Global/ValueColorsSharedPurpleTint 10': string;
+  'Global/Value/Global/ValueColorsSharedPurpleTint 20': string;
+  'Global/Value/Global/ValueColorsSharedPurpleTint 30': string;
+  'Global/Value/Global/ValueColorsSharedPurpleTint 40': string;
+  'Global/Value/Global/ValueColorsSharedPurpleTint 50': string;
+  'Global/Value/Global/ValueColorsSharedPurpleTint 60': string;
+  'Global/Value/Global/ValueColorsSharedRedPrimary': string;
+  'Global/Value/Global/ValueColorsSharedRedShade 10': string;
+  'Global/Value/Global/ValueColorsSharedRedShade 20': string;
+  'Global/Value/Global/ValueColorsSharedRedShade 30': string;
+  'Global/Value/Global/ValueColorsSharedRedShade 40': string;
+  'Global/Value/Global/ValueColorsSharedRedShade 50': string;
+  'Global/Value/Global/ValueColorsSharedRedTint 10': string;
+  'Global/Value/Global/ValueColorsSharedRedTint 20': string;
+  'Global/Value/Global/ValueColorsSharedRedTint 30': string;
+  'Global/Value/Global/ValueColorsSharedRedTint 40': string;
+  'Global/Value/Global/ValueColorsSharedRedTint 50': string;
+  'Global/Value/Global/ValueColorsSharedRedTint 60': string;
+  'Global/Value/Global/ValueColorsSharedRoyal bluePrimary': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueShade 10': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueShade 20': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueShade 30': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueShade 40': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueShade 50': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueTint 10': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueTint 20': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueTint 30': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueTint 40': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueTint 50': string;
+  'Global/Value/Global/ValueColorsSharedRoyal blueTint 60': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamPrimary': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamShade 10': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamShade 20': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamShade 30': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamShade 40': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamShade 50': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamTint 10': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamTint 20': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamTint 30': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamTint 40': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamTint 50': string;
+  'Global/Value/Global/ValueColorsSharedSeafoamTint 60': string;
+  'Global/Value/Global/ValueColorsSharedSilverPrimary': string;
+  'Global/Value/Global/ValueColorsSharedSilverShade 10': string;
+  'Global/Value/Global/ValueColorsSharedSilverShade 20': string;
+  'Global/Value/Global/ValueColorsSharedSilverShade 30': string;
+  'Global/Value/Global/ValueColorsSharedSilverShade 40': string;
+  'Global/Value/Global/ValueColorsSharedSilverShade 50': string;
+  'Global/Value/Global/ValueColorsSharedSilverTint 10': string;
+  'Global/Value/Global/ValueColorsSharedSilverTint 20': string;
+  'Global/Value/Global/ValueColorsSharedSilverTint 30': string;
+  'Global/Value/Global/ValueColorsSharedSilverTint 40': string;
+  'Global/Value/Global/ValueColorsSharedSilverTint 50': string;
+  'Global/Value/Global/ValueColorsSharedSilverTint 60': string;
+  'Global/Value/Global/ValueColorsSharedSteelPrimary': string;
+  'Global/Value/Global/ValueColorsSharedSteelShade 10': string;
+  'Global/Value/Global/ValueColorsSharedSteelShade 20': string;
+  'Global/Value/Global/ValueColorsSharedSteelShade 30': string;
+  'Global/Value/Global/ValueColorsSharedSteelShade 40': string;
+  'Global/Value/Global/ValueColorsSharedSteelShade 50': string;
+  'Global/Value/Global/ValueColorsSharedSteelTint 10': string;
+  'Global/Value/Global/ValueColorsSharedSteelTint 20': string;
+  'Global/Value/Global/ValueColorsSharedSteelTint 30': string;
+  'Global/Value/Global/ValueColorsSharedSteelTint 40': string;
+  'Global/Value/Global/ValueColorsSharedSteelTint 50': string;
+  'Global/Value/Global/ValueColorsSharedSteelTint 60': string;
+  'Global/Value/Global/ValueColorsSharedTealPrimary': string;
+  'Global/Value/Global/ValueColorsSharedTealShade 10': string;
+  'Global/Value/Global/ValueColorsSharedTealShade 20': string;
+  'Global/Value/Global/ValueColorsSharedTealShade 30': string;
+  'Global/Value/Global/ValueColorsSharedTealShade 40': string;
+  'Global/Value/Global/ValueColorsSharedTealShade 50': string;
+  'Global/Value/Global/ValueColorsSharedTealTint 10': string;
+  'Global/Value/Global/ValueColorsSharedTealTint 20': string;
+  'Global/Value/Global/ValueColorsSharedTealTint 30': string;
+  'Global/Value/Global/ValueColorsSharedTealTint 40': string;
+  'Global/Value/Global/ValueColorsSharedTealTint 50': string;
+  'Global/Value/Global/ValueColorsSharedTealTint 60': string;
+  'Global/Value/Global/ValueColorsSharedYellowPrimary': string;
+  'Global/Value/Global/ValueColorsSharedYellowShade 10': string;
+  'Global/Value/Global/ValueColorsSharedYellowShade 20': string;
+  'Global/Value/Global/ValueColorsSharedYellowShade 30': string;
+  'Global/Value/Global/ValueColorsSharedYellowShade 40': string;
+  'Global/Value/Global/ValueColorsSharedYellowShade 50': string;
+  'Global/Value/Global/ValueColorsSharedYellowTint 10': string;
+  'Global/Value/Global/ValueColorsSharedYellowTint 20': string;
+  'Global/Value/Global/ValueColorsSharedYellowTint 30': string;
+  'Global/Value/Global/ValueColorsSharedYellowTint 40': string;
+  'Global/Value/Global/ValueColorsSharedYellowTint 50': string;
+  'Global/Value/Global/ValueColorsSharedYellowTint 60': string;
+  'Global/Value/Global/ValueSpacingHorizontalL': string;
+  'Global/Value/Global/ValueSpacingHorizontalLNudge': string;
+  'Global/Value/Global/ValueSpacingHorizontalM': string;
+  'Global/Value/Global/ValueSpacingHorizontalMNudge': string;
+  'Global/Value/Global/ValueSpacingHorizontalNone': string;
+  'Global/Value/Global/ValueSpacingHorizontalS': string;
+  'Global/Value/Global/ValueSpacingHorizontalSNudge': string;
+  'Global/Value/Global/ValueSpacingHorizontalXL': string;
+  'Global/Value/Global/ValueSpacingHorizontalXS': string;
+  'Global/Value/Global/ValueSpacingHorizontalXXL': string;
+  'Global/Value/Global/ValueSpacingHorizontalXXS': string;
+  'Global/Value/Global/ValueSpacingHorizontalXXXL': string;
+  'Global/Value/Global/ValueSpacingHorizontalXXXXL': string;
+  'Global/Value/Global/ValueSpacingVerticalL': string;
+  'Global/Value/Global/ValueSpacingVerticalLNudge': string;
+  'Global/Value/Global/ValueSpacingVerticalM': string;
+  'Global/Value/Global/ValueSpacingVerticalMNudge': string;
+  'Global/Value/Global/ValueSpacingVerticalNone': string;
+  'Global/Value/Global/ValueSpacingVerticalS': string;
+  'Global/Value/Global/ValueSpacingVerticalSNudge': string;
+  'Global/Value/Global/ValueSpacingVerticalXL': string;
+  'Global/Value/Global/ValueSpacingVerticalXS': string;
+  'Global/Value/Global/ValueSpacingVerticalXXL': string;
+  'Global/Value/Global/ValueSpacingVerticalXXS': string;
+  'Global/Value/Global/ValueSpacingVerticalXXXL': string;
+  'Global/Value/Global/ValueSpacingVerticalXXXXL': string;
+  'Global/Value/Global/ValueStrokeWidthNone': string;
+  'Global/Value/Global/ValueStrokeWidthThick': string;
+  'Global/Value/Global/ValueStrokeWidthThicker': string;
+  'Global/Value/Global/ValueStrokeWidthThickest': string;
+  'Global/Value/Global/ValueStrokeWidthThin': string;
+  'Global/ValueBorderRadiusCircular': string;
+  'Global/ValueBorderRadiusLarge': string;
+  'Global/ValueBorderRadiusMedium': string;
+  'Global/ValueBorderRadiusNone': string;
+  'Global/ValueBorderRadiusSmall': string;
+  'Global/ValueBorderRadiusX-Large': string;
+  'Global/ValueColorsAlphaBlack0': string;
+  'Global/ValueColorsAlphaBlack10': string;
+  'Global/ValueColorsAlphaBlack20': string;
+  'Global/ValueColorsAlphaBlack30': string;
+  'Global/ValueColorsAlphaBlack40': string;
+  'Global/ValueColorsAlphaBlack5': string;
+  'Global/ValueColorsAlphaBlack50': string;
+  'Global/ValueColorsAlphaBlack60': string;
+  'Global/ValueColorsAlphaBlack70': string;
+  'Global/ValueColorsAlphaBlack80': string;
+  'Global/ValueColorsAlphaBlack90': string;
+  'Global/ValueColorsAlphaBrand-1010': string;
+  'Global/ValueColorsAlphaBrand-1020': string;
+  'Global/ValueColorsAlphaBrand-1030': string;
+  'Global/ValueColorsAlphaBrand-1040': string;
+  'Global/ValueColorsAlphaBrand-105': string;
+  'Global/ValueColorsAlphaBrand-1050': string;
+  'Global/ValueColorsAlphaBrand-1060': string;
+  'Global/ValueColorsAlphaBrand-1070': string;
+  'Global/ValueColorsAlphaBrand-1080': string;
+  'Global/ValueColorsAlphaBrand-1090': string;
+  'Global/ValueColorsAlphaWhite0': string;
+  'Global/ValueColorsAlphaWhite10': string;
+  'Global/ValueColorsAlphaWhite20': string;
+  'Global/ValueColorsAlphaWhite30': string;
+  'Global/ValueColorsAlphaWhite40': string;
+  'Global/ValueColorsAlphaWhite5': string;
+  'Global/ValueColorsAlphaWhite50': string;
+  'Global/ValueColorsAlphaWhite60': string;
+  'Global/ValueColorsAlphaWhite70': string;
+  'Global/ValueColorsAlphaWhite80': string;
+  'Global/ValueColorsAlphaWhite90': string;
+  'Global/ValueColorsBrandBrand-10': string;
+  'Global/ValueColorsBrandBrand-100': string;
+  'Global/ValueColorsBrandBrand-110': string;
+  'Global/ValueColorsBrandBrand-120': string;
+  'Global/ValueColorsBrandBrand-130': string;
+  'Global/ValueColorsBrandBrand-20': string;
+  'Global/ValueColorsBrandBrand-30': string;
+  'Global/ValueColorsBrandBrand-40': string;
+  'Global/ValueColorsBrandBrand-50': string;
+  'Global/ValueColorsBrandBrand-60': string;
+  'Global/ValueColorsBrandBrand-70': string;
+  'Global/ValueColorsBrandBrand-80': string;
+  'Global/ValueColorsBrandBrand-90': string;
+  'Global/ValueColorsData vizCoreBlue': string;
+  'Global/ValueColorsData vizCoreGray': string;
+  'Global/ValueColorsData vizCoreGreen': string;
+  'Global/ValueColorsData vizCoreOcean': string;
+  'Global/ValueColorsData vizCoreRed': string;
+  'Global/ValueColorsData vizCoreTeal': string;
+  'Global/ValueColorsData vizCoreYellow': string;
+  'Global/ValueColorsData vizSemanticDark bkgdNegative': string;
+  'Global/ValueColorsData vizSemanticDark bkgdNotice': string;
+  'Global/ValueColorsData vizSemanticDark bkgdPositive': string;
+  'Global/ValueColorsData vizSemanticLight bkgdNegative': string;
+  'Global/ValueColorsData vizSemanticLight bkgdNotice': string;
+  'Global/ValueColorsData vizSemanticLight bkgdPositive': string;
+  'Global/ValueColorsData vizSequentialBlue100': string;
+  'Global/ValueColorsData vizSequentialBlue200': string;
+  'Global/ValueColorsData vizSequentialBlue300': string;
+  'Global/ValueColorsData vizSequentialBlue400': string;
+  'Global/ValueColorsData vizSequentialGray100': string;
+  'Global/ValueColorsData vizSequentialGray200': string;
+  'Global/ValueColorsData vizSequentialGray300': string;
+  'Global/ValueColorsData vizSequentialGray400': string;
+  'Global/ValueColorsData vizSequentialGreen100': string;
+  'Global/ValueColorsData vizSequentialGreen200': string;
+  'Global/ValueColorsData vizSequentialGreen300': string;
+  'Global/ValueColorsData vizSequentialGreen400': string;
+  'Global/ValueColorsData vizSequentialOcean100': string;
+  'Global/ValueColorsData vizSequentialOcean200': string;
+  'Global/ValueColorsData vizSequentialOcean300': string;
+  'Global/ValueColorsData vizSequentialOcean400': string;
+  'Global/ValueColorsData vizSequentialRed100': string;
+  'Global/ValueColorsData vizSequentialRed200': string;
+  'Global/ValueColorsData vizSequentialRed300': string;
+  'Global/ValueColorsData vizSequentialRed400': string;
+  'Global/ValueColorsData vizSequentialTeal100': string;
+  'Global/ValueColorsData vizSequentialTeal200': string;
+  'Global/ValueColorsData vizSequentialTeal300': string;
+  'Global/ValueColorsData vizSequentialTeal400': string;
+  'Global/ValueColorsData vizSequentialYellow100': string;
+  'Global/ValueColorsData vizSequentialYellow200': string;
+  'Global/ValueColorsData vizSequentialYellow300': string;
+  'Global/ValueColorsData vizSequentialYellow400': string;
+  'Global/ValueColorsNeutralBlack': string;
+  'Global/ValueColorsNeutralGrey-10': string;
+  'Global/ValueColorsNeutralGrey-12': string;
+  'Global/ValueColorsNeutralGrey-20': string;
+  'Global/ValueColorsNeutralGrey-30': string;
+  'Global/ValueColorsNeutralGrey-40': string;
+  'Global/ValueColorsNeutralGrey-50': string;
+  'Global/ValueColorsNeutralGrey-6': string;
+  'Global/ValueColorsNeutralGrey-60': string;
+  'Global/ValueColorsNeutralGrey-70': string;
+  'Global/ValueColorsNeutralGrey-8': string;
+  'Global/ValueColorsNeutralGrey-80': string;
+  'Global/ValueColorsNeutralGrey-90': string;
+  'Global/ValueColorsNeutralWhite': string;
+  'Global/ValueColorsSharedAnchorPrimary': string;
+  'Global/ValueColorsSharedAnchorShade 10': string;
+  'Global/ValueColorsSharedAnchorShade 20': string;
+  'Global/ValueColorsSharedAnchorShade 30': string;
+  'Global/ValueColorsSharedAnchorShade 40': string;
+  'Global/ValueColorsSharedAnchorShade 50': string;
+  'Global/ValueColorsSharedAnchorTint 10': string;
+  'Global/ValueColorsSharedAnchorTint 20': string;
+  'Global/ValueColorsSharedAnchorTint 30': string;
+  'Global/ValueColorsSharedAnchorTint 40': string;
+  'Global/ValueColorsSharedAnchorTint 50': string;
+  'Global/ValueColorsSharedAnchorTint 60': string;
+  'Global/ValueColorsSharedBeigePrimary': string;
+  'Global/ValueColorsSharedBeigeShade 10': string;
+  'Global/ValueColorsSharedBeigeShade 20': string;
+  'Global/ValueColorsSharedBeigeShade 30': string;
+  'Global/ValueColorsSharedBeigeShade 40': string;
+  'Global/ValueColorsSharedBeigeShade 50': string;
+  'Global/ValueColorsSharedBeigeTint 10': string;
+  'Global/ValueColorsSharedBeigeTint 20': string;
+  'Global/ValueColorsSharedBeigeTint 30': string;
+  'Global/ValueColorsSharedBeigeTint 40': string;
+  'Global/ValueColorsSharedBeigeTint 50': string;
+  'Global/ValueColorsSharedBeigeTint 60': string;
+  'Global/ValueColorsSharedBerryPrimary': string;
+  'Global/ValueColorsSharedBerryShade 10': string;
+  'Global/ValueColorsSharedBerryShade 20': string;
+  'Global/ValueColorsSharedBerryShade 30': string;
+  'Global/ValueColorsSharedBerryShade 40': string;
+  'Global/ValueColorsSharedBerryShade 50': string;
+  'Global/ValueColorsSharedBerryTint 10': string;
+  'Global/ValueColorsSharedBerryTint 20': string;
+  'Global/ValueColorsSharedBerryTint 30': string;
+  'Global/ValueColorsSharedBerryTint 40': string;
+  'Global/ValueColorsSharedBerryTint 50': string;
+  'Global/ValueColorsSharedBerryTint 60': string;
+  'Global/ValueColorsSharedBluePrimary': string;
+  'Global/ValueColorsSharedBlueShade 10': string;
+  'Global/ValueColorsSharedBlueShade 20': string;
+  'Global/ValueColorsSharedBlueShade 30': string;
+  'Global/ValueColorsSharedBlueShade 40': string;
+  'Global/ValueColorsSharedBlueShade 50': string;
+  'Global/ValueColorsSharedBlueTint 10': string;
+  'Global/ValueColorsSharedBlueTint 20': string;
+  'Global/ValueColorsSharedBlueTint 30': string;
+  'Global/ValueColorsSharedBlueTint 40': string;
+  'Global/ValueColorsSharedBlueTint 50': string;
+  'Global/ValueColorsSharedBlueTint 60': string;
+  'Global/ValueColorsSharedBrassPrimary': string;
+  'Global/ValueColorsSharedBrassShade 10': string;
+  'Global/ValueColorsSharedBrassShade 20': string;
+  'Global/ValueColorsSharedBrassShade 30': string;
+  'Global/ValueColorsSharedBrassShade 40': string;
+  'Global/ValueColorsSharedBrassShade 50': string;
+  'Global/ValueColorsSharedBrassTint 10': string;
+  'Global/ValueColorsSharedBrassTint 20': string;
+  'Global/ValueColorsSharedBrassTint 30': string;
+  'Global/ValueColorsSharedBrassTint 40': string;
+  'Global/ValueColorsSharedBrassTint 50': string;
+  'Global/ValueColorsSharedBrassTint 60': string;
+  'Global/ValueColorsSharedBronzePrimary': string;
+  'Global/ValueColorsSharedBronzeShade 10': string;
+  'Global/ValueColorsSharedBronzeShade 20': string;
+  'Global/ValueColorsSharedBronzeShade 30': string;
+  'Global/ValueColorsSharedBronzeShade 40': string;
+  'Global/ValueColorsSharedBronzeShade 50': string;
+  'Global/ValueColorsSharedBronzeTint 10': string;
+  'Global/ValueColorsSharedBronzeTint 20': string;
+  'Global/ValueColorsSharedBronzeTint 30': string;
+  'Global/ValueColorsSharedBronzeTint 40': string;
+  'Global/ValueColorsSharedBronzeTint 50': string;
+  'Global/ValueColorsSharedBronzeTint 60': string;
+  'Global/ValueColorsSharedBrownPrimary': string;
+  'Global/ValueColorsSharedBrownShade 10': string;
+  'Global/ValueColorsSharedBrownShade 20': string;
+  'Global/ValueColorsSharedBrownShade 30': string;
+  'Global/ValueColorsSharedBrownShade 40': string;
+  'Global/ValueColorsSharedBrownShade 50': string;
+  'Global/ValueColorsSharedBrownTint 10': string;
+  'Global/ValueColorsSharedBrownTint 20': string;
+  'Global/ValueColorsSharedBrownTint 30': string;
+  'Global/ValueColorsSharedBrownTint 40': string;
+  'Global/ValueColorsSharedBrownTint 50': string;
+  'Global/ValueColorsSharedBrownTint 60': string;
+  'Global/ValueColorsSharedBurgundyPrimary': string;
+  'Global/ValueColorsSharedBurgundyShade 10': string;
+  'Global/ValueColorsSharedBurgundyShade 20': string;
+  'Global/ValueColorsSharedBurgundyShade 30': string;
+  'Global/ValueColorsSharedBurgundyShade 40': string;
+  'Global/ValueColorsSharedBurgundyShade 50': string;
+  'Global/ValueColorsSharedBurgundyTint 10': string;
+  'Global/ValueColorsSharedBurgundyTint 20': string;
+  'Global/ValueColorsSharedBurgundyTint 30': string;
+  'Global/ValueColorsSharedBurgundyTint 40': string;
+  'Global/ValueColorsSharedBurgundyTint 50': string;
+  'Global/ValueColorsSharedBurgundyTint 60': string;
+  'Global/ValueColorsSharedCharcoalPrimary': string;
+  'Global/ValueColorsSharedCharcoalShade 10': string;
+  'Global/ValueColorsSharedCharcoalShade 20': string;
+  'Global/ValueColorsSharedCharcoalShade 30': string;
+  'Global/ValueColorsSharedCharcoalShade 40': string;
+  'Global/ValueColorsSharedCharcoalShade 50': string;
+  'Global/ValueColorsSharedCharcoalTint 10': string;
+  'Global/ValueColorsSharedCharcoalTint 20': string;
+  'Global/ValueColorsSharedCharcoalTint 30': string;
+  'Global/ValueColorsSharedCharcoalTint 40': string;
+  'Global/ValueColorsSharedCharcoalTint 50': string;
+  'Global/ValueColorsSharedCharcoalTint 60': string;
+  'Global/ValueColorsSharedCornflowerPrimary': string;
+  'Global/ValueColorsSharedCornflowerShade 10': string;
+  'Global/ValueColorsSharedCornflowerShade 20': string;
+  'Global/ValueColorsSharedCornflowerShade 30': string;
+  'Global/ValueColorsSharedCornflowerShade 40': string;
+  'Global/ValueColorsSharedCornflowerShade 50': string;
+  'Global/ValueColorsSharedCornflowerTint 10': string;
+  'Global/ValueColorsSharedCornflowerTint 20': string;
+  'Global/ValueColorsSharedCornflowerTint 30': string;
+  'Global/ValueColorsSharedCornflowerTint 40': string;
+  'Global/ValueColorsSharedCornflowerTint 50': string;
+  'Global/ValueColorsSharedCornflowerTint 60': string;
+  'Global/ValueColorsSharedCranberryPrimary': string;
+  'Global/ValueColorsSharedCranberryTint 30': string;
+  'Global/ValueColorsSharedCranberryTint 60': string;
+  'Global/ValueColorsSharedCyanPrimary': string;
+  'Global/ValueColorsSharedCyanShade 10': string;
+  'Global/ValueColorsSharedCyanShade 20': string;
+  'Global/ValueColorsSharedCyanShade 30': string;
+  'Global/ValueColorsSharedCyanShade 40': string;
+  'Global/ValueColorsSharedCyanShade 50': string;
+  'Global/ValueColorsSharedCyanTint 10': string;
+  'Global/ValueColorsSharedCyanTint 20': string;
+  'Global/ValueColorsSharedCyanTint 30': string;
+  'Global/ValueColorsSharedCyanTint 40': string;
+  'Global/ValueColorsSharedCyanTint 50': string;
+  'Global/ValueColorsSharedCyanTint 60': string;
+  'Global/ValueColorsSharedDark OrangePrimary': string;
+  'Global/ValueColorsSharedDark OrangeTint 30': string;
+  'Global/ValueColorsSharedDark OrangeTint 60': string;
+  'Global/ValueColorsSharedDark bluePrimary': string;
+  'Global/ValueColorsSharedDark blueShade 10': string;
+  'Global/ValueColorsSharedDark blueShade 20': string;
+  'Global/ValueColorsSharedDark blueShade 30': string;
+  'Global/ValueColorsSharedDark blueShade 40': string;
+  'Global/ValueColorsSharedDark blueShade 50': string;
+  'Global/ValueColorsSharedDark blueTint 10': string;
+  'Global/ValueColorsSharedDark blueTint 20': string;
+  'Global/ValueColorsSharedDark blueTint 30': string;
+  'Global/ValueColorsSharedDark blueTint 40': string;
+  'Global/ValueColorsSharedDark blueTint 50': string;
+  'Global/ValueColorsSharedDark blueTint 60': string;
+  'Global/ValueColorsSharedDark brownPrimary': string;
+  'Global/ValueColorsSharedDark brownShade 10': string;
+  'Global/ValueColorsSharedDark brownShade 20': string;
+  'Global/ValueColorsSharedDark brownShade 30': string;
+  'Global/ValueColorsSharedDark brownShade 40': string;
+  'Global/ValueColorsSharedDark brownShade 50': string;
+  'Global/ValueColorsSharedDark brownTint 10': string;
+  'Global/ValueColorsSharedDark brownTint 20': string;
+  'Global/ValueColorsSharedDark brownTint 30': string;
+  'Global/ValueColorsSharedDark brownTint 40': string;
+  'Global/ValueColorsSharedDark brownTint 50': string;
+  'Global/ValueColorsSharedDark brownTint 60': string;
+  'Global/ValueColorsSharedDark greenPrimary': string;
+  'Global/ValueColorsSharedDark greenShade 10': string;
+  'Global/ValueColorsSharedDark greenShade 20': string;
+  'Global/ValueColorsSharedDark greenShade 30': string;
+  'Global/ValueColorsSharedDark greenShade 40': string;
+  'Global/ValueColorsSharedDark greenShade 50': string;
+  'Global/ValueColorsSharedDark greenTint 10': string;
+  'Global/ValueColorsSharedDark greenTint 20': string;
+  'Global/ValueColorsSharedDark greenTint 30': string;
+  'Global/ValueColorsSharedDark greenTint 40': string;
+  'Global/ValueColorsSharedDark greenTint 50': string;
+  'Global/ValueColorsSharedDark greenTint 60': string;
+  'Global/ValueColorsSharedDark purplePrimary': string;
+  'Global/ValueColorsSharedDark purpleShade 10': string;
+  'Global/ValueColorsSharedDark purpleShade 20': string;
+  'Global/ValueColorsSharedDark purpleShade 30': string;
+  'Global/ValueColorsSharedDark purpleShade 40': string;
+  'Global/ValueColorsSharedDark purpleShade 50': string;
+  'Global/ValueColorsSharedDark purpleTint 10': string;
+  'Global/ValueColorsSharedDark purpleTint 20': string;
+  'Global/ValueColorsSharedDark purpleTint 30': string;
+  'Global/ValueColorsSharedDark purpleTint 40': string;
+  'Global/ValueColorsSharedDark purpleTint 50': string;
+  'Global/ValueColorsSharedDark purpleTint 60': string;
+  'Global/ValueColorsSharedDark tealPrimary': string;
+  'Global/ValueColorsSharedDark tealShade 10': string;
+  'Global/ValueColorsSharedDark tealShade 20': string;
+  'Global/ValueColorsSharedDark tealShade 30': string;
+  'Global/ValueColorsSharedDark tealShade 40': string;
+  'Global/ValueColorsSharedDark tealShade 50': string;
+  'Global/ValueColorsSharedDark tealTint 10': string;
+  'Global/ValueColorsSharedDark tealTint 20': string;
+  'Global/ValueColorsSharedDark tealTint 30': string;
+  'Global/ValueColorsSharedDark tealTint 40': string;
+  'Global/ValueColorsSharedDark tealTint 50': string;
+  'Global/ValueColorsSharedDark tealTint 60': string;
+  'Global/ValueColorsSharedForestPrimary': string;
+  'Global/ValueColorsSharedForestShade 10': string;
+  'Global/ValueColorsSharedForestShade 20': string;
+  'Global/ValueColorsSharedForestShade 30': string;
+  'Global/ValueColorsSharedForestShade 40': string;
+  'Global/ValueColorsSharedForestShade 50': string;
+  'Global/ValueColorsSharedForestTint 10': string;
+  'Global/ValueColorsSharedForestTint 20': string;
+  'Global/ValueColorsSharedForestTint 30': string;
+  'Global/ValueColorsSharedForestTint 40': string;
+  'Global/ValueColorsSharedForestTint 50': string;
+  'Global/ValueColorsSharedForestTint 60': string;
+  'Global/ValueColorsSharedGoldPrimary': string;
+  'Global/ValueColorsSharedGoldShade 10': string;
+  'Global/ValueColorsSharedGoldShade 20': string;
+  'Global/ValueColorsSharedGoldShade 30': string;
+  'Global/ValueColorsSharedGoldShade 40': string;
+  'Global/ValueColorsSharedGoldShade 50': string;
+  'Global/ValueColorsSharedGoldTint 10': string;
+  'Global/ValueColorsSharedGoldTint 20': string;
+  'Global/ValueColorsSharedGoldTint 30': string;
+  'Global/ValueColorsSharedGoldTint 40': string;
+  'Global/ValueColorsSharedGoldTint 50': string;
+  'Global/ValueColorsSharedGoldTint 60': string;
+  'Global/ValueColorsSharedGrapePrimary': string;
+  'Global/ValueColorsSharedGrapeShade 10': string;
+  'Global/ValueColorsSharedGrapeShade 20': string;
+  'Global/ValueColorsSharedGrapeShade 30': string;
+  'Global/ValueColorsSharedGrapeShade 40': string;
+  'Global/ValueColorsSharedGrapeShade 50': string;
+  'Global/ValueColorsSharedGrapeTint 10': string;
+  'Global/ValueColorsSharedGrapeTint 20': string;
+  'Global/ValueColorsSharedGrapeTint 30': string;
+  'Global/ValueColorsSharedGrapeTint 40': string;
+  'Global/ValueColorsSharedGrapeTint 50': string;
+  'Global/ValueColorsSharedGrapeTint 60': string;
+  'Global/ValueColorsSharedGreenPrimary': string;
+  'Global/ValueColorsSharedGreenTint 30': string;
+  'Global/ValueColorsSharedGreenTint 60': string;
+  'Global/ValueColorsSharedHot pinkPrimary': string;
+  'Global/ValueColorsSharedHot pinkShade 10': string;
+  'Global/ValueColorsSharedHot pinkShade 20': string;
+  'Global/ValueColorsSharedHot pinkShade 30': string;
+  'Global/ValueColorsSharedHot pinkShade 40': string;
+  'Global/ValueColorsSharedHot pinkShade 50': string;
+  'Global/ValueColorsSharedHot pinkTint 10': string;
+  'Global/ValueColorsSharedHot pinkTint 20': string;
+  'Global/ValueColorsSharedHot pinkTint 30': string;
+  'Global/ValueColorsSharedHot pinkTint 40': string;
+  'Global/ValueColorsSharedHot pinkTint 50': string;
+  'Global/ValueColorsSharedHot pinkTint 60': string;
+  'Global/ValueColorsSharedInformationPrimary': string;
+  'Global/ValueColorsSharedInformationShade 10': string;
+  'Global/ValueColorsSharedInformationShade 20': string;
+  'Global/ValueColorsSharedInformationTint 10': string;
+  'Global/ValueColorsSharedInformationTint 20': string;
+  'Global/ValueColorsSharedInformationTint 30': string;
+  'Global/ValueColorsSharedInformationTint 40': string;
+  'Global/ValueColorsSharedInformationTint 50': string;
+  'Global/ValueColorsSharedInformationTint 60': string;
+  'Global/ValueColorsSharedLavenderPrimary': string;
+  'Global/ValueColorsSharedLavenderShade 10': string;
+  'Global/ValueColorsSharedLavenderShade 20': string;
+  'Global/ValueColorsSharedLavenderShade 30': string;
+  'Global/ValueColorsSharedLavenderShade 40': string;
+  'Global/ValueColorsSharedLavenderShade 50': string;
+  'Global/ValueColorsSharedLavenderTint 10': string;
+  'Global/ValueColorsSharedLavenderTint 20': string;
+  'Global/ValueColorsSharedLavenderTint 30': string;
+  'Global/ValueColorsSharedLavenderTint 40': string;
+  'Global/ValueColorsSharedLavenderTint 50': string;
+  'Global/ValueColorsSharedLavenderTint 60': string;
+  'Global/ValueColorsSharedLight bluePrimary': string;
+  'Global/ValueColorsSharedLight blueShade 10': string;
+  'Global/ValueColorsSharedLight blueShade 20': string;
+  'Global/ValueColorsSharedLight blueShade 30': string;
+  'Global/ValueColorsSharedLight blueShade 40': string;
+  'Global/ValueColorsSharedLight blueShade 50': string;
+  'Global/ValueColorsSharedLight blueTint 10': string;
+  'Global/ValueColorsSharedLight blueTint 20': string;
+  'Global/ValueColorsSharedLight blueTint 30': string;
+  'Global/ValueColorsSharedLight blueTint 40': string;
+  'Global/ValueColorsSharedLight blueTint 50': string;
+  'Global/ValueColorsSharedLight blueTint 60': string;
+  'Global/ValueColorsSharedLight greenPrimary': string;
+  'Global/ValueColorsSharedLight greenShade 10': string;
+  'Global/ValueColorsSharedLight greenShade 20': string;
+  'Global/ValueColorsSharedLight greenShade 30': string;
+  'Global/ValueColorsSharedLight greenShade 40': string;
+  'Global/ValueColorsSharedLight greenShade 50': string;
+  'Global/ValueColorsSharedLight greenTint 10': string;
+  'Global/ValueColorsSharedLight greenTint 20': string;
+  'Global/ValueColorsSharedLight greenTint 30': string;
+  'Global/ValueColorsSharedLight greenTint 40': string;
+  'Global/ValueColorsSharedLight greenTint 50': string;
+  'Global/ValueColorsSharedLight greenTint 60': string;
+  'Global/ValueColorsSharedLight tealPrimary': string;
+  'Global/ValueColorsSharedLight tealShade 10': string;
+  'Global/ValueColorsSharedLight tealShade 20': string;
+  'Global/ValueColorsSharedLight tealShade 30': string;
+  'Global/ValueColorsSharedLight tealShade 40': string;
+  'Global/ValueColorsSharedLight tealShade 50': string;
+  'Global/ValueColorsSharedLight tealTint 10': string;
+  'Global/ValueColorsSharedLight tealTint 20': string;
+  'Global/ValueColorsSharedLight tealTint 30': string;
+  'Global/ValueColorsSharedLight tealTint 40': string;
+  'Global/ValueColorsSharedLight tealTint 50': string;
+  'Global/ValueColorsSharedLight tealTint 60': string;
+  'Global/ValueColorsSharedLilacPrimary': string;
+  'Global/ValueColorsSharedLilacShade 10': string;
+  'Global/ValueColorsSharedLilacShade 20': string;
+  'Global/ValueColorsSharedLilacShade 30': string;
+  'Global/ValueColorsSharedLilacShade 40': string;
+  'Global/ValueColorsSharedLilacShade 50': string;
+  'Global/ValueColorsSharedLilacTint 10': string;
+  'Global/ValueColorsSharedLilacTint 20': string;
+  'Global/ValueColorsSharedLilacTint 30': string;
+  'Global/ValueColorsSharedLilacTint 40': string;
+  'Global/ValueColorsSharedLilacTint 50': string;
+  'Global/ValueColorsSharedLilacTint 60': string;
+  'Global/ValueColorsSharedLimePrimary': string;
+  'Global/ValueColorsSharedLimeShade 10': string;
+  'Global/ValueColorsSharedLimeShade 20': string;
+  'Global/ValueColorsSharedLimeShade 30': string;
+  'Global/ValueColorsSharedLimeShade 40': string;
+  'Global/ValueColorsSharedLimeShade 50': string;
+  'Global/ValueColorsSharedLimeTint 10': string;
+  'Global/ValueColorsSharedLimeTint 20': string;
+  'Global/ValueColorsSharedLimeTint 30': string;
+  'Global/ValueColorsSharedLimeTint 40': string;
+  'Global/ValueColorsSharedLimeTint 50': string;
+  'Global/ValueColorsSharedLimeTint 60': string;
+  'Global/ValueColorsSharedMagentaPrimary': string;
+  'Global/ValueColorsSharedMagentaShade 10': string;
+  'Global/ValueColorsSharedMagentaShade 20': string;
+  'Global/ValueColorsSharedMagentaShade 30': string;
+  'Global/ValueColorsSharedMagentaShade 40': string;
+  'Global/ValueColorsSharedMagentaShade 50': string;
+  'Global/ValueColorsSharedMagentaTint 10': string;
+  'Global/ValueColorsSharedMagentaTint 20': string;
+  'Global/ValueColorsSharedMagentaTint 30': string;
+  'Global/ValueColorsSharedMagentaTint 40': string;
+  'Global/ValueColorsSharedMagentaTint 50': string;
+  'Global/ValueColorsSharedMagentaTint 60': string;
+  'Global/ValueColorsSharedMarigoldPrimary': string;
+  'Global/ValueColorsSharedMarigoldShade 10': string;
+  'Global/ValueColorsSharedMarigoldShade 20': string;
+  'Global/ValueColorsSharedMarigoldShade 30': string;
+  'Global/ValueColorsSharedMarigoldShade 40': string;
+  'Global/ValueColorsSharedMarigoldShade 50': string;
+  'Global/ValueColorsSharedMarigoldTint 10': string;
+  'Global/ValueColorsSharedMarigoldTint 20': string;
+  'Global/ValueColorsSharedMarigoldTint 30': string;
+  'Global/ValueColorsSharedMarigoldTint 40': string;
+  'Global/ValueColorsSharedMarigoldTint 50': string;
+  'Global/ValueColorsSharedMarigoldTint 60': string;
+  'Global/ValueColorsSharedMinkPrimary': string;
+  'Global/ValueColorsSharedMinkShade 10': string;
+  'Global/ValueColorsSharedMinkShade 20': string;
+  'Global/ValueColorsSharedMinkShade 30': string;
+  'Global/ValueColorsSharedMinkShade 40': string;
+  'Global/ValueColorsSharedMinkShade 50': string;
+  'Global/ValueColorsSharedMinkTint 10': string;
+  'Global/ValueColorsSharedMinkTint 20': string;
+  'Global/ValueColorsSharedMinkTint 30': string;
+  'Global/ValueColorsSharedMinkTint 40': string;
+  'Global/ValueColorsSharedMinkTint 50': string;
+  'Global/ValueColorsSharedMinkTint 60': string;
+  'Global/ValueColorsSharedNavyPrimary': string;
+  'Global/ValueColorsSharedNavyShade 10': string;
+  'Global/ValueColorsSharedNavyShade 20': string;
+  'Global/ValueColorsSharedNavyShade 30': string;
+  'Global/ValueColorsSharedNavyShade 40': string;
+  'Global/ValueColorsSharedNavyShade 50': string;
+  'Global/ValueColorsSharedNavyTint 10': string;
+  'Global/ValueColorsSharedNavyTint 20': string;
+  'Global/ValueColorsSharedNavyTint 30': string;
+  'Global/ValueColorsSharedNavyTint 40': string;
+  'Global/ValueColorsSharedNavyTint 50': string;
+  'Global/ValueColorsSharedNavyTint 60': string;
+  'Global/ValueColorsSharedOrangePrimary': string;
+  'Global/ValueColorsSharedOrangeTint 30': string;
+  'Global/ValueColorsSharedOrangeTint 60': string;
+  'Global/ValueColorsSharedOrchidPrimary': string;
+  'Global/ValueColorsSharedOrchidShade 10': string;
+  'Global/ValueColorsSharedOrchidShade 20': string;
+  'Global/ValueColorsSharedOrchidShade 30': string;
+  'Global/ValueColorsSharedOrchidShade 40': string;
+  'Global/ValueColorsSharedOrchidShade 50': string;
+  'Global/ValueColorsSharedOrchidTint 10': string;
+  'Global/ValueColorsSharedOrchidTint 20': string;
+  'Global/ValueColorsSharedOrchidTint 30': string;
+  'Global/ValueColorsSharedOrchidTint 40': string;
+  'Global/ValueColorsSharedOrchidTint 50': string;
+  'Global/ValueColorsSharedOrchidTint 60': string;
+  'Global/ValueColorsSharedPeachPrimary': string;
+  'Global/ValueColorsSharedPeachShade 10': string;
+  'Global/ValueColorsSharedPeachShade 20': string;
+  'Global/ValueColorsSharedPeachShade 30': string;
+  'Global/ValueColorsSharedPeachShade 40': string;
+  'Global/ValueColorsSharedPeachShade 50': string;
+  'Global/ValueColorsSharedPeachTint 10': string;
+  'Global/ValueColorsSharedPeachTint 20': string;
+  'Global/ValueColorsSharedPeachTint 30': string;
+  'Global/ValueColorsSharedPeachTint 40': string;
+  'Global/ValueColorsSharedPeachTint 50': string;
+  'Global/ValueColorsSharedPeachTint 60': string;
+  'Global/ValueColorsSharedPinkPrimary': string;
+  'Global/ValueColorsSharedPinkShade 10': string;
+  'Global/ValueColorsSharedPinkShade 20': string;
+  'Global/ValueColorsSharedPinkShade 30': string;
+  'Global/ValueColorsSharedPinkShade 40': string;
+  'Global/ValueColorsSharedPinkShade 50': string;
+  'Global/ValueColorsSharedPinkTint 10': string;
+  'Global/ValueColorsSharedPinkTint 20': string;
+  'Global/ValueColorsSharedPinkTint 30': string;
+  'Global/ValueColorsSharedPinkTint 40': string;
+  'Global/ValueColorsSharedPinkTint 50': string;
+  'Global/ValueColorsSharedPinkTint 60': string;
+  'Global/ValueColorsSharedPlatinumPrimary': string;
+  'Global/ValueColorsSharedPlatinumShade 10': string;
+  'Global/ValueColorsSharedPlatinumShade 20': string;
+  'Global/ValueColorsSharedPlatinumShade 30': string;
+  'Global/ValueColorsSharedPlatinumShade 40': string;
+  'Global/ValueColorsSharedPlatinumShade 50': string;
+  'Global/ValueColorsSharedPlatinumTint 10': string;
+  'Global/ValueColorsSharedPlatinumTint 20': string;
+  'Global/ValueColorsSharedPlatinumTint 30': string;
+  'Global/ValueColorsSharedPlatinumTint 40': string;
+  'Global/ValueColorsSharedPlatinumTint 50': string;
+  'Global/ValueColorsSharedPlatinumTint 60': string;
+  'Global/ValueColorsSharedPlumPrimary': string;
+  'Global/ValueColorsSharedPlumShade 10': string;
+  'Global/ValueColorsSharedPlumShade 20': string;
+  'Global/ValueColorsSharedPlumShade 30': string;
+  'Global/ValueColorsSharedPlumShade 40': string;
+  'Global/ValueColorsSharedPlumShade 50': string;
+  'Global/ValueColorsSharedPlumTint 10': string;
+  'Global/ValueColorsSharedPlumTint 20': string;
+  'Global/ValueColorsSharedPlumTint 30': string;
+  'Global/ValueColorsSharedPlumTint 40': string;
+  'Global/ValueColorsSharedPlumTint 50': string;
+  'Global/ValueColorsSharedPlumTint 60': string;
+  'Global/ValueColorsSharedPurplePrimary': string;
+  'Global/ValueColorsSharedPurpleShade 10': string;
+  'Global/ValueColorsSharedPurpleShade 20': string;
+  'Global/ValueColorsSharedPurpleShade 30': string;
+  'Global/ValueColorsSharedPurpleShade 40': string;
+  'Global/ValueColorsSharedPurpleShade 50': string;
+  'Global/ValueColorsSharedPurpleTint 10': string;
+  'Global/ValueColorsSharedPurpleTint 20': string;
+  'Global/ValueColorsSharedPurpleTint 30': string;
+  'Global/ValueColorsSharedPurpleTint 40': string;
+  'Global/ValueColorsSharedPurpleTint 50': string;
+  'Global/ValueColorsSharedPurpleTint 60': string;
+  'Global/ValueColorsSharedRedPrimary': string;
+  'Global/ValueColorsSharedRedShade 10': string;
+  'Global/ValueColorsSharedRedShade 20': string;
+  'Global/ValueColorsSharedRedShade 30': string;
+  'Global/ValueColorsSharedRedShade 40': string;
+  'Global/ValueColorsSharedRedShade 50': string;
+  'Global/ValueColorsSharedRedTint 10': string;
+  'Global/ValueColorsSharedRedTint 20': string;
+  'Global/ValueColorsSharedRedTint 30': string;
+  'Global/ValueColorsSharedRedTint 40': string;
+  'Global/ValueColorsSharedRedTint 50': string;
+  'Global/ValueColorsSharedRedTint 60': string;
+  'Global/ValueColorsSharedRoyal bluePrimary': string;
+  'Global/ValueColorsSharedRoyal blueShade 10': string;
+  'Global/ValueColorsSharedRoyal blueShade 20': string;
+  'Global/ValueColorsSharedRoyal blueShade 30': string;
+  'Global/ValueColorsSharedRoyal blueShade 40': string;
+  'Global/ValueColorsSharedRoyal blueShade 50': string;
+  'Global/ValueColorsSharedRoyal blueTint 10': string;
+  'Global/ValueColorsSharedRoyal blueTint 20': string;
+  'Global/ValueColorsSharedRoyal blueTint 30': string;
+  'Global/ValueColorsSharedRoyal blueTint 40': string;
+  'Global/ValueColorsSharedRoyal blueTint 50': string;
+  'Global/ValueColorsSharedRoyal blueTint 60': string;
+  'Global/ValueColorsSharedSeafoamPrimary': string;
+  'Global/ValueColorsSharedSeafoamShade 10': string;
+  'Global/ValueColorsSharedSeafoamShade 20': string;
+  'Global/ValueColorsSharedSeafoamShade 30': string;
+  'Global/ValueColorsSharedSeafoamShade 40': string;
+  'Global/ValueColorsSharedSeafoamShade 50': string;
+  'Global/ValueColorsSharedSeafoamTint 10': string;
+  'Global/ValueColorsSharedSeafoamTint 20': string;
+  'Global/ValueColorsSharedSeafoamTint 30': string;
+  'Global/ValueColorsSharedSeafoamTint 40': string;
+  'Global/ValueColorsSharedSeafoamTint 50': string;
+  'Global/ValueColorsSharedSeafoamTint 60': string;
+  'Global/ValueColorsSharedSilverPrimary': string;
+  'Global/ValueColorsSharedSilverShade 10': string;
+  'Global/ValueColorsSharedSilverShade 20': string;
+  'Global/ValueColorsSharedSilverShade 30': string;
+  'Global/ValueColorsSharedSilverShade 40': string;
+  'Global/ValueColorsSharedSilverShade 50': string;
+  'Global/ValueColorsSharedSilverTint 10': string;
+  'Global/ValueColorsSharedSilverTint 20': string;
+  'Global/ValueColorsSharedSilverTint 30': string;
+  'Global/ValueColorsSharedSilverTint 40': string;
+  'Global/ValueColorsSharedSilverTint 50': string;
+  'Global/ValueColorsSharedSilverTint 60': string;
+  'Global/ValueColorsSharedSteelPrimary': string;
+  'Global/ValueColorsSharedSteelShade 10': string;
+  'Global/ValueColorsSharedSteelShade 20': string;
+  'Global/ValueColorsSharedSteelShade 30': string;
+  'Global/ValueColorsSharedSteelShade 40': string;
+  'Global/ValueColorsSharedSteelShade 50': string;
+  'Global/ValueColorsSharedSteelTint 10': string;
+  'Global/ValueColorsSharedSteelTint 20': string;
+  'Global/ValueColorsSharedSteelTint 30': string;
+  'Global/ValueColorsSharedSteelTint 40': string;
+  'Global/ValueColorsSharedSteelTint 50': string;
+  'Global/ValueColorsSharedSteelTint 60': string;
+  'Global/ValueColorsSharedTealPrimary': string;
+  'Global/ValueColorsSharedTealShade 10': string;
+  'Global/ValueColorsSharedTealShade 20': string;
+  'Global/ValueColorsSharedTealShade 30': string;
+  'Global/ValueColorsSharedTealShade 40': string;
+  'Global/ValueColorsSharedTealShade 50': string;
+  'Global/ValueColorsSharedTealTint 10': string;
+  'Global/ValueColorsSharedTealTint 20': string;
+  'Global/ValueColorsSharedTealTint 30': string;
+  'Global/ValueColorsSharedTealTint 40': string;
+  'Global/ValueColorsSharedTealTint 50': string;
+  'Global/ValueColorsSharedTealTint 60': string;
+  'Global/ValueColorsSharedYellowPrimary': string;
+  'Global/ValueColorsSharedYellowShade 10': string;
+  'Global/ValueColorsSharedYellowShade 20': string;
+  'Global/ValueColorsSharedYellowShade 30': string;
+  'Global/ValueColorsSharedYellowShade 40': string;
+  'Global/ValueColorsSharedYellowShade 50': string;
+  'Global/ValueColorsSharedYellowTint 10': string;
+  'Global/ValueColorsSharedYellowTint 20': string;
+  'Global/ValueColorsSharedYellowTint 30': string;
+  'Global/ValueColorsSharedYellowTint 40': string;
+  'Global/ValueColorsSharedYellowTint 50': string;
+  'Global/ValueColorsSharedYellowTint 60': string;
+  'Global/ValueSpacingHorizontalL': string;
+  'Global/ValueSpacingHorizontalLNudge': string;
+  'Global/ValueSpacingHorizontalM': string;
+  'Global/ValueSpacingHorizontalMNudge': string;
+  'Global/ValueSpacingHorizontalNone': string;
+  'Global/ValueSpacingHorizontalS': string;
+  'Global/ValueSpacingHorizontalSNudge': string;
+  'Global/ValueSpacingHorizontalXL': string;
+  'Global/ValueSpacingHorizontalXS': string;
+  'Global/ValueSpacingHorizontalXXL': string;
+  'Global/ValueSpacingHorizontalXXS': string;
+  'Global/ValueSpacingHorizontalXXXL': string;
+  'Global/ValueSpacingHorizontalXXXXL': string;
+  'Global/ValueSpacingVerticalL': string;
+  'Global/ValueSpacingVerticalLNudge': string;
+  'Global/ValueSpacingVerticalM': string;
+  'Global/ValueSpacingVerticalMNudge': string;
+  'Global/ValueSpacingVerticalNone': string;
+  'Global/ValueSpacingVerticalS': string;
+  'Global/ValueSpacingVerticalSNudge': string;
+  'Global/ValueSpacingVerticalXL': string;
+  'Global/ValueSpacingVerticalXS': string;
+  'Global/ValueSpacingVerticalXXL': string;
+  'Global/ValueSpacingVerticalXXS': string;
+  'Global/ValueSpacingVerticalXXXL': string;
+  'Global/ValueSpacingVerticalXXXXL': string;
+  'Global/ValueStrokeWidthNone': string;
+  'Global/ValueStrokeWidthThick': string;
+  'Global/ValueStrokeWidthThicker': string;
+  'Global/ValueStrokeWidthThickest': string;
+  'Global/ValueStrokeWidthThin': string;
+  'Popover size/Large/Popover size/LargePopover-padding-horizontal': string;
+  'Popover size/Large/Popover size/LargePopover-padding-vertical': string;
+  'Popover size/LargePopover-padding-horizontal': string;
+  'Popover size/LargePopover-padding-vertical': string;
+  'Popover size/Medium/Popover size/MediumPopover-padding-horizontal': string;
+  'Popover size/Medium/Popover size/MediumPopover-padding-vertical': string;
+  'Popover size/MediumPopover-padding-horizontal': string;
+  'Popover size/MediumPopover-padding-vertical': string;
+  'Popover size/Small/Popover size/SmallPopover-padding-horizontal': string;
+  'Popover size/Small/Popover size/SmallPopover-padding-vertical': string;
+  'Popover size/SmallPopover-padding-horizontal': string;
+  'Popover size/SmallPopover-padding-vertical': string;
+  'Theme/Dark/Theme/DarkBrandBackground1Hover': string;
+  'Theme/Dark/Theme/DarkBrandBackground1Pressed': string;
+  'Theme/Dark/Theme/DarkBrandBackground1Rest': string;
+  'Theme/Dark/Theme/DarkBrandBackground1Selected': string;
+  'Theme/Dark/Theme/DarkBrandBackground2Hover': string;
+  'Theme/Dark/Theme/DarkBrandBackground2Pressed': string;
+  'Theme/Dark/Theme/DarkBrandBackground2Rest': string;
+  'Theme/Dark/Theme/DarkBrandBackground3Rest': string;
+  'Theme/Dark/Theme/DarkBrandBackgroundCompoundHover': string;
+  'Theme/Dark/Theme/DarkBrandBackgroundCompoundPressed': string;
+  'Theme/Dark/Theme/DarkBrandBackgroundCompoundRest': string;
+  'Theme/Dark/Theme/DarkBrandBackgroundInvertedHover': string;
+  'Theme/Dark/Theme/DarkBrandBackgroundInvertedPressed': string;
+  'Theme/Dark/Theme/DarkBrandBackgroundInvertedRest': string;
+  'Theme/Dark/Theme/DarkBrandBackgroundInvertedSelected': string;
+  'Theme/Dark/Theme/DarkBrandBackgroundStaticRest': string;
+  'Theme/Dark/Theme/DarkBrandForeground1Hover': string;
+  'Theme/Dark/Theme/DarkBrandForeground1Pressed': string;
+  'Theme/Dark/Theme/DarkBrandForeground1Rest': string;
+  'Theme/Dark/Theme/DarkBrandForeground1Selected': string;
+  'Theme/Dark/Theme/DarkBrandForeground2Hover': string;
+  'Theme/Dark/Theme/DarkBrandForeground2Pressed': string;
+  'Theme/Dark/Theme/DarkBrandForeground2Rest': string;
+  'Theme/Dark/Theme/DarkBrandForegroundCompoundHover': string;
+  'Theme/Dark/Theme/DarkBrandForegroundCompoundPressed': string;
+  'Theme/Dark/Theme/DarkBrandForegroundCompoundRest': string;
+  'Theme/Dark/Theme/DarkBrandForegroundInvertedHover': string;
+  'Theme/Dark/Theme/DarkBrandForegroundInvertedPressed': string;
+  'Theme/Dark/Theme/DarkBrandForegroundInvertedRest': string;
+  'Theme/Dark/Theme/DarkBrandForegroundLinkHover': string;
+  'Theme/Dark/Theme/DarkBrandForegroundLinkPressed': string;
+  'Theme/Dark/Theme/DarkBrandForegroundLinkRest': string;
+  'Theme/Dark/Theme/DarkBrandForegroundLinkSelected': string;
+  'Theme/Dark/Theme/DarkBrandForegroundOn LightHover': string;
+  'Theme/Dark/Theme/DarkBrandForegroundOn LightPressed': string;
+  'Theme/Dark/Theme/DarkBrandForegroundOn LightRest': string;
+  'Theme/Dark/Theme/DarkBrandForegroundOn LightSelected': string;
+  'Theme/Dark/Theme/DarkBrandStroke1Hover': string;
+  'Theme/Dark/Theme/DarkBrandStroke1Pressed': string;
+  'Theme/Dark/Theme/DarkBrandStroke1Rest': string;
+  'Theme/Dark/Theme/DarkBrandStroke1Selected': string;
+  'Theme/Dark/Theme/DarkBrandStroke2ContrastRest': string;
+  'Theme/Dark/Theme/DarkBrandStroke2Rest': string;
+  'Theme/Dark/Theme/DarkBrandStroke3Rest': string;
+  'Theme/Dark/Theme/DarkBrandStrokeCompoundHover': string;
+  'Theme/Dark/Theme/DarkBrandStrokeCompoundPressed': string;
+  'Theme/Dark/Theme/DarkBrandStrokeCompoundRest': string;
+  'Theme/Dark/Theme/DarkControl logicTheme switch': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundCoreBlue': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundCoreGray': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundCoreGreen': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundCoreOcean': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundCoreRed': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundCoreTeal': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundCoreYellow': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundNeutralBlack': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue100': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue200': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue300': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialBlue400': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGray100': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGray200': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGray300': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGray400': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen100': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen200': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen300': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialGreen400': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean100': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean200': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean300': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialOcean400': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialRed100': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialRed200': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialRed300': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialRed400': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal100': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal200': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal300': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialTeal400': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow100': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow200': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow300': string;
+  'Theme/Dark/Theme/DarkData vizBackgroundSequentialYellow400': string;
+  'Theme/Dark/Theme/DarkData vizForegroundAccessibilityText dark bkgd': string;
+  'Theme/Dark/Theme/DarkData vizForegroundAccessibilityText light bkgd': string;
+  'Theme/Dark/Theme/DarkData vizForegroundKPI CardText dark bkgd': string;
+  'Theme/Dark/Theme/DarkData vizForegroundKPI CardText light bkgd': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsCategorical': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorBlue': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorBlue200': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorBlue400': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGray': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGray300': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGray400': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGreen': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGreen300': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorGreen400': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorOcean': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorOcean200': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorOcean400': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorRed': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorRed300': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorRed400': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorTeal': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorTeal300': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorTeal400': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorYellow300': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsColorYellow400': string;
+  'Theme/Dark/Theme/DarkData vizForegroundLabelsData': string;
+  'Theme/Dark/Theme/DarkData vizSemanticBackgroundNegative': string;
+  'Theme/Dark/Theme/DarkData vizSemanticBackgroundNotice': string;
+  'Theme/Dark/Theme/DarkData vizSemanticBackgroundPositive': string;
+  'Theme/Dark/Theme/DarkData vizSemanticForegroundDark bkgdNegative': string;
+  'Theme/Dark/Theme/DarkData vizSemanticForegroundDark bkgdNotice': string;
+  'Theme/Dark/Theme/DarkData vizSemanticForegroundDark bkgdPositive': string;
+  'Theme/Dark/Theme/DarkData vizSemanticForegroundLight bkgdNegative': string;
+  'Theme/Dark/Theme/DarkData vizSemanticForegroundLight bkgdNotice': string;
+  'Theme/Dark/Theme/DarkData vizSemanticForegroundLight bkgdPositive': string;
+  'Theme/Dark/Theme/DarkData vizSemanticStrokeDark bkgdNegative': string;
+  'Theme/Dark/Theme/DarkData vizSemanticStrokeDark bkgdNotice': string;
+  'Theme/Dark/Theme/DarkData vizSemanticStrokeDark bkgdPositive': string;
+  'Theme/Dark/Theme/DarkData vizSemanticStrokeLight bkgdNegative': string;
+  'Theme/Dark/Theme/DarkData vizSemanticStrokeLight bkgdNotice': string;
+  'Theme/Dark/Theme/DarkData vizSemanticStrokeLight bkgdPositive': string;
+  'Theme/Dark/Theme/DarkData vizStrokeAccessible outline': string;
+  'Theme/Dark/Theme/DarkData vizStrokeAxis-Target-Benchmark': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorBlue': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorBlue200': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorBlue400': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorGray': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorGray300': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorGray400': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorGreen': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorGreen300': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorGreen400': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorOcean': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorOcean200': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorOcean400': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorRed': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorRed300': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorRed400': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorTeal': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorTeal300': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorTeal400': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorYellow': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorYellow300': string;
+  'Theme/Dark/Theme/DarkData vizStrokeColorYellow400': string;
+  'Theme/Dark/Theme/DarkData vizStrokeGridline': string;
+  'Theme/Dark/Theme/DarkData vizStrokeTrend-Average': string;
+  'Theme/Dark/Theme/DarkNeutralBackground1Hover': string;
+  'Theme/Dark/Theme/DarkNeutralBackground1Pressed': string;
+  'Theme/Dark/Theme/DarkNeutralBackground1Rest': string;
+  'Theme/Dark/Theme/DarkNeutralBackground1Selected': string;
+  'Theme/Dark/Theme/DarkNeutralBackground2Rest': string;
+  'Theme/Dark/Theme/DarkNeutralBackground3Hover': string;
+  'Theme/Dark/Theme/DarkNeutralBackground3Pressed': string;
+  'Theme/Dark/Theme/DarkNeutralBackground3Rest': string;
+  'Theme/Dark/Theme/DarkNeutralBackground4Hover': string;
+  'Theme/Dark/Theme/DarkNeutralBackground4Pressed': string;
+  'Theme/Dark/Theme/DarkNeutralBackground4Rest': string;
+  'Theme/Dark/Theme/DarkNeutralBackground5Rest': string;
+  'Theme/Dark/Theme/DarkNeutralBackground6Rest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundAlpha1Rest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundAlpha2Rest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundDisabledRest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundInvertedDisabledRest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundInvertedRest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundOverlayRest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundOverlayScrollbarRest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundStaticRest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundStencil1Rest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundStencil2Rest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleHover': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedHover': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedPressed': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedRest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedSelected': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaHover': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaPressed': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaSelected': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtlePressed': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleRest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleSelected': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentHover': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentPressed': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentRest': string;
+  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentSelected': string;
+  'Theme/Dark/Theme/DarkNeutralForeground1Hover': string;
+  'Theme/Dark/Theme/DarkNeutralForeground1Pressed': string;
+  'Theme/Dark/Theme/DarkNeutralForeground1Rest primary text': string;
+  'Theme/Dark/Theme/DarkNeutralForeground1Selected': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2BrandHover': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2BrandPressed': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2BrandRest': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2BrandSelected': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2Hover': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2LinkHover': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2LinkPressed': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2LinkRest': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2LinkSelected': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2Pressed': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2Rest secondary text': string;
+  'Theme/Dark/Theme/DarkNeutralForeground2Selected': string;
+  'Theme/Dark/Theme/DarkNeutralForeground4Rest': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundDisabled2Rest': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundDisabledRest': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundInverted1Hover': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundInverted1Pressed': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundInverted1Rest': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundInverted1Selected': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundInverted2Rest': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundInvertedDisabledRest': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkHover': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkPressed': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkRest': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkSelected': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundOn BrandRest': string;
+  'Theme/Dark/Theme/DarkNeutralForegroundStaticInvertedRest': string;
+  'Theme/Dark/Theme/DarkNeutralStroke1Hover': string;
+  'Theme/Dark/Theme/DarkNeutralStroke1Pressed': string;
+  'Theme/Dark/Theme/DarkNeutralStroke1Rest': string;
+  'Theme/Dark/Theme/DarkNeutralStroke1Selected': string;
+  'Theme/Dark/Theme/DarkNeutralStroke2Rest': string;
+  'Theme/Dark/Theme/DarkNeutralStroke3Rest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleHover': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeAccessiblePressed': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleRest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleSelected': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeAlpha1Rest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeAlpha2Rest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeDisabledInvertedRest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeDisabledRest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeFocus1Rest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeFocus2Rest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeOn Brand1Rest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeOn Brand2Rest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeSubtleRest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeTransparentDisabledRest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeTransparentInteractiveRest': string;
+  'Theme/Dark/Theme/DarkNeutralStrokeTransparentRest': string;
+  'Theme/Dark/Theme/DarkShadowAmbient': string;
+  'Theme/Dark/Theme/DarkShadowAmbient-darker': string;
+  'Theme/Dark/Theme/DarkShadowAmbient-lighter': string;
+  'Theme/Dark/Theme/DarkShadowBrand-ambient': string;
+  'Theme/Dark/Theme/DarkShadowBrand-key': string;
+  'Theme/Dark/Theme/DarkShadowKey': string;
+  'Theme/Dark/Theme/DarkShadowKey-darker': string;
+  'Theme/Dark/Theme/DarkShadowKey-lighter': string;
+  'Theme/Dark/Theme/DarkStatusAvailableForeground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusAwayBackground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusDangerBackground1Rest': string;
+  'Theme/Dark/Theme/DarkStatusDangerBackground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusDangerForeground1Rest': string;
+  'Theme/Dark/Theme/DarkStatusDangerForeground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusDangerStroke1Rest': string;
+  'Theme/Dark/Theme/DarkStatusDangerStroke2Rest': string;
+  'Theme/Dark/Theme/DarkStatusGenericAnchorBackground2Rest': string;
+  'Theme/Dark/Theme/DarkStatusGenericAnchorForeground2Rest': string;
+  'Theme/Dark/Theme/DarkStatusGenericAnchorStrokeActiveRest': string;
+  'Theme/Dark/Theme/DarkStatusGenericInformationBackground1Hover': string;
+  'Theme/Dark/Theme/DarkStatusGenericInformationBackground1Pressed': string;
+  'Theme/Dark/Theme/DarkStatusGenericInformationBackground1Rest': string;
+  'Theme/Dark/Theme/DarkStatusGenericInformationForegroundHover': string;
+  'Theme/Dark/Theme/DarkStatusGenericInformationForegroundPressed': string;
+  'Theme/Dark/Theme/DarkStatusGenericInformationForegroundRest': string;
+  'Theme/Dark/Theme/DarkStatusGenericInformationStroke1Rest': string;
+  'Theme/Dark/Theme/DarkStatusGenericInformationStroke2Hover': string;
+  'Theme/Dark/Theme/DarkStatusGenericInformationStroke2Pressed': string;
+  'Theme/Dark/Theme/DarkStatusGenericInformationStroke2Rest': string;
+  'Theme/Dark/Theme/DarkStatusOofForeground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusSevereBackground1Rest': string;
+  'Theme/Dark/Theme/DarkStatusSevereBackground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusSevereForeground1Rest': string;
+  'Theme/Dark/Theme/DarkStatusSevereForeground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusSevereStroke1Rest': string;
+  'Theme/Dark/Theme/DarkStatusSevereStroke2Rest': string;
+  'Theme/Dark/Theme/DarkStatusSuccessBackground1Rest': string;
+  'Theme/Dark/Theme/DarkStatusSuccessBackground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusSuccessForeground1Rest': string;
+  'Theme/Dark/Theme/DarkStatusSuccessForeground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusSuccessStroke1Rest': string;
+  'Theme/Dark/Theme/DarkStatusSuccessStroke2Rest': string;
+  'Theme/Dark/Theme/DarkStatusWarningBackground1Rest': string;
+  'Theme/Dark/Theme/DarkStatusWarningBackground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusWarningForeground1Rest': string;
+  'Theme/Dark/Theme/DarkStatusWarningForeground3Rest': string;
+  'Theme/Dark/Theme/DarkStatusWarningStroke1Rest': string;
+  'Theme/Dark/Theme/DarkStatusWarningStroke2Rest': string;
+  'Theme/DarkBrandBackground1Hover': string;
+  'Theme/DarkBrandBackground1Pressed': string;
+  'Theme/DarkBrandBackground1Rest': string;
+  'Theme/DarkBrandBackground1Selected': string;
+  'Theme/DarkBrandBackground2Hover': string;
+  'Theme/DarkBrandBackground2Pressed': string;
+  'Theme/DarkBrandBackground2Rest': string;
+  'Theme/DarkBrandBackground3Rest': string;
+  'Theme/DarkBrandBackgroundCompoundHover': string;
+  'Theme/DarkBrandBackgroundCompoundPressed': string;
+  'Theme/DarkBrandBackgroundCompoundRest': string;
+  'Theme/DarkBrandBackgroundInvertedHover': string;
+  'Theme/DarkBrandBackgroundInvertedPressed': string;
+  'Theme/DarkBrandBackgroundInvertedRest': string;
+  'Theme/DarkBrandBackgroundInvertedSelected': string;
+  'Theme/DarkBrandBackgroundStaticRest': string;
+  'Theme/DarkBrandForeground1Hover': string;
+  'Theme/DarkBrandForeground1Pressed': string;
+  'Theme/DarkBrandForeground1Rest': string;
+  'Theme/DarkBrandForeground1Selected': string;
+  'Theme/DarkBrandForeground2Hover': string;
+  'Theme/DarkBrandForeground2Pressed': string;
+  'Theme/DarkBrandForeground2Rest': string;
+  'Theme/DarkBrandForegroundCompoundHover': string;
+  'Theme/DarkBrandForegroundCompoundPressed': string;
+  'Theme/DarkBrandForegroundCompoundRest': string;
+  'Theme/DarkBrandForegroundInvertedHover': string;
+  'Theme/DarkBrandForegroundInvertedPressed': string;
+  'Theme/DarkBrandForegroundInvertedRest': string;
+  'Theme/DarkBrandForegroundLinkHover': string;
+  'Theme/DarkBrandForegroundLinkPressed': string;
+  'Theme/DarkBrandForegroundLinkRest': string;
+  'Theme/DarkBrandForegroundLinkSelected': string;
+  'Theme/DarkBrandForegroundOn LightHover': string;
+  'Theme/DarkBrandForegroundOn LightPressed': string;
+  'Theme/DarkBrandForegroundOn LightRest': string;
+  'Theme/DarkBrandForegroundOn LightSelected': string;
+  'Theme/DarkBrandStroke1Hover': string;
+  'Theme/DarkBrandStroke1Pressed': string;
+  'Theme/DarkBrandStroke1Rest': string;
+  'Theme/DarkBrandStroke1Selected': string;
+  'Theme/DarkBrandStroke2ContrastRest': string;
+  'Theme/DarkBrandStroke2Rest': string;
+  'Theme/DarkBrandStroke3Rest': string;
+  'Theme/DarkBrandStrokeCompoundHover': string;
+  'Theme/DarkBrandStrokeCompoundPressed': string;
+  'Theme/DarkBrandStrokeCompoundRest': string;
+  'Theme/DarkControl logicTheme switch': string;
+  'Theme/DarkData vizBackgroundCoreBlue': string;
+  'Theme/DarkData vizBackgroundCoreGray': string;
+  'Theme/DarkData vizBackgroundCoreGreen': string;
+  'Theme/DarkData vizBackgroundCoreOcean': string;
+  'Theme/DarkData vizBackgroundCoreRed': string;
+  'Theme/DarkData vizBackgroundCoreTeal': string;
+  'Theme/DarkData vizBackgroundCoreYellow': string;
+  'Theme/DarkData vizBackgroundNeutralBlack': string;
+  'Theme/DarkData vizBackgroundSequentialBlue100': string;
+  'Theme/DarkData vizBackgroundSequentialBlue200': string;
+  'Theme/DarkData vizBackgroundSequentialBlue300': string;
+  'Theme/DarkData vizBackgroundSequentialBlue400': string;
+  'Theme/DarkData vizBackgroundSequentialGray100': string;
+  'Theme/DarkData vizBackgroundSequentialGray200': string;
+  'Theme/DarkData vizBackgroundSequentialGray300': string;
+  'Theme/DarkData vizBackgroundSequentialGray400': string;
+  'Theme/DarkData vizBackgroundSequentialGreen100': string;
+  'Theme/DarkData vizBackgroundSequentialGreen200': string;
+  'Theme/DarkData vizBackgroundSequentialGreen300': string;
+  'Theme/DarkData vizBackgroundSequentialGreen400': string;
+  'Theme/DarkData vizBackgroundSequentialOcean100': string;
+  'Theme/DarkData vizBackgroundSequentialOcean200': string;
+  'Theme/DarkData vizBackgroundSequentialOcean300': string;
+  'Theme/DarkData vizBackgroundSequentialOcean400': string;
+  'Theme/DarkData vizBackgroundSequentialRed100': string;
+  'Theme/DarkData vizBackgroundSequentialRed200': string;
+  'Theme/DarkData vizBackgroundSequentialRed300': string;
+  'Theme/DarkData vizBackgroundSequentialRed400': string;
+  'Theme/DarkData vizBackgroundSequentialTeal100': string;
+  'Theme/DarkData vizBackgroundSequentialTeal200': string;
+  'Theme/DarkData vizBackgroundSequentialTeal300': string;
+  'Theme/DarkData vizBackgroundSequentialTeal400': string;
+  'Theme/DarkData vizBackgroundSequentialYellow100': string;
+  'Theme/DarkData vizBackgroundSequentialYellow200': string;
+  'Theme/DarkData vizBackgroundSequentialYellow300': string;
+  'Theme/DarkData vizBackgroundSequentialYellow400': string;
+  'Theme/DarkData vizForegroundAccessibilityText dark bkgd': string;
+  'Theme/DarkData vizForegroundAccessibilityText light bkgd': string;
+  'Theme/DarkData vizForegroundKPI CardText dark bkgd': string;
+  'Theme/DarkData vizForegroundKPI CardText light bkgd': string;
+  'Theme/DarkData vizForegroundLabelsCategorical': string;
+  'Theme/DarkData vizForegroundLabelsColorBlue': string;
+  'Theme/DarkData vizForegroundLabelsColorBlue200': string;
+  'Theme/DarkData vizForegroundLabelsColorBlue400': string;
+  'Theme/DarkData vizForegroundLabelsColorGray': string;
+  'Theme/DarkData vizForegroundLabelsColorGray300': string;
+  'Theme/DarkData vizForegroundLabelsColorGray400': string;
+  'Theme/DarkData vizForegroundLabelsColorGreen': string;
+  'Theme/DarkData vizForegroundLabelsColorGreen300': string;
+  'Theme/DarkData vizForegroundLabelsColorGreen400': string;
+  'Theme/DarkData vizForegroundLabelsColorOcean': string;
+  'Theme/DarkData vizForegroundLabelsColorOcean200': string;
+  'Theme/DarkData vizForegroundLabelsColorOcean400': string;
+  'Theme/DarkData vizForegroundLabelsColorRed': string;
+  'Theme/DarkData vizForegroundLabelsColorRed300': string;
+  'Theme/DarkData vizForegroundLabelsColorRed400': string;
+  'Theme/DarkData vizForegroundLabelsColorTeal': string;
+  'Theme/DarkData vizForegroundLabelsColorTeal300': string;
+  'Theme/DarkData vizForegroundLabelsColorTeal400': string;
+  'Theme/DarkData vizForegroundLabelsColorYellow300': string;
+  'Theme/DarkData vizForegroundLabelsColorYellow400': string;
+  'Theme/DarkData vizForegroundLabelsData': string;
+  'Theme/DarkData vizSemanticBackgroundNegative': string;
+  'Theme/DarkData vizSemanticBackgroundNotice': string;
+  'Theme/DarkData vizSemanticBackgroundPositive': string;
+  'Theme/DarkData vizSemanticForegroundDark bkgdNegative': string;
+  'Theme/DarkData vizSemanticForegroundDark bkgdNotice': string;
+  'Theme/DarkData vizSemanticForegroundDark bkgdPositive': string;
+  'Theme/DarkData vizSemanticForegroundLight bkgdNegative': string;
+  'Theme/DarkData vizSemanticForegroundLight bkgdNotice': string;
+  'Theme/DarkData vizSemanticForegroundLight bkgdPositive': string;
+  'Theme/DarkData vizSemanticStrokeDark bkgdNegative': string;
+  'Theme/DarkData vizSemanticStrokeDark bkgdNotice': string;
+  'Theme/DarkData vizSemanticStrokeDark bkgdPositive': string;
+  'Theme/DarkData vizSemanticStrokeLight bkgdNegative': string;
+  'Theme/DarkData vizSemanticStrokeLight bkgdNotice': string;
+  'Theme/DarkData vizSemanticStrokeLight bkgdPositive': string;
+  'Theme/DarkData vizStrokeAccessible outline': string;
+  'Theme/DarkData vizStrokeAxis-Target-Benchmark': string;
+  'Theme/DarkData vizStrokeColorBlue': string;
+  'Theme/DarkData vizStrokeColorBlue200': string;
+  'Theme/DarkData vizStrokeColorBlue400': string;
+  'Theme/DarkData vizStrokeColorGray': string;
+  'Theme/DarkData vizStrokeColorGray300': string;
+  'Theme/DarkData vizStrokeColorGray400': string;
+  'Theme/DarkData vizStrokeColorGreen': string;
+  'Theme/DarkData vizStrokeColorGreen300': string;
+  'Theme/DarkData vizStrokeColorGreen400': string;
+  'Theme/DarkData vizStrokeColorOcean': string;
+  'Theme/DarkData vizStrokeColorOcean200': string;
+  'Theme/DarkData vizStrokeColorOcean400': string;
+  'Theme/DarkData vizStrokeColorRed': string;
+  'Theme/DarkData vizStrokeColorRed300': string;
+  'Theme/DarkData vizStrokeColorRed400': string;
+  'Theme/DarkData vizStrokeColorTeal': string;
+  'Theme/DarkData vizStrokeColorTeal300': string;
+  'Theme/DarkData vizStrokeColorTeal400': string;
+  'Theme/DarkData vizStrokeColorYellow': string;
+  'Theme/DarkData vizStrokeColorYellow300': string;
+  'Theme/DarkData vizStrokeColorYellow400': string;
+  'Theme/DarkData vizStrokeGridline': string;
+  'Theme/DarkData vizStrokeTrend-Average': string;
+  'Theme/DarkNeutralBackground1Hover': string;
+  'Theme/DarkNeutralBackground1Pressed': string;
+  'Theme/DarkNeutralBackground1Rest': string;
+  'Theme/DarkNeutralBackground1Selected': string;
+  'Theme/DarkNeutralBackground2Rest': string;
+  'Theme/DarkNeutralBackground3Hover': string;
+  'Theme/DarkNeutralBackground3Pressed': string;
+  'Theme/DarkNeutralBackground3Rest': string;
+  'Theme/DarkNeutralBackground4Hover': string;
+  'Theme/DarkNeutralBackground4Pressed': string;
+  'Theme/DarkNeutralBackground4Rest': string;
+  'Theme/DarkNeutralBackground5Rest': string;
+  'Theme/DarkNeutralBackground6Rest': string;
+  'Theme/DarkNeutralBackgroundAlpha1Rest': string;
+  'Theme/DarkNeutralBackgroundAlpha2Rest': string;
+  'Theme/DarkNeutralBackgroundDisabledRest': string;
+  'Theme/DarkNeutralBackgroundInvertedDisabledRest': string;
+  'Theme/DarkNeutralBackgroundInvertedRest': string;
+  'Theme/DarkNeutralBackgroundOverlayRest': string;
+  'Theme/DarkNeutralBackgroundOverlayScrollbarRest': string;
+  'Theme/DarkNeutralBackgroundStaticRest': string;
+  'Theme/DarkNeutralBackgroundStencil1Rest': string;
+  'Theme/DarkNeutralBackgroundStencil2Rest': string;
+  'Theme/DarkNeutralBackgroundSubtleHover': string;
+  'Theme/DarkNeutralBackgroundSubtleInvertedHover': string;
+  'Theme/DarkNeutralBackgroundSubtleInvertedPressed': string;
+  'Theme/DarkNeutralBackgroundSubtleInvertedRest': string;
+  'Theme/DarkNeutralBackgroundSubtleInvertedSelected': string;
+  'Theme/DarkNeutralBackgroundSubtleLight alphaHover': string;
+  'Theme/DarkNeutralBackgroundSubtleLight alphaPressed': string;
+  'Theme/DarkNeutralBackgroundSubtleLight alphaSelected': string;
+  'Theme/DarkNeutralBackgroundSubtlePressed': string;
+  'Theme/DarkNeutralBackgroundSubtleRest': string;
+  'Theme/DarkNeutralBackgroundSubtleSelected': string;
+  'Theme/DarkNeutralBackgroundTransparentHover': string;
+  'Theme/DarkNeutralBackgroundTransparentPressed': string;
+  'Theme/DarkNeutralBackgroundTransparentRest': string;
+  'Theme/DarkNeutralBackgroundTransparentSelected': string;
+  'Theme/DarkNeutralForeground1Hover': string;
+  'Theme/DarkNeutralForeground1Pressed': string;
+  'Theme/DarkNeutralForeground1Rest primary text': string;
+  'Theme/DarkNeutralForeground1Selected': string;
+  'Theme/DarkNeutralForeground2BrandHover': string;
+  'Theme/DarkNeutralForeground2BrandPressed': string;
+  'Theme/DarkNeutralForeground2BrandRest': string;
+  'Theme/DarkNeutralForeground2BrandSelected': string;
+  'Theme/DarkNeutralForeground2Hover': string;
+  'Theme/DarkNeutralForeground2LinkHover': string;
+  'Theme/DarkNeutralForeground2LinkPressed': string;
+  'Theme/DarkNeutralForeground2LinkRest': string;
+  'Theme/DarkNeutralForeground2LinkSelected': string;
+  'Theme/DarkNeutralForeground2Pressed': string;
+  'Theme/DarkNeutralForeground2Rest secondary text': string;
+  'Theme/DarkNeutralForeground2Selected': string;
+  'Theme/DarkNeutralForeground4Rest': string;
+  'Theme/DarkNeutralForegroundDisabled2Rest': string;
+  'Theme/DarkNeutralForegroundDisabledRest': string;
+  'Theme/DarkNeutralForegroundInverted1Hover': string;
+  'Theme/DarkNeutralForegroundInverted1Pressed': string;
+  'Theme/DarkNeutralForegroundInverted1Rest': string;
+  'Theme/DarkNeutralForegroundInverted1Selected': string;
+  'Theme/DarkNeutralForegroundInverted2Rest': string;
+  'Theme/DarkNeutralForegroundInvertedDisabledRest': string;
+  'Theme/DarkNeutralForegroundInvertedLinkHover': string;
+  'Theme/DarkNeutralForegroundInvertedLinkPressed': string;
+  'Theme/DarkNeutralForegroundInvertedLinkRest': string;
+  'Theme/DarkNeutralForegroundInvertedLinkSelected': string;
+  'Theme/DarkNeutralForegroundOn BrandRest': string;
+  'Theme/DarkNeutralForegroundStaticInvertedRest': string;
+  'Theme/DarkNeutralStroke1Hover': string;
+  'Theme/DarkNeutralStroke1Pressed': string;
+  'Theme/DarkNeutralStroke1Rest': string;
+  'Theme/DarkNeutralStroke1Selected': string;
+  'Theme/DarkNeutralStroke2Rest': string;
+  'Theme/DarkNeutralStroke3Rest': string;
+  'Theme/DarkNeutralStrokeAccessibleHover': string;
+  'Theme/DarkNeutralStrokeAccessiblePressed': string;
+  'Theme/DarkNeutralStrokeAccessibleRest': string;
+  'Theme/DarkNeutralStrokeAccessibleSelected': string;
+  'Theme/DarkNeutralStrokeAlpha1Rest': string;
+  'Theme/DarkNeutralStrokeAlpha2Rest': string;
+  'Theme/DarkNeutralStrokeDisabledInvertedRest': string;
+  'Theme/DarkNeutralStrokeDisabledRest': string;
+  'Theme/DarkNeutralStrokeFocus1Rest': string;
+  'Theme/DarkNeutralStrokeFocus2Rest': string;
+  'Theme/DarkNeutralStrokeOn Brand1Rest': string;
+  'Theme/DarkNeutralStrokeOn Brand2Rest': string;
+  'Theme/DarkNeutralStrokeSubtleRest': string;
+  'Theme/DarkNeutralStrokeTransparentDisabledRest': string;
+  'Theme/DarkNeutralStrokeTransparentInteractiveRest': string;
+  'Theme/DarkNeutralStrokeTransparentRest': string;
+  'Theme/DarkShadowAmbient': string;
+  'Theme/DarkShadowAmbient-darker': string;
+  'Theme/DarkShadowAmbient-lighter': string;
+  'Theme/DarkShadowBrand-ambient': string;
+  'Theme/DarkShadowBrand-key': string;
+  'Theme/DarkShadowKey': string;
+  'Theme/DarkShadowKey-darker': string;
+  'Theme/DarkShadowKey-lighter': string;
+  'Theme/DarkStatusAvailableForeground3Rest': string;
+  'Theme/DarkStatusAwayBackground3Rest': string;
+  'Theme/DarkStatusDangerBackground1Rest': string;
+  'Theme/DarkStatusDangerBackground3Rest': string;
+  'Theme/DarkStatusDangerForeground1Rest': string;
+  'Theme/DarkStatusDangerForeground3Rest': string;
+  'Theme/DarkStatusDangerStroke1Rest': string;
+  'Theme/DarkStatusDangerStroke2Rest': string;
+  'Theme/DarkStatusGenericAnchorBackground2Rest': string;
+  'Theme/DarkStatusGenericAnchorForeground2Rest': string;
+  'Theme/DarkStatusGenericAnchorStrokeActiveRest': string;
+  'Theme/DarkStatusGenericInformationBackground1Hover': string;
+  'Theme/DarkStatusGenericInformationBackground1Pressed': string;
+  'Theme/DarkStatusGenericInformationBackground1Rest': string;
+  'Theme/DarkStatusGenericInformationForegroundHover': string;
+  'Theme/DarkStatusGenericInformationForegroundPressed': string;
+  'Theme/DarkStatusGenericInformationForegroundRest': string;
+  'Theme/DarkStatusGenericInformationStroke1Rest': string;
+  'Theme/DarkStatusGenericInformationStroke2Hover': string;
+  'Theme/DarkStatusGenericInformationStroke2Pressed': string;
+  'Theme/DarkStatusGenericInformationStroke2Rest': string;
+  'Theme/DarkStatusOofForeground3Rest': string;
+  'Theme/DarkStatusSevereBackground1Rest': string;
+  'Theme/DarkStatusSevereBackground3Rest': string;
+  'Theme/DarkStatusSevereForeground1Rest': string;
+  'Theme/DarkStatusSevereForeground3Rest': string;
+  'Theme/DarkStatusSevereStroke1Rest': string;
+  'Theme/DarkStatusSevereStroke2Rest': string;
+  'Theme/DarkStatusSuccessBackground1Rest': string;
+  'Theme/DarkStatusSuccessBackground3Rest': string;
+  'Theme/DarkStatusSuccessForeground1Rest': string;
+  'Theme/DarkStatusSuccessForeground3Rest': string;
+  'Theme/DarkStatusSuccessStroke1Rest': string;
+  'Theme/DarkStatusSuccessStroke2Rest': string;
+  'Theme/DarkStatusWarningBackground1Rest': string;
+  'Theme/DarkStatusWarningBackground3Rest': string;
+  'Theme/DarkStatusWarningForeground1Rest': string;
+  'Theme/DarkStatusWarningForeground3Rest': string;
+  'Theme/DarkStatusWarningStroke1Rest': string;
+  'Theme/DarkStatusWarningStroke2Rest': string;
+  'Theme/Light/Theme/LightBrandBackground1Hover': string;
+  'Theme/Light/Theme/LightBrandBackground1Pressed': string;
+  'Theme/Light/Theme/LightBrandBackground1Rest': string;
+  'Theme/Light/Theme/LightBrandBackground1Selected': string;
+  'Theme/Light/Theme/LightBrandBackground2Hover': string;
+  'Theme/Light/Theme/LightBrandBackground2Pressed': string;
+  'Theme/Light/Theme/LightBrandBackground2Rest': string;
+  'Theme/Light/Theme/LightBrandBackground3Rest': string;
+  'Theme/Light/Theme/LightBrandBackgroundCompoundHover': string;
+  'Theme/Light/Theme/LightBrandBackgroundCompoundPressed': string;
+  'Theme/Light/Theme/LightBrandBackgroundCompoundRest': string;
+  'Theme/Light/Theme/LightBrandBackgroundInvertedHover': string;
+  'Theme/Light/Theme/LightBrandBackgroundInvertedPressed': string;
+  'Theme/Light/Theme/LightBrandBackgroundInvertedRest': string;
+  'Theme/Light/Theme/LightBrandBackgroundInvertedSelected': string;
+  'Theme/Light/Theme/LightBrandBackgroundStaticRest': string;
+  'Theme/Light/Theme/LightBrandForeground1Hover': string;
+  'Theme/Light/Theme/LightBrandForeground1Pressed': string;
+  'Theme/Light/Theme/LightBrandForeground1Rest': string;
+  'Theme/Light/Theme/LightBrandForeground1Selected': string;
+  'Theme/Light/Theme/LightBrandForeground2Hover': string;
+  'Theme/Light/Theme/LightBrandForeground2Pressed': string;
+  'Theme/Light/Theme/LightBrandForeground2Rest': string;
+  'Theme/Light/Theme/LightBrandForegroundCompoundHover': string;
+  'Theme/Light/Theme/LightBrandForegroundCompoundPressed': string;
+  'Theme/Light/Theme/LightBrandForegroundCompoundRest': string;
+  'Theme/Light/Theme/LightBrandForegroundInvertedHover': string;
+  'Theme/Light/Theme/LightBrandForegroundInvertedPressed': string;
+  'Theme/Light/Theme/LightBrandForegroundInvertedRest': string;
+  'Theme/Light/Theme/LightBrandForegroundLinkHover': string;
+  'Theme/Light/Theme/LightBrandForegroundLinkPressed': string;
+  'Theme/Light/Theme/LightBrandForegroundLinkRest': string;
+  'Theme/Light/Theme/LightBrandForegroundLinkSelected': string;
+  'Theme/Light/Theme/LightBrandForegroundOn LightHover': string;
+  'Theme/Light/Theme/LightBrandForegroundOn LightPressed': string;
+  'Theme/Light/Theme/LightBrandForegroundOn LightRest': string;
+  'Theme/Light/Theme/LightBrandForegroundOn LightSelected': string;
+  'Theme/Light/Theme/LightBrandStroke1Hover': string;
+  'Theme/Light/Theme/LightBrandStroke1Pressed': string;
+  'Theme/Light/Theme/LightBrandStroke1Rest': string;
+  'Theme/Light/Theme/LightBrandStroke1Selected': string;
+  'Theme/Light/Theme/LightBrandStroke2ContrastRest': string;
+  'Theme/Light/Theme/LightBrandStroke2Rest': string;
+  'Theme/Light/Theme/LightBrandStroke3Rest': string;
+  'Theme/Light/Theme/LightBrandStrokeCompoundHover': string;
+  'Theme/Light/Theme/LightBrandStrokeCompoundPressed': string;
+  'Theme/Light/Theme/LightBrandStrokeCompoundRest': string;
+  'Theme/Light/Theme/LightControl logicTheme switch': string;
+  'Theme/Light/Theme/LightData vizBackgroundCoreBlue': string;
+  'Theme/Light/Theme/LightData vizBackgroundCoreGray': string;
+  'Theme/Light/Theme/LightData vizBackgroundCoreGreen': string;
+  'Theme/Light/Theme/LightData vizBackgroundCoreOcean': string;
+  'Theme/Light/Theme/LightData vizBackgroundCoreRed': string;
+  'Theme/Light/Theme/LightData vizBackgroundCoreTeal': string;
+  'Theme/Light/Theme/LightData vizBackgroundCoreYellow': string;
+  'Theme/Light/Theme/LightData vizBackgroundNeutralBlack': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue100': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue200': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue300': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue400': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGray100': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGray200': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGray300': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGray400': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen100': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen200': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen300': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen400': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean100': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean200': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean300': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean400': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialRed100': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialRed200': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialRed300': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialRed400': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal100': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal200': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal300': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal400': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow100': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow200': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow300': string;
+  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow400': string;
+  'Theme/Light/Theme/LightData vizForegroundAccessibilityText dark bkgd': string;
+  'Theme/Light/Theme/LightData vizForegroundAccessibilityText light bkgd': string;
+  'Theme/Light/Theme/LightData vizForegroundKPI CardText dark bkgd': string;
+  'Theme/Light/Theme/LightData vizForegroundKPI CardText light bkgd': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsCategorical': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue200': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue400': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray300': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray400': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen300': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen400': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean200': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean400': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed300': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed400': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal300': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal400': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorYellow300': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorYellow400': string;
+  'Theme/Light/Theme/LightData vizForegroundLabelsData': string;
+  'Theme/Light/Theme/LightData vizSemanticBackgroundNegative': string;
+  'Theme/Light/Theme/LightData vizSemanticBackgroundNotice': string;
+  'Theme/Light/Theme/LightData vizSemanticBackgroundPositive': string;
+  'Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdNegative': string;
+  'Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdNotice': string;
+  'Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdPositive': string;
+  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdNegative': string;
+  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdNotice': string;
+  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdPositive': string;
+  'Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdNegative': string;
+  'Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdNotice': string;
+  'Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdPositive': string;
+  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdNegative': string;
+  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdNotice': string;
+  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdPositive': string;
+  'Theme/Light/Theme/LightData vizStrokeAccessible outline': string;
+  'Theme/Light/Theme/LightData vizStrokeAxis-Target-Benchmark': string;
+  'Theme/Light/Theme/LightData vizStrokeColorBlue': string;
+  'Theme/Light/Theme/LightData vizStrokeColorBlue200': string;
+  'Theme/Light/Theme/LightData vizStrokeColorBlue400': string;
+  'Theme/Light/Theme/LightData vizStrokeColorGray': string;
+  'Theme/Light/Theme/LightData vizStrokeColorGray300': string;
+  'Theme/Light/Theme/LightData vizStrokeColorGray400': string;
+  'Theme/Light/Theme/LightData vizStrokeColorGreen': string;
+  'Theme/Light/Theme/LightData vizStrokeColorGreen300': string;
+  'Theme/Light/Theme/LightData vizStrokeColorGreen400': string;
+  'Theme/Light/Theme/LightData vizStrokeColorOcean': string;
+  'Theme/Light/Theme/LightData vizStrokeColorOcean200': string;
+  'Theme/Light/Theme/LightData vizStrokeColorOcean400': string;
+  'Theme/Light/Theme/LightData vizStrokeColorRed': string;
+  'Theme/Light/Theme/LightData vizStrokeColorRed300': string;
+  'Theme/Light/Theme/LightData vizStrokeColorRed400': string;
+  'Theme/Light/Theme/LightData vizStrokeColorTeal': string;
+  'Theme/Light/Theme/LightData vizStrokeColorTeal300': string;
+  'Theme/Light/Theme/LightData vizStrokeColorTeal400': string;
+  'Theme/Light/Theme/LightData vizStrokeColorYellow': string;
+  'Theme/Light/Theme/LightData vizStrokeColorYellow300': string;
+  'Theme/Light/Theme/LightData vizStrokeColorYellow400': string;
+  'Theme/Light/Theme/LightData vizStrokeGridline': string;
+  'Theme/Light/Theme/LightData vizStrokeTrend-Average': string;
+  'Theme/Light/Theme/LightNeutralBackground1Hover': string;
+  'Theme/Light/Theme/LightNeutralBackground1Pressed': string;
+  'Theme/Light/Theme/LightNeutralBackground1Rest': string;
+  'Theme/Light/Theme/LightNeutralBackground1Selected': string;
+  'Theme/Light/Theme/LightNeutralBackground2Rest': string;
+  'Theme/Light/Theme/LightNeutralBackground3Hover': string;
+  'Theme/Light/Theme/LightNeutralBackground3Pressed': string;
+  'Theme/Light/Theme/LightNeutralBackground3Rest': string;
+  'Theme/Light/Theme/LightNeutralBackground4Hover': string;
+  'Theme/Light/Theme/LightNeutralBackground4Pressed': string;
+  'Theme/Light/Theme/LightNeutralBackground4Rest': string;
+  'Theme/Light/Theme/LightNeutralBackground5Rest': string;
+  'Theme/Light/Theme/LightNeutralBackground6Rest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundAlpha1Rest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundAlpha2Rest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundDisabledRest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundInvertedDisabledRest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundInvertedRest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundOverlayRest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundOverlayScrollbarRest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundStaticRest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundStencil1Rest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundStencil2Rest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleHover': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedHover': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedPressed': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedRest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedSelected': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaHover': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaPressed': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaSelected': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtlePressed': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleRest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleSelected': string;
+  'Theme/Light/Theme/LightNeutralBackgroundTransparentHover': string;
+  'Theme/Light/Theme/LightNeutralBackgroundTransparentPressed': string;
+  'Theme/Light/Theme/LightNeutralBackgroundTransparentRest': string;
+  'Theme/Light/Theme/LightNeutralBackgroundTransparentSelected': string;
+  'Theme/Light/Theme/LightNeutralForeground1Hover': string;
+  'Theme/Light/Theme/LightNeutralForeground1Pressed': string;
+  'Theme/Light/Theme/LightNeutralForeground1Rest primary text': string;
+  'Theme/Light/Theme/LightNeutralForeground1Selected': string;
+  'Theme/Light/Theme/LightNeutralForeground2BrandHover': string;
+  'Theme/Light/Theme/LightNeutralForeground2BrandPressed': string;
+  'Theme/Light/Theme/LightNeutralForeground2BrandRest': string;
+  'Theme/Light/Theme/LightNeutralForeground2BrandSelected': string;
+  'Theme/Light/Theme/LightNeutralForeground2Hover': string;
+  'Theme/Light/Theme/LightNeutralForeground2LinkHover': string;
+  'Theme/Light/Theme/LightNeutralForeground2LinkPressed': string;
+  'Theme/Light/Theme/LightNeutralForeground2LinkRest': string;
+  'Theme/Light/Theme/LightNeutralForeground2LinkSelected': string;
+  'Theme/Light/Theme/LightNeutralForeground2Pressed': string;
+  'Theme/Light/Theme/LightNeutralForeground2Rest secondary text': string;
+  'Theme/Light/Theme/LightNeutralForeground2Selected': string;
+  'Theme/Light/Theme/LightNeutralForeground4Rest': string;
+  'Theme/Light/Theme/LightNeutralForegroundDisabled2Rest': string;
+  'Theme/Light/Theme/LightNeutralForegroundDisabledRest': string;
+  'Theme/Light/Theme/LightNeutralForegroundInverted1Hover': string;
+  'Theme/Light/Theme/LightNeutralForegroundInverted1Pressed': string;
+  'Theme/Light/Theme/LightNeutralForegroundInverted1Rest': string;
+  'Theme/Light/Theme/LightNeutralForegroundInverted1Selected': string;
+  'Theme/Light/Theme/LightNeutralForegroundInverted2Rest': string;
+  'Theme/Light/Theme/LightNeutralForegroundInvertedDisabledRest': string;
+  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkHover': string;
+  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkPressed': string;
+  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkRest': string;
+  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkSelected': string;
+  'Theme/Light/Theme/LightNeutralForegroundOn BrandRest': string;
+  'Theme/Light/Theme/LightNeutralForegroundStaticInvertedRest': string;
+  'Theme/Light/Theme/LightNeutralStroke1Hover': string;
+  'Theme/Light/Theme/LightNeutralStroke1Pressed': string;
+  'Theme/Light/Theme/LightNeutralStroke1Rest': string;
+  'Theme/Light/Theme/LightNeutralStroke1Selected': string;
+  'Theme/Light/Theme/LightNeutralStroke2Rest': string;
+  'Theme/Light/Theme/LightNeutralStroke3Rest': string;
+  'Theme/Light/Theme/LightNeutralStrokeAccessibleHover': string;
+  'Theme/Light/Theme/LightNeutralStrokeAccessiblePressed': string;
+  'Theme/Light/Theme/LightNeutralStrokeAccessibleRest': string;
+  'Theme/Light/Theme/LightNeutralStrokeAccessibleSelected': string;
+  'Theme/Light/Theme/LightNeutralStrokeAlpha1Rest': string;
+  'Theme/Light/Theme/LightNeutralStrokeAlpha2Rest': string;
+  'Theme/Light/Theme/LightNeutralStrokeDisabledInvertedRest': string;
+  'Theme/Light/Theme/LightNeutralStrokeDisabledRest': string;
+  'Theme/Light/Theme/LightNeutralStrokeFocus1Rest': string;
+  'Theme/Light/Theme/LightNeutralStrokeFocus2Rest': string;
+  'Theme/Light/Theme/LightNeutralStrokeOn Brand1Rest': string;
+  'Theme/Light/Theme/LightNeutralStrokeOn Brand2Rest': string;
+  'Theme/Light/Theme/LightNeutralStrokeSubtleRest': string;
+  'Theme/Light/Theme/LightNeutralStrokeTransparentDisabledRest': string;
+  'Theme/Light/Theme/LightNeutralStrokeTransparentInteractiveRest': string;
+  'Theme/Light/Theme/LightNeutralStrokeTransparentRest': string;
+  'Theme/Light/Theme/LightShadowAmbient': string;
+  'Theme/Light/Theme/LightShadowAmbient-darker': string;
+  'Theme/Light/Theme/LightShadowAmbient-lighter': string;
+  'Theme/Light/Theme/LightShadowBrand-ambient': string;
+  'Theme/Light/Theme/LightShadowBrand-key': string;
+  'Theme/Light/Theme/LightShadowKey': string;
+  'Theme/Light/Theme/LightShadowKey-darker': string;
+  'Theme/Light/Theme/LightShadowKey-lighter': string;
+  'Theme/Light/Theme/LightStatusAvailableForeground3Rest': string;
+  'Theme/Light/Theme/LightStatusAwayBackground3Rest': string;
+  'Theme/Light/Theme/LightStatusDangerBackground1Rest': string;
+  'Theme/Light/Theme/LightStatusDangerBackground3Rest': string;
+  'Theme/Light/Theme/LightStatusDangerForeground1Rest': string;
+  'Theme/Light/Theme/LightStatusDangerForeground3Rest': string;
+  'Theme/Light/Theme/LightStatusDangerStroke1Rest': string;
+  'Theme/Light/Theme/LightStatusDangerStroke2Rest': string;
+  'Theme/Light/Theme/LightStatusGenericAnchorBackground2Rest': string;
+  'Theme/Light/Theme/LightStatusGenericAnchorForeground2Rest': string;
+  'Theme/Light/Theme/LightStatusGenericAnchorStrokeActiveRest': string;
+  'Theme/Light/Theme/LightStatusGenericInformationBackground1Hover': string;
+  'Theme/Light/Theme/LightStatusGenericInformationBackground1Pressed': string;
+  'Theme/Light/Theme/LightStatusGenericInformationBackground1Rest': string;
+  'Theme/Light/Theme/LightStatusGenericInformationForegroundHover': string;
+  'Theme/Light/Theme/LightStatusGenericInformationForegroundPressed': string;
+  'Theme/Light/Theme/LightStatusGenericInformationForegroundRest': string;
+  'Theme/Light/Theme/LightStatusGenericInformationStroke1Rest': string;
+  'Theme/Light/Theme/LightStatusGenericInformationStroke2Hover': string;
+  'Theme/Light/Theme/LightStatusGenericInformationStroke2Pressed': string;
+  'Theme/Light/Theme/LightStatusGenericInformationStroke2Rest': string;
+  'Theme/Light/Theme/LightStatusOofForeground3Rest': string;
+  'Theme/Light/Theme/LightStatusSevereBackground1Rest': string;
+  'Theme/Light/Theme/LightStatusSevereBackground3Rest': string;
+  'Theme/Light/Theme/LightStatusSevereForeground1Rest': string;
+  'Theme/Light/Theme/LightStatusSevereForeground3Rest': string;
+  'Theme/Light/Theme/LightStatusSevereStroke1Rest': string;
+  'Theme/Light/Theme/LightStatusSevereStroke2Rest': string;
+  'Theme/Light/Theme/LightStatusSuccessBackground1Rest': string;
+  'Theme/Light/Theme/LightStatusSuccessBackground3Rest': string;
+  'Theme/Light/Theme/LightStatusSuccessForeground1Rest': string;
+  'Theme/Light/Theme/LightStatusSuccessForeground3Rest': string;
+  'Theme/Light/Theme/LightStatusSuccessStroke1Rest': string;
+  'Theme/Light/Theme/LightStatusSuccessStroke2Rest': string;
+  'Theme/Light/Theme/LightStatusWarningBackground1Rest': string;
+  'Theme/Light/Theme/LightStatusWarningBackground3Rest': string;
+  'Theme/Light/Theme/LightStatusWarningForeground1Rest': string;
+  'Theme/Light/Theme/LightStatusWarningForeground3Rest': string;
+  'Theme/Light/Theme/LightStatusWarningStroke1Rest': string;
+  'Theme/Light/Theme/LightStatusWarningStroke2Rest': string;
+  'Theme/LightBrandBackground1Hover': string;
+  'Theme/LightBrandBackground1Pressed': string;
+  'Theme/LightBrandBackground1Rest': string;
+  'Theme/LightBrandBackground1Selected': string;
+  'Theme/LightBrandBackground2Hover': string;
+  'Theme/LightBrandBackground2Pressed': string;
+  'Theme/LightBrandBackground2Rest': string;
+  'Theme/LightBrandBackground3Rest': string;
+  'Theme/LightBrandBackgroundCompoundHover': string;
+  'Theme/LightBrandBackgroundCompoundPressed': string;
+  'Theme/LightBrandBackgroundCompoundRest': string;
+  'Theme/LightBrandBackgroundInvertedHover': string;
+  'Theme/LightBrandBackgroundInvertedPressed': string;
+  'Theme/LightBrandBackgroundInvertedRest': string;
+  'Theme/LightBrandBackgroundInvertedSelected': string;
+  'Theme/LightBrandBackgroundStaticRest': string;
+  'Theme/LightBrandForeground1Hover': string;
+  'Theme/LightBrandForeground1Pressed': string;
+  'Theme/LightBrandForeground1Rest': string;
+  'Theme/LightBrandForeground1Selected': string;
+  'Theme/LightBrandForeground2Hover': string;
+  'Theme/LightBrandForeground2Pressed': string;
+  'Theme/LightBrandForeground2Rest': string;
+  'Theme/LightBrandForegroundCompoundHover': string;
+  'Theme/LightBrandForegroundCompoundPressed': string;
+  'Theme/LightBrandForegroundCompoundRest': string;
+  'Theme/LightBrandForegroundInvertedHover': string;
+  'Theme/LightBrandForegroundInvertedPressed': string;
+  'Theme/LightBrandForegroundInvertedRest': string;
+  'Theme/LightBrandForegroundLinkHover': string;
+  'Theme/LightBrandForegroundLinkPressed': string;
+  'Theme/LightBrandForegroundLinkRest': string;
+  'Theme/LightBrandForegroundLinkSelected': string;
+  'Theme/LightBrandForegroundOn LightHover': string;
+  'Theme/LightBrandForegroundOn LightPressed': string;
+  'Theme/LightBrandForegroundOn LightRest': string;
+  'Theme/LightBrandForegroundOn LightSelected': string;
+  'Theme/LightBrandStroke1Hover': string;
+  'Theme/LightBrandStroke1Pressed': string;
+  'Theme/LightBrandStroke1Rest': string;
+  'Theme/LightBrandStroke1Selected': string;
+  'Theme/LightBrandStroke2ContrastRest': string;
+  'Theme/LightBrandStroke2Rest': string;
+  'Theme/LightBrandStroke3Rest': string;
+  'Theme/LightBrandStrokeCompoundHover': string;
+  'Theme/LightBrandStrokeCompoundPressed': string;
+  'Theme/LightBrandStrokeCompoundRest': string;
+  'Theme/LightControl logicTheme switch': string;
+  'Theme/LightData vizBackgroundCoreBlue': string;
+  'Theme/LightData vizBackgroundCoreGray': string;
+  'Theme/LightData vizBackgroundCoreGreen': string;
+  'Theme/LightData vizBackgroundCoreOcean': string;
+  'Theme/LightData vizBackgroundCoreRed': string;
+  'Theme/LightData vizBackgroundCoreTeal': string;
+  'Theme/LightData vizBackgroundCoreYellow': string;
+  'Theme/LightData vizBackgroundNeutralBlack': string;
+  'Theme/LightData vizBackgroundSequentialBlue100': string;
+  'Theme/LightData vizBackgroundSequentialBlue200': string;
+  'Theme/LightData vizBackgroundSequentialBlue300': string;
+  'Theme/LightData vizBackgroundSequentialBlue400': string;
+  'Theme/LightData vizBackgroundSequentialGray100': string;
+  'Theme/LightData vizBackgroundSequentialGray200': string;
+  'Theme/LightData vizBackgroundSequentialGray300': string;
+  'Theme/LightData vizBackgroundSequentialGray400': string;
+  'Theme/LightData vizBackgroundSequentialGreen100': string;
+  'Theme/LightData vizBackgroundSequentialGreen200': string;
+  'Theme/LightData vizBackgroundSequentialGreen300': string;
+  'Theme/LightData vizBackgroundSequentialGreen400': string;
+  'Theme/LightData vizBackgroundSequentialOcean100': string;
+  'Theme/LightData vizBackgroundSequentialOcean200': string;
+  'Theme/LightData vizBackgroundSequentialOcean300': string;
+  'Theme/LightData vizBackgroundSequentialOcean400': string;
+  'Theme/LightData vizBackgroundSequentialRed100': string;
+  'Theme/LightData vizBackgroundSequentialRed200': string;
+  'Theme/LightData vizBackgroundSequentialRed300': string;
+  'Theme/LightData vizBackgroundSequentialRed400': string;
+  'Theme/LightData vizBackgroundSequentialTeal100': string;
+  'Theme/LightData vizBackgroundSequentialTeal200': string;
+  'Theme/LightData vizBackgroundSequentialTeal300': string;
+  'Theme/LightData vizBackgroundSequentialTeal400': string;
+  'Theme/LightData vizBackgroundSequentialYellow100': string;
+  'Theme/LightData vizBackgroundSequentialYellow200': string;
+  'Theme/LightData vizBackgroundSequentialYellow300': string;
+  'Theme/LightData vizBackgroundSequentialYellow400': string;
+  'Theme/LightData vizForegroundAccessibilityText dark bkgd': string;
+  'Theme/LightData vizForegroundAccessibilityText light bkgd': string;
+  'Theme/LightData vizForegroundKPI CardText dark bkgd': string;
+  'Theme/LightData vizForegroundKPI CardText light bkgd': string;
+  'Theme/LightData vizForegroundLabelsCategorical': string;
+  'Theme/LightData vizForegroundLabelsColorBlue': string;
+  'Theme/LightData vizForegroundLabelsColorBlue200': string;
+  'Theme/LightData vizForegroundLabelsColorBlue400': string;
+  'Theme/LightData vizForegroundLabelsColorGray': string;
+  'Theme/LightData vizForegroundLabelsColorGray300': string;
+  'Theme/LightData vizForegroundLabelsColorGray400': string;
+  'Theme/LightData vizForegroundLabelsColorGreen': string;
+  'Theme/LightData vizForegroundLabelsColorGreen300': string;
+  'Theme/LightData vizForegroundLabelsColorGreen400': string;
+  'Theme/LightData vizForegroundLabelsColorOcean': string;
+  'Theme/LightData vizForegroundLabelsColorOcean200': string;
+  'Theme/LightData vizForegroundLabelsColorOcean400': string;
+  'Theme/LightData vizForegroundLabelsColorRed': string;
+  'Theme/LightData vizForegroundLabelsColorRed300': string;
+  'Theme/LightData vizForegroundLabelsColorRed400': string;
+  'Theme/LightData vizForegroundLabelsColorTeal': string;
+  'Theme/LightData vizForegroundLabelsColorTeal300': string;
+  'Theme/LightData vizForegroundLabelsColorTeal400': string;
+  'Theme/LightData vizForegroundLabelsColorYellow300': string;
+  'Theme/LightData vizForegroundLabelsColorYellow400': string;
+  'Theme/LightData vizForegroundLabelsData': string;
+  'Theme/LightData vizSemanticBackgroundNegative': string;
+  'Theme/LightData vizSemanticBackgroundNotice': string;
+  'Theme/LightData vizSemanticBackgroundPositive': string;
+  'Theme/LightData vizSemanticForegroundDark bkgdNegative': string;
+  'Theme/LightData vizSemanticForegroundDark bkgdNotice': string;
+  'Theme/LightData vizSemanticForegroundDark bkgdPositive': string;
+  'Theme/LightData vizSemanticForegroundLight bkgdNegative': string;
+  'Theme/LightData vizSemanticForegroundLight bkgdNotice': string;
+  'Theme/LightData vizSemanticForegroundLight bkgdPositive': string;
+  'Theme/LightData vizSemanticStrokeDark bkgdNegative': string;
+  'Theme/LightData vizSemanticStrokeDark bkgdNotice': string;
+  'Theme/LightData vizSemanticStrokeDark bkgdPositive': string;
+  'Theme/LightData vizSemanticStrokeLight bkgdNegative': string;
+  'Theme/LightData vizSemanticStrokeLight bkgdNotice': string;
+  'Theme/LightData vizSemanticStrokeLight bkgdPositive': string;
+  'Theme/LightData vizStrokeAccessible outline': string;
+  'Theme/LightData vizStrokeAxis-Target-Benchmark': string;
+  'Theme/LightData vizStrokeColorBlue': string;
+  'Theme/LightData vizStrokeColorBlue200': string;
+  'Theme/LightData vizStrokeColorBlue400': string;
+  'Theme/LightData vizStrokeColorGray': string;
+  'Theme/LightData vizStrokeColorGray300': string;
+  'Theme/LightData vizStrokeColorGray400': string;
+  'Theme/LightData vizStrokeColorGreen': string;
+  'Theme/LightData vizStrokeColorGreen300': string;
+  'Theme/LightData vizStrokeColorGreen400': string;
+  'Theme/LightData vizStrokeColorOcean': string;
+  'Theme/LightData vizStrokeColorOcean200': string;
+  'Theme/LightData vizStrokeColorOcean400': string;
+  'Theme/LightData vizStrokeColorRed': string;
+  'Theme/LightData vizStrokeColorRed300': string;
+  'Theme/LightData vizStrokeColorRed400': string;
+  'Theme/LightData vizStrokeColorTeal': string;
+  'Theme/LightData vizStrokeColorTeal300': string;
+  'Theme/LightData vizStrokeColorTeal400': string;
+  'Theme/LightData vizStrokeColorYellow': string;
+  'Theme/LightData vizStrokeColorYellow300': string;
+  'Theme/LightData vizStrokeColorYellow400': string;
+  'Theme/LightData vizStrokeGridline': string;
+  'Theme/LightData vizStrokeTrend-Average': string;
+  'Theme/LightNeutralBackground1Hover': string;
+  'Theme/LightNeutralBackground1Pressed': string;
+  'Theme/LightNeutralBackground1Rest': string;
+  'Theme/LightNeutralBackground1Selected': string;
+  'Theme/LightNeutralBackground2Rest': string;
+  'Theme/LightNeutralBackground3Hover': string;
+  'Theme/LightNeutralBackground3Pressed': string;
+  'Theme/LightNeutralBackground3Rest': string;
+  'Theme/LightNeutralBackground4Hover': string;
+  'Theme/LightNeutralBackground4Pressed': string;
+  'Theme/LightNeutralBackground4Rest': string;
+  'Theme/LightNeutralBackground5Rest': string;
+  'Theme/LightNeutralBackground6Rest': string;
+  'Theme/LightNeutralBackgroundAlpha1Rest': string;
+  'Theme/LightNeutralBackgroundAlpha2Rest': string;
+  'Theme/LightNeutralBackgroundDisabledRest': string;
+  'Theme/LightNeutralBackgroundInvertedDisabledRest': string;
+  'Theme/LightNeutralBackgroundInvertedRest': string;
+  'Theme/LightNeutralBackgroundOverlayRest': string;
+  'Theme/LightNeutralBackgroundOverlayScrollbarRest': string;
+  'Theme/LightNeutralBackgroundStaticRest': string;
+  'Theme/LightNeutralBackgroundStencil1Rest': string;
+  'Theme/LightNeutralBackgroundStencil2Rest': string;
+  'Theme/LightNeutralBackgroundSubtleHover': string;
+  'Theme/LightNeutralBackgroundSubtleInvertedHover': string;
+  'Theme/LightNeutralBackgroundSubtleInvertedPressed': string;
+  'Theme/LightNeutralBackgroundSubtleInvertedRest': string;
+  'Theme/LightNeutralBackgroundSubtleInvertedSelected': string;
+  'Theme/LightNeutralBackgroundSubtleLight alphaHover': string;
+  'Theme/LightNeutralBackgroundSubtleLight alphaPressed': string;
+  'Theme/LightNeutralBackgroundSubtleLight alphaSelected': string;
+  'Theme/LightNeutralBackgroundSubtlePressed': string;
+  'Theme/LightNeutralBackgroundSubtleRest': string;
+  'Theme/LightNeutralBackgroundSubtleSelected': string;
+  'Theme/LightNeutralBackgroundTransparentHover': string;
+  'Theme/LightNeutralBackgroundTransparentPressed': string;
+  'Theme/LightNeutralBackgroundTransparentRest': string;
+  'Theme/LightNeutralBackgroundTransparentSelected': string;
+  'Theme/LightNeutralForeground1Hover': string;
+  'Theme/LightNeutralForeground1Pressed': string;
+  'Theme/LightNeutralForeground1Rest primary text': string;
+  'Theme/LightNeutralForeground1Selected': string;
+  'Theme/LightNeutralForeground2BrandHover': string;
+  'Theme/LightNeutralForeground2BrandPressed': string;
+  'Theme/LightNeutralForeground2BrandRest': string;
+  'Theme/LightNeutralForeground2BrandSelected': string;
+  'Theme/LightNeutralForeground2Hover': string;
+  'Theme/LightNeutralForeground2LinkHover': string;
+  'Theme/LightNeutralForeground2LinkPressed': string;
+  'Theme/LightNeutralForeground2LinkRest': string;
+  'Theme/LightNeutralForeground2LinkSelected': string;
+  'Theme/LightNeutralForeground2Pressed': string;
+  'Theme/LightNeutralForeground2Rest secondary text': string;
+  'Theme/LightNeutralForeground2Selected': string;
+  'Theme/LightNeutralForeground4Rest': string;
+  'Theme/LightNeutralForegroundDisabled2Rest': string;
+  'Theme/LightNeutralForegroundDisabledRest': string;
+  'Theme/LightNeutralForegroundInverted1Hover': string;
+  'Theme/LightNeutralForegroundInverted1Pressed': string;
+  'Theme/LightNeutralForegroundInverted1Rest': string;
+  'Theme/LightNeutralForegroundInverted1Selected': string;
+  'Theme/LightNeutralForegroundInverted2Rest': string;
+  'Theme/LightNeutralForegroundInvertedDisabledRest': string;
+  'Theme/LightNeutralForegroundInvertedLinkHover': string;
+  'Theme/LightNeutralForegroundInvertedLinkPressed': string;
+  'Theme/LightNeutralForegroundInvertedLinkRest': string;
+  'Theme/LightNeutralForegroundInvertedLinkSelected': string;
+  'Theme/LightNeutralForegroundOn BrandRest': string;
+  'Theme/LightNeutralForegroundStaticInvertedRest': string;
+  'Theme/LightNeutralStroke1Hover': string;
+  'Theme/LightNeutralStroke1Pressed': string;
+  'Theme/LightNeutralStroke1Rest': string;
+  'Theme/LightNeutralStroke1Selected': string;
+  'Theme/LightNeutralStroke2Rest': string;
+  'Theme/LightNeutralStroke3Rest': string;
+  'Theme/LightNeutralStrokeAccessibleHover': string;
+  'Theme/LightNeutralStrokeAccessiblePressed': string;
+  'Theme/LightNeutralStrokeAccessibleRest': string;
+  'Theme/LightNeutralStrokeAccessibleSelected': string;
+  'Theme/LightNeutralStrokeAlpha1Rest': string;
+  'Theme/LightNeutralStrokeAlpha2Rest': string;
+  'Theme/LightNeutralStrokeDisabledInvertedRest': string;
+  'Theme/LightNeutralStrokeDisabledRest': string;
+  'Theme/LightNeutralStrokeFocus1Rest': string;
+  'Theme/LightNeutralStrokeFocus2Rest': string;
+  'Theme/LightNeutralStrokeOn Brand1Rest': string;
+  'Theme/LightNeutralStrokeOn Brand2Rest': string;
+  'Theme/LightNeutralStrokeSubtleRest': string;
+  'Theme/LightNeutralStrokeTransparentDisabledRest': string;
+  'Theme/LightNeutralStrokeTransparentInteractiveRest': string;
+  'Theme/LightNeutralStrokeTransparentRest': string;
+  'Theme/LightShadowAmbient': string;
+  'Theme/LightShadowAmbient-darker': string;
+  'Theme/LightShadowAmbient-lighter': string;
+  'Theme/LightShadowBrand-ambient': string;
+  'Theme/LightShadowBrand-key': string;
+  'Theme/LightShadowKey': string;
+  'Theme/LightShadowKey-darker': string;
+  'Theme/LightShadowKey-lighter': string;
+  'Theme/LightStatusAvailableForeground3Rest': string;
+  'Theme/LightStatusAwayBackground3Rest': string;
+  'Theme/LightStatusDangerBackground1Rest': string;
+  'Theme/LightStatusDangerBackground3Rest': string;
+  'Theme/LightStatusDangerForeground1Rest': string;
+  'Theme/LightStatusDangerForeground3Rest': string;
+  'Theme/LightStatusDangerStroke1Rest': string;
+  'Theme/LightStatusDangerStroke2Rest': string;
+  'Theme/LightStatusGenericAnchorBackground2Rest': string;
+  'Theme/LightStatusGenericAnchorForeground2Rest': string;
+  'Theme/LightStatusGenericAnchorStrokeActiveRest': string;
+  'Theme/LightStatusGenericInformationBackground1Hover': string;
+  'Theme/LightStatusGenericInformationBackground1Pressed': string;
+  'Theme/LightStatusGenericInformationBackground1Rest': string;
+  'Theme/LightStatusGenericInformationForegroundHover': string;
+  'Theme/LightStatusGenericInformationForegroundPressed': string;
+  'Theme/LightStatusGenericInformationForegroundRest': string;
+  'Theme/LightStatusGenericInformationStroke1Rest': string;
+  'Theme/LightStatusGenericInformationStroke2Hover': string;
+  'Theme/LightStatusGenericInformationStroke2Pressed': string;
+  'Theme/LightStatusGenericInformationStroke2Rest': string;
+  'Theme/LightStatusOofForeground3Rest': string;
+  'Theme/LightStatusSevereBackground1Rest': string;
+  'Theme/LightStatusSevereBackground3Rest': string;
+  'Theme/LightStatusSevereForeground1Rest': string;
+  'Theme/LightStatusSevereForeground3Rest': string;
+  'Theme/LightStatusSevereStroke1Rest': string;
+  'Theme/LightStatusSevereStroke2Rest': string;
+  'Theme/LightStatusSuccessBackground1Rest': string;
+  'Theme/LightStatusSuccessBackground3Rest': string;
+  'Theme/LightStatusSuccessForeground1Rest': string;
+  'Theme/LightStatusSuccessForeground3Rest': string;
+  'Theme/LightStatusSuccessStroke1Rest': string;
+  'Theme/LightStatusSuccessStroke2Rest': string;
+  'Theme/LightStatusWarningBackground1Rest': string;
+  'Theme/LightStatusWarningBackground3Rest': string;
+  'Theme/LightStatusWarningForeground1Rest': string;
+  'Theme/LightStatusWarningForeground3Rest': string;
+  'Theme/LightStatusWarningStroke1Rest': string;
+  'Theme/LightStatusWarningStroke2Rest': string;
+  'Tree indentation/Level 1/Tree indentation/Level 1Tree-padding-left': string;
+  'Tree indentation/Level 1/Tree indentation/Level 1Treeleaf-padding-left': string;
+  'Tree indentation/Level 10/Tree indentation/Level 10Tree-padding-left': string;
+  'Tree indentation/Level 10/Tree indentation/Level 10Treeleaf-padding-left': string;
+  'Tree indentation/Level 10Tree-padding-left': string;
+  'Tree indentation/Level 10Treeleaf-padding-left': string;
+  'Tree indentation/Level 1Tree-padding-left': string;
+  'Tree indentation/Level 1Treeleaf-padding-left': string;
+  'Tree indentation/Level 2/Tree indentation/Level 2Tree-padding-left': string;
+  'Tree indentation/Level 2/Tree indentation/Level 2Treeleaf-padding-left': string;
+  'Tree indentation/Level 2Tree-padding-left': string;
+  'Tree indentation/Level 2Treeleaf-padding-left': string;
+  'Tree indentation/Level 3/Tree indentation/Level 3Tree-padding-left': string;
+  'Tree indentation/Level 3/Tree indentation/Level 3Treeleaf-padding-left': string;
+  'Tree indentation/Level 3Tree-padding-left': string;
+  'Tree indentation/Level 3Treeleaf-padding-left': string;
+  'Tree indentation/Level 4/Tree indentation/Level 4Tree-padding-left': string;
+  'Tree indentation/Level 4/Tree indentation/Level 4Treeleaf-padding-left': string;
+  'Tree indentation/Level 4Tree-padding-left': string;
+  'Tree indentation/Level 4Treeleaf-padding-left': string;
+  'Tree indentation/Level 5/Tree indentation/Level 5Tree-padding-left': string;
+  'Tree indentation/Level 5/Tree indentation/Level 5Treeleaf-padding-left': string;
+  'Tree indentation/Level 5Tree-padding-left': string;
+  'Tree indentation/Level 5Treeleaf-padding-left': string;
+  'Tree indentation/Level 6/Tree indentation/Level 6Tree-padding-left': string;
+  'Tree indentation/Level 6/Tree indentation/Level 6Treeleaf-padding-left': string;
+  'Tree indentation/Level 6Tree-padding-left': string;
+  'Tree indentation/Level 6Treeleaf-padding-left': string;
+  'Tree indentation/Level 7/Tree indentation/Level 7Tree-padding-left': string;
+  'Tree indentation/Level 7/Tree indentation/Level 7Treeleaf-padding-left': string;
+  'Tree indentation/Level 7Tree-padding-left': string;
+  'Tree indentation/Level 7Treeleaf-padding-left': string;
+  'Tree indentation/Level 8/Tree indentation/Level 8Tree-padding-left': string;
+  'Tree indentation/Level 8/Tree indentation/Level 8Treeleaf-padding-left': string;
+  'Tree indentation/Level 8Tree-padding-left': string;
+  'Tree indentation/Level 8Treeleaf-padding-left': string;
+  'Tree indentation/Level 9/Tree indentation/Level 9Tree-padding-left': string;
+  'Tree indentation/Level 9/Tree indentation/Level 9Treeleaf-padding-left': string;
+  'Tree indentation/Level 9Tree-padding-left': string;
+  'Tree indentation/Level 9Treeleaf-padding-left': string;
+  'Tree indentation/None/Tree indentation/NoneTree-padding-left': string;
+  'Tree indentation/None/Tree indentation/NoneTreeleaf-padding-left': string;
+  'Tree indentation/NoneTree-padding-left': string;
+  'Tree indentation/NoneTreeleaf-padding-left': string;
+  'Typography/Base/Typography/BaseFontFamilyBase': string;
+  'Typography/Base/Typography/BaseFontSize1000': string;
+  'Typography/Base/Typography/BaseFontSizeBase100': string;
+  'Typography/Base/Typography/BaseFontSizeBase200': string;
+  'Typography/Base/Typography/BaseFontSizeBase300': string;
+  'Typography/Base/Typography/BaseFontSizeBase400': string;
+  'Typography/Base/Typography/BaseFontSizeBase500': string;
+  'Typography/Base/Typography/BaseFontSizeBase600': string;
+  'Typography/Base/Typography/BaseFontSizeBase700': string;
+  'Typography/Base/Typography/BaseFontSizeBase800': string;
+  'Typography/Base/Typography/BaseFontSizeBase900': string;
+  'Typography/Base/Typography/BaseFontSizeBase920': string;
+  'Typography/Base/Typography/BaseFontSizeBase980': string;
+  'Typography/Base/Typography/BaseFontWeightBold': string;
+  'Typography/Base/Typography/BaseFontWeightLight': string;
+  'Typography/Base/Typography/BaseFontWeightRegular': string;
+  'Typography/Base/Typography/BaseFontWeightSemibold': string;
+  'Typography/Base/Typography/BaseFontWeightSemilight': string;
+  'Typography/Base/Typography/BaseLineHeightBase100': string;
+  'Typography/Base/Typography/BaseLineHeightBase1000': string;
+  'Typography/Base/Typography/BaseLineHeightBase200': string;
+  'Typography/Base/Typography/BaseLineHeightBase300': string;
+  'Typography/Base/Typography/BaseLineHeightBase400': string;
+  'Typography/Base/Typography/BaseLineHeightBase500': string;
+  'Typography/Base/Typography/BaseLineHeightBase600': string;
+  'Typography/Base/Typography/BaseLineHeightBase700': string;
+  'Typography/Base/Typography/BaseLineHeightBase800': string;
+  'Typography/Base/Typography/BaseLineHeightBase900': string;
+  'Typography/Base/Typography/BaseLineHeightBase920': string;
+  'Typography/Base/Typography/BaseLineHeightBase980': string;
+  'Typography/BaseFontFamilyBase': string;
+  'Typography/BaseFontSize1000': string;
+  'Typography/BaseFontSizeBase100': string;
+  'Typography/BaseFontSizeBase200': string;
+  'Typography/BaseFontSizeBase300': string;
+  'Typography/BaseFontSizeBase400': string;
+  'Typography/BaseFontSizeBase500': string;
+  'Typography/BaseFontSizeBase600': string;
+  'Typography/BaseFontSizeBase700': string;
+  'Typography/BaseFontSizeBase800': string;
+  'Typography/BaseFontSizeBase900': string;
+  'Typography/BaseFontSizeBase920': string;
+  'Typography/BaseFontSizeBase980': string;
+  'Typography/BaseFontWeightBold': string;
+  'Typography/BaseFontWeightLight': string;
+  'Typography/BaseFontWeightRegular': string;
+  'Typography/BaseFontWeightSemibold': string;
+  'Typography/BaseFontWeightSemilight': string;
+  'Typography/BaseLineHeightBase100': string;
+  'Typography/BaseLineHeightBase1000': string;
+  'Typography/BaseLineHeightBase200': string;
+  'Typography/BaseLineHeightBase300': string;
+  'Typography/BaseLineHeightBase400': string;
+  'Typography/BaseLineHeightBase500': string;
+  'Typography/BaseLineHeightBase600': string;
+  'Typography/BaseLineHeightBase700': string;
+  'Typography/BaseLineHeightBase800': string;
+  'Typography/BaseLineHeightBase900': string;
+  'Typography/BaseLineHeightBase920': string;
+  'Typography/BaseLineHeightBase980': string;
+  'global/globalFontFamiliesSegoe-ui': string;
+  'global/globalFontSize0': string;
+  'global/globalFontSize1': string;
+  'global/globalFontSize10': string;
+  'global/globalFontSize2': string;
+  'global/globalFontSize3': string;
+  'global/globalFontSize4': string;
+  'global/globalFontSize5': string;
+  'global/globalFontSize6': string;
+  'global/globalFontSize7': string;
+  'global/globalFontSize8': string;
+  'global/globalFontSize9': string;
+  'global/globalFontWeightsSegoe-ui-0': string;
+  'global/globalFontWeightsSegoe-ui-1': string;
+  'global/globalFontWeightsSegoe-ui-2': string;
+  'global/globalFontWeightsSegoe-ui-3': string;
+  'global/globalFontWeightsSegoe-ui-4': string;
+  'global/globalLetterSpacing1': string;
+  'global/globalLineHeights0': string;
+  'global/globalLineHeights1': string;
+  'global/globalLineHeights10': string;
+  'global/globalLineHeights2': string;
+  'global/globalLineHeights3': string;
+  'global/globalLineHeights4': string;
+  'global/globalLineHeights5': string;
+  'global/globalLineHeights6': string;
+  'global/globalLineHeights7': string;
+  'global/globalLineHeights8': string;
+  'global/globalLineHeights9': string;
+  'global/globalParagraphIndent0': string;
+  'global/globalParagraphSpacing0': string;
+  'globalBody1FontFamily': string;
+  'globalBody1FontSize': string;
+  'globalBody1FontWeight': string;
+  'globalBody1LetterSpacing': string;
+  'globalBody1LineHeight': string;
+  'globalBody1ParagraphIndent': string;
+  'globalBody1ParagraphSpacing': string;
+  'globalBody1StrongFontFamily': string;
+  'globalBody1StrongFontSize': string;
+  'globalBody1StrongFontWeight': string;
+  'globalBody1StrongLetterSpacing': string;
+  'globalBody1StrongLineHeight': string;
+  'globalBody1StrongParagraphIndent': string;
+  'globalBody1StrongParagraphSpacing': string;
+  'globalBody1StrongTextCase': string;
+  'globalBody1StrongTextDecoration': string;
+  'globalBody1StrongerFontFamily': string;
+  'globalBody1StrongerFontSize': string;
+  'globalBody1StrongerFontWeight': string;
+  'globalBody1StrongerLetterSpacing': string;
+  'globalBody1StrongerLineHeight': string;
+  'globalBody1StrongerParagraphIndent': string;
+  'globalBody1StrongerParagraphSpacing': string;
+  'globalBody1StrongerTextCase': string;
+  'globalBody1StrongerTextDecoration': string;
+  'globalBody1TextCase': string;
+  'globalBody1TextDecoration': string;
+  'globalBody2FontFamily': string;
+  'globalBody2FontSize': string;
+  'globalBody2FontWeight': string;
+  'globalBody2LetterSpacing': string;
+  'globalBody2LineHeight': string;
+  'globalBody2ParagraphIndent': string;
+  'globalBody2ParagraphSpacing': string;
+  'globalBody2SemilightFontFamily': string;
+  'globalBody2SemilightFontSize': string;
+  'globalBody2SemilightFontWeight': string;
+  'globalBody2SemilightLetterSpacing': string;
+  'globalBody2SemilightLineHeight': string;
+  'globalBody2SemilightParagraphIndent': string;
+  'globalBody2SemilightParagraphSpacing': string;
+  'globalBody2SemilightTextCase': string;
+  'globalBody2SemilightTextDecoration': string;
+  'globalBody2StrongFontFamily': string;
+  'globalBody2StrongFontSize': string;
+  'globalBody2StrongFontWeight': string;
+  'globalBody2StrongLetterSpacing': string;
+  'globalBody2StrongLineHeight': string;
+  'globalBody2StrongParagraphIndent': string;
+  'globalBody2StrongParagraphSpacing': string;
+  'globalBody2StrongTextCase': string;
+  'globalBody2StrongTextDecoration': string;
+  'globalBody2StrongerFontFamily': string;
+  'globalBody2StrongerFontSize': string;
+  'globalBody2StrongerFontWeight': string;
+  'globalBody2StrongerLetterSpacing': string;
+  'globalBody2StrongerLineHeight': string;
+  'globalBody2StrongerParagraphIndent': string;
+  'globalBody2StrongerParagraphSpacing': string;
+  'globalBody2StrongerTextCase': string;
+  'globalBody2StrongerTextDecoration': string;
+  'globalBody2TextCase': string;
+  'globalBody2TextDecoration': string;
+  'globalCaption1FontFamily': string;
+  'globalCaption1FontSize': string;
+  'globalCaption1FontWeight': string;
+  'globalCaption1LetterSpacing': string;
+  'globalCaption1LineHeight': string;
+  'globalCaption1ParagraphIndent': string;
+  'globalCaption1ParagraphSpacing': string;
+  'globalCaption1StrongFontFamily': string;
+  'globalCaption1StrongFontSize': string;
+  'globalCaption1StrongFontWeight': string;
+  'globalCaption1StrongLetterSpacing': string;
+  'globalCaption1StrongLineHeight': string;
+  'globalCaption1StrongParagraphIndent': string;
+  'globalCaption1StrongParagraphSpacing': string;
+  'globalCaption1StrongTextCase': string;
+  'globalCaption1StrongTextDecoration': string;
+  'globalCaption1StrongerFontFamily': string;
+  'globalCaption1StrongerFontSize': string;
+  'globalCaption1StrongerFontWeight': string;
+  'globalCaption1StrongerLetterSpacing': string;
+  'globalCaption1StrongerLineHeight': string;
+  'globalCaption1StrongerParagraphIndent': string;
+  'globalCaption1StrongerParagraphSpacing': string;
+  'globalCaption1StrongerTextCase': string;
+  'globalCaption1StrongerTextDecoration': string;
+  'globalCaption1TextCase': string;
+  'globalCaption1TextDecoration': string;
+  'globalCaption2FontFamily': string;
+  'globalCaption2FontSize': string;
+  'globalCaption2FontWeight': string;
+  'globalCaption2LetterSpacing': string;
+  'globalCaption2LineHeight': string;
+  'globalCaption2ParagraphIndent': string;
+  'globalCaption2ParagraphSpacing': string;
+  'globalCaption2StrongFontFamily': string;
+  'globalCaption2StrongFontSize': string;
+  'globalCaption2StrongFontWeight': string;
+  'globalCaption2StrongLetterSpacing': string;
+  'globalCaption2StrongLineHeight': string;
+  'globalCaption2StrongParagraphIndent': string;
+  'globalCaption2StrongParagraphSpacing': string;
+  'globalCaption2StrongTextCase': string;
+  'globalCaption2StrongTextDecoration': string;
+  'globalCaption2TextCase': string;
+  'globalCaption2TextDecoration': string;
+  'globalDisplay1FontFamily': string;
+  'globalDisplay1FontSize': string;
+  'globalDisplay1FontWeight': string;
+  'globalDisplay1LetterSpacing': string;
+  'globalDisplay1LightFontFamily': string;
+  'globalDisplay1LightFontSize': string;
+  'globalDisplay1LightFontWeight': string;
+  'globalDisplay1LightLetterSpacing': string;
+  'globalDisplay1LightLineHeight': string;
+  'globalDisplay1LightParagraphIndent': string;
+  'globalDisplay1LightParagraphSpacing': string;
+  'globalDisplay1LightTextCase': string;
+  'globalDisplay1LightTextDecoration': string;
+  'globalDisplay1LineHeight': string;
+  'globalDisplay1ParagraphIndent': string;
+  'globalDisplay1ParagraphSpacing': string;
+  'globalDisplay1SemilightFontFamily': string;
+  'globalDisplay1SemilightFontSize': string;
+  'globalDisplay1SemilightFontWeight': string;
+  'globalDisplay1SemilightLetterSpacing': string;
+  'globalDisplay1SemilightLineHeight': string;
+  'globalDisplay1SemilightParagraphIndent': string;
+  'globalDisplay1SemilightParagraphSpacing': string;
+  'globalDisplay1SemilightTextCase': string;
+  'globalDisplay1SemilightTextDecoration': string;
+  'globalDisplay1StrongFontFamily': string;
+  'globalDisplay1StrongFontSize': string;
+  'globalDisplay1StrongFontWeight': string;
+  'globalDisplay1StrongLetterSpacing': string;
+  'globalDisplay1StrongLineHeight': string;
+  'globalDisplay1StrongParagraphIndent': string;
+  'globalDisplay1StrongParagraphSpacing': string;
+  'globalDisplay1StrongTextCase': string;
+  'globalDisplay1StrongTextDecoration': string;
+  'globalDisplay1StrongerFontFamily': string;
+  'globalDisplay1StrongerFontSize': string;
+  'globalDisplay1StrongerFontWeight': string;
+  'globalDisplay1StrongerLetterSpacing': string;
+  'globalDisplay1StrongerLineHeight': string;
+  'globalDisplay1StrongerParagraphIndent': string;
+  'globalDisplay1StrongerParagraphSpacing': string;
+  'globalDisplay1StrongerTextCase': string;
+  'globalDisplay1StrongerTextDecoration': string;
+  'globalDisplay1TextCase': string;
+  'globalDisplay1TextDecoration': string;
+  'globalDisplay2FontFamily': string;
+  'globalDisplay2FontSize': string;
+  'globalDisplay2FontWeight': string;
+  'globalDisplay2LetterSpacing': string;
+  'globalDisplay2LightFontFamily': string;
+  'globalDisplay2LightFontSize': string;
+  'globalDisplay2LightFontWeight': string;
+  'globalDisplay2LightLetterSpacing': string;
+  'globalDisplay2LightLineHeight': string;
+  'globalDisplay2LightParagraphIndent': string;
+  'globalDisplay2LightParagraphSpacing': string;
+  'globalDisplay2LightTextCase': string;
+  'globalDisplay2LightTextDecoration': string;
+  'globalDisplay2LineHeight': string;
+  'globalDisplay2ParagraphIndent': string;
+  'globalDisplay2ParagraphSpacing': string;
+  'globalDisplay2SemilightFontFamily': string;
+  'globalDisplay2SemilightFontSize': string;
+  'globalDisplay2SemilightFontWeight': string;
+  'globalDisplay2SemilightLetterSpacing': string;
+  'globalDisplay2SemilightLineHeight': string;
+  'globalDisplay2SemilightParagraphIndent': string;
+  'globalDisplay2SemilightParagraphSpacing': string;
+  'globalDisplay2SemilightTextCase': string;
+  'globalDisplay2SemilightTextDecoration': string;
+  'globalDisplay2StrongFontFamily': string;
+  'globalDisplay2StrongFontSize': string;
+  'globalDisplay2StrongFontWeight': string;
+  'globalDisplay2StrongLetterSpacing': string;
+  'globalDisplay2StrongLineHeight': string;
+  'globalDisplay2StrongParagraphIndent': string;
+  'globalDisplay2StrongParagraphSpacing': string;
+  'globalDisplay2StrongTextCase': string;
+  'globalDisplay2StrongTextDecoration': string;
+  'globalDisplay2StrongerFontFamily': string;
+  'globalDisplay2StrongerFontSize': string;
+  'globalDisplay2StrongerFontWeight': string;
+  'globalDisplay2StrongerLetterSpacing': string;
+  'globalDisplay2StrongerLineHeight': string;
+  'globalDisplay2StrongerParagraphIndent': string;
+  'globalDisplay2StrongerParagraphSpacing': string;
+  'globalDisplay2StrongerTextCase': string;
+  'globalDisplay2StrongerTextDecoration': string;
+  'globalDisplay2TextCase': string;
+  'globalDisplay2TextDecoration': string;
+  'globalDisplay3StrongFontFamily': string;
+  'globalDisplay3StrongFontSize': string;
+  'globalDisplay3StrongFontWeight': string;
+  'globalDisplay3StrongLetterSpacing': string;
+  'globalDisplay3StrongLineHeight': string;
+  'globalDisplay3StrongParagraphIndent': string;
+  'globalDisplay3StrongParagraphSpacing': string;
+  'globalDisplay3StrongTextCase': string;
+  'globalDisplay3StrongTextDecoration': string;
+  'globalElevationShadow16': string;
+  'globalElevationShadow2': string;
+  'globalElevationShadow28': string;
+  'globalElevationShadow4': string;
+  'globalElevationShadow64': string;
+  'globalElevationShadow8': string;
+  'globalFontFamiliesSegoe-ui': string;
+  'globalFontSize0': string;
+  'globalFontSize1': string;
+  'globalFontSize10': string;
+  'globalFontSize2': string;
+  'globalFontSize3': string;
+  'globalFontSize4': string;
+  'globalFontSize5': string;
+  'globalFontSize6': string;
+  'globalFontSize7': string;
+  'globalFontSize8': string;
+  'globalFontSize9': string;
+  'globalFontWeightsSegoe-ui-0': string;
+  'globalFontWeightsSegoe-ui-1': string;
+  'globalFontWeightsSegoe-ui-2': string;
+  'globalFontWeightsSegoe-ui-3': string;
+  'globalFontWeightsSegoe-ui-4': string;
+  'globalLetterSpacing0': string;
+  'globalLetterSpacing1': string;
+  'globalLineHeights0': string;
+  'globalLineHeights1': string;
+  'globalLineHeights10': string;
+  'globalLineHeights2': string;
+  'globalLineHeights3': string;
+  'globalLineHeights4': string;
+  'globalLineHeights5': string;
+  'globalLineHeights6': string;
+  'globalLineHeights7': string;
+  'globalLineHeights8': string;
+  'globalLineHeights9': string;
+  'globalLinear': string;
+  'globalParagraphIndent0': string;
+  'globalParagraphSpacing0': string;
+  'globalTextCaseNone': string;
+  'globalTextDecorationNone': string;
+  'globalTitle 1FontFamily': string;
+  'globalTitle 1FontSize': string;
+  'globalTitle 1FontWeight': string;
+  'globalTitle 1LetterSpacing': string;
+  'globalTitle 1LineHeight': string;
+  'globalTitle 1ParagraphIndent': string;
+  'globalTitle 1ParagraphSpacing': string;
+  'globalTitle 1TextCase': string;
+  'globalTitle 1TextDecoration': string;
+  'globalTitle 2 StrongFontFamily': string;
+  'globalTitle 2 StrongFontSize': string;
+  'globalTitle 2 StrongFontWeight': string;
+  'globalTitle 2 StrongLetterSpacing': string;
+  'globalTitle 2 StrongLineHeight': string;
+  'globalTitle 2 StrongParagraphIndent': string;
+  'globalTitle 2 StrongParagraphSpacing': string;
+  'globalTitle 2 StrongTextCase': string;
+  'globalTitle 2 StrongTextDecoration': string;
+  'globalTitle 2 StrongerFontFamily': string;
+  'globalTitle 2 StrongerFontSize': string;
+  'globalTitle 2 StrongerFontWeight': string;
+  'globalTitle 2 StrongerLetterSpacing': string;
+  'globalTitle 2 StrongerLineHeight': string;
+  'globalTitle 2 StrongerParagraphIndent': string;
+  'globalTitle 2 StrongerParagraphSpacing': string;
+  'globalTitle 2 StrongerTextCase': string;
+  'globalTitle 2 StrongerTextDecoration': string;
+  'globalTitle1LightFontFamily': string;
+  'globalTitle1LightFontSize': string;
+  'globalTitle1LightFontWeight': string;
+  'globalTitle1LightLetterSpacing': string;
+  'globalTitle1LightLineHeight': string;
+  'globalTitle1LightParagraphIndent': string;
+  'globalTitle1LightParagraphSpacing': string;
+  'globalTitle1LightTextCase': string;
+  'globalTitle1LightTextDecoration': string;
+  'globalTitle1SemilightFontFamily': string;
+  'globalTitle1SemilightFontSize': string;
+  'globalTitle1SemilightFontWeight': string;
+  'globalTitle1SemilightLetterSpacing': string;
+  'globalTitle1SemilightLineHeight': string;
+  'globalTitle1SemilightParagraphIndent': string;
+  'globalTitle1SemilightParagraphSpacing': string;
+  'globalTitle1SemilightTextCase': string;
+  'globalTitle1SemilightTextDecoration': string;
+  'globalTitle1StrongFontFamily': string;
+  'globalTitle1StrongFontSize': string;
+  'globalTitle1StrongFontWeight': string;
+  'globalTitle1StrongLetterSpacing': string;
+  'globalTitle1StrongLineHeight': string;
+  'globalTitle1StrongParagraphIndent': string;
+  'globalTitle1StrongParagraphSpacing': string;
+  'globalTitle1StrongTextCase': string;
+  'globalTitle1StrongTextDecoration': string;
+  'globalTitle1StrongerFontFamily': string;
+  'globalTitle1StrongerFontSize': string;
+  'globalTitle1StrongerFontWeight': string;
+  'globalTitle1StrongerLetterSpacing': string;
+  'globalTitle1StrongerLineHeight': string;
+  'globalTitle1StrongerParagraphIndent': string;
+  'globalTitle1StrongerParagraphSpacing': string;
+  'globalTitle1StrongerTextCase': string;
+  'globalTitle1StrongerTextDecoration': string;
+  'globalTitle2FontFamily': string;
+  'globalTitle2FontSize': string;
+  'globalTitle2FontWeight': string;
+  'globalTitle2LetterSpacing': string;
+  'globalTitle2LightFontFamily': string;
+  'globalTitle2LightFontSize': string;
+  'globalTitle2LightFontWeight': string;
+  'globalTitle2LightLetterSpacing': string;
+  'globalTitle2LightLineHeight': string;
+  'globalTitle2LightParagraphIndent': string;
+  'globalTitle2LightParagraphSpacing': string;
+  'globalTitle2LightTextCase': string;
+  'globalTitle2LightTextDecoration': string;
+  'globalTitle2LineHeight': string;
+  'globalTitle2ParagraphIndent': string;
+  'globalTitle2ParagraphSpacing': string;
+  'globalTitle2SemilightFontFamily': string;
+  'globalTitle2SemilightFontSize': string;
+  'globalTitle2SemilightFontWeight': string;
+  'globalTitle2SemilightLetterSpacing': string;
+  'globalTitle2SemilightLineHeight': string;
+  'globalTitle2SemilightParagraphIndent': string;
+  'globalTitle2SemilightParagraphSpacing': string;
+  'globalTitle2SemilightTextCase': string;
+  'globalTitle2SemilightTextDecoration': string;
+  'globalTitle2TextCase': string;
+  'globalTitle2TextDecoration': string;
+  'globalTitle3FontFamily': string;
+  'globalTitle3FontSize': string;
+  'globalTitle3FontWeight': string;
+  'globalTitle3LetterSpacing': string;
+  'globalTitle3LightFontFamily': string;
+  'globalTitle3LightFontSize': string;
+  'globalTitle3LightFontWeight': string;
+  'globalTitle3LightLetterSpacing': string;
+  'globalTitle3LightLineHeight': string;
+  'globalTitle3LightParagraphIndent': string;
+  'globalTitle3LightParagraphSpacing': string;
+  'globalTitle3LightTextCase': string;
+  'globalTitle3LightTextDecoration': string;
+  'globalTitle3LineHeight': string;
+  'globalTitle3ParagraphIndent': string;
+  'globalTitle3ParagraphSpacing': string;
+  'globalTitle3SemilightFontFamily': string;
+  'globalTitle3SemilightFontSize': string;
+  'globalTitle3SemilightFontWeight': string;
+  'globalTitle3SemilightLetterSpacing': string;
+  'globalTitle3SemilightLineHeight': string;
+  'globalTitle3SemilightParagraphIndent': string;
+  'globalTitle3SemilightParagraphSpacing': string;
+  'globalTitle3SemilightTextCase': string;
+  'globalTitle3SemilightTextDecoration': string;
+  'globalTitle3StrongFontFamily': string;
+  'globalTitle3StrongFontSize': string;
+  'globalTitle3StrongFontWeight': string;
+  'globalTitle3StrongLetterSpacing': string;
+  'globalTitle3StrongLineHeight': string;
+  'globalTitle3StrongParagraphIndent': string;
+  'globalTitle3StrongParagraphSpacing': string;
+  'globalTitle3StrongTextCase': string;
+  'globalTitle3StrongTextDecoration': string;
+  'globalTitle3StrongerFontFamily': string;
+  'globalTitle3StrongerFontSize': string;
+  'globalTitle3StrongerFontWeight': string;
+  'globalTitle3StrongerLetterSpacing': string;
+  'globalTitle3StrongerLineHeight': string;
+  'globalTitle3StrongerParagraphIndent': string;
+  'globalTitle3StrongerParagraphSpacing': string;
+  'globalTitle3StrongerTextCase': string;
+  'globalTitle3StrongerTextDecoration': string;
+  'globalTitle3TextCase': string;
+  'globalTitle3TextDecoration': string;
+  'globalTitle4FontFamily': string;
+  'globalTitle4FontSize': string;
+  'globalTitle4FontWeight': string;
+  'globalTitle4LetterSpacing': string;
+  'globalTitle4LightFontFamily': string;
+  'globalTitle4LightFontSize': string;
+  'globalTitle4LightFontWeight': string;
+  'globalTitle4LightLetterSpacing': string;
+  'globalTitle4LightLineHeight': string;
+  'globalTitle4LightParagraphIndent': string;
+  'globalTitle4LightParagraphSpacing': string;
+  'globalTitle4LightTextCase': string;
+  'globalTitle4LightTextDecoration': string;
+  'globalTitle4LineHeight': string;
+  'globalTitle4ParagraphIndent': string;
+  'globalTitle4ParagraphSpacing': string;
+  'globalTitle4SemilightFontFamily': string;
+  'globalTitle4SemilightFontSize': string;
+  'globalTitle4SemilightFontWeight': string;
+  'globalTitle4SemilightLetterSpacing': string;
+  'globalTitle4SemilightLineHeight': string;
+  'globalTitle4SemilightParagraphIndent': string;
+  'globalTitle4SemilightParagraphSpacing': string;
+  'globalTitle4SemilightTextCase': string;
+  'globalTitle4SemilightTextDecoration': string;
+  'globalTitle4StrongFontFamily': string;
+  'globalTitle4StrongFontSize': string;
+  'globalTitle4StrongFontWeight': string;
+  'globalTitle4StrongLetterSpacing': string;
+  'globalTitle4StrongLineHeight': string;
+  'globalTitle4StrongParagraphIndent': string;
+  'globalTitle4StrongParagraphSpacing': string;
+  'globalTitle4StrongTextCase': string;
+  'globalTitle4StrongTextDecoration': string;
+  'globalTitle4StrongerFontFamily': string;
+  'globalTitle4StrongerFontSize': string;
+  'globalTitle4StrongerFontWeight': string;
+  'globalTitle4StrongerLetterSpacing': string;
+  'globalTitle4StrongerLineHeight': string;
+  'globalTitle4StrongerParagraphIndent': string;
+  'globalTitle4StrongerParagraphSpacing': string;
+  'globalTitle4StrongerTextCase': string;
+  'globalTitle4StrongerTextDecoration': string;
+  'globalTitle4TextCase': string;
+  'globalTitle4TextDecoration': string;
 }
 
-export const brandTheme: Theme & BrandThemeExtension = {
+export const fluentTokens: Theme & FluentThemeTokens = {
   'globalLinear': 'linear-gradient(-90deg, #0063ff 4%, #ac3ad5 24%, #ff1919 55%, #fa15e3 100%)',
+  'globalElevationShadow2': '0px 1px 2px 0px #00000024, 0px 0px 2px 0px #0000001f',
+  'globalElevationShadow4': '0px 2px 4px 0px #00000024, 0px 0px 2px 0px #0000001f',
+  'globalElevationShadow8': '0px 4px 8px 0px #00000024, 0px 0px 2px 0px #0000001f',
+  'globalElevationShadow16': '0px 8px 16px 0px #00000024, 0px 0px 2px 0px #0000001f',
+  'globalElevationShadow28': '0px 14px 28.799999237060547px 0px #0000003d, 0px 0px 8px 0px #00000033',
+  'globalElevationShadow64': '0px 32px 64px 0px #0000003d, 0px 0px 8px 0px #00000033',
   'globalFontFamiliesSegoe-ui': 'Segoe UI',
   'globalLineHeights0': '14',
   'globalLineHeights1': '16',
@@ -7924,193 +3917,605 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'globalLetterSpacing0': '0%',
   'globalLetterSpacing1': '0',
   'globalParagraphSpacing0': '0',
+  'globalCaption2FontFamily': '{fontFamilies.segoe-ui}',
+  'globalCaption2FontWeight': '{fontWeights.segoe-ui-0}',
+  'globalCaption2LineHeight': '{lineHeights.0}',
+  'globalCaption2FontSize': '{fontSize.0}',
+  'globalCaption2LetterSpacing': '{letterSpacing.0}',
+  'globalCaption2ParagraphSpacing': '{paragraphSpacing.0}',
+  'globalCaption2ParagraphIndent': '{paragraphIndent.0}',
+  'globalCaption2TextCase': '{textCase.none}',
+  'globalCaption2TextDecoration': '{textDecoration.none}',
+  'globalCaption2StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalCaption2StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'globalCaption2StrongLineHeight': '{lineHeights.0}',
+  'globalCaption2StrongFontSize': '{fontSize.0}',
+  'globalCaption2StrongLetterSpacing': '{letterSpacing.0}',
+  'globalCaption2StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalCaption2StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalCaption2StrongTextCase': '{textCase.none}',
+  'globalCaption2StrongTextDecoration': '{textDecoration.none}',
+  'globalCaption1FontFamily': '{fontFamilies.segoe-ui}',
+  'globalCaption1FontWeight': '{fontWeights.segoe-ui-0}',
+  'globalCaption1LineHeight': '{lineHeights.1}',
+  'globalCaption1FontSize': '{fontSize.1}',
+  'globalCaption1LetterSpacing': '{letterSpacing.0}',
+  'globalCaption1ParagraphSpacing': '{paragraphSpacing.0}',
+  'globalCaption1ParagraphIndent': '{paragraphIndent.0}',
+  'globalCaption1TextCase': '{textCase.none}',
+  'globalCaption1TextDecoration': '{textDecoration.none}',
+  'globalCaption1StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalCaption1StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'globalCaption1StrongLineHeight': '{lineHeights.1}',
+  'globalCaption1StrongFontSize': '{fontSize.1}',
+  'globalCaption1StrongLetterSpacing': '{letterSpacing.0}',
+  'globalCaption1StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalCaption1StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalCaption1StrongTextCase': '{textCase.none}',
+  'globalCaption1StrongTextDecoration': '{textDecoration.none}',
+  'globalCaption1StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'globalCaption1StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'globalCaption1StrongerLineHeight': '{lineHeights.1}',
+  'globalCaption1StrongerFontSize': '{fontSize.1}',
+  'globalCaption1StrongerLetterSpacing': '{letterSpacing.0}',
+  'globalCaption1StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'globalCaption1StrongerParagraphIndent': '{paragraphIndent.0}',
+  'globalCaption1StrongerTextCase': '{textCase.none}',
+  'globalCaption1StrongerTextDecoration': '{textDecoration.none}',
+  'globalBody1FontFamily': '{fontFamilies.segoe-ui}',
+  'globalBody1FontWeight': '{fontWeights.segoe-ui-0}',
+  'globalBody1LineHeight': '{lineHeights.2}',
+  'globalBody1FontSize': '{fontSize.2}',
+  'globalBody1LetterSpacing': '{letterSpacing.0}',
+  'globalBody1ParagraphSpacing': '{paragraphSpacing.0}',
+  'globalBody1ParagraphIndent': '{paragraphIndent.0}',
+  'globalBody1TextCase': '{textCase.none}',
+  'globalBody1TextDecoration': '{textDecoration.none}',
+  'globalBody1StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalBody1StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'globalBody1StrongLineHeight': '{lineHeights.2}',
+  'globalBody1StrongFontSize': '{fontSize.2}',
+  'globalBody1StrongLetterSpacing': '{letterSpacing.0}',
+  'globalBody1StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalBody1StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalBody1StrongTextCase': '{textCase.none}',
+  'globalBody1StrongTextDecoration': '{textDecoration.none}',
+  'globalBody1StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'globalBody1StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'globalBody1StrongerLineHeight': '{lineHeights.2}',
+  'globalBody1StrongerFontSize': '{fontSize.2}',
+  'globalBody1StrongerLetterSpacing': '{letterSpacing.0}',
+  'globalBody1StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'globalBody1StrongerParagraphIndent': '{paragraphIndent.0}',
+  'globalBody1StrongerTextCase': '{textCase.none}',
+  'globalBody1StrongerTextDecoration': '{textDecoration.none}',
+  'globalBody2SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalBody2SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'globalBody2SemilightLineHeight': '{lineHeights.3}',
+  'globalBody2SemilightFontSize': '{fontSize.3}',
+  'globalBody2SemilightLetterSpacing': '{letterSpacing.0}',
+  'globalBody2SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalBody2SemilightParagraphIndent': '{paragraphIndent.0}',
+  'globalBody2SemilightTextCase': '{textCase.none}',
+  'globalBody2SemilightTextDecoration': '{textDecoration.none}',
+  'globalBody2FontFamily': '{fontFamilies.segoe-ui}',
+  'globalBody2FontWeight': '{fontWeights.segoe-ui-0}',
+  'globalBody2LineHeight': '{lineHeights.3}',
+  'globalBody2FontSize': '{fontSize.3}',
+  'globalBody2LetterSpacing': '{letterSpacing.0}',
+  'globalBody2ParagraphSpacing': '{paragraphSpacing.0}',
+  'globalBody2ParagraphIndent': '{paragraphIndent.0}',
+  'globalBody2TextCase': '{textCase.none}',
+  'globalBody2TextDecoration': '{textDecoration.none}',
+  'globalBody2StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalBody2StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'globalBody2StrongLineHeight': '{lineHeights.3}',
+  'globalBody2StrongFontSize': '{fontSize.3}',
+  'globalBody2StrongLetterSpacing': '{letterSpacing.0}',
+  'globalBody2StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalBody2StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalBody2StrongTextCase': '{textCase.none}',
+  'globalBody2StrongTextDecoration': '{textDecoration.none}',
+  'globalBody2StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'globalBody2StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'globalBody2StrongerLineHeight': '{lineHeights.3}',
+  'globalBody2StrongerFontSize': '{fontSize.3}',
+  'globalBody2StrongerLetterSpacing': '{letterSpacing.0}',
+  'globalBody2StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'globalBody2StrongerParagraphIndent': '{paragraphIndent.0}',
+  'globalBody2StrongerTextCase': '{textCase.none}',
+  'globalBody2StrongerTextDecoration': '{textDecoration.none}',
+  'globalTitle4LightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle4LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'globalTitle4LightLineHeight': '{lineHeights.4}',
+  'globalTitle4LightFontSize': '{fontSize.4}',
+  'globalTitle4LightLetterSpacing': '{letterSpacing.0}',
+  'globalTitle4LightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle4LightParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle4LightTextCase': '{textCase.none}',
+  'globalTitle4LightTextDecoration': '{textDecoration.none}',
+  'globalTitle4SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle4SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'globalTitle4SemilightLineHeight': '{lineHeights.4}',
+  'globalTitle4SemilightFontSize': '{fontSize.4}',
+  'globalTitle4SemilightLetterSpacing': '{letterSpacing.0}',
+  'globalTitle4SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle4SemilightParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle4SemilightTextCase': '{textCase.none}',
+  'globalTitle4SemilightTextDecoration': '{textDecoration.none}',
+  'globalTitle4FontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle4FontWeight': '{fontWeights.segoe-ui-0}',
+  'globalTitle4LineHeight': '{lineHeights.4}',
+  'globalTitle4FontSize': '{fontSize.4}',
+  'globalTitle4LetterSpacing': '{letterSpacing.0}',
+  'globalTitle4ParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle4ParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle4TextCase': '{textCase.none}',
+  'globalTitle4TextDecoration': '{textDecoration.none}',
+  'globalTitle4StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle4StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'globalTitle4StrongLineHeight': '{lineHeights.4}',
+  'globalTitle4StrongFontSize': '{fontSize.4}',
+  'globalTitle4StrongLetterSpacing': '{letterSpacing.0}',
+  'globalTitle4StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle4StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle4StrongTextCase': '{textCase.none}',
+  'globalTitle4StrongTextDecoration': '{textDecoration.none}',
+  'globalTitle4StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle4StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'globalTitle4StrongerLineHeight': '{lineHeights.4}',
+  'globalTitle4StrongerFontSize': '{fontSize.4}',
+  'globalTitle4StrongerLetterSpacing': '{letterSpacing.0}',
+  'globalTitle4StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle4StrongerParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle4StrongerTextCase': '{textCase.none}',
+  'globalTitle4StrongerTextDecoration': '{textDecoration.none}',
+  'globalTitle3LightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle3LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'globalTitle3LightLineHeight': '{lineHeights.5}',
+  'globalTitle3LightFontSize': '{fontSize.5}',
+  'globalTitle3LightLetterSpacing': '{letterSpacing.0}',
+  'globalTitle3LightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle3LightParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle3LightTextCase': '{textCase.none}',
+  'globalTitle3LightTextDecoration': '{textDecoration.none}',
+  'globalTitle3SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle3SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'globalTitle3SemilightLineHeight': '{lineHeights.5}',
+  'globalTitle3SemilightFontSize': '{fontSize.5}',
+  'globalTitle3SemilightLetterSpacing': '{letterSpacing.0}',
+  'globalTitle3SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle3SemilightParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle3SemilightTextCase': '{textCase.none}',
+  'globalTitle3SemilightTextDecoration': '{textDecoration.none}',
+  'globalTitle3FontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle3FontWeight': '{fontWeights.segoe-ui-0}',
+  'globalTitle3LineHeight': '{lineHeights.5}',
+  'globalTitle3FontSize': '{fontSize.5}',
+  'globalTitle3LetterSpacing': '{letterSpacing.1}',
+  'globalTitle3ParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle3ParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle3TextCase': '{textCase.none}',
+  'globalTitle3TextDecoration': '{textDecoration.none}',
+  'globalTitle3StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle3StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'globalTitle3StrongLineHeight': '{lineHeights.5}',
+  'globalTitle3StrongFontSize': '{fontSize.5}',
+  'globalTitle3StrongLetterSpacing': '{letterSpacing.0}',
+  'globalTitle3StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle3StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle3StrongTextCase': '{textCase.none}',
+  'globalTitle3StrongTextDecoration': '{textDecoration.none}',
+  'globalTitle3StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle3StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'globalTitle3StrongerLineHeight': '{lineHeights.5}',
+  'globalTitle3StrongerFontSize': '{fontSize.5}',
+  'globalTitle3StrongerLetterSpacing': '{letterSpacing.0}',
+  'globalTitle3StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle3StrongerParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle3StrongerTextCase': '{textCase.none}',
+  'globalTitle3StrongerTextDecoration': '{textDecoration.none}',
+  'globalTitle2LightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle2LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'globalTitle2LightLineHeight': '{lineHeights.6}',
+  'globalTitle2LightFontSize': '{fontSize.6}',
+  'globalTitle2LightLetterSpacing': '{letterSpacing.0}',
+  'globalTitle2LightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle2LightParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle2LightTextCase': '{textCase.none}',
+  'globalTitle2LightTextDecoration': '{textDecoration.none}',
+  'globalTitle2SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle2SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'globalTitle2SemilightLineHeight': '{lineHeights.6}',
+  'globalTitle2SemilightFontSize': '{fontSize.6}',
+  'globalTitle2SemilightLetterSpacing': '{letterSpacing.0}',
+  'globalTitle2SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle2SemilightParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle2SemilightTextCase': '{textCase.none}',
+  'globalTitle2SemilightTextDecoration': '{textDecoration.none}',
+  'globalTitle2FontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle2FontWeight': '{fontWeights.segoe-ui-0}',
+  'globalTitle2LineHeight': '{lineHeights.6}',
+  'globalTitle2FontSize': '{fontSize.6}',
+  'globalTitle2LetterSpacing': '{letterSpacing.1}',
+  'globalTitle2ParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle2ParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle2TextCase': '{textCase.none}',
+  'globalTitle2TextDecoration': '{textDecoration.none}',
+  'globalTitle 2 StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle 2 StrongFontWeight': '{fontWeights.segoe-ui-0}',
+  'globalTitle 2 StrongLineHeight': '{lineHeights.6}',
+  'globalTitle 2 StrongFontSize': '{fontSize.6}',
+  'globalTitle 2 StrongLetterSpacing': '{letterSpacing.0}',
+  'globalTitle 2 StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle 2 StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle 2 StrongTextCase': '{textCase.none}',
+  'globalTitle 2 StrongTextDecoration': '{textDecoration.none}',
+  'globalTitle 2 StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle 2 StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'globalTitle 2 StrongerLineHeight': '{lineHeights.6}',
+  'globalTitle 2 StrongerFontSize': '{fontSize.6}',
+  'globalTitle 2 StrongerLetterSpacing': '{letterSpacing.0}',
+  'globalTitle 2 StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle 2 StrongerParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle 2 StrongerTextCase': '{textCase.none}',
+  'globalTitle 2 StrongerTextDecoration': '{textDecoration.none}',
+  'globalTitle 1FontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle 1FontWeight': '{fontWeights.segoe-ui-0}',
+  'globalTitle 1LineHeight': '{lineHeights.7}',
+  'globalTitle 1FontSize': '{fontSize.7}',
+  'globalTitle 1LetterSpacing': '{letterSpacing.1}',
+  'globalTitle 1ParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle 1ParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle 1TextCase': '{textCase.none}',
+  'globalTitle 1TextDecoration': '{textDecoration.none}',
+  'globalTitle1StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle1StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'globalTitle1StrongLineHeight': '{lineHeights.7}',
+  'globalTitle1StrongFontSize': '{fontSize.7}',
+  'globalTitle1StrongLetterSpacing': '{letterSpacing.0}',
+  'globalTitle1StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle1StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle1StrongTextCase': '{textCase.none}',
+  'globalTitle1StrongTextDecoration': '{textDecoration.none}',
+  'globalTitle1StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle1StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'globalTitle1StrongerLineHeight': '{lineHeights.7}',
+  'globalTitle1StrongerFontSize': '{fontSize.7}',
+  'globalTitle1StrongerLetterSpacing': '{letterSpacing.0}',
+  'globalTitle1StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle1StrongerParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle1StrongerTextCase': '{textCase.none}',
+  'globalTitle1StrongerTextDecoration': '{textDecoration.none}',
+  'globalTitle1LightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle1LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'globalTitle1LightLineHeight': '{lineHeights.7}',
+  'globalTitle1LightFontSize': '{fontSize.7}',
+  'globalTitle1LightLetterSpacing': '{letterSpacing.0}',
+  'globalTitle1LightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle1LightParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle1LightTextCase': '{textCase.none}',
+  'globalTitle1LightTextDecoration': '{textDecoration.none}',
+  'globalTitle1SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalTitle1SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'globalTitle1SemilightLineHeight': '{lineHeights.7}',
+  'globalTitle1SemilightFontSize': '{fontSize.7}',
+  'globalTitle1SemilightLetterSpacing': '{letterSpacing.0}',
+  'globalTitle1SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalTitle1SemilightParagraphIndent': '{paragraphIndent.0}',
+  'globalTitle1SemilightTextCase': '{textCase.none}',
+  'globalTitle1SemilightTextDecoration': '{textDecoration.none}',
+  'globalDisplay3StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay3StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'globalDisplay3StrongLineHeight': '{lineHeights.8}',
+  'globalDisplay3StrongFontSize': '{fontSize.8}',
+  'globalDisplay3StrongLetterSpacing': '{letterSpacing.1}',
+  'globalDisplay3StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay3StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay3StrongTextCase': '{textCase.none}',
+  'globalDisplay3StrongTextDecoration': '{textDecoration.none}',
+  'globalDisplay2LightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay2LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'globalDisplay2LightLineHeight': '{lineHeights.9}',
+  'globalDisplay2LightFontSize': '{fontSize.9}',
+  'globalDisplay2LightLetterSpacing': '{letterSpacing.0}',
+  'globalDisplay2LightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay2LightParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay2LightTextCase': '{textCase.none}',
+  'globalDisplay2LightTextDecoration': '{textDecoration.none}',
+  'globalDisplay2SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay2SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'globalDisplay2SemilightLineHeight': '{lineHeights.9}',
+  'globalDisplay2SemilightFontSize': '{fontSize.9}',
+  'globalDisplay2SemilightLetterSpacing': '{letterSpacing.0}',
+  'globalDisplay2SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay2SemilightParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay2SemilightTextCase': '{textCase.none}',
+  'globalDisplay2SemilightTextDecoration': '{textDecoration.none}',
+  'globalDisplay2FontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay2FontWeight': '{fontWeights.segoe-ui-0}',
+  'globalDisplay2LineHeight': '{lineHeights.9}',
+  'globalDisplay2FontSize': '{fontSize.9}',
+  'globalDisplay2LetterSpacing': '{letterSpacing.1}',
+  'globalDisplay2ParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay2ParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay2TextCase': '{textCase.none}',
+  'globalDisplay2TextDecoration': '{textDecoration.none}',
+  'globalDisplay2StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay2StrongFontWeight': '{fontWeights.segoe-ui-0}',
+  'globalDisplay2StrongLineHeight': '{lineHeights.9}',
+  'globalDisplay2StrongFontSize': '{fontSize.9}',
+  'globalDisplay2StrongLetterSpacing': '{letterSpacing.0}',
+  'globalDisplay2StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay2StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay2StrongTextCase': '{textCase.none}',
+  'globalDisplay2StrongTextDecoration': '{textDecoration.none}',
+  'globalDisplay2StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay2StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'globalDisplay2StrongerLineHeight': '{lineHeights.9}',
+  'globalDisplay2StrongerFontSize': '{fontSize.9}',
+  'globalDisplay2StrongerLetterSpacing': '{letterSpacing.0}',
+  'globalDisplay2StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay2StrongerParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay2StrongerTextCase': '{textCase.none}',
+  'globalDisplay2StrongerTextDecoration': '{textDecoration.none}',
+  'globalDisplay1LightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay1LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'globalDisplay1LightLineHeight': '{lineHeights.10}',
+  'globalDisplay1LightFontSize': '{fontSize.10}',
+  'globalDisplay1LightLetterSpacing': '{letterSpacing.0}',
+  'globalDisplay1LightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay1LightParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay1LightTextCase': '{textCase.none}',
+  'globalDisplay1LightTextDecoration': '{textDecoration.none}',
+  'globalDisplay1SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay1SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'globalDisplay1SemilightLineHeight': '{lineHeights.10}',
+  'globalDisplay1SemilightFontSize': '{fontSize.10}',
+  'globalDisplay1SemilightLetterSpacing': '{letterSpacing.0}',
+  'globalDisplay1SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay1SemilightParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay1SemilightTextCase': '{textCase.none}',
+  'globalDisplay1SemilightTextDecoration': '{textDecoration.none}',
+  'globalDisplay1FontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay1FontWeight': '{fontWeights.segoe-ui-0}',
+  'globalDisplay1LineHeight': '{lineHeights.10}',
+  'globalDisplay1FontSize': '{fontSize.10}',
+  'globalDisplay1LetterSpacing': '{letterSpacing.0}',
+  'globalDisplay1ParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay1ParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay1TextCase': '{textCase.none}',
+  'globalDisplay1TextDecoration': '{textDecoration.none}',
+  'globalDisplay1StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay1StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'globalDisplay1StrongLineHeight': '{lineHeights.10}',
+  'globalDisplay1StrongFontSize': '{fontSize.10}',
+  'globalDisplay1StrongLetterSpacing': '{letterSpacing.0}',
+  'globalDisplay1StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay1StrongParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay1StrongTextCase': '{textCase.none}',
+  'globalDisplay1StrongTextDecoration': '{textDecoration.none}',
+  'globalDisplay1StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'globalDisplay1StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'globalDisplay1StrongerLineHeight': '{lineHeights.10}',
+  'globalDisplay1StrongerFontSize': '{fontSize.10}',
+  'globalDisplay1StrongerLetterSpacing': '{letterSpacing.0}',
+  'globalDisplay1StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'globalDisplay1StrongerParagraphIndent': '{paragraphIndent.0}',
+  'globalDisplay1StrongerTextCase': '{textCase.none}',
+  'globalDisplay1StrongerTextDecoration': '{textDecoration.none}',
   'globalTextCaseNone': 'none',
   'globalTextDecorationNone': 'none',
-  'globalParagraphIndent0': '1rem',
+  'globalParagraphIndent0': '0px',
   'global/globalFontFamiliesSegoe-ui': 'Segoe UI',
   'global/globalFontWeightsSegoe-ui-0': 'Regular',
   'global/globalFontWeightsSegoe-ui-1': 'Semibold',
   'global/globalFontWeightsSegoe-ui-2': 'Bold',
   'global/globalFontWeightsSegoe-ui-3': 'Semilight',
   'global/globalFontWeightsSegoe-ui-4': 'Light',
-  'Theme/LightNeutralBackground1Rest': '{colors.neutral.white}',
-  'Theme/LightNeutralBackground1Hover': '{colors.neutral.grey-80}',
-  'Theme/LightNeutralBackground1Pressed': '{colors.neutral.grey-70}',
-  'Theme/LightNeutralBackground1Selected': '{colors.neutral.grey-90}',
+  'global/globalLineHeights0': '14',
+  'global/globalLineHeights1': '16',
+  'global/globalLineHeights2': '22',
+  'global/globalLineHeights3': '24',
+  'global/globalLineHeights4': '28',
+  'global/globalLineHeights5': '34',
+  'global/globalLineHeights6': '36',
+  'global/globalLineHeights7': '48',
+  'global/globalLineHeights8': '52',
+  'global/globalLineHeights9': '64',
+  'global/globalLineHeights10': '70',
+  'global/globalFontSize0': '10',
+  'global/globalFontSize1': '12',
+  'global/globalFontSize2': '14',
+  'global/globalFontSize3': '16',
+  'global/globalFontSize4': '20',
+  'global/globalFontSize5': '24',
+  'global/globalFontSize6': '28',
+  'global/globalFontSize7': '32',
+  'global/globalFontSize8': '40',
+  'global/globalFontSize9': '48',
+  'global/globalFontSize10': '52',
+  'global/globalLetterSpacing1': '0',
+  'global/globalParagraphSpacing0': '0',
+  'global/globalParagraphIndent0': '0',
+  'Theme/LightNeutralBackground1Rest': '{Colors.Neutral.White}',
+  'Theme/LightNeutralBackground1Hover': '{Colors.Neutral.Grey-80}',
+  'Theme/LightNeutralBackground1Pressed': '{Colors.Neutral.Grey-70}',
+  'Theme/LightNeutralBackground1Selected': '{Colors.Neutral.Grey-90}',
   'Theme/LightNeutralBackground2Rest': '#f5f4f2',
-  'Theme/LightNeutralBackground3Rest': '{colors.neutral.grey-70}',
-  'Theme/LightNeutralBackground3Hover': '{colors.neutral.grey-80}',
-  'Theme/LightNeutralBackground3Pressed': '{colors.neutral.grey-80}',
-  'Theme/LightNeutralBackground4Rest': '{colors.neutral.grey-90}',
-  'Theme/LightNeutralBackground4Hover': '{colors.neutral.grey-70}',
-  'Theme/LightNeutralBackground4Pressed': '{colors.neutral.grey-60}',
-  'Theme/LightNeutralBackground5Rest': '{colors.neutral.grey-80}',
-  'Theme/LightNeutralBackground6Rest': '{colors.neutral.grey-90}',
-  'Theme/LightNeutralBackgroundInvertedRest': '{brand-10}',
-  'Theme/LightNeutralBackgroundInvertedDisabledRest': '{colors.alpha.white.10}',
-  'Theme/LightNeutralBackgroundAlpha1Rest': '{colors.alpha.white.50}',
-  'Theme/LightNeutralBackgroundAlpha2Rest': '{colors.alpha.white.80}',
-  'Theme/LightNeutralBackgroundStaticRest': '{colors.neutral.white}',
-  'Theme/LightNeutralBackgroundSubtleRest': '{colors.alpha.white.0}',
-  'Theme/LightNeutralBackgroundSubtleHover': '{colors.neutral.grey-80}',
-  'Theme/LightNeutralBackgroundSubtlePressed': '{colors.neutral.grey-70}',
-  'Theme/LightNeutralBackgroundSubtleSelected': '{colors.neutral.grey-90}',
-  'Theme/LightNeutralBackgroundSubtleLight alphaHover': '{colors.alpha.white.70}',
-  'Theme/LightNeutralBackgroundSubtleLight alphaPressed': '{colors.alpha.white.50}',
-  'Theme/LightNeutralBackgroundSubtleLight alphaSelected': '{colors.alpha.white.0}',
-  'Theme/LightNeutralBackgroundSubtleInvertedRest': '{colors.alpha.black.0}',
-  'Theme/LightNeutralBackgroundSubtleInvertedHover': '{colors.alpha.black.10}',
-  'Theme/LightNeutralBackgroundSubtleInvertedPressed': '{colors.alpha.black.30}',
-  'Theme/LightNeutralBackgroundSubtleInvertedSelected': '{colors.alpha.black.20}',
-  'Theme/LightNeutralBackgroundTransparentRest': '{colors.alpha.white.0}',
-  'Theme/LightNeutralBackgroundTransparentHover': '{colors.alpha.white.0}',
-  'Theme/LightNeutralBackgroundTransparentPressed': '{colors.alpha.white.0}',
-  'Theme/LightNeutralBackgroundTransparentSelected': '{colors.alpha.white.0}',
-  'Theme/LightNeutralBackgroundDisabledRest': '{colors.neutral.grey-80}',
-  'Theme/LightNeutralBackgroundStencil1Rest': '{colors.neutral.grey-70}',
-  'Theme/LightNeutralBackgroundStencil2Rest': '{colors.neutral.grey-90}',
-  'Theme/LightNeutralBackgroundOverlayRest': '{colors.alpha.black.40}',
-  'Theme/LightNeutralBackgroundOverlayScrollbarRest': '{colors.alpha.black.50}',
-  'Theme/LightNeutralForeground1Rest primary text': '{brand-10}',
-  'Theme/LightNeutralForeground1Hover': '{brand-30}',
-  'Theme/LightNeutralForeground1Pressed': '{brand-30}',
-  'Theme/LightNeutralForeground1Selected': '{brand-30}',
-  'Theme/LightNeutralForeground2Rest secondary text': '{colors.neutral.grey-12}',
-  'Theme/LightNeutralForeground2Hover': '{colors.neutral.grey-6}',
-  'Theme/LightNeutralForeground2Pressed': '{colors.neutral.grey-6}',
-  'Theme/LightNeutralForeground2Selected': '{colors.neutral.grey-6}',
-  'Theme/LightNeutralForeground2BrandHover': '{brand-50}',
-  'Theme/LightNeutralForeground2BrandPressed': '{brand-40}',
-  'Theme/LightNeutralForeground2BrandSelected': '{brand-30}',
-  'Theme/LightNeutralForeground2BrandRest': '{brand-60}',
-  'Theme/LightNeutralForeground2LinkRest': '{brand-60}',
-  'Theme/LightNeutralForeground2LinkHover': '{brand-50}',
-  'Theme/LightNeutralForeground2LinkPressed': '{brand-40}',
-  'Theme/LightNeutralForeground2LinkSelected': '{brand-30}',
-  'Theme/LightNeutralForeground4Rest': '{colors.neutral.grey-30}',
-  'Theme/LightNeutralForegroundDisabled2Rest': '{colors.neutral.grey-60}',
-  'Theme/LightNeutralForegroundDisabledRest': '{colors.neutral.grey-50}',
-  'Theme/LightNeutralForegroundStaticInvertedRest': '{colors.neutral.white}',
-  'Theme/LightNeutralForegroundInverted1Rest': '{colors.neutral.white}',
-  'Theme/LightNeutralForegroundInverted1Hover': '{colors.neutral.grey-80}',
-  'Theme/LightNeutralForegroundInverted1Pressed': '{colors.neutral.grey-70}',
-  'Theme/LightNeutralForegroundInverted1Selected': '{colors.neutral.grey-60}',
-  'Theme/LightNeutralForegroundInverted2Rest': '{colors.neutral.white}',
-  'Theme/LightNeutralForegroundInvertedDisabledRest': '{colors.alpha.white.40}',
-  'Theme/LightNeutralForegroundInvertedLinkRest': '{colors.neutral.white}',
-  'Theme/LightNeutralForegroundInvertedLinkHover': '{colors.neutral.grey-90}',
-  'Theme/LightNeutralForegroundInvertedLinkPressed': '{colors.neutral.grey-80}',
-  'Theme/LightNeutralForegroundInvertedLinkSelected': '{colors.neutral.grey-70}',
-  'Theme/LightNeutralForegroundOn BrandRest': '{colors.neutral.white}',
-  'Theme/LightNeutralStroke1Rest': '{colors.neutral.grey-70}',
-  'Theme/LightNeutralStroke1Hover': '{colors.neutral.grey-60}',
-  'Theme/LightNeutralStroke1Pressed': '{colors.neutral.grey-50}',
-  'Theme/LightNeutralStroke1Selected': '{colors.neutral.grey-40}',
-  'Theme/LightNeutralStroke2Rest': '{colors.grey.white}',
-  'Theme/LightNeutralStroke3Rest': '{colors.neutral.grey-50}',
-  'Theme/LightNeutralStrokeAlpha1Rest': '{colors.alpha.black.5}',
-  'Theme/LightNeutralStrokeAlpha2Rest': '{colors.alpha.white.20}',
+  'Theme/LightNeutralBackground3Rest': '{Colors.Neutral.Grey-70}',
+  'Theme/LightNeutralBackground3Hover': '{Colors.Neutral.Grey-80}',
+  'Theme/LightNeutralBackground3Pressed': '{Colors.Neutral.Grey-80}',
+  'Theme/LightNeutralBackground4Rest': '{Colors.Neutral.Grey-90}',
+  'Theme/LightNeutralBackground4Hover': '{Colors.Neutral.Grey-70}',
+  'Theme/LightNeutralBackground4Pressed': '{Colors.Neutral.Grey-60}',
+  'Theme/LightNeutralBackground5Rest': '{Colors.Neutral.Grey-80}',
+  'Theme/LightNeutralBackground6Rest': '{Colors.Neutral.Grey-90}',
+  'Theme/LightNeutralBackgroundInvertedRest': '{Brand-10}',
+  'Theme/LightNeutralBackgroundInvertedDisabledRest': '{Colors.Alpha.White.10}',
+  'Theme/LightNeutralBackgroundAlpha1Rest': '{Colors.Alpha.White.50}',
+  'Theme/LightNeutralBackgroundAlpha2Rest': '{Colors.Alpha.White.80}',
+  'Theme/LightNeutralBackgroundStaticRest': '{Colors.Neutral.White}',
+  'Theme/LightNeutralBackgroundSubtleRest': '{Colors.Alpha.White.0}',
+  'Theme/LightNeutralBackgroundSubtleHover': '{Colors.Neutral.Grey-80}',
+  'Theme/LightNeutralBackgroundSubtlePressed': '{Colors.Neutral.Grey-70}',
+  'Theme/LightNeutralBackgroundSubtleSelected': '{Colors.Neutral.Grey-90}',
+  'Theme/LightNeutralBackgroundSubtleLight alphaHover': '{Colors.Alpha.White.70}',
+  'Theme/LightNeutralBackgroundSubtleLight alphaPressed': '{Colors.Alpha.White.50}',
+  'Theme/LightNeutralBackgroundSubtleLight alphaSelected': '{Colors.Alpha.White.0}',
+  'Theme/LightNeutralBackgroundSubtleInvertedRest': '{Colors.Alpha.Black.0}',
+  'Theme/LightNeutralBackgroundSubtleInvertedHover': '{Colors.Alpha.Black.10}',
+  'Theme/LightNeutralBackgroundSubtleInvertedPressed': '{Colors.Alpha.Black.30}',
+  'Theme/LightNeutralBackgroundSubtleInvertedSelected': '{Colors.Alpha.Black.20}',
+  'Theme/LightNeutralBackgroundTransparentRest': '{Colors.Alpha.White.0}',
+  'Theme/LightNeutralBackgroundTransparentHover': '{Colors.Alpha.White.0}',
+  'Theme/LightNeutralBackgroundTransparentPressed': '{Colors.Alpha.White.0}',
+  'Theme/LightNeutralBackgroundTransparentSelected': '{Colors.Alpha.White.0}',
+  'Theme/LightNeutralBackgroundDisabledRest': '{Colors.Neutral.Grey-80}',
+  'Theme/LightNeutralBackgroundStencil1Rest': '{Colors.Neutral.Grey-70}',
+  'Theme/LightNeutralBackgroundStencil2Rest': '{Colors.Neutral.Grey-90}',
+  'Theme/LightNeutralBackgroundOverlayRest': '{Colors.Alpha.Black.40}',
+  'Theme/LightNeutralBackgroundOverlayScrollbarRest': '{Colors.Alpha.Black.50}',
+  'Theme/LightNeutralForeground1Rest primary text': '{Brand-10}',
+  'Theme/LightNeutralForeground1Hover': '{Brand-30}',
+  'Theme/LightNeutralForeground1Pressed': '{Brand-30}',
+  'Theme/LightNeutralForeground1Selected': '{Brand-30}',
+  'Theme/LightNeutralForeground2Rest secondary text': '{Colors.Neutral.Grey-12}',
+  'Theme/LightNeutralForeground2Hover': '{Colors.Neutral.Grey-6}',
+  'Theme/LightNeutralForeground2Pressed': '{Colors.Neutral.Grey-6}',
+  'Theme/LightNeutralForeground2Selected': '{Colors.Neutral.Grey-6}',
+  'Theme/LightNeutralForeground2BrandHover': '{Brand-50}',
+  'Theme/LightNeutralForeground2BrandPressed': '{Brand-40}',
+  'Theme/LightNeutralForeground2BrandSelected': '{Brand-30}',
+  'Theme/LightNeutralForeground2BrandRest': '{Brand-60}',
+  'Theme/LightNeutralForeground2LinkRest': '{Brand-60}',
+  'Theme/LightNeutralForeground2LinkHover': '{Brand-50}',
+  'Theme/LightNeutralForeground2LinkPressed': '{Brand-40}',
+  'Theme/LightNeutralForeground2LinkSelected': '{Brand-30}',
+  'Theme/LightNeutralForeground4Rest': '{Colors.Neutral.Grey-30}',
+  'Theme/LightNeutralForegroundDisabled2Rest': '{Colors.Neutral.Grey-60}',
+  'Theme/LightNeutralForegroundDisabledRest': '{Colors.Neutral.Grey-50}',
+  'Theme/LightNeutralForegroundStaticInvertedRest': '{Colors.Neutral.White}',
+  'Theme/LightNeutralForegroundInverted1Rest': '{Colors.Neutral.White}',
+  'Theme/LightNeutralForegroundInverted1Hover': '{Colors.Neutral.Grey-80}',
+  'Theme/LightNeutralForegroundInverted1Pressed': '{Colors.Neutral.Grey-70}',
+  'Theme/LightNeutralForegroundInverted1Selected': '{Colors.Neutral.Grey-60}',
+  'Theme/LightNeutralForegroundInverted2Rest': '{Colors.Neutral.White}',
+  'Theme/LightNeutralForegroundInvertedDisabledRest': '{Colors.Alpha.White.40}',
+  'Theme/LightNeutralForegroundInvertedLinkRest': '{Colors.Neutral.White}',
+  'Theme/LightNeutralForegroundInvertedLinkHover': '{Colors.Neutral.Grey-90}',
+  'Theme/LightNeutralForegroundInvertedLinkPressed': '{Colors.Neutral.Grey-80}',
+  'Theme/LightNeutralForegroundInvertedLinkSelected': '{Colors.Neutral.Grey-70}',
+  'Theme/LightNeutralForegroundOn BrandRest': '{Colors.Neutral.White}',
+  'Theme/LightNeutralStroke1Rest': '{Colors.Neutral.Grey-70}',
+  'Theme/LightNeutralStroke1Hover': '{Colors.Neutral.Grey-60}',
+  'Theme/LightNeutralStroke1Pressed': '{Colors.Neutral.Grey-50}',
+  'Theme/LightNeutralStroke1Selected': '{Colors.Neutral.Grey-40}',
+  'Theme/LightNeutralStroke2Rest': '{Colors.Grey.White}',
+  'Theme/LightNeutralStroke3Rest': '{Colors.Neutral.Grey-50}',
+  'Theme/LightNeutralStrokeAlpha1Rest': '{Colors.Alpha.Black.5}',
+  'Theme/LightNeutralStrokeAlpha2Rest': '{Colors.Alpha.White.20}',
   'Theme/LightNeutralStrokeSubtleRest': '#f5f4f2',
-  'Theme/LightNeutralStrokeOn Brand1Rest': '{brand-60}',
-  'Theme/LightNeutralStrokeOn Brand2Rest': '{colors.neutral.white}',
-  'Theme/LightNeutralStrokeAccessibleRest': '{brand-60}',
-  'Theme/LightNeutralStrokeAccessibleHover': '{brand-50}',
-  'Theme/LightNeutralStrokeAccessiblePressed': '{brand-40}',
-  'Theme/LightNeutralStrokeAccessibleSelected': '{brand-30}',
-  'Theme/LightNeutralStrokeFocus1Rest': '{brand-60}',
-  'Theme/LightNeutralStrokeFocus2Rest': '{colors.grey.white}',
-  'Theme/LightNeutralStrokeTransparentInteractiveRest': '{colors.alpha.white.0}',
-  'Theme/LightNeutralStrokeTransparentDisabledRest': '{colors.alpha.white.0}',
-  'Theme/LightNeutralStrokeTransparentRest': '{colors.alpha.white.0}',
-  'Theme/LightNeutralStrokeDisabledRest': '{colors.neutral.grey-70}',
-  'Theme/LightNeutralStrokeDisabledInvertedRest': '{colors.alpha.white.40}',
-  'Theme/LightBrandBackground1Rest': '{brand-60}',
-  'Theme/LightBrandBackground1Hover': '{brand-50}',
-  'Theme/LightBrandBackground1Pressed': '{brand-40}',
-  'Theme/LightBrandBackground1Selected': '{brand-30}',
-  'Theme/LightBrandBackground2Rest': '{brand-10}',
-  'Theme/LightBrandBackground2Hover': '{brand-110}',
-  'Theme/LightBrandBackground2Pressed': '{brand-100}',
-  'Theme/LightBrandBackground3Rest': '{brand-120}',
-  'Theme/LightBrandBackgroundInvertedRest': '{colors.neutral.white}',
-  'Theme/LightBrandBackgroundInvertedHover': '{brand-120}',
-  'Theme/LightBrandBackgroundInvertedPressed': '{brand-130}',
-  'Theme/LightBrandBackgroundInvertedSelected': '{brand-100}',
-  'Theme/LightBrandBackgroundStaticRest': '{brand-60}',
-  'Theme/LightBrandBackgroundCompoundRest': '{brand-60}',
-  'Theme/LightBrandBackgroundCompoundHover': '{brand-50}',
-  'Theme/LightBrandBackgroundCompoundPressed': '{brand-40}',
-  'Theme/LightBrandForeground1Rest': '{brand-60}',
-  'Theme/LightBrandForeground1Hover': '{brand-50}',
-  'Theme/LightBrandForeground1Pressed': '{brand-40}',
-  'Theme/LightBrandForeground1Selected': '{brand-30}',
-  'Theme/LightBrandForeground2Rest': '{brand-80}',
-  'Theme/LightBrandForeground2Hover': '{brand-60}',
-  'Theme/LightBrandForeground2Pressed': '{brand-30}',
-  'Theme/LightBrandForegroundLinkRest': '{brand-60}',
-  'Theme/LightBrandForegroundLinkHover': '{brand-50}',
-  'Theme/LightBrandForegroundLinkPressed': '{brand-40}',
-  'Theme/LightBrandForegroundLinkSelected': '{brand-30}',
-  'Theme/LightBrandForegroundInvertedRest': '{brand-100}',
-  'Theme/LightBrandForegroundInvertedHover': '{brand-110}',
-  'Theme/LightBrandForegroundInvertedPressed': '{brand-100}',
-  'Theme/LightBrandForegroundOn LightRest': '{brand-80}',
-  'Theme/LightBrandForegroundOn LightHover': '{brand-70}',
-  'Theme/LightBrandForegroundOn LightPressed': '{brand-50}',
-  'Theme/LightBrandForegroundOn LightSelected': '{brand-60}',
-  'Theme/LightBrandForegroundCompoundRest': '{brand-60}',
-  'Theme/LightBrandForegroundCompoundHover': '{brand-50}',
-  'Theme/LightBrandForegroundCompoundPressed': '{brand-40}',
-  'Theme/LightBrandStroke1Rest': '{brand-60}',
-  'Theme/LightBrandStroke1Hover': '{brand-50}',
-  'Theme/LightBrandStroke1Pressed': '{brand-40}',
-  'Theme/LightBrandStroke1Selected': '{brand-30}',
-  'Theme/LightBrandStroke2Rest': '{brand-10}',
-  'Theme/LightBrandStroke2ContrastRest': '{brand-110}',
-  'Theme/LightBrandStroke3Rest': '{brand-90}',
-  'Theme/LightBrandStrokeCompoundRest': '{brand-60}',
-  'Theme/LightBrandStrokeCompoundHover': '{brand-50}',
-  'Theme/LightBrandStrokeCompoundPressed': '{brand-40}',
-  'Theme/LightStatusDangerBackground1Rest': '{colors.shared.cranberry.tint 60}',
-  'Theme/LightStatusDangerBackground3Rest': '{colors.shared.cranberry.primary}',
-  'Theme/LightStatusDangerForeground1Rest': '{colors.shared.cranberry.primary}',
-  'Theme/LightStatusDangerForeground3Rest': '{colors.neutral.white}',
-  'Theme/LightStatusDangerStroke1Rest': '{colors.shared.cranberry.primary}',
-  'Theme/LightStatusDangerStroke2Rest': '{colors.shared.cranberry.tint 30}',
-  'Theme/LightStatusSuccessBackground1Rest': '{colors.shared.green.tint 60}',
-  'Theme/LightStatusSuccessBackground3Rest': '{colors.shared.green.primary}',
-  'Theme/LightStatusSuccessForeground1Rest': '{colors.shared.green.primary}',
-  'Theme/LightStatusSuccessForeground3Rest': '{colors.neutral.white}',
-  'Theme/LightStatusSuccessStroke1Rest': '{colors.shared.green.primary}',
-  'Theme/LightStatusSuccessStroke2Rest': '{colors.shared.green.tint 30}',
-  'Theme/LightStatusWarningBackground1Rest': '{colors.shared.orange.tint 60}',
-  'Theme/LightStatusWarningBackground3Rest': '{colors.shared.orange.primary}',
-  'Theme/LightStatusWarningForeground1Rest': '{colors.shared.orange.primary}',
-  'Theme/LightStatusWarningForeground3Rest': '{colors.neutral.white}',
-  'Theme/LightStatusWarningStroke1Rest': '{colors.shared.orange.primary}',
-  'Theme/LightStatusWarningStroke2Rest': '{colors.shared.orange.tint 30}',
-  'Theme/LightStatusOofForeground3Rest': '{colors.shared.berry.primary}',
-  'Theme/LightStatusAwayBackground3Rest': '{colors.shared.marigold.primary}',
-  'Theme/LightStatusAvailableForeground3Rest': '{colors.shared.light green.primary}',
-  'Theme/LightStatusGenericAnchorBackground2Rest': '{colors.shared.anchor.tint 40}',
-  'Theme/LightStatusGenericAnchorForeground2Rest': '{colors.shared.anchor.shade 30}',
-  'Theme/LightStatusGenericAnchorStrokeActiveRest': '{colors.shared.anchor.primary}',
-  'Theme/LightStatusGenericInformationBackground1Rest': '{colors.shared.information.tint 60}',
-  'Theme/LightStatusGenericInformationBackground1Hover': '{colors.shared.information.tint 50}',
-  'Theme/LightStatusGenericInformationBackground1Pressed': '{colors.shared.information.tint 40}',
-  'Theme/LightStatusGenericInformationStroke1Rest': '{colors.shared.information.primary}',
-  'Theme/LightStatusGenericInformationStroke2Rest': '{colors.shared.information.tint 30}',
-  'Theme/LightStatusGenericInformationStroke2Hover': '{colors.shared.information.tint 20}',
-  'Theme/LightStatusGenericInformationStroke2Pressed': '{colors.shared.information.tint 10}',
-  'Theme/LightStatusGenericInformationForegroundRest': '{colors.shared.information.primary}',
-  'Theme/LightStatusGenericInformationForegroundHover': '{colors.shared.information.shade 10}',
-  'Theme/LightStatusGenericInformationForegroundPressed': '{colors.shared.information.shade 20}',
-  'Theme/LightStatusSevereBackground1Rest': '{colors.shared.dark orange.tint 60}',
-  'Theme/LightStatusSevereBackground3Rest': '{colors.shared.dark orange.primary}',
-  'Theme/LightStatusSevereForeground1Rest': '{colors.shared.dark orange.primary}',
-  'Theme/LightStatusSevereForeground3Rest': '{colors.neutral.white}',
-  'Theme/LightStatusSevereStroke1Rest': '{colors.shared.dark orange.primary}',
-  'Theme/LightStatusSevereStroke2Rest': '{colors.shared.dark orange.tint 30}',
+  'Theme/LightNeutralStrokeOn Brand1Rest': '{Brand-60}',
+  'Theme/LightNeutralStrokeOn Brand2Rest': '{Colors.Neutral.White}',
+  'Theme/LightNeutralStrokeAccessibleRest': '{Brand-60}',
+  'Theme/LightNeutralStrokeAccessibleHover': '{Brand-50}',
+  'Theme/LightNeutralStrokeAccessiblePressed': '{Brand-40}',
+  'Theme/LightNeutralStrokeAccessibleSelected': '{Brand-30}',
+  'Theme/LightNeutralStrokeFocus1Rest': '{Brand-60}',
+  'Theme/LightNeutralStrokeFocus2Rest': '{Colors.Grey.White}',
+  'Theme/LightNeutralStrokeTransparentInteractiveRest': '{Colors.Alpha.White.0}',
+  'Theme/LightNeutralStrokeTransparentDisabledRest': '{Colors.Alpha.White.0}',
+  'Theme/LightNeutralStrokeTransparentRest': '{Colors.Alpha.White.0}',
+  'Theme/LightNeutralStrokeDisabledRest': '{Colors.Neutral.Grey-70}',
+  'Theme/LightNeutralStrokeDisabledInvertedRest': '{Colors.Alpha.White.40}',
+  'Theme/LightBrandBackground1Rest': '{Brand-60}',
+  'Theme/LightBrandBackground1Hover': '{Brand-50}',
+  'Theme/LightBrandBackground1Pressed': '{Brand-40}',
+  'Theme/LightBrandBackground1Selected': '{Brand-30}',
+  'Theme/LightBrandBackground2Rest': '{Brand-10}',
+  'Theme/LightBrandBackground2Hover': '{Brand-110}',
+  'Theme/LightBrandBackground2Pressed': '{Brand-100}',
+  'Theme/LightBrandBackground3Rest': '{Brand-120}',
+  'Theme/LightBrandBackgroundInvertedRest': '{Colors.Neutral.White}',
+  'Theme/LightBrandBackgroundInvertedHover': '{Brand-120}',
+  'Theme/LightBrandBackgroundInvertedPressed': '{Brand-130}',
+  'Theme/LightBrandBackgroundInvertedSelected': '{Brand-100}',
+  'Theme/LightBrandBackgroundStaticRest': '{Brand-60}',
+  'Theme/LightBrandBackgroundCompoundRest': '{Brand-60}',
+  'Theme/LightBrandBackgroundCompoundHover': '{Brand-50}',
+  'Theme/LightBrandBackgroundCompoundPressed': '{Brand-40}',
+  'Theme/LightBrandForeground1Rest': '{Brand-60}',
+  'Theme/LightBrandForeground1Hover': '{Brand-50}',
+  'Theme/LightBrandForeground1Pressed': '{Brand-40}',
+  'Theme/LightBrandForeground1Selected': '{Brand-30}',
+  'Theme/LightBrandForeground2Rest': '{Brand-80}',
+  'Theme/LightBrandForeground2Hover': '{Brand-60}',
+  'Theme/LightBrandForeground2Pressed': '{Brand-30}',
+  'Theme/LightBrandForegroundLinkRest': '{Brand-60}',
+  'Theme/LightBrandForegroundLinkHover': '{Brand-50}',
+  'Theme/LightBrandForegroundLinkPressed': '{Brand-40}',
+  'Theme/LightBrandForegroundLinkSelected': '{Brand-30}',
+  'Theme/LightBrandForegroundInvertedRest': '{Brand-100}',
+  'Theme/LightBrandForegroundInvertedHover': '{Brand-110}',
+  'Theme/LightBrandForegroundInvertedPressed': '{Brand-100}',
+  'Theme/LightBrandForegroundOn LightRest': '{Brand-80}',
+  'Theme/LightBrandForegroundOn LightHover': '{Brand-70}',
+  'Theme/LightBrandForegroundOn LightPressed': '{Brand-50}',
+  'Theme/LightBrandForegroundOn LightSelected': '{Brand-60}',
+  'Theme/LightBrandForegroundCompoundRest': '{Brand-60}',
+  'Theme/LightBrandForegroundCompoundHover': '{Brand-50}',
+  'Theme/LightBrandForegroundCompoundPressed': '{Brand-40}',
+  'Theme/LightBrandStroke1Rest': '{Brand-60}',
+  'Theme/LightBrandStroke1Hover': '{Brand-50}',
+  'Theme/LightBrandStroke1Pressed': '{Brand-40}',
+  'Theme/LightBrandStroke1Selected': '{Brand-30}',
+  'Theme/LightBrandStroke2Rest': '{Brand-10}',
+  'Theme/LightBrandStroke2ContrastRest': '{Brand-110}',
+  'Theme/LightBrandStroke3Rest': '{Brand-90}',
+  'Theme/LightBrandStrokeCompoundRest': '{Brand-60}',
+  'Theme/LightBrandStrokeCompoundHover': '{Brand-50}',
+  'Theme/LightBrandStrokeCompoundPressed': '{Brand-40}',
+  'Theme/LightStatusDangerBackground1Rest': '{Colors.Shared.Cranberry.Tint 60}',
+  'Theme/LightStatusDangerBackground3Rest': '{Colors.Shared.Cranberry.Primary}',
+  'Theme/LightStatusDangerForeground1Rest': '{Colors.Shared.Cranberry.Primary}',
+  'Theme/LightStatusDangerForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/LightStatusDangerStroke1Rest': '{Colors.Shared.Cranberry.Primary}',
+  'Theme/LightStatusDangerStroke2Rest': '{Colors.Shared.Cranberry.Tint 30}',
+  'Theme/LightStatusSuccessBackground1Rest': '{Colors.Shared.Green.Tint 60}',
+  'Theme/LightStatusSuccessBackground3Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/LightStatusSuccessForeground1Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/LightStatusSuccessForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/LightStatusSuccessStroke1Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/LightStatusSuccessStroke2Rest': '{Colors.Shared.Green.Tint 30}',
+  'Theme/LightStatusWarningBackground1Rest': '{Colors.Shared.Orange.Tint 60}',
+  'Theme/LightStatusWarningBackground3Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/LightStatusWarningForeground1Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/LightStatusWarningForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/LightStatusWarningStroke1Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/LightStatusWarningStroke2Rest': '{Colors.Shared.Orange.Tint 30}',
+  'Theme/LightStatusOofForeground3Rest': '{Colors.Shared.Berry.Primary}',
+  'Theme/LightStatusAwayBackground3Rest': '{Colors.Shared.Marigold.Primary}',
+  'Theme/LightStatusAvailableForeground3Rest': '{Colors.Shared.Light green.Primary}',
+  'Theme/LightStatusGenericAnchorBackground2Rest': '{Colors.Shared.Anchor.Tint 40}',
+  'Theme/LightStatusGenericAnchorForeground2Rest': '{Colors.Shared.Anchor.Shade 30}',
+  'Theme/LightStatusGenericAnchorStrokeActiveRest': '{Colors.Shared.Anchor.Primary}',
+  'Theme/LightStatusGenericInformationBackground1Rest': '{Colors.Shared.Information.Tint 60}',
+  'Theme/LightStatusGenericInformationBackground1Hover': '{Colors.Shared.Information.Tint 50}',
+  'Theme/LightStatusGenericInformationBackground1Pressed': '{Colors.Shared.Information.Tint 40}',
+  'Theme/LightStatusGenericInformationStroke1Rest': '{Colors.Shared.Information.Primary}',
+  'Theme/LightStatusGenericInformationStroke2Rest': '{Colors.Shared.Information.Tint 30}',
+  'Theme/LightStatusGenericInformationStroke2Hover': '{Colors.Shared.Information.Tint 20}',
+  'Theme/LightStatusGenericInformationStroke2Pressed': '{Colors.Shared.Information.Tint 10}',
+  'Theme/LightStatusGenericInformationForegroundRest': '{Colors.Shared.Information.Primary}',
+  'Theme/LightStatusGenericInformationForegroundHover': '{Colors.Shared.Information.Shade 10}',
+  'Theme/LightStatusGenericInformationForegroundPressed': '{Colors.Shared.Information.Shade 20}',
+  'Theme/LightStatusSevereBackground1Rest': '{Colors.Shared.Dark Orange.Tint 60}',
+  'Theme/LightStatusSevereBackground3Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/LightStatusSevereForeground1Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/LightStatusSevereForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/LightStatusSevereStroke1Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/LightStatusSevereStroke2Rest': '{Colors.Shared.Dark Orange.Tint 30}',
   'Theme/LightShadowAmbient': '#0000001f',
   'Theme/LightShadowAmbient-lighter': '#0000000f',
   'Theme/LightShadowAmbient-darker': '#00000033',
@@ -8119,271 +4524,271 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Theme/LightShadowKey-lighter': '#00000012',
   'Theme/LightShadowKey-darker': '#0000003d',
   'Theme/LightShadowBrand-key': '#0000004d',
-  'Theme/LightData vizForegroundLabelsCategorical': '{colors.brand.brand-10}',
-  'Theme/LightData vizForegroundLabelsData': '{colors.neutral.grey-12}',
-  'Theme/LightData vizForegroundLabelsColorBlue': '{colors.data viz.core.blue}',
-  'Theme/LightData vizForegroundLabelsColorGray': '{colors.data viz.core.gray}',
-  'Theme/LightData vizForegroundLabelsColorRed': '{colors.data viz.core.red}',
-  'Theme/LightData vizForegroundLabelsColorTeal': '{colors.data viz.core.teal}',
-  'Theme/LightData vizForegroundLabelsColorOcean': '{colors.data viz.core.ocean}',
-  'Theme/LightData vizForegroundLabelsColorGreen': '{colors.data viz.core.green}',
-  'Theme/LightData vizForegroundLabelsColorYellow300': '{colors.data viz.sequential.yellow300}',
-  'Theme/LightData vizForegroundLabelsColorBlue400': '{colors.data viz.sequential.blue400}',
-  'Theme/LightData vizForegroundLabelsColorGray400': '{colors.data viz.sequential.gray400}',
-  'Theme/LightData vizForegroundLabelsColorRed400': '{colors.data viz.sequential.red400}',
-  'Theme/LightData vizForegroundLabelsColorTeal300': '{colors.data viz.sequential.teal300}',
-  'Theme/LightData vizForegroundLabelsColorRed300': '{colors.data viz.sequential.red300}',
-  'Theme/LightData vizForegroundLabelsColorTeal400': '{colors.data viz.sequential.teal400}',
-  'Theme/LightData vizForegroundLabelsColorOcean400': '{colors.data viz.sequential.ocean400}',
-  'Theme/LightData vizForegroundLabelsColorGreen400': '{colors.data viz.sequential.green400}',
-  'Theme/LightData vizForegroundLabelsColorYellow400': '{colors.data viz.sequential.yellow400}',
-  'Theme/LightData vizForegroundLabelsColorGreen300': '{colors.data viz.sequential.green300}',
-  'Theme/LightData vizForegroundLabelsColorGray300': '{colors.data viz.sequential.gray300}',
-  'Theme/LightData vizForegroundLabelsColorBlue200': '{colors.data viz.sequential.blue200}',
-  'Theme/LightData vizForegroundLabelsColorOcean200': '{colors.data viz.sequential.ocean200}',
-  'Theme/LightData vizForegroundAccessibilityText dark bkgd': '{colors.neutral.white}',
-  'Theme/LightData vizForegroundAccessibilityText light bkgd': '{colors.neutral.black}',
-  'Theme/LightData vizForegroundKPI CardText dark bkgd': '{colors.neutral.white}',
-  'Theme/LightData vizForegroundKPI CardText light bkgd': '{colors.neutral.grey-40}',
-  'Theme/LightData vizStrokeGridline': '{colors.neutral.grey-70}',
-  'Theme/LightData vizStrokeAxis-Target-Benchmark': '{colors.neutral.black}',
-  'Theme/LightData vizStrokeColorBlue': '{colors.data viz.core.blue}',
-  'Theme/LightData vizStrokeColorBlue400': '{colors.data viz.sequential.blue400}',
-  'Theme/LightData vizStrokeColorGray': '{colors.data viz.core.gray}',
-  'Theme/LightData vizStrokeColorGray400': '{colors.data viz.sequential.gray400}',
-  'Theme/LightData vizStrokeColorRed': '{colors.data viz.core.red}',
-  'Theme/LightData vizStrokeColorRed300': '{colors.data viz.sequential.red300}',
-  'Theme/LightData vizStrokeColorRed400': '{colors.data viz.sequential.red400}',
-  'Theme/LightData vizStrokeColorTeal': '{colors.data viz.core.teal}',
-  'Theme/LightData vizStrokeColorTeal300': '{colors.data viz.sequential.teal300}',
-  'Theme/LightData vizStrokeColorTeal400': '{colors.data viz.sequential.teal400}',
-  'Theme/LightData vizStrokeColorOcean': '{colors.data viz.core.ocean}',
-  'Theme/LightData vizStrokeColorOcean400': '{colors.data viz.sequential.ocean400}',
-  'Theme/LightData vizStrokeColorGreen': '{colors.data viz.core.green}',
-  'Theme/LightData vizStrokeColorGreen300': '{colors.data viz.sequential.green300}',
-  'Theme/LightData vizStrokeColorGreen400': '{colors.data viz.sequential.green400}',
-  'Theme/LightData vizStrokeColorYellow300': '{colors.data viz.sequential.yellow300}',
-  'Theme/LightData vizStrokeColorYellow400': '{colors.data viz.sequential.yellow400}',
-  'Theme/LightData vizStrokeColorGray300': '{colors.data viz.sequential.gray300}',
-  'Theme/LightData vizStrokeColorBlue200': '{colors.data viz.sequential.blue200}',
-  'Theme/LightData vizStrokeColorOcean200': '{colors.data viz.sequential.ocean200}',
-  'Theme/LightData vizStrokeColorYellow': '{colors.data viz.core.yellow}',
-  'Theme/LightData vizStrokeTrend-Average': '{colors.data viz.sequential.gray300}',
-  'Theme/LightData vizStrokeAccessible outline': '{colors.neutral.white}',
-  'Theme/LightData vizSemanticForegroundLight bkgdPositive': '{colors.data viz.core.green}',
-  'Theme/LightData vizSemanticForegroundLight bkgdNegative': '{colors.data viz.core.red}',
-  'Theme/LightData vizSemanticForegroundLight bkgdNotice': '{colors.data viz.core.yellow}',
+  'Theme/LightData vizForegroundLabelsCategorical': '{Colors.Brand.Brand-10}',
+  'Theme/LightData vizForegroundLabelsData': '{Colors.Neutral.Grey-12}',
+  'Theme/LightData vizForegroundLabelsColorBlue': '{Colors.Data viz.Core.Blue}',
+  'Theme/LightData vizForegroundLabelsColorGray': '{Colors.Data viz.Core.Gray}',
+  'Theme/LightData vizForegroundLabelsColorRed': '{Colors.Data viz.Core.Red}',
+  'Theme/LightData vizForegroundLabelsColorTeal': '{Colors.Data viz.Core.Teal}',
+  'Theme/LightData vizForegroundLabelsColorOcean': '{Colors.Data viz.Core.Ocean}',
+  'Theme/LightData vizForegroundLabelsColorGreen': '{Colors.Data viz.Core.Green}',
+  'Theme/LightData vizForegroundLabelsColorYellow300': '{Colors.Data viz.Sequential.Yellow300}',
+  'Theme/LightData vizForegroundLabelsColorBlue400': '{Colors.Data viz.Sequential.Blue400}',
+  'Theme/LightData vizForegroundLabelsColorGray400': '{Colors.Data viz.Sequential.Gray400}',
+  'Theme/LightData vizForegroundLabelsColorRed400': '{Colors.Data viz.Sequential.Red400}',
+  'Theme/LightData vizForegroundLabelsColorTeal300': '{Colors.Data viz.Sequential.Teal300}',
+  'Theme/LightData vizForegroundLabelsColorRed300': '{Colors.Data viz.Sequential.Red300}',
+  'Theme/LightData vizForegroundLabelsColorTeal400': '{Colors.Data viz.Sequential.Teal400}',
+  'Theme/LightData vizForegroundLabelsColorOcean400': '{Colors.Data viz.Sequential.Ocean400}',
+  'Theme/LightData vizForegroundLabelsColorGreen400': '{Colors.Data viz.Sequential.Green400}',
+  'Theme/LightData vizForegroundLabelsColorYellow400': '{Colors.Data viz.Sequential.Yellow400}',
+  'Theme/LightData vizForegroundLabelsColorGreen300': '{Colors.Data viz.Sequential.Green300}',
+  'Theme/LightData vizForegroundLabelsColorGray300': '{Colors.Data viz.Sequential.Gray300}',
+  'Theme/LightData vizForegroundLabelsColorBlue200': '{Colors.Data viz.Sequential.Blue200}',
+  'Theme/LightData vizForegroundLabelsColorOcean200': '{Colors.Data viz.Sequential.Ocean200}',
+  'Theme/LightData vizForegroundAccessibilityText dark bkgd': '{Colors.Neutral.White}',
+  'Theme/LightData vizForegroundAccessibilityText light bkgd': '{Colors.Neutral.Black}',
+  'Theme/LightData vizForegroundKPI CardText dark bkgd': '{Colors.Neutral.White}',
+  'Theme/LightData vizForegroundKPI CardText light bkgd': '{Colors.Neutral.Grey-40}',
+  'Theme/LightData vizStrokeGridline': '{Colors.Neutral.Grey-70}',
+  'Theme/LightData vizStrokeAxis-Target-Benchmark': '{Colors.Neutral.Black}',
+  'Theme/LightData vizStrokeColorBlue': '{Colors.Data viz.Core.Blue}',
+  'Theme/LightData vizStrokeColorBlue400': '{Colors.Data viz.Sequential.Blue400}',
+  'Theme/LightData vizStrokeColorGray': '{Colors.Data viz.Core.Gray}',
+  'Theme/LightData vizStrokeColorGray400': '{Colors.Data viz.Sequential.Gray400}',
+  'Theme/LightData vizStrokeColorRed': '{Colors.Data viz.Core.Red}',
+  'Theme/LightData vizStrokeColorRed300': '{Colors.Data viz.Sequential.Red300}',
+  'Theme/LightData vizStrokeColorRed400': '{Colors.Data viz.Sequential.Red400}',
+  'Theme/LightData vizStrokeColorTeal': '{Colors.Data viz.Core.Teal}',
+  'Theme/LightData vizStrokeColorTeal300': '{Colors.Data viz.Sequential.Teal300}',
+  'Theme/LightData vizStrokeColorTeal400': '{Colors.Data viz.Sequential.Teal400}',
+  'Theme/LightData vizStrokeColorOcean': '{Colors.Data viz.Core.Ocean}',
+  'Theme/LightData vizStrokeColorOcean400': '{Colors.Data viz.Sequential.Ocean400}',
+  'Theme/LightData vizStrokeColorGreen': '{Colors.Data viz.Core.Green}',
+  'Theme/LightData vizStrokeColorGreen300': '{Colors.Data viz.Sequential.Green300}',
+  'Theme/LightData vizStrokeColorGreen400': '{Colors.Data viz.Sequential.Green400}',
+  'Theme/LightData vizStrokeColorYellow300': '{Colors.Data viz.Sequential.Yellow300}',
+  'Theme/LightData vizStrokeColorYellow400': '{Colors.Data viz.Sequential.Yellow400}',
+  'Theme/LightData vizStrokeColorGray300': '{Colors.Data viz.Sequential.Gray300}',
+  'Theme/LightData vizStrokeColorBlue200': '{Colors.Data viz.Sequential.Blue200}',
+  'Theme/LightData vizStrokeColorOcean200': '{Colors.Data viz.Sequential.Ocean200}',
+  'Theme/LightData vizStrokeColorYellow': '{Colors.Data viz.Core.Yellow}',
+  'Theme/LightData vizStrokeTrend-Average': '{Colors.Data viz.Sequential.Gray300}',
+  'Theme/LightData vizStrokeAccessible outline': '{Colors.Neutral.White}',
+  'Theme/LightData vizSemanticForegroundLight bkgdPositive': '{Colors.Data viz.Core.Green}',
+  'Theme/LightData vizSemanticForegroundLight bkgdNegative': '{Colors.Data viz.Core.Red}',
+  'Theme/LightData vizSemanticForegroundLight bkgdNotice': '{Colors.Data viz.Core.Yellow}',
   'Theme/LightData vizSemanticForegroundDark bkgdPositive': '#37bb65',
   'Theme/LightData vizSemanticForegroundDark bkgdNegative': '#cc2e48',
-  'Theme/LightData vizSemanticForegroundDark bkgdNotice': '{colors.data viz.core.yellow}',
-  'Theme/LightData vizSemanticStrokeLight bkgdPositive': '{colors.data viz.core.green}',
-  'Theme/LightData vizSemanticStrokeLight bkgdNegative': '{colors.data viz.core.red}',
-  'Theme/LightData vizSemanticStrokeLight bkgdNotice': '{colors.data viz.core.yellow}',
+  'Theme/LightData vizSemanticForegroundDark bkgdNotice': '{Colors.Data viz.Core.Yellow}',
+  'Theme/LightData vizSemanticStrokeLight bkgdPositive': '{Colors.Data viz.Core.Green}',
+  'Theme/LightData vizSemanticStrokeLight bkgdNegative': '{Colors.Data viz.Core.Red}',
+  'Theme/LightData vizSemanticStrokeLight bkgdNotice': '{Colors.Data viz.Core.Yellow}',
   'Theme/LightData vizSemanticStrokeDark bkgdPositive': '#37bb65',
   'Theme/LightData vizSemanticStrokeDark bkgdNegative': '#cc2e48',
-  'Theme/LightData vizSemanticStrokeDark bkgdNotice': '{colors.data viz.core.yellow}',
-  'Theme/LightData vizSemanticBackgroundPositive': '{colors.data viz.core.green}',
-  'Theme/LightData vizSemanticBackgroundNegative': '{colors.data viz.core.red}',
-  'Theme/LightData vizSemanticBackgroundNotice': '{colors.data viz.core.yellow}',
-  'Theme/LightData vizBackgroundCoreBlue': '{colors.data viz.core.blue}',
-  'Theme/LightData vizBackgroundCoreGray': '{colors.data viz.core.gray}',
-  'Theme/LightData vizBackgroundCoreRed': '{colors.data viz.core.red}',
-  'Theme/LightData vizBackgroundCoreTeal': '{colors.data viz.core.teal}',
-  'Theme/LightData vizBackgroundCoreOcean': '{colors.data viz.core.ocean}',
-  'Theme/LightData vizBackgroundCoreGreen': '{colors.data viz.core.green}',
-  'Theme/LightData vizBackgroundCoreYellow': '{colors.data viz.core.yellow}',
-  'Theme/LightData vizBackgroundSequentialBlue400': '{colors.data viz.sequential.blue400}',
-  'Theme/LightData vizBackgroundSequentialGray400': '{colors.data viz.sequential.gray400}',
-  'Theme/LightData vizBackgroundSequentialRed300': '{colors.data viz.sequential.red300}',
-  'Theme/LightData vizBackgroundSequentialRed400': '{colors.data viz.sequential.red400}',
-  'Theme/LightData vizBackgroundSequentialTeal300': '{colors.data viz.sequential.teal300}',
-  'Theme/LightData vizBackgroundSequentialTeal400': '{colors.data viz.sequential.teal400}',
-  'Theme/LightData vizBackgroundSequentialOcean400': '{colors.data viz.sequential.ocean400}',
-  'Theme/LightData vizBackgroundSequentialGreen300': '{colors.data viz.sequential.green300}',
-  'Theme/LightData vizBackgroundSequentialGreen400': '{colors.data viz.sequential.green400}',
-  'Theme/LightData vizBackgroundSequentialYellow300': '{colors.data viz.sequential.yellow300}',
-  'Theme/LightData vizBackgroundSequentialYellow400': '{colors.data viz.sequential.yellow400}',
-  'Theme/LightData vizBackgroundSequentialBlue300': '{colors.data viz.sequential.blue300}',
-  'Theme/LightData vizBackgroundSequentialBlue200': '{colors.data viz.sequential.blue200}',
-  'Theme/LightData vizBackgroundSequentialBlue100': '{colors.data viz.sequential.blue100}',
-  'Theme/LightData vizBackgroundSequentialGray300': '{colors.data viz.sequential.gray300}',
-  'Theme/LightData vizBackgroundSequentialGray200': '{colors.data viz.sequential.gray200}',
-  'Theme/LightData vizBackgroundSequentialGray100': '{colors.data viz.sequential.gray100}',
-  'Theme/LightData vizBackgroundSequentialRed200': '{colors.data viz.sequential.red200}',
-  'Theme/LightData vizBackgroundSequentialRed100': '{colors.data viz.sequential.red100}',
-  'Theme/LightData vizBackgroundSequentialTeal200': '{colors.data viz.sequential.teal200}',
-  'Theme/LightData vizBackgroundSequentialTeal100': '{colors.data viz.sequential.teal100}',
-  'Theme/LightData vizBackgroundSequentialOcean300': '{colors.data viz.sequential.ocean300}',
-  'Theme/LightData vizBackgroundSequentialOcean200': '{colors.data viz.sequential.ocean200}',
-  'Theme/LightData vizBackgroundSequentialOcean100': '{colors.data viz.sequential.ocean100}',
-  'Theme/LightData vizBackgroundSequentialGreen200': '{colors.data viz.sequential.green200}',
-  'Theme/LightData vizBackgroundSequentialGreen100': '{colors.data viz.sequential.green100}',
-  'Theme/LightData vizBackgroundSequentialYellow200': '{colors.data viz.sequential.yellow200}',
-  'Theme/LightData vizBackgroundSequentialYellow100': '{colors.data viz.sequential.yellow100}',
-  'Theme/LightData vizBackgroundNeutralBlack': '{colors.neutral.black}',
+  'Theme/LightData vizSemanticStrokeDark bkgdNotice': '{Colors.Data viz.Core.Yellow}',
+  'Theme/LightData vizSemanticBackgroundPositive': '{Colors.Data viz.Core.Green}',
+  'Theme/LightData vizSemanticBackgroundNegative': '{Colors.Data viz.Core.Red}',
+  'Theme/LightData vizSemanticBackgroundNotice': '{Colors.Data viz.Core.Yellow}',
+  'Theme/LightData vizBackgroundCoreBlue': '{Colors.Data viz.Core.Blue}',
+  'Theme/LightData vizBackgroundCoreGray': '{Colors.Data viz.Core.Gray}',
+  'Theme/LightData vizBackgroundCoreRed': '{Colors.Data viz.Core.Red}',
+  'Theme/LightData vizBackgroundCoreTeal': '{Colors.Data viz.Core.Teal}',
+  'Theme/LightData vizBackgroundCoreOcean': '{Colors.Data viz.Core.Ocean}',
+  'Theme/LightData vizBackgroundCoreGreen': '{Colors.Data viz.Core.Green}',
+  'Theme/LightData vizBackgroundCoreYellow': '{Colors.Data viz.Core.Yellow}',
+  'Theme/LightData vizBackgroundSequentialBlue400': '{Colors.Data viz.Sequential.Blue400}',
+  'Theme/LightData vizBackgroundSequentialGray400': '{Colors.Data viz.Sequential.Gray400}',
+  'Theme/LightData vizBackgroundSequentialRed300': '{Colors.Data viz.Sequential.Red300}',
+  'Theme/LightData vizBackgroundSequentialRed400': '{Colors.Data viz.Sequential.Red400}',
+  'Theme/LightData vizBackgroundSequentialTeal300': '{Colors.Data viz.Sequential.Teal300}',
+  'Theme/LightData vizBackgroundSequentialTeal400': '{Colors.Data viz.Sequential.Teal400}',
+  'Theme/LightData vizBackgroundSequentialOcean400': '{Colors.Data viz.Sequential.Ocean400}',
+  'Theme/LightData vizBackgroundSequentialGreen300': '{Colors.Data viz.Sequential.Green300}',
+  'Theme/LightData vizBackgroundSequentialGreen400': '{Colors.Data viz.Sequential.Green400}',
+  'Theme/LightData vizBackgroundSequentialYellow300': '{Colors.Data viz.Sequential.Yellow300}',
+  'Theme/LightData vizBackgroundSequentialYellow400': '{Colors.Data viz.Sequential.Yellow400}',
+  'Theme/LightData vizBackgroundSequentialBlue300': '{Colors.Data viz.Sequential.Blue300}',
+  'Theme/LightData vizBackgroundSequentialBlue200': '{Colors.Data viz.Sequential.Blue200}',
+  'Theme/LightData vizBackgroundSequentialBlue100': '{Colors.Data viz.Sequential.Blue100}',
+  'Theme/LightData vizBackgroundSequentialGray300': '{Colors.Data viz.Sequential.Gray300}',
+  'Theme/LightData vizBackgroundSequentialGray200': '{Colors.Data viz.Sequential.Gray200}',
+  'Theme/LightData vizBackgroundSequentialGray100': '{Colors.Data viz.Sequential.Gray100}',
+  'Theme/LightData vizBackgroundSequentialRed200': '{Colors.Data viz.Sequential.Red200}',
+  'Theme/LightData vizBackgroundSequentialRed100': '{Colors.Data viz.Sequential.Red100}',
+  'Theme/LightData vizBackgroundSequentialTeal200': '{Colors.Data viz.Sequential.Teal200}',
+  'Theme/LightData vizBackgroundSequentialTeal100': '{Colors.Data viz.Sequential.Teal100}',
+  'Theme/LightData vizBackgroundSequentialOcean300': '{Colors.Data viz.Sequential.Ocean300}',
+  'Theme/LightData vizBackgroundSequentialOcean200': '{Colors.Data viz.Sequential.Ocean200}',
+  'Theme/LightData vizBackgroundSequentialOcean100': '{Colors.Data viz.Sequential.Ocean100}',
+  'Theme/LightData vizBackgroundSequentialGreen200': '{Colors.Data viz.Sequential.Green200}',
+  'Theme/LightData vizBackgroundSequentialGreen100': '{Colors.Data viz.Sequential.Green100}',
+  'Theme/LightData vizBackgroundSequentialYellow200': '{Colors.Data viz.Sequential.Yellow200}',
+  'Theme/LightData vizBackgroundSequentialYellow100': '{Colors.Data viz.Sequential.Yellow100}',
+  'Theme/LightData vizBackgroundNeutralBlack': '{Colors.Neutral.Black}',
   'Theme/LightControl logicTheme switch': 'Light',
-  'Theme/DarkNeutralBackground1Rest': '{colors.neutral.black}',
-  'Theme/DarkNeutralBackground1Hover': '{colors.neutral.grey-10}',
-  'Theme/DarkNeutralBackground1Pressed': '{colors.neutral.grey-12}',
-  'Theme/DarkNeutralBackground1Selected': '{colors.neutral.grey-8}',
-  'Theme/DarkNeutralBackground2Rest': '{colors.neutral.grey-6}',
-  'Theme/DarkNeutralBackground3Rest': '{colors.neutral.grey-12}',
-  'Theme/DarkNeutralBackground3Hover': '{colors.neutral.grey-10}',
-  'Theme/DarkNeutralBackground3Pressed': '{colors.neutral.grey-10}',
-  'Theme/DarkNeutralBackground4Rest': '{colors.neutral.grey-90}',
-  'Theme/DarkNeutralBackground4Hover': '{colors.neutral.grey-70}',
-  'Theme/DarkNeutralBackground4Pressed': '{colors.neutral.grey-60}',
-  'Theme/DarkNeutralBackground5Rest': '{colors.neutral.grey-90}',
-  'Theme/DarkNeutralBackground6Rest': '{colors.neutral.grey-20}',
-  'Theme/DarkNeutralBackgroundInvertedRest': '{colors.neutral.white}',
-  'Theme/DarkNeutralBackgroundInvertedDisabledRest': '{colors.alpha.white.10}',
-  'Theme/DarkNeutralBackgroundAlpha1Rest': '{colors.alpha.brand-10.50}',
-  'Theme/DarkNeutralBackgroundAlpha2Rest': '{colors.alpha.black.70}',
-  'Theme/DarkNeutralBackgroundStaticRest': '{colors.neutral.white}',
-  'Theme/DarkNeutralBackgroundSubtleRest': '{colors.alpha.black.0}',
-  'Theme/DarkNeutralBackgroundSubtleHover': '{colors.neutral.grey-80}',
-  'Theme/DarkNeutralBackgroundSubtlePressed': '{colors.neutral.grey-70}',
-  'Theme/DarkNeutralBackgroundSubtleSelected': '{colors.neutral.grey-90}',
+  'Theme/DarkNeutralBackground1Rest': '{Colors.Neutral.Black}',
+  'Theme/DarkNeutralBackground1Hover': '{Colors.Neutral.Grey-10}',
+  'Theme/DarkNeutralBackground1Pressed': '{Colors.Neutral.Grey-12}',
+  'Theme/DarkNeutralBackground1Selected': '{Colors.Neutral.Grey-8}',
+  'Theme/DarkNeutralBackground2Rest': '{Colors.Neutral.Grey-6}',
+  'Theme/DarkNeutralBackground3Rest': '{Colors.Neutral.Grey-12}',
+  'Theme/DarkNeutralBackground3Hover': '{Colors.Neutral.Grey-10}',
+  'Theme/DarkNeutralBackground3Pressed': '{Colors.Neutral.Grey-10}',
+  'Theme/DarkNeutralBackground4Rest': '{Colors.Neutral.Grey-90}',
+  'Theme/DarkNeutralBackground4Hover': '{Colors.Neutral.Grey-70}',
+  'Theme/DarkNeutralBackground4Pressed': '{Colors.Neutral.Grey-60}',
+  'Theme/DarkNeutralBackground5Rest': '{Colors.Neutral.Grey-90}',
+  'Theme/DarkNeutralBackground6Rest': '{Colors.Neutral.Grey-20}',
+  'Theme/DarkNeutralBackgroundInvertedRest': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralBackgroundInvertedDisabledRest': '{Colors.Alpha.White.10}',
+  'Theme/DarkNeutralBackgroundAlpha1Rest': '{Colors.Alpha.Brand-10.50}',
+  'Theme/DarkNeutralBackgroundAlpha2Rest': '{Colors.Alpha.Black.70}',
+  'Theme/DarkNeutralBackgroundStaticRest': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralBackgroundSubtleRest': '{Colors.Alpha.Black.0}',
+  'Theme/DarkNeutralBackgroundSubtleHover': '{Colors.Neutral.Grey-80}',
+  'Theme/DarkNeutralBackgroundSubtlePressed': '{Colors.Neutral.Grey-70}',
+  'Theme/DarkNeutralBackgroundSubtleSelected': '{Colors.Neutral.Grey-90}',
   'Theme/DarkNeutralBackgroundSubtleLight alphaHover': '#242424cc',
   'Theme/DarkNeutralBackgroundSubtleLight alphaPressed': '#24242480',
-  'Theme/DarkNeutralBackgroundSubtleLight alphaSelected': '{colors.alpha.black.0}',
-  'Theme/DarkNeutralBackgroundSubtleInvertedRest': '{colors.alpha.black.0}',
-  'Theme/DarkNeutralBackgroundSubtleInvertedHover': '{colors.alpha.black.10}',
-  'Theme/DarkNeutralBackgroundSubtleInvertedPressed': '{colors.alpha.black.30}',
-  'Theme/DarkNeutralBackgroundSubtleInvertedSelected': '{colors.alpha.black.20}',
-  'Theme/DarkNeutralBackgroundTransparentRest': '{colors.alpha.black.0}',
-  'Theme/DarkNeutralBackgroundTransparentHover': '{colors.alpha.black.0}',
-  'Theme/DarkNeutralBackgroundTransparentPressed': '{colors.alpha.black.0}',
-  'Theme/DarkNeutralBackgroundTransparentSelected': '{colors.alpha.black.0}',
-  'Theme/DarkNeutralBackgroundDisabledRest': '{colors.neutral.grey-8}',
+  'Theme/DarkNeutralBackgroundSubtleLight alphaSelected': '{Colors.Alpha.Black.0}',
+  'Theme/DarkNeutralBackgroundSubtleInvertedRest': '{Colors.Alpha.Black.0}',
+  'Theme/DarkNeutralBackgroundSubtleInvertedHover': '{Colors.Alpha.Black.10}',
+  'Theme/DarkNeutralBackgroundSubtleInvertedPressed': '{Colors.Alpha.Black.30}',
+  'Theme/DarkNeutralBackgroundSubtleInvertedSelected': '{Colors.Alpha.Black.20}',
+  'Theme/DarkNeutralBackgroundTransparentRest': '{Colors.Alpha.Black.0}',
+  'Theme/DarkNeutralBackgroundTransparentHover': '{Colors.Alpha.Black.0}',
+  'Theme/DarkNeutralBackgroundTransparentPressed': '{Colors.Alpha.Black.0}',
+  'Theme/DarkNeutralBackgroundTransparentSelected': '{Colors.Alpha.Black.0}',
+  'Theme/DarkNeutralBackgroundDisabledRest': '{Colors.Neutral.Grey-8}',
   'Theme/DarkNeutralBackgroundStencil1Rest': '#575757',
-  'Theme/DarkNeutralBackgroundStencil2Rest': '{colors.neutral.grey-20}',
-  'Theme/DarkNeutralBackgroundOverlayRest': '{colors.alpha.black.50}',
-  'Theme/DarkNeutralBackgroundOverlayScrollbarRest': '{colors.alpha.white.60}',
-  'Theme/DarkNeutralForeground1Rest primary text': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground1Hover': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground1Pressed': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground1Selected': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground2Rest secondary text': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground2Hover': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground2Pressed': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground2Selected': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground2BrandHover': '{brand-100}',
-  'Theme/DarkNeutralForeground2BrandPressed': '{brand-90}',
-  'Theme/DarkNeutralForeground2BrandSelected': '{brand-100}',
-  'Theme/DarkNeutralForeground2BrandRest': '{brand-100}',
-  'Theme/DarkNeutralForeground2LinkRest': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground2LinkHover': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground2LinkPressed': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground2LinkSelected': '{colors.neutral.white}',
-  'Theme/DarkNeutralForeground4Rest': '{colors.neutral.grey-60}',
-  'Theme/DarkNeutralForegroundDisabled2Rest': '{colors.neutral.grey-60}',
-  'Theme/DarkNeutralForegroundDisabledRest': '{colors.neutral.grey-50}',
-  'Theme/DarkNeutralForegroundStaticInvertedRest': '{colors.neutral.white}',
+  'Theme/DarkNeutralBackgroundStencil2Rest': '{Colors.Neutral.Grey-20}',
+  'Theme/DarkNeutralBackgroundOverlayRest': '{Colors.Alpha.Black.50}',
+  'Theme/DarkNeutralBackgroundOverlayScrollbarRest': '{Colors.Alpha.White.60}',
+  'Theme/DarkNeutralForeground1Rest primary text': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground1Hover': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground1Pressed': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground1Selected': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground2Rest secondary text': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground2Hover': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground2Pressed': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground2Selected': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground2BrandHover': '{Brand-100}',
+  'Theme/DarkNeutralForeground2BrandPressed': '{Brand-90}',
+  'Theme/DarkNeutralForeground2BrandSelected': '{Brand-100}',
+  'Theme/DarkNeutralForeground2BrandRest': '{Brand-100}',
+  'Theme/DarkNeutralForeground2LinkRest': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground2LinkHover': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground2LinkPressed': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground2LinkSelected': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForeground4Rest': '{Colors.Neutral.Grey-60}',
+  'Theme/DarkNeutralForegroundDisabled2Rest': '{Colors.Neutral.Grey-60}',
+  'Theme/DarkNeutralForegroundDisabledRest': '{Colors.Neutral.Grey-50}',
+  'Theme/DarkNeutralForegroundStaticInvertedRest': '{Colors.Neutral.White}',
   'Theme/DarkNeutralForegroundInverted1Rest': '#242424',
   'Theme/DarkNeutralForegroundInverted1Hover': '#242424',
   'Theme/DarkNeutralForegroundInverted1Pressed': '#242424',
   'Theme/DarkNeutralForegroundInverted1Selected': '#242424',
   'Theme/DarkNeutralForegroundInverted2Rest': '#242424',
-  'Theme/DarkNeutralForegroundInvertedDisabledRest': '{colors.alpha.white.40}',
-  'Theme/DarkNeutralForegroundInvertedLinkRest': '{colors.neutral.white}',
-  'Theme/DarkNeutralForegroundInvertedLinkHover': '{colors.neutral.white}',
-  'Theme/DarkNeutralForegroundInvertedLinkPressed': '{colors.neutral.white}',
-  'Theme/DarkNeutralForegroundInvertedLinkSelected': '{colors.neutral.white}',
-  'Theme/DarkNeutralForegroundOn BrandRest': '{colors.neutral.white}',
-  'Theme/DarkNeutralStroke1Rest': '{colors.neutral.grey-40}',
-  'Theme/DarkNeutralStroke1Hover': '{colors.neutral.grey-40}',
-  'Theme/DarkNeutralStroke1Pressed': '{colors.neutral.grey-40}',
-  'Theme/DarkNeutralStroke1Selected': '{colors.neutral.grey-40}',
-  'Theme/DarkNeutralStroke2Rest': '{colors.grey.white}',
-  'Theme/DarkNeutralStroke3Rest': '{colors.neutral.grey-50}',
-  'Theme/DarkNeutralStrokeAlpha1Rest': '{colors.alpha.white.10}',
-  'Theme/DarkNeutralStrokeAlpha2Rest': '{colors.alpha.white.20}',
+  'Theme/DarkNeutralForegroundInvertedDisabledRest': '{Colors.Alpha.White.40}',
+  'Theme/DarkNeutralForegroundInvertedLinkRest': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForegroundInvertedLinkHover': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForegroundInvertedLinkPressed': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForegroundInvertedLinkSelected': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralForegroundOn BrandRest': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralStroke1Rest': '{Colors.Neutral.Grey-40}',
+  'Theme/DarkNeutralStroke1Hover': '{Colors.Neutral.Grey-40}',
+  'Theme/DarkNeutralStroke1Pressed': '{Colors.Neutral.Grey-40}',
+  'Theme/DarkNeutralStroke1Selected': '{Colors.Neutral.Grey-40}',
+  'Theme/DarkNeutralStroke2Rest': '{Colors.Grey.White}',
+  'Theme/DarkNeutralStroke3Rest': '{Colors.Neutral.Grey-50}',
+  'Theme/DarkNeutralStrokeAlpha1Rest': '{Colors.Alpha.White.10}',
+  'Theme/DarkNeutralStrokeAlpha2Rest': '{Colors.Alpha.White.20}',
   'Theme/DarkNeutralStrokeSubtleRest': '#f5f4f2',
-  'Theme/DarkNeutralStrokeOn Brand1Rest': '{colors.neutral.white}',
-  'Theme/DarkNeutralStrokeOn Brand2Rest': '{colors.grey.white}',
-  'Theme/DarkNeutralStrokeAccessibleRest': '{colors.neutral.white}',
-  'Theme/DarkNeutralStrokeAccessibleHover': '{colors.neutral.white}',
-  'Theme/DarkNeutralStrokeAccessiblePressed': '{colors.neutral.white}',
-  'Theme/DarkNeutralStrokeAccessibleSelected': '{colors.neutral.white}',
-  'Theme/DarkNeutralStrokeFocus1Rest': '{colors.neutral.black}',
-  'Theme/DarkNeutralStrokeFocus2Rest': '{colors.neutral.white}',
-  'Theme/DarkNeutralStrokeTransparentInteractiveRest': '{colors.alpha.white.0}',
-  'Theme/DarkNeutralStrokeTransparentDisabledRest': '{colors.alpha.white.0}',
-  'Theme/DarkNeutralStrokeTransparentRest': '{colors.alpha.white.0}',
-  'Theme/DarkNeutralStrokeDisabledRest': '{colors.neutral.grey-70}',
-  'Theme/DarkNeutralStrokeDisabledInvertedRest': '{colors.alpha.white.40}',
-  'Theme/DarkBrandBackground1Rest': '{brand-60}',
-  'Theme/DarkBrandBackground1Hover': '{brand-40}',
-  'Theme/DarkBrandBackground1Pressed': '{brand-30}',
-  'Theme/DarkBrandBackground1Selected': '{brand-20}',
-  'Theme/DarkBrandBackground2Rest': '{brand-20}',
-  'Theme/DarkBrandBackground2Hover': '{brand-40}',
-  'Theme/DarkBrandBackground2Pressed': '{brand-10}',
+  'Theme/DarkNeutralStrokeOn Brand1Rest': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralStrokeOn Brand2Rest': '{Colors.Grey.White}',
+  'Theme/DarkNeutralStrokeAccessibleRest': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralStrokeAccessibleHover': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralStrokeAccessiblePressed': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralStrokeAccessibleSelected': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralStrokeFocus1Rest': '{Colors.Neutral.Black}',
+  'Theme/DarkNeutralStrokeFocus2Rest': '{Colors.Neutral.White}',
+  'Theme/DarkNeutralStrokeTransparentInteractiveRest': '{Colors.Alpha.White.0}',
+  'Theme/DarkNeutralStrokeTransparentDisabledRest': '{Colors.Alpha.White.0}',
+  'Theme/DarkNeutralStrokeTransparentRest': '{Colors.Alpha.White.0}',
+  'Theme/DarkNeutralStrokeDisabledRest': '{Colors.Neutral.Grey-70}',
+  'Theme/DarkNeutralStrokeDisabledInvertedRest': '{Colors.Alpha.White.40}',
+  'Theme/DarkBrandBackground1Rest': '{Brand-60}',
+  'Theme/DarkBrandBackground1Hover': '{Brand-40}',
+  'Theme/DarkBrandBackground1Pressed': '{Brand-30}',
+  'Theme/DarkBrandBackground1Selected': '{Brand-20}',
+  'Theme/DarkBrandBackground2Rest': '{Brand-20}',
+  'Theme/DarkBrandBackground2Hover': '{Brand-40}',
+  'Theme/DarkBrandBackground2Pressed': '{Brand-10}',
   'Theme/DarkBrandBackground3Rest': '#ffffff',
-  'Theme/DarkBrandBackgroundInvertedRest': '{colors.neutral.white}',
-  'Theme/DarkBrandBackgroundInvertedHover': '{brand-120}',
-  'Theme/DarkBrandBackgroundInvertedPressed': '{brand-130}',
-  'Theme/DarkBrandBackgroundInvertedSelected': '{brand-100}',
-  'Theme/DarkBrandBackgroundStaticRest': '{brand-80}',
-  'Theme/DarkBrandBackgroundCompoundRest': '{brand-100}',
-  'Theme/DarkBrandBackgroundCompoundHover': '{brand-110}',
-  'Theme/DarkBrandBackgroundCompoundPressed': '{brand-90}',
-  'Theme/DarkBrandForeground1Rest': '{brand-100}',
-  'Theme/DarkBrandForeground1Hover': '{brand-100}',
-  'Theme/DarkBrandForeground1Pressed': '{brand-100}',
-  'Theme/DarkBrandForeground1Selected': '{brand-100}',
-  'Theme/DarkBrandForeground2Rest': '{brand-110}',
-  'Theme/DarkBrandForeground2Hover': '{brand-130}',
-  'Theme/DarkBrandForeground2Pressed': '{brand-100}',
-  'Theme/DarkBrandForegroundLinkRest': '{brand-100}',
-  'Theme/DarkBrandForegroundLinkHover': '{brand-110}',
-  'Theme/DarkBrandForegroundLinkPressed': '{brand-90}',
-  'Theme/DarkBrandForegroundLinkSelected': '{brand-100}',
-  'Theme/DarkBrandForegroundInvertedRest': '{brand-80}',
-  'Theme/DarkBrandForegroundInvertedHover': '{brand-70}',
-  'Theme/DarkBrandForegroundInvertedPressed': '{brand-60}',
-  'Theme/DarkBrandForegroundOn LightRest': '{brand-70}',
-  'Theme/DarkBrandForegroundOn LightHover': '{brand-70}',
-  'Theme/DarkBrandForegroundOn LightPressed': '{brand-50}',
-  'Theme/DarkBrandForegroundOn LightSelected': '{brand-60}',
-  'Theme/DarkBrandForegroundCompoundRest': '{brand-100}',
-  'Theme/DarkBrandForegroundCompoundHover': '{brand-110}',
-  'Theme/DarkBrandForegroundCompoundPressed': '{brand-90}',
-  'Theme/DarkBrandStroke1Rest': '{brand-100}',
+  'Theme/DarkBrandBackgroundInvertedRest': '{Colors.Neutral.White}',
+  'Theme/DarkBrandBackgroundInvertedHover': '{Brand-120}',
+  'Theme/DarkBrandBackgroundInvertedPressed': '{Brand-130}',
+  'Theme/DarkBrandBackgroundInvertedSelected': '{Brand-100}',
+  'Theme/DarkBrandBackgroundStaticRest': '{Brand-80}',
+  'Theme/DarkBrandBackgroundCompoundRest': '{Brand-100}',
+  'Theme/DarkBrandBackgroundCompoundHover': '{Brand-110}',
+  'Theme/DarkBrandBackgroundCompoundPressed': '{Brand-90}',
+  'Theme/DarkBrandForeground1Rest': '{Brand-100}',
+  'Theme/DarkBrandForeground1Hover': '{Brand-100}',
+  'Theme/DarkBrandForeground1Pressed': '{Brand-100}',
+  'Theme/DarkBrandForeground1Selected': '{Brand-100}',
+  'Theme/DarkBrandForeground2Rest': '{Brand-110}',
+  'Theme/DarkBrandForeground2Hover': '{Brand-130}',
+  'Theme/DarkBrandForeground2Pressed': '{Brand-100}',
+  'Theme/DarkBrandForegroundLinkRest': '{Brand-100}',
+  'Theme/DarkBrandForegroundLinkHover': '{Brand-110}',
+  'Theme/DarkBrandForegroundLinkPressed': '{Brand-90}',
+  'Theme/DarkBrandForegroundLinkSelected': '{Brand-100}',
+  'Theme/DarkBrandForegroundInvertedRest': '{Brand-80}',
+  'Theme/DarkBrandForegroundInvertedHover': '{Brand-70}',
+  'Theme/DarkBrandForegroundInvertedPressed': '{Brand-60}',
+  'Theme/DarkBrandForegroundOn LightRest': '{Brand-70}',
+  'Theme/DarkBrandForegroundOn LightHover': '{Brand-70}',
+  'Theme/DarkBrandForegroundOn LightPressed': '{Brand-50}',
+  'Theme/DarkBrandForegroundOn LightSelected': '{Brand-60}',
+  'Theme/DarkBrandForegroundCompoundRest': '{Brand-100}',
+  'Theme/DarkBrandForegroundCompoundHover': '{Brand-110}',
+  'Theme/DarkBrandForegroundCompoundPressed': '{Brand-90}',
+  'Theme/DarkBrandStroke1Rest': '{Brand-100}',
   'Theme/DarkBrandStroke1Hover': '#2886de',
-  'Theme/DarkBrandStroke1Pressed': '{brand-70}',
-  'Theme/DarkBrandStroke1Selected': '{brand-70}',
-  'Theme/DarkBrandStroke2Rest': '{brand-50}',
-  'Theme/DarkBrandStroke2ContrastRest': '{brand-60}',
+  'Theme/DarkBrandStroke1Pressed': '{Brand-70}',
+  'Theme/DarkBrandStroke1Selected': '{Brand-70}',
+  'Theme/DarkBrandStroke2Rest': '{Brand-50}',
+  'Theme/DarkBrandStroke2ContrastRest': '{Brand-60}',
   'Theme/DarkBrandStroke3Rest': '#ffffff',
-  'Theme/DarkBrandStrokeCompoundRest': '{brand-100}',
-  'Theme/DarkBrandStrokeCompoundHover': '{brand-110}',
-  'Theme/DarkBrandStrokeCompoundPressed': '{brand-90}',
-  'Theme/DarkStatusDangerBackground1Rest': '{colors.neutral.white}',
-  'Theme/DarkStatusDangerBackground3Rest': '{colors.shared.cranberry.primary}',
-  'Theme/DarkStatusDangerForeground1Rest': '{colors.shared.cranberry.tint 30}',
-  'Theme/DarkStatusDangerForeground3Rest': '{colors.neutral.white}',
-  'Theme/DarkStatusDangerStroke1Rest': '{colors.shared.cranberry.primary}',
-  'Theme/DarkStatusDangerStroke2Rest': '{colors.shared.cranberry.tint 30}',
-  'Theme/DarkStatusSuccessBackground1Rest': '{colors.shared.green.tint 60}',
-  'Theme/DarkStatusSuccessBackground3Rest': '{colors.shared.green.primary}',
-  'Theme/DarkStatusSuccessForeground1Rest': '{colors.shared.green.primary}',
-  'Theme/DarkStatusSuccessForeground3Rest': '{colors.neutral.white}',
-  'Theme/DarkStatusSuccessStroke1Rest': '{colors.shared.green.primary}',
-  'Theme/DarkStatusSuccessStroke2Rest': '{colors.shared.green.tint 30}',
-  'Theme/DarkStatusWarningBackground1Rest': '{colors.shared.orange.tint 60}',
-  'Theme/DarkStatusWarningBackground3Rest': '{colors.shared.orange.primary}',
-  'Theme/DarkStatusWarningForeground1Rest': '{colors.shared.orange.primary}',
-  'Theme/DarkStatusWarningForeground3Rest': '{colors.neutral.white}',
-  'Theme/DarkStatusWarningStroke1Rest': '{colors.shared.orange.primary}',
-  'Theme/DarkStatusWarningStroke2Rest': '{colors.shared.orange.tint 30}',
-  'Theme/DarkStatusOofForeground3Rest': '{colors.shared.berry.tint 20}',
-  'Theme/DarkStatusAwayBackground3Rest': '{colors.shared.marigold.primary}',
-  'Theme/DarkStatusAvailableForeground3Rest': '{colors.shared.light green.primary}',
-  'Theme/DarkStatusGenericAnchorBackground2Rest': '{colors.shared.anchor.shade 30}',
-  'Theme/DarkStatusGenericAnchorForeground2Rest': '{colors.shared.anchor.tint 40}',
-  'Theme/DarkStatusGenericAnchorStrokeActiveRest': '{colors.shared.anchor.tint 30}',
+  'Theme/DarkBrandStrokeCompoundRest': '{Brand-100}',
+  'Theme/DarkBrandStrokeCompoundHover': '{Brand-110}',
+  'Theme/DarkBrandStrokeCompoundPressed': '{Brand-90}',
+  'Theme/DarkStatusDangerBackground1Rest': '{Colors.Neutral.White}',
+  'Theme/DarkStatusDangerBackground3Rest': '{Colors.Shared.Cranberry.Primary}',
+  'Theme/DarkStatusDangerForeground1Rest': '{Colors.Shared.Cranberry.Tint 30}',
+  'Theme/DarkStatusDangerForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/DarkStatusDangerStroke1Rest': '{Colors.Shared.Cranberry.Primary}',
+  'Theme/DarkStatusDangerStroke2Rest': '{Colors.Shared.Cranberry.Tint 30}',
+  'Theme/DarkStatusSuccessBackground1Rest': '{Colors.Shared.Green.Tint 60}',
+  'Theme/DarkStatusSuccessBackground3Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/DarkStatusSuccessForeground1Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/DarkStatusSuccessForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/DarkStatusSuccessStroke1Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/DarkStatusSuccessStroke2Rest': '{Colors.Shared.Green.Tint 30}',
+  'Theme/DarkStatusWarningBackground1Rest': '{Colors.Shared.Orange.Tint 60}',
+  'Theme/DarkStatusWarningBackground3Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/DarkStatusWarningForeground1Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/DarkStatusWarningForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/DarkStatusWarningStroke1Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/DarkStatusWarningStroke2Rest': '{Colors.Shared.Orange.Tint 30}',
+  'Theme/DarkStatusOofForeground3Rest': '{Colors.Shared.Berry.Tint 20}',
+  'Theme/DarkStatusAwayBackground3Rest': '{Colors.Shared.Marigold.Primary}',
+  'Theme/DarkStatusAvailableForeground3Rest': '{Colors.Shared.Light green.Primary}',
+  'Theme/DarkStatusGenericAnchorBackground2Rest': '{Colors.Shared.Anchor.Shade 30}',
+  'Theme/DarkStatusGenericAnchorForeground2Rest': '{Colors.Shared.Anchor.Tint 40}',
+  'Theme/DarkStatusGenericAnchorStrokeActiveRest': '{Colors.Shared.Anchor.Tint 30}',
   'Theme/DarkStatusGenericInformationBackground1Rest': '#ffffff',
   'Theme/DarkStatusGenericInformationBackground1Hover': '#ffffff',
   'Theme/DarkStatusGenericInformationBackground1Pressed': '#ffffff',
@@ -8394,12 +4799,12 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Theme/DarkStatusGenericInformationForegroundRest': '#ffffff',
   'Theme/DarkStatusGenericInformationForegroundHover': '#ffffff',
   'Theme/DarkStatusGenericInformationForegroundPressed': '#ffffff',
-  'Theme/DarkStatusSevereBackground1Rest': '{colors.shared.dark orange.tint 60}',
-  'Theme/DarkStatusSevereBackground3Rest': '{colors.shared.dark orange.primary}',
-  'Theme/DarkStatusSevereForeground1Rest': '{colors.shared.dark orange.primary}',
-  'Theme/DarkStatusSevereForeground3Rest': '{colors.neutral.white}',
-  'Theme/DarkStatusSevereStroke1Rest': '{colors.shared.dark orange.primary}',
-  'Theme/DarkStatusSevereStroke2Rest': '{colors.shared.dark orange.tint 30}',
+  'Theme/DarkStatusSevereBackground1Rest': '{Colors.Shared.Dark Orange.Tint 60}',
+  'Theme/DarkStatusSevereBackground3Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/DarkStatusSevereForeground1Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/DarkStatusSevereForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/DarkStatusSevereStroke1Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/DarkStatusSevereStroke2Rest': '{Colors.Shared.Dark Orange.Tint 30}',
   'Theme/DarkShadowAmbient': '#00000033',
   'Theme/DarkShadowAmbient-lighter': '#0000001f',
   'Theme/DarkShadowAmbient-darker': '#00000066',
@@ -9094,7 +5499,7 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Global/ValueColorsAlphaBrand-1070': '#0f1a38b3',
   'Global/ValueColorsAlphaBrand-1080': '#0f1a38cc',
   'Global/ValueColorsAlphaBrand-1090': '#0f1a38e6',
-  'Global/ValueColorsData vizCoreBlue': '{brand-60}',
+  'Global/ValueColorsData vizCoreBlue': '{Brand-60}',
   'Global/ValueColorsData vizCoreGray': '#a2aeb5',
   'Global/ValueColorsData vizCoreRed': '#b94431',
   'Global/ValueColorsData vizCoreTeal': '#05a3b1',
@@ -9108,7 +5513,7 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Global/ValueColorsData vizSemanticDark bkgdNegative': '#cc2e48',
   'Global/ValueColorsData vizSemanticDark bkgdNotice': '#df9f37',
   'Global/ValueColorsData vizSequentialBlue400': '#133a77',
-  'Global/ValueColorsData vizSequentialBlue300': '{brand-60}',
+  'Global/ValueColorsData vizSequentialBlue300': '{Brand-60}',
   'Global/ValueColorsData vizSequentialBlue200': '#6f94ce',
   'Global/ValueColorsData vizSequentialBlue100': '#9ebbe6',
   'Global/ValueColorsData vizSequentialGray400': '#36383a',
@@ -9148,6 +5553,43 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Global/ValueColorsBrandBrand-110': '#a5c8ff',
   'Global/ValueColorsBrandBrand-120': '#eef5ff',
   'Global/ValueColorsBrandBrand-130': '#f5f9ff',
+  'Global/ValueBorderRadiusNone': '0',
+  'Global/ValueBorderRadiusSmall': '2',
+  'Global/ValueBorderRadiusMedium': '4',
+  'Global/ValueBorderRadiusLarge': '6',
+  'Global/ValueBorderRadiusX-Large': '8',
+  'Global/ValueBorderRadiusCircular': '9999',
+  'Global/ValueSpacingHorizontalNone': '0',
+  'Global/ValueSpacingHorizontalXXS': '2',
+  'Global/ValueSpacingHorizontalXS': '4',
+  'Global/ValueSpacingHorizontalSNudge': '6',
+  'Global/ValueSpacingHorizontalS': '8',
+  'Global/ValueSpacingHorizontalMNudge': '12',
+  'Global/ValueSpacingHorizontalM': '16',
+  'Global/ValueSpacingHorizontalL': '32',
+  'Global/ValueSpacingHorizontalXL': '48',
+  'Global/ValueSpacingHorizontalXXL': '52',
+  'Global/ValueSpacingHorizontalXXXL': '56',
+  'Global/ValueSpacingHorizontalLNudge': '24',
+  'Global/ValueSpacingHorizontalXXXXL': '64',
+  'Global/ValueStrokeWidthNone': '0',
+  'Global/ValueStrokeWidthThin': '1',
+  'Global/ValueStrokeWidthThick': '2',
+  'Global/ValueStrokeWidthThicker': '4',
+  'Global/ValueStrokeWidthThickest': '6',
+  'Global/ValueSpacingVerticalNone': '0',
+  'Global/ValueSpacingVerticalXXS': '2',
+  'Global/ValueSpacingVerticalXS': '4',
+  'Global/ValueSpacingVerticalSNudge': '6',
+  'Global/ValueSpacingVerticalS': '8',
+  'Global/ValueSpacingVerticalMNudge': '12',
+  'Global/ValueSpacingVerticalM': '16',
+  'Global/ValueSpacingVerticalL': '32',
+  'Global/ValueSpacingVerticalXL': '48',
+  'Global/ValueSpacingVerticalXXL': '52',
+  'Global/ValueSpacingVerticalXXXL': '56',
+  'Global/ValueSpacingVerticalLNudge': '24',
+  'Global/ValueSpacingVerticalXXXXL': '64',
   'Brand/Brand 1Brand-10': '#0f1a38',
   'Brand/Brand 1Brand-20': '#041e47',
   'Brand/Brand 1Brand-30': '#052c69',
@@ -9323,6 +5765,52 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Typography/BaseFontWeightBold': 'Bold',
   'Typography/BaseFontWeightSemilight': 'Semilight',
   'Typography/BaseFontWeightLight': 'Light',
+  'Typography/BaseLineHeightBase100': '14',
+  'Typography/BaseLineHeightBase200': '16',
+  'Typography/BaseLineHeightBase300': '22',
+  'Typography/BaseLineHeightBase400': '24',
+  'Typography/BaseLineHeightBase500': '28',
+  'Typography/BaseLineHeightBase600': '34',
+  'Typography/BaseLineHeightBase700': '36',
+  'Typography/BaseLineHeightBase800': '48',
+  'Typography/BaseLineHeightBase900': '52',
+  'Typography/BaseLineHeightBase1000': '92',
+  'Typography/BaseLineHeightBase920': '64',
+  'Typography/BaseLineHeightBase980': '70',
+  'Typography/BaseFontSize1000': '68',
+  'Typography/BaseFontSizeBase100': '10',
+  'Typography/BaseFontSizeBase200': '12',
+  'Typography/BaseFontSizeBase300': '14',
+  'Typography/BaseFontSizeBase400': '16',
+  'Typography/BaseFontSizeBase500': '20',
+  'Typography/BaseFontSizeBase600': '24',
+  'Typography/BaseFontSizeBase700': '28',
+  'Typography/BaseFontSizeBase800': '32',
+  'Typography/BaseFontSizeBase900': '40',
+  'Typography/BaseFontSizeBase980': '52',
+  'Typography/BaseFontSizeBase920': '48',
+  'Tree indentation/NoneTree-padding-left': '0px',
+  'Tree indentation/NoneTreeleaf-padding-left': '24px',
+  'Tree indentation/Level 1Tree-padding-left': '24px',
+  'Tree indentation/Level 1Treeleaf-padding-left': '48px',
+  'Tree indentation/Level 2Tree-padding-left': '48px',
+  'Tree indentation/Level 2Treeleaf-padding-left': '72px',
+  'Tree indentation/Level 3Tree-padding-left': '72px',
+  'Tree indentation/Level 3Treeleaf-padding-left': '96px',
+  'Tree indentation/Level 4Tree-padding-left': '96px',
+  'Tree indentation/Level 4Treeleaf-padding-left': '120px',
+  'Tree indentation/Level 5Tree-padding-left': '120px',
+  'Tree indentation/Level 5Treeleaf-padding-left': '144px',
+  'Tree indentation/Level 6Tree-padding-left': '144px',
+  'Tree indentation/Level 6Treeleaf-padding-left': '168px',
+  'Tree indentation/Level 7Tree-padding-left': '168px',
+  'Tree indentation/Level 7Treeleaf-padding-left': '192px',
+  'Tree indentation/Level 8Tree-padding-left': '192px',
+  'Tree indentation/Level 8Treeleaf-padding-left': '216px',
+  'Tree indentation/Level 9Tree-padding-left': '216px',
+  'Tree indentation/Level 9Treeleaf-padding-left': '240px',
+  'Tree indentation/Level 10Tree-padding-left': '240px',
+  'Tree indentation/Level 10Treeleaf-padding-left': '264px',
   'Popover size/MediumPopover-padding-vertical': '{spacingVertical.LNudge}',
   'Popover size/MediumPopover-padding-horizontal': '{spacingHorizontal.LNudge}',
   'Popover size/SmallPopover-padding-vertical': '{spacingVertical.M}',
@@ -9344,184 +5832,184 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Button shape/Rounded (Default)Button-corner-radius': '{borderRadius.Small}',
   'Button shape/Rounded (Default)Button-image-corner-radius': '{borderRadius.Small}',
   'Badge shape/CircularBadge-corner-radius': '{borderRadius.Circular}',
-  'Theme/Light/Theme/LightNeutralBackground1Rest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightNeutralBackground1Hover': '{colors.neutral.grey-80}',
-  'Theme/Light/Theme/LightNeutralBackground1Pressed': '{colors.neutral.grey-70}',
-  'Theme/Light/Theme/LightNeutralBackground1Selected': '{colors.neutral.grey-90}',
+  'Theme/Light/Theme/LightNeutralBackground1Rest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightNeutralBackground1Hover': '{Colors.Neutral.Grey-80}',
+  'Theme/Light/Theme/LightNeutralBackground1Pressed': '{Colors.Neutral.Grey-70}',
+  'Theme/Light/Theme/LightNeutralBackground1Selected': '{Colors.Neutral.Grey-90}',
   'Theme/Light/Theme/LightNeutralBackground2Rest': '#f5f4f2',
-  'Theme/Light/Theme/LightNeutralBackground3Rest': '{colors.neutral.grey-70}',
-  'Theme/Light/Theme/LightNeutralBackground3Hover': '{colors.neutral.grey-80}',
-  'Theme/Light/Theme/LightNeutralBackground3Pressed': '{colors.neutral.grey-80}',
-  'Theme/Light/Theme/LightNeutralBackground4Rest': '{colors.neutral.grey-90}',
-  'Theme/Light/Theme/LightNeutralBackground4Hover': '{colors.neutral.grey-70}',
-  'Theme/Light/Theme/LightNeutralBackground4Pressed': '{colors.neutral.grey-60}',
-  'Theme/Light/Theme/LightNeutralBackground5Rest': '{colors.neutral.grey-80}',
-  'Theme/Light/Theme/LightNeutralBackground6Rest': '{colors.neutral.grey-90}',
-  'Theme/Light/Theme/LightNeutralBackgroundInvertedRest': '{brand-10}',
-  'Theme/Light/Theme/LightNeutralBackgroundInvertedDisabledRest': '{colors.alpha.white.10}',
-  'Theme/Light/Theme/LightNeutralBackgroundAlpha1Rest': '{colors.alpha.white.50}',
-  'Theme/Light/Theme/LightNeutralBackgroundAlpha2Rest': '{colors.alpha.white.80}',
-  'Theme/Light/Theme/LightNeutralBackgroundStaticRest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleRest': '{colors.alpha.white.0}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleHover': '{colors.neutral.grey-80}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtlePressed': '{colors.neutral.grey-70}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleSelected': '{colors.neutral.grey-90}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaHover': '{colors.alpha.white.70}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaPressed': '{colors.alpha.white.50}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaSelected': '{colors.alpha.white.0}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedRest': '{colors.alpha.black.0}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedHover': '{colors.alpha.black.10}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedPressed': '{colors.alpha.black.30}',
-  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedSelected': '{colors.alpha.black.20}',
-  'Theme/Light/Theme/LightNeutralBackgroundTransparentRest': '{colors.alpha.white.0}',
-  'Theme/Light/Theme/LightNeutralBackgroundTransparentHover': '{colors.alpha.white.0}',
-  'Theme/Light/Theme/LightNeutralBackgroundTransparentPressed': '{colors.alpha.white.0}',
-  'Theme/Light/Theme/LightNeutralBackgroundTransparentSelected': '{colors.alpha.white.0}',
-  'Theme/Light/Theme/LightNeutralBackgroundDisabledRest': '{colors.neutral.grey-80}',
-  'Theme/Light/Theme/LightNeutralBackgroundStencil1Rest': '{colors.neutral.grey-70}',
-  'Theme/Light/Theme/LightNeutralBackgroundStencil2Rest': '{colors.neutral.grey-90}',
-  'Theme/Light/Theme/LightNeutralBackgroundOverlayRest': '{colors.alpha.black.40}',
-  'Theme/Light/Theme/LightNeutralBackgroundOverlayScrollbarRest': '{colors.alpha.black.50}',
-  'Theme/Light/Theme/LightNeutralForeground1Rest primary text': '{brand-10}',
-  'Theme/Light/Theme/LightNeutralForeground1Hover': '{brand-30}',
-  'Theme/Light/Theme/LightNeutralForeground1Pressed': '{brand-30}',
-  'Theme/Light/Theme/LightNeutralForeground1Selected': '{brand-30}',
-  'Theme/Light/Theme/LightNeutralForeground2Rest secondary text': '{colors.neutral.grey-12}',
-  'Theme/Light/Theme/LightNeutralForeground2Hover': '{colors.neutral.grey-6}',
-  'Theme/Light/Theme/LightNeutralForeground2Pressed': '{colors.neutral.grey-6}',
-  'Theme/Light/Theme/LightNeutralForeground2Selected': '{colors.neutral.grey-6}',
-  'Theme/Light/Theme/LightNeutralForeground2BrandHover': '{brand-50}',
-  'Theme/Light/Theme/LightNeutralForeground2BrandPressed': '{brand-40}',
-  'Theme/Light/Theme/LightNeutralForeground2BrandSelected': '{brand-30}',
-  'Theme/Light/Theme/LightNeutralForeground2BrandRest': '{brand-60}',
-  'Theme/Light/Theme/LightNeutralForeground2LinkRest': '{brand-60}',
-  'Theme/Light/Theme/LightNeutralForeground2LinkHover': '{brand-50}',
-  'Theme/Light/Theme/LightNeutralForeground2LinkPressed': '{brand-40}',
-  'Theme/Light/Theme/LightNeutralForeground2LinkSelected': '{brand-30}',
-  'Theme/Light/Theme/LightNeutralForeground4Rest': '{colors.neutral.grey-30}',
-  'Theme/Light/Theme/LightNeutralForegroundDisabled2Rest': '{colors.neutral.grey-60}',
-  'Theme/Light/Theme/LightNeutralForegroundDisabledRest': '{colors.neutral.grey-50}',
-  'Theme/Light/Theme/LightNeutralForegroundStaticInvertedRest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightNeutralForegroundInverted1Rest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightNeutralForegroundInverted1Hover': '{colors.neutral.grey-80}',
-  'Theme/Light/Theme/LightNeutralForegroundInverted1Pressed': '{colors.neutral.grey-70}',
-  'Theme/Light/Theme/LightNeutralForegroundInverted1Selected': '{colors.neutral.grey-60}',
-  'Theme/Light/Theme/LightNeutralForegroundInverted2Rest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightNeutralForegroundInvertedDisabledRest': '{colors.alpha.white.40}',
-  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkRest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkHover': '{colors.neutral.grey-90}',
-  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkPressed': '{colors.neutral.grey-80}',
-  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkSelected': '{colors.neutral.grey-70}',
-  'Theme/Light/Theme/LightNeutralForegroundOn BrandRest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightNeutralStroke1Rest': '{colors.neutral.grey-70}',
-  'Theme/Light/Theme/LightNeutralStroke1Hover': '{colors.neutral.grey-60}',
-  'Theme/Light/Theme/LightNeutralStroke1Pressed': '{colors.neutral.grey-50}',
-  'Theme/Light/Theme/LightNeutralStroke1Selected': '{colors.neutral.grey-40}',
+  'Theme/Light/Theme/LightNeutralBackground3Rest': '{Colors.Neutral.Grey-70}',
+  'Theme/Light/Theme/LightNeutralBackground3Hover': '{Colors.Neutral.Grey-80}',
+  'Theme/Light/Theme/LightNeutralBackground3Pressed': '{Colors.Neutral.Grey-80}',
+  'Theme/Light/Theme/LightNeutralBackground4Rest': '{Colors.Neutral.Grey-90}',
+  'Theme/Light/Theme/LightNeutralBackground4Hover': '{Colors.Neutral.Grey-70}',
+  'Theme/Light/Theme/LightNeutralBackground4Pressed': '{Colors.Neutral.Grey-60}',
+  'Theme/Light/Theme/LightNeutralBackground5Rest': '{Colors.Neutral.Grey-80}',
+  'Theme/Light/Theme/LightNeutralBackground6Rest': '{Colors.Neutral.Grey-90}',
+  'Theme/Light/Theme/LightNeutralBackgroundInvertedRest': '{Brand-10}',
+  'Theme/Light/Theme/LightNeutralBackgroundInvertedDisabledRest': '{Colors.Alpha.White.10}',
+  'Theme/Light/Theme/LightNeutralBackgroundAlpha1Rest': '{Colors.Alpha.White.50}',
+  'Theme/Light/Theme/LightNeutralBackgroundAlpha2Rest': '{Colors.Alpha.White.80}',
+  'Theme/Light/Theme/LightNeutralBackgroundStaticRest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleRest': '{Colors.Alpha.White.0}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleHover': '{Colors.Neutral.Grey-80}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtlePressed': '{Colors.Neutral.Grey-70}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleSelected': '{Colors.Neutral.Grey-90}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaHover': '{Colors.Alpha.White.70}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaPressed': '{Colors.Alpha.White.50}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleLight alphaSelected': '{Colors.Alpha.White.0}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedRest': '{Colors.Alpha.Black.0}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedHover': '{Colors.Alpha.Black.10}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedPressed': '{Colors.Alpha.Black.30}',
+  'Theme/Light/Theme/LightNeutralBackgroundSubtleInvertedSelected': '{Colors.Alpha.Black.20}',
+  'Theme/Light/Theme/LightNeutralBackgroundTransparentRest': '{Colors.Alpha.White.0}',
+  'Theme/Light/Theme/LightNeutralBackgroundTransparentHover': '{Colors.Alpha.White.0}',
+  'Theme/Light/Theme/LightNeutralBackgroundTransparentPressed': '{Colors.Alpha.White.0}',
+  'Theme/Light/Theme/LightNeutralBackgroundTransparentSelected': '{Colors.Alpha.White.0}',
+  'Theme/Light/Theme/LightNeutralBackgroundDisabledRest': '{Colors.Neutral.Grey-80}',
+  'Theme/Light/Theme/LightNeutralBackgroundStencil1Rest': '{Colors.Neutral.Grey-70}',
+  'Theme/Light/Theme/LightNeutralBackgroundStencil2Rest': '{Colors.Neutral.Grey-90}',
+  'Theme/Light/Theme/LightNeutralBackgroundOverlayRest': '{Colors.Alpha.Black.40}',
+  'Theme/Light/Theme/LightNeutralBackgroundOverlayScrollbarRest': '{Colors.Alpha.Black.50}',
+  'Theme/Light/Theme/LightNeutralForeground1Rest primary text': '{Brand-10}',
+  'Theme/Light/Theme/LightNeutralForeground1Hover': '{Brand-30}',
+  'Theme/Light/Theme/LightNeutralForeground1Pressed': '{Brand-30}',
+  'Theme/Light/Theme/LightNeutralForeground1Selected': '{Brand-30}',
+  'Theme/Light/Theme/LightNeutralForeground2Rest secondary text': '{Colors.Neutral.Grey-12}',
+  'Theme/Light/Theme/LightNeutralForeground2Hover': '{Colors.Neutral.Grey-6}',
+  'Theme/Light/Theme/LightNeutralForeground2Pressed': '{Colors.Neutral.Grey-6}',
+  'Theme/Light/Theme/LightNeutralForeground2Selected': '{Colors.Neutral.Grey-6}',
+  'Theme/Light/Theme/LightNeutralForeground2BrandHover': '{Brand-50}',
+  'Theme/Light/Theme/LightNeutralForeground2BrandPressed': '{Brand-40}',
+  'Theme/Light/Theme/LightNeutralForeground2BrandSelected': '{Brand-30}',
+  'Theme/Light/Theme/LightNeutralForeground2BrandRest': '{Brand-60}',
+  'Theme/Light/Theme/LightNeutralForeground2LinkRest': '{Brand-60}',
+  'Theme/Light/Theme/LightNeutralForeground2LinkHover': '{Brand-50}',
+  'Theme/Light/Theme/LightNeutralForeground2LinkPressed': '{Brand-40}',
+  'Theme/Light/Theme/LightNeutralForeground2LinkSelected': '{Brand-30}',
+  'Theme/Light/Theme/LightNeutralForeground4Rest': '{Colors.Neutral.Grey-30}',
+  'Theme/Light/Theme/LightNeutralForegroundDisabled2Rest': '{Colors.Neutral.Grey-60}',
+  'Theme/Light/Theme/LightNeutralForegroundDisabledRest': '{Colors.Neutral.Grey-50}',
+  'Theme/Light/Theme/LightNeutralForegroundStaticInvertedRest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightNeutralForegroundInverted1Rest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightNeutralForegroundInverted1Hover': '{Colors.Neutral.Grey-80}',
+  'Theme/Light/Theme/LightNeutralForegroundInverted1Pressed': '{Colors.Neutral.Grey-70}',
+  'Theme/Light/Theme/LightNeutralForegroundInverted1Selected': '{Colors.Neutral.Grey-60}',
+  'Theme/Light/Theme/LightNeutralForegroundInverted2Rest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightNeutralForegroundInvertedDisabledRest': '{Colors.Alpha.White.40}',
+  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkRest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkHover': '{Colors.Neutral.Grey-90}',
+  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkPressed': '{Colors.Neutral.Grey-80}',
+  'Theme/Light/Theme/LightNeutralForegroundInvertedLinkSelected': '{Colors.Neutral.Grey-70}',
+  'Theme/Light/Theme/LightNeutralForegroundOn BrandRest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightNeutralStroke1Rest': '{Colors.Neutral.Grey-70}',
+  'Theme/Light/Theme/LightNeutralStroke1Hover': '{Colors.Neutral.Grey-60}',
+  'Theme/Light/Theme/LightNeutralStroke1Pressed': '{Colors.Neutral.Grey-50}',
+  'Theme/Light/Theme/LightNeutralStroke1Selected': '{Colors.Neutral.Grey-40}',
   'Theme/Light/Theme/LightNeutralStroke2Rest': '#ffffff',
-  'Theme/Light/Theme/LightNeutralStroke3Rest': '{colors.neutral.grey-50}',
-  'Theme/Light/Theme/LightNeutralStrokeAlpha1Rest': '{colors.alpha.black.5}',
-  'Theme/Light/Theme/LightNeutralStrokeAlpha2Rest': '{colors.alpha.white.20}',
+  'Theme/Light/Theme/LightNeutralStroke3Rest': '{Colors.Neutral.Grey-50}',
+  'Theme/Light/Theme/LightNeutralStrokeAlpha1Rest': '{Colors.Alpha.Black.5}',
+  'Theme/Light/Theme/LightNeutralStrokeAlpha2Rest': '{Colors.Alpha.White.20}',
   'Theme/Light/Theme/LightNeutralStrokeSubtleRest': '#f5f4f2',
-  'Theme/Light/Theme/LightNeutralStrokeOn Brand1Rest': '{brand-60}',
-  'Theme/Light/Theme/LightNeutralStrokeOn Brand2Rest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightNeutralStrokeAccessibleRest': '{brand-60}',
-  'Theme/Light/Theme/LightNeutralStrokeAccessibleHover': '{brand-50}',
-  'Theme/Light/Theme/LightNeutralStrokeAccessiblePressed': '{brand-40}',
-  'Theme/Light/Theme/LightNeutralStrokeAccessibleSelected': '{brand-30}',
-  'Theme/Light/Theme/LightNeutralStrokeFocus1Rest': '{brand-60}',
+  'Theme/Light/Theme/LightNeutralStrokeOn Brand1Rest': '{Brand-60}',
+  'Theme/Light/Theme/LightNeutralStrokeOn Brand2Rest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightNeutralStrokeAccessibleRest': '{Brand-60}',
+  'Theme/Light/Theme/LightNeutralStrokeAccessibleHover': '{Brand-50}',
+  'Theme/Light/Theme/LightNeutralStrokeAccessiblePressed': '{Brand-40}',
+  'Theme/Light/Theme/LightNeutralStrokeAccessibleSelected': '{Brand-30}',
+  'Theme/Light/Theme/LightNeutralStrokeFocus1Rest': '{Brand-60}',
   'Theme/Light/Theme/LightNeutralStrokeFocus2Rest': '#ffffff',
-  'Theme/Light/Theme/LightNeutralStrokeTransparentInteractiveRest': '{colors.alpha.white.0}',
-  'Theme/Light/Theme/LightNeutralStrokeTransparentDisabledRest': '{colors.alpha.white.0}',
-  'Theme/Light/Theme/LightNeutralStrokeTransparentRest': '{colors.alpha.white.0}',
-  'Theme/Light/Theme/LightNeutralStrokeDisabledRest': '{colors.neutral.grey-70}',
-  'Theme/Light/Theme/LightNeutralStrokeDisabledInvertedRest': '{colors.alpha.white.40}',
-  'Theme/Light/Theme/LightBrandBackground1Rest': '{brand-60}',
-  'Theme/Light/Theme/LightBrandBackground1Hover': '{brand-50}',
-  'Theme/Light/Theme/LightBrandBackground1Pressed': '{brand-40}',
-  'Theme/Light/Theme/LightBrandBackground1Selected': '{brand-30}',
-  'Theme/Light/Theme/LightBrandBackground2Rest': '{brand-10}',
-  'Theme/Light/Theme/LightBrandBackground2Hover': '{brand-110}',
-  'Theme/Light/Theme/LightBrandBackground2Pressed': '{brand-100}',
-  'Theme/Light/Theme/LightBrandBackground3Rest': '{brand-120}',
-  'Theme/Light/Theme/LightBrandBackgroundInvertedRest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightBrandBackgroundInvertedHover': '{brand-120}',
-  'Theme/Light/Theme/LightBrandBackgroundInvertedPressed': '{brand-130}',
-  'Theme/Light/Theme/LightBrandBackgroundInvertedSelected': '{brand-100}',
-  'Theme/Light/Theme/LightBrandBackgroundStaticRest': '{brand-60}',
-  'Theme/Light/Theme/LightBrandBackgroundCompoundRest': '{brand-60}',
-  'Theme/Light/Theme/LightBrandBackgroundCompoundHover': '{brand-50}',
-  'Theme/Light/Theme/LightBrandBackgroundCompoundPressed': '{brand-40}',
-  'Theme/Light/Theme/LightBrandForeground1Rest': '{brand-60}',
-  'Theme/Light/Theme/LightBrandForeground1Hover': '{brand-50}',
-  'Theme/Light/Theme/LightBrandForeground1Pressed': '{brand-40}',
-  'Theme/Light/Theme/LightBrandForeground1Selected': '{brand-30}',
-  'Theme/Light/Theme/LightBrandForeground2Rest': '{brand-80}',
-  'Theme/Light/Theme/LightBrandForeground2Hover': '{brand-60}',
-  'Theme/Light/Theme/LightBrandForeground2Pressed': '{brand-30}',
-  'Theme/Light/Theme/LightBrandForegroundLinkRest': '{brand-60}',
-  'Theme/Light/Theme/LightBrandForegroundLinkHover': '{brand-50}',
-  'Theme/Light/Theme/LightBrandForegroundLinkPressed': '{brand-40}',
-  'Theme/Light/Theme/LightBrandForegroundLinkSelected': '{brand-30}',
-  'Theme/Light/Theme/LightBrandForegroundInvertedRest': '{brand-100}',
-  'Theme/Light/Theme/LightBrandForegroundInvertedHover': '{brand-110}',
-  'Theme/Light/Theme/LightBrandForegroundInvertedPressed': '{brand-100}',
-  'Theme/Light/Theme/LightBrandForegroundOn LightRest': '{brand-80}',
-  'Theme/Light/Theme/LightBrandForegroundOn LightHover': '{brand-70}',
-  'Theme/Light/Theme/LightBrandForegroundOn LightPressed': '{brand-50}',
-  'Theme/Light/Theme/LightBrandForegroundOn LightSelected': '{brand-60}',
-  'Theme/Light/Theme/LightBrandForegroundCompoundRest': '{brand-60}',
-  'Theme/Light/Theme/LightBrandForegroundCompoundHover': '{brand-50}',
-  'Theme/Light/Theme/LightBrandForegroundCompoundPressed': '{brand-40}',
-  'Theme/Light/Theme/LightBrandStroke1Rest': '{brand-60}',
-  'Theme/Light/Theme/LightBrandStroke1Hover': '{brand-50}',
-  'Theme/Light/Theme/LightBrandStroke1Pressed': '{brand-40}',
-  'Theme/Light/Theme/LightBrandStroke1Selected': '{brand-30}',
-  'Theme/Light/Theme/LightBrandStroke2Rest': '{brand-10}',
-  'Theme/Light/Theme/LightBrandStroke2ContrastRest': '{brand-110}',
-  'Theme/Light/Theme/LightBrandStroke3Rest': '{brand-90}',
-  'Theme/Light/Theme/LightBrandStrokeCompoundRest': '{brand-60}',
-  'Theme/Light/Theme/LightBrandStrokeCompoundHover': '{brand-50}',
-  'Theme/Light/Theme/LightBrandStrokeCompoundPressed': '{brand-40}',
-  'Theme/Light/Theme/LightStatusDangerBackground1Rest': '{colors.shared.cranberry.tint 60}',
-  'Theme/Light/Theme/LightStatusDangerBackground3Rest': '{colors.shared.cranberry.primary}',
-  'Theme/Light/Theme/LightStatusDangerForeground1Rest': '{colors.shared.cranberry.primary}',
-  'Theme/Light/Theme/LightStatusDangerForeground3Rest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightStatusDangerStroke1Rest': '{colors.shared.cranberry.primary}',
-  'Theme/Light/Theme/LightStatusDangerStroke2Rest': '{colors.shared.cranberry.tint 30}',
-  'Theme/Light/Theme/LightStatusSuccessBackground1Rest': '{colors.shared.green.tint 60}',
-  'Theme/Light/Theme/LightStatusSuccessBackground3Rest': '{colors.shared.green.primary}',
-  'Theme/Light/Theme/LightStatusSuccessForeground1Rest': '{colors.shared.green.primary}',
-  'Theme/Light/Theme/LightStatusSuccessForeground3Rest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightStatusSuccessStroke1Rest': '{colors.shared.green.primary}',
-  'Theme/Light/Theme/LightStatusSuccessStroke2Rest': '{colors.shared.green.tint 30}',
-  'Theme/Light/Theme/LightStatusWarningBackground1Rest': '{colors.shared.orange.tint 60}',
-  'Theme/Light/Theme/LightStatusWarningBackground3Rest': '{colors.shared.orange.primary}',
-  'Theme/Light/Theme/LightStatusWarningForeground1Rest': '{colors.shared.orange.primary}',
-  'Theme/Light/Theme/LightStatusWarningForeground3Rest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightStatusWarningStroke1Rest': '{colors.shared.orange.primary}',
-  'Theme/Light/Theme/LightStatusWarningStroke2Rest': '{colors.shared.orange.tint 30}',
-  'Theme/Light/Theme/LightStatusOofForeground3Rest': '{colors.shared.berry.primary}',
-  'Theme/Light/Theme/LightStatusAwayBackground3Rest': '{colors.shared.marigold.primary}',
-  'Theme/Light/Theme/LightStatusAvailableForeground3Rest': '{colors.shared.light green.primary}',
-  'Theme/Light/Theme/LightStatusGenericAnchorBackground2Rest': '{colors.shared.anchor.tint 40}',
-  'Theme/Light/Theme/LightStatusGenericAnchorForeground2Rest': '{colors.shared.anchor.shade 30}',
-  'Theme/Light/Theme/LightStatusGenericAnchorStrokeActiveRest': '{colors.shared.anchor.primary}',
-  'Theme/Light/Theme/LightStatusGenericInformationBackground1Rest': '{colors.shared.information.tint 60}',
-  'Theme/Light/Theme/LightStatusGenericInformationBackground1Hover': '{colors.shared.information.tint 50}',
-  'Theme/Light/Theme/LightStatusGenericInformationBackground1Pressed': '{colors.shared.information.tint 40}',
-  'Theme/Light/Theme/LightStatusGenericInformationStroke1Rest': '{colors.shared.information.primary}',
-  'Theme/Light/Theme/LightStatusGenericInformationStroke2Rest': '{colors.shared.information.tint 30}',
-  'Theme/Light/Theme/LightStatusGenericInformationStroke2Hover': '{colors.shared.information.tint 20}',
-  'Theme/Light/Theme/LightStatusGenericInformationStroke2Pressed': '{colors.shared.information.tint 10}',
-  'Theme/Light/Theme/LightStatusGenericInformationForegroundRest': '{colors.shared.information.primary}',
-  'Theme/Light/Theme/LightStatusGenericInformationForegroundHover': '{colors.shared.information.shade 10}',
-  'Theme/Light/Theme/LightStatusGenericInformationForegroundPressed': '{colors.shared.information.shade 20}',
-  'Theme/Light/Theme/LightStatusSevereBackground1Rest': '{colors.shared.dark orange.tint 60}',
-  'Theme/Light/Theme/LightStatusSevereBackground3Rest': '{colors.shared.dark orange.primary}',
-  'Theme/Light/Theme/LightStatusSevereForeground1Rest': '{colors.shared.dark orange.primary}',
-  'Theme/Light/Theme/LightStatusSevereForeground3Rest': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightStatusSevereStroke1Rest': '{colors.shared.dark orange.primary}',
-  'Theme/Light/Theme/LightStatusSevereStroke2Rest': '{colors.shared.dark orange.tint 30}',
+  'Theme/Light/Theme/LightNeutralStrokeTransparentInteractiveRest': '{Colors.Alpha.White.0}',
+  'Theme/Light/Theme/LightNeutralStrokeTransparentDisabledRest': '{Colors.Alpha.White.0}',
+  'Theme/Light/Theme/LightNeutralStrokeTransparentRest': '{Colors.Alpha.White.0}',
+  'Theme/Light/Theme/LightNeutralStrokeDisabledRest': '{Colors.Neutral.Grey-70}',
+  'Theme/Light/Theme/LightNeutralStrokeDisabledInvertedRest': '{Colors.Alpha.White.40}',
+  'Theme/Light/Theme/LightBrandBackground1Rest': '{Brand-60}',
+  'Theme/Light/Theme/LightBrandBackground1Hover': '{Brand-50}',
+  'Theme/Light/Theme/LightBrandBackground1Pressed': '{Brand-40}',
+  'Theme/Light/Theme/LightBrandBackground1Selected': '{Brand-30}',
+  'Theme/Light/Theme/LightBrandBackground2Rest': '{Brand-10}',
+  'Theme/Light/Theme/LightBrandBackground2Hover': '{Brand-110}',
+  'Theme/Light/Theme/LightBrandBackground2Pressed': '{Brand-100}',
+  'Theme/Light/Theme/LightBrandBackground3Rest': '{Brand-120}',
+  'Theme/Light/Theme/LightBrandBackgroundInvertedRest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightBrandBackgroundInvertedHover': '{Brand-120}',
+  'Theme/Light/Theme/LightBrandBackgroundInvertedPressed': '{Brand-130}',
+  'Theme/Light/Theme/LightBrandBackgroundInvertedSelected': '{Brand-100}',
+  'Theme/Light/Theme/LightBrandBackgroundStaticRest': '{Brand-60}',
+  'Theme/Light/Theme/LightBrandBackgroundCompoundRest': '{Brand-60}',
+  'Theme/Light/Theme/LightBrandBackgroundCompoundHover': '{Brand-50}',
+  'Theme/Light/Theme/LightBrandBackgroundCompoundPressed': '{Brand-40}',
+  'Theme/Light/Theme/LightBrandForeground1Rest': '{Brand-60}',
+  'Theme/Light/Theme/LightBrandForeground1Hover': '{Brand-50}',
+  'Theme/Light/Theme/LightBrandForeground1Pressed': '{Brand-40}',
+  'Theme/Light/Theme/LightBrandForeground1Selected': '{Brand-30}',
+  'Theme/Light/Theme/LightBrandForeground2Rest': '{Brand-80}',
+  'Theme/Light/Theme/LightBrandForeground2Hover': '{Brand-60}',
+  'Theme/Light/Theme/LightBrandForeground2Pressed': '{Brand-30}',
+  'Theme/Light/Theme/LightBrandForegroundLinkRest': '{Brand-60}',
+  'Theme/Light/Theme/LightBrandForegroundLinkHover': '{Brand-50}',
+  'Theme/Light/Theme/LightBrandForegroundLinkPressed': '{Brand-40}',
+  'Theme/Light/Theme/LightBrandForegroundLinkSelected': '{Brand-30}',
+  'Theme/Light/Theme/LightBrandForegroundInvertedRest': '{Brand-100}',
+  'Theme/Light/Theme/LightBrandForegroundInvertedHover': '{Brand-110}',
+  'Theme/Light/Theme/LightBrandForegroundInvertedPressed': '{Brand-100}',
+  'Theme/Light/Theme/LightBrandForegroundOn LightRest': '{Brand-80}',
+  'Theme/Light/Theme/LightBrandForegroundOn LightHover': '{Brand-70}',
+  'Theme/Light/Theme/LightBrandForegroundOn LightPressed': '{Brand-50}',
+  'Theme/Light/Theme/LightBrandForegroundOn LightSelected': '{Brand-60}',
+  'Theme/Light/Theme/LightBrandForegroundCompoundRest': '{Brand-60}',
+  'Theme/Light/Theme/LightBrandForegroundCompoundHover': '{Brand-50}',
+  'Theme/Light/Theme/LightBrandForegroundCompoundPressed': '{Brand-40}',
+  'Theme/Light/Theme/LightBrandStroke1Rest': '{Brand-60}',
+  'Theme/Light/Theme/LightBrandStroke1Hover': '{Brand-50}',
+  'Theme/Light/Theme/LightBrandStroke1Pressed': '{Brand-40}',
+  'Theme/Light/Theme/LightBrandStroke1Selected': '{Brand-30}',
+  'Theme/Light/Theme/LightBrandStroke2Rest': '{Brand-10}',
+  'Theme/Light/Theme/LightBrandStroke2ContrastRest': '{Brand-110}',
+  'Theme/Light/Theme/LightBrandStroke3Rest': '{Brand-90}',
+  'Theme/Light/Theme/LightBrandStrokeCompoundRest': '{Brand-60}',
+  'Theme/Light/Theme/LightBrandStrokeCompoundHover': '{Brand-50}',
+  'Theme/Light/Theme/LightBrandStrokeCompoundPressed': '{Brand-40}',
+  'Theme/Light/Theme/LightStatusDangerBackground1Rest': '{Colors.Shared.Cranberry.Tint 60}',
+  'Theme/Light/Theme/LightStatusDangerBackground3Rest': '{Colors.Shared.Cranberry.Primary}',
+  'Theme/Light/Theme/LightStatusDangerForeground1Rest': '{Colors.Shared.Cranberry.Primary}',
+  'Theme/Light/Theme/LightStatusDangerForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightStatusDangerStroke1Rest': '{Colors.Shared.Cranberry.Primary}',
+  'Theme/Light/Theme/LightStatusDangerStroke2Rest': '{Colors.Shared.Cranberry.Tint 30}',
+  'Theme/Light/Theme/LightStatusSuccessBackground1Rest': '{Colors.Shared.Green.Tint 60}',
+  'Theme/Light/Theme/LightStatusSuccessBackground3Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/Light/Theme/LightStatusSuccessForeground1Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/Light/Theme/LightStatusSuccessForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightStatusSuccessStroke1Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/Light/Theme/LightStatusSuccessStroke2Rest': '{Colors.Shared.Green.Tint 30}',
+  'Theme/Light/Theme/LightStatusWarningBackground1Rest': '{Colors.Shared.Orange.Tint 60}',
+  'Theme/Light/Theme/LightStatusWarningBackground3Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/Light/Theme/LightStatusWarningForeground1Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/Light/Theme/LightStatusWarningForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightStatusWarningStroke1Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/Light/Theme/LightStatusWarningStroke2Rest': '{Colors.Shared.Orange.Tint 30}',
+  'Theme/Light/Theme/LightStatusOofForeground3Rest': '{Colors.Shared.Berry.Primary}',
+  'Theme/Light/Theme/LightStatusAwayBackground3Rest': '{Colors.Shared.Marigold.Primary}',
+  'Theme/Light/Theme/LightStatusAvailableForeground3Rest': '{Colors.Shared.Light green.Primary}',
+  'Theme/Light/Theme/LightStatusGenericAnchorBackground2Rest': '{Colors.Shared.Anchor.Tint 40}',
+  'Theme/Light/Theme/LightStatusGenericAnchorForeground2Rest': '{Colors.Shared.Anchor.Shade 30}',
+  'Theme/Light/Theme/LightStatusGenericAnchorStrokeActiveRest': '{Colors.Shared.Anchor.Primary}',
+  'Theme/Light/Theme/LightStatusGenericInformationBackground1Rest': '{Colors.Shared.Information.Tint 60}',
+  'Theme/Light/Theme/LightStatusGenericInformationBackground1Hover': '{Colors.Shared.Information.Tint 50}',
+  'Theme/Light/Theme/LightStatusGenericInformationBackground1Pressed': '{Colors.Shared.Information.Tint 40}',
+  'Theme/Light/Theme/LightStatusGenericInformationStroke1Rest': '{Colors.Shared.Information.Primary}',
+  'Theme/Light/Theme/LightStatusGenericInformationStroke2Rest': '{Colors.Shared.Information.Tint 30}',
+  'Theme/Light/Theme/LightStatusGenericInformationStroke2Hover': '{Colors.Shared.Information.Tint 20}',
+  'Theme/Light/Theme/LightStatusGenericInformationStroke2Pressed': '{Colors.Shared.Information.Tint 10}',
+  'Theme/Light/Theme/LightStatusGenericInformationForegroundRest': '{Colors.Shared.Information.Primary}',
+  'Theme/Light/Theme/LightStatusGenericInformationForegroundHover': '{Colors.Shared.Information.Shade 10}',
+  'Theme/Light/Theme/LightStatusGenericInformationForegroundPressed': '{Colors.Shared.Information.Shade 20}',
+  'Theme/Light/Theme/LightStatusSevereBackground1Rest': '{Colors.Shared.Dark Orange.Tint 60}',
+  'Theme/Light/Theme/LightStatusSevereBackground3Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/Light/Theme/LightStatusSevereForeground1Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/Light/Theme/LightStatusSevereForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightStatusSevereStroke1Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/Light/Theme/LightStatusSevereStroke2Rest': '{Colors.Shared.Dark Orange.Tint 30}',
   'Theme/Light/Theme/LightShadowAmbient': '#0000001f',
   'Theme/Light/Theme/LightShadowAmbient-lighter': '#0000000f',
   'Theme/Light/Theme/LightShadowAmbient-darker': '#00000033',
@@ -9530,271 +6018,271 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Theme/Light/Theme/LightShadowKey-lighter': '#00000012',
   'Theme/Light/Theme/LightShadowKey-darker': '#0000003d',
   'Theme/Light/Theme/LightShadowBrand-key': '#0000004d',
-  'Theme/Light/Theme/LightData vizForegroundLabelsCategorical': '{colors.brand.brand-10}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsData': '{colors.neutral.grey-12}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue': '{colors.data viz.core.blue}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray': '{colors.data viz.core.gray}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed': '{colors.data viz.core.red}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal': '{colors.data viz.core.teal}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean': '{colors.data viz.core.ocean}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen': '{colors.data viz.core.green}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorYellow300': '{colors.data viz.sequential.yellow300}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue400': '{colors.data viz.sequential.blue400}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray400': '{colors.data viz.sequential.gray400}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed400': '{colors.data viz.sequential.red400}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal300': '{colors.data viz.sequential.teal300}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed300': '{colors.data viz.sequential.red300}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal400': '{colors.data viz.sequential.teal400}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean400': '{colors.data viz.sequential.ocean400}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen400': '{colors.data viz.sequential.green400}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorYellow400': '{colors.data viz.sequential.yellow400}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen300': '{colors.data viz.sequential.green300}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray300': '{colors.data viz.sequential.gray300}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue200': '{colors.data viz.sequential.blue200}',
-  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean200': '{colors.data viz.sequential.ocean200}',
-  'Theme/Light/Theme/LightData vizForegroundAccessibilityText dark bkgd': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightData vizForegroundAccessibilityText light bkgd': '{colors.neutral.black}',
-  'Theme/Light/Theme/LightData vizForegroundKPI CardText dark bkgd': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightData vizForegroundKPI CardText light bkgd': '{colors.neutral.grey-40}',
-  'Theme/Light/Theme/LightData vizStrokeGridline': '{colors.neutral.grey-70}',
-  'Theme/Light/Theme/LightData vizStrokeAxis-Target-Benchmark': '{colors.neutral.black}',
-  'Theme/Light/Theme/LightData vizStrokeColorBlue': '{colors.data viz.core.blue}',
-  'Theme/Light/Theme/LightData vizStrokeColorBlue400': '{colors.data viz.sequential.blue400}',
-  'Theme/Light/Theme/LightData vizStrokeColorGray': '{colors.data viz.core.gray}',
-  'Theme/Light/Theme/LightData vizStrokeColorGray400': '{colors.data viz.sequential.gray400}',
-  'Theme/Light/Theme/LightData vizStrokeColorRed': '{colors.data viz.core.red}',
-  'Theme/Light/Theme/LightData vizStrokeColorRed300': '{colors.data viz.sequential.red300}',
-  'Theme/Light/Theme/LightData vizStrokeColorRed400': '{colors.data viz.sequential.red400}',
-  'Theme/Light/Theme/LightData vizStrokeColorTeal': '{colors.data viz.core.teal}',
-  'Theme/Light/Theme/LightData vizStrokeColorTeal300': '{colors.data viz.sequential.teal300}',
-  'Theme/Light/Theme/LightData vizStrokeColorTeal400': '{colors.data viz.sequential.teal400}',
-  'Theme/Light/Theme/LightData vizStrokeColorOcean': '{colors.data viz.core.ocean}',
-  'Theme/Light/Theme/LightData vizStrokeColorOcean400': '{colors.data viz.sequential.ocean400}',
-  'Theme/Light/Theme/LightData vizStrokeColorGreen': '{colors.data viz.core.green}',
-  'Theme/Light/Theme/LightData vizStrokeColorGreen300': '{colors.data viz.sequential.green300}',
-  'Theme/Light/Theme/LightData vizStrokeColorGreen400': '{colors.data viz.sequential.green400}',
-  'Theme/Light/Theme/LightData vizStrokeColorYellow300': '{colors.data viz.sequential.yellow300}',
-  'Theme/Light/Theme/LightData vizStrokeColorYellow400': '{colors.data viz.sequential.yellow400}',
-  'Theme/Light/Theme/LightData vizStrokeColorGray300': '{colors.data viz.sequential.gray300}',
-  'Theme/Light/Theme/LightData vizStrokeColorBlue200': '{colors.data viz.sequential.blue200}',
-  'Theme/Light/Theme/LightData vizStrokeColorOcean200': '{colors.data viz.sequential.ocean200}',
-  'Theme/Light/Theme/LightData vizStrokeColorYellow': '{colors.data viz.core.yellow}',
-  'Theme/Light/Theme/LightData vizStrokeTrend-Average': '{colors.data viz.sequential.gray300}',
-  'Theme/Light/Theme/LightData vizStrokeAccessible outline': '{colors.neutral.white}',
-  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdPositive': '{colors.data viz.core.green}',
-  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdNegative': '{colors.data viz.core.red}',
-  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdNotice': '{colors.data viz.core.yellow}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsCategorical': '{Colors.Brand.Brand-10}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsData': '{Colors.Neutral.Grey-12}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue': '{Colors.Data viz.Core.Blue}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray': '{Colors.Data viz.Core.Gray}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed': '{Colors.Data viz.Core.Red}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal': '{Colors.Data viz.Core.Teal}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean': '{Colors.Data viz.Core.Ocean}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen': '{Colors.Data viz.Core.Green}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorYellow300': '{Colors.Data viz.Sequential.Yellow300}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue400': '{Colors.Data viz.Sequential.Blue400}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray400': '{Colors.Data viz.Sequential.Gray400}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed400': '{Colors.Data viz.Sequential.Red400}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal300': '{Colors.Data viz.Sequential.Teal300}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorRed300': '{Colors.Data viz.Sequential.Red300}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorTeal400': '{Colors.Data viz.Sequential.Teal400}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean400': '{Colors.Data viz.Sequential.Ocean400}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen400': '{Colors.Data viz.Sequential.Green400}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorYellow400': '{Colors.Data viz.Sequential.Yellow400}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGreen300': '{Colors.Data viz.Sequential.Green300}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorGray300': '{Colors.Data viz.Sequential.Gray300}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorBlue200': '{Colors.Data viz.Sequential.Blue200}',
+  'Theme/Light/Theme/LightData vizForegroundLabelsColorOcean200': '{Colors.Data viz.Sequential.Ocean200}',
+  'Theme/Light/Theme/LightData vizForegroundAccessibilityText dark bkgd': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightData vizForegroundAccessibilityText light bkgd': '{Colors.Neutral.Black}',
+  'Theme/Light/Theme/LightData vizForegroundKPI CardText dark bkgd': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightData vizForegroundKPI CardText light bkgd': '{Colors.Neutral.Grey-40}',
+  'Theme/Light/Theme/LightData vizStrokeGridline': '{Colors.Neutral.Grey-70}',
+  'Theme/Light/Theme/LightData vizStrokeAxis-Target-Benchmark': '{Colors.Neutral.Black}',
+  'Theme/Light/Theme/LightData vizStrokeColorBlue': '{Colors.Data viz.Core.Blue}',
+  'Theme/Light/Theme/LightData vizStrokeColorBlue400': '{Colors.Data viz.Sequential.Blue400}',
+  'Theme/Light/Theme/LightData vizStrokeColorGray': '{Colors.Data viz.Core.Gray}',
+  'Theme/Light/Theme/LightData vizStrokeColorGray400': '{Colors.Data viz.Sequential.Gray400}',
+  'Theme/Light/Theme/LightData vizStrokeColorRed': '{Colors.Data viz.Core.Red}',
+  'Theme/Light/Theme/LightData vizStrokeColorRed300': '{Colors.Data viz.Sequential.Red300}',
+  'Theme/Light/Theme/LightData vizStrokeColorRed400': '{Colors.Data viz.Sequential.Red400}',
+  'Theme/Light/Theme/LightData vizStrokeColorTeal': '{Colors.Data viz.Core.Teal}',
+  'Theme/Light/Theme/LightData vizStrokeColorTeal300': '{Colors.Data viz.Sequential.Teal300}',
+  'Theme/Light/Theme/LightData vizStrokeColorTeal400': '{Colors.Data viz.Sequential.Teal400}',
+  'Theme/Light/Theme/LightData vizStrokeColorOcean': '{Colors.Data viz.Core.Ocean}',
+  'Theme/Light/Theme/LightData vizStrokeColorOcean400': '{Colors.Data viz.Sequential.Ocean400}',
+  'Theme/Light/Theme/LightData vizStrokeColorGreen': '{Colors.Data viz.Core.Green}',
+  'Theme/Light/Theme/LightData vizStrokeColorGreen300': '{Colors.Data viz.Sequential.Green300}',
+  'Theme/Light/Theme/LightData vizStrokeColorGreen400': '{Colors.Data viz.Sequential.Green400}',
+  'Theme/Light/Theme/LightData vizStrokeColorYellow300': '{Colors.Data viz.Sequential.Yellow300}',
+  'Theme/Light/Theme/LightData vizStrokeColorYellow400': '{Colors.Data viz.Sequential.Yellow400}',
+  'Theme/Light/Theme/LightData vizStrokeColorGray300': '{Colors.Data viz.Sequential.Gray300}',
+  'Theme/Light/Theme/LightData vizStrokeColorBlue200': '{Colors.Data viz.Sequential.Blue200}',
+  'Theme/Light/Theme/LightData vizStrokeColorOcean200': '{Colors.Data viz.Sequential.Ocean200}',
+  'Theme/Light/Theme/LightData vizStrokeColorYellow': '{Colors.Data viz.Core.Yellow}',
+  'Theme/Light/Theme/LightData vizStrokeTrend-Average': '{Colors.Data viz.Sequential.Gray300}',
+  'Theme/Light/Theme/LightData vizStrokeAccessible outline': '{Colors.Neutral.White}',
+  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdPositive': '{Colors.Data viz.Core.Green}',
+  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdNegative': '{Colors.Data viz.Core.Red}',
+  'Theme/Light/Theme/LightData vizSemanticForegroundLight bkgdNotice': '{Colors.Data viz.Core.Yellow}',
   'Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdPositive': '#37bb65',
   'Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdNegative': '#cc2e48',
-  'Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdNotice': '{colors.data viz.core.yellow}',
-  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdPositive': '{colors.data viz.core.green}',
-  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdNegative': '{colors.data viz.core.red}',
-  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdNotice': '{colors.data viz.core.yellow}',
+  'Theme/Light/Theme/LightData vizSemanticForegroundDark bkgdNotice': '{Colors.Data viz.Core.Yellow}',
+  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdPositive': '{Colors.Data viz.Core.Green}',
+  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdNegative': '{Colors.Data viz.Core.Red}',
+  'Theme/Light/Theme/LightData vizSemanticStrokeLight bkgdNotice': '{Colors.Data viz.Core.Yellow}',
   'Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdPositive': '#37bb65',
   'Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdNegative': '#cc2e48',
-  'Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdNotice': '{colors.data viz.core.yellow}',
-  'Theme/Light/Theme/LightData vizSemanticBackgroundPositive': '{colors.data viz.core.green}',
-  'Theme/Light/Theme/LightData vizSemanticBackgroundNegative': '{colors.data viz.core.red}',
-  'Theme/Light/Theme/LightData vizSemanticBackgroundNotice': '{colors.data viz.core.yellow}',
-  'Theme/Light/Theme/LightData vizBackgroundCoreBlue': '{colors.data viz.core.blue}',
-  'Theme/Light/Theme/LightData vizBackgroundCoreGray': '{colors.data viz.core.gray}',
-  'Theme/Light/Theme/LightData vizBackgroundCoreRed': '{colors.data viz.core.red}',
-  'Theme/Light/Theme/LightData vizBackgroundCoreTeal': '{colors.data viz.core.teal}',
-  'Theme/Light/Theme/LightData vizBackgroundCoreOcean': '{colors.data viz.core.ocean}',
-  'Theme/Light/Theme/LightData vizBackgroundCoreGreen': '{colors.data viz.core.green}',
-  'Theme/Light/Theme/LightData vizBackgroundCoreYellow': '{colors.data viz.core.yellow}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue400': '{colors.data viz.sequential.blue400}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGray400': '{colors.data viz.sequential.gray400}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialRed300': '{colors.data viz.sequential.red300}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialRed400': '{colors.data viz.sequential.red400}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal300': '{colors.data viz.sequential.teal300}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal400': '{colors.data viz.sequential.teal400}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean400': '{colors.data viz.sequential.ocean400}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen300': '{colors.data viz.sequential.green300}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen400': '{colors.data viz.sequential.green400}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow300': '{colors.data viz.sequential.yellow300}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow400': '{colors.data viz.sequential.yellow400}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue300': '{colors.data viz.sequential.blue300}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue200': '{colors.data viz.sequential.blue200}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue100': '{colors.data viz.sequential.blue100}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGray300': '{colors.data viz.sequential.gray300}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGray200': '{colors.data viz.sequential.gray200}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGray100': '{colors.data viz.sequential.gray100}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialRed200': '{colors.data viz.sequential.red200}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialRed100': '{colors.data viz.sequential.red100}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal200': '{colors.data viz.sequential.teal200}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal100': '{colors.data viz.sequential.teal100}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean300': '{colors.data viz.sequential.ocean300}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean200': '{colors.data viz.sequential.ocean200}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean100': '{colors.data viz.sequential.ocean100}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen200': '{colors.data viz.sequential.green200}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen100': '{colors.data viz.sequential.green100}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow200': '{colors.data viz.sequential.yellow200}',
-  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow100': '{colors.data viz.sequential.yellow100}',
-  'Theme/Light/Theme/LightData vizBackgroundNeutralBlack': '{colors.neutral.black}',
+  'Theme/Light/Theme/LightData vizSemanticStrokeDark bkgdNotice': '{Colors.Data viz.Core.Yellow}',
+  'Theme/Light/Theme/LightData vizSemanticBackgroundPositive': '{Colors.Data viz.Core.Green}',
+  'Theme/Light/Theme/LightData vizSemanticBackgroundNegative': '{Colors.Data viz.Core.Red}',
+  'Theme/Light/Theme/LightData vizSemanticBackgroundNotice': '{Colors.Data viz.Core.Yellow}',
+  'Theme/Light/Theme/LightData vizBackgroundCoreBlue': '{Colors.Data viz.Core.Blue}',
+  'Theme/Light/Theme/LightData vizBackgroundCoreGray': '{Colors.Data viz.Core.Gray}',
+  'Theme/Light/Theme/LightData vizBackgroundCoreRed': '{Colors.Data viz.Core.Red}',
+  'Theme/Light/Theme/LightData vizBackgroundCoreTeal': '{Colors.Data viz.Core.Teal}',
+  'Theme/Light/Theme/LightData vizBackgroundCoreOcean': '{Colors.Data viz.Core.Ocean}',
+  'Theme/Light/Theme/LightData vizBackgroundCoreGreen': '{Colors.Data viz.Core.Green}',
+  'Theme/Light/Theme/LightData vizBackgroundCoreYellow': '{Colors.Data viz.Core.Yellow}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue400': '{Colors.Data viz.Sequential.Blue400}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGray400': '{Colors.Data viz.Sequential.Gray400}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialRed300': '{Colors.Data viz.Sequential.Red300}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialRed400': '{Colors.Data viz.Sequential.Red400}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal300': '{Colors.Data viz.Sequential.Teal300}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal400': '{Colors.Data viz.Sequential.Teal400}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean400': '{Colors.Data viz.Sequential.Ocean400}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen300': '{Colors.Data viz.Sequential.Green300}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen400': '{Colors.Data viz.Sequential.Green400}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow300': '{Colors.Data viz.Sequential.Yellow300}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow400': '{Colors.Data viz.Sequential.Yellow400}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue300': '{Colors.Data viz.Sequential.Blue300}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue200': '{Colors.Data viz.Sequential.Blue200}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialBlue100': '{Colors.Data viz.Sequential.Blue100}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGray300': '{Colors.Data viz.Sequential.Gray300}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGray200': '{Colors.Data viz.Sequential.Gray200}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGray100': '{Colors.Data viz.Sequential.Gray100}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialRed200': '{Colors.Data viz.Sequential.Red200}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialRed100': '{Colors.Data viz.Sequential.Red100}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal200': '{Colors.Data viz.Sequential.Teal200}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialTeal100': '{Colors.Data viz.Sequential.Teal100}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean300': '{Colors.Data viz.Sequential.Ocean300}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean200': '{Colors.Data viz.Sequential.Ocean200}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialOcean100': '{Colors.Data viz.Sequential.Ocean100}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen200': '{Colors.Data viz.Sequential.Green200}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialGreen100': '{Colors.Data viz.Sequential.Green100}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow200': '{Colors.Data viz.Sequential.Yellow200}',
+  'Theme/Light/Theme/LightData vizBackgroundSequentialYellow100': '{Colors.Data viz.Sequential.Yellow100}',
+  'Theme/Light/Theme/LightData vizBackgroundNeutralBlack': '{Colors.Neutral.Black}',
   'Theme/Light/Theme/LightControl logicTheme switch': 'Light',
-  'Theme/Dark/Theme/DarkNeutralBackground1Rest': '{colors.neutral.black}',
-  'Theme/Dark/Theme/DarkNeutralBackground1Hover': '{colors.neutral.grey-10}',
-  'Theme/Dark/Theme/DarkNeutralBackground1Pressed': '{colors.neutral.grey-12}',
-  'Theme/Dark/Theme/DarkNeutralBackground1Selected': '{colors.neutral.grey-8}',
-  'Theme/Dark/Theme/DarkNeutralBackground2Rest': '{colors.neutral.grey-6}',
-  'Theme/Dark/Theme/DarkNeutralBackground3Rest': '{colors.neutral.grey-12}',
-  'Theme/Dark/Theme/DarkNeutralBackground3Hover': '{colors.neutral.grey-10}',
-  'Theme/Dark/Theme/DarkNeutralBackground3Pressed': '{colors.neutral.grey-10}',
-  'Theme/Dark/Theme/DarkNeutralBackground4Rest': '{colors.neutral.grey-90}',
-  'Theme/Dark/Theme/DarkNeutralBackground4Hover': '{colors.neutral.grey-70}',
-  'Theme/Dark/Theme/DarkNeutralBackground4Pressed': '{colors.neutral.grey-60}',
-  'Theme/Dark/Theme/DarkNeutralBackground5Rest': '{colors.neutral.grey-90}',
-  'Theme/Dark/Theme/DarkNeutralBackground6Rest': '{colors.neutral.grey-20}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundInvertedRest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundInvertedDisabledRest': '{colors.alpha.white.10}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundAlpha1Rest': '{colors.alpha.brand-10.50}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundAlpha2Rest': '{colors.alpha.black.70}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundStaticRest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleRest': '{colors.alpha.black.0}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleHover': '{colors.neutral.grey-80}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtlePressed': '{colors.neutral.grey-70}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleSelected': '{colors.neutral.grey-90}',
+  'Theme/Dark/Theme/DarkNeutralBackground1Rest': '{Colors.Neutral.Black}',
+  'Theme/Dark/Theme/DarkNeutralBackground1Hover': '{Colors.Neutral.Grey-10}',
+  'Theme/Dark/Theme/DarkNeutralBackground1Pressed': '{Colors.Neutral.Grey-12}',
+  'Theme/Dark/Theme/DarkNeutralBackground1Selected': '{Colors.Neutral.Grey-8}',
+  'Theme/Dark/Theme/DarkNeutralBackground2Rest': '{Colors.Neutral.Grey-6}',
+  'Theme/Dark/Theme/DarkNeutralBackground3Rest': '{Colors.Neutral.Grey-12}',
+  'Theme/Dark/Theme/DarkNeutralBackground3Hover': '{Colors.Neutral.Grey-10}',
+  'Theme/Dark/Theme/DarkNeutralBackground3Pressed': '{Colors.Neutral.Grey-10}',
+  'Theme/Dark/Theme/DarkNeutralBackground4Rest': '{Colors.Neutral.Grey-90}',
+  'Theme/Dark/Theme/DarkNeutralBackground4Hover': '{Colors.Neutral.Grey-70}',
+  'Theme/Dark/Theme/DarkNeutralBackground4Pressed': '{Colors.Neutral.Grey-60}',
+  'Theme/Dark/Theme/DarkNeutralBackground5Rest': '{Colors.Neutral.Grey-90}',
+  'Theme/Dark/Theme/DarkNeutralBackground6Rest': '{Colors.Neutral.Grey-20}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundInvertedRest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundInvertedDisabledRest': '{Colors.Alpha.White.10}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundAlpha1Rest': '{Colors.Alpha.Brand-10.50}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundAlpha2Rest': '{Colors.Alpha.Black.70}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundStaticRest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleRest': '{Colors.Alpha.Black.0}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleHover': '{Colors.Neutral.Grey-80}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtlePressed': '{Colors.Neutral.Grey-70}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleSelected': '{Colors.Neutral.Grey-90}',
   'Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaHover': '#242424cc',
   'Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaPressed': '#24242480',
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaSelected': '{colors.alpha.black.0}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedRest': '{colors.alpha.black.0}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedHover': '{colors.alpha.black.10}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedPressed': '{colors.alpha.black.30}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedSelected': '{colors.alpha.black.20}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentRest': '{colors.alpha.black.0}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentHover': '{colors.alpha.black.0}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentPressed': '{colors.alpha.black.0}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentSelected': '{colors.alpha.black.0}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundDisabledRest': '{colors.neutral.grey-8}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleLight alphaSelected': '{Colors.Alpha.Black.0}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedRest': '{Colors.Alpha.Black.0}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedHover': '{Colors.Alpha.Black.10}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedPressed': '{Colors.Alpha.Black.30}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundSubtleInvertedSelected': '{Colors.Alpha.Black.20}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentRest': '{Colors.Alpha.Black.0}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentHover': '{Colors.Alpha.Black.0}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentPressed': '{Colors.Alpha.Black.0}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundTransparentSelected': '{Colors.Alpha.Black.0}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundDisabledRest': '{Colors.Neutral.Grey-8}',
   'Theme/Dark/Theme/DarkNeutralBackgroundStencil1Rest': '#575757',
-  'Theme/Dark/Theme/DarkNeutralBackgroundStencil2Rest': '{colors.neutral.grey-20}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundOverlayRest': '{colors.alpha.black.50}',
-  'Theme/Dark/Theme/DarkNeutralBackgroundOverlayScrollbarRest': '{colors.alpha.white.60}',
-  'Theme/Dark/Theme/DarkNeutralForeground1Rest primary text': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground1Hover': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground1Pressed': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground1Selected': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground2Rest secondary text': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground2Hover': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground2Pressed': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground2Selected': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground2BrandHover': '{brand-100}',
-  'Theme/Dark/Theme/DarkNeutralForeground2BrandPressed': '{brand-90}',
-  'Theme/Dark/Theme/DarkNeutralForeground2BrandSelected': '{brand-100}',
-  'Theme/Dark/Theme/DarkNeutralForeground2BrandRest': '{brand-100}',
-  'Theme/Dark/Theme/DarkNeutralForeground2LinkRest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground2LinkHover': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground2LinkPressed': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground2LinkSelected': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForeground4Rest': '{colors.neutral.grey-60}',
-  'Theme/Dark/Theme/DarkNeutralForegroundDisabled2Rest': '{colors.neutral.grey-60}',
-  'Theme/Dark/Theme/DarkNeutralForegroundDisabledRest': '{colors.neutral.grey-50}',
-  'Theme/Dark/Theme/DarkNeutralForegroundStaticInvertedRest': '{colors.neutral.white}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundStencil2Rest': '{Colors.Neutral.Grey-20}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundOverlayRest': '{Colors.Alpha.Black.50}',
+  'Theme/Dark/Theme/DarkNeutralBackgroundOverlayScrollbarRest': '{Colors.Alpha.White.60}',
+  'Theme/Dark/Theme/DarkNeutralForeground1Rest primary text': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground1Hover': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground1Pressed': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground1Selected': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground2Rest secondary text': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground2Hover': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground2Pressed': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground2Selected': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground2BrandHover': '{Brand-100}',
+  'Theme/Dark/Theme/DarkNeutralForeground2BrandPressed': '{Brand-90}',
+  'Theme/Dark/Theme/DarkNeutralForeground2BrandSelected': '{Brand-100}',
+  'Theme/Dark/Theme/DarkNeutralForeground2BrandRest': '{Brand-100}',
+  'Theme/Dark/Theme/DarkNeutralForeground2LinkRest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground2LinkHover': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground2LinkPressed': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground2LinkSelected': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForeground4Rest': '{Colors.Neutral.Grey-60}',
+  'Theme/Dark/Theme/DarkNeutralForegroundDisabled2Rest': '{Colors.Neutral.Grey-60}',
+  'Theme/Dark/Theme/DarkNeutralForegroundDisabledRest': '{Colors.Neutral.Grey-50}',
+  'Theme/Dark/Theme/DarkNeutralForegroundStaticInvertedRest': '{Colors.Neutral.White}',
   'Theme/Dark/Theme/DarkNeutralForegroundInverted1Rest': '#242424',
   'Theme/Dark/Theme/DarkNeutralForegroundInverted1Hover': '#242424',
   'Theme/Dark/Theme/DarkNeutralForegroundInverted1Pressed': '#242424',
   'Theme/Dark/Theme/DarkNeutralForegroundInverted1Selected': '#242424',
   'Theme/Dark/Theme/DarkNeutralForegroundInverted2Rest': '#242424',
-  'Theme/Dark/Theme/DarkNeutralForegroundInvertedDisabledRest': '{colors.alpha.white.40}',
-  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkRest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkHover': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkPressed': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkSelected': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralForegroundOn BrandRest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralStroke1Rest': '{colors.neutral.grey-40}',
-  'Theme/Dark/Theme/DarkNeutralStroke1Hover': '{colors.neutral.grey-40}',
-  'Theme/Dark/Theme/DarkNeutralStroke1Pressed': '{colors.neutral.grey-40}',
-  'Theme/Dark/Theme/DarkNeutralStroke1Selected': '{colors.neutral.grey-40}',
+  'Theme/Dark/Theme/DarkNeutralForegroundInvertedDisabledRest': '{Colors.Alpha.White.40}',
+  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkRest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkHover': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkPressed': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForegroundInvertedLinkSelected': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralForegroundOn BrandRest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralStroke1Rest': '{Colors.Neutral.Grey-40}',
+  'Theme/Dark/Theme/DarkNeutralStroke1Hover': '{Colors.Neutral.Grey-40}',
+  'Theme/Dark/Theme/DarkNeutralStroke1Pressed': '{Colors.Neutral.Grey-40}',
+  'Theme/Dark/Theme/DarkNeutralStroke1Selected': '{Colors.Neutral.Grey-40}',
   'Theme/Dark/Theme/DarkNeutralStroke2Rest': '#ffffff',
-  'Theme/Dark/Theme/DarkNeutralStroke3Rest': '{colors.neutral.grey-50}',
-  'Theme/Dark/Theme/DarkNeutralStrokeAlpha1Rest': '{colors.alpha.white.10}',
-  'Theme/Dark/Theme/DarkNeutralStrokeAlpha2Rest': '{colors.alpha.white.20}',
+  'Theme/Dark/Theme/DarkNeutralStroke3Rest': '{Colors.Neutral.Grey-50}',
+  'Theme/Dark/Theme/DarkNeutralStrokeAlpha1Rest': '{Colors.Alpha.White.10}',
+  'Theme/Dark/Theme/DarkNeutralStrokeAlpha2Rest': '{Colors.Alpha.White.20}',
   'Theme/Dark/Theme/DarkNeutralStrokeSubtleRest': '#f5f4f2',
-  'Theme/Dark/Theme/DarkNeutralStrokeOn Brand1Rest': '{colors.neutral.white}',
+  'Theme/Dark/Theme/DarkNeutralStrokeOn Brand1Rest': '{Colors.Neutral.White}',
   'Theme/Dark/Theme/DarkNeutralStrokeOn Brand2Rest': '#ffffff',
-  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleRest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleHover': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralStrokeAccessiblePressed': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleSelected': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralStrokeFocus1Rest': '{colors.neutral.black}',
-  'Theme/Dark/Theme/DarkNeutralStrokeFocus2Rest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkNeutralStrokeTransparentInteractiveRest': '{colors.alpha.white.0}',
-  'Theme/Dark/Theme/DarkNeutralStrokeTransparentDisabledRest': '{colors.alpha.white.0}',
-  'Theme/Dark/Theme/DarkNeutralStrokeTransparentRest': '{colors.alpha.white.0}',
-  'Theme/Dark/Theme/DarkNeutralStrokeDisabledRest': '{colors.neutral.grey-70}',
-  'Theme/Dark/Theme/DarkNeutralStrokeDisabledInvertedRest': '{colors.alpha.white.40}',
-  'Theme/Dark/Theme/DarkBrandBackground1Rest': '{brand-60}',
-  'Theme/Dark/Theme/DarkBrandBackground1Hover': '{brand-40}',
-  'Theme/Dark/Theme/DarkBrandBackground1Pressed': '{brand-30}',
-  'Theme/Dark/Theme/DarkBrandBackground1Selected': '{brand-20}',
-  'Theme/Dark/Theme/DarkBrandBackground2Rest': '{brand-20}',
-  'Theme/Dark/Theme/DarkBrandBackground2Hover': '{brand-40}',
-  'Theme/Dark/Theme/DarkBrandBackground2Pressed': '{brand-10}',
+  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleRest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleHover': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralStrokeAccessiblePressed': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralStrokeAccessibleSelected': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralStrokeFocus1Rest': '{Colors.Neutral.Black}',
+  'Theme/Dark/Theme/DarkNeutralStrokeFocus2Rest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkNeutralStrokeTransparentInteractiveRest': '{Colors.Alpha.White.0}',
+  'Theme/Dark/Theme/DarkNeutralStrokeTransparentDisabledRest': '{Colors.Alpha.White.0}',
+  'Theme/Dark/Theme/DarkNeutralStrokeTransparentRest': '{Colors.Alpha.White.0}',
+  'Theme/Dark/Theme/DarkNeutralStrokeDisabledRest': '{Colors.Neutral.Grey-70}',
+  'Theme/Dark/Theme/DarkNeutralStrokeDisabledInvertedRest': '{Colors.Alpha.White.40}',
+  'Theme/Dark/Theme/DarkBrandBackground1Rest': '{Brand-60}',
+  'Theme/Dark/Theme/DarkBrandBackground1Hover': '{Brand-40}',
+  'Theme/Dark/Theme/DarkBrandBackground1Pressed': '{Brand-30}',
+  'Theme/Dark/Theme/DarkBrandBackground1Selected': '{Brand-20}',
+  'Theme/Dark/Theme/DarkBrandBackground2Rest': '{Brand-20}',
+  'Theme/Dark/Theme/DarkBrandBackground2Hover': '{Brand-40}',
+  'Theme/Dark/Theme/DarkBrandBackground2Pressed': '{Brand-10}',
   'Theme/Dark/Theme/DarkBrandBackground3Rest': '#ffffff',
-  'Theme/Dark/Theme/DarkBrandBackgroundInvertedRest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkBrandBackgroundInvertedHover': '{brand-120}',
-  'Theme/Dark/Theme/DarkBrandBackgroundInvertedPressed': '{brand-130}',
-  'Theme/Dark/Theme/DarkBrandBackgroundInvertedSelected': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandBackgroundStaticRest': '{brand-80}',
-  'Theme/Dark/Theme/DarkBrandBackgroundCompoundRest': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandBackgroundCompoundHover': '{brand-110}',
-  'Theme/Dark/Theme/DarkBrandBackgroundCompoundPressed': '{brand-90}',
-  'Theme/Dark/Theme/DarkBrandForeground1Rest': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandForeground1Hover': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandForeground1Pressed': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandForeground1Selected': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandForeground2Rest': '{brand-110}',
-  'Theme/Dark/Theme/DarkBrandForeground2Hover': '{brand-130}',
-  'Theme/Dark/Theme/DarkBrandForeground2Pressed': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandForegroundLinkRest': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandForegroundLinkHover': '{brand-110}',
-  'Theme/Dark/Theme/DarkBrandForegroundLinkPressed': '{brand-90}',
-  'Theme/Dark/Theme/DarkBrandForegroundLinkSelected': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandForegroundInvertedRest': '{brand-80}',
-  'Theme/Dark/Theme/DarkBrandForegroundInvertedHover': '{brand-70}',
-  'Theme/Dark/Theme/DarkBrandForegroundInvertedPressed': '{brand-60}',
-  'Theme/Dark/Theme/DarkBrandForegroundOn LightRest': '{brand-70}',
-  'Theme/Dark/Theme/DarkBrandForegroundOn LightHover': '{brand-70}',
-  'Theme/Dark/Theme/DarkBrandForegroundOn LightPressed': '{brand-50}',
-  'Theme/Dark/Theme/DarkBrandForegroundOn LightSelected': '{brand-60}',
-  'Theme/Dark/Theme/DarkBrandForegroundCompoundRest': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandForegroundCompoundHover': '{brand-110}',
-  'Theme/Dark/Theme/DarkBrandForegroundCompoundPressed': '{brand-90}',
-  'Theme/Dark/Theme/DarkBrandStroke1Rest': '{brand-100}',
+  'Theme/Dark/Theme/DarkBrandBackgroundInvertedRest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkBrandBackgroundInvertedHover': '{Brand-120}',
+  'Theme/Dark/Theme/DarkBrandBackgroundInvertedPressed': '{Brand-130}',
+  'Theme/Dark/Theme/DarkBrandBackgroundInvertedSelected': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandBackgroundStaticRest': '{Brand-80}',
+  'Theme/Dark/Theme/DarkBrandBackgroundCompoundRest': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandBackgroundCompoundHover': '{Brand-110}',
+  'Theme/Dark/Theme/DarkBrandBackgroundCompoundPressed': '{Brand-90}',
+  'Theme/Dark/Theme/DarkBrandForeground1Rest': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandForeground1Hover': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandForeground1Pressed': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandForeground1Selected': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandForeground2Rest': '{Brand-110}',
+  'Theme/Dark/Theme/DarkBrandForeground2Hover': '{Brand-130}',
+  'Theme/Dark/Theme/DarkBrandForeground2Pressed': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandForegroundLinkRest': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandForegroundLinkHover': '{Brand-110}',
+  'Theme/Dark/Theme/DarkBrandForegroundLinkPressed': '{Brand-90}',
+  'Theme/Dark/Theme/DarkBrandForegroundLinkSelected': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandForegroundInvertedRest': '{Brand-80}',
+  'Theme/Dark/Theme/DarkBrandForegroundInvertedHover': '{Brand-70}',
+  'Theme/Dark/Theme/DarkBrandForegroundInvertedPressed': '{Brand-60}',
+  'Theme/Dark/Theme/DarkBrandForegroundOn LightRest': '{Brand-70}',
+  'Theme/Dark/Theme/DarkBrandForegroundOn LightHover': '{Brand-70}',
+  'Theme/Dark/Theme/DarkBrandForegroundOn LightPressed': '{Brand-50}',
+  'Theme/Dark/Theme/DarkBrandForegroundOn LightSelected': '{Brand-60}',
+  'Theme/Dark/Theme/DarkBrandForegroundCompoundRest': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandForegroundCompoundHover': '{Brand-110}',
+  'Theme/Dark/Theme/DarkBrandForegroundCompoundPressed': '{Brand-90}',
+  'Theme/Dark/Theme/DarkBrandStroke1Rest': '{Brand-100}',
   'Theme/Dark/Theme/DarkBrandStroke1Hover': '#2886de',
-  'Theme/Dark/Theme/DarkBrandStroke1Pressed': '{brand-70}',
-  'Theme/Dark/Theme/DarkBrandStroke1Selected': '{brand-70}',
-  'Theme/Dark/Theme/DarkBrandStroke2Rest': '{brand-50}',
-  'Theme/Dark/Theme/DarkBrandStroke2ContrastRest': '{brand-60}',
+  'Theme/Dark/Theme/DarkBrandStroke1Pressed': '{Brand-70}',
+  'Theme/Dark/Theme/DarkBrandStroke1Selected': '{Brand-70}',
+  'Theme/Dark/Theme/DarkBrandStroke2Rest': '{Brand-50}',
+  'Theme/Dark/Theme/DarkBrandStroke2ContrastRest': '{Brand-60}',
   'Theme/Dark/Theme/DarkBrandStroke3Rest': '#ffffff',
-  'Theme/Dark/Theme/DarkBrandStrokeCompoundRest': '{brand-100}',
-  'Theme/Dark/Theme/DarkBrandStrokeCompoundHover': '{brand-110}',
-  'Theme/Dark/Theme/DarkBrandStrokeCompoundPressed': '{brand-90}',
-  'Theme/Dark/Theme/DarkStatusDangerBackground1Rest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkStatusDangerBackground3Rest': '{colors.shared.cranberry.primary}',
-  'Theme/Dark/Theme/DarkStatusDangerForeground1Rest': '{colors.shared.cranberry.tint 30}',
-  'Theme/Dark/Theme/DarkStatusDangerForeground3Rest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkStatusDangerStroke1Rest': '{colors.shared.cranberry.primary}',
-  'Theme/Dark/Theme/DarkStatusDangerStroke2Rest': '{colors.shared.cranberry.tint 30}',
-  'Theme/Dark/Theme/DarkStatusSuccessBackground1Rest': '{colors.shared.green.tint 60}',
-  'Theme/Dark/Theme/DarkStatusSuccessBackground3Rest': '{colors.shared.green.primary}',
-  'Theme/Dark/Theme/DarkStatusSuccessForeground1Rest': '{colors.shared.green.primary}',
-  'Theme/Dark/Theme/DarkStatusSuccessForeground3Rest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkStatusSuccessStroke1Rest': '{colors.shared.green.primary}',
-  'Theme/Dark/Theme/DarkStatusSuccessStroke2Rest': '{colors.shared.green.tint 30}',
-  'Theme/Dark/Theme/DarkStatusWarningBackground1Rest': '{colors.shared.orange.tint 60}',
-  'Theme/Dark/Theme/DarkStatusWarningBackground3Rest': '{colors.shared.orange.primary}',
-  'Theme/Dark/Theme/DarkStatusWarningForeground1Rest': '{colors.shared.orange.primary}',
-  'Theme/Dark/Theme/DarkStatusWarningForeground3Rest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkStatusWarningStroke1Rest': '{colors.shared.orange.primary}',
-  'Theme/Dark/Theme/DarkStatusWarningStroke2Rest': '{colors.shared.orange.tint 30}',
-  'Theme/Dark/Theme/DarkStatusOofForeground3Rest': '{colors.shared.berry.tint 20}',
-  'Theme/Dark/Theme/DarkStatusAwayBackground3Rest': '{colors.shared.marigold.primary}',
-  'Theme/Dark/Theme/DarkStatusAvailableForeground3Rest': '{colors.shared.light green.primary}',
-  'Theme/Dark/Theme/DarkStatusGenericAnchorBackground2Rest': '{colors.shared.anchor.shade 30}',
-  'Theme/Dark/Theme/DarkStatusGenericAnchorForeground2Rest': '{colors.shared.anchor.tint 40}',
-  'Theme/Dark/Theme/DarkStatusGenericAnchorStrokeActiveRest': '{colors.shared.anchor.tint 30}',
+  'Theme/Dark/Theme/DarkBrandStrokeCompoundRest': '{Brand-100}',
+  'Theme/Dark/Theme/DarkBrandStrokeCompoundHover': '{Brand-110}',
+  'Theme/Dark/Theme/DarkBrandStrokeCompoundPressed': '{Brand-90}',
+  'Theme/Dark/Theme/DarkStatusDangerBackground1Rest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkStatusDangerBackground3Rest': '{Colors.Shared.Cranberry.Primary}',
+  'Theme/Dark/Theme/DarkStatusDangerForeground1Rest': '{Colors.Shared.Cranberry.Tint 30}',
+  'Theme/Dark/Theme/DarkStatusDangerForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkStatusDangerStroke1Rest': '{Colors.Shared.Cranberry.Primary}',
+  'Theme/Dark/Theme/DarkStatusDangerStroke2Rest': '{Colors.Shared.Cranberry.Tint 30}',
+  'Theme/Dark/Theme/DarkStatusSuccessBackground1Rest': '{Colors.Shared.Green.Tint 60}',
+  'Theme/Dark/Theme/DarkStatusSuccessBackground3Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/Dark/Theme/DarkStatusSuccessForeground1Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/Dark/Theme/DarkStatusSuccessForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkStatusSuccessStroke1Rest': '{Colors.Shared.Green.Primary}',
+  'Theme/Dark/Theme/DarkStatusSuccessStroke2Rest': '{Colors.Shared.Green.Tint 30}',
+  'Theme/Dark/Theme/DarkStatusWarningBackground1Rest': '{Colors.Shared.Orange.Tint 60}',
+  'Theme/Dark/Theme/DarkStatusWarningBackground3Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/Dark/Theme/DarkStatusWarningForeground1Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/Dark/Theme/DarkStatusWarningForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkStatusWarningStroke1Rest': '{Colors.Shared.Orange.Primary}',
+  'Theme/Dark/Theme/DarkStatusWarningStroke2Rest': '{Colors.Shared.Orange.Tint 30}',
+  'Theme/Dark/Theme/DarkStatusOofForeground3Rest': '{Colors.Shared.Berry.Tint 20}',
+  'Theme/Dark/Theme/DarkStatusAwayBackground3Rest': '{Colors.Shared.Marigold.Primary}',
+  'Theme/Dark/Theme/DarkStatusAvailableForeground3Rest': '{Colors.Shared.Light green.Primary}',
+  'Theme/Dark/Theme/DarkStatusGenericAnchorBackground2Rest': '{Colors.Shared.Anchor.Shade 30}',
+  'Theme/Dark/Theme/DarkStatusGenericAnchorForeground2Rest': '{Colors.Shared.Anchor.Tint 40}',
+  'Theme/Dark/Theme/DarkStatusGenericAnchorStrokeActiveRest': '{Colors.Shared.Anchor.Tint 30}',
   'Theme/Dark/Theme/DarkStatusGenericInformationBackground1Rest': '#ffffff',
   'Theme/Dark/Theme/DarkStatusGenericInformationBackground1Hover': '#ffffff',
   'Theme/Dark/Theme/DarkStatusGenericInformationBackground1Pressed': '#ffffff',
@@ -9805,12 +6293,12 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Theme/Dark/Theme/DarkStatusGenericInformationForegroundRest': '#ffffff',
   'Theme/Dark/Theme/DarkStatusGenericInformationForegroundHover': '#ffffff',
   'Theme/Dark/Theme/DarkStatusGenericInformationForegroundPressed': '#ffffff',
-  'Theme/Dark/Theme/DarkStatusSevereBackground1Rest': '{colors.shared.dark orange.tint 60}',
-  'Theme/Dark/Theme/DarkStatusSevereBackground3Rest': '{colors.shared.dark orange.primary}',
-  'Theme/Dark/Theme/DarkStatusSevereForeground1Rest': '{colors.shared.dark orange.primary}',
-  'Theme/Dark/Theme/DarkStatusSevereForeground3Rest': '{colors.neutral.white}',
-  'Theme/Dark/Theme/DarkStatusSevereStroke1Rest': '{colors.shared.dark orange.primary}',
-  'Theme/Dark/Theme/DarkStatusSevereStroke2Rest': '{colors.shared.dark orange.tint 30}',
+  'Theme/Dark/Theme/DarkStatusSevereBackground1Rest': '{Colors.Shared.Dark Orange.Tint 60}',
+  'Theme/Dark/Theme/DarkStatusSevereBackground3Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/Dark/Theme/DarkStatusSevereForeground1Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/Dark/Theme/DarkStatusSevereForeground3Rest': '{Colors.Neutral.White}',
+  'Theme/Dark/Theme/DarkStatusSevereStroke1Rest': '{Colors.Shared.Dark Orange.Primary}',
+  'Theme/Dark/Theme/DarkStatusSevereStroke2Rest': '{Colors.Shared.Dark Orange.Tint 30}',
   'Theme/Dark/Theme/DarkShadowAmbient': '#00000033',
   'Theme/Dark/Theme/DarkShadowAmbient-lighter': '#0000001f',
   'Theme/Dark/Theme/DarkShadowAmbient-darker': '#00000066',
@@ -10505,7 +6993,7 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Global/Value/Global/ValueColorsAlphaBrand-1070': '#0f1a38b3',
   'Global/Value/Global/ValueColorsAlphaBrand-1080': '#0f1a38cc',
   'Global/Value/Global/ValueColorsAlphaBrand-1090': '#0f1a38e6',
-  'Global/Value/Global/ValueColorsData vizCoreBlue': '{brand-60}',
+  'Global/Value/Global/ValueColorsData vizCoreBlue': '{Brand-60}',
   'Global/Value/Global/ValueColorsData vizCoreGray': '#a2aeb5',
   'Global/Value/Global/ValueColorsData vizCoreRed': '#b94431',
   'Global/Value/Global/ValueColorsData vizCoreTeal': '#05a3b1',
@@ -10519,7 +7007,7 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Global/Value/Global/ValueColorsData vizSemanticDark bkgdNegative': '#cc2e48',
   'Global/Value/Global/ValueColorsData vizSemanticDark bkgdNotice': '#df9f37',
   'Global/Value/Global/ValueColorsData vizSequentialBlue400': '#133a77',
-  'Global/Value/Global/ValueColorsData vizSequentialBlue300': '{brand-60}',
+  'Global/Value/Global/ValueColorsData vizSequentialBlue300': '{Brand-60}',
   'Global/Value/Global/ValueColorsData vizSequentialBlue200': '#6f94ce',
   'Global/Value/Global/ValueColorsData vizSequentialBlue100': '#9ebbe6',
   'Global/Value/Global/ValueColorsData vizSequentialGray400': '#36383a',
@@ -10559,6 +7047,43 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Global/Value/Global/ValueColorsBrandBrand-110': '#a5c8ff',
   'Global/Value/Global/ValueColorsBrandBrand-120': '#eef5ff',
   'Global/Value/Global/ValueColorsBrandBrand-130': '#f5f9ff',
+  'Global/Value/Global/ValueBorderRadiusNone': '0',
+  'Global/Value/Global/ValueBorderRadiusSmall': '2',
+  'Global/Value/Global/ValueBorderRadiusMedium': '4',
+  'Global/Value/Global/ValueBorderRadiusLarge': '6',
+  'Global/Value/Global/ValueBorderRadiusX-Large': '8',
+  'Global/Value/Global/ValueBorderRadiusCircular': '9999',
+  'Global/Value/Global/ValueSpacingHorizontalNone': '0',
+  'Global/Value/Global/ValueSpacingHorizontalXXS': '2',
+  'Global/Value/Global/ValueSpacingHorizontalXS': '4',
+  'Global/Value/Global/ValueSpacingHorizontalSNudge': '6',
+  'Global/Value/Global/ValueSpacingHorizontalS': '8',
+  'Global/Value/Global/ValueSpacingHorizontalMNudge': '12',
+  'Global/Value/Global/ValueSpacingHorizontalM': '16',
+  'Global/Value/Global/ValueSpacingHorizontalL': '32',
+  'Global/Value/Global/ValueSpacingHorizontalXL': '48',
+  'Global/Value/Global/ValueSpacingHorizontalXXL': '52',
+  'Global/Value/Global/ValueSpacingHorizontalXXXL': '56',
+  'Global/Value/Global/ValueSpacingHorizontalLNudge': '24',
+  'Global/Value/Global/ValueSpacingHorizontalXXXXL': '64',
+  'Global/Value/Global/ValueStrokeWidthNone': '0',
+  'Global/Value/Global/ValueStrokeWidthThin': '1',
+  'Global/Value/Global/ValueStrokeWidthThick': '2',
+  'Global/Value/Global/ValueStrokeWidthThicker': '4',
+  'Global/Value/Global/ValueStrokeWidthThickest': '6',
+  'Global/Value/Global/ValueSpacingVerticalNone': '0',
+  'Global/Value/Global/ValueSpacingVerticalXXS': '2',
+  'Global/Value/Global/ValueSpacingVerticalXS': '4',
+  'Global/Value/Global/ValueSpacingVerticalSNudge': '6',
+  'Global/Value/Global/ValueSpacingVerticalS': '8',
+  'Global/Value/Global/ValueSpacingVerticalMNudge': '12',
+  'Global/Value/Global/ValueSpacingVerticalM': '16',
+  'Global/Value/Global/ValueSpacingVerticalL': '32',
+  'Global/Value/Global/ValueSpacingVerticalXL': '48',
+  'Global/Value/Global/ValueSpacingVerticalXXL': '52',
+  'Global/Value/Global/ValueSpacingVerticalXXXL': '56',
+  'Global/Value/Global/ValueSpacingVerticalLNudge': '24',
+  'Global/Value/Global/ValueSpacingVerticalXXXXL': '64',
   'Brand/Brand 1/Brand/Brand 1Brand-10': '#0f1a38',
   'Brand/Brand 1/Brand/Brand 1Brand-20': '#041e47',
   'Brand/Brand 1/Brand/Brand 1Brand-30': '#052c69',
@@ -10734,6 +7259,52 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Typography/Base/Typography/BaseFontWeightBold': 'Bold',
   'Typography/Base/Typography/BaseFontWeightSemilight': 'Semilight',
   'Typography/Base/Typography/BaseFontWeightLight': 'Light',
+  'Typography/Base/Typography/BaseLineHeightBase100': '14',
+  'Typography/Base/Typography/BaseLineHeightBase200': '16',
+  'Typography/Base/Typography/BaseLineHeightBase300': '22',
+  'Typography/Base/Typography/BaseLineHeightBase400': '24',
+  'Typography/Base/Typography/BaseLineHeightBase500': '28',
+  'Typography/Base/Typography/BaseLineHeightBase600': '34',
+  'Typography/Base/Typography/BaseLineHeightBase700': '36',
+  'Typography/Base/Typography/BaseLineHeightBase800': '48',
+  'Typography/Base/Typography/BaseLineHeightBase900': '52',
+  'Typography/Base/Typography/BaseLineHeightBase1000': '92',
+  'Typography/Base/Typography/BaseLineHeightBase920': '64',
+  'Typography/Base/Typography/BaseLineHeightBase980': '70',
+  'Typography/Base/Typography/BaseFontSize1000': '68',
+  'Typography/Base/Typography/BaseFontSizeBase100': '10',
+  'Typography/Base/Typography/BaseFontSizeBase200': '12',
+  'Typography/Base/Typography/BaseFontSizeBase300': '14',
+  'Typography/Base/Typography/BaseFontSizeBase400': '16',
+  'Typography/Base/Typography/BaseFontSizeBase500': '20',
+  'Typography/Base/Typography/BaseFontSizeBase600': '24',
+  'Typography/Base/Typography/BaseFontSizeBase700': '28',
+  'Typography/Base/Typography/BaseFontSizeBase800': '32',
+  'Typography/Base/Typography/BaseFontSizeBase900': '40',
+  'Typography/Base/Typography/BaseFontSizeBase980': '52',
+  'Typography/Base/Typography/BaseFontSizeBase920': '48',
+  'Tree indentation/None/Tree indentation/NoneTree-padding-left': '0px',
+  'Tree indentation/None/Tree indentation/NoneTreeleaf-padding-left': '24px',
+  'Tree indentation/Level 1/Tree indentation/Level 1Tree-padding-left': '24px',
+  'Tree indentation/Level 1/Tree indentation/Level 1Treeleaf-padding-left': '48px',
+  'Tree indentation/Level 2/Tree indentation/Level 2Tree-padding-left': '48px',
+  'Tree indentation/Level 2/Tree indentation/Level 2Treeleaf-padding-left': '72px',
+  'Tree indentation/Level 3/Tree indentation/Level 3Tree-padding-left': '72px',
+  'Tree indentation/Level 3/Tree indentation/Level 3Treeleaf-padding-left': '96px',
+  'Tree indentation/Level 4/Tree indentation/Level 4Tree-padding-left': '96px',
+  'Tree indentation/Level 4/Tree indentation/Level 4Treeleaf-padding-left': '120px',
+  'Tree indentation/Level 5/Tree indentation/Level 5Tree-padding-left': '120px',
+  'Tree indentation/Level 5/Tree indentation/Level 5Treeleaf-padding-left': '144px',
+  'Tree indentation/Level 6/Tree indentation/Level 6Tree-padding-left': '144px',
+  'Tree indentation/Level 6/Tree indentation/Level 6Treeleaf-padding-left': '168px',
+  'Tree indentation/Level 7/Tree indentation/Level 7Tree-padding-left': '168px',
+  'Tree indentation/Level 7/Tree indentation/Level 7Treeleaf-padding-left': '192px',
+  'Tree indentation/Level 8/Tree indentation/Level 8Tree-padding-left': '192px',
+  'Tree indentation/Level 8/Tree indentation/Level 8Treeleaf-padding-left': '216px',
+  'Tree indentation/Level 9/Tree indentation/Level 9Tree-padding-left': '216px',
+  'Tree indentation/Level 9/Tree indentation/Level 9Treeleaf-padding-left': '240px',
+  'Tree indentation/Level 10/Tree indentation/Level 10Tree-padding-left': '240px',
+  'Tree indentation/Level 10/Tree indentation/Level 10Treeleaf-padding-left': '264px',
   'Popover size/Medium/Popover size/MediumPopover-padding-vertical': '{spacingVertical.LNudge}',
   'Popover size/Medium/Popover size/MediumPopover-padding-horizontal': '{spacingHorizontal.LNudge}',
   'Popover size/Small/Popover size/SmallPopover-padding-vertical': '{spacingVertical.M}',
@@ -10754,10 +7325,437 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Card padding/Large/Card padding/LargeCard-corner-radius': '{borderRadius.Medium}',
   'Button shape/Rounded (Default)/Button shape/Rounded (Default)Button-corner-radius': '{borderRadius.Small}',
   'Button shape/Rounded (Default)/Button shape/Rounded (Default)Button-image-corner-radius': '{borderRadius.Small}',
-  'Badge shape/Circular/Badge shape/CircularBadge-corner-radius': '{borderRadius.Circular}'
+  'Badge shape/Circular/Badge shape/CircularBadge-corner-radius': '{borderRadius.Circular}',
+  'Badge shape/Circular/Badge shape/CircularLinear': 'linear-gradient(-90deg, #0063ff 4%, #ac3ad5 24%, #ff1919 55%, #fa15e3 100%)',
+  'Badge shape/Circular/Badge shape/CircularElevationShadow2': '0px 1px 2px 0px #00000024, 0px 0px 2px 0px #0000001f',
+  'Badge shape/Circular/Badge shape/CircularElevationShadow4': '0px 2px 4px 0px #00000024, 0px 0px 2px 0px #0000001f',
+  'Badge shape/Circular/Badge shape/CircularElevationShadow8': '0px 4px 8px 0px #00000024, 0px 0px 2px 0px #0000001f',
+  'Badge shape/Circular/Badge shape/CircularElevationShadow16': '0px 8px 16px 0px #00000024, 0px 0px 2px 0px #0000001f',
+  'Badge shape/Circular/Badge shape/CircularElevationShadow28': '0px 14px 28.799999237060547px 0px #0000003d, 0px 0px 8px 0px #00000033',
+  'Badge shape/Circular/Badge shape/CircularElevationShadow64': '0px 32px 64px 0px #0000003d, 0px 0px 8px 0px #00000033',
+  'Badge shape/Circular/Badge shape/CircularFontFamiliesSegoe-ui': 'Segoe UI',
+  'Badge shape/Circular/Badge shape/CircularLineHeights0': '14',
+  'Badge shape/Circular/Badge shape/CircularLineHeights1': '16',
+  'Badge shape/Circular/Badge shape/CircularLineHeights2': '22',
+  'Badge shape/Circular/Badge shape/CircularLineHeights3': '24',
+  'Badge shape/Circular/Badge shape/CircularLineHeights4': '28',
+  'Badge shape/Circular/Badge shape/CircularLineHeights5': '34',
+  'Badge shape/Circular/Badge shape/CircularLineHeights6': '36',
+  'Badge shape/Circular/Badge shape/CircularLineHeights7': '48',
+  'Badge shape/Circular/Badge shape/CircularLineHeights8': '52',
+  'Badge shape/Circular/Badge shape/CircularLineHeights9': '64',
+  'Badge shape/Circular/Badge shape/CircularLineHeights10': '70',
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-0': 'Regular',
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-1': 'Semibold',
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-2': 'Bold',
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-3': 'Semilight',
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-4': 'Light',
+  'Badge shape/Circular/Badge shape/CircularFontSize0': '10',
+  'Badge shape/Circular/Badge shape/CircularFontSize1': '12',
+  'Badge shape/Circular/Badge shape/CircularFontSize2': '14',
+  'Badge shape/Circular/Badge shape/CircularFontSize3': '16',
+  'Badge shape/Circular/Badge shape/CircularFontSize4': '20',
+  'Badge shape/Circular/Badge shape/CircularFontSize5': '24',
+  'Badge shape/Circular/Badge shape/CircularFontSize6': '28',
+  'Badge shape/Circular/Badge shape/CircularFontSize7': '32',
+  'Badge shape/Circular/Badge shape/CircularFontSize8': '40',
+  'Badge shape/Circular/Badge shape/CircularFontSize9': '48',
+  'Badge shape/Circular/Badge shape/CircularFontSize10': '52',
+  'Badge shape/Circular/Badge shape/CircularLetterSpacing0': '0%',
+  'Badge shape/Circular/Badge shape/CircularLetterSpacing1': '0',
+  'Badge shape/Circular/Badge shape/CircularParagraphSpacing0': '0',
+  'Badge shape/Circular/Badge shape/CircularCaption2FontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularCaption2FontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2LineHeight': '{lineHeights.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2FontSize': '{fontSize.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2LetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2ParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2ParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2TextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularCaption2TextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongLineHeight': '{lineHeights.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongFontSize': '{fontSize.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularCaption2StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularCaption1FontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularCaption1FontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularCaption1LineHeight': '{lineHeights.1}',
+  'Badge shape/Circular/Badge shape/CircularCaption1FontSize': '{fontSize.1}',
+  'Badge shape/Circular/Badge shape/CircularCaption1LetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption1ParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption1ParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption1TextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularCaption1TextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongLineHeight': '{lineHeights.1}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongFontSize': '{fontSize.1}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerLineHeight': '{lineHeights.1}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerFontSize': '{fontSize.1}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularCaption1StrongerTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularBody1FontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularBody1FontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularBody1LineHeight': '{lineHeights.2}',
+  'Badge shape/Circular/Badge shape/CircularBody1FontSize': '{fontSize.2}',
+  'Badge shape/Circular/Badge shape/CircularBody1LetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody1ParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody1ParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularBody1TextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularBody1TextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongLineHeight': '{lineHeights.2}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongFontSize': '{fontSize.2}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerLineHeight': '{lineHeights.2}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerFontSize': '{fontSize.2}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularBody1StrongerTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightLineHeight': '{lineHeights.3}',
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightFontSize': '{fontSize.3}',
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularBody2SemilightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularBody2FontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularBody2FontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularBody2LineHeight': '{lineHeights.3}',
+  'Badge shape/Circular/Badge shape/CircularBody2FontSize': '{fontSize.3}',
+  'Badge shape/Circular/Badge shape/CircularBody2LetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2ParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2ParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2TextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularBody2TextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongLineHeight': '{lineHeights.3}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongFontSize': '{fontSize.3}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerLineHeight': '{lineHeights.3}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerFontSize': '{fontSize.3}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularBody2StrongerTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LightLineHeight': '{lineHeights.4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LightFontSize': '{fontSize.4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightLineHeight': '{lineHeights.4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightFontSize': '{fontSize.4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle4SemilightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle4FontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle4FontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LineHeight': '{lineHeights.4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4FontSize': '{fontSize.4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4LetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4ParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4ParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4TextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle4TextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongLineHeight': '{lineHeights.4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongFontSize': '{fontSize.4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerLineHeight': '{lineHeights.4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerFontSize': '{fontSize.4}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle4StrongerTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LightLineHeight': '{lineHeights.5}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LightFontSize': '{fontSize.5}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightLineHeight': '{lineHeights.5}',
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightFontSize': '{fontSize.5}',
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle3SemilightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle3FontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle3FontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LineHeight': '{lineHeights.5}',
+  'Badge shape/Circular/Badge shape/CircularTitle3FontSize': '{fontSize.5}',
+  'Badge shape/Circular/Badge shape/CircularTitle3LetterSpacing': '{letterSpacing.1}',
+  'Badge shape/Circular/Badge shape/CircularTitle3ParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3ParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3TextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle3TextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongLineHeight': '{lineHeights.5}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongFontSize': '{fontSize.5}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerLineHeight': '{lineHeights.5}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerFontSize': '{fontSize.5}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle3StrongerTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LightLineHeight': '{lineHeights.6}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LightFontSize': '{fontSize.6}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightLineHeight': '{lineHeights.6}',
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightFontSize': '{fontSize.6}',
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle2SemilightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle2FontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle2FontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LineHeight': '{lineHeights.6}',
+  'Badge shape/Circular/Badge shape/CircularTitle2FontSize': '{fontSize.6}',
+  'Badge shape/Circular/Badge shape/CircularTitle2LetterSpacing': '{letterSpacing.1}',
+  'Badge shape/Circular/Badge shape/CircularTitle2ParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle2ParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle2TextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle2TextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongFontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongLineHeight': '{lineHeights.6}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongFontSize': '{fontSize.6}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerLineHeight': '{lineHeights.6}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerFontSize': '{fontSize.6}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle 2 StrongerTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle 1FontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle 1FontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularTitle 1LineHeight': '{lineHeights.7}',
+  'Badge shape/Circular/Badge shape/CircularTitle 1FontSize': '{fontSize.7}',
+  'Badge shape/Circular/Badge shape/CircularTitle 1LetterSpacing': '{letterSpacing.1}',
+  'Badge shape/Circular/Badge shape/CircularTitle 1ParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle 1ParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle 1TextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle 1TextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongLineHeight': '{lineHeights.7}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongFontSize': '{fontSize.7}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerLineHeight': '{lineHeights.7}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerFontSize': '{fontSize.7}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle1StrongerTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle1LightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle1LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'Badge shape/Circular/Badge shape/CircularTitle1LightLineHeight': '{lineHeights.7}',
+  'Badge shape/Circular/Badge shape/CircularTitle1LightFontSize': '{fontSize.7}',
+  'Badge shape/Circular/Badge shape/CircularTitle1LightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1LightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1LightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1LightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle1LightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightLineHeight': '{lineHeights.7}',
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightFontSize': '{fontSize.7}',
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularTitle1SemilightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongLineHeight': '{lineHeights.8}',
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongFontSize': '{fontSize.8}',
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongLetterSpacing': '{letterSpacing.1}',
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay3StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightLineHeight': '{lineHeights.9}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightFontSize': '{fontSize.9}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightLineHeight': '{lineHeights.9}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightFontSize': '{fontSize.9}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2SemilightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2FontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2FontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LineHeight': '{lineHeights.9}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2FontSize': '{fontSize.9}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2LetterSpacing': '{letterSpacing.1}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2ParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2ParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2TextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2TextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongFontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongLineHeight': '{lineHeights.9}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongFontSize': '{fontSize.9}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerLineHeight': '{lineHeights.9}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerFontSize': '{fontSize.9}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay2StrongerTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightFontWeight': '{fontWeights.segoe-ui-4}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightLineHeight': '{lineHeights.10}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightFontSize': '{fontSize.10}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightFontWeight': '{fontWeights.segoe-ui-3}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightLineHeight': '{lineHeights.10}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightFontSize': '{fontSize.10}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1SemilightTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1FontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1FontWeight': '{fontWeights.segoe-ui-0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LineHeight': '{lineHeights.10}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1FontSize': '{fontSize.10}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1LetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1ParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1ParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1TextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1TextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongFontWeight': '{fontWeights.segoe-ui-1}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongLineHeight': '{lineHeights.10}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongFontSize': '{fontSize.10}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerFontFamily': '{fontFamilies.segoe-ui}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerFontWeight': '{fontWeights.segoe-ui-2}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerLineHeight': '{lineHeights.10}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerFontSize': '{fontSize.10}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerLetterSpacing': '{letterSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerParagraphSpacing': '{paragraphSpacing.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerParagraphIndent': '{paragraphIndent.0}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerTextCase': '{textCase.none}',
+  'Badge shape/Circular/Badge shape/CircularDisplay1StrongerTextDecoration': '{textDecoration.none}',
+  'Badge shape/Circular/Badge shape/CircularTextCaseNone': 'none',
+  'Badge shape/Circular/Badge shape/CircularTextDecorationNone': 'none',
+  'Badge shape/Circular/Badge shape/CircularParagraphIndent0': '0px'
 };
 
-// Utility functions
 export const convertHexToRgba = (hex: string): string => {
   if (hex === 'transparent') return 'rgba(0, 0, 0, 0)';
   if (hex.startsWith('rgba')) return hex;
@@ -10770,8 +7768,7 @@ export const convertHexToRgba = (hex: string): string => {
   return `rgba(${r}, ${g}, ${b}, ${a})`;
 };
 
-// Theme tokens object
-export const brandThemeTokens = Object.entries(brandTheme).reduce((acc, [key, value]) => {
+export const processedTokens = Object.entries(fluentTokens).reduce((acc, [key, value]) => {
   if (value.startsWith('#')) {
     acc[key] = convertHexToRgba(value);
   } else {
