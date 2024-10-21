@@ -25,6 +25,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
     "@eslint/js": "^9.11.1",
+    "@fluentui/react-components": "^9.55.1",
     "@rollup/plugin-commonjs": "^28.0.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-terser": "^0.4.4",
@@ -73,9 +74,6 @@
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.8.0",
     "verdaccio": "^6.0.0"
-  },
-  "dependencies": {
-    "@fluentui/react-components": "^9.54.17"
   },
   "size-limit": [
     {
