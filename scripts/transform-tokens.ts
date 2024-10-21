@@ -87,13 +87,35 @@ function isTokenGroup(value: unknown): value is TokenGroup {
 
 function flattenTokens(obj: TokenGroup, prefix = ''): Record<string, string> {
   return Object.entries(obj).reduce((acc: Record<string, string>, [key, value]) => {
-    const newKey = prefix ? `${prefix}${key.charAt(0).toUpperCase() + key.slice(1)}` : key;
+    let newKey = prefix ? `${prefix}${key.charAt(0).toUpperCase() + key.slice(1)}` : key;
+    
+    // Apply the requested replacements
+    newKey = newKey
+      .replace(/^globalFontFamiliesSegoe-ui/, 'fontFamilyBase')
+      .replace(/^globalLineHeights(\d+)/, (_, num) => `lineHeightBase${(parseInt(num) + 1) * 100}`)
+      .replace(/^globalFontWeightsSegoe-ui-(\d+)/, (_, num) => {
+        const weights = ['Regular', 'Medium', 'SemiBold', 'Bold','Semilight','Light'];
+        return `fontWeight${weights[parseInt(num)]}`;
+      })
+      .replace(/^Theme\/LightNeutralBackground(\d+)(\w+)/, (_, num, state) => 
+        `colorNeutralBackground${num}${state ? state.charAt(0).toUpperCase() + state.slice(1) : ''}`)
+      .replace(/^Theme\/LightData vizForegroundLabelsCategorical(\d*)/, (_, num) => 
+        `datavizForegroundLabelsCategorical${num}`);
     
     if (isTokenValue(value)) {
       if (value.type === 'color') {
         acc[newKey] = value.value.toLowerCase();
       } else if (value.type === 'dimension') {
         acc[newKey] = value.value.replace('px', 'rem');
+      } else if (newKey.startsWith('fontWeight')) {
+        // Convert font weight names to numbers
+        const weightMap: { [key: string]: number } = {
+          Regular: 400,
+          Medium: 500,
+          SemiBold: 600,
+          Bold: 700
+        };
+        acc[newKey] = weightMap[value.value].toString();
       } else {
         acc[newKey] = value.value;
       }
