@@ -7889,6 +7889,103 @@ interface BrandThemeExtension {
 
   // Badge shape/Circular/Badge shape/CircularBadge tokens
   'Badge shape/Circular/Badge shape/CircularBadge-corner-radius': string;
+
+  // Badge shape/Circular/Badge shape/CircularLinear tokens
+  'Badge shape/Circular/Badge shape/CircularLinear': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontFamiliesSegoe tokens
+  'Badge shape/Circular/Badge shape/CircularFontFamiliesSegoe-ui': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights0 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights0': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights1 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights1': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights2 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights2': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights3 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights3': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights4 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights4': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights5 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights5': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights6 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights6': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights7 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights7': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights8 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights8': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights9 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights9': string;
+
+  // Badge shape/Circular/Badge shape/CircularLineHeights10 tokens
+  'Badge shape/Circular/Badge shape/CircularLineHeights10': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontWeightsSegoe tokens
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-0': string;
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-1': string;
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-2': string;
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-3': string;
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-4': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize0 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize0': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize1 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize1': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize2 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize2': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize3 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize3': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize4 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize4': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize5 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize5': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize6 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize6': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize7 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize7': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize8 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize8': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize9 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize9': string;
+
+  // Badge shape/Circular/Badge shape/CircularFontSize10 tokens
+  'Badge shape/Circular/Badge shape/CircularFontSize10': string;
+
+  // Badge shape/Circular/Badge shape/CircularLetterSpacing0 tokens
+  'Badge shape/Circular/Badge shape/CircularLetterSpacing0': string;
+
+  // Badge shape/Circular/Badge shape/CircularLetterSpacing1 tokens
+  'Badge shape/Circular/Badge shape/CircularLetterSpacing1': string;
+
+  // Badge shape/Circular/Badge shape/CircularParagraphSpacing0 tokens
+  'Badge shape/Circular/Badge shape/CircularParagraphSpacing0': string;
+
+  // Badge shape/Circular/Badge shape/CircularTextCaseNone tokens
+  'Badge shape/Circular/Badge shape/CircularTextCaseNone': string;
+
+  // Badge shape/Circular/Badge shape/CircularTextDecorationNone tokens
+  'Badge shape/Circular/Badge shape/CircularTextDecorationNone': string;
+
+  // Badge shape/Circular/Badge shape/CircularParagraphIndent0 tokens
+  'Badge shape/Circular/Badge shape/CircularParagraphIndent0': string;
 }
 
 export const brandTheme: Theme & BrandThemeExtension = {
@@ -10754,7 +10851,42 @@ export const brandTheme: Theme & BrandThemeExtension = {
   'Card padding/Large/Card padding/LargeCard-corner-radius': '{borderRadius.Medium}',
   'Button shape/Rounded (Default)/Button shape/Rounded (Default)Button-corner-radius': '{borderRadius.Small}',
   'Button shape/Rounded (Default)/Button shape/Rounded (Default)Button-image-corner-radius': '{borderRadius.Small}',
-  'Badge shape/Circular/Badge shape/CircularBadge-corner-radius': '{borderRadius.Circular}'
+  'Badge shape/Circular/Badge shape/CircularBadge-corner-radius': '{borderRadius.Circular}',
+  'Badge shape/Circular/Badge shape/CircularLinear': 'linear-gradient(-90deg, #0063ff 4%, #ac3ad5 24%, #ff1919 55%, #fa15e3 100%)',
+  'Badge shape/Circular/Badge shape/CircularFontFamiliesSegoe-ui': 'Segoe UI',
+  'Badge shape/Circular/Badge shape/CircularLineHeights0': '14',
+  'Badge shape/Circular/Badge shape/CircularLineHeights1': '16',
+  'Badge shape/Circular/Badge shape/CircularLineHeights2': '22',
+  'Badge shape/Circular/Badge shape/CircularLineHeights3': '24',
+  'Badge shape/Circular/Badge shape/CircularLineHeights4': '28',
+  'Badge shape/Circular/Badge shape/CircularLineHeights5': '34',
+  'Badge shape/Circular/Badge shape/CircularLineHeights6': '36',
+  'Badge shape/Circular/Badge shape/CircularLineHeights7': '48',
+  'Badge shape/Circular/Badge shape/CircularLineHeights8': '52',
+  'Badge shape/Circular/Badge shape/CircularLineHeights9': '64',
+  'Badge shape/Circular/Badge shape/CircularLineHeights10': '70',
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-0': 'Regular',
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-1': 'Semibold',
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-2': 'Bold',
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-3': 'Semilight',
+  'Badge shape/Circular/Badge shape/CircularFontWeightsSegoe-ui-4': 'Light',
+  'Badge shape/Circular/Badge shape/CircularFontSize0': '10',
+  'Badge shape/Circular/Badge shape/CircularFontSize1': '12',
+  'Badge shape/Circular/Badge shape/CircularFontSize2': '14',
+  'Badge shape/Circular/Badge shape/CircularFontSize3': '16',
+  'Badge shape/Circular/Badge shape/CircularFontSize4': '20',
+  'Badge shape/Circular/Badge shape/CircularFontSize5': '24',
+  'Badge shape/Circular/Badge shape/CircularFontSize6': '28',
+  'Badge shape/Circular/Badge shape/CircularFontSize7': '32',
+  'Badge shape/Circular/Badge shape/CircularFontSize8': '40',
+  'Badge shape/Circular/Badge shape/CircularFontSize9': '48',
+  'Badge shape/Circular/Badge shape/CircularFontSize10': '52',
+  'Badge shape/Circular/Badge shape/CircularLetterSpacing0': '0%',
+  'Badge shape/Circular/Badge shape/CircularLetterSpacing1': '0',
+  'Badge shape/Circular/Badge shape/CircularParagraphSpacing0': '0',
+  'Badge shape/Circular/Badge shape/CircularTextCaseNone': 'none',
+  'Badge shape/Circular/Badge shape/CircularTextDecorationNone': 'none',
+  'Badge shape/Circular/Badge shape/CircularParagraphIndent0': '0rem'
 };
 
 // Utility functions
