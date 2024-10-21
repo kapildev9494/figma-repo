@@ -14,34 +14,19 @@ interface TokenGroup {
 
 // Comprehensive interface for Fluent UI tokens
 interface FluentTokens {
-  // Typography
-  fontFamilies?: { [key: string]: TokenValue };
-  lineHeights?: { [key: string]: TokenValue };
-  fontWeights?: { [key: string]: TokenValue };
-  fontSize?: { [key: string]: TokenValue };
-  letterSpacing?: { [key: string]: TokenValue };
-  paragraphSpacing?: { [key: string]: TokenValue };
-  textCase?: { [key: string]: TokenValue };
-  textDecoration?: { [key: string]: TokenValue };
-  
-  // Colors
-  colorPalette?: { [key: string]: TokenValue };
-  brandColors?: { [key: string]: TokenValue };
-  
-  // Effects
-  elevation?: { [key: string]: TokenValue };
-  
-  // Layout
-  spacing?: { [key: string]: TokenValue };
-  sizing?: { [key: string]: TokenValue };
-  
-  // Components
-  button?: { [key: string]: TokenValue };
-  card?: { [key: string]: TokenValue };
-  badge?: { [key: string]: TokenValue };
-  popover?: { [key: string]: TokenValue };
-  
-  [key: string]: TokenValue | TokenGroup | undefined;
+  gradient?: { [key: string]: TokenValue };
+  font?: { [key: string]: TokenValue };
+  effect?: { [key: string]: TokenValue };
+  treeIndentation?: { [key: string]: TokenValue };
+  popoverSize?: { [key: string]: TokenValue };
+  cardPadding?: { [key: string]: TokenValue };
+  buttonShape?: { [key: string]: TokenValue };
+  badgeShape?: { [key: string]: TokenValue };
+  arrowPosition?: { [key: string]: TokenValue };
+  typography?: { [key: string]: TokenValue };
+  theme?: { [key: string]: TokenValue };
+  global?: { [key: string]: TokenValue };
+  brand?: { [key: string]: TokenValue };
 }
 
 // Type guards
@@ -80,7 +65,7 @@ class TokenProcessor {
           result[prop] = typeof val === 'number' ? `${val}px` : String(val);
           break;
         case 'lineHeight':
-          result[prop] = typeof val === 'number' ? `${val}%` : String(val);
+          result[prop] = typeof val === 'number' ? `${val}px` : String(val);
           break;
         default:
           result[prop] = String(val);
@@ -94,7 +79,7 @@ class TokenProcessor {
       return this.processBoxShadow(value.value);
     }
     
-    if (typeof value.value === 'object' && value.type === 'typography') {
+    if (typeof value.value === 'object' && value.type === 'custom-fontStyle') {
       return this.processTypography(value.value as Record<string, any>);
     }
 
@@ -104,7 +89,7 @@ class TokenProcessor {
     }
     
     if (key.startsWith('lineHeight')) {
-      return typeof value.value === 'number' ? `${value.value}%` : String(value.value);
+      return typeof value.value === 'number' ? `${value.value}px` : String(value.value);
     }
     
     if (key.startsWith('color')) {
@@ -112,10 +97,6 @@ class TokenProcessor {
       return colorValue.startsWith('#') ? colorValue : `#${colorValue}`;
     }
     
-    if (key.includes('spacing') || key.includes('size') || key.includes('padding')) {
-      return typeof value.value === 'number' ? `${value.value}px` : String(value.value);
-    }
-
     return String(value.value);
   }
 }
@@ -134,7 +115,6 @@ function flattenTokens(obj: TokenGroup, prefix = ''): Record<string, string> {
       if (typeof processed === 'string') {
         result[newKey] = processed;
       } else {
-        // Handle typography objects
         Object.entries(processed).forEach(([typeProp, typeValue]) => {
           result[`${newKey}${typeProp.charAt(0).toUpperCase()}${typeProp.slice(1)}`] = typeValue;
         });
@@ -192,11 +172,8 @@ export const convertHexToRgba = (hex: string): string => {
 };
 
 export const processedTokens = Object.entries(fluentTokens).reduce((acc, [key, value]) => {
-  if (value.startsWith('#')) {
-    acc[key] = convertHexToRgba(value);
-  } else {
-    acc[key] = value;
-  }
+  acc[key] = value.startsWith('#') ? convertHexToRgba(value) : value;
+  
   return acc;
 }, {} as Record<string, string>);
 `;
@@ -210,6 +187,7 @@ export const processedTokens = Object.entries(fluentTokens).reduce((acc, [key, v
     // Write the file
     fs.writeFileSync(outputPath, fileContent);
     console.log('Successfully transformed tokens and updated theme.ts');
+    
   } catch (error) {
     console.error('Error transforming tokens:', error);
     process.exit(1);
