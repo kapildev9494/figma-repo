@@ -54,7 +54,7 @@ jobs:
         with:
           token: ${{ secrets.PROCESS_PAT_TOKEN }} 
           commit-message: 'chore: update design tokens'
-          title: '🎨 Update design tokens'
+          title: 'Update design tokens'
           body: |
             This PR updates the design tokens with the latest changes from Figma.
             
