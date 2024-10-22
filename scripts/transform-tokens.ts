@@ -1,11 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
-// Enhanced interfaces with specific token types
 interface TokenValue {
   value: string;
-  type?: 'color' | 'dimension' | 'shadow' | 'fontFamily' | 'number' | 'string';
+  type?: string;
   description?: string;
+}
+
+interface TokenGroup {
+  [key: string]: TokenValue | TokenGroup;
 }
 
 interface ThemeTokens {
@@ -13,103 +16,94 @@ interface ThemeTokens {
     family?: { [key: string]: TokenValue };
     weight?: { [key: string]: TokenValue };
     size?: { [key: string]: TokenValue };
-    lineHeight?: { [key: string]: TokenValue };
   };
   effect?: {
     shadow?: { [key: string]: TokenValue };
-    shadowBrand?: { [key: string]: TokenValue };
     opacity?: { [key: string]: TokenValue };
   };
-  shape?: {
-    button?: {
-      radius?: { [key: string]: TokenValue };
-      padding?: { [key: string]: TokenValue };
-    };
-    badge?: {
-      radius?: { [key: string]: TokenValue };
-      padding?: { [key: string]: TokenValue };
-    };
+  treeIndentation?: {
+    level?: { [key: string]: TokenValue };
   };
-  spacing?: {
-    horizontal?: { [key: string]: TokenValue };
-    vertical?: { [key: string]: TokenValue };
+  popoverSize?: {
+    width?: { [key: string]: TokenValue };
+    height?: { [key: string]: TokenValue };
   };
-  [key: string]: any;
+  cardPadding?: {
+    default?: { [key: string]: TokenValue };
+    compact?: { [key: string]: TokenValue };
+  };
+  buttonShape?: {
+    radius?: { [key: string]: TokenValue };
+    padding?: { [key: string]: TokenValue };
+  };
+  badgeShape?: {
+    radius?: { [key: string]: TokenValue };
+    padding?: { [key: string]: TokenValue };
+  };
+  arrowPosition?: {
+    offset?: { [key: string]: TokenValue };
+  };
+  typography?: {
+    heading?: { [key: string]: TokenValue };
+    body?: { [key: string]: TokenValue };
+    caption?: { [key: string]: TokenValue };
+  };
+  [key: string]: TokenGroup | undefined;
 }
 
-function isTokenValue(value: any): value is TokenValue {
-  return value && typeof value === 'object' && 'value' in value;
+function isTokenValue(value: unknown): value is TokenValue {
+  return Boolean(
+    value &&
+    typeof value === 'object' &&
+    'value' in value &&
+    typeof (value as TokenValue).value === 'string'
+  );
 }
 
-function formatValue(value: TokenValue): string {
-  if (!value.type) {
-    // Detect type based on value format
-    if (value.value.startsWith('#') || value.value.startsWith('rgb')) {
-      value.type = 'color';
-    } else if (value.value.includes('px')) {
-      value.type = 'dimension';
-    } else if (value.value.includes('rgba') || value.value.includes('shadow')) {
-      value.type = 'shadow';
-    }
+function isTokenGroup(value: unknown): value is TokenGroup {
+  return Boolean(
+    value &&
+    typeof value === 'object' &&
+    !('value' in value)
+  );
+}
+
+function processKey(key: string, value: TokenValue): string {
+  const lastPart = key.split('/').pop() || key;
+  
+  // Check if it's a color value (either hex or named color)
+  const isColorValue = value.type === 'color' || 
+                      value.value.startsWith('#') || 
+                      /^(rgb|rgba|hsl|hsla|[a-zA-Z]+)/.test(value.value);
+                      
+  // If it's a color value and doesn't already start with 'color', prefix it
+  if (isColorValue && !lastPart.toLowerCase().startsWith('color')) {
+    return `color${lastPart.charAt(0).toUpperCase()}${lastPart.slice(1)}`;
   }
-
-  switch (value.type) {
-    case 'color':
-      return value.value.toLowerCase();
-    case 'dimension':
-      // Keep px values for lineHeight, convert others to rem
-      return value.value.includes('lineHeight') 
-        ? value.value 
-        : value.value.replace(/(\d+)px/g, (_, num) => `${Number(num) / 16}rem`);
-    case 'shadow':
-      return value.value;
-    case 'fontFamily':
-      return value.value;
-    case 'number':
-      return value.value;
-    default:
-      return value.value;
-  }
+  
+  return lastPart;
 }
 
-function flattenTokens(obj: any, prefix = ''): Record<string, string> {
-  return Object.entries(obj).reduce((acc: Record<string, string>, [key, value]) => {
-    const newKey = prefix ? `${prefix}-${key}` : key;
-    
-    if (isTokenValue(value)) {
-      // Format key based on token type
-      let formattedKey = newKey;
-      if (value.type === 'color' && !formattedKey.startsWith('color')) {
-        formattedKey = `color${formattedKey.charAt(0).toUpperCase()}${formattedKey.slice(1)}`;
+function flattenTokens(obj: TokenGroup): Record<string, string> {
+  const flatten = (current: TokenGroup, result: Record<string, string> = {}): Record<string, string> => {
+    Object.entries(current).forEach(([key, value]) => {
+      if (isTokenValue(value)) {
+        const processedKey = processKey(key, value);
+        if (value.type === 'color' || value.value.startsWith('#')) {
+          result[processedKey] = value.value.replace('#', '');
+        } else if (value.type === 'dimension') {
+          result[processedKey] = value.value.replace('px', 'rem');
+        } else {
+          result[processedKey] = value.value;
+        }
+      } else if (isTokenGroup(value)) {
+        flatten(value, result);
       }
-      acc[formattedKey] = formatValue(value);
-    } else if (value && typeof value === 'object') {
-      Object.assign(acc, flattenTokens(value, newKey));
-    }
-    
-    return acc;
-  }, {});
-}
+    });
+    return result;
+  };
 
-function generateThemeInterface(tokens: Record<string, string>): string {
-  const categoryGroups = Object.keys(tokens).reduce((acc: { [key: string]: string[] }, key) => {
-    const category = key.split('-')[0];
-    if (!acc[category]) {
-      acc[category] = [];
-    }
-    acc[category].push(`  '${key}': string;`);
-    return acc;
-  }, {});
-
-  const interfaceContent = Object.entries(categoryGroups)
-    .map(([category, properties]) => (
-      `  // ${category} tokens\n${properties.join('\n')}`
-    ))
-    .join('\n\n');
-
-  return `interface BrandThemeExtension {
-${interfaceContent}
-}`;
+  return flatten(obj);
 }
 
 function transformTokens(): void {
@@ -118,36 +112,30 @@ function transformTokens(): void {
     const outputPath = path.join(process.cwd(), 'src', 'theme', 'theme.ts');
     
     const themeData = JSON.parse(fs.readFileSync(themesPath, 'utf8')) as ThemeTokens;
-    const flatTokens = flattenTokens(themeData);
-    const themeInterface = generateThemeInterface(flatTokens);
+    const flatTokens = flattenTokens(themeData as TokenGroup);
     
     const fileContent = `import { Theme } from '@fluentui/react-components';
 
-${themeInterface}
-
-export const brandTheme: Theme & BrandThemeExtension = {
+export const brandTheme: Theme = {
 ${Object.entries(flatTokens)
   .map(([key, value]) => `  '${key}': '${value}'`)
   .join(',\n')}
 };
 
-// Utility functions for color and shadow manipulation
 export const convertHexToRgba = (hex: string): string => {
   if (hex === 'transparent') return 'rgba(0, 0, 0, 0)';
   if (hex.startsWith('rgba')) return hex;
   
-  const hexColor = hex.replace('#', '');
-  const r = parseInt(hexColor.substring(0, 2), 16);
-  const g = parseInt(hexColor.substring(2, 4), 16);
-  const b = parseInt(hexColor.substring(4, 6), 16);
-  const a = hexColor.length === 8 ? parseInt(hexColor.substring(6, 8), 16) / 255 : 1;
+  const r = parseInt(hex.substring(0, 2), 16);
+  const g = parseInt(hex.substring(2, 4), 16);
+  const b = parseInt(hex.substring(4, 6), 16);
+  const a = hex.length === 8 ? parseInt(hex.substring(6, 8), 16) / 255 : 1;
   return \`rgba(\${r}, \${g}, \${b}, \${a})\`;
 };
 
-// Theme tokens object with color conversion
 export const brandThemeTokens = Object.entries(brandTheme).reduce((acc, [key, value]) => {
-  if (value.startsWith('#')) {
-    acc[key] = convertHexToRgba(value);
+  if (key.startsWith('color')) {
+    acc[key] = value.match(/^[0-9a-f]{6}$/i) ? convertHexToRgba(value) : value;
   } else {
     acc[key] = value;
   }
