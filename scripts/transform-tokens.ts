@@ -1,5 +1,6 @@
-const fs = require('fs');
-const path = require('path');
+import { Theme } from '@fluentui/react-components';
+import fs from 'fs';
+import path from 'path';
 
 interface TokenValue {
   value: string;
@@ -16,40 +17,103 @@ interface ThemeTokens {
     family?: { [key: string]: TokenValue };
     weight?: { [key: string]: TokenValue };
     size?: { [key: string]: TokenValue };
+    lineHeight?: { [key: string]: TokenValue };
   };
-  effect?: {
-    shadow?: { [key: string]: TokenValue };
-    opacity?: { [key: string]: TokenValue };
+  radius?: {
+    border?: { [key: string]: TokenValue };
   };
-  treeIndentation?: {
-    level?: { [key: string]: TokenValue };
+  spacing?: {
+    horizontal?: { [key: string]: TokenValue };
+    vertical?: { [key: string]: TokenValue };
   };
-  popoverSize?: {
-    width?: { [key: string]: TokenValue };
-    height?: { [key: string]: TokenValue };
-  };
-  cardPadding?: {
-    default?: { [key: string]: TokenValue };
-    compact?: { [key: string]: TokenValue };
-  };
-  buttonShape?: {
-    radius?: { [key: string]: TokenValue };
-    padding?: { [key: string]: TokenValue };
-  };
-  badgeShape?: {
-    radius?: { [key: string]: TokenValue };
-    padding?: { [key: string]: TokenValue };
-  };
-  arrowPosition?: {
-    offset?: { [key: string]: TokenValue };
-  };
-  typography?: {
-    heading?: { [key: string]: TokenValue };
-    body?: { [key: string]: TokenValue };
-    caption?: { [key: string]: TokenValue };
-  };
+  shadow?: { [key: string]: TokenValue };
   [key: string]: TokenGroup | undefined;
 }
+
+const borderRadiusMap: { [key: string]: string } = {
+  none: 'borderRadiusNone',
+  small: 'borderRadiusSmall',
+  medium: 'borderRadiusMedium',
+  large: 'borderRadiusLarge',
+  xlarge: 'borderRadiusXLarge',
+  circular: 'borderRadiusCircular'
+};
+
+const fontSizeMap: { [key: string]: string } = {
+  '100': 'fontSizeBase100',
+  '200': 'fontSizeBase200',
+  '300': 'fontSizeBase300',
+  '400': 'fontSizeBase400',
+  '500': 'fontSizeBase500',
+  '600': 'fontSizeBase600',
+  '700': 'fontSizeHero700',
+  '800': 'fontSizeHero800',
+  '900': 'fontSizeHero900',
+  '1000': 'fontSizeHero1000'
+};
+
+const lineHeightMap: { [key: string]: string } = {
+  '100': 'lineHeightBase100',
+  '200': 'lineHeightBase200',
+  '300': 'lineHeightBase300',
+  '400': 'lineHeightBase400',
+  '500': 'lineHeightBase500',
+  '600': 'lineHeightBase600',
+  '700': 'lineHeightHero700',
+  '800': 'lineHeightHero800',
+  '900': 'lineHeightHero900',
+  '1000': 'lineHeightHero1000'
+};
+
+const fontWeightMap: { [key: string]: string } = {
+  regular: 'fontWeightRegular',
+  medium: 'fontWeightMedium',
+  semibold: 'fontWeightSemibold',
+  bold: 'fontWeightBold'
+};
+
+const spacingHorizontalMap: { [key: string]: string } = {
+  none: 'spacingHorizontalNone',
+  xxs: 'spacingHorizontalXXS',
+  xs: 'spacingHorizontalXS',
+  sNudge: 'spacingHorizontalSNudge',
+  s: 'spacingHorizontalS',
+  mNudge: 'spacingHorizontalMNudge',
+  m: 'spacingHorizontalM',
+  l: 'spacingHorizontalL',
+  xl: 'spacingHorizontalXL',
+  xxl: 'spacingHorizontalXXL',
+  xxxl: 'spacingHorizontalXXXL'
+};
+
+const spacingVerticalMap: { [key: string]: string } = {
+  none: 'spacingVerticalNone',
+  xxs: 'spacingVerticalXXS',
+  xs: 'spacingVerticalXS',
+  sNudge: 'spacingVerticalSNudge',
+  s: 'spacingVerticalS',
+  mNudge: 'spacingVerticalMNudge',
+  m: 'spacingVerticalM',
+  l: 'spacingVerticalL',
+  xl: 'spacingVerticalXL',
+  xxl: 'spacingVerticalXXL',
+  xxxl: 'spacingVerticalXXXL'
+};
+
+const shadowMap: { [key: string]: string } = {
+  '2': 'shadow2',
+  '4': 'shadow4',
+  '8': 'shadow8',
+  '16': 'shadow16',
+  '28': 'shadow28',
+  '64': 'shadow64',
+  '2brand': 'shadow2Brand',
+  '4brand': 'shadow4Brand',
+  '8brand': 'shadow8Brand',
+  '16brand': 'shadow16Brand',
+  '28brand': 'shadow28Brand',
+  '64brand': 'shadow64Brand'
+};
 
 function isTokenValue(value: unknown): value is TokenValue {
   return Boolean(
@@ -72,10 +136,43 @@ function processKey(key: string, value: TokenValue, parentKey?: string): string 
   const pathParts = key.split('/');
   const lastPart = pathParts.pop() || key;
   
-  // Helper function to capitalize first letter
-  const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
+  // Border radius mapping
+  if (key.includes('border') && key.includes('radius')) {
+    return borderRadiusMap[lastPart] || `borderRadius${lastPart}`;
+  }
   
-  // Handle color tokens
+  // Font related mappings
+  if (key.includes('font')) {
+    if (key.includes('size')) {
+      return fontSizeMap[lastPart] || `fontSizeBase${lastPart}`;
+    }
+    if (key.includes('family')) {
+      return 'fontFamilyBase';
+    }
+    if (key.includes('weight')) {
+      return fontWeightMap[lastPart] || `fontWeight${lastPart}`;
+    }
+    if (key.includes('lineHeight')) {
+      return lineHeightMap[lastPart] || `lineHeightBase${lastPart}`;
+    }
+  }
+  
+  // Spacing mappings
+  if (key.includes('spacing')) {
+    if (key.includes('horizontal')) {
+      return spacingHorizontalMap[lastPart] || `spacingHorizontal${lastPart}`;
+    }
+    if (key.includes('vertical')) {
+      return spacingVerticalMap[lastPart] || `spacingVertical${lastPart}`;
+    }
+  }
+  
+  // Shadow mapping
+  if (key.includes('shadow')) {
+    return shadowMap[lastPart] || `shadow${lastPart}`;
+  }
+  
+  // Color mapping (preserving the format from the first document)
   if (value.type === 'color' || value.value.startsWith('#')) {
     const colorType = parentKey || lastPart;
     if (colorType.includes('background')) {
@@ -91,35 +188,11 @@ function processKey(key: string, value: TokenValue, parentKey?: string): string 
     }
   }
   
-  // Handle specific token types
-  if (key.includes('border') && key.includes('radius')) {
-    return `borderRadius${capitalize(lastPart)}`;
-  }
-  if (key.includes('font')) {
-    if (key.includes('size')) {
-      return `fontSizeBase${capitalize(lastPart)}`;
-    }
-    if (key.includes('family')) {
-      return `fontFamilyBase${capitalize(lastPart)}`;
-    }
-    if (key.includes('weight')) {
-      return `fontWeight${capitalize(lastPart)}`;
-    }
-    if (key.includes('lineHeight')) {
-      return `lineHeightBase${capitalize(lastPart)}`;
-    }
-  }
-  if (key.includes('spacing')) {
-    if (key.includes('horizontal')) {
-      return `spacingHorizontal${capitalize(lastPart)}`;
-    }
-    if (key.includes('vertical')) {
-      return `spacingVertical${capitalize(lastPart)}`;
-    }
-  }
-  
-  // Default camelCase transformation
   return lastPart;
+}
+
+function capitalize(str: string): string {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 function flattenTokens(obj: TokenGroup, parentKey?: string): Record<string, string> {
@@ -131,13 +204,7 @@ function flattenTokens(obj: TokenGroup, parentKey?: string): Record<string, stri
     Object.entries(current).forEach(([key, value]) => {
       if (isTokenValue(value)) {
         const processedKey = processKey(key, value, parent);
-        if (value.type === 'color' || value.value.startsWith('#')) {
-          result[processedKey] = value.value.replace('#', '');
-        } else if (value.type === 'dimension') {
-          result[processedKey] = value.value.replace('px', 'rem');
-        } else {
-          result[processedKey] = value.value;
-        }
+        result[processedKey] = value.value; // Preserve original values including '#' for colors
       } else if (isTokenGroup(value)) {
         flatten(value, result, key);
       }
@@ -167,17 +234,19 @@ ${Object.entries(flatTokens)
 export const convertHexToRgba = (hex: string): string => {
   if (hex === 'transparent') return 'rgba(0, 0, 0, 0)';
   if (hex.startsWith('rgba')) return hex;
+  if (!hex.startsWith('#')) return hex;
   
-  const r = parseInt(hex.substring(0, 2), 16);
-  const g = parseInt(hex.substring(2, 4), 16);
-  const b = parseInt(hex.substring(4, 6), 16);
-  const a = hex.length === 8 ? parseInt(hex.substring(6, 8), 16) / 255 : 1;
+  const hexValue = hex.replace('#', '');
+  const r = parseInt(hexValue.substring(0, 2), 16);
+  const g = parseInt(hexValue.substring(2, 4), 16);
+  const b = parseInt(hexValue.substring(4, 6), 16);
+  const a = hexValue.length === 8 ? parseInt(hexValue.substring(6, 8), 16) / 255 : 1;
   return \`rgba(\${r}, \${g}, \${b}, \${a})\`;
 };
 
 export const brandThemeTokens = Object.entries(brandTheme).reduce((acc, [key, value]) => {
-  if (key.startsWith('color')) {
-    acc[key] = value.match(/^[0-9a-f]{6}$/i) ? convertHexToRgba(value) : value;
+  if (key.startsWith('color') && value.startsWith('#')) {
+    acc[key] = convertHexToRgba(value);
   } else {
     acc[key] = value;
   }
