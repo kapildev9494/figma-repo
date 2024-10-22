@@ -68,27 +68,69 @@ function isTokenGroup(value: unknown): value is TokenGroup {
   );
 }
 
-function processKey(key: string, value: TokenValue): string {
-  const lastPart = key.split('/').pop() || key;
+function processKey(key: string, value: TokenValue, parentKey?: string): string {
+  const pathParts = key.split('/');
+  const lastPart = pathParts.pop() || key;
   
-  // Check if it's a color value (either hex or named color)
-  const isColorValue = value.type === 'color' || 
-                      value.value.startsWith('#') || 
-                      /^(rgb|rgba|hsl|hsla|[a-zA-Z]+)/.test(value.value);
-                      
-  // If it's a color value and doesn't already start with 'color', prefix it
-  if (isColorValue && !lastPart.toLowerCase().startsWith('color')) {
-    return `color${lastPart.charAt(0).toUpperCase()}${lastPart.slice(1)}`;
+  // Helper function to capitalize first letter
+  const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
+  
+  // Handle color tokens
+  if (value.type === 'color' || value.value.startsWith('#')) {
+    const colorType = parentKey || lastPart;
+    if (colorType.includes('background')) {
+      return `colorNeutralBackground${capitalize(lastPart)}`;
+    } else if (colorType.includes('foreground')) {
+      return `colorNeutralForeground${capitalize(lastPart)}`;
+    } else if (colorType.includes('subtle')) {
+      return `colorSubtleBackground${capitalize(lastPart)}`;
+    } else if (colorType.includes('transparent')) {
+      return `colorTransparentBackground${capitalize(lastPart)}`;
+    } else {
+      return `color${capitalize(colorType)}${capitalize(lastPart)}`;
+    }
   }
   
+  // Handle specific token types
+  if (key.includes('border') && key.includes('radius')) {
+    return `borderRadius${capitalize(lastPart)}`;
+  }
+  if (key.includes('font')) {
+    if (key.includes('size')) {
+      return `fontSizeBase${capitalize(lastPart)}`;
+    }
+    if (key.includes('family')) {
+      return `fontFamilyBase${capitalize(lastPart)}`;
+    }
+    if (key.includes('weight')) {
+      return `fontWeight${capitalize(lastPart)}`;
+    }
+    if (key.includes('lineHeight')) {
+      return `lineHeightBase${capitalize(lastPart)}`;
+    }
+  }
+  if (key.includes('spacing')) {
+    if (key.includes('horizontal')) {
+      return `spacingHorizontal${capitalize(lastPart)}`;
+    }
+    if (key.includes('vertical')) {
+      return `spacingVertical${capitalize(lastPart)}`;
+    }
+  }
+  
+  // Default camelCase transformation
   return lastPart;
 }
 
-function flattenTokens(obj: TokenGroup): Record<string, string> {
-  const flatten = (current: TokenGroup, result: Record<string, string> = {}): Record<string, string> => {
+function flattenTokens(obj: TokenGroup, parentKey?: string): Record<string, string> {
+  const flatten = (
+    current: TokenGroup,
+    result: Record<string, string> = {},
+    parent?: string
+  ): Record<string, string> => {
     Object.entries(current).forEach(([key, value]) => {
       if (isTokenValue(value)) {
-        const processedKey = processKey(key, value);
+        const processedKey = processKey(key, value, parent);
         if (value.type === 'color' || value.value.startsWith('#')) {
           result[processedKey] = value.value.replace('#', '');
         } else if (value.type === 'dimension') {
@@ -97,13 +139,13 @@ function flattenTokens(obj: TokenGroup): Record<string, string> {
           result[processedKey] = value.value;
         }
       } else if (isTokenGroup(value)) {
-        flatten(value, result);
+        flatten(value, result, key);
       }
     });
     return result;
   };
 
-  return flatten(obj);
+  return flatten(obj, {}, parentKey);
 }
 
 function transformTokens(): void {
