@@ -7251,7 +7251,7 @@
     },
     "fontWeight": {
       "Regular": {
-        "value": "400",
+        "value": "500",
         "type": "text"
       },
       "Semibold": {
