@@ -25,7 +25,12 @@ interface GlobalValue {
   'strokeWidth': { [key: string]: TokenValue };
   'spacingHorizontal': { [key: string]: TokenValue };
   'spacingVertical': { [key: string]: TokenValue };
-  'shadow': { [key: string]: TokenValue };
+  'shadow2': { [key: string]: TokenValue };
+  'shadow4': { [key: string]: TokenValue };
+  'shadow8': { [key: string]: TokenValue };
+  'shadow16': { [key: string]: TokenValue };
+  'shadow28': { [key: string]: TokenValue };
+  'shadow64': { [key: string]: TokenValue };
 }
 
 interface TypographyBase {
@@ -185,7 +190,12 @@ function transformTokens(): void {
       ...renderTokenValues('strokeWidth', tokens['global/Value']['strokeWidth'], 'px'),
       ...renderTokenValues('spacingHorizontal', tokens['global/Value']['spacingHorizontal'], 'px'),
       ...renderTokenValues('spacingVertical', tokens['global/Value']['spacingVertical'], 'px'),
-      ...renderTokenValues('shadow', tokens['global/Value']['shadow']),
+      ...renderTokenValues('shadow2', tokens['global/Value']['shadow2']),
+      ...renderTokenValues('shadow4', tokens['global/Value']['shadow4']),
+      ...renderTokenValues('shadow8', tokens['global/Value']['shadow8']),
+      ...renderTokenValues('shadow16', tokens['global/Value']['shadow16']),
+      ...renderTokenValues('shadow28', tokens['global/Value']['shadow28']),
+      ...renderTokenValues('shadow64', tokens['global/Value']['shadow64']),
       ...lightThemeColors,
       ...darkThemeColors
     };
