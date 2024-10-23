@@ -25,9 +25,20 @@ interface TypographyBase {
   'fontWeight': { [key: string]: TokenValue };
 }
 
+interface ThemeColors {
+  Neutral?: TokenGroup;
+  Brand?: TokenGroup;
+  Status?: TokenGroup;
+  Shadow?: TokenGroup;
+  DataViz?: TokenGroup;
+  [key: string]: TokenGroup | undefined;  // Add index signature
+}
+
 interface ThemeTokens {
   'global/Value': GlobalValue;
   'Typography/Base': TypographyBase;
+  'Theme/Light': ThemeColors;
+  'Theme/Dark': ThemeColors;
   [key: string]: any;
 }
 
@@ -41,7 +52,10 @@ function isTokenValue(value: unknown): value is TokenValue {
 }
 
 function renderTokenName(key: string): string {
-  return key.replace(/-/g, '');
+  return key
+    .replace(/-/g, '')
+    .replace(/\s+(\w)/g, (_, letter) => letter.toUpperCase())
+    .replace(/\s+/g, '');
 }
 
 function renderTokenValues(
@@ -60,6 +74,56 @@ function renderTokenValues(
   }, {});
 }
 
+function processNestedTokens(obj: TokenGroup, categoryName: string, prefix: string = ''): Record<string, string> {
+  const result: Record<string, string> = {};
+  
+  function processLevel(current: TokenGroup | TokenValue, currentPrefix: string) {
+    if (current && typeof current === 'object') {
+      if ('value' in current && typeof current.value === 'string') {
+        let tokenName;
+        if (categoryName) {
+          tokenName = `color${categoryName}${currentPrefix}`;
+        } else {
+          tokenName = `color${currentPrefix}`;
+        }
+        tokenName = renderTokenName(tokenName);
+        result[tokenName] = current.value;
+      } else if (!('value' in current)) {
+        // This confirms current is a TokenGroup and not a TokenValue
+        Object.entries(current).forEach(([key, value]) => {
+          const newPrefix = currentPrefix ? `${currentPrefix}${key}` : key;
+          processLevel(value, newPrefix);
+        });
+      }
+    }
+  }
+  
+  processLevel(obj, prefix);
+  return result;
+}
+
+function processThemeColors(themeColors: ThemeColors | undefined, themeType: 'light' | 'dark'): Record<string, string> {
+  if (!themeColors) {
+    return {};
+  }
+
+  const result: Record<string, string> = {};
+  const categories = ['Neutral', 'Brand', 'Status', 'Shadow', 'DataViz'] as const;
+  
+  categories.forEach(category => {
+    const categoryTokens = themeColors[category];
+    if (categoryTokens) {
+      const processed = processNestedTokens(categoryTokens, category);
+      Object.entries(processed).forEach(([key, value]) => {
+        const themeKey = `${key}${themeType.charAt(0).toUpperCase() + themeType.slice(1)}`;
+        result[themeKey] = value;
+      });
+    }
+  });
+
+  return result;
+}
+
 function transformTokens(): void {
   try {
     const themesPath = path.join(process.cwd(), 'tokens', 'themes.json');
@@ -71,45 +135,22 @@ function transformTokens(): void {
       throw new Error('Required token groups are missing');
     }
 
-    const filteredTokens = {
-      global: tokens['global/Value'],
-      typography: tokens['Typography/Base']
-    };
-
     const themeTokens = {
-      ...renderTokenValues('borderRadius', filteredTokens.global['borderRadius'], 'px'),
-      ...renderTokenValues('fontSize', filteredTokens.typography['fontSize'], 'px'),
-      ...renderTokenValues('lineHeight', filteredTokens.typography['lineHeight'], 'px'),
-      ...renderTokenValues('fontFamily', filteredTokens.typography['fontFamily']),
-      ...renderTokenValues('fontWeight', filteredTokens.typography['fontWeight']),
-      ...renderTokenValues('strokeWidth', filteredTokens.global['strokeWidth'], 'px'),
-      ...renderTokenValues('spacingHorizontal', filteredTokens.global['spacingHorizontal'], 'px'),
-      ...renderTokenValues('spacingVertical', filteredTokens.global['spacingVertical'], 'px')
+      ...renderTokenValues('borderRadius', tokens['global/Value']['borderRadius'], 'px'),
+      ...renderTokenValues('fontSize', tokens['Typography/Base']['fontSize'], 'px'),
+      ...renderTokenValues('lineHeight', tokens['Typography/Base']['lineHeight'], 'px'),
+      ...renderTokenValues('fontFamily', tokens['Typography/Base']['fontFamily']),
+      ...renderTokenValues('fontWeight', tokens['Typography/Base']['fontWeight']),
+      ...renderTokenValues('strokeWidth', tokens['global/Value']['strokeWidth'], 'px'),
+      ...renderTokenValues('spacingHorizontal', tokens['global/Value']['spacingHorizontal'], 'px'),
+      ...renderTokenValues('spacingVertical', tokens['global/Value']['spacingVertical'], 'px'),
+      ...processThemeColors(tokens['Theme/Light'], 'light'),
+      ...processThemeColors(tokens['Theme/Dark'], 'dark')
     };
-
-    // Generate interface from tokens
-    const categoryGroups = Object.keys(themeTokens).reduce((acc: { [key: string]: string[] }, key) => {
-      const category = key.replace(/[0-9]/g, '');
-      if (!acc[category]) {
-        acc[category] = [];
-      }
-      acc[category].push(`  '${key}': string;`);
-      return acc;
-    }, {});
-
-    const interfaceContent = Object.entries(categoryGroups)
-      .map(([category, properties]) => (
-        `  // ${category} tokens\n${properties.join('\n')}`
-      ))
-      .join('\n\n');
 
     const fileContent = `import { Theme } from '@fluentui/react-components';
 
-interface BrandThemeExtension {
-${interfaceContent}
-}
-
-export const brandTheme: Theme & BrandThemeExtension = {
+export const brandTheme: Theme = {
 ${Object.entries(themeTokens)
   .map(([key, value]) => `  '${key}': '${value}'`)
   .join(',\n')}
