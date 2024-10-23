@@ -2,9 +2,18 @@ const fs = require('fs');
 const path = require('path');
 
 interface TokenValue {
-  value: string;
+  value: string | BoxShadowValue[];
   type?: string;
   description?: string;
+}
+
+interface BoxShadowValue {
+  color: string;
+  type: string;
+  x: number;
+  y: number;
+  blur: number;
+  spread: number;
 }
 
 interface TokenGroup {
@@ -16,6 +25,7 @@ interface GlobalValue {
   'strokeWidth': { [key: string]: TokenValue };
   'spacingHorizontal': { [key: string]: TokenValue };
   'spacingVertical': { [key: string]: TokenValue };
+  'shadow': { [key: string]: TokenValue };
 }
 
 interface TypographyBase {
@@ -47,8 +57,30 @@ function isTokenValue(value: unknown): value is TokenValue {
     value &&
     typeof value === 'object' &&
     'value' in value &&
-    typeof (value as TokenValue).value === 'string'
+    (typeof (value as TokenValue).value === 'string' || Array.isArray((value as TokenValue).value))
   );
+}
+
+function convertHexToRgba(hex: string): string {
+  if (hex === 'transparent') return 'rgba(0, 0, 0, 0)';
+  if (hex.startsWith('rgba')) return hex;
+  
+  const hexColor = hex.replace('#', '');
+  const r = parseInt(hexColor.substring(0, 2), 16);
+  const g = parseInt(hexColor.substring(2, 4), 16);
+  const b = parseInt(hexColor.substring(4, 6), 16);
+  const a = hexColor.length === 8 ? parseInt(hexColor.substring(6, 8), 16) / 255 : 1;
+  return `rgba(${r}, ${g}, ${b}, ${a})`;
+}
+
+function processShadowValue(shadowArray: BoxShadowValue[]): string {
+  return shadowArray
+    .map(shadow => {
+      const { x, y, blur, spread, color } = shadow;
+      const rgba = convertHexToRgba(color);
+      return `${x}px ${y}px ${blur}px ${spread ? spread + 'px' : '0'} ${rgba}`;
+    })
+    .join(', ');
 }
 
 function renderTokenName(key: string): string {
@@ -69,7 +101,13 @@ function renderTokenValues(
   
   return Object.keys(tokenArray).reduce((acc, key) => {
     const tokenName = renderTokenName(tokenPrefix + key);
-    const tokenValue = (tokenArray[key].value || '0') + valueSuffix;
+    const tokenData = tokenArray[key];
+    
+    if (Array.isArray(tokenData.value) && tokenData.type === 'boxShadow') {
+      return { ...acc, [tokenName]: processShadowValue(tokenData.value as BoxShadowValue[]) };
+    }
+    
+    const tokenValue = (tokenData.value as string || '0') + valueSuffix;
     return { ...acc, [tokenName]: tokenValue };
   }, {});
 }
@@ -79,7 +117,7 @@ function processNestedTokens(obj: TokenGroup, categoryName: string, prefix: stri
   
   function processLevel(current: TokenGroup | TokenValue, currentPrefix: string) {
     if (current && typeof current === 'object') {
-      if ('value' in current && typeof current.value === 'string') {
+      if ('value' in current && (typeof current.value === 'string' || Array.isArray(current.value))) {
         let tokenName;
         if (categoryName) {
           tokenName = `color${categoryName}${currentPrefix}`;
@@ -87,7 +125,11 @@ function processNestedTokens(obj: TokenGroup, categoryName: string, prefix: stri
           tokenName = `color${currentPrefix}`;
         }
         tokenName = renderTokenName(tokenName);
-        result[tokenName] = current.value;
+        if (Array.isArray(current.value) && current.type === 'boxShadow') {
+          result[tokenName] = processShadowValue(current.value);
+        } else {
+          result[tokenName] = current.value as string;
+        }
       } else if (!('value' in current)) {
         Object.entries(current).forEach(([key, value]) => {
           const newPrefix = currentPrefix ? `${currentPrefix}${key}` : key;
@@ -143,6 +185,7 @@ function transformTokens(): void {
       ...renderTokenValues('strokeWidth', tokens['global/Value']['strokeWidth'], 'px'),
       ...renderTokenValues('spacingHorizontal', tokens['global/Value']['spacingHorizontal'], 'px'),
       ...renderTokenValues('spacingVertical', tokens['global/Value']['spacingVertical'], 'px'),
+      ...renderTokenValues('shadow', tokens['global/Value']['shadow']),
       ...lightThemeColors,
       ...darkThemeColors
     };
