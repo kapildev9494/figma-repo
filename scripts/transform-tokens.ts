@@ -31,7 +31,7 @@ interface ThemeColors {
   Status?: TokenGroup;
   Shadow?: TokenGroup;
   DataViz?: TokenGroup;
-  [key: string]: TokenGroup | undefined;  // Add index signature
+  [key: string]: TokenGroup | undefined;
 }
 
 interface ThemeTokens {
@@ -89,7 +89,6 @@ function processNestedTokens(obj: TokenGroup, categoryName: string, prefix: stri
         tokenName = renderTokenName(tokenName);
         result[tokenName] = current.value;
       } else if (!('value' in current)) {
-        // This confirms current is a TokenGroup and not a TokenValue
         Object.entries(current).forEach(([key, value]) => {
           const newPrefix = currentPrefix ? `${currentPrefix}${key}` : key;
           processLevel(value, newPrefix);
@@ -102,7 +101,7 @@ function processNestedTokens(obj: TokenGroup, categoryName: string, prefix: stri
   return result;
 }
 
-function processThemeColors(themeColors: ThemeColors | undefined, themeType: 'light' | 'dark'): Record<string, string> {
+function processThemeColors(themeColors: ThemeColors | undefined): Record<string, string> {
   if (!themeColors) {
     return {};
   }
@@ -114,10 +113,7 @@ function processThemeColors(themeColors: ThemeColors | undefined, themeType: 'li
     const categoryTokens = themeColors[category];
     if (categoryTokens) {
       const processed = processNestedTokens(categoryTokens, category);
-      Object.entries(processed).forEach(([key, value]) => {
-        const themeKey = `${key}${themeType.charAt(0).toUpperCase() + themeType.slice(1)}`;
-        result[themeKey] = value;
-      });
+      Object.assign(result, processed);
     }
   });
 
@@ -135,6 +131,9 @@ function transformTokens(): void {
       throw new Error('Required token groups are missing');
     }
 
+    const lightThemeColors = processThemeColors(tokens['Theme/Light']);
+    const darkThemeColors = processThemeColors(tokens['Theme/Dark']);
+
     const themeTokens = {
       ...renderTokenValues('borderRadius', tokens['global/Value']['borderRadius'], 'px'),
       ...renderTokenValues('fontSize', tokens['Typography/Base']['fontSize'], 'px'),
@@ -144,8 +143,8 @@ function transformTokens(): void {
       ...renderTokenValues('strokeWidth', tokens['global/Value']['strokeWidth'], 'px'),
       ...renderTokenValues('spacingHorizontal', tokens['global/Value']['spacingHorizontal'], 'px'),
       ...renderTokenValues('spacingVertical', tokens['global/Value']['spacingVertical'], 'px'),
-      ...processThemeColors(tokens['Theme/Light'], 'light'),
-      ...processThemeColors(tokens['Theme/Dark'], 'dark')
+      ...lightThemeColors,
+      ...darkThemeColors
     };
 
     const fileContent = `import { Theme } from '@fluentui/react-components';
