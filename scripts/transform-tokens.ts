@@ -11,112 +11,95 @@ interface TokenGroup {
   [key: string]: TokenValue | TokenGroup;
 }
 
-interface GlobalValue {
-  'borderRadius': { [key: string]: TokenValue };
-  'strokeWidth': { [key: string]: TokenValue };
-  'spacingHorizontal': { [key: string]: TokenValue };
-  'spacingVertical': { [key: string]: TokenValue };
-}
-
-interface TypographyBase {
-  'fontSize': { [key: string]: TokenValue };
-  'lineHeight': { [key: string]: TokenValue };
-  'fontFamily': { [key: string]: TokenValue };
-  'fontWeight': { [key: string]: TokenValue };
-}
-
-interface ThemeColors {
-  Neutral?: TokenGroup;
-  Brand?: TokenGroup;
-  Status?: TokenGroup;
-  Shadow?: TokenGroup;
-  DataViz?: TokenGroup;
-  [key: string]: TokenGroup | undefined;
-}
-
 interface ThemeTokens {
-  'global/Value': GlobalValue;
-  'Typography/Base': TypographyBase;
-  'Theme/Light': ThemeColors;
-  'Theme/Dark': ThemeColors;
+  'global/Value': {
+    borderRadius: { [key: string]: TokenValue };
+    strokeWidth: { [key: string]: TokenValue };
+    spacingHorizontal: { [key: string]: TokenValue };
+    spacingVertical: { [key: string]: TokenValue };
+  };
+  'Typography/Base': {
+    fontSize: { [key: string]: TokenValue };
+    lineHeight: { [key: string]: TokenValue };
+    fontFamily: { [key: string]: TokenValue };
+    fontWeight: { [key: string]: TokenValue };
+  };
+  'Theme/Light': TokenGroup;
+  'Theme/Dark': TokenGroup;
   [key: string]: any;
 }
 
-function processThemeColors(themeColors: ThemeColors | undefined): Record<string, any> {
-  if (!themeColors) {
-    return {};
+function isTokenValue(value: any): value is TokenValue {
+  return value && typeof value === 'object' && 'value' in value && typeof value.value === 'string';
+}
+
+function processTokens(tokens: any, maxDepth: number = 10, currentDepth: number = 0): any {
+  // Base case: if we've reached max depth or the input isn't an object
+  if (currentDepth >= maxDepth || !tokens || typeof tokens !== 'object') {
+    return tokens;
   }
 
-  const result: Record<string, any> = {};
-  
-  Object.entries(themeColors).forEach(([category, tokens]) => {
-    if (tokens) {
-      result[category] = processTokenGroup(tokens);
-    }
-  });
+  // Handle array case
+  if (Array.isArray(tokens)) {
+    return tokens.map(item => processTokens(item, maxDepth, currentDepth + 1));
+  }
 
-  return result;
-}
+  // Handle token value case
+  if (isTokenValue(tokens)) {
+    return {
+      value: tokens.value,
+      ...(tokens.type && { type: tokens.type }),
+      ...(tokens.description && { description: tokens.description })
+    };
+  }
 
-function processTokenGroup(group: TokenGroup): any {
-  const result: any = {};
-  
-  Object.entries(group).forEach(([key, value]) => {
-    if (isTokenValue(value)) {
-      result[key] = {
-        value: value.value,
-        ...(value.type && { type: value.type }),
-        ...(value.description && { description: value.description })
-      };
-    } else {
-      result[key] = processTokenGroup(value);
-    }
-  });
-
-  return result;
-}
-
-function isTokenValue(value: unknown): value is TokenValue {
-  return Boolean(
-    value &&
-    typeof value === 'object' &&
-    'value' in value &&
-    typeof (value as TokenValue).value === 'string'
-  );
+  // Handle object case
+  const processed: any = {};
+  for (const [key, value] of Object.entries(tokens)) {
+    processed[key] = processTokens(value, maxDepth, currentDepth + 1);
+  }
+  return processed;
 }
 
 function transformTokens(): void {
   try {
+    // Read input file
     const inputPath = path.join(process.cwd(), 'tokens', 'raw-themes.json');
     const outputPath = path.join(process.cwd(), 'tokens', 'themes.json');
     
-    const tokens = JSON.parse(fs.readFileSync(inputPath, 'utf8')) as ThemeTokens;
-    
+    console.log('Reading from:', inputPath);
+    const rawData = fs.readFileSync(inputPath, 'utf8');
+    const tokens: ThemeTokens = JSON.parse(rawData);
+
+    // Validate required token groups
     if (!tokens['global/Value'] || !tokens['Typography/Base']) {
       throw new Error('Required token groups are missing');
     }
 
+    // Process tokens with depth limit
     const processedTokens = {
-      'global/Value': {
-        borderRadius: processTokenGroup(tokens['global/Value'].borderRadius),
-        strokeWidth: processTokenGroup(tokens['global/Value'].strokeWidth),
-        spacingHorizontal: processTokenGroup(tokens['global/Value'].spacingHorizontal),
-        spacingVertical: processTokenGroup(tokens['global/Value'].spacingVertical)
-      },
-      'Typography/Base': {
-        fontSize: processTokenGroup(tokens['Typography/Base'].fontSize),
-        lineHeight: processTokenGroup(tokens['Typography/Base'].lineHeight),
-        fontFamily: processTokenGroup(tokens['Typography/Base'].fontFamily),
-        fontWeight: processTokenGroup(tokens['Typography/Base'].fontWeight)
-      },
-      'Theme/Light': processThemeColors(tokens['Theme/Light']),
-      'Theme/Dark': processThemeColors(tokens['Theme/Dark'])
+      'global/Value': processTokens(tokens['global/Value']),
+      'Typography/Base': processTokens(tokens['Typography/Base']),
+      'Theme/Light': processTokens(tokens['Theme/Light']),
+      'Theme/Dark': processTokens(tokens['Theme/Dark'])
     };
 
+    // Ensure output directory exists
+    const outputDir = path.dirname(outputPath);
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
+
+    // Write processed tokens
+    console.log('Writing to:', outputPath);
     fs.writeFileSync(outputPath, JSON.stringify(processedTokens, null, 2));
     console.log('Successfully transformed tokens and updated themes.json');
   } catch (error) {
     console.error('Error transforming tokens:', error);
+    if (error instanceof Error) {
+      console.error('Error details:', error.message);
+      console.error('Stack trace:', error.stack);
+    }
     process.exit(1);
   }
 }
