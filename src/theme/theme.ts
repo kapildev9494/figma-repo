@@ -43,7 +43,7 @@ export const brandTheme: Theme = {
   'lineHeightBase920': '64px',
   'lineHeightBase980': '70px',
   'fontFamilyBase': 'Segoe UI',
-  'fontWeightRegular': '400',
+  'fontWeightRegular': '500',
   'fontWeightSemibold': '600',
   'fontWeightBold': '700',
   'fontWeightSemilight': '300',
