@@ -1,0 +1,6668 @@
+{
+  "global/Value": {
+    "Colors": {
+      "Neutral": {
+        "Black": {
+          "value": "#000000",
+          "type": "color",
+          "description": "#000000"
+        },
+        "Grey-6": {
+          "value": "#111111",
+          "type": "color",
+          "description": "#0F0F0F"
+        },
+        "Grey-8": {
+          "value": "#2c2c2c",
+          "type": "color",
+          "description": "#141414"
+        },
+        "Grey-10": {
+          "value": "#3a3a3a",
+          "type": "color",
+          "description": "#1A1A1A"
+        },
+        "Grey-12": {
+          "value": "#595959",
+          "type": "color",
+          "description": "Secondary text"
+        },
+        "Grey-20": {
+          "value": "#626a6a",
+          "type": "color",
+          "description": "#333333"
+        },
+        "Grey-30": {
+          "value": "#788383",
+          "type": "color",
+          "description": "#4D4D4D"
+        },
+        "Grey-40": {
+          "value": "#959d9d",
+          "type": "color",
+          "description": "#666666"
+        },
+        "Grey-50": {
+          "value": "#afb6b6",
+          "type": "color",
+          "description": "#808080"
+        },
+        "Grey-60": {
+          "value": "#cacece",
+          "type": "color",
+          "description": "#999999"
+        },
+        "Grey-70": {
+          "value": "#e4e7e7",
+          "type": "color",
+          "description": "#B3B3B3"
+        },
+        "Grey-80": {
+          "value": "#f2f3f3",
+          "type": "color",
+          "description": "#CCCCCC"
+        },
+        "Grey-90": {
+          "value": "#f8f8f8",
+          "type": "color",
+          "description": "#E6E6E6"
+        },
+        "White": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "#FFFFFF"
+        }
+      },
+      "Shared": {
+        "Burgundy": {
+          "Shade 50": {
+            "value": "#1a0607",
+            "type": "color",
+            "description": "#1A0607"
+          },
+          "Shade 40": {
+            "value": "#310b0d",
+            "type": "color",
+            "description": "#310B0D"
+          },
+          "Shade 30": {
+            "value": "#5c1519",
+            "type": "color",
+            "description": "#5C1519"
+          },
+          "Shade 20": {
+            "value": "#7d1d21",
+            "type": "color",
+            "description": "#7D1D21"
+          },
+          "Shade 10": {
+            "value": "#942228",
+            "type": "color",
+            "description": "#942228"
+          },
+          "Primary": {
+            "value": "#a4262c",
+            "type": "color",
+            "description": "#A4262C"
+          },
+          "Tint 10": {
+            "value": "#af393e",
+            "type": "color",
+            "description": "#AF393E"
+          },
+          "Tint 20": {
+            "value": "#ba4d52",
+            "type": "color",
+            "description": "#BA4D52"
+          },
+          "Tint 30": {
+            "value": "#c86c70",
+            "type": "color",
+            "description": "#C86C70"
+          },
+          "Tint 40": {
+            "value": "#e4afb2",
+            "type": "color",
+            "description": "#E4AFB2"
+          },
+          "Tint 50": {
+            "value": "#f0d3d4",
+            "type": "color",
+            "description": "#F0D3D4"
+          },
+          "Tint 60": {
+            "value": "#fbf4f4",
+            "type": "color",
+            "description": "#FBF4F4"
+          }
+        },
+        "Cranberry": {
+          "Primary": {
+            "value": "#ad0000",
+            "type": "color",
+            "description": "#C50F1F"
+          },
+          "Tint 30": {
+            "value": "#dd9090",
+            "type": "color",
+            "description": "#DC626D"
+          },
+          "Tint 60": {
+            "value": "#fcdfdf",
+            "type": "color",
+            "description": "#FDF3F4"
+          }
+        },
+        "Red": {
+          "Shade 50": {
+            "value": "#210809",
+            "type": "color",
+            "description": "#210809"
+          },
+          "Shade 40": {
+            "value": "#3f1011",
+            "type": "color",
+            "description": "#3F1011"
+          },
+          "Shade 30": {
+            "value": "#751d1f",
+            "type": "color",
+            "description": "#751D1F"
+          },
+          "Shade 20": {
+            "value": "#9f282b",
+            "type": "color",
+            "description": "#9F282B"
+          },
+          "Shade 10": {
+            "value": "#bc2f32",
+            "type": "color",
+            "description": "#BC2F32"
+          },
+          "Primary": {
+            "value": "#d13438",
+            "type": "color",
+            "description": "#D13438"
+          },
+          "Tint 10": {
+            "value": "#d7494c",
+            "type": "color",
+            "description": "#D7494C"
+          },
+          "Tint 20": {
+            "value": "#dc5e62",
+            "type": "color",
+            "description": "#DC5E62"
+          },
+          "Tint 30": {
+            "value": "#e37d80",
+            "type": "color",
+            "description": "#E37D80"
+          },
+          "Tint 40": {
+            "value": "#f1bbbc",
+            "type": "color",
+            "description": "#F1BBBC"
+          },
+          "Tint 50": {
+            "value": "#f8dadb",
+            "type": "color",
+            "description": "#F8DADB"
+          },
+          "Tint 60": {
+            "value": "#fdf6f6",
+            "type": "color",
+            "description": "#FDF6F6"
+          }
+        },
+        "Dark Orange": {
+          "Primary": {
+            "value": "#da3b01",
+            "type": "color",
+            "description": "#DA3B01"
+          },
+          "Tint 30": {
+            "value": "#f5c0ac",
+            "type": "color",
+            "description": "#E9835E"
+          },
+          "Tint 60": {
+            "value": "#f8e8e1",
+            "type": "color",
+            "description": "#FDF6F3"
+          }
+        },
+        "Bronze": {
+          "Shade 50": {
+            "value": "#1b0a01",
+            "type": "color",
+            "description": "#1B0A01"
+          },
+          "Shade 40": {
+            "value": "#321303",
+            "type": "color",
+            "description": "#321303"
+          },
+          "Shade 30": {
+            "value": "#5e2405",
+            "type": "color",
+            "description": "#5E2405"
+          },
+          "Shade 20": {
+            "value": "#7f3107",
+            "type": "color",
+            "description": "#7F3107"
+          },
+          "Shade 10": {
+            "value": "#963a08",
+            "type": "color",
+            "description": "#963A08"
+          },
+          "Primary": {
+            "value": "#a74109",
+            "type": "color",
+            "description": "#A74109"
+          },
+          "Tint 10": {
+            "value": "#b2521e",
+            "type": "color",
+            "description": "#B2521E"
+          },
+          "Tint 20": {
+            "value": "#bc6535",
+            "type": "color",
+            "description": "#BC6535"
+          },
+          "Tint 30": {
+            "value": "#ca8057",
+            "type": "color",
+            "description": "#CA8057"
+          },
+          "Tint 40": {
+            "value": "#e5bba4",
+            "type": "color",
+            "description": "#E5BBA4"
+          },
+          "Tint 50": {
+            "value": "#f1d9cc",
+            "type": "color",
+            "description": "#F1D9CC"
+          },
+          "Tint 60": {
+            "value": "#fbf5f2",
+            "type": "color",
+            "description": "#FBF5F2"
+          }
+        },
+        "Orange": {
+          "Primary": {
+            "value": "#c9601c",
+            "type": "color",
+            "description": "#F7630C"
+          },
+          "Tint 30": {
+            "value": "#f0a371",
+            "type": "color",
+            "description": "#FAA06B"
+          },
+          "Tint 60": {
+            "value": "#fbeee6",
+            "type": "color",
+            "description": "#FFF9F5"
+          }
+        },
+        "Peach": {
+          "Shade 50": {
+            "value": "#291600",
+            "type": "color",
+            "description": "#291600"
+          },
+          "Shade 40": {
+            "value": "#4d2a00",
+            "type": "color",
+            "description": "#4D2A00"
+          },
+          "Shade 30": {
+            "value": "#8f4e00",
+            "type": "color",
+            "description": "#8F4E00"
+          },
+          "Shade 20": {
+            "value": "#c26a00",
+            "type": "color",
+            "description": "#C26A00"
+          },
+          "Shade 10": {
+            "value": "#e67e00",
+            "type": "color",
+            "description": "#E67E00"
+          },
+          "Primary": {
+            "value": "#ff8c00",
+            "type": "color",
+            "description": "#FF8C00"
+          },
+          "Tint 10": {
+            "value": "#ff9a1f",
+            "type": "color",
+            "description": "#FF9A1F"
+          },
+          "Tint 20": {
+            "value": "#ffa83d",
+            "type": "color",
+            "description": "#FFA83D"
+          },
+          "Tint 30": {
+            "value": "#ffba66",
+            "type": "color",
+            "description": "#FFBA66"
+          },
+          "Tint 40": {
+            "value": "#ffddb3",
+            "type": "color",
+            "description": "#FFDDB3"
+          },
+          "Tint 50": {
+            "value": "#ffedd6",
+            "type": "color",
+            "description": "#FFEDD6"
+          },
+          "Tint 60": {
+            "value": "#fffaf5",
+            "type": "color",
+            "description": "#FFFAF5"
+          }
+        },
+        "Marigold": {
+          "Shade 50": {
+            "value": "#251a00",
+            "type": "color",
+            "description": "#251A00"
+          },
+          "Shade 40": {
+            "value": "#463100",
+            "type": "color",
+            "description": "#463100"
+          },
+          "Shade 30": {
+            "value": "#835b00",
+            "type": "color",
+            "description": "#835B00"
+          },
+          "Shade 20": {
+            "value": "#b27c00",
+            "type": "color",
+            "description": "#B27C00"
+          },
+          "Shade 10": {
+            "value": "#d39300",
+            "type": "color",
+            "description": "#D39300"
+          },
+          "Primary": {
+            "value": "#eaa300",
+            "type": "color",
+            "description": "#EAA300"
+          },
+          "Tint 10": {
+            "value": "#edad1c",
+            "type": "color",
+            "description": "#EDAD1C"
+          },
+          "Tint 20": {
+            "value": "#efb839",
+            "type": "color",
+            "description": "#EFB839"
+          },
+          "Tint 30": {
+            "value": "#f2c661",
+            "type": "color",
+            "description": "#F2C661"
+          },
+          "Tint 40": {
+            "value": "#f9e2ae",
+            "type": "color",
+            "description": "#F9E2AE"
+          },
+          "Tint 50": {
+            "value": "#fcefd3",
+            "type": "color",
+            "description": "#FCEFD3"
+          },
+          "Tint 60": {
+            "value": "#fefbf4",
+            "type": "color",
+            "description": "#FEFBF4"
+          }
+        },
+        "Yellow": {
+          "Shade 50": {
+            "value": "#282400",
+            "type": "color",
+            "description": "#282400"
+          },
+          "Shade 40": {
+            "value": "#4c4400",
+            "type": "color",
+            "description": "#4C4400"
+          },
+          "Shade 30": {
+            "value": "#817400",
+            "type": "color",
+            "description": "#817400"
+          },
+          "Shade 20": {
+            "value": "#c0ad00",
+            "type": "color",
+            "description": "#C0AD00"
+          },
+          "Shade 10": {
+            "value": "#e4cc00",
+            "type": "color",
+            "description": "#E4CC00"
+          },
+          "Primary": {
+            "value": "#fde300",
+            "type": "color",
+            "description": "#FDE300"
+          },
+          "Tint 10": {
+            "value": "#fde61e",
+            "type": "color",
+            "description": "#FDE61E"
+          },
+          "Tint 20": {
+            "value": "#fdea3d",
+            "type": "color",
+            "description": "#FDEA3D"
+          },
+          "Tint 30": {
+            "value": "#feee66",
+            "type": "color",
+            "description": "#FEEE66"
+          },
+          "Tint 40": {
+            "value": "#fef7b2",
+            "type": "color",
+            "description": "#FEF7B2"
+          },
+          "Tint 50": {
+            "value": "#fffad6",
+            "type": "color",
+            "description": "#FFFAD6"
+          },
+          "Tint 60": {
+            "value": "#fffef5",
+            "type": "color",
+            "description": "#FFFEF5"
+          }
+        },
+        "Gold": {
+          "Shade 50": {
+            "value": "#1f1900",
+            "type": "color",
+            "description": "#1F1900"
+          },
+          "Shade 40": {
+            "value": "#3a2f00",
+            "type": "color",
+            "description": "#3A2F00"
+          },
+          "Shade 30": {
+            "value": "#6c5700",
+            "type": "color",
+            "description": "#6C5700"
+          },
+          "Shade 20": {
+            "value": "#937700",
+            "type": "color",
+            "description": "#937700"
+          },
+          "Shade 10": {
+            "value": "#ae8c00",
+            "type": "color",
+            "description": "#AE8C00"
+          },
+          "Primary": {
+            "value": "#c19c00",
+            "type": "color",
+            "description": "#C19C00"
+          },
+          "Tint 10": {
+            "value": "#c8a718",
+            "type": "color",
+            "description": "#C8A718"
+          },
+          "Tint 20": {
+            "value": "#d0b232",
+            "type": "color",
+            "description": "#D0B232"
+          },
+          "Tint 30": {
+            "value": "#dac157",
+            "type": "color",
+            "description": "#DAC157"
+          },
+          "Tint 40": {
+            "value": "#ecdfa5",
+            "type": "color",
+            "description": "#ECDFA5"
+          },
+          "Tint 50": {
+            "value": "#f5eece",
+            "type": "color",
+            "description": "#F5EECE"
+          },
+          "Tint 60": {
+            "value": "#fdfbf2",
+            "type": "color",
+            "description": "#FDFBF2"
+          }
+        },
+        "Brass": {
+          "Shade 50": {
+            "value": "#181202",
+            "type": "color",
+            "description": "#181202"
+          },
+          "Shade 40": {
+            "value": "#2e2103",
+            "type": "color",
+            "description": "#2E2103"
+          },
+          "Shade 30": {
+            "value": "#553e06",
+            "type": "color",
+            "description": "#553E06"
+          },
+          "Shade 20": {
+            "value": "#745408",
+            "type": "color",
+            "description": "#745408"
+          },
+          "Shade 10": {
+            "value": "#89640a",
+            "type": "color",
+            "description": "#89640A"
+          },
+          "Primary": {
+            "value": "#986f0b",
+            "type": "color",
+            "description": "#986F0B"
+          },
+          "Tint 10": {
+            "value": "#a47d1e",
+            "type": "color",
+            "description": "#A47D1E"
+          },
+          "Tint 20": {
+            "value": "#b18c34",
+            "type": "color",
+            "description": "#B18C34"
+          },
+          "Tint 30": {
+            "value": "#c1a256",
+            "type": "color",
+            "description": "#C1A256"
+          },
+          "Tint 40": {
+            "value": "#e0cea2",
+            "type": "color",
+            "description": "#E0CEA2"
+          },
+          "Tint 50": {
+            "value": "#efe4cb",
+            "type": "color",
+            "description": "#EFE4CB"
+          },
+          "Tint 60": {
+            "value": "#fbf8f2",
+            "type": "color",
+            "description": "#FBF8F2"
+          }
+        },
+        "Brown": {
+          "Shade 50": {
+            "value": "#170e07",
+            "type": "color",
+            "description": "#170E07"
+          },
+          "Shade 40": {
+            "value": "#2b1a0e",
+            "type": "color",
+            "description": "#2B1A0E"
+          },
+          "Shade 30": {
+            "value": "#50301a",
+            "type": "color",
+            "description": "#50301A"
+          },
+          "Shade 20": {
+            "value": "#6c4123",
+            "type": "color",
+            "description": "#6C4123"
+          },
+          "Shade 10": {
+            "value": "#804d29",
+            "type": "color",
+            "description": "#804D29"
+          },
+          "Primary": {
+            "value": "#8e562e",
+            "type": "color",
+            "description": "#8E562E"
+          },
+          "Tint 10": {
+            "value": "#9c663f",
+            "type": "color",
+            "description": "#9C663F"
+          },
+          "Tint 20": {
+            "value": "#a97652",
+            "type": "color",
+            "description": "#A97652"
+          },
+          "Tint 30": {
+            "value": "#bb8f6f",
+            "type": "color",
+            "description": "#BB8F6F"
+          },
+          "Tint 40": {
+            "value": "#ddc3b0",
+            "type": "color",
+            "description": "#DDC3B0"
+          },
+          "Tint 50": {
+            "value": "#edded3",
+            "type": "color",
+            "description": "#EDDED3"
+          },
+          "Tint 60": {
+            "value": "#faf7f4",
+            "type": "color",
+            "description": "#FAF7F4"
+          }
+        },
+        "Dark brown": {
+          "Shade 50": {
+            "value": "#0c0704",
+            "type": "color",
+            "description": "#0C0704"
+          },
+          "Shade 40": {
+            "value": "#170c08",
+            "type": "color",
+            "description": "#170C08"
+          },
+          "Shade 30": {
+            "value": "#2b1710",
+            "type": "color",
+            "description": "#2B1710"
+          },
+          "Shade 20": {
+            "value": "#3a1f15",
+            "type": "color",
+            "description": "#3A1F15"
+          },
+          "Shade 10": {
+            "value": "#452519",
+            "type": "color",
+            "description": "#452519"
+          },
+          "Primary": {
+            "value": "#4d291c",
+            "type": "color",
+            "description": "#4D291C"
+          },
+          "Tint 10": {
+            "value": "#623a2b",
+            "type": "color",
+            "description": "#623A2B"
+          },
+          "Tint 20": {
+            "value": "#784d3e",
+            "type": "color",
+            "description": "#784D3E"
+          },
+          "Tint 30": {
+            "value": "#946b5c",
+            "type": "color",
+            "description": "#946B5C"
+          },
+          "Tint 40": {
+            "value": "#caada3",
+            "type": "color",
+            "description": "#CAADA3"
+          },
+          "Tint 50": {
+            "value": "#e3d2cb",
+            "type": "color",
+            "description": "#E3D2CB"
+          },
+          "Tint 60": {
+            "value": "#f8f3f2",
+            "type": "color",
+            "description": "#F8F3F2"
+          }
+        },
+        "Lime": {
+          "Shade 50": {
+            "value": "#121b06",
+            "type": "color",
+            "description": "#121B06"
+          },
+          "Shade 40": {
+            "value": "#23330b",
+            "type": "color",
+            "description": "#23330B"
+          },
+          "Shade 30": {
+            "value": "#405f14",
+            "type": "color",
+            "description": "#405F14"
+          },
+          "Shade 20": {
+            "value": "#57811b",
+            "type": "color",
+            "description": "#57811B"
+          },
+          "Shade 10": {
+            "value": "#689920",
+            "type": "color",
+            "description": "#689920"
+          },
+          "Primary": {
+            "value": "#73aa24",
+            "type": "color",
+            "description": "#73AA24"
+          },
+          "Tint 10": {
+            "value": "#81b437",
+            "type": "color",
+            "description": "#81B437"
+          },
+          "Tint 20": {
+            "value": "#90be4c",
+            "type": "color",
+            "description": "#90BE4C"
+          },
+          "Tint 30": {
+            "value": "#a4cc6c",
+            "type": "color",
+            "description": "#A4CC6C"
+          },
+          "Tint 40": {
+            "value": "#cfe5af",
+            "type": "color",
+            "description": "#CFE5AF"
+          },
+          "Tint 50": {
+            "value": "#e5f1d3",
+            "type": "color",
+            "description": "#E5F1D3"
+          },
+          "Tint 60": {
+            "value": "#f8fcf4",
+            "type": "color",
+            "description": "#F8FCF4"
+          }
+        },
+        "Forest": {
+          "Shade 50": {
+            "value": "#0c1501",
+            "type": "color",
+            "description": "#0C1501"
+          },
+          "Shade 40": {
+            "value": "#162702",
+            "type": "color",
+            "description": "#162702"
+          },
+          "Shade 30": {
+            "value": "#294903",
+            "type": "color",
+            "description": "#294903"
+          },
+          "Shade 20": {
+            "value": "#376304",
+            "type": "color",
+            "description": "#376304"
+          },
+          "Shade 10": {
+            "value": "#427505",
+            "type": "color",
+            "description": "#427505"
+          },
+          "Primary": {
+            "value": "#498205",
+            "type": "color",
+            "description": "#498205"
+          },
+          "Tint 10": {
+            "value": "#599116",
+            "type": "color",
+            "description": "#599116"
+          },
+          "Tint 20": {
+            "value": "#6ba02b",
+            "type": "color",
+            "description": "#6BA02B"
+          },
+          "Tint 30": {
+            "value": "#85b44c",
+            "type": "color",
+            "description": "#85B44C"
+          },
+          "Tint 40": {
+            "value": "#bdd99b",
+            "type": "color",
+            "description": "#BDD99B"
+          },
+          "Tint 50": {
+            "value": "#dbebc7",
+            "type": "color",
+            "description": "#DBEBC7"
+          },
+          "Tint 60": {
+            "value": "#f6faf0",
+            "type": "color",
+            "description": "#F6FAF0"
+          }
+        },
+        "Seafoam": {
+          "Shade 50": {
+            "value": "#002111",
+            "type": "color",
+            "description": "#002111"
+          },
+          "Shade 40": {
+            "value": "#003d20",
+            "type": "color",
+            "description": "#003D20"
+          },
+          "Shade 30": {
+            "value": "#00723b",
+            "type": "color",
+            "description": "#00723B"
+          },
+          "Shade 20": {
+            "value": "#009b51",
+            "type": "color",
+            "description": "#009B51"
+          },
+          "Shade 10": {
+            "value": "#00b85f",
+            "type": "color",
+            "description": "#00B85F"
+          },
+          "Primary": {
+            "value": "#00cc6a",
+            "type": "color",
+            "description": "#00CC6A"
+          },
+          "Tint 10": {
+            "value": "#19d279",
+            "type": "color",
+            "description": "#19D279"
+          },
+          "Tint 20": {
+            "value": "#34d889",
+            "type": "color",
+            "description": "#34D889"
+          },
+          "Tint 30": {
+            "value": "#5ae0a0",
+            "type": "color",
+            "description": "#5AE0A0"
+          },
+          "Tint 40": {
+            "value": "#a8f0cd",
+            "type": "color",
+            "description": "#A8F0CD"
+          },
+          "Tint 50": {
+            "value": "#cff7e4",
+            "type": "color",
+            "description": "#CFF7E4"
+          },
+          "Tint 60": {
+            "value": "#f3fdf8",
+            "type": "color",
+            "description": "#F3FDF8"
+          }
+        },
+        "Light green": {
+          "Shade 50": {
+            "value": "#031a02",
+            "type": "color",
+            "description": "#031A02"
+          },
+          "Shade 40": {
+            "value": "#063004",
+            "type": "color",
+            "description": "#063004"
+          },
+          "Shade 30": {
+            "value": "#0b5a08",
+            "type": "color",
+            "description": "#0B5A08"
+          },
+          "Shade 20": {
+            "value": "#0e7a0b",
+            "type": "color",
+            "description": "#0E7A0B"
+          },
+          "Shade 10": {
+            "value": "#11910d",
+            "type": "color",
+            "description": "#11910D"
+          },
+          "Primary": {
+            "value": "#13a10e",
+            "type": "color",
+            "description": "#13A10E"
+          },
+          "Tint 10": {
+            "value": "#27ac22",
+            "type": "color",
+            "description": "#27AC22"
+          },
+          "Tint 20": {
+            "value": "#3db838",
+            "type": "color",
+            "description": "#3DB838"
+          },
+          "Tint 30": {
+            "value": "#5ec75a",
+            "type": "color",
+            "description": "#5EC75A"
+          },
+          "Tint 40": {
+            "value": "#a7e3a5",
+            "type": "color",
+            "description": "#A7E3A5"
+          },
+          "Tint 50": {
+            "value": "#cef0cd",
+            "type": "color",
+            "description": "#CEF0CD"
+          },
+          "Tint 60": {
+            "value": "#f2fbf2",
+            "type": "color",
+            "description": "#F2FBF2"
+          }
+        },
+        "Green": {
+          "Primary": {
+            "value": "#0a7f00",
+            "type": "color",
+            "description": "#107C10"
+          },
+          "Tint 30": {
+            "value": "#8dc881",
+            "type": "color",
+            "description": "#54B054"
+          },
+          "Tint 60": {
+            "value": "#e2f5e0",
+            "type": "color",
+            "description": "#F1FAF1"
+          }
+        },
+        "Dark green": {
+          "Shade 50": {
+            "value": "#021102",
+            "type": "color",
+            "description": "#021102"
+          },
+          "Shade 40": {
+            "value": "#032003",
+            "type": "color",
+            "description": "#032003"
+          },
+          "Shade 30": {
+            "value": "#063b06",
+            "type": "color",
+            "description": "#063B06"
+          },
+          "Shade 20": {
+            "value": "#085108",
+            "type": "color",
+            "description": "#085108"
+          },
+          "Shade 10": {
+            "value": "#0a5f0a",
+            "type": "color",
+            "description": "#0A5F0A"
+          },
+          "Primary": {
+            "value": "#0b6a0b",
+            "type": "color",
+            "description": "#0B6A0B"
+          },
+          "Tint 10": {
+            "value": "#1a7c1a",
+            "type": "color",
+            "description": "#1A7C1A"
+          },
+          "Tint 20": {
+            "value": "#2d8e2d",
+            "type": "color",
+            "description": "#2D8E2D"
+          },
+          "Tint 30": {
+            "value": "#4da64d",
+            "type": "color",
+            "description": "#4DA64D"
+          },
+          "Tint 40": {
+            "value": "#9ad29a",
+            "type": "color",
+            "description": "#9AD29A"
+          },
+          "Tint 50": {
+            "value": "#c6e7c6",
+            "type": "color",
+            "description": "#C6E7C6"
+          },
+          "Tint 60": {
+            "value": "#f0f9f0",
+            "type": "color",
+            "description": "#F0F9F0"
+          }
+        },
+        "Light teal": {
+          "Shade 50": {
+            "value": "#001d1f",
+            "type": "color",
+            "description": "#001D1F"
+          },
+          "Shade 40": {
+            "value": "#00373a",
+            "type": "color",
+            "description": "#00373A"
+          },
+          "Shade 30": {
+            "value": "#00666d",
+            "type": "color",
+            "description": "#00666D"
+          },
+          "Shade 20": {
+            "value": "#008b94",
+            "type": "color",
+            "description": "#008B94"
+          },
+          "Shade 10": {
+            "value": "#00a5af",
+            "type": "color",
+            "description": "#00A5AF"
+          },
+          "Primary": {
+            "value": "#00b7c3",
+            "type": "color",
+            "description": "#00B7C3"
+          },
+          "Tint 10": {
+            "value": "#18bfca",
+            "type": "color",
+            "description": "#18BFCA"
+          },
+          "Tint 20": {
+            "value": "#32c8d1",
+            "type": "color",
+            "description": "#32C8D1"
+          },
+          "Tint 30": {
+            "value": "#58d3db",
+            "type": "color",
+            "description": "#58D3DB"
+          },
+          "Tint 40": {
+            "value": "#a6e9ed",
+            "type": "color",
+            "description": "#A6E9ED"
+          },
+          "Tint 50": {
+            "value": "#cef3f5",
+            "type": "color",
+            "description": "#CEF3F5"
+          },
+          "Tint 60": {
+            "value": "#f2fcfd",
+            "type": "color",
+            "description": "#F2FCFD"
+          }
+        },
+        "Teal": {
+          "Shade 50": {
+            "value": "#001516",
+            "type": "color",
+            "description": "#001516"
+          },
+          "Shade 40": {
+            "value": "#012728",
+            "type": "color",
+            "description": "#012728"
+          },
+          "Shade 30": {
+            "value": "#02494c",
+            "type": "color",
+            "description": "#02494C"
+          },
+          "Shade 20": {
+            "value": "#026467",
+            "type": "color",
+            "description": "#026467"
+          },
+          "Shade 10": {
+            "value": "#037679",
+            "type": "color",
+            "description": "#037679"
+          },
+          "Primary": {
+            "value": "#038387",
+            "type": "color",
+            "description": "#038387"
+          },
+          "Tint 10": {
+            "value": "#159195",
+            "type": "color",
+            "description": "#159195"
+          },
+          "Tint 20": {
+            "value": "#2aa0a4",
+            "type": "color",
+            "description": "#2AA0A4"
+          },
+          "Tint 30": {
+            "value": "#4cb4b7",
+            "type": "color",
+            "description": "#4CB4B7"
+          },
+          "Tint 40": {
+            "value": "#9bd9db",
+            "type": "color",
+            "description": "#9BD9DB"
+          },
+          "Tint 50": {
+            "value": "#c7ebec",
+            "type": "color",
+            "description": "#C7EBEC"
+          },
+          "Tint 60": {
+            "value": "#f0fafa",
+            "type": "color",
+            "description": "#F0FAFA"
+          }
+        },
+        "Dark teal": {
+          "Shade 50": {
+            "value": "#001010",
+            "type": "color",
+            "description": "#001010"
+          },
+          "Shade 40": {
+            "value": "#001f1f",
+            "type": "color",
+            "description": "#001F1F"
+          },
+          "Shade 30": {
+            "value": "#003939",
+            "type": "color",
+            "description": "#003939"
+          },
+          "Shade 20": {
+            "value": "#004e4e",
+            "type": "color",
+            "description": "#004E4E"
+          },
+          "Shade 10": {
+            "value": "#005c5c",
+            "type": "color",
+            "description": "#005C5C"
+          },
+          "Primary": {
+            "value": "#006666",
+            "type": "color",
+            "description": "#006666"
+          },
+          "Tint 10": {
+            "value": "#0e7878",
+            "type": "color",
+            "description": "#0E7878"
+          },
+          "Tint 20": {
+            "value": "#218b8b",
+            "type": "color",
+            "description": "#218B8B"
+          },
+          "Tint 30": {
+            "value": "#41a3a3",
+            "type": "color",
+            "description": "#41A3A3"
+          },
+          "Tint 40": {
+            "value": "#92d1d1",
+            "type": "color",
+            "description": "#92D1D1"
+          },
+          "Tint 50": {
+            "value": "#c2e7e7",
+            "type": "color",
+            "description": "#C2E7E7"
+          },
+          "Tint 60": {
+            "value": "#eff9f9",
+            "type": "color",
+            "description": "#EFF9F9"
+          }
+        },
+        "Cyan": {
+          "Shade 50": {
+            "value": "#00181e",
+            "type": "color",
+            "description": "#00181E"
+          },
+          "Shade 40": {
+            "value": "#002e38",
+            "type": "color",
+            "description": "#002E38"
+          },
+          "Shade 30": {
+            "value": "#005669",
+            "type": "color",
+            "description": "#005669"
+          },
+          "Shade 20": {
+            "value": "#00748f",
+            "type": "color",
+            "description": "#00748F"
+          },
+          "Shade 10": {
+            "value": "#008aa9",
+            "type": "color",
+            "description": "#008AA9"
+          },
+          "Primary": {
+            "value": "#0099bc",
+            "type": "color",
+            "description": "#0099BC"
+          },
+          "Tint 10": {
+            "value": "#18a4c4",
+            "type": "color",
+            "description": "#18A4C4"
+          },
+          "Tint 20": {
+            "value": "#31afcc",
+            "type": "color",
+            "description": "#31AFCC"
+          },
+          "Tint 30": {
+            "value": "#56bfd7",
+            "type": "color",
+            "description": "#56BFD7"
+          },
+          "Tint 40": {
+            "value": "#a4deeb",
+            "type": "color",
+            "description": "#A4DEEB"
+          },
+          "Tint 50": {
+            "value": "#cdedf4",
+            "type": "color",
+            "description": "#CDEDF4"
+          },
+          "Tint 60": {
+            "value": "#f2fafc",
+            "type": "color",
+            "description": "#F2FAFC"
+          }
+        },
+        "Steel": {
+          "Shade 50": {
+            "value": "#000f12",
+            "type": "color",
+            "description": "#000F12"
+          },
+          "Shade 40": {
+            "value": "#001b22",
+            "type": "color",
+            "description": "#001B22"
+          },
+          "Shade 30": {
+            "value": "#00333f",
+            "type": "color",
+            "description": "#00333F"
+          },
+          "Shade 20": {
+            "value": "#004555",
+            "type": "color",
+            "description": "#004555"
+          },
+          "Shade 10": {
+            "value": "#005265",
+            "type": "color",
+            "description": "#005265"
+          },
+          "Primary": {
+            "value": "#005b70",
+            "type": "color",
+            "description": "#005B70"
+          },
+          "Tint 10": {
+            "value": "#0f6c81",
+            "type": "color",
+            "description": "#0F6C81"
+          },
+          "Tint 20": {
+            "value": "#237d92",
+            "type": "color",
+            "description": "#237D92"
+          },
+          "Tint 30": {
+            "value": "#4496a9",
+            "type": "color",
+            "description": "#4496A9"
+          },
+          "Tint 40": {
+            "value": "#94c8d4",
+            "type": "color",
+            "description": "#94C8D4"
+          },
+          "Tint 50": {
+            "value": "#c3e1e8",
+            "type": "color",
+            "description": "#C3E1E8"
+          },
+          "Tint 60": {
+            "value": "#eff7f9",
+            "type": "color",
+            "description": "#EFF7F9"
+          }
+        },
+        "Light blue": {
+          "Shade 50": {
+            "value": "#091823",
+            "type": "color",
+            "description": "#091823"
+          },
+          "Shade 40": {
+            "value": "#112d42",
+            "type": "color",
+            "description": "#112D42"
+          },
+          "Shade 30": {
+            "value": "#20547c",
+            "type": "color",
+            "description": "#20547C"
+          },
+          "Shade 20": {
+            "value": "#2c72a8",
+            "type": "color",
+            "description": "#2C72A8"
+          },
+          "Shade 10": {
+            "value": "#3487c7",
+            "type": "color",
+            "description": "#3487C7"
+          },
+          "Primary": {
+            "value": "#3a96dd",
+            "type": "color",
+            "description": "#3A96DD"
+          },
+          "Tint 10": {
+            "value": "#4fa1e1",
+            "type": "color",
+            "description": "#4FA1E1"
+          },
+          "Tint 20": {
+            "value": "#65ade5",
+            "type": "color",
+            "description": "#65ADE5"
+          },
+          "Tint 30": {
+            "value": "#83bdeb",
+            "type": "color",
+            "description": "#83BDEB"
+          },
+          "Tint 40": {
+            "value": "#bfddf5",
+            "type": "color",
+            "description": "#BFDDF5"
+          },
+          "Tint 50": {
+            "value": "#dcedfa",
+            "type": "color",
+            "description": "#DCEDFA"
+          },
+          "Tint 60": {
+            "value": "#f6fafe",
+            "type": "color",
+            "description": "#F6FAFE"
+          }
+        },
+        "Blue": {
+          "Shade 50": {
+            "value": "#001322",
+            "type": "color",
+            "description": "#001322"
+          },
+          "Shade 40": {
+            "value": "#002440",
+            "type": "color",
+            "description": "#002440"
+          },
+          "Shade 30": {
+            "value": "#004377",
+            "type": "color",
+            "description": "#004377"
+          },
+          "Shade 20": {
+            "value": "#005ba1",
+            "type": "color",
+            "description": "#005BA1"
+          },
+          "Shade 10": {
+            "value": "#006cbf",
+            "type": "color",
+            "description": "#006CBF"
+          },
+          "Primary": {
+            "value": "#0078d4",
+            "type": "color",
+            "description": "#0078D4"
+          },
+          "Tint 10": {
+            "value": "#1a86d9",
+            "type": "color",
+            "description": "#1A86D9"
+          },
+          "Tint 20": {
+            "value": "#3595de",
+            "type": "color",
+            "description": "#3595DE"
+          },
+          "Tint 30": {
+            "value": "#5caae5",
+            "type": "color",
+            "description": "#5CAAE5"
+          },
+          "Tint 40": {
+            "value": "#a9d3f2",
+            "type": "color",
+            "description": "#A9D3F2"
+          },
+          "Tint 50": {
+            "value": "#d0e7f8",
+            "type": "color",
+            "description": "#D0E7F8"
+          },
+          "Tint 60": {
+            "value": "#f3f9fd",
+            "type": "color",
+            "description": "#F3F9FD"
+          }
+        },
+        "Royal blue": {
+          "Shade 50": {
+            "value": "#000c16",
+            "type": "color",
+            "description": "#000C16"
+          },
+          "Shade 40": {
+            "value": "#00172a",
+            "type": "color",
+            "description": "#00172A"
+          },
+          "Shade 30": {
+            "value": "#002c4e",
+            "type": "color",
+            "description": "#002C4E"
+          },
+          "Shade 20": {
+            "value": "#003b6a",
+            "type": "color",
+            "description": "#003B6A"
+          },
+          "Shade 10": {
+            "value": "#00467e",
+            "type": "color",
+            "description": "#00467E"
+          },
+          "Primary": {
+            "value": "#004e8c",
+            "type": "color",
+            "description": "#004E8C"
+          },
+          "Tint 10": {
+            "value": "#125e9a",
+            "type": "color",
+            "description": "#125E9A"
+          },
+          "Tint 20": {
+            "value": "#286fa8",
+            "type": "color",
+            "description": "#286FA8"
+          },
+          "Tint 30": {
+            "value": "#4a89ba",
+            "type": "color",
+            "description": "#4A89BA"
+          },
+          "Tint 40": {
+            "value": "#9abfdc",
+            "type": "color",
+            "description": "#9ABFDC"
+          },
+          "Tint 50": {
+            "value": "#c7dced",
+            "type": "color",
+            "description": "#C7DCED"
+          },
+          "Tint 60": {
+            "value": "#f0f6fa",
+            "type": "color",
+            "description": "#F0F6FA"
+          }
+        },
+        "Dark blue": {
+          "Shade 50": {
+            "value": "#000910",
+            "type": "color",
+            "description": "#000910"
+          },
+          "Shade 40": {
+            "value": "#00111f",
+            "type": "color",
+            "description": "#00111F"
+          },
+          "Shade 30": {
+            "value": "#002039",
+            "type": "color",
+            "description": "#002039"
+          },
+          "Shade 20": {
+            "value": "#002b4e",
+            "type": "color",
+            "description": "#002B4E"
+          },
+          "Shade 10": {
+            "value": "#00335c",
+            "type": "color",
+            "description": "#00335C"
+          },
+          "Primary": {
+            "value": "#003966",
+            "type": "color",
+            "description": "#003966"
+          },
+          "Tint 10": {
+            "value": "#0e4a78",
+            "type": "color",
+            "description": "#0E4A78"
+          },
+          "Tint 20": {
+            "value": "#215c8b",
+            "type": "color",
+            "description": "#215C8B"
+          },
+          "Tint 30": {
+            "value": "#4178a3",
+            "type": "color",
+            "description": "#4178A3"
+          },
+          "Tint 40": {
+            "value": "#92b5d1",
+            "type": "color",
+            "description": "#92B5D1"
+          },
+          "Tint 50": {
+            "value": "#c2d6e7",
+            "type": "color",
+            "description": "#C2D6E7"
+          },
+          "Tint 60": {
+            "value": "#eff4f9",
+            "type": "color",
+            "description": "#EFF4F9"
+          }
+        },
+        "Cornflower": {
+          "Shade 50": {
+            "value": "#0d1126",
+            "type": "color",
+            "description": "#0D1126"
+          },
+          "Shade 40": {
+            "value": "#182047",
+            "type": "color",
+            "description": "#182047"
+          },
+          "Shade 30": {
+            "value": "#2c3c85",
+            "type": "color",
+            "description": "#2C3C85"
+          },
+          "Shade 20": {
+            "value": "#3c51b4",
+            "type": "color",
+            "description": "#3C51B4"
+          },
+          "Shade 10": {
+            "value": "#4760d5",
+            "type": "color",
+            "description": "#4760D5"
+          },
+          "Primary": {
+            "value": "#4f6bed",
+            "type": "color",
+            "description": "#4F6BED"
+          },
+          "Tint 10": {
+            "value": "#637cef",
+            "type": "color",
+            "description": "#637CEF"
+          },
+          "Tint 20": {
+            "value": "#778df1",
+            "type": "color",
+            "description": "#778DF1"
+          },
+          "Tint 30": {
+            "value": "#93a4f4",
+            "type": "color",
+            "description": "#93A4F4"
+          },
+          "Tint 40": {
+            "value": "#c8d1fa",
+            "type": "color",
+            "description": "#C8D1FA"
+          },
+          "Tint 50": {
+            "value": "#e1e6fc",
+            "type": "color",
+            "description": "#E1E6FC"
+          },
+          "Tint 60": {
+            "value": "#f7f9fe",
+            "type": "color",
+            "description": "#F7F9FE"
+          }
+        },
+        "Navy": {
+          "Shade 50": {
+            "value": "#00061d",
+            "type": "color",
+            "description": "#00061D"
+          },
+          "Shade 40": {
+            "value": "#000c36",
+            "type": "color",
+            "description": "#000C36"
+          },
+          "Shade 30": {
+            "value": "#001665",
+            "type": "color",
+            "description": "#001665"
+          },
+          "Shade 20": {
+            "value": "#001e89",
+            "type": "color",
+            "description": "#001E89"
+          },
+          "Shade 10": {
+            "value": "#0023a2",
+            "type": "color",
+            "description": "#0023A2"
+          },
+          "Primary": {
+            "value": "#0027b4",
+            "type": "color",
+            "description": "#0027B4"
+          },
+          "Tint 10": {
+            "value": "#173bbd",
+            "type": "color",
+            "description": "#173BBD"
+          },
+          "Tint 20": {
+            "value": "#3050c6",
+            "type": "color",
+            "description": "#3050C6"
+          },
+          "Tint 30": {
+            "value": "#546fd2",
+            "type": "color",
+            "description": "#546FD2"
+          },
+          "Tint 40": {
+            "value": "#a3b2e8",
+            "type": "color",
+            "description": "#A3B2E8"
+          },
+          "Tint 50": {
+            "value": "#ccd5f3",
+            "type": "color",
+            "description": "#CCD5F3"
+          },
+          "Tint 60": {
+            "value": "#f2f4fc",
+            "type": "color",
+            "description": "#F2F4FC"
+          }
+        },
+        "Lavender": {
+          "Shade 50": {
+            "value": "#120f25",
+            "type": "color",
+            "description": "#120F25"
+          },
+          "Shade 40": {
+            "value": "#221d46",
+            "type": "color",
+            "description": "#221D46"
+          },
+          "Shade 30": {
+            "value": "#3f3682",
+            "type": "color",
+            "description": "#3F3682"
+          },
+          "Shade 20": {
+            "value": "#5649b0",
+            "type": "color",
+            "description": "#5649B0"
+          },
+          "Shade 10": {
+            "value": "#6656d1",
+            "type": "color",
+            "description": "#6656D1"
+          },
+          "Primary": {
+            "value": "#7160e8",
+            "type": "color",
+            "description": "#7160E8"
+          },
+          "Tint 10": {
+            "value": "#8172eb",
+            "type": "color",
+            "description": "#8172EB"
+          },
+          "Tint 20": {
+            "value": "#9184ee",
+            "type": "color",
+            "description": "#9184EE"
+          },
+          "Tint 30": {
+            "value": "#a79cf1",
+            "type": "color",
+            "description": "#A79CF1"
+          },
+          "Tint 40": {
+            "value": "#d2ccf8",
+            "type": "color",
+            "description": "#D2CCF8"
+          },
+          "Tint 50": {
+            "value": "#e7e4fb",
+            "type": "color",
+            "description": "#E7E4FB"
+          },
+          "Tint 60": {
+            "value": "#f9f8fe",
+            "type": "color",
+            "description": "#F9F8FE"
+          }
+        },
+        "Purple": {
+          "Shade 50": {
+            "value": "#0f0717",
+            "type": "color",
+            "description": "#0F0717"
+          },
+          "Shade 40": {
+            "value": "#1c0e2b",
+            "type": "color",
+            "description": "#1C0E2B"
+          },
+          "Shade 30": {
+            "value": "#341a51",
+            "type": "color",
+            "description": "#341A51"
+          },
+          "Shade 20": {
+            "value": "#46236e",
+            "type": "color",
+            "description": "#46236E"
+          },
+          "Shade 10": {
+            "value": "#532982",
+            "type": "color",
+            "description": "#532982"
+          },
+          "Primary": {
+            "value": "#5c2e91",
+            "type": "color",
+            "description": "#5C2E91"
+          },
+          "Tint 10": {
+            "value": "#6b3f9e",
+            "type": "color",
+            "description": "#6B3F9E"
+          },
+          "Tint 20": {
+            "value": "#7c52ab",
+            "type": "color",
+            "description": "#7C52AB"
+          },
+          "Tint 30": {
+            "value": "#9470bd",
+            "type": "color",
+            "description": "#9470BD"
+          },
+          "Tint 40": {
+            "value": "#c6b1de",
+            "type": "color",
+            "description": "#C6B1DE"
+          },
+          "Tint 50": {
+            "value": "#e0d3ed",
+            "type": "color",
+            "description": "#E0D3ED"
+          },
+          "Tint 60": {
+            "value": "#f7f4fb",
+            "type": "color",
+            "description": "#F7F4FB"
+          }
+        },
+        "Dark purple": {
+          "Shade 50": {
+            "value": "#0a0411",
+            "type": "color",
+            "description": "#0A0411"
+          },
+          "Shade 40": {
+            "value": "#130820",
+            "type": "color",
+            "description": "#130820"
+          },
+          "Shade 30": {
+            "value": "#240f3c",
+            "type": "color",
+            "description": "#240F3C"
+          },
+          "Shade 20": {
+            "value": "#311552",
+            "type": "color",
+            "description": "#311552"
+          },
+          "Shade 10": {
+            "value": "#3a1861",
+            "type": "color",
+            "description": "#3A1861"
+          },
+          "Primary": {
+            "value": "#401b6c",
+            "type": "color",
+            "description": "#401B6C"
+          },
+          "Tint 10": {
+            "value": "#512b7e",
+            "type": "color",
+            "description": "#512B7E"
+          },
+          "Tint 20": {
+            "value": "#633e8f",
+            "type": "color",
+            "description": "#633E8F"
+          },
+          "Tint 30": {
+            "value": "#7e5ca7",
+            "type": "color",
+            "description": "#7E5CA7"
+          },
+          "Tint 40": {
+            "value": "#b9a3d3",
+            "type": "color",
+            "description": "#B9A3D3"
+          },
+          "Tint 50": {
+            "value": "#d8cce7",
+            "type": "color",
+            "description": "#D8CCE7"
+          },
+          "Tint 60": {
+            "value": "#f5f2f9",
+            "type": "color",
+            "description": "#F5F2F9"
+          }
+        },
+        "Orchid": {
+          "Shade 50": {
+            "value": "#16101d",
+            "type": "color",
+            "description": "#16101D"
+          },
+          "Shade 40": {
+            "value": "#281e37",
+            "type": "color",
+            "description": "#281E37"
+          },
+          "Shade 30": {
+            "value": "#4c3867",
+            "type": "color",
+            "description": "#4C3867"
+          },
+          "Shade 20": {
+            "value": "#674c8c",
+            "type": "color",
+            "description": "#674C8C"
+          },
+          "Shade 10": {
+            "value": "#795aa6",
+            "type": "color",
+            "description": "#795AA6"
+          },
+          "Primary": {
+            "value": "#8764b8",
+            "type": "color",
+            "description": "#8764B8"
+          },
+          "Tint 10": {
+            "value": "#9373c0",
+            "type": "color",
+            "description": "#9373C0"
+          },
+          "Tint 20": {
+            "value": "#a083c9",
+            "type": "color",
+            "description": "#A083C9"
+          },
+          "Tint 30": {
+            "value": "#b29ad4",
+            "type": "color",
+            "description": "#B29AD4"
+          },
+          "Tint 40": {
+            "value": "#d7caea",
+            "type": "color",
+            "description": "#D7CAEA"
+          },
+          "Tint 50": {
+            "value": "#e9e2f4",
+            "type": "color",
+            "description": "#E9E2F4"
+          },
+          "Tint 60": {
+            "value": "#f9f8fc",
+            "type": "color",
+            "description": "#F9F8FC"
+          }
+        },
+        "Grape": {
+          "Shade 50": {
+            "value": "#160418",
+            "type": "color",
+            "description": "#160418"
+          },
+          "Shade 40": {
+            "value": "#29072e",
+            "type": "color",
+            "description": "#29072E"
+          },
+          "Shade 30": {
+            "value": "#4c0d55",
+            "type": "color",
+            "description": "#4C0D55"
+          },
+          "Shade 20": {
+            "value": "#671174",
+            "type": "color",
+            "description": "#671174"
+          },
+          "Shade 10": {
+            "value": "#7a1589",
+            "type": "color",
+            "description": "#7A1589"
+          },
+          "Primary": {
+            "value": "#881798",
+            "type": "color",
+            "description": "#881798"
+          },
+          "Tint 10": {
+            "value": "#952aa4",
+            "type": "color",
+            "description": "#952AA4"
+          },
+          "Tint 20": {
+            "value": "#a33fb1",
+            "type": "color",
+            "description": "#A33FB1"
+          },
+          "Tint 30": {
+            "value": "#b55fc1",
+            "type": "color",
+            "description": "#B55FC1"
+          },
+          "Tint 40": {
+            "value": "#d9a7e0",
+            "type": "color",
+            "description": "#D9A7E0"
+          },
+          "Tint 50": {
+            "value": "#eaceef",
+            "type": "color",
+            "description": "#EACEEF"
+          },
+          "Tint 60": {
+            "value": "#faf2fb",
+            "type": "color",
+            "description": "#FAF2FB"
+          }
+        },
+        "Berry": {
+          "Shade 50": {
+            "value": "#1f091d",
+            "type": "color",
+            "description": "#1F091D"
+          },
+          "Shade 40": {
+            "value": "#3a1136",
+            "type": "color",
+            "description": "#3A1136"
+          },
+          "Shade 30": {
+            "value": "#6d2064",
+            "type": "color",
+            "description": "#6D2064"
+          },
+          "Shade 20": {
+            "value": "#932b88",
+            "type": "color",
+            "description": "#932B88"
+          },
+          "Shade 10": {
+            "value": "#af33a1",
+            "type": "color",
+            "description": "#AF33A1"
+          },
+          "Primary": {
+            "value": "#c239b3",
+            "type": "color",
+            "description": "#C239B3"
+          },
+          "Tint 10": {
+            "value": "#c94cbc",
+            "type": "color",
+            "description": "#C94CBC"
+          },
+          "Tint 20": {
+            "value": "#d161c4",
+            "type": "color",
+            "description": "#D161C4"
+          },
+          "Tint 30": {
+            "value": "#da7ed0",
+            "type": "color",
+            "description": "#DA7ED0"
+          },
+          "Tint 40": {
+            "value": "#edbbe7",
+            "type": "color",
+            "description": "#EDBBE7"
+          },
+          "Tint 50": {
+            "value": "#f5daf2",
+            "type": "color",
+            "description": "#F5DAF2"
+          },
+          "Tint 60": {
+            "value": "#fdf5fc",
+            "type": "color",
+            "description": "#FDF5FC"
+          }
+        },
+        "Lilac": {
+          "Shade 50": {
+            "value": "#1c0b1f",
+            "type": "color",
+            "description": "#1C0B1F"
+          },
+          "Shade 40": {
+            "value": "#35153a",
+            "type": "color",
+            "description": "#35153A"
+          },
+          "Shade 30": {
+            "value": "#63276d",
+            "type": "color",
+            "description": "#63276D"
+          },
+          "Shade 20": {
+            "value": "#863593",
+            "type": "color",
+            "description": "#863593"
+          },
+          "Shade 10": {
+            "value": "#9f3faf",
+            "type": "color",
+            "description": "#9F3FAF"
+          },
+          "Primary": {
+            "value": "#b146c2",
+            "type": "color",
+            "description": "#B146C2"
+          },
+          "Tint 10": {
+            "value": "#ba58c9",
+            "type": "color",
+            "description": "#BA58C9"
+          },
+          "Tint 20": {
+            "value": "#c36bd1",
+            "type": "color",
+            "description": "#C36BD1"
+          },
+          "Tint 30": {
+            "value": "#cf87da",
+            "type": "color",
+            "description": "#CF87DA"
+          },
+          "Tint 40": {
+            "value": "#e6bfed",
+            "type": "color",
+            "description": "#E6BFED"
+          },
+          "Tint 50": {
+            "value": "#f2dcf5",
+            "type": "color",
+            "description": "#F2DCF5"
+          },
+          "Tint 60": {
+            "value": "#fcf6fd",
+            "type": "color",
+            "description": "#FCF6FD"
+          }
+        },
+        "Pink": {
+          "Shade 50": {
+            "value": "#24091b",
+            "type": "color",
+            "description": "#24091B"
+          },
+          "Shade 40": {
+            "value": "#441232",
+            "type": "color",
+            "description": "#441232"
+          },
+          "Shade 30": {
+            "value": "#80215d",
+            "type": "color",
+            "description": "#80215D"
+          },
+          "Shade 20": {
+            "value": "#ad2d7e",
+            "type": "color",
+            "description": "#AD2D7E"
+          },
+          "Shade 10": {
+            "value": "#cd3595",
+            "type": "color",
+            "description": "#CD3595"
+          },
+          "Primary": {
+            "value": "#e43ba6",
+            "type": "color",
+            "description": "#E43BA6"
+          },
+          "Tint 10": {
+            "value": "#e750b0",
+            "type": "color",
+            "description": "#E750B0"
+          },
+          "Tint 20": {
+            "value": "#ea66ba",
+            "type": "color",
+            "description": "#EA66BA"
+          },
+          "Tint 30": {
+            "value": "#ef85c8",
+            "type": "color",
+            "description": "#EF85C8"
+          },
+          "Tint 40": {
+            "value": "#f7c0e3",
+            "type": "color",
+            "description": "#F7C0E3"
+          },
+          "Tint 50": {
+            "value": "#fbddf0",
+            "type": "color",
+            "description": "#FBDDF0"
+          },
+          "Tint 60": {
+            "value": "#fef6fb",
+            "type": "color",
+            "description": "#FEF6FB"
+          }
+        },
+        "Hot pink": {
+          "Shade 50": {
+            "value": "#240016",
+            "type": "color",
+            "description": "#240016"
+          },
+          "Shade 40": {
+            "value": "#44002a",
+            "type": "color",
+            "description": "#44002A"
+          },
+          "Shade 30": {
+            "value": "#7f004e",
+            "type": "color",
+            "description": "#7F004E"
+          },
+          "Shade 20": {
+            "value": "#ad006a",
+            "type": "color",
+            "description": "#AD006A"
+          },
+          "Shade 10": {
+            "value": "#cc007e",
+            "type": "color",
+            "description": "#CC007E"
+          },
+          "Primary": {
+            "value": "#e3008c",
+            "type": "color",
+            "description": "#E3008C"
+          },
+          "Tint 10": {
+            "value": "#e61c99",
+            "type": "color",
+            "description": "#E61C99"
+          },
+          "Tint 20": {
+            "value": "#ea38a6",
+            "type": "color",
+            "description": "#EA38A6"
+          },
+          "Tint 30": {
+            "value": "#ee5fb7",
+            "type": "color",
+            "description": "#EE5FB7"
+          },
+          "Tint 40": {
+            "value": "#f7adda",
+            "type": "color",
+            "description": "#F7ADDA"
+          },
+          "Tint 50": {
+            "value": "#fbd2eb",
+            "type": "color",
+            "description": "#FBD2EB"
+          },
+          "Tint 60": {
+            "value": "#fef4fa",
+            "type": "color",
+            "description": "#FEF4FA"
+          }
+        },
+        "Magenta": {
+          "Shade 50": {
+            "value": "#1f0013",
+            "type": "color",
+            "description": "#1F0013"
+          },
+          "Shade 40": {
+            "value": "#390024",
+            "type": "color",
+            "description": "#390024"
+          },
+          "Shade 30": {
+            "value": "#6b0043",
+            "type": "color",
+            "description": "#6B0043"
+          },
+          "Shade 20": {
+            "value": "#91005a",
+            "type": "color",
+            "description": "#91005A"
+          },
+          "Shade 10": {
+            "value": "#ac006b",
+            "type": "color",
+            "description": "#AC006B"
+          },
+          "Primary": {
+            "value": "#bf0077",
+            "type": "color",
+            "description": "#BF0077"
+          },
+          "Tint 10": {
+            "value": "#c71885",
+            "type": "color",
+            "description": "#C71885"
+          },
+          "Tint 20": {
+            "value": "#ce3293",
+            "type": "color",
+            "description": "#CE3293"
+          },
+          "Tint 30": {
+            "value": "#d957a8",
+            "type": "color",
+            "description": "#D957A8"
+          },
+          "Tint 40": {
+            "value": "#eca5d1",
+            "type": "color",
+            "description": "#ECA5D1"
+          },
+          "Tint 50": {
+            "value": "#f5cee6",
+            "type": "color",
+            "description": "#F5CEE6"
+          },
+          "Tint 60": {
+            "value": "#fcf2f9",
+            "type": "color",
+            "description": "#FCF2F9"
+          }
+        },
+        "Plum": {
+          "Shade 50": {
+            "value": "#13000c",
+            "type": "color",
+            "description": "#13000C"
+          },
+          "Shade 40": {
+            "value": "#240017",
+            "type": "color",
+            "description": "#240017"
+          },
+          "Shade 30": {
+            "value": "#43002b",
+            "type": "color",
+            "description": "#43002B"
+          },
+          "Shade 20": {
+            "value": "#5a003b",
+            "type": "color",
+            "description": "#5A003B"
+          },
+          "Shade 10": {
+            "value": "#6b0045",
+            "type": "color",
+            "description": "#6B0045"
+          },
+          "Primary": {
+            "value": "#77004d",
+            "type": "color",
+            "description": "#77004D"
+          },
+          "Tint 10": {
+            "value": "#87105d",
+            "type": "color",
+            "description": "#87105D"
+          },
+          "Tint 20": {
+            "value": "#98246f",
+            "type": "color",
+            "description": "#98246F"
+          },
+          "Tint 30": {
+            "value": "#ad4589",
+            "type": "color",
+            "description": "#AD4589"
+          },
+          "Tint 40": {
+            "value": "#d696c0",
+            "type": "color",
+            "description": "#D696C0"
+          },
+          "Tint 50": {
+            "value": "#e9c4dc",
+            "type": "color",
+            "description": "#E9C4DC"
+          },
+          "Tint 60": {
+            "value": "#faf0f6",
+            "type": "color",
+            "description": "#FAF0F6"
+          }
+        },
+        "Beige": {
+          "Shade 50": {
+            "value": "#141313",
+            "type": "color",
+            "description": "#141313"
+          },
+          "Shade 40": {
+            "value": "#252323",
+            "type": "color",
+            "description": "#252323"
+          },
+          "Shade 30": {
+            "value": "#444241",
+            "type": "color",
+            "description": "#444241"
+          },
+          "Shade 20": {
+            "value": "#5d5958",
+            "type": "color",
+            "description": "#5D5958"
+          },
+          "Shade 10": {
+            "value": "#6e6968",
+            "type": "color",
+            "description": "#6E6968"
+          },
+          "Primary": {
+            "value": "#7a7574",
+            "type": "color",
+            "description": "#7A7574"
+          },
+          "Tint 10": {
+            "value": "#8a8584",
+            "type": "color",
+            "description": "#8A8584"
+          },
+          "Tint 20": {
+            "value": "#9a9594",
+            "type": "color",
+            "description": "#9A9594"
+          },
+          "Tint 30": {
+            "value": "#afabaa",
+            "type": "color",
+            "description": "#AFABAA"
+          },
+          "Tint 40": {
+            "value": "#d7d4d4",
+            "type": "color",
+            "description": "#D7D4D4"
+          },
+          "Tint 50": {
+            "value": "#eae8e8",
+            "type": "color",
+            "description": "#EAE8E8"
+          },
+          "Tint 60": {
+            "value": "#faf9f9",
+            "type": "color",
+            "description": "#FAF9F9"
+          }
+        },
+        "Mink": {
+          "Shade 50": {
+            "value": "#0f0e0e",
+            "type": "color",
+            "description": "#0F0E0E"
+          },
+          "Shade 40": {
+            "value": "#1c1b1a",
+            "type": "color",
+            "description": "#1C1B1A"
+          },
+          "Shade 30": {
+            "value": "#343231",
+            "type": "color",
+            "description": "#343231"
+          },
+          "Shade 20": {
+            "value": "#474443",
+            "type": "color",
+            "description": "#474443"
+          },
+          "Shade 10": {
+            "value": "#54514f",
+            "type": "color",
+            "description": "#54514F"
+          },
+          "Primary": {
+            "value": "#5d5a58",
+            "type": "color",
+            "description": "#5D5A58"
+          },
+          "Tint 10": {
+            "value": "#706d6b",
+            "type": "color",
+            "description": "#706D6B"
+          },
+          "Tint 20": {
+            "value": "#84817e",
+            "type": "color",
+            "description": "#84817E"
+          },
+          "Tint 30": {
+            "value": "#9e9b99",
+            "type": "color",
+            "description": "#9E9B99"
+          },
+          "Tint 40": {
+            "value": "#cecccb",
+            "type": "color",
+            "description": "#CECCCB"
+          },
+          "Tint 50": {
+            "value": "#e5e4e3",
+            "type": "color",
+            "description": "#E5E4E3"
+          },
+          "Tint 60": {
+            "value": "#f8f8f8",
+            "type": "color",
+            "description": "#F8F8F8"
+          }
+        },
+        "Silver": {
+          "Shade 50": {
+            "value": "#151818",
+            "type": "color",
+            "description": "#151818"
+          },
+          "Shade 40": {
+            "value": "#282d2e",
+            "type": "color",
+            "description": "#282D2E"
+          },
+          "Shade 30": {
+            "value": "#4a5356",
+            "type": "color",
+            "description": "#4A5356"
+          },
+          "Shade 20": {
+            "value": "#657174",
+            "type": "color",
+            "description": "#657174"
+          },
+          "Shade 10": {
+            "value": "#78868a",
+            "type": "color",
+            "description": "#78868A"
+          },
+          "Primary": {
+            "value": "#859599",
+            "type": "color",
+            "description": "#859599"
+          },
+          "Tint 10": {
+            "value": "#92a1a5",
+            "type": "color",
+            "description": "#92A1A5"
+          },
+          "Tint 20": {
+            "value": "#a0aeb1",
+            "type": "color",
+            "description": "#A0AEB1"
+          },
+          "Tint 30": {
+            "value": "#b3bfc2",
+            "type": "color",
+            "description": "#B3BFC2"
+          },
+          "Tint 40": {
+            "value": "#d8dfe0",
+            "type": "color",
+            "description": "#D8DFE0"
+          },
+          "Tint 50": {
+            "value": "#eaeeef",
+            "type": "color",
+            "description": "#EAEEEF"
+          },
+          "Tint 60": {
+            "value": "#fafbfb",
+            "type": "color",
+            "description": "#FAFBFB"
+          }
+        },
+        "Platinum": {
+          "Shade 50": {
+            "value": "#111314",
+            "type": "color",
+            "description": "#111314"
+          },
+          "Shade 40": {
+            "value": "#1f2426",
+            "type": "color",
+            "description": "#1F2426"
+          },
+          "Shade 30": {
+            "value": "#3b4447",
+            "type": "color",
+            "description": "#3B4447"
+          },
+          "Shade 20": {
+            "value": "#505c60",
+            "type": "color",
+            "description": "#505C60"
+          },
+          "Shade 10": {
+            "value": "#5f6d71",
+            "type": "color",
+            "description": "#5F6D71"
+          },
+          "Primary": {
+            "value": "#69797e",
+            "type": "color",
+            "description": "#69797E"
+          },
+          "Tint 10": {
+            "value": "#79898d",
+            "type": "color",
+            "description": "#79898D"
+          },
+          "Tint 20": {
+            "value": "#89989d",
+            "type": "color",
+            "description": "#89989D"
+          },
+          "Tint 30": {
+            "value": "#a0adb2",
+            "type": "color",
+            "description": "#A0ADB2"
+          },
+          "Tint 40": {
+            "value": "#cdd6d8",
+            "type": "color",
+            "description": "#CDD6D8"
+          },
+          "Tint 50": {
+            "value": "#e4e9ea",
+            "type": "color",
+            "description": "#E4E9EA"
+          },
+          "Tint 60": {
+            "value": "#f8f9fa",
+            "type": "color",
+            "description": "#F8F9FA"
+          }
+        },
+        "Anchor": {
+          "Shade 50": {
+            "value": "#090a0b",
+            "type": "color",
+            "description": "#090A0B"
+          },
+          "Shade 40": {
+            "value": "#111315",
+            "type": "color",
+            "description": "#111315"
+          },
+          "Shade 30": {
+            "value": "#202427",
+            "type": "color",
+            "description": "#202427"
+          },
+          "Shade 20": {
+            "value": "#2b3135",
+            "type": "color",
+            "description": "#2B3135"
+          },
+          "Shade 10": {
+            "value": "#333a3f",
+            "type": "color",
+            "description": "#333A3F"
+          },
+          "Primary": {
+            "value": "#394146",
+            "type": "color",
+            "description": "#394146"
+          },
+          "Tint 10": {
+            "value": "#4d565c",
+            "type": "color",
+            "description": "#4D565C"
+          },
+          "Tint 20": {
+            "value": "#626c72",
+            "type": "color",
+            "description": "#626C72"
+          },
+          "Tint 30": {
+            "value": "#808a90",
+            "type": "color",
+            "description": "#808A90"
+          },
+          "Tint 40": {
+            "value": "#bcc3c7",
+            "type": "color",
+            "description": "#BCC3C7"
+          },
+          "Tint 50": {
+            "value": "#dbdfe1",
+            "type": "color",
+            "description": "#DBDFE1"
+          },
+          "Tint 60": {
+            "value": "#f6f7f8",
+            "type": "color",
+            "description": "#F6F7F8"
+          }
+        },
+        "Charcoal": {
+          "Shade 50": {
+            "value": "#090909",
+            "type": "color",
+            "description": "#090909"
+          },
+          "Shade 40": {
+            "value": "#111111",
+            "type": "color",
+            "description": "#111111"
+          },
+          "Shade 30": {
+            "value": "#202020",
+            "type": "color",
+            "description": "#202020"
+          },
+          "Shade 20": {
+            "value": "#2b2b2b",
+            "type": "color",
+            "description": "#2B2B2B"
+          },
+          "Shade 10": {
+            "value": "#333333",
+            "type": "color",
+            "description": "#333333"
+          },
+          "Primary": {
+            "value": "#393939",
+            "type": "color",
+            "description": "#393939"
+          },
+          "Tint 10": {
+            "value": "#515151",
+            "type": "color",
+            "description": "#515151"
+          },
+          "Tint 20": {
+            "value": "#686868",
+            "type": "color",
+            "description": "#686868"
+          },
+          "Tint 30": {
+            "value": "#888888",
+            "type": "color",
+            "description": "#888888"
+          },
+          "Tint 40": {
+            "value": "#c4c4c4",
+            "type": "color",
+            "description": "#C4C4C4"
+          },
+          "Tint 50": {
+            "value": "#dfdfdf",
+            "type": "color",
+            "description": "#DFDFDF"
+          },
+          "Tint 60": {
+            "value": "#f7f7f7",
+            "type": "color",
+            "description": "#F7F7F7"
+          }
+        },
+        "Information": {
+          "Primary": {
+            "value": "#007e73",
+            "type": "color"
+          },
+          "Tint 30": {
+            "value": "#8ad0ca",
+            "type": "color"
+          },
+          "Tint 60": {
+            "value": "#e8f8f7",
+            "type": "color"
+          },
+          "Tint 40": {
+            "value": "#abe6e1",
+            "type": "color"
+          },
+          "Tint 50": {
+            "value": "#caedea",
+            "type": "color"
+          },
+          "Tint 20": {
+            "value": "#59b9b1",
+            "type": "color"
+          },
+          "Tint 10": {
+            "value": "#029b8d",
+            "type": "color"
+          },
+          "Shade 10": {
+            "value": "#00554e",
+            "type": "color"
+          },
+          "Shade 20": {
+            "value": "#003e39",
+            "type": "color"
+          }
+        }
+      },
+      "Alpha": {
+        "White": {
+          "0": {
+            "value": "#ffffff00",
+            "type": "color",
+            "description": "#FFFFFF00"
+          },
+          "5": {
+            "value": "#ffffff0d",
+            "type": "color",
+            "description": "#FFFFFF0D"
+          },
+          "10": {
+            "value": "#ffffff1a",
+            "type": "color",
+            "description": "#FFFFFF1A"
+          },
+          "20": {
+            "value": "#ffffff33",
+            "type": "color",
+            "description": "#FFFFFF33"
+          },
+          "30": {
+            "value": "#ffffff4d",
+            "type": "color",
+            "description": "#FFFFFF4D"
+          },
+          "40": {
+            "value": "#ffffff66",
+            "type": "color",
+            "description": "#FFFFFF66"
+          },
+          "50": {
+            "value": "#ffffff80",
+            "type": "color",
+            "description": "#FFFFFF80"
+          },
+          "60": {
+            "value": "#ffffff99",
+            "type": "color",
+            "description": "#FFFFFF99"
+          },
+          "70": {
+            "value": "#ffffffb3",
+            "type": "color",
+            "description": "#FFFFFFB2"
+          },
+          "80": {
+            "value": "#ffffffcc",
+            "type": "color",
+            "description": "#FFFFFFCC"
+          },
+          "90": {
+            "value": "#ffffffe6",
+            "type": "color",
+            "description": "#FFFFFFE5"
+          }
+        },
+        "Black": {
+          "0": {
+            "value": "#00000000",
+            "type": "color",
+            "description": "#00000000"
+          },
+          "5": {
+            "value": "#0000000d",
+            "type": "color",
+            "description": "#0000000D"
+          },
+          "10": {
+            "value": "#0000001a",
+            "type": "color",
+            "description": "#0000001A"
+          },
+          "20": {
+            "value": "#00000033",
+            "type": "color",
+            "description": "#00000033"
+          },
+          "30": {
+            "value": "#0000004d",
+            "type": "color",
+            "description": "#0000004D"
+          },
+          "40": {
+            "value": "#00000066",
+            "type": "color",
+            "description": "#00000066"
+          },
+          "50": {
+            "value": "#00000080",
+            "type": "color",
+            "description": "#00000080"
+          },
+          "60": {
+            "value": "#00000099",
+            "type": "color",
+            "description": "#00000099"
+          },
+          "70": {
+            "value": "#000000b3",
+            "type": "color",
+            "description": "#000000B2"
+          },
+          "80": {
+            "value": "#000000cc",
+            "type": "color",
+            "description": "#000000CC"
+          },
+          "90": {
+            "value": "#000000e6",
+            "type": "color",
+            "description": "#000000E5"
+          }
+        },
+        "Brand-10": {
+          "5": {
+            "value": "#0f1a380d",
+            "type": "color",
+            "description": "#1A1A1A0D"
+          },
+          "10": {
+            "value": "#0f1a381a",
+            "type": "color",
+            "description": "#1A1A1A1A"
+          },
+          "20": {
+            "value": "#0f1a3833",
+            "type": "color",
+            "description": "#1A1A1A33"
+          },
+          "30": {
+            "value": "#0f1a384d",
+            "type": "color",
+            "description": "#1A1A1A4D"
+          },
+          "40": {
+            "value": "#0f1a3866",
+            "type": "color",
+            "description": "#1A1A1A66"
+          },
+          "50": {
+            "value": "#0f1a3880",
+            "type": "color",
+            "description": "#1A1A1A80"
+          },
+          "60": {
+            "value": "#0f1a3899",
+            "type": "color",
+            "description": "#1A1A1A99"
+          },
+          "70": {
+            "value": "#0f1a38b3",
+            "type": "color",
+            "description": "#1A1A1AB2"
+          },
+          "80": {
+            "value": "#0f1a38cc",
+            "type": "color",
+            "description": "#1A1A1ACC"
+          },
+          "90": {
+            "value": "#0f1a38e6",
+            "type": "color",
+            "description": "#1A1A1AE5"
+          }
+        }
+      },
+      "Data viz": {
+        "Core": {
+          "Blue": {
+            "value": "{Brand-60}",
+            "type": "color"
+          },
+          "Gray": {
+            "value": "#a2aeb5",
+            "type": "color"
+          },
+          "Red": {
+            "value": "#b94431",
+            "type": "color"
+          },
+          "Teal": {
+            "value": "#05a3b1",
+            "type": "color"
+          },
+          "Ocean": {
+            "value": "#0b3873",
+            "type": "color"
+          },
+          "Green": {
+            "value": "#529c74",
+            "type": "color"
+          },
+          "Yellow": {
+            "value": "#df9f37",
+            "type": "color"
+          }
+        },
+        "Semantic": {
+          "Light bkgd": {
+            "Positive": {
+              "value": "#529c74",
+              "type": "color"
+            },
+            "Notice": {
+              "value": "#df9f37",
+              "type": "color"
+            },
+            "Negative": {
+              "value": "#b94431",
+              "type": "color"
+            }
+          },
+          "Dark bkgd": {
+            "Positive": {
+              "value": "#37bb65",
+              "type": "color"
+            },
+            "Negative": {
+              "value": "#cc2e48",
+              "type": "color"
+            },
+            "Notice": {
+              "value": "#df9f37",
+              "type": "color"
+            }
+          }
+        },
+        "Sequential": {
+          "Blue400": {
+            "value": "#133a77",
+            "type": "color"
+          },
+          "Blue300": {
+            "value": "{Brand-60}",
+            "type": "color"
+          },
+          "Blue200": {
+            "value": "#6f94ce",
+            "type": "color"
+          },
+          "Blue100": {
+            "value": "#9ebbe6",
+            "type": "color"
+          },
+          "Gray400": {
+            "value": "#36383a",
+            "type": "color"
+          },
+          "Gray300": {
+            "value": "#646b6f",
+            "type": "color"
+          },
+          "Gray200": {
+            "value": "#a2aeb5",
+            "type": "color"
+          },
+          "Gray100": {
+            "value": "#d1dbe2",
+            "type": "color"
+          },
+          "Red400": {
+            "value": "#460f05",
+            "type": "color"
+          },
+          "Red300": {
+            "value": "#8c2e20",
+            "type": "color"
+          },
+          "Red200": {
+            "value": "#b94431",
+            "type": "color"
+          },
+          "Red100": {
+            "value": "#cf8a7e",
+            "type": "color"
+          },
+          "Teal400": {
+            "value": "#063f44",
+            "type": "color"
+          },
+          "Teal300": {
+            "value": "#136a73",
+            "type": "color"
+          },
+          "Teal200": {
+            "value": "#05a3b1",
+            "type": "color"
+          },
+          "Teal100": {
+            "value": "#80d0d7",
+            "type": "color"
+          },
+          "Ocean400": {
+            "value": "#071e39",
+            "type": "color"
+          },
+          "Ocean300": {
+            "value": "#0b3873",
+            "type": "color"
+          },
+          "Ocean200": {
+            "value": "#5a74cb",
+            "type": "color"
+          },
+          "Ocean100": {
+            "value": "#9ab2ff",
+            "type": "color"
+          },
+          "Green400": {
+            "value": "#08362a",
+            "type": "color"
+          },
+          "Green300": {
+            "value": "#1d6953",
+            "type": "color"
+          },
+          "Green200": {
+            "value": "#529c74",
+            "type": "color"
+          },
+          "Green100": {
+            "value": "#87c3a9",
+            "type": "color"
+          },
+          "Yellow400": {
+            "value": "#563b10",
+            "type": "color"
+          },
+          "Yellow300": {
+            "value": "#a06a14",
+            "type": "color"
+          },
+          "Yellow200": {
+            "value": "#df9f37",
+            "type": "color"
+          },
+          "Yellow100": {
+            "value": "#ffd592",
+            "type": "color"
+          }
+        }
+      },
+      "Brand": {
+        "Brand-10": {
+          "value": "#0f1a38",
+          "type": "color"
+        },
+        "Brand-20": {
+          "value": "#041e47",
+          "type": "color"
+        },
+        "Brand-30": {
+          "value": "#052c69",
+          "type": "color"
+        },
+        "Brand-40": {
+          "value": "#0c3069",
+          "type": "color"
+        },
+        "Brand-50": {
+          "value": "#19458b",
+          "type": "color"
+        },
+        "Brand-60": {
+          "value": "#295cad",
+          "type": "color"
+        },
+        "Brand-70": {
+          "value": "#3e76cf",
+          "type": "color"
+        },
+        "Brand-80": {
+          "value": "#5692f1",
+          "type": "color"
+        },
+        "Brand-90": {
+          "value": "#80b1ff",
+          "type": "color"
+        },
+        "Brand-100": {
+          "value": "#a5c8ff",
+          "type": "color"
+        },
+        "Brand-110": {
+          "value": "#a5c8ff",
+          "type": "color"
+        },
+        "Brand-120": {
+          "value": "#eef5ff",
+          "type": "color"
+        },
+        "Brand-130": {
+          "value": "#f5f9ff",
+          "type": "color"
+        }
+      }
+    },
+    "borderRadius": {
+      "None": {
+        "value": 0,
+        "type": "number"
+      },
+      "Small": {
+        "value": 2,
+        "type": "number"
+      },
+      "Medium": {
+        "value": 4,
+        "type": "number"
+      },
+      "Large": {
+        "value": 6,
+        "type": "number"
+      },
+      "X-Large": {
+        "value": 8,
+        "type": "number"
+      },
+      "Circular": {
+        "value": 9999,
+        "type": "number"
+      }
+    },
+    "spacingHorizontal": {
+      "None": {
+        "value": 0,
+        "type": "number"
+      },
+      "XXS": {
+        "value": 2,
+        "type": "number"
+      },
+      "XS": {
+        "value": 4,
+        "type": "number"
+      },
+      "SNudge": {
+        "value": 6,
+        "type": "number"
+      },
+      "S": {
+        "value": 8,
+        "type": "number"
+      },
+      "MNudge": {
+        "value": 12,
+        "type": "number"
+      },
+      "M": {
+        "value": 16,
+        "type": "number"
+      },
+      "L": {
+        "value": 32,
+        "type": "number"
+      },
+      "XL": {
+        "value": 48,
+        "type": "number"
+      },
+      "XXL": {
+        "value": 52,
+        "type": "number"
+      },
+      "XXXL": {
+        "value": 56,
+        "type": "number"
+      },
+      "LNudge": {
+        "value": 24,
+        "type": "number",
+        "description": "Use for spacing between columns"
+      },
+      "XXXXL": {
+        "value": 64,
+        "type": "number"
+      }
+    },
+    "strokeWidth": {
+      "None": {
+        "value": 0,
+        "type": "number"
+      },
+      "Thin": {
+        "value": 1,
+        "type": "number"
+      },
+      "Thick": {
+        "value": 2,
+        "type": "number"
+      },
+      "Thicker": {
+        "value": 4,
+        "type": "number"
+      },
+      "Thickest": {
+        "value": 6,
+        "type": "number"
+      }
+    },
+    "spacingVertical": {
+      "None": {
+        "value": 0,
+        "type": "number"
+      },
+      "XXS": {
+        "value": 2,
+        "type": "number"
+      },
+      "XS": {
+        "value": 4,
+        "type": "number"
+      },
+      "SNudge": {
+        "value": 6,
+        "type": "number"
+      },
+      "S": {
+        "value": 8,
+        "type": "number"
+      },
+      "MNudge": {
+        "value": 12,
+        "type": "number"
+      },
+      "M": {
+        "value": 16,
+        "type": "number"
+      },
+      "L": {
+        "value": 32,
+        "type": "number"
+      },
+      "XL": {
+        "value": 48,
+        "type": "number",
+        "description": "Use for spacing between rows"
+      },
+      "XXL": {
+        "value": 52,
+        "type": "number"
+      },
+      "XXXL": {
+        "value": 56,
+        "type": "number"
+      },
+      "LNudge": {
+        "value": 24,
+        "type": "number"
+      },
+      "XXXXL": {
+        "value": 64,
+        "type": "number"
+      }
+    }
+  },
+  "Typography/Base": {
+    "fontFamily": {
+      "Base": {
+        "value": "Segoe UI",
+        "type": "text"
+      }
+    },
+    "fontWeight": {
+      "Regular": {
+        "value": "400",
+        "type": "text"
+      },
+      "Semibold": {
+        "value": "600",
+        "type": "text"
+      },
+      "Bold": {
+        "value": "700",
+        "type": "text"
+      },
+      "Semilight": {
+        "value": "300",
+        "type": "text"
+      },
+      "Light": {
+        "value": "200",
+        "type": "text"
+      }
+    },
+    "lineHeight": {
+      "Base100": {
+        "value": 14,
+        "type": "number"
+      },
+      "Base200": {
+        "value": 16,
+        "type": "number"
+      },
+      "Base300": {
+        "value": 22,
+        "type": "number"
+      },
+      "Base400": {
+        "value": 24,
+        "type": "number"
+      },
+      "Base500": {
+        "value": 28,
+        "type": "number"
+      },
+      "Base600": {
+        "value": 34,
+        "type": "number"
+      },
+      "Base700": {
+        "value": 36,
+        "type": "number"
+      },
+      "Base800": {
+        "value": 48,
+        "type": "number"
+      },
+      "Base900": {
+        "value": 52,
+        "type": "number"
+      },
+      "base1000": {
+        "value": 92,
+        "type": "number"
+      },
+      "Base920": {
+        "value": 64,
+        "type": "number"
+      },
+      "Base980": {
+        "value": 70,
+        "type": "number"
+      }
+    },
+    "fontSize": {
+      "1000": {
+        "value": 68,
+        "type": "number"
+      },
+      "Base100": {
+        "value": 10,
+        "type": "number"
+      },
+      "Base200": {
+        "value": 12,
+        "type": "number"
+      },
+      "Base300": {
+        "value": 14,
+        "type": "number"
+      },
+      "Base400": {
+        "value": 16,
+        "type": "number"
+      },
+      "Base500": {
+        "value": 20,
+        "type": "number"
+      },
+      "Base600": {
+        "value": 24,
+        "type": "number"
+      },
+      "Base700": {
+        "value": 28,
+        "type": "number"
+      },
+      "Base800": {
+        "value": 32,
+        "type": "number"
+      },
+      "Base900": {
+        "value": 40,
+        "type": "number"
+      },
+      "Base980": {
+        "value": 52,
+        "type": "number"
+      },
+      "Base920": {
+        "value": 48,
+        "type": "number"
+      }
+    }
+  },
+  "Theme/Light": {
+    "Neutral": {
+      "Background": {
+        "1": {
+          "Rest": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-80}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-70}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Colors.Neutral.Grey-90}",
+            "type": "color"
+          }
+        },
+        "2": {
+          "Rest": {
+            "value": "#f5f4f2",
+            "type": "color"
+          }
+        },
+        "3": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-70}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-80}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-80}",
+            "type": "color"
+          }
+        },
+        "4": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-90}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-70}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-60}",
+            "type": "color"
+          }
+        },
+        "5": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-80}",
+            "type": "color"
+          }
+        },
+        "6": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-90}",
+            "type": "color"
+          }
+        },
+        "Inverted": {
+          "Rest": {
+            "value": "{Brand-10}",
+            "type": "color"
+          },
+          "Disabled": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.10}",
+              "type": "color"
+            }
+          }
+        },
+        "Alpha": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.50}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.80}",
+              "type": "color"
+            }
+          }
+        },
+        "Static": {
+          "Rest": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color"
+          }
+        },
+        "Subtle": {
+          "Rest": {
+            "value": "{Colors.Alpha.White.0}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-80}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-70}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Colors.Neutral.Grey-90}",
+            "type": "color"
+          },
+          "Light alpha": {
+            "Hover": {
+              "value": "{Colors.Alpha.White.70}",
+              "type": "color"
+            },
+            "Pressed": {
+              "value": "{Colors.Alpha.White.50}",
+              "type": "color"
+            },
+            "Selected": {
+              "value": "{Colors.Alpha.White.0}",
+              "type": "color"
+            }
+          },
+          "Inverted": {
+            "Rest": {
+              "value": "{Colors.Alpha.Black.0}",
+              "type": "color"
+            },
+            "Hover": {
+              "value": "{Colors.Alpha.Black.10}",
+              "type": "color"
+            },
+            "Pressed": {
+              "value": "{Colors.Alpha.Black.30}",
+              "type": "color"
+            },
+            "Selected": {
+              "value": "{Colors.Alpha.Black.20}",
+              "type": "color"
+            }
+          }
+        },
+        "Transparent": {
+          "Rest": {
+            "value": "{Colors.Alpha.White.0}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Colors.Alpha.White.0}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Colors.Alpha.White.0}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Colors.Alpha.White.0}",
+            "type": "color"
+          }
+        },
+        "Disabled": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-80}",
+            "type": "color"
+          }
+        },
+        "Stencil": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Neutral.Grey-70}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Neutral.Grey-90}",
+              "type": "color"
+            }
+          }
+        },
+        "Overlay": {
+          "Rest": {
+            "value": "{Colors.Alpha.Black.40}",
+            "type": "color"
+          },
+          "Scrollbar": {
+            "Rest": {
+              "value": "{Colors.Alpha.Black.50}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Foreground": {
+        "1": {
+          "Rest primary text": {
+            "value": "{Brand-10}",
+            "type": "color",
+            "description": "Primary text color"
+          },
+          "Hover": {
+            "value": "{Brand-30}",
+            "type": "color",
+            "description": "Hover state for text and icon elements that start at Neutral Foreground 1 for rest state"
+          },
+          "Pressed": {
+            "value": "{Brand-30}",
+            "type": "color",
+            "description": "Pressed state for text and icon elements that start at Neutral Foreground 1 for rest state"
+          },
+          "Selected": {
+            "value": "{Brand-30}",
+            "type": "color",
+            "description": "Selected state for text and icon elements that start at Neutral Foreground 1 for rest state"
+          }
+        },
+        "2": {
+          "Rest secondary text": {
+            "value": "{Colors.Neutral.Grey-12}",
+            "type": "color",
+            "description": "Secondary text color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-6}",
+            "type": "color",
+            "description": "Hover state text, used in menus, list items (i.e. Chat, channels). In v9, this is usually associated w/ Neutral Foreground 2 as the rest state (hence the numbering)"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-6}",
+            "type": "color",
+            "description": "Pressed state text/icons (usually paired w/ a visible background color change."
+          },
+          "Selected": {
+            "value": "{Colors.Neutral.Grey-6}",
+            "type": "color",
+            "description": "Selected state text/icons. This needs to be paired with a Neutral Background 2 Selected token or a Transparent Background Interactive token"
+          },
+          "Brand": {
+            "Hover": {
+              "value": "{Brand-50}",
+              "type": "color",
+              "description": "Hover state color for icon buttons (“Transparent” or “Subtle” variant) and menu list items that have icons. In both, it is paired w/ v9’s Transparent Background Interactive"
+            },
+            "Pressed": {
+              "value": "{Brand-40}",
+              "type": "color",
+              "description": "Pressed state color for icon buttons (“Transparent” or “Subtle” variant) and menu list items that have icons. In both, it is paired w/ v9’s Transparent Background Interactive"
+            },
+            "Selected": {
+              "value": "{Brand-30}",
+              "type": "color",
+              "description": "Selected state color for icon buttons (“Transparent” or “Subtle” variant) and menu list items that have icons. In both, it is paired w/ v9’s Transparent Background Interactive"
+            },
+            "Rest": {
+              "value": "{Brand-60}",
+              "type": "color",
+              "description": "Hover state color for icon buttons (“Transparent” or “Subtle” variant) and menu list items that have icons. In both, it is paired w/ v9’s Transparent Background Interactive"
+            }
+          },
+          "Link": {
+            "Rest": {
+              "value": "{Brand-60}",
+              "type": "color",
+              "description": "Text link color for when you want the color to stay neutral (or more subtle) and closer with the rest of the body text."
+            },
+            "Hover": {
+              "value": "{Brand-50}",
+              "type": "color",
+              "description": "Hover state for text link color for when you want the color to stay neutral (or more subtle) and closer with the rest of the body text."
+            },
+            "Pressed": {
+              "value": "{Brand-40}",
+              "type": "color",
+              "description": "Pressed state for text link color for when you want the color to stay neutral (or more subtle) and closer with the rest of the body text."
+            },
+            "Selected": {
+              "value": "{Brand-30}",
+              "type": "color"
+            }
+          }
+        },
+        "4": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-30}",
+            "type": "color",
+            "description": "This was added to make placeholder text in input fields subtler when compared against user inputted text. Use this sparingly as the text only passes 4.5:1 contrast up until Background 3"
+          }
+        },
+        "Disabled": {
+          "2": {
+            "Rest": {
+              "value": "{Colors.Neutral.Grey-60}",
+              "type": "color"
+            }
+          },
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-50}",
+            "type": "color",
+            "description": "Disabled/Inactive state for controls that the user can’t interact with. Note: In V9 we simplified the number of disabled tokens supported, make sure associated background is updated as well."
+          }
+        },
+        "Static": {
+          "Inverted": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Inverted text that needs to stay white across all themes. Examples of this include confirmation/toasts where the background is dark in an other light UI (but then in dark theme we want to keep the toast bg dark)"
+            }
+          }
+        },
+        "Inverted": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Used for text/icon elements on inverted background surfaces. True inversion across all themes"
+            },
+            "Hover": {
+              "value": "{Colors.Neutral.Grey-80}",
+              "type": "color",
+              "description": "Hover state for elements using NeutralForegroundInverted at rest. Text/icon elements on inverted background surfaces"
+            },
+            "Pressed": {
+              "value": "{Colors.Neutral.Grey-70}",
+              "type": "color",
+              "description": "Pressed state for elements using NeutralForegroundInverted at rest. Text/icon elements on inverted background surfaces"
+            },
+            "Selected": {
+              "value": "{Colors.Neutral.Grey-60}",
+              "type": "color",
+              "description": "Selected state for elements using NeutralForegroundInverted at rest. Text/icon elements on inverted background surfaces"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Used for text/icon elements on inverted background surfaces, but need an exception to stay hcCanvasText in high contrast"
+            }
+          },
+          "Disabled": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.40}",
+              "type": "color",
+              "description": "Added for controls that need to communicate inactive/disabled state over elements that are media, not single color, brand color, or dark surfaces in an otherwise light ui"
+            }
+          },
+          "Link": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Rest state text for interactive links over dark backgrounds"
+            },
+            "Hover": {
+              "value": "{Colors.Neutral.Grey-90}",
+              "type": "color",
+              "description": "Hover state text, for interactive links over dark backgrounds"
+            },
+            "Pressed": {
+              "value": "{Colors.Neutral.Grey-80}",
+              "type": "color",
+              "description": "Pressed state text, for interactive links over dark backgrounds"
+            },
+            "Selected": {
+              "value": "{Colors.Neutral.Grey-70}",
+              "type": "color"
+            }
+          }
+        },
+        "On Brand": {
+          "Rest": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Primary button text, stays the same color between interaction states."
+          }
+        }
+      },
+      "Stroke": {
+        "1": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-70}",
+            "type": "color",
+            "description": "Secondary button borders, generally the border to use on controls.\nIn a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the primary divider in combination w/ Neutral Stroke over Backgrounds 3-5"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-60}",
+            "type": "color",
+            "description": "Secondary button borders, generally the border to use on controls.\nIn a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the primary divider in combination w/ Neutral Stroke over Backgrounds 3-5"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-50}",
+            "type": "color",
+            "description": "Secondary button borders, generally the border to use on controls.\nIn a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the primary divider in combination w/ Neutral Stroke over Backgrounds 3-5"
+          },
+          "Selected": {
+            "value": "{Colors.Neutral.Grey-40}",
+            "type": "color",
+            "description": "Secondary button borders, generally the border to use on controls.\nIn a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the primary divider in combination w/ Neutral Stroke over Backgrounds 3-5"
+          }
+        },
+        "2": {
+          "Rest": {
+            "value": "{Colors.Grey.White}",
+            "type": "color",
+            "description": "In a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the secondary divider in combination w/ Neutral Stroke over Backgrounds 3-5, or as the Primary divider in combination w/ Neutral Stroke 3 over Backgrounds 1-2"
+          }
+        },
+        "3": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-50}",
+            "type": "color",
+            "description": "In a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the secondary divider in combination w/ Neutral Stroke 2 over Backgrounds 1-2"
+          }
+        },
+        "Alpha": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Alpha.Black.5}",
+              "type": "color",
+              "description": "This was introduced as a subtle stroke around list items (in left rail) on the Mica material or the Mac native material. Transparency is useful over backgrounds that are not a solid color as it blends better."
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.20}",
+              "type": "color"
+            }
+          }
+        },
+        "Subtle": {
+          "Rest": {
+            "value": "#f5f4f2",
+            "type": "color",
+            "description": "For defining page sections of the UI (i.e. between entity header and canvas content, or between info panel and canvas content)"
+          }
+        },
+        "on Brand": {
+          "1": {
+            "Rest": {
+              "value": "{Brand-60}",
+              "type": "color",
+              "description": "Originally added for the inverted button (per Office.com’s request in Fluent 2). This is useful for when you need divider that stays white across all themes."
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "This was originally introduced for the Split button where there’s a divider between main button and menu button. It’s meant for linework over brand colored surfaces or over ‘inverted’ surfaces"
+            }
+          }
+        },
+        "Accessible": {
+          "Rest": {
+            "value": "{Brand-60}",
+            "type": "color",
+            "description": "This was added in order to meet the 3:1 contrast requirement for controls that are completely reliant on the linework to define the boundaries of that control (i.e. Toggle off, Checkbox, Radio button)"
+          },
+          "Hover": {
+            "value": "{Brand-50}",
+            "type": "color",
+            "description": "Hover state for elements that start at Neutral Stroke Accessible for rest. This was added in order to meet the 3:1 contrast requirement for controls that are completely reliant on the linework to define the boundaries of that control (i.e. Toggle off, Checkbox, Radio button)"
+          },
+          "Pressed": {
+            "value": "{Brand-40}",
+            "type": "color",
+            "description": "Pressed state for elements that start at Neutral Stroke Accessible for rest. This was added in order to meet the 3:1 contrast requirement for controls that are completely reliant on the linework to define the boundaries of that control (i.e. Toggle off, Checkbox, Radio button)"
+          },
+          "Selected": {
+            "value": "{Brand-30}",
+            "type": "color",
+            "description": "Selected state for elements that start at Neutral Stroke Accessible for rest. This was added in order to meet the 3:1 contrast requirement for controls that are completely reliant on the linework to define the boundaries of that control (i.e. Toggle off, Checkbox, Radio button)"
+          }
+        },
+        "Focus": {
+          "1": {
+            "Rest": {
+              "value": "{Brand-60}",
+              "type": "color",
+              "description": "Added to support keyboard focus borders. This should only show up when the user invokes the control via keyboarding"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Grey.White}",
+              "type": "color",
+              "description": "Added to support keyboard focus borders. This should only show up when the user invokes the control via keyboarding"
+            }
+          }
+        },
+        "Transparent": {
+          "Interactive": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.0}",
+              "type": "color",
+              "description": "When you need a control to show a border for interactive states in high contrast but remain invisible in Light and Dark themes. (set to 1px and call for this token)"
+            }
+          },
+          "Disabled": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.0}",
+              "type": "color",
+              "description": "When you need a control to show a border for a disabled control in high contrast but remain invisible in Light and Dark themes. (set to 1px and call for this token)"
+            }
+          },
+          "Rest": {
+            "value": "{Colors.Alpha.White.0}",
+            "type": "color",
+            "description": "When you need a control to show a border in high contrast but remain invisible in Light and Dark themes. (set to 1px and call for this token)"
+          }
+        },
+        "Disabled": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-70}",
+            "type": "color",
+            "description": "For controls that need a border and to communicate a disabled/inactive state."
+          },
+          "Inverted": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.40}",
+              "type": "color",
+              "description": "For controls that need a border and to communicate a disabled/inactive state, and the control sits over a dark surface an in otherwise light UI (light theme)"
+            }
+          }
+        }
+      }
+    },
+    "Brand": {
+      "Background": {
+        "1": {
+          "Rest": {
+            "value": "{Brand-60}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Brand-50}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-40}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Brand-30}",
+            "type": "color"
+          }
+        },
+        "2": {
+          "Rest": {
+            "value": "{Brand-10}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Brand-110}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-100}",
+            "type": "color"
+          }
+        },
+        "3": {
+          "Rest": {
+            "value": "{Brand-120}",
+            "type": "color"
+          }
+        },
+        "Inverted": {
+          "Rest": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Brand-120}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-130}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Brand-100}",
+            "type": "color"
+          }
+        },
+        "Static": {
+          "Rest": {
+            "value": "{Brand-60}",
+            "type": "color"
+          }
+        },
+        "Compound": {
+          "Rest": {
+            "value": "{Brand-60}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Brand-50}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-40}",
+            "type": "color"
+          }
+        }
+      },
+      "Foreground": {
+        "1": {
+          "Rest": {
+            "value": "{Brand-60}",
+            "type": "color",
+            "description": "This is good for text elements that need to use the brand color and are not links. Used in Unread Dividers for the text and Fluent v9 tinted badge, this set contains the Teams primary brand color for light and dark theme"
+          },
+          "Hover": {
+            "value": "{Brand-50}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-40}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Brand-30}",
+            "type": "color"
+          }
+        },
+        "2": {
+          "Rest": {
+            "value": "{Brand-80}",
+            "type": "color",
+            "description": "This is good for pairing with Brand Background 2 to create brand tint effect elements. The text color is slightly darker than typical brand primary to meet contrast against lighter shades of the brand color. Usage ex: Pill/Tag"
+          },
+          "Hover": {
+            "value": "{Brand-60}",
+            "type": "color",
+            "description": "Hover state for Brand Foreground 2. This is good for pairing with Brand Background 2 Hover to create brand tint effect elements. The text color is slightly darker than typical brand primary to meet contrast against lighter shades of the brand color. Usage ex: Pill/Tag"
+          },
+          "Pressed": {
+            "value": "{Brand-30}",
+            "type": "color",
+            "description": "Pressed state for Brand Foreground 2. This is good for pairing with Brand Background 2 Pressed to create brand tint effect elements. The text color is slightly darker than typical brand primary to meet contrast against lighter shades of the brand color. Usage ex: Pill/Tag"
+          }
+        },
+        "Link": {
+          "Rest": {
+            "value": "{Brand-60}",
+            "type": "color",
+            "description": "Text links that need to be brand colored"
+          },
+          "Hover": {
+            "value": "{Brand-50}",
+            "type": "color",
+            "description": "Hover state for text links that need to be brand colored"
+          },
+          "Pressed": {
+            "value": "{Brand-40}",
+            "type": "color",
+            "description": "Pressed state for text links that need to be brand colored"
+          },
+          "Selected": {
+            "value": "{Brand-30}",
+            "type": "color"
+          }
+        },
+        "Inverted": {
+          "Rest": {
+            "value": "{Brand-100}",
+            "type": "color",
+            "description": "Used for text elements that need to be brand colored on an inverted background."
+          },
+          "Hover": {
+            "value": "{Brand-110}",
+            "type": "color",
+            "description": "Hover state for text that starts at Brand Foreground Inverted at rest. Used for text elements that need to be brand colored on an inverted background."
+          },
+          "Pressed": {
+            "value": "{Brand-100}",
+            "type": "color",
+            "description": "Pressed state for text that starts at Brand Foreground Inverted at rest. Used for text elements that need to be brand colored on an inverted background."
+          }
+        },
+        "On Light": {
+          "Rest": {
+            "value": "{Brand-80}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Brand-70}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-50}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Brand-60}",
+            "type": "color"
+          }
+        },
+        "Compound": {
+          "Rest": {
+            "value": "{Brand-60}",
+            "type": "color",
+            "description": "Tab underline, Radio selected, icon selected. Compound in the name generally means it is selected and has additional hover and pressed state changes to move it back to unchecked/unselected state."
+          },
+          "Hover": {
+            "value": "{Brand-50}",
+            "type": "color",
+            "description": "Hover state for Tab underline, Radio selected, icon selected. Compound in the name generally means it is selected and has additional hover and pressed state changes to move it back to unchecked/unselected state."
+          },
+          "Pressed": {
+            "value": "{Brand-40}",
+            "type": "color",
+            "description": "Pressed state for Tab underline, Radio selected, icon selected. Compound in the name generally means it is selected and has additional hover and pressed state changes to move it back to unchecked/unselected state."
+          }
+        }
+      },
+      "Stroke": {
+        "1": {
+          "Rest": {
+            "value": "{Brand-60}",
+            "type": "color",
+            "description": "Used in Unread Dividers, this set contains the Teams primary brand color for light and dark theme"
+          },
+          "Hover": {
+            "value": "{Brand-50}",
+            "type": "color",
+            "description": "Hover state for controls that start at Brand Stroke 2 at rest. Added for adding additional contrast on tinted buttons, tinted badges, tinted pill/tags"
+          },
+          "Pressed": {
+            "value": "{Brand-40}",
+            "type": "color",
+            "description": "Pressed state for controls that start at Brand Stroke 2 at rest. Added for adding additional contrast on tinted buttons, tinted badges, tinted pill/tags"
+          },
+          "Selected": {
+            "value": "{Brand-30}",
+            "type": "color",
+            "description": "Pressed state for controls that start at Brand Stroke 2 at rest. Added for adding additional contrast on tinted buttons, tinted badges, tinted pill/tags"
+          }
+        },
+        "2": {
+          "Rest": {
+            "value": "{Brand-10}",
+            "type": "color",
+            "description": "Added for adding additional contrast on tinted buttons, tinted badges, tinted pill/tags"
+          },
+          "Contrast": {
+            "Rest": {
+              "value": "{Brand-110}",
+              "type": "color"
+            }
+          }
+        },
+        "3": {
+          "Rest": {
+            "value": "{Brand-90}",
+            "type": "color"
+          }
+        },
+        "Compound": {
+          "Rest": {
+            "value": "{Brand-60}",
+            "type": "color",
+            "description": "Used for the focus state of text inputs (text fields, text areas, combobox). Compound refers to controls that have selected+hover, selected+pressed states, generally for controls like Checkbox, Toggle switch, radio buttons"
+          },
+          "Hover": {
+            "value": "{Brand-50}",
+            "type": "color",
+            "description": "Compound refers to controls that have selected+hover, selected+pressed states, generally for controls like Checkbox, Toggle switch, radio buttons"
+          },
+          "Pressed": {
+            "value": "{Brand-40}",
+            "type": "color",
+            "description": "Compound refers to controls that have selected+hover, selected+pressed states, generally for controls like Checkbox, Toggle switch, radio buttons"
+          }
+        }
+      }
+    },
+    "Status": {
+      "Danger": {
+        "Background": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Cranberry.Tint 60}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Cranberry.Primary}",
+              "type": "color"
+            }
+          }
+        },
+        "Foreground": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Cranberry.Primary}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          }
+        },
+        "Stroke": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Cranberry.Primary}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Shared.Cranberry.Tint 30}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Success": {
+        "Background": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Green.Tint 60}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Green.Primary}",
+              "type": "color"
+            }
+          }
+        },
+        "Foreground": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Green.Primary}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          }
+        },
+        "Stroke": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Green.Primary}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Shared.Green.Tint 30}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Warning": {
+        "Background": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Orange.Tint 60}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Orange.Primary}",
+              "type": "color"
+            }
+          }
+        },
+        "Foreground": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Orange.Primary}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          }
+        },
+        "Stroke": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Orange.Primary}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Shared.Orange.Tint 30}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Oof": {
+        "Foreground": {
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Berry.Primary}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Away": {
+        "Background": {
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Marigold.Primary}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Available": {
+        "Foreground": {
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Light green.Primary}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Generic": {
+        "Anchor": {
+          "Background": {
+            "2": {
+              "Rest": {
+                "value": "{Colors.Shared.Anchor.Tint 40}",
+                "type": "color"
+              }
+            }
+          },
+          "Foreground": {
+            "2": {
+              "Rest": {
+                "value": "{Colors.Shared.Anchor.Shade 30}",
+                "type": "color"
+              }
+            }
+          },
+          "Stroke": {
+            "Active": {
+              "Rest": {
+                "value": "{Colors.Shared.Anchor.Primary}",
+                "type": "color"
+              }
+            }
+          }
+        },
+        "Information": {
+          "Background": {
+            "1": {
+              "Rest": {
+                "value": "{Colors.Shared.Information.Tint 60}",
+                "type": "color"
+              },
+              "Hover": {
+                "value": "{Colors.Shared.Information.Tint 50}",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "{Colors.Shared.Information.Tint 40}",
+                "type": "color"
+              }
+            }
+          },
+          "Stroke": {
+            "1": {
+              "Rest": {
+                "value": "{Colors.Shared.Information.Primary}",
+                "type": "color"
+              }
+            },
+            "2": {
+              "Rest": {
+                "value": "{Colors.Shared.Information.Tint 30}",
+                "type": "color"
+              },
+              "Hover": {
+                "value": "{Colors.Shared.Information.Tint 20}",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "{Colors.Shared.Information.Tint 10}",
+                "type": "color"
+              }
+            }
+          },
+          "Foreground": {
+            "Rest": {
+              "value": "{Colors.Shared.Information.Primary}",
+              "type": "color"
+            },
+            "Hover": {
+              "value": "{Colors.Shared.Information.Shade 10}",
+              "type": "color"
+            },
+            "Pressed": {
+              "value": "{Colors.Shared.Information.Shade 20}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Severe": {
+        "Background": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Dark Orange.Tint 60}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Dark Orange.Primary}",
+              "type": "color"
+            }
+          }
+        },
+        "Foreground": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Dark Orange.Primary}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          }
+        },
+        "Stroke": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Dark Orange.Primary}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Shared.Dark Orange.Tint 30}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Shadow": {
+      "ambient": {
+        "value": "#0000001f",
+        "type": "color"
+      },
+      "ambient-lighter": {
+        "value": "#0000000f",
+        "type": "color"
+      },
+      "ambient-darker": {
+        "value": "#00000033",
+        "type": "color"
+      },
+      "brand-ambient": {
+        "value": "#00000040",
+        "type": "color"
+      },
+      "key": {
+        "value": "#00000024",
+        "type": "color"
+      },
+      "key-lighter": {
+        "value": "#00000012",
+        "type": "color"
+      },
+      "key-darker": {
+        "value": "#0000003d",
+        "type": "color"
+      },
+      "brand-key": {
+        "value": "#0000004d",
+        "type": "color"
+      }
+    },
+    "Data viz": {
+      "Foreground": {
+        "Labels": {
+          "Categorical": {
+            "value": "{Colors.Brand.Brand-10}",
+            "type": "color"
+          },
+          "Data": {
+            "value": "{Colors.Neutral.Grey-12}",
+            "type": "color"
+          },
+          "Color": {
+            "Blue": {
+              "value": "{Colors.Data viz.Core.Blue}",
+              "type": "color"
+            },
+            "Gray": {
+              "value": "{Colors.Data viz.Core.Gray}",
+              "type": "color"
+            },
+            "Red": {
+              "value": "{Colors.Data viz.Core.Red}",
+              "type": "color"
+            },
+            "Teal": {
+              "value": "{Colors.Data viz.Core.Teal}",
+              "type": "color"
+            },
+            "Ocean": {
+              "value": "{Colors.Data viz.Core.Ocean}",
+              "type": "color"
+            },
+            "Green": {
+              "value": "{Colors.Data viz.Core.Green}",
+              "type": "color"
+            },
+            "Yellow300": {
+              "value": "{Colors.Data viz.Sequential.Yellow300}",
+              "type": "color"
+            },
+            "Blue400": {
+              "value": "{Colors.Data viz.Sequential.Blue400}",
+              "type": "color"
+            },
+            "Gray400": {
+              "value": "{Colors.Data viz.Sequential.Gray400}",
+              "type": "color"
+            },
+            "Red400": {
+              "value": "{Colors.Data viz.Sequential.Red400}",
+              "type": "color"
+            },
+            "Teal300": {
+              "value": "{Colors.Data viz.Sequential.Teal300}",
+              "type": "color"
+            },
+            "Red300": {
+              "value": "{Colors.Data viz.Sequential.Red300}",
+              "type": "color"
+            },
+            "Teal400": {
+              "value": "{Colors.Data viz.Sequential.Teal400}",
+              "type": "color"
+            },
+            "Ocean400": {
+              "value": "{Colors.Data viz.Sequential.Ocean400}",
+              "type": "color"
+            },
+            "Green400": {
+              "value": "{Colors.Data viz.Sequential.Green400}",
+              "type": "color"
+            },
+            "Yellow400": {
+              "value": "{Colors.Data viz.Sequential.Yellow400}",
+              "type": "color"
+            },
+            "Green300": {
+              "value": "{Colors.Data viz.Sequential.Green300}",
+              "type": "color"
+            },
+            "Gray300": {
+              "value": "{Colors.Data viz.Sequential.Gray300}",
+              "type": "color"
+            },
+            "Blue200": {
+              "value": "{Colors.Data viz.Sequential.Blue200}",
+              "type": "color"
+            },
+            "Ocean200": {
+              "value": "{Colors.Data viz.Sequential.Ocean200}",
+              "type": "color"
+            }
+          }
+        },
+        "Accessibility": {
+          "Text dark bkgd": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color"
+          },
+          "Text light bkgd": {
+            "value": "{Colors.Neutral.Black}",
+            "type": "color"
+          }
+        },
+        "KPI Card": {
+          "Text dark bkgd": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color"
+          },
+          "Text light bkgd": {
+            "value": "{Colors.Neutral.Grey-40}",
+            "type": "color"
+          }
+        }
+      },
+      "Stroke": {
+        "Gridline": {
+          "value": "{Colors.Neutral.Grey-70}",
+          "type": "color"
+        },
+        "Axis-Target-Benchmark": {
+          "value": "{Colors.Neutral.Black}",
+          "type": "color"
+        },
+        "Color": {
+          "Blue": {
+            "value": "{Colors.Data viz.Core.Blue}",
+            "type": "color"
+          },
+          "Blue400": {
+            "value": "{Colors.Data viz.Sequential.Blue400}",
+            "type": "color"
+          },
+          "Gray": {
+            "value": "{Colors.Data viz.Core.Gray}",
+            "type": "color"
+          },
+          "Gray400": {
+            "value": "{Colors.Data viz.Sequential.Gray400}",
+            "type": "color"
+          },
+          "Red": {
+            "value": "{Colors.Data viz.Core.Red}",
+            "type": "color"
+          },
+          "Red300": {
+            "value": "{Colors.Data viz.Sequential.Red300}",
+            "type": "color"
+          },
+          "Red400": {
+            "value": "{Colors.Data viz.Sequential.Red400}",
+            "type": "color"
+          },
+          "Teal": {
+            "value": "{Colors.Data viz.Core.Teal}",
+            "type": "color"
+          },
+          "Teal300": {
+            "value": "{Colors.Data viz.Sequential.Teal300}",
+            "type": "color"
+          },
+          "Teal400": {
+            "value": "{Colors.Data viz.Sequential.Teal400}",
+            "type": "color"
+          },
+          "Ocean": {
+            "value": "{Colors.Data viz.Core.Ocean}",
+            "type": "color"
+          },
+          "Ocean400": {
+            "value": "{Colors.Data viz.Sequential.Ocean400}",
+            "type": "color"
+          },
+          "Green": {
+            "value": "{Colors.Data viz.Core.Green}",
+            "type": "color"
+          },
+          "Green300": {
+            "value": "{Colors.Data viz.Sequential.Green300}",
+            "type": "color"
+          },
+          "Green400": {
+            "value": "{Colors.Data viz.Sequential.Green400}",
+            "type": "color"
+          },
+          "Yellow300": {
+            "value": "{Colors.Data viz.Sequential.Yellow300}",
+            "type": "color"
+          },
+          "Yellow400": {
+            "value": "{Colors.Data viz.Sequential.Yellow400}",
+            "type": "color"
+          },
+          "Gray300": {
+            "value": "{Colors.Data viz.Sequential.Gray300}",
+            "type": "color"
+          },
+          "Blue200": {
+            "value": "{Colors.Data viz.Sequential.Blue200}",
+            "type": "color"
+          },
+          "Ocean200": {
+            "value": "{Colors.Data viz.Sequential.Ocean200}",
+            "type": "color"
+          },
+          "Yellow": {
+            "value": "{Colors.Data viz.Core.Yellow}",
+            "type": "color"
+          }
+        },
+        "Trend-Average": {
+          "value": "{Colors.Data viz.Sequential.Gray300}",
+          "type": "color"
+        },
+        "Accessible outline": {
+          "value": "{Colors.Neutral.White}",
+          "type": "color"
+        }
+      },
+      "Semantic": {
+        "Foreground": {
+          "Light bkgd": {
+            "Positive": {
+              "value": "{Colors.Data viz.Core.Green}",
+              "type": "color"
+            },
+            "Negative": {
+              "value": "{Colors.Data viz.Core.Red}",
+              "type": "color"
+            },
+            "Notice": {
+              "value": "{Colors.Data viz.Core.Yellow}",
+              "type": "color"
+            }
+          },
+          "Dark bkgd": {
+            "Positive": {
+              "value": "#37bb65",
+              "type": "color"
+            },
+            "Negative": {
+              "value": "#cc2e48",
+              "type": "color"
+            },
+            "Notice": {
+              "value": "{Colors.Data viz.Core.Yellow}",
+              "type": "color"
+            }
+          }
+        },
+        "Stroke": {
+          "Light bkgd": {
+            "Positive": {
+              "value": "{Colors.Data viz.Core.Green}",
+              "type": "color"
+            },
+            "Negative": {
+              "value": "{Colors.Data viz.Core.Red}",
+              "type": "color"
+            },
+            "Notice": {
+              "value": "{Colors.Data viz.Core.Yellow}",
+              "type": "color"
+            }
+          },
+          "Dark bkgd": {
+            "Positive": {
+              "value": "#37bb65",
+              "type": "color"
+            },
+            "Negative": {
+              "value": "#cc2e48",
+              "type": "color"
+            },
+            "Notice": {
+              "value": "{Colors.Data viz.Core.Yellow}",
+              "type": "color"
+            }
+          }
+        },
+        "Background": {
+          "Positive": {
+            "value": "{Colors.Data viz.Core.Green}",
+            "type": "color"
+          },
+          "Negative": {
+            "value": "{Colors.Data viz.Core.Red}",
+            "type": "color"
+          },
+          "Notice": {
+            "value": "{Colors.Data viz.Core.Yellow}",
+            "type": "color"
+          }
+        }
+      },
+      "Background": {
+        "Core": {
+          "Blue": {
+            "value": "{Colors.Data viz.Core.Blue}",
+            "type": "color"
+          },
+          "Gray": {
+            "value": "{Colors.Data viz.Core.Gray}",
+            "type": "color"
+          },
+          "Red": {
+            "value": "{Colors.Data viz.Core.Red}",
+            "type": "color"
+          },
+          "Teal": {
+            "value": "{Colors.Data viz.Core.Teal}",
+            "type": "color"
+          },
+          "Ocean": {
+            "value": "{Colors.Data viz.Core.Ocean}",
+            "type": "color"
+          },
+          "Green": {
+            "value": "{Colors.Data viz.Core.Green}",
+            "type": "color"
+          },
+          "Yellow": {
+            "value": "{Colors.Data viz.Core.Yellow}",
+            "type": "color"
+          }
+        },
+        "Sequential": {
+          "Blue400": {
+            "value": "{Colors.Data viz.Sequential.Blue400}",
+            "type": "color"
+          },
+          "Gray400": {
+            "value": "{Colors.Data viz.Sequential.Gray400}",
+            "type": "color"
+          },
+          "Red300": {
+            "value": "{Colors.Data viz.Sequential.Red300}",
+            "type": "color"
+          },
+          "Red400": {
+            "value": "{Colors.Data viz.Sequential.Red400}",
+            "type": "color"
+          },
+          "Teal300": {
+            "value": "{Colors.Data viz.Sequential.Teal300}",
+            "type": "color"
+          },
+          "Teal400": {
+            "value": "{Colors.Data viz.Sequential.Teal400}",
+            "type": "color"
+          },
+          "Ocean400": {
+            "value": "{Colors.Data viz.Sequential.Ocean400}",
+            "type": "color"
+          },
+          "Green300": {
+            "value": "{Colors.Data viz.Sequential.Green300}",
+            "type": "color"
+          },
+          "Green400": {
+            "value": "{Colors.Data viz.Sequential.Green400}",
+            "type": "color"
+          },
+          "Yellow300": {
+            "value": "{Colors.Data viz.Sequential.Yellow300}",
+            "type": "color"
+          },
+          "Yellow400": {
+            "value": "{Colors.Data viz.Sequential.Yellow400}",
+            "type": "color"
+          },
+          "Blue300": {
+            "value": "{Colors.Data viz.Sequential.Blue300}",
+            "type": "color"
+          },
+          "Blue200": {
+            "value": "{Colors.Data viz.Sequential.Blue200}",
+            "type": "color"
+          },
+          "Blue100": {
+            "value": "{Colors.Data viz.Sequential.Blue100}",
+            "type": "color"
+          },
+          "Gray300": {
+            "value": "{Colors.Data viz.Sequential.Gray300}",
+            "type": "color"
+          },
+          "Gray200": {
+            "value": "{Colors.Data viz.Sequential.Gray200}",
+            "type": "color"
+          },
+          "Gray100": {
+            "value": "{Colors.Data viz.Sequential.Gray100}",
+            "type": "color"
+          },
+          "Red200": {
+            "value": "{Colors.Data viz.Sequential.Red200}",
+            "type": "color"
+          },
+          "Red100": {
+            "value": "{Colors.Data viz.Sequential.Red100}",
+            "type": "color"
+          },
+          "Teal200": {
+            "value": "{Colors.Data viz.Sequential.Teal200}",
+            "type": "color"
+          },
+          "Teal100": {
+            "value": "{Colors.Data viz.Sequential.Teal100}",
+            "type": "color"
+          },
+          "Ocean300": {
+            "value": "{Colors.Data viz.Sequential.Ocean300}",
+            "type": "color"
+          },
+          "Ocean200": {
+            "value": "{Colors.Data viz.Sequential.Ocean200}",
+            "type": "color"
+          },
+          "Ocean100": {
+            "value": "{Colors.Data viz.Sequential.Ocean100}",
+            "type": "color"
+          },
+          "Green200": {
+            "value": "{Colors.Data viz.Sequential.Green200}",
+            "type": "color"
+          },
+          "Green100": {
+            "value": "{Colors.Data viz.Sequential.Green100}",
+            "type": "color"
+          },
+          "Yellow200": {
+            "value": "{Colors.Data viz.Sequential.Yellow200}",
+            "type": "color"
+          },
+          "Yellow100": {
+            "value": "{Colors.Data viz.Sequential.Yellow100}",
+            "type": "color"
+          }
+        },
+        "Neutral": {
+          "Black": {
+            "value": "{Colors.Neutral.Black}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "Control logic": {
+      "Theme switch": {
+        "value": "Light",
+        "type": "text",
+        "description": "Theme switch. Control logic token to enable theme switching with libraries that use conventional \"Light\" and \"Dark\" mode components. For example, you're now able to assign the new \"theme-switch\" variable to the theme switch component property on the images component found in the Musea illustration library."
+      }
+    }
+  },
+  "Theme/Dark": {
+    "Neutral": {
+      "Background": {
+        "1": {
+          "Rest": {
+            "value": "{Colors.Neutral.Black}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-10}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-12}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Colors.Neutral.Grey-8}",
+            "type": "color"
+          }
+        },
+        "2": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-6}",
+            "type": "color"
+          }
+        },
+        "3": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-12}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-10}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-10}",
+            "type": "color"
+          }
+        },
+        "4": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-90}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-70}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-60}",
+            "type": "color"
+          }
+        },
+        "5": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-90}",
+            "type": "color"
+          }
+        },
+        "6": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-20}",
+            "type": "color"
+          }
+        },
+        "Inverted": {
+          "Rest": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color"
+          },
+          "Disabled": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.10}",
+              "type": "color"
+            }
+          }
+        },
+        "Alpha": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Alpha.Brand-10.50}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Alpha.Black.70}",
+              "type": "color"
+            }
+          }
+        },
+        "Static": {
+          "Rest": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color"
+          }
+        },
+        "Subtle": {
+          "Rest": {
+            "value": "{Colors.Alpha.Black.0}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-80}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-70}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Colors.Neutral.Grey-90}",
+            "type": "color"
+          },
+          "Light alpha": {
+            "Hover": {
+              "value": "#242424cc",
+              "type": "color"
+            },
+            "Pressed": {
+              "value": "#24242480",
+              "type": "color"
+            },
+            "Selected": {
+              "value": "{Colors.Alpha.Black.0}",
+              "type": "color"
+            }
+          },
+          "Inverted": {
+            "Rest": {
+              "value": "{Colors.Alpha.Black.0}",
+              "type": "color"
+            },
+            "Hover": {
+              "value": "{Colors.Alpha.Black.10}",
+              "type": "color"
+            },
+            "Pressed": {
+              "value": "{Colors.Alpha.Black.30}",
+              "type": "color"
+            },
+            "Selected": {
+              "value": "{Colors.Alpha.Black.20}",
+              "type": "color"
+            }
+          }
+        },
+        "Transparent": {
+          "Rest": {
+            "value": "{Colors.Alpha.Black.0}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Colors.Alpha.Black.0}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Colors.Alpha.Black.0}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Colors.Alpha.Black.0}",
+            "type": "color"
+          }
+        },
+        "Disabled": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-8}",
+            "type": "color"
+          }
+        },
+        "Stencil": {
+          "1": {
+            "Rest": {
+              "value": "#575757",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Neutral.Grey-20}",
+              "type": "color"
+            }
+          }
+        },
+        "Overlay": {
+          "Rest": {
+            "value": "{Colors.Alpha.Black.50}",
+            "type": "color"
+          },
+          "Scrollbar": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.60}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Foreground": {
+        "1": {
+          "Rest primary text": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Primary text color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Hover state for text and icon elements that start at Neutral Foreground 1 for rest state"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Pressed state for text and icon elements that start at Neutral Foreground 1 for rest state"
+          },
+          "Selected": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Selected state for text and icon elements that start at Neutral Foreground 1 for rest state"
+          }
+        },
+        "2": {
+          "Rest secondary text": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Secondary text color"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Hover state text, used in menus, list items (i.e. Chat, channels). In v9, this is usually associated w/ Neutral Foreground 2 as the rest state (hence the numbering)"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Pressed state text/icons (usually paired w/ a visible background color change."
+          },
+          "Selected": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Selected state text/icons. This needs to be paired with a Neutral Background 2 Selected token or a Transparent Background Interactive token"
+          },
+          "Brand": {
+            "Hover": {
+              "value": "{Brand-100}",
+              "type": "color",
+              "description": "Hover state color for icon buttons (“Transparent” or “Subtle” variant) and menu list items that have icons. In both, it is paired w/ v9’s Transparent Background Interactive"
+            },
+            "Pressed": {
+              "value": "{Brand-90}",
+              "type": "color",
+              "description": "Pressed state color for icon buttons (“Transparent” or “Subtle” variant) and menu list items that have icons. In both, it is paired w/ v9’s Transparent Background Interactive"
+            },
+            "Selected": {
+              "value": "{Brand-100}",
+              "type": "color",
+              "description": "Selected state color for icon buttons (“Transparent” or “Subtle” variant) and menu list items that have icons. In both, it is paired w/ v9’s Transparent Background Interactive"
+            },
+            "Rest": {
+              "value": "{Brand-100}",
+              "type": "color",
+              "description": "Hover state color for icon buttons (“Transparent” or “Subtle” variant) and menu list items that have icons. In both, it is paired w/ v9’s Transparent Background Interactive"
+            }
+          },
+          "Link": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Text link color for when you want the color to stay neutral (or more subtle) and closer with the rest of the body text."
+            },
+            "Hover": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Hover state for text link color for when you want the color to stay neutral (or more subtle) and closer with the rest of the body text."
+            },
+            "Pressed": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Pressed state for text link color for when you want the color to stay neutral (or more subtle) and closer with the rest of the body text."
+            },
+            "Selected": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          }
+        },
+        "4": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-60}",
+            "type": "color",
+            "description": "This was added to make placeholder text in input fields subtler when compared against user inputted text. Use this sparingly as the text only passes 4.5:1 contrast up until Background 3"
+          }
+        },
+        "Disabled": {
+          "2": {
+            "Rest": {
+              "value": "{Colors.Neutral.Grey-60}",
+              "type": "color"
+            }
+          },
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-50}",
+            "type": "color",
+            "description": "Disabled/Inactive state for controls that the user can’t interact with. Note: In V9 we simplified the number of disabled tokens supported, make sure associated background is updated as well."
+          }
+        },
+        "Static": {
+          "Inverted": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Inverted text that needs to stay white across all themes. Examples of this include confirmation/toasts where the background is dark in an other light UI (but then in dark theme we want to keep the toast bg dark)"
+            }
+          }
+        },
+        "Inverted": {
+          "1": {
+            "Rest": {
+              "value": "#242424",
+              "type": "color",
+              "description": "Used for text/icon elements on inverted background surfaces. True inversion across all themes"
+            },
+            "Hover": {
+              "value": "#242424",
+              "type": "color",
+              "description": "Hover state for elements using NeutralForegroundInverted at rest. Text/icon elements on inverted background surfaces"
+            },
+            "Pressed": {
+              "value": "#242424",
+              "type": "color",
+              "description": "Pressed state for elements using NeutralForegroundInverted at rest. Text/icon elements on inverted background surfaces"
+            },
+            "Selected": {
+              "value": "#242424",
+              "type": "color",
+              "description": "Selected state for elements using NeutralForegroundInverted at rest. Text/icon elements on inverted background surfaces"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "#242424",
+              "type": "color",
+              "description": "Used for text/icon elements on inverted background surfaces, but need an exception to stay hcCanvasText in high contrast"
+            }
+          },
+          "Disabled": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.40}",
+              "type": "color",
+              "description": "Added for controls that need to communicate inactive/disabled state over elements that are media, not single color, brand color, or dark surfaces in an otherwise light ui"
+            }
+          },
+          "Link": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Rest state text for interactive links over dark backgrounds"
+            },
+            "Hover": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Hover state text, for interactive links over dark backgrounds"
+            },
+            "Pressed": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Pressed state text, for interactive links over dark backgrounds"
+            },
+            "Selected": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          }
+        },
+        "On Brand": {
+          "Rest": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Primary button text, stays the same color between interaction states."
+          }
+        }
+      },
+      "Stroke": {
+        "1": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-40}",
+            "type": "color",
+            "description": "Secondary button borders, generally the border to use on controls.\nIn a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the primary divider in combination w/ Neutral Stroke over Backgrounds 3-5"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.Grey-40}",
+            "type": "color",
+            "description": "Secondary button borders, generally the border to use on controls.\nIn a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the primary divider in combination w/ Neutral Stroke over Backgrounds 3-5"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.Grey-40}",
+            "type": "color",
+            "description": "Secondary button borders, generally the border to use on controls.\nIn a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the primary divider in combination w/ Neutral Stroke over Backgrounds 3-5"
+          },
+          "Selected": {
+            "value": "{Colors.Neutral.Grey-40}",
+            "type": "color",
+            "description": "Secondary button borders, generally the border to use on controls.\nIn a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the primary divider in combination w/ Neutral Stroke over Backgrounds 3-5"
+          }
+        },
+        "2": {
+          "Rest": {
+            "value": "{Colors.Grey.White}",
+            "type": "color",
+            "description": "In a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the secondary divider in combination w/ Neutral Stroke over Backgrounds 3-5, or as the Primary divider in combination w/ Neutral Stroke 3 over Backgrounds 1-2"
+          }
+        },
+        "3": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-50}",
+            "type": "color",
+            "description": "In a UI with a lot of linework and there’s a need to establish more hierarchy between sections, can leverage this one as the secondary divider in combination w/ Neutral Stroke 2 over Backgrounds 1-2"
+          }
+        },
+        "Alpha": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.10}",
+              "type": "color",
+              "description": "This was introduced as a subtle stroke around list items (in left rail) on the Mica material or the Mac native material. Transparency is useful over backgrounds that are not a solid color as it blends better."
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.20}",
+              "type": "color"
+            }
+          }
+        },
+        "Subtle": {
+          "Rest": {
+            "value": "#f5f4f2",
+            "type": "color",
+            "description": "For defining page sections of the UI (i.e. between entity header and canvas content, or between info panel and canvas content)"
+          }
+        },
+        "on Brand": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Originally added for the inverted button (per Office.com’s request in Fluent 2). This is useful for when you need divider that stays white across all themes."
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Grey.White}",
+              "type": "color",
+              "description": "This was originally introduced for the Split button where there’s a divider between main button and menu button. It’s meant for linework over brand colored surfaces or over ‘inverted’ surfaces"
+            }
+          }
+        },
+        "Accessible": {
+          "Rest": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "This was added in order to meet the 3:1 contrast requirement for controls that are completely reliant on the linework to define the boundaries of that control (i.e. Toggle off, Checkbox, Radio button)"
+          },
+          "Hover": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Hover state for elements that start at Neutral Stroke Accessible for rest. This was added in order to meet the 3:1 contrast requirement for controls that are completely reliant on the linework to define the boundaries of that control (i.e. Toggle off, Checkbox, Radio button)"
+          },
+          "Pressed": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Pressed state for elements that start at Neutral Stroke Accessible for rest. This was added in order to meet the 3:1 contrast requirement for controls that are completely reliant on the linework to define the boundaries of that control (i.e. Toggle off, Checkbox, Radio button)"
+          },
+          "Selected": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color",
+            "description": "Selected state for elements that start at Neutral Stroke Accessible for rest. This was added in order to meet the 3:1 contrast requirement for controls that are completely reliant on the linework to define the boundaries of that control (i.e. Toggle off, Checkbox, Radio button)"
+          }
+        },
+        "Focus": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Neutral.Black}",
+              "type": "color",
+              "description": "Added to support keyboard focus borders. This should only show up when the user invokes the control via keyboarding"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color",
+              "description": "Added to support keyboard focus borders. This should only show up when the user invokes the control via keyboarding"
+            }
+          }
+        },
+        "Transparent": {
+          "Interactive": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.0}",
+              "type": "color",
+              "description": "When you need a control to show a border for interactive states in high contrast but remain invisible in Light and Dark themes. (set to 1px and call for this token)"
+            }
+          },
+          "Disabled": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.0}",
+              "type": "color",
+              "description": "When you need a control to show a border for a disabled control in high contrast but remain invisible in Light and Dark themes. (set to 1px and call for this token)"
+            }
+          },
+          "Rest": {
+            "value": "{Colors.Alpha.White.0}",
+            "type": "color",
+            "description": "When you need a control to show a border in high contrast but remain invisible in Light and Dark themes. (set to 1px and call for this token)"
+          }
+        },
+        "Disabled": {
+          "Rest": {
+            "value": "{Colors.Neutral.Grey-70}",
+            "type": "color",
+            "description": "For controls that need a border and to communicate a disabled/inactive state."
+          },
+          "Inverted": {
+            "Rest": {
+              "value": "{Colors.Alpha.White.40}",
+              "type": "color",
+              "description": "For controls that need a border and to communicate a disabled/inactive state, and the control sits over a dark surface an in otherwise light UI (light theme)"
+            }
+          }
+        }
+      }
+    },
+    "Brand": {
+      "Background": {
+        "1": {
+          "Rest": {
+            "value": "{Brand-60}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Brand-40}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-30}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Brand-20}",
+            "type": "color"
+          }
+        },
+        "2": {
+          "Rest": {
+            "value": "{Brand-20}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Brand-40}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-10}",
+            "type": "color"
+          }
+        },
+        "3": {
+          "Rest": {
+            "value": "#ffffff",
+            "type": "color"
+          }
+        },
+        "Inverted": {
+          "Rest": {
+            "value": "{Colors.Neutral.White}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Brand-120}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-130}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Brand-100}",
+            "type": "color"
+          }
+        },
+        "Static": {
+          "Rest": {
+            "value": "{Brand-80}",
+            "type": "color"
+          }
+        },
+        "Compound": {
+          "Rest": {
+            "value": "{Brand-100}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Brand-110}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-90}",
+            "type": "color"
+          }
+        }
+      },
+      "Foreground": {
+        "1": {
+          "Rest": {
+            "value": "{Brand-100}",
+            "type": "color",
+            "description": "This is good for text elements that need to use the brand color and are not links. Used in Unread Dividers for the text and Fluent v9 tinted badge, this set contains the Teams primary brand color for light and dark theme"
+          },
+          "Hover": {
+            "value": "{Brand-100}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-100}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Brand-100}",
+            "type": "color"
+          }
+        },
+        "2": {
+          "Rest": {
+            "value": "{Brand-110}",
+            "type": "color",
+            "description": "This is good for pairing with Brand Background 2 to create brand tint effect elements. The text color is slightly darker than typical brand primary to meet contrast against lighter shades of the brand color. Usage ex: Pill/Tag"
+          },
+          "Hover": {
+            "value": "{Brand-130}",
+            "type": "color",
+            "description": "Hover state for Brand Foreground 2. This is good for pairing with Brand Background 2 Hover to create brand tint effect elements. The text color is slightly darker than typical brand primary to meet contrast against lighter shades of the brand color. Usage ex: Pill/Tag"
+          },
+          "Pressed": {
+            "value": "{Brand-100}",
+            "type": "color",
+            "description": "Pressed state for Brand Foreground 2. This is good for pairing with Brand Background 2 Pressed to create brand tint effect elements. The text color is slightly darker than typical brand primary to meet contrast against lighter shades of the brand color. Usage ex: Pill/Tag"
+          }
+        },
+        "Link": {
+          "Rest": {
+            "value": "{Brand-100}",
+            "type": "color",
+            "description": "Text links that need to be brand colored"
+          },
+          "Hover": {
+            "value": "{Brand-110}",
+            "type": "color",
+            "description": "Hover state for text links that need to be brand colored"
+          },
+          "Pressed": {
+            "value": "{Brand-90}",
+            "type": "color",
+            "description": "Pressed state for text links that need to be brand colored"
+          },
+          "Selected": {
+            "value": "{Brand-100}",
+            "type": "color"
+          }
+        },
+        "Inverted": {
+          "Rest": {
+            "value": "{Brand-80}",
+            "type": "color",
+            "description": "Used for text elements that need to be brand colored on an inverted background."
+          },
+          "Hover": {
+            "value": "{Brand-70}",
+            "type": "color",
+            "description": "Hover state for text that starts at Brand Foreground Inverted at rest. Used for text elements that need to be brand colored on an inverted background."
+          },
+          "Pressed": {
+            "value": "{Brand-60}",
+            "type": "color",
+            "description": "Pressed state for text that starts at Brand Foreground Inverted at rest. Used for text elements that need to be brand colored on an inverted background."
+          }
+        },
+        "On Light": {
+          "Rest": {
+            "value": "{Brand-70}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Brand-70}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Brand-50}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Brand-60}",
+            "type": "color"
+          }
+        },
+        "Compound": {
+          "Rest": {
+            "value": "{Brand-100}",
+            "type": "color",
+            "description": "Tab underline, Radio selected, icon selected. Compound in the name generally means it is selected and has additional hover and pressed state changes to move it back to unchecked/unselected state."
+          },
+          "Hover": {
+            "value": "{Brand-110}",
+            "type": "color",
+            "description": "Hover state for Tab underline, Radio selected, icon selected. Compound in the name generally means it is selected and has additional hover and pressed state changes to move it back to unchecked/unselected state."
+          },
+          "Pressed": {
+            "value": "{Brand-90}",
+            "type": "color",
+            "description": "Pressed state for Tab underline, Radio selected, icon selected. Compound in the name generally means it is selected and has additional hover and pressed state changes to move it back to unchecked/unselected state."
+          }
+        }
+      },
+      "Stroke": {
+        "1": {
+          "Rest": {
+            "value": "{Brand-100}",
+            "type": "color",
+            "description": "Used in Unread Dividers, this set contains the Teams primary brand color for light and dark theme"
+          },
+          "Hover": {
+            "value": "#2886de",
+            "type": "color",
+            "description": "Hover state for controls that start at Brand Stroke 2 at rest. Added for adding additional contrast on tinted buttons, tinted badges, tinted pill/tags"
+          },
+          "Pressed": {
+            "value": "{Brand-70}",
+            "type": "color",
+            "description": "Pressed state for controls that start at Brand Stroke 2 at rest. Added for adding additional contrast on tinted buttons, tinted badges, tinted pill/tags"
+          },
+          "Selected": {
+            "value": "{Brand-70}",
+            "type": "color",
+            "description": "Pressed state for controls that start at Brand Stroke 2 at rest. Added for adding additional contrast on tinted buttons, tinted badges, tinted pill/tags"
+          }
+        },
+        "2": {
+          "Rest": {
+            "value": "{Brand-50}",
+            "type": "color",
+            "description": "Added for adding additional contrast on tinted buttons, tinted badges, tinted pill/tags"
+          },
+          "Contrast": {
+            "Rest": {
+              "value": "{Brand-60}",
+              "type": "color"
+            }
+          }
+        },
+        "3": {
+          "Rest": {
+            "value": "#ffffff",
+            "type": "color"
+          }
+        },
+        "Compound": {
+          "Rest": {
+            "value": "{Brand-100}",
+            "type": "color",
+            "description": "Used for the focus state of text inputs (text fields, text areas, combobox). Compound refers to controls that have selected+hover, selected+pressed states, generally for controls like Checkbox, Toggle switch, radio buttons"
+          },
+          "Hover": {
+            "value": "{Brand-110}",
+            "type": "color",
+            "description": "Compound refers to controls that have selected+hover, selected+pressed states, generally for controls like Checkbox, Toggle switch, radio buttons"
+          },
+          "Pressed": {
+            "value": "{Brand-90}",
+            "type": "color",
+            "description": "Compound refers to controls that have selected+hover, selected+pressed states, generally for controls like Checkbox, Toggle switch, radio buttons"
+          }
+        }
+      }
+    },
+    "Status": {
+      "Danger": {
+        "Background": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Cranberry.Primary}",
+              "type": "color"
+            }
+          }
+        },
+        "Foreground": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Cranberry.Tint 30}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          }
+        },
+        "Stroke": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Cranberry.Primary}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Shared.Cranberry.Tint 30}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Success": {
+        "Background": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Green.Tint 60}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Green.Primary}",
+              "type": "color"
+            }
+          }
+        },
+        "Foreground": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Green.Primary}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          }
+        },
+        "Stroke": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Green.Primary}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Shared.Green.Tint 30}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Warning": {
+        "Background": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Orange.Tint 60}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Orange.Primary}",
+              "type": "color"
+            }
+          }
+        },
+        "Foreground": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Orange.Primary}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          }
+        },
+        "Stroke": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Orange.Primary}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Shared.Orange.Tint 30}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Oof": {
+        "Foreground": {
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Berry.Tint 20}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Away": {
+        "Background": {
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Marigold.Primary}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Available": {
+        "Foreground": {
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Light green.Primary}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Generic": {
+        "Anchor": {
+          "Background": {
+            "2": {
+              "Rest": {
+                "value": "{Colors.Shared.Anchor.Shade 30}",
+                "type": "color"
+              }
+            }
+          },
+          "Foreground": {
+            "2": {
+              "Rest": {
+                "value": "{Colors.Shared.Anchor.Tint 40}",
+                "type": "color"
+              }
+            }
+          },
+          "Stroke": {
+            "Active": {
+              "Rest": {
+                "value": "{Colors.Shared.Anchor.Tint 30}",
+                "type": "color"
+              }
+            }
+          }
+        },
+        "Information": {
+          "Background": {
+            "1": {
+              "Rest": {
+                "value": "#ffffff",
+                "type": "color"
+              },
+              "Hover": {
+                "value": "#ffffff",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "#ffffff",
+                "type": "color"
+              }
+            }
+          },
+          "Stroke": {
+            "1": {
+              "Rest": {
+                "value": "#ffffff",
+                "type": "color"
+              }
+            },
+            "2": {
+              "Rest": {
+                "value": "#ffffff",
+                "type": "color"
+              },
+              "Hover": {
+                "value": "#ffffff",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "#ffffff",
+                "type": "color"
+              }
+            }
+          },
+          "Foreground": {
+            "Rest": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Hover": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Pressed": {
+              "value": "#ffffff",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Severe": {
+        "Background": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Dark Orange.Tint 60}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Shared.Dark Orange.Primary}",
+              "type": "color"
+            }
+          }
+        },
+        "Foreground": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Dark Orange.Primary}",
+              "type": "color"
+            }
+          },
+          "3": {
+            "Rest": {
+              "value": "{Colors.Neutral.White}",
+              "type": "color"
+            }
+          }
+        },
+        "Stroke": {
+          "1": {
+            "Rest": {
+              "value": "{Colors.Shared.Dark Orange.Primary}",
+              "type": "color"
+            }
+          },
+          "2": {
+            "Rest": {
+              "value": "{Colors.Shared.Dark Orange.Tint 30}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Shadow": {
+      "ambient": {
+        "value": "#00000033",
+        "type": "color"
+      },
+      "ambient-lighter": {
+        "value": "#0000001f",
+        "type": "color"
+      },
+      "ambient-darker": {
+        "value": "#00000066",
+        "type": "color"
+      },
+      "brand-ambient": {
+        "value": "#00000040",
+        "type": "color"
+      },
+      "key": {
+        "value": "#00000047",
+        "type": "color"
+      },
+      "key-lighter": {
+        "value": "#00000024",
+        "type": "color"
+      },
+      "key-darker": {
+        "value": "#0000007a",
+        "type": "color"
+      },
+      "brand-key": {
+        "value": "#0000004d",
+        "type": "color"
+      }
+    },
+    "Data viz": {
+      "Foreground": {
+        "Labels": {
+          "Categorical": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Data": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Color": {
+            "Blue": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Gray": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Red": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Teal": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Ocean": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Green": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Yellow300": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Blue400": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Gray400": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Red400": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Teal300": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Red300": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Teal400": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Ocean400": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Green400": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Yellow400": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Green300": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Gray300": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Blue200": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Ocean200": {
+              "value": "#ffffff",
+              "type": "color"
+            }
+          }
+        },
+        "Accessibility": {
+          "Text dark bkgd": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Text light bkgd": {
+            "value": "#ffffff",
+            "type": "color"
+          }
+        },
+        "KPI Card": {
+          "Text dark bkgd": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Text light bkgd": {
+            "value": "#ffffff",
+            "type": "color"
+          }
+        }
+      },
+      "Stroke": {
+        "Gridline": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "Axis-Target-Benchmark": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "Color": {
+          "Blue": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Blue400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Gray": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Gray400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Red": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Red300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Red400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Teal": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Teal300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Teal400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Ocean": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Ocean400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Green": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Green300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Green400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Yellow300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Yellow400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Gray300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Blue200": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Ocean200": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Yellow": {
+            "value": "#ffffff",
+            "type": "color"
+          }
+        },
+        "Trend-Average": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "Accessible outline": {
+          "value": "#ffffff",
+          "type": "color"
+        }
+      },
+      "Semantic": {
+        "Foreground": {
+          "Light bkgd": {
+            "Positive": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Negative": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Notice": {
+              "value": "#ffffff",
+              "type": "color"
+            }
+          },
+          "Dark bkgd": {
+            "Positive": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Negative": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Notice": {
+              "value": "#ffffff",
+              "type": "color"
+            }
+          }
+        },
+        "Stroke": {
+          "Light bkgd": {
+            "Positive": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Negative": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Notice": {
+              "value": "#ffffff",
+              "type": "color"
+            }
+          },
+          "Dark bkgd": {
+            "Positive": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Negative": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "Notice": {
+              "value": "#ffffff",
+              "type": "color"
+            }
+          }
+        },
+        "Background": {
+          "Positive": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Negative": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Notice": {
+            "value": "#ffffff",
+            "type": "color"
+          }
+        }
+      },
+      "Background": {
+        "Core": {
+          "Blue": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Gray": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Red": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Teal": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Ocean": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Green": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Yellow": {
+            "value": "#ffffff",
+            "type": "color"
+          }
+        },
+        "Sequential": {
+          "Blue400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Gray400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Red300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Red400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Teal300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Teal400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Ocean400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Green300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Green400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Yellow300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Yellow400": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Blue300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Blue200": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Blue100": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Gray300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Gray200": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Gray100": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Red200": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Red100": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Teal200": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Teal100": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Ocean300": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Ocean200": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Ocean100": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Green200": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Green100": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Yellow200": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Yellow100": {
+            "value": "#ffffff",
+            "type": "color"
+          }
+        },
+        "Neutral": {
+          "Black": {
+            "value": "#ffffff",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "Control logic": {
+      "Theme switch": {
+        "value": "Dark",
+        "type": "text",
+        "description": "Theme switch. Control logic token to enable theme switching with libraries that use conventional \"Light\" and \"Dark\" mode components. For example, you're now able to assign the new \"theme-switch\" variable to the theme switch component property on the images component found in the Musea illustration library."
+      }
+    }
+  }
+}
